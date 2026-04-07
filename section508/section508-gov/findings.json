@@ -1,0 +1,3332 @@
+{
+  "url": "https://section508.gov",
+  "slug": "section508-gov",
+  "status": "complete",
+  "scanDate": "2026-04-07T10:39:30.655Z",
+  "scanConfig": {
+    "scope": "site",
+    "maxPages": 50,
+    "racks": [
+      "rack-live-a11y",
+      "rack-live-free"
+    ],
+    "individualProbes": [],
+    "excludedProbes": [],
+    "timeBudgetMs": 300000,
+    "maxFindings": null
+  },
+  "sondeScore": {
+    "score": 979,
+    "rawPenalty": 512.5,
+    "normalizedPenalty": 16.015625,
+    "pagesScanned": 32,
+    "weightsVersion": "v0.1"
+  },
+  "avgFindingsPerPage": 13.3,
+  "elementComplianceRate": 98.3,
+  "totalElements": 8356,
+  "elementsWithFindings": 139,
+  "complianceSummary": {
+    "total": 425,
+    "byLevel": {},
+    "bySeverity": {
+      "critical": 0,
+      "high": 82,
+      "medium": 241,
+      "low": 102
+    },
+    "byCriterion": {
+      "WCAG 2.4.3": 145
+    }
+  },
+  "summary": {
+    "pagesAnalyzed": 32,
+    "pagesFailed": 0,
+    "totalFindings": 425,
+    "bySeverity": {
+      "critical": 0,
+      "high": 82,
+      "medium": 241,
+      "low": 102
+    },
+    "byProbe": {},
+    "byType": {},
+    "durationMs": 306222
+  },
+  "jurisdiction": "Federal",
+  "entityName": "Section508.gov (GSA)",
+  "findings": [
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"What's New on Section508.gov?\" to \"Section508.gov Content Library\" (visual distance: 344px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#main-content > section:nth-of-type(4) > div > div:nth-of-type(6) > div > div:nth-of-type(1) > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a>Section508.gov Content Library</a>",
+      "discoveredAt": "2026-04-07T03:34:41.191Z",
+      "pageUrl": "https://www.section508.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"U.S. Web Design System\" to \"CIO Council Accessibility Community of Practice\" (visual distance: 317px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a>CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:34:41.191Z",
+      "pageUrl": "https://www.section508.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Frances Smith\" to \"Kate Sweeney\" (visual distance: 350px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#contributor-tab > div:nth-of-type(9) > div:nth-of-type(2) > a",
+      "elementHtml": "<a>Kate Sweeney</a>",
+      "discoveredAt": "2026-04-07T03:34:51.006Z",
+      "pageUrl": "https://www.section508.gov/contributors/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Enterprise Architecture and Change Control Review Guidelines for Project Teams (\" to \"Sample Personas for Users With Disabilities (https://www.section508.gov/develop/\" (visual distance: 351px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#main-content > div > div > main > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a>Sample Personas for Users With Disabilities (https://www.section508.gov/develop/</a>",
+      "discoveredAt": "2026-04-07T03:35:03.366Z",
+      "pageUrl": "https://www.section508.gov/contributors/dhs.html",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"U.S. Web Design System\" to \"CIO Council Accessibility Community of Practice\" (visual distance: 318px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a>CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:35:51.949Z",
+      "pageUrl": "https://www.section508.gov/contributors/gsa.html",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Email Messages (https://www.section508.gov/create/email-messages/)\" to \"Digital Strategy\" (visual distance: 353px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a>Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:37:53.227Z",
+      "pageUrl": "https://www.section508.gov/contributors/va.html",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Section508.gov/events/\" to \"Digital Strategy\" (visual distance: 464px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a>Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:38:30.411Z",
+      "pageUrl": "https://www.section508.gov/event/it-accessibility-community-meetring/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Plain Language\" to \"U.S. Web Design System\" (visual distance: 346px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a>U.S. Web Design System</a>",
+      "discoveredAt": "2026-04-07T03:38:38.768Z",
+      "pageUrl": "https://www.section508.gov/event/section-508-program-maturity-report/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Read more (https://www.section508.gov/event/it-accessibility-community-meetring/\" to \"Section 508 Best Practices Webinars (https://www.section508.gov/event/section-50\" (visual distance: 444px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#content-section > div > div:nth-of-type(5) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>Section 508 Best Practices Webinars (https://www.section508.gov/event/section-50</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Highlights from the Fiscal Year 2025 Governmentwide Section 508 Assessment | Web\" to \"Read more (https://www.section508.gov/event/best-practices-webinar-mar2026/)\" (visual distance: 476px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#content-section > div > div:nth-of-type(7) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/best-practices-webinar-mar2026/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Leveraging ServiceNow for Section 508 Compliance at FDIC | ITACM (https://www.se\" to \"Read more (https://www.section508.gov/event/itacm-oct2025/)\" (visual distance: 349px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#content-section > div > div:nth-of-type(9) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/itacm-oct2025/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Integrating Section 508 into the ATO Process | ITACM (https://www.section508.gov\" to \"Read more (https://www.section508.gov/event/itacm-aug2025/)\" (visual distance: 373px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#content-section > div > div:nth-of-type(11) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/itacm-aug2025/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"IT Accessibility Key Performance Indicators (KPIs) | ITACM (https://www.section5\" to \"Read more (https://www.section508.gov/event/itacm-apr2025/)\" (visual distance: 338px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#content-section > div > div:nth-of-type(13) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/itacm-apr2025/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Essential Strategies for Creating Accessible Social Media Content | Webinar (htt\" to \"Read more (https://www.section508.gov/event/best-practices-webinar-nov2024/)\" (visual distance: 311px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#content-section > div > div:nth-of-type(15) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/best-practices-webinar-nov2024/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Section 508 Assessment Submission Tool Demo #3 | July 23, 2024 (https://www.sect\" to \"Read more (https://www.section508.gov/event/gwaa-demo-23july2024/)\" (visual distance: 311px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#content-section > div > div:nth-of-type(19) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/gwaa-demo-23july2024/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Section 508 Assessment Office Hours #9 | July 11, 2024 (https://www.section508.g\" to \"Read more (https://www.section508.gov/event/gwaa-office-hours-11july2024/)\" (visual distance: 336px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#content-section > div > div:nth-of-type(21) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/gwaa-office-hours-11july2024/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Section 508 Assessment Office Hours #8 | June 17, 2024 (https://www.section508.g\" to \"Read more (https://www.section508.gov/event/gwaa-office-hours-17june2024/)\" (visual distance: 360px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#content-section > div > div:nth-of-type(23) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/gwaa-office-hours-17june2024/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Accessible Data Tables in Electronic Documents | ITACM (https://www.section508.g\" to \"Read more (https://www.section508.gov/event/itacm-jun2024/)\" (visual distance: 358px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#content-section > div > div:nth-of-type(25) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/itacm-jun2024/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"M-24-08 Strengthening Digital Accessibility and the Management of Section 508 of\" to \"Read more (https://www.section508.gov/event/best-practices-webinar-may2024/)\" (visual distance: 393px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#content-section > div > div:nth-of-type(27) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/best-practices-webinar-may2024/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Section 508 Assessment Office Hours #5 | May 14, 2024 (https://www.section508.go\" to \"Read more (https://www.section508.gov/event/gwaa-office-hours-14may2024/)\" (visual distance: 335px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#content-section > div > div:nth-of-type(29) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/gwaa-office-hours-14may2024/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Section 508 Assessment Office Hours #3 | April 30, 2024 (https://www.section508.\" to \"Read more (https://www.section508.gov/event/gwaa-office-hours-30apr2024/)\" (visual distance: 335px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#content-section > div > div:nth-of-type(31) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/gwaa-office-hours-30apr2024/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Section 508 Assessment Office Hours #1 | April 17, 2024 (https://www.section508.\" to \"Read more (https://www.section508.gov/event/gwaa-office-hours-17apr2024/)\" (visual distance: 335px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#content-section > div > div:nth-of-type(33) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/gwaa-office-hours-17apr2024/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"GSA and the U.S. Access Board to Present at the CSUN Assistive Technology Confer\" to \"Read more (https://www.section508.gov/event/csun-presentations-2024/)\" (visual distance: 362px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#content-section > div > div:nth-of-type(35) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/csun-presentations-2024/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Introduciton to the IT Accessibility Policy Framework | ITACM (https://www.secti\" to \"Read more (https://www.section508.gov/event/itacm-feb2024/)\" (visual distance: 370px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#content-section > div > div:nth-of-type(37) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/itacm-feb2024/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Maps for All – Building Accessible Maps | Webinar (https://www.section508.gov/ev\" to \"Read more (https://www.section508.gov/event/best-practices-webinar-sep2023/)\" (visual distance: 342px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#content-section > div > div:nth-of-type(39) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/best-practices-webinar-sep2023/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Section 508 Assessment Office Hours #16 | August 7, 2023 (https://www.section508\" to \"Read more (https://www.section508.gov/event/gwaa-office-hours-7aug2023/)\" (visual distance: 324px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#content-section > div > div:nth-of-type(41) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/gwaa-office-hours-7aug2023/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Section 508 Assessment Office Hours #14 | July 27, 2023 (https://www.section508.\" to \"Read more (https://www.section508.gov/event/gwaa-office-hours-27july2023/)\" (visual distance: 324px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#content-section > div > div:nth-of-type(43) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/gwaa-office-hours-27july2023/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Section 508 Assessment Office Hours #12 | July 10, 2023 (https://www.section508.\" to \"Read more (https://www.section508.gov/event/gwaa-office-hours-10july2023/)\" (visual distance: 325px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#content-section > div > div:nth-of-type(45) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/gwaa-office-hours-10july2023/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Section 508 Assessment Office Hours #12 | June 21, 2023 (https://www.section508.\" to \"Read more (https://www.section508.gov/event/gwaa-office-hours-21june2023/)\" (visual distance: 324px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#content-section > div > div:nth-of-type(47) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/gwaa-office-hours-21june2023/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Section 508 Assessment Office Hours #10 | June 6, 2023 (https://www.section508.g\" to \"Read more (https://www.section508.gov/event/gwaa-office-hours-06june2023/)\" (visual distance: 324px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#content-section > div > div:nth-of-type(49) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/gwaa-office-hours-06june2023/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Section 508 Assessment Office Hours #8 | May 19, 2023 (https://www.section508.go\" to \"Read more (https://www.section508.gov/event/gwaa-office-hours-19may2023/)\" (visual distance: 324px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#content-section > div > div:nth-of-type(51) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/gwaa-office-hours-19may2023/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Section 508 Assessment Office Hours #6 | May 1, 2023 (https://www.section508.gov\" to \"Read more (https://www.section508.gov/event/gwaa-office-hours-01may2023/)\" (visual distance: 324px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#content-section > div > div:nth-of-type(53) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/gwaa-office-hours-01may2023/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"How an Agency Established a Section 508 Program | ITACM (https://www.section508.\" to \"Read more (https://www.section508.gov/event/itacm-apr2023/)\" (visual distance: 693px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#content-section > div > div:nth-of-type(55) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/itacm-apr2023/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Section 508 Assessment Office Hours #3 | April 18, 2023 (https://www.section508.\" to \"Read more (https://www.section508.gov/event/gwaa-office-hours-18apr2023/)\" (visual distance: 324px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#content-section > div > div:nth-of-type(57) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/gwaa-office-hours-18apr2023/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Section 508 Assessment Office Hours #1 | April 11, 2023 (https://www.section508.\" to \"Read more (https://www.section508.gov/event/gwaa-office-hours-11apr2023/)\" (visual distance: 324px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#content-section > div > div:nth-of-type(59) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/gwaa-office-hours-11apr2023/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Be The Change In Accessibility: Communication | ITACM (https://www.section508.go\" to \"Read more (https://www.section508.gov/event/itacm-dec2022/)\" (visual distance: 338px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#content-section > div > div:nth-of-type(61) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/itacm-dec2022/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Read more (https://www.section508.gov/event/itacm-jun2022/)\" to \"Be The Change In Accessibility: Acquisition | ITACM (https://www.section508.gov/\" (visual distance: 323px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#content-section > div > div:nth-of-type(65) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>Be The Change In Accessibility: Acquisition | ITACM (https://www.section508.gov/</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Read more (https://www.section508.gov/event/best-practices-webinar-mar2022/)\" to \"Section 508 – A Celebration of Twenty Years (https://www.section508.gov/event/be\" (visual distance: 327px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#content-section > div > div:nth-of-type(67) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>Section 508 – A Celebration of Twenty Years (https://www.section508.gov/event/be</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Read more (https://www.section508.gov/event/forest-and-trees-scaling-enterprise-\" to \"The 5th Annual ICT Accessibility Testing Symposium (https://www.section508.gov/e\" (visual distance: 339px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#content-section > div > div:nth-of-type(71) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>The 5th Annual ICT Accessibility Testing Symposium (https://www.section508.gov/e</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Read more (https://www.section508.gov/event/managing-projects-ensure-accessibili\" to \"Reporting Accessibility with VPAT® 2 - A Guide for Vendors (https://www.section5\" (visual distance: 518px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#content-section > div > div:nth-of-type(73) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>Reporting Accessibility with VPAT® 2 - A Guide for Vendors (https://www.section5</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"U.S. Web Design System\" to \"CIO Council Accessibility Community of Practice\" (visual distance: 318px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a>CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:34:31.900Z",
+      "pageUrl": "https://www.section508.gov/"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:34:45.829Z",
+      "pageUrl": "https://www.section508.gov/contributors/"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:34:59.217Z",
+      "pageUrl": "https://www.section508.gov/contributors/dhs.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:35:07.827Z",
+      "pageUrl": "https://www.section508.gov/contributors/ed.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:35:16.894Z",
+      "pageUrl": "https://www.section508.gov/contributors/fcc.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:35:30.800Z",
+      "pageUrl": "https://www.section508.gov/contributors/fhwa.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:35:39.261Z",
+      "pageUrl": "https://www.section508.gov/contributors/frith-chet.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:35:47.830Z",
+      "pageUrl": "https://www.section508.gov/contributors/gsa.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:35:56.387Z",
+      "pageUrl": "https://www.section508.gov/contributors/haileselassie.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:36:05.309Z",
+      "pageUrl": "https://www.section508.gov/contributors/hhs.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:36:13.671Z",
+      "pageUrl": "https://www.section508.gov/contributors/lovley.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:36:22.187Z",
+      "pageUrl": "https://www.section508.gov/contributors/martin-beth.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:36:30.997Z",
+      "pageUrl": "https://www.section508.gov/contributors/mcgland-denise.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:36:39.503Z",
+      "pageUrl": "https://www.section508.gov/contributors/nasa.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:36:48.258Z",
+      "pageUrl": "https://www.section508.gov/contributors/opm.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:36:56.718Z",
+      "pageUrl": "https://www.section508.gov/contributors/procter.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:37:05.524Z",
+      "pageUrl": "https://www.section508.gov/contributors/sirk.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:37:14.464Z",
+      "pageUrl": "https://www.section508.gov/contributors/smith-frances.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:37:22.855Z",
+      "pageUrl": "https://www.section508.gov/contributors/sweeney-kate.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:37:31.584Z",
+      "pageUrl": "https://www.section508.gov/contributors/usab.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:37:40.679Z",
+      "pageUrl": "https://www.section508.gov/contributors/usfs.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:37:49.251Z",
+      "pageUrl": "https://www.section508.gov/contributors/va.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:39:23.307Z",
+      "pageUrl": "https://www.section508.gov/event/3rd-annual-digital-accessibility-summit/"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:38:59.374Z",
+      "pageUrl": "https://www.section508.gov/event/5th-annual-ict-accessibility-testing-symposium/"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:39:07.291Z",
+      "pageUrl": "https://www.section508.gov/event/forest-and-trees-scaling-enterprise-level-digital-accessibility/"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:38:26.705Z",
+      "pageUrl": "https://www.section508.gov/event/it-accessibility-community-meetring/"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:38:51.334Z",
+      "pageUrl": "https://www.section508.gov/event/managing-projects-ensure-accessibility/"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:38:43.232Z",
+      "pageUrl": "https://www.section508.gov/event/reporting-accessibility-vpat-2-guide-vendors/"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:38:18.641Z",
+      "pageUrl": "https://www.section508.gov/event/section-508-best-practices-webinars/"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:38:34.905Z",
+      "pageUrl": "https://www.section508.gov/event/section-508-program-maturity-report/"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:39:15.286Z",
+      "pageUrl": "https://www.section508.gov/event/unmasking-accessibility-moving-beyond-band-aid-solution/"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:37:57.683Z",
+      "pageUrl": "https://www.section508.gov/events/"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.ssa.gov/accessibility/andi/help/install.html returns 403 Forbidden",
+      "selector": "#main-content > section:nth-of-type(4) > div > div:nth-of-type(6) > div > div:nth-of-type(1) > ul > li:nth-of-type(6) > a",
+      "elementHtml": "<a href=\"https://www.ssa.gov/accessibility/andi/help/install.html\">ANDI (Accessible Name &amp; Description Inspector)</a>",
+      "discoveredAt": "2026-04-07T03:34:35.650Z",
+      "pageUrl": "https://www.section508.gov/"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.gsa.gov/technology/government-it-initiatives/digital-strategy returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.gsa.gov/technology/government-it-initiatives/digital-strategy\">Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:34:35.650Z",
+      "pageUrl": "https://www.section508.gov/"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.cio.gov/about/members-and-leadership/accessibility-cop/ returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.cio.gov/about/members-and-leadership/accessibility-cop/\">CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:34:35.650Z",
+      "pageUrl": "https://www.section508.gov/"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.gsa.gov/technology/government-it-initiatives/digital-strategy returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.gsa.gov/technology/government-it-initiatives/digital-strategy\">Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:34:47.860Z",
+      "pageUrl": "https://www.section508.gov/contributors/"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.cio.gov/about/members-and-leadership/accessibility-cop/ returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.cio.gov/about/members-and-leadership/accessibility-cop/\">CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:34:47.860Z",
+      "pageUrl": "https://www.section508.gov/contributors/"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.gsa.gov/technology/government-it-initiatives/digital-strategy returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.gsa.gov/technology/government-it-initiatives/digital-strategy\">Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:35:00.529Z",
+      "pageUrl": "https://www.section508.gov/contributors/dhs.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.cio.gov/about/members-and-leadership/accessibility-cop/ returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.cio.gov/about/members-and-leadership/accessibility-cop/\">CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:35:00.529Z",
+      "pageUrl": "https://www.section508.gov/contributors/dhs.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.cio.gov/about/members-and-leadership/accessibility-cop/ returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.cio.gov/about/members-and-leadership/accessibility-cop/\">CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:35:09.508Z",
+      "pageUrl": "https://www.section508.gov/contributors/ed.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.gsa.gov/technology/government-it-initiatives/digital-strategy returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.gsa.gov/technology/government-it-initiatives/digital-strategy\">Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:35:09.508Z",
+      "pageUrl": "https://www.section508.gov/contributors/ed.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www2.ed.gov/about/landing.jhtml returns 404 Not Found",
+      "selector": "#main-content > div > div > main > div:nth-of-type(2) > p:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"https://www2.ed.gov/about/landing.jhtml\">https://www2.ed.gov/about/ (https://www2.ed.gov/about/landing.jhtml)</a>",
+      "discoveredAt": "2026-04-07T03:35:09.508Z",
+      "pageUrl": "https://www.section508.gov/contributors/ed.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.cio.gov/about/members-and-leadership/accessibility-cop/ returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.cio.gov/about/members-and-leadership/accessibility-cop/\">CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:35:23.521Z",
+      "pageUrl": "https://www.section508.gov/contributors/fcc.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.gsa.gov/technology/government-it-initiatives/digital-strategy returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.gsa.gov/technology/government-it-initiatives/digital-strategy\">Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:35:23.521Z",
+      "pageUrl": "https://www.section508.gov/contributors/fcc.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.cio.gov/about/members-and-leadership/accessibility-cop/ returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.cio.gov/about/members-and-leadership/accessibility-cop/\">CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:35:32.013Z",
+      "pageUrl": "https://www.section508.gov/contributors/fhwa.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.gsa.gov/technology/government-it-initiatives/digital-strategy returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.gsa.gov/technology/government-it-initiatives/digital-strategy\">Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:35:32.013Z",
+      "pageUrl": "https://www.section508.gov/contributors/fhwa.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://highways.dot.gov/about/about-fhwa returns 403 Forbidden",
+      "selector": "#main-content > div > div > main > div:nth-of-type(2) > p:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"https://highways.dot.gov/about/about-fhwa\">https://highways.dot.gov/about/about-fhwa (https://highways.dot.gov/about/about-</a>",
+      "discoveredAt": "2026-04-07T03:35:32.013Z",
+      "pageUrl": "https://www.section508.gov/contributors/fhwa.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.gsa.gov/technology/government-it-initiatives/digital-strategy returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.gsa.gov/technology/government-it-initiatives/digital-strategy\">Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:35:40.588Z",
+      "pageUrl": "https://www.section508.gov/contributors/frith-chet.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.cio.gov/about/members-and-leadership/accessibility-cop/ returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.cio.gov/about/members-and-leadership/accessibility-cop/\">CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:35:40.588Z",
+      "pageUrl": "https://www.section508.gov/contributors/frith-chet.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.cio.gov/about/members-and-leadership/accessibility-cop/ returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.cio.gov/about/members-and-leadership/accessibility-cop/\">CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:35:49.081Z",
+      "pageUrl": "https://www.section508.gov/contributors/gsa.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.gsa.gov/technology/government-it-initiatives/digital-strategy returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.gsa.gov/technology/government-it-initiatives/digital-strategy\">Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:35:49.081Z",
+      "pageUrl": "https://www.section508.gov/contributors/gsa.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.cio.gov/about/members-and-leadership/accessibility-cop/ returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.cio.gov/about/members-and-leadership/accessibility-cop/\">CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:35:57.827Z",
+      "pageUrl": "https://www.section508.gov/contributors/haileselassie.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.gsa.gov/technology/government-it-initiatives/digital-strategy returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.gsa.gov/technology/government-it-initiatives/digital-strategy\">Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:35:57.827Z",
+      "pageUrl": "https://www.section508.gov/contributors/haileselassie.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.cio.gov/about/members-and-leadership/accessibility-cop/ returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.cio.gov/about/members-and-leadership/accessibility-cop/\">CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:36:06.504Z",
+      "pageUrl": "https://www.section508.gov/contributors/hhs.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.gsa.gov/technology/government-it-initiatives/digital-strategy returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.gsa.gov/technology/government-it-initiatives/digital-strategy\">Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:36:06.504Z",
+      "pageUrl": "https://www.section508.gov/contributors/hhs.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.hhs.gov/about/index.html returns 403 Forbidden",
+      "selector": "#main-content > div > div > main > div:nth-of-type(2) > p:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"https://www.hhs.gov/about/index.html\">https://www.hhs.gov/about/ (https://www.hhs.gov/about/index.html)</a>",
+      "discoveredAt": "2026-04-07T03:36:06.504Z",
+      "pageUrl": "https://www.section508.gov/contributors/hhs.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.gsa.gov/technology/government-it-initiatives/digital-strategy returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.gsa.gov/technology/government-it-initiatives/digital-strategy\">Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:36:14.895Z",
+      "pageUrl": "https://www.section508.gov/contributors/lovley.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.cio.gov/about/members-and-leadership/accessibility-cop/ returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.cio.gov/about/members-and-leadership/accessibility-cop/\">CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:36:14.895Z",
+      "pageUrl": "https://www.section508.gov/contributors/lovley.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.gsa.gov/technology/government-it-initiatives/digital-strategy returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.gsa.gov/technology/government-it-initiatives/digital-strategy\">Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:36:23.552Z",
+      "pageUrl": "https://www.section508.gov/contributors/martin-beth.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.cio.gov/about/members-and-leadership/accessibility-cop/ returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.cio.gov/about/members-and-leadership/accessibility-cop/\">CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:36:23.552Z",
+      "pageUrl": "https://www.section508.gov/contributors/martin-beth.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.cio.gov/about/members-and-leadership/accessibility-cop/ returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.cio.gov/about/members-and-leadership/accessibility-cop/\">CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:36:32.279Z",
+      "pageUrl": "https://www.section508.gov/contributors/mcgland-denise.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.gsa.gov/technology/government-it-initiatives/digital-strategy returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.gsa.gov/technology/government-it-initiatives/digital-strategy\">Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:36:32.279Z",
+      "pageUrl": "https://www.section508.gov/contributors/mcgland-denise.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.cio.gov/about/members-and-leadership/accessibility-cop/ returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.cio.gov/about/members-and-leadership/accessibility-cop/\">CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:36:40.909Z",
+      "pageUrl": "https://www.section508.gov/contributors/nasa.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.gsa.gov/technology/government-it-initiatives/digital-strategy returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.gsa.gov/technology/government-it-initiatives/digital-strategy\">Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:36:40.909Z",
+      "pageUrl": "https://www.section508.gov/contributors/nasa.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.gsa.gov/technology/government-it-initiatives/digital-strategy returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.gsa.gov/technology/government-it-initiatives/digital-strategy\">Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:36:49.521Z",
+      "pageUrl": "https://www.section508.gov/contributors/opm.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.cio.gov/about/members-and-leadership/accessibility-cop/ returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.cio.gov/about/members-and-leadership/accessibility-cop/\">CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:36:49.521Z",
+      "pageUrl": "https://www.section508.gov/contributors/opm.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.opm.gov/about-us/our-mission-role-history/ returns 404 Not Found",
+      "selector": "#main-content > div > div > main > div:nth-of-type(2) > p:nth-of-type(3) > a",
+      "elementHtml": "<a href=\"https://www.opm.gov/about-us/our-mission-role-history/\">https://www.opm.gov/about-us/our-mission-role-history/ (https://www.opm.gov/abou</a>",
+      "discoveredAt": "2026-04-07T03:36:49.521Z",
+      "pageUrl": "https://www.section508.gov/contributors/opm.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.cio.gov/about/members-and-leadership/accessibility-cop/ returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.cio.gov/about/members-and-leadership/accessibility-cop/\">CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:36:58.146Z",
+      "pageUrl": "https://www.section508.gov/contributors/procter.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.gsa.gov/technology/government-it-initiatives/digital-strategy returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.gsa.gov/technology/government-it-initiatives/digital-strategy\">Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:36:58.146Z",
+      "pageUrl": "https://www.section508.gov/contributors/procter.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.gsa.gov/technology/government-it-initiatives/digital-strategy returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.gsa.gov/technology/government-it-initiatives/digital-strategy\">Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:37:07.063Z",
+      "pageUrl": "https://www.section508.gov/contributors/sirk.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.cio.gov/about/members-and-leadership/accessibility-cop/ returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.cio.gov/about/members-and-leadership/accessibility-cop/\">CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:37:07.063Z",
+      "pageUrl": "https://www.section508.gov/contributors/sirk.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.gsa.gov/technology/government-it-initiatives/digital-strategy returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.gsa.gov/technology/government-it-initiatives/digital-strategy\">Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:37:15.651Z",
+      "pageUrl": "https://www.section508.gov/contributors/smith-frances.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.cio.gov/about/members-and-leadership/accessibility-cop/ returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.cio.gov/about/members-and-leadership/accessibility-cop/\">CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:37:15.651Z",
+      "pageUrl": "https://www.section508.gov/contributors/smith-frances.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.gsa.gov/technology/government-it-initiatives/digital-strategy returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.gsa.gov/technology/government-it-initiatives/digital-strategy\">Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:37:24.164Z",
+      "pageUrl": "https://www.section508.gov/contributors/sweeney-kate.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.cio.gov/about/members-and-leadership/accessibility-cop/ returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.cio.gov/about/members-and-leadership/accessibility-cop/\">CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:37:24.164Z",
+      "pageUrl": "https://www.section508.gov/contributors/sweeney-kate.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.cio.gov/about/members-and-leadership/accessibility-cop/ returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.cio.gov/about/members-and-leadership/accessibility-cop/\">CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:37:33.032Z",
+      "pageUrl": "https://www.section508.gov/contributors/usab.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.gsa.gov/technology/government-it-initiatives/digital-strategy returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.gsa.gov/technology/government-it-initiatives/digital-strategy\">Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:37:33.032Z",
+      "pageUrl": "https://www.section508.gov/contributors/usab.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.cio.gov/about/members-and-leadership/accessibility-cop/ returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.cio.gov/about/members-and-leadership/accessibility-cop/\">CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:37:42.007Z",
+      "pageUrl": "https://www.section508.gov/contributors/usfs.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.gsa.gov/technology/government-it-initiatives/digital-strategy returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.gsa.gov/technology/government-it-initiatives/digital-strategy\">Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:37:42.007Z",
+      "pageUrl": "https://www.section508.gov/contributors/usfs.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.gsa.gov/technology/government-it-initiatives/digital-strategy returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.gsa.gov/technology/government-it-initiatives/digital-strategy\">Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:37:50.473Z",
+      "pageUrl": "https://www.section508.gov/contributors/va.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.cio.gov/about/members-and-leadership/accessibility-cop/ returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.cio.gov/about/members-and-leadership/accessibility-cop/\">CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:37:50.473Z",
+      "pageUrl": "https://www.section508.gov/contributors/va.html"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.cio.gov/about/members-and-leadership/accessibility-cop/ returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.cio.gov/about/members-and-leadership/accessibility-cop/\">CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:39:24.579Z",
+      "pageUrl": "https://www.section508.gov/event/3rd-annual-digital-accessibility-summit/"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.gsa.gov/technology/government-it-initiatives/digital-strategy returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.gsa.gov/technology/government-it-initiatives/digital-strategy\">Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:39:24.579Z",
+      "pageUrl": "https://www.section508.gov/event/3rd-annual-digital-accessibility-summit/"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.cio.gov/about/members-and-leadership/accessibility-cop/ returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.cio.gov/about/members-and-leadership/accessibility-cop/\">CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:39:00.547Z",
+      "pageUrl": "https://www.section508.gov/event/5th-annual-ict-accessibility-testing-symposium/"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.gsa.gov/technology/government-it-initiatives/digital-strategy returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.gsa.gov/technology/government-it-initiatives/digital-strategy\">Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:39:00.547Z",
+      "pageUrl": "https://www.section508.gov/event/5th-annual-ict-accessibility-testing-symposium/"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.cio.gov/about/members-and-leadership/accessibility-cop/ returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.cio.gov/about/members-and-leadership/accessibility-cop/\">CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:39:08.456Z",
+      "pageUrl": "https://www.section508.gov/event/forest-and-trees-scaling-enterprise-level-digital-accessibility/"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.gsa.gov/technology/government-it-initiatives/digital-strategy returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.gsa.gov/technology/government-it-initiatives/digital-strategy\">Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:39:08.456Z",
+      "pageUrl": "https://www.section508.gov/event/forest-and-trees-scaling-enterprise-level-digital-accessibility/"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.gsa.gov/technology/government-it-initiatives/digital-strategy returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.gsa.gov/technology/government-it-initiatives/digital-strategy\">Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:38:27.906Z",
+      "pageUrl": "https://www.section508.gov/event/it-accessibility-community-meetring/"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.cio.gov/about/members-and-leadership/accessibility-cop/ returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.cio.gov/about/members-and-leadership/accessibility-cop/\">CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:38:27.906Z",
+      "pageUrl": "https://www.section508.gov/event/it-accessibility-community-meetring/"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.gsa.gov/technology/government-it-initiatives/digital-strategy returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.gsa.gov/technology/government-it-initiatives/digital-strategy\">Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:38:52.484Z",
+      "pageUrl": "https://www.section508.gov/event/managing-projects-ensure-accessibility/"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.cio.gov/about/members-and-leadership/accessibility-cop/ returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.cio.gov/about/members-and-leadership/accessibility-cop/\">CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:38:52.484Z",
+      "pageUrl": "https://www.section508.gov/event/managing-projects-ensure-accessibility/"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.gsa.gov/technology/government-it-initiatives/digital-strategy returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.gsa.gov/technology/government-it-initiatives/digital-strategy\">Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:38:44.540Z",
+      "pageUrl": "https://www.section508.gov/event/reporting-accessibility-vpat-2-guide-vendors/"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.cio.gov/about/members-and-leadership/accessibility-cop/ returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.cio.gov/about/members-and-leadership/accessibility-cop/\">CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:38:44.540Z",
+      "pageUrl": "https://www.section508.gov/event/reporting-accessibility-vpat-2-guide-vendors/"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.gsa.gov/technology/government-it-initiatives/digital-strategy returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.gsa.gov/technology/government-it-initiatives/digital-strategy\">Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:38:19.798Z",
+      "pageUrl": "https://www.section508.gov/event/section-508-best-practices-webinars/"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.cio.gov/about/members-and-leadership/accessibility-cop/ returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.cio.gov/about/members-and-leadership/accessibility-cop/\">CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:38:19.798Z",
+      "pageUrl": "https://www.section508.gov/event/section-508-best-practices-webinars/"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.cio.gov/about/members-and-leadership/accessibility-cop/ returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.cio.gov/about/members-and-leadership/accessibility-cop/\">CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:38:36.147Z",
+      "pageUrl": "https://www.section508.gov/event/section-508-program-maturity-report/"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.gsa.gov/technology/government-it-initiatives/digital-strategy returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.gsa.gov/technology/government-it-initiatives/digital-strategy\">Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:38:36.147Z",
+      "pageUrl": "https://www.section508.gov/event/section-508-program-maturity-report/"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.congress.gov/bill/117th-congress/house-bill/2617 returns 403 Forbidden",
+      "selector": "#main-content > div > p:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.congress.gov/bill/117th-congress/house-bill/2617\">Consolidated Appropriations Act, 2023</a>",
+      "discoveredAt": "2026-04-07T03:38:36.147Z",
+      "pageUrl": "https://www.section508.gov/event/section-508-program-maturity-report/"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.gsa.gov/technology/government-it-initiatives/digital-strategy returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.gsa.gov/technology/government-it-initiatives/digital-strategy\">Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:39:16.423Z",
+      "pageUrl": "https://www.section508.gov/event/unmasking-accessibility-moving-beyond-band-aid-solution/"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.cio.gov/about/members-and-leadership/accessibility-cop/ returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.cio.gov/about/members-and-leadership/accessibility-cop/\">CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:39:16.423Z",
+      "pageUrl": "https://www.section508.gov/event/unmasking-accessibility-moving-beyond-band-aid-solution/"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.cio.gov/about/members-and-leadership/accessibility-cop/ returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.cio.gov/about/members-and-leadership/accessibility-cop/\">CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:38:01.983Z",
+      "pageUrl": "https://www.section508.gov/events/"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.gsa.gov/technology/government-it-initiatives/digital-strategy returns 404 Not Found",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.gsa.gov/technology/government-it-initiatives/digital-strategy\">Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:38:01.983Z",
+      "pageUrl": "https://www.section508.gov/events/"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:34:31.900Z",
+      "pageUrl": "https://www.section508.gov/"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:34:45.829Z",
+      "pageUrl": "https://www.section508.gov/contributors/"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:34:59.217Z",
+      "pageUrl": "https://www.section508.gov/contributors/dhs.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:35:07.827Z",
+      "pageUrl": "https://www.section508.gov/contributors/ed.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:35:16.894Z",
+      "pageUrl": "https://www.section508.gov/contributors/fcc.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:35:30.800Z",
+      "pageUrl": "https://www.section508.gov/contributors/fhwa.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:35:39.261Z",
+      "pageUrl": "https://www.section508.gov/contributors/frith-chet.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:35:47.830Z",
+      "pageUrl": "https://www.section508.gov/contributors/gsa.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:35:56.387Z",
+      "pageUrl": "https://www.section508.gov/contributors/haileselassie.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:36:05.309Z",
+      "pageUrl": "https://www.section508.gov/contributors/hhs.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:36:13.671Z",
+      "pageUrl": "https://www.section508.gov/contributors/lovley.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:36:22.187Z",
+      "pageUrl": "https://www.section508.gov/contributors/martin-beth.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:36:30.997Z",
+      "pageUrl": "https://www.section508.gov/contributors/mcgland-denise.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:36:39.503Z",
+      "pageUrl": "https://www.section508.gov/contributors/nasa.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:36:48.258Z",
+      "pageUrl": "https://www.section508.gov/contributors/opm.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:36:56.718Z",
+      "pageUrl": "https://www.section508.gov/contributors/procter.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:37:05.524Z",
+      "pageUrl": "https://www.section508.gov/contributors/sirk.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:37:14.464Z",
+      "pageUrl": "https://www.section508.gov/contributors/smith-frances.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:37:22.855Z",
+      "pageUrl": "https://www.section508.gov/contributors/sweeney-kate.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:37:31.584Z",
+      "pageUrl": "https://www.section508.gov/contributors/usab.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:37:40.679Z",
+      "pageUrl": "https://www.section508.gov/contributors/usfs.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:37:49.251Z",
+      "pageUrl": "https://www.section508.gov/contributors/va.html"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:39:23.307Z",
+      "pageUrl": "https://www.section508.gov/event/3rd-annual-digital-accessibility-summit/"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:38:59.374Z",
+      "pageUrl": "https://www.section508.gov/event/5th-annual-ict-accessibility-testing-symposium/"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:39:07.291Z",
+      "pageUrl": "https://www.section508.gov/event/forest-and-trees-scaling-enterprise-level-digital-accessibility/"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:38:26.705Z",
+      "pageUrl": "https://www.section508.gov/event/it-accessibility-community-meetring/"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:38:51.334Z",
+      "pageUrl": "https://www.section508.gov/event/managing-projects-ensure-accessibility/"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:38:43.232Z",
+      "pageUrl": "https://www.section508.gov/event/reporting-accessibility-vpat-2-guide-vendors/"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:38:18.641Z",
+      "pageUrl": "https://www.section508.gov/event/section-508-best-practices-webinars/"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:38:34.905Z",
+      "pageUrl": "https://www.section508.gov/event/section-508-program-maturity-report/"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:39:15.286Z",
+      "pageUrl": "https://www.section508.gov/event/unmasking-accessibility-moving-beyond-band-aid-solution/"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:37:57.683Z",
+      "pageUrl": "https://www.section508.gov/events/"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#contributor-tab",
+      "elementHtml": "<div id=\"contributor-tab\" class=\"contribs-tab\">",
+      "discoveredAt": "2026-04-07T03:34:45.924Z",
+      "pageUrl": "https://www.section508.gov/contributors/"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Document should have one main landmark: Fix all of the following:\n  Document does not have a main landmark",
+      "selector": "html",
+      "elementHtml": "<html lang=\"en\" class=\"\">",
+      "discoveredAt": "2026-04-07T03:34:45.924Z",
+      "pageUrl": "https://www.section508.gov/contributors/"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#main-content > p:nth-child(1)",
+      "elementHtml": "<p>This site includes content developed in collaboration with other agencies and/or content that is directly contributed by members of the federal IT accessibility community. Our growning list of cont...",
+      "discoveredAt": "2026-04-07T03:34:45.924Z",
+      "pageUrl": "https://www.section508.gov/contributors/"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#main-content > p:nth-child(2)",
+      "elementHtml": "<p>We welcome any feedback and suggestions for improvement. We also welcome suggestions for new content and updates to existing content. If you have suggestions, or if you are interested in contributi...",
+      "discoveredAt": "2026-04-07T03:34:45.924Z",
+      "pageUrl": "https://www.section508.gov/contributors/"
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Acronyms & Abbreviations\" is visually at position 35 but receives focus at position 79 (drift: 44).",
+      "selector": "footer > div > div > div:nth-of-type(4) > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a>Acronyms & Abbreviations</a>",
+      "discoveredAt": "2026-04-07T03:34:41.191Z",
+      "pageUrl": "https://www.section508.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"ACR Library\" is visually at position 24 but receives focus at position 78 (drift: 54).",
+      "selector": "footer > div > div > div:nth-of-type(4) > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a>ACR Library</a>",
+      "discoveredAt": "2026-04-07T03:34:41.191Z",
+      "pageUrl": "https://www.section508.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Find Your Section 508 Program Manager\" is visually at position 44 but receives focus at position 75 (drift: 31).",
+      "selector": "footer > div > div > div:nth-of-type(3) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a>Find Your Section 508 Program Manager</a>",
+      "discoveredAt": "2026-04-07T03:34:41.191Z",
+      "pageUrl": "https://www.section508.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"SRT\" is visually at position 34 but receives focus at position 74 (drift: 40).",
+      "selector": "footer > div > div > div:nth-of-type(3) > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a>SRT</a>",
+      "discoveredAt": "2026-04-07T03:34:41.191Z",
+      "pageUrl": "https://www.section508.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Join the Community (Listserv)\" is visually at position 43 but receives focus at position 71 (drift: 28).",
+      "selector": "footer > div > div > div:nth-of-type(2) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a>Join the Community (Listserv)</a>",
+      "discoveredAt": "2026-04-07T03:34:41.191Z",
+      "pageUrl": "https://www.section508.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Contributors\" is visually at position 32 but receives focus at position 70 (drift: 38).",
+      "selector": "footer > div > div > div:nth-of-type(2) > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a>Contributors</a>",
+      "discoveredAt": "2026-04-07T03:34:41.191Z",
+      "pageUrl": "https://www.section508.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Meetings\" is visually at position 71 but receives focus at position 42 (drift: 29).",
+      "selector": "#main-content > section:nth-of-type(4) > div > div:nth-of-type(3) > div > div:nth-of-type(1) > ul > li:nth-of-type(6) > a",
+      "elementHtml": "<a>Meetings</a>",
+      "discoveredAt": "2026-04-07T03:34:41.191Z",
+      "pageUrl": "https://www.section508.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"What's New on Section508.gov?\" is visually at position 92 but receives focus at position 55 (drift: 37).",
+      "selector": "#main-content > section:nth-of-type(4) > div > div:nth-of-type(6) > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a>What's New on Section508.gov?</a>",
+      "discoveredAt": "2026-04-07T03:34:41.191Z",
+      "pageUrl": "https://www.section508.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Glossary of Terms\" is visually at position 45 but receives focus at position 80 (drift: 35).",
+      "selector": "footer > div > div > div:nth-of-type(4) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a>Glossary of Terms</a>",
+      "discoveredAt": "2026-04-07T03:34:41.191Z",
+      "pageUrl": "https://www.section508.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"CIO Council Accessibility Community of Practice\" is visually at position 36 but receives focus at position 67 (drift: 31).",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a>CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:34:41.191Z",
+      "pageUrl": "https://www.section508.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"General Services Administration\" is visually at position 24 but receives focus at position 46 (drift: 22).",
+      "selector": "div:nth-of-type(2) > section:nth-of-type(1) > div > div:nth-of-type(2) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>General Services Administration</a>",
+      "discoveredAt": "2026-04-07T03:34:51.006Z",
+      "pageUrl": "https://www.section508.gov/contributors/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"About GSA\" is visually at position 30 but receives focus at position 47 (drift: 17).",
+      "selector": "div:nth-of-type(2) > nav > div > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a>About GSA</a>",
+      "discoveredAt": "2026-04-07T03:34:51.006Z",
+      "pageUrl": "https://www.section508.gov/contributors/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Office of the Inspector General\" is visually at position 32 but receives focus at position 51 (drift: 19).",
+      "selector": "div:nth-of-type(2) > nav > div > ul > li:nth-of-type(5) > a",
+      "elementHtml": "<a>Office of the Inspector General</a>",
+      "discoveredAt": "2026-04-07T03:34:51.006Z",
+      "pageUrl": "https://www.section508.gov/contributors/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"ACR Library\" is visually at position 19 but receives focus at position 39 (drift: 20).",
+      "selector": "footer > div > div > div:nth-of-type(4) > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a>ACR Library</a>",
+      "discoveredAt": "2026-04-07T03:37:10.039Z",
+      "pageUrl": "https://www.section508.gov/contributors/sirk.html",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Accessibility Playbooks\" is visually at position 18 but receives focus at position 38 (drift: 20).",
+      "selector": "footer > div > div > div:nth-of-type(4) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a>Accessibility Playbooks</a>",
+      "discoveredAt": "2026-04-07T03:37:10.039Z",
+      "pageUrl": "https://www.section508.gov/contributors/sirk.html",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Contributors\" is visually at position 47 but receives focus at position 31 (drift: 16).",
+      "selector": "footer > div > div > div:nth-of-type(2) > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a>Contributors</a>",
+      "discoveredAt": "2026-04-07T03:37:10.039Z",
+      "pageUrl": "https://www.section508.gov/contributors/sirk.html",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Contributors\" is visually at position 43 but receives focus at position 27 (drift: 16).",
+      "selector": "footer > div > div > div:nth-of-type(2) > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a>Contributors</a>",
+      "discoveredAt": "2026-04-07T03:37:26.937Z",
+      "pageUrl": "https://www.section508.gov/contributors/sweeney-kate.html",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Accessibility Playbooks\" is visually at position 18 but receives focus at position 34 (drift: 16).",
+      "selector": "footer > div > div > div:nth-of-type(4) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a>Accessibility Playbooks</a>",
+      "discoveredAt": "2026-04-07T03:37:26.937Z",
+      "pageUrl": "https://www.section508.gov/contributors/sweeney-kate.html",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"ACR Library\" is visually at position 19 but receives focus at position 35 (drift: 16).",
+      "selector": "footer > div > div > div:nth-of-type(4) > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a>ACR Library</a>",
+      "discoveredAt": "2026-04-07T03:37:26.937Z",
+      "pageUrl": "https://www.section508.gov/contributors/sweeney-kate.html",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"DHS Trusted Tester Process & Certification Program (https://www.section508.gov/t\" is visually at position 44 but receives focus at position 25 (drift: 19).",
+      "selector": "#main-content > div > div > main > ul > li:nth-of-type(7) > a",
+      "elementHtml": "<a>DHS Trusted Tester Process & Certification Program (https://www.section508.gov/t</a>",
+      "discoveredAt": "2026-04-07T03:37:36.184Z",
+      "pageUrl": "https://www.section508.gov/contributors/usab.html",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Section508.gov/events/\" is visually at position 41 but receives focus at position 15 (drift: 26).",
+      "selector": "#main-content > div > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Section508.gov/events/</a>",
+      "discoveredAt": "2026-04-07T03:38:30.411Z",
+      "pageUrl": "https://www.section508.gov/event/it-accessibility-community-meetring/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Plain Language\" is visually at position 45 but receives focus at position 18 (drift: 27).",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a>Plain Language</a>",
+      "discoveredAt": "2026-04-07T03:38:38.768Z",
+      "pageUrl": "https://www.section508.gov/event/section-508-program-maturity-report/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Digital Strategy\" is visually at position 43 but receives focus at position 17 (drift: 26).",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a>Digital Strategy</a>",
+      "discoveredAt": "2026-04-07T03:38:38.768Z",
+      "pageUrl": "https://www.section508.gov/event/section-508-program-maturity-report/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Governmentwide Section 508 Assessment\" is visually at position 33 but receives focus at position 16 (drift: 17).",
+      "selector": "#main-content > div > p:nth-of-type(2) > a",
+      "elementHtml": "<a>Governmentwide Section 508 Assessment</a>",
+      "discoveredAt": "2026-04-07T03:38:38.768Z",
+      "pageUrl": "https://www.section508.gov/event/section-508-program-maturity-report/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Section 508 Tools\" is visually at position 163 but receives focus at position 24 (drift: 139).",
+      "selector": "#sec-nav > ul > li:nth-of-type(9) > a",
+      "elementHtml": "<a>Section 508 Tools</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Read more (https://www.section508.gov/event/gwaa-demo-12june2024/)\" is visually at position 143 but receives focus at position 68 (drift: 75).",
+      "selector": "#content-section > div > div:nth-of-type(24) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/gwaa-demo-12june2024/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"IAAF Archives\" is visually at position 139 but receives focus at position 22 (drift: 117).",
+      "selector": "#sec-nav > ul > li:nth-of-type(7) > a",
+      "elementHtml": "<a>IAAF Archives</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Presentations and Workshop Materials\" is visually at position 155 but receives focus at position 23 (drift: 132).",
+      "selector": "#sec-nav > ul > li:nth-of-type(8) > a",
+      "elementHtml": "<a>Presentations and Workshop Materials</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Read more (https://www.section508.gov/iaaf/)\" is visually at position 149 but receives focus at position 26 (drift: 123).",
+      "selector": "#content-section > div > div:nth-of-type(1) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/iaaf/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Accessible Data Tables in Electronic Documents | ITACM (https://www.section508.g\" is visually at position 194 but receives focus at position 69 (drift: 125).",
+      "selector": "#content-section > div > div:nth-of-type(25) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>Accessible Data Tables in Electronic Documents | ITACM (https://www.section508.g</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"IAAF\" is visually at position 113 but receives focus at position 21 (drift: 92).",
+      "selector": "#sec-nav > ul > li:nth-of-type(6) > a",
+      "elementHtml": "<a>IAAF</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Leveraging ServiceNow for Section 508 Compliance at FDIC | ITACM (https://www.se\" is visually at position 160 but receives focus at position 37 (drift: 123).",
+      "selector": "#content-section > div > div:nth-of-type(9) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>Leveraging ServiceNow for Section 508 Compliance at FDIC | ITACM (https://www.se</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Highlights from the Fiscal Year 2025 Governmentwide Section 508 Assessment | Web\" is visually at position 159 but receives focus at position 33 (drift: 126).",
+      "selector": "#content-section > div > div:nth-of-type(7) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>Highlights from the Fiscal Year 2025 Governmentwide Section 508 Assessment | Web</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Read more (https://www.section508.gov/event/section-508-best-practices-webinars/\" is visually at position 104 but receives focus at position 32 (drift: 72).",
+      "selector": "#content-section > div > div:nth-of-type(5) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/section-508-best-practices-webinars/</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"IT Accessibility Community Meeting (ITACM) (https://www.section508.gov/event/it-\" is visually at position 114 but receives focus at position 29 (drift: 85).",
+      "selector": "#content-section > div > div:nth-of-type(4) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>IT Accessibility Community Meeting (ITACM) (https://www.section508.gov/event/it-</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Read more (https://www.section508.gov/event/it-accessibility-community-meetring/\" is visually at position 189 but receives focus at position 30 (drift: 159).",
+      "selector": "#content-section > div > div:nth-of-type(4) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/it-accessibility-community-meetring/</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Read more (https://www.section508.gov/event/usda-oct2025/)\" is visually at position 146 but receives focus at position 40 (drift: 106).",
+      "selector": "#content-section > div > div:nth-of-type(10) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/usda-oct2025/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"M-24-08 Strengthening Digital Accessibility and the Management of Section 508 of\" is visually at position 168 but receives focus at position 73 (drift: 95).",
+      "selector": "#content-section > div > div:nth-of-type(27) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>M-24-08 Strengthening Digital Accessibility and the Management of Section 508 of</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Events\" is visually at position 108 but receives focus at position 20 (drift: 88).",
+      "selector": "#sec-nav > ul > li:nth-of-type(5) > a",
+      "elementHtml": "<a>Events</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Read more (https://www.section508.gov/event/section-508-program-maturity-report/\" is visually at position 103 but receives focus at position 28 (drift: 75).",
+      "selector": "#content-section > div > div:nth-of-type(3) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/section-508-program-maturity-report/</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Read more (https://www.section508.gov/event/itacm-feb2026/)\" is visually at position 144 but receives focus at position 36 (drift: 108).",
+      "selector": "#content-section > div > div:nth-of-type(8) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/itacm-feb2026/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Training Videos Library\" is visually at position 107 but receives focus at position 19 (drift: 88).",
+      "selector": "#sec-nav > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a>Training Videos Library</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Beyond Section 508 Digital Accessibility Requirements: An Overview of Web Access\" is visually at position 156 but receives focus at position 53 (drift: 103).",
+      "selector": "#content-section > div > div:nth-of-type(17) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>Beyond Section 508 Digital Accessibility Requirements: An Overview of Web Access</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Section 508 Assessment Office Hours #5 | May 14, 2024 (https://www.section508.go\" is visually at position 169 but receives focus at position 77 (drift: 92).",
+      "selector": "#content-section > div > div:nth-of-type(29) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>Section 508 Assessment Office Hours #5 | May 14, 2024 (https://www.section508.go</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"IT Accessibility Key Performance Indicators (KPIs) | ITACM (https://www.section5\" is visually at position 165 but receives focus at position 45 (drift: 120).",
+      "selector": "#content-section > div > div:nth-of-type(13) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>IT Accessibility Key Performance Indicators (KPIs) | ITACM (https://www.section5</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Read more (https://www.section508.gov/event/gwaa-office-hours-4june2024/)\" is visually at position 133 but receives focus at position 72 (drift: 61).",
+      "selector": "#content-section > div > div:nth-of-type(26) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/gwaa-office-hours-4june2024/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Integrating Section 508 into the ATO Process | ITACM (https://www.section508.gov\" is visually at position 192 but receives focus at position 41 (drift: 151).",
+      "selector": "#content-section > div > div:nth-of-type(11) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>Integrating Section 508 into the ATO Process | ITACM (https://www.section508.gov</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Read more (https://www.section508.gov/event/best-practices-webinar-jul2025/)\" is visually at position 130 but receives focus at position 44 (drift: 86).",
+      "selector": "#content-section > div > div:nth-of-type(12) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/best-practices-webinar-jul2025/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Read more (https://www.section508.gov/event/best-practices-webinar-jan2025/)\" is visually at position 148 but receives focus at position 48 (drift: 100).",
+      "selector": "#content-section > div > div:nth-of-type(14) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/best-practices-webinar-jan2025/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Essential Strategies for Creating Accessible Social Media Content | Webinar (htt\" is visually at position 166 but receives focus at position 49 (drift: 117).",
+      "selector": "#content-section > div > div:nth-of-type(15) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>Essential Strategies for Creating Accessible Social Media Content | Webinar (htt</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Read more (https://www.section508.gov/event/itacm-aug2024/)\" is visually at position 137 but receives focus at position 52 (drift: 85).",
+      "selector": "#content-section > div > div:nth-of-type(16) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/itacm-aug2024/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Read more (https://www.section508.gov/event/gwaa-office-hours-24July2024/)\" is visually at position 131 but receives focus at position 56 (drift: 75).",
+      "selector": "#content-section > div > div:nth-of-type(18) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/gwaa-office-hours-24July2024/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Section 508 Assessment Submission Tool Demo #3 | July 23, 2024 (https://www.sect\" is visually at position 161 but receives focus at position 57 (drift: 104).",
+      "selector": "#content-section > div > div:nth-of-type(19) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>Section 508 Assessment Submission Tool Demo #3 | July 23, 2024 (https://www.sect</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Read more (https://www.section508.gov/event/gwaa-office-hours-18july2024/)\" is visually at position 132 but receives focus at position 60 (drift: 72).",
+      "selector": "#content-section > div > div:nth-of-type(20) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/gwaa-office-hours-18july2024/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Section 508 Assessment Office Hours #9 | July 11, 2024 (https://www.section508.g\" is visually at position 167 but receives focus at position 61 (drift: 106).",
+      "selector": "#content-section > div > div:nth-of-type(21) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>Section 508 Assessment Office Hours #9 | July 11, 2024 (https://www.section508.g</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Read more (https://www.section508.gov/event/gwaa-demo-25june2024/)\" is visually at position 142 but receives focus at position 64 (drift: 78).",
+      "selector": "#content-section > div > div:nth-of-type(22) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/gwaa-demo-25june2024/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Section 508 Assessment Office Hours #8 | June 17, 2024 (https://www.section508.g\" is visually at position 193 but receives focus at position 65 (drift: 128).",
+      "selector": "#content-section > div > div:nth-of-type(23) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>Section 508 Assessment Office Hours #8 | June 17, 2024 (https://www.section508.g</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Section 508 Assessment Office Hours #3 | April 30, 2024 (https://www.section508.\" is visually at position 170 but receives focus at position 81 (drift: 89).",
+      "selector": "#content-section > div > div:nth-of-type(31) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>Section 508 Assessment Office Hours #3 | April 30, 2024 (https://www.section508.</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Section 508 Assessment Office Hours #1 | April 17, 2024 (https://www.section508.\" is visually at position 171 but receives focus at position 85 (drift: 86).",
+      "selector": "#content-section > div > div:nth-of-type(33) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>Section 508 Assessment Office Hours #1 | April 17, 2024 (https://www.section508.</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"GSA and the U.S. Access Board to Present at the CSUN Assistive Technology Confer\" is visually at position 172 but receives focus at position 89 (drift: 83).",
+      "selector": "#content-section > div > div:nth-of-type(35) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>GSA and the U.S. Access Board to Present at the CSUN Assistive Technology Confer</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Introduciton to the IT Accessibility Policy Framework | ITACM (https://www.secti\" is visually at position 173 but receives focus at position 93 (drift: 80).",
+      "selector": "#content-section > div > div:nth-of-type(37) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>Introduciton to the IT Accessibility Policy Framework | ITACM (https://www.secti</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Maps for All – Building Accessible Maps | Webinar (https://www.section508.gov/ev\" is visually at position 195 but receives focus at position 97 (drift: 98).",
+      "selector": "#content-section > div > div:nth-of-type(39) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>Maps for All – Building Accessible Maps | Webinar (https://www.section508.gov/ev</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Read more (https://www.section508.gov/event/best-practices-webinar-sep2023/)\" is visually at position 25 but receives focus at position 98 (drift: 73).",
+      "selector": "#content-section > div > div:nth-of-type(39) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/best-practices-webinar-sep2023/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Section 508 Assessment Office Hours #16 | August 7, 2023 (https://www.section508\" is visually at position 174 but receives focus at position 101 (drift: 73).",
+      "selector": "#content-section > div > div:nth-of-type(41) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>Section 508 Assessment Office Hours #16 | August 7, 2023 (https://www.section508</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Read more (https://www.section508.gov/event/gwaa-office-hours-7aug2023/)\" is visually at position 35 but receives focus at position 102 (drift: 67).",
+      "selector": "#content-section > div > div:nth-of-type(41) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/gwaa-office-hours-7aug2023/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Section 508 Assessment Office Hours #14 | July 27, 2023 (https://www.section508.\" is visually at position 175 but receives focus at position 105 (drift: 70).",
+      "selector": "#content-section > div > div:nth-of-type(43) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>Section 508 Assessment Office Hours #14 | July 27, 2023 (https://www.section508.</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Read more (https://www.section508.gov/event/gwaa-office-hours-27july2023/)\" is visually at position 36 but receives focus at position 106 (drift: 70).",
+      "selector": "#content-section > div > div:nth-of-type(43) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/gwaa-office-hours-27july2023/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Section 508 Assessment Office Hours #12 | July 10, 2023 (https://www.section508.\" is visually at position 176 but receives focus at position 109 (drift: 67).",
+      "selector": "#content-section > div > div:nth-of-type(45) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>Section 508 Assessment Office Hours #12 | July 10, 2023 (https://www.section508.</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Read more (https://www.section508.gov/event/gwaa-office-hours-10july2023/)\" is visually at position 37 but receives focus at position 110 (drift: 73).",
+      "selector": "#content-section > div > div:nth-of-type(45) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/gwaa-office-hours-10july2023/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Section 508 Assessment Office Hours #12 | June 21, 2023 (https://www.section508.\" is visually at position 177 but receives focus at position 113 (drift: 64).",
+      "selector": "#content-section > div > div:nth-of-type(47) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>Section 508 Assessment Office Hours #12 | June 21, 2023 (https://www.section508.</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Read more (https://www.section508.gov/event/gwaa-office-hours-21june2023/)\" is visually at position 38 but receives focus at position 114 (drift: 76).",
+      "selector": "#content-section > div > div:nth-of-type(47) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/gwaa-office-hours-21june2023/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Section 508 Assessment Office Hours #10 | June 6, 2023 (https://www.section508.g\" is visually at position 178 but receives focus at position 117 (drift: 61).",
+      "selector": "#content-section > div > div:nth-of-type(49) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>Section 508 Assessment Office Hours #10 | June 6, 2023 (https://www.section508.g</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Read more (https://www.section508.gov/event/gwaa-office-hours-06june2023/)\" is visually at position 39 but receives focus at position 118 (drift: 79).",
+      "selector": "#content-section > div > div:nth-of-type(49) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/gwaa-office-hours-06june2023/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Read more (https://www.section508.gov/event/gwaa-office-hours-19may2023/)\" is visually at position 40 but receives focus at position 122 (drift: 82).",
+      "selector": "#content-section > div > div:nth-of-type(51) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/gwaa-office-hours-19may2023/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Read more (https://www.section508.gov/event/gwaa-office-hours-01may2023/)\" is visually at position 41 but receives focus at position 126 (drift: 85).",
+      "selector": "#content-section > div > div:nth-of-type(53) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/gwaa-office-hours-01may2023/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Read more (https://www.section508.gov/event/itacm-apr2023/)\" is visually at position 60 but receives focus at position 130 (drift: 70).",
+      "selector": "#content-section > div > div:nth-of-type(55) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/itacm-apr2023/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Read more (https://www.section508.gov/event/gwaa-office-hours-18apr2023/)\" is visually at position 42 but receives focus at position 134 (drift: 92).",
+      "selector": "#content-section > div > div:nth-of-type(57) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/gwaa-office-hours-18apr2023/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Read more (https://www.section508.gov/event/gwaa-office-hours-11apr2023/)\" is visually at position 43 but receives focus at position 138 (drift: 95).",
+      "selector": "#content-section > div > div:nth-of-type(59) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/gwaa-office-hours-11apr2023/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Read more (https://www.section508.gov/event/itacm-dec2022/)\" is visually at position 51 but receives focus at position 142 (drift: 91).",
+      "selector": "#content-section > div > div:nth-of-type(61) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/itacm-dec2022/)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Be The Change In Accessibility: Policy & Management | ITACM (https://www.section\" is visually at position 26 but receives focus at position 145 (drift: 119).",
+      "selector": "#content-section > div > div:nth-of-type(63) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>Be The Change In Accessibility: Policy & Management | ITACM (https://www.section</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Be The Change In Accessibility: Acquisition | ITACM (https://www.section508.gov/\" is visually at position 27 but receives focus at position 149 (drift: 122).",
+      "selector": "#content-section > div > div:nth-of-type(65) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>Be The Change In Accessibility: Acquisition | ITACM (https://www.section508.gov/</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Section 508 – A Celebration of Twenty Years (https://www.section508.gov/event/be\" is visually at position 28 but receives focus at position 153 (drift: 125).",
+      "selector": "#content-section > div > div:nth-of-type(67) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>Section 508 – A Celebration of Twenty Years (https://www.section508.gov/event/be</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Unmasking Accessibility - Moving Beyond a Band-Aid Solution (https://www.section\" is visually at position 29 but receives focus at position 157 (drift: 128).",
+      "selector": "#content-section > div > div:nth-of-type(69) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>Unmasking Accessibility - Moving Beyond a Band-Aid Solution (https://www.section</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Read more (https://www.section508.gov/event/unmasking-accessibility-moving-beyon\" is visually at position 69 but receives focus at position 158 (drift: 89).",
+      "selector": "#content-section > div > div:nth-of-type(69) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/unmasking-accessibility-moving-beyon</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"The 5th Annual ICT Accessibility Testing Symposium (https://www.section508.gov/e\" is visually at position 30 but receives focus at position 161 (drift: 131).",
+      "selector": "#content-section > div > div:nth-of-type(71) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>The 5th Annual ICT Accessibility Testing Symposium (https://www.section508.gov/e</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Reporting Accessibility with VPAT® 2 - A Guide for Vendors (https://www.section5\" is visually at position 31 but receives focus at position 165 (drift: 134).",
+      "selector": "#content-section > div > div:nth-of-type(73) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>Reporting Accessibility with VPAT® 2 - A Guide for Vendors (https://www.section5</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Read more (https://www.section508.gov/event/reporting-accessibility-vpat-2-guide\" is visually at position 101 but receives focus at position 166 (drift: 65).",
+      "selector": "#content-section > div > div:nth-of-type(73) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Read more (https://www.section508.gov/event/reporting-accessibility-vpat-2-guide</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"CIO Council Accessibility Community of Practice\" is visually at position 63 but receives focus at position 170 (drift: 107).",
+      "selector": "footer > div > div > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a>CIO Council Accessibility Community of Practice</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"About Us\" is visually at position 16 but receives focus at position 171 (drift: 155).",
+      "selector": "footer > div > div > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a>About Us</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Contact Us\" is visually at position 19 but receives focus at position 172 (drift: 153).",
+      "selector": "footer > div > div > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a>Contact Us</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Contributors\" is visually at position 32 but receives focus at position 173 (drift: 141).",
+      "selector": "footer > div > div > div:nth-of-type(2) > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a>Contributors</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Join the Community (Listserv)\" is visually at position 64 but receives focus at position 174 (drift: 110).",
+      "selector": "footer > div > div > div:nth-of-type(2) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a>Join the Community (Listserv)</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"ART\" is visually at position 17 but receives focus at position 175 (drift: 158).",
+      "selector": "footer > div > div > div:nth-of-type(3) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a>ART</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"ACR Editor\" is visually at position 20 but receives focus at position 176 (drift: 156).",
+      "selector": "footer > div > div > div:nth-of-type(3) > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a>ACR Editor</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"SRT\" is visually at position 57 but receives focus at position 177 (drift: 120).",
+      "selector": "footer > div > div > div:nth-of-type(3) > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a>SRT</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Find Your Section 508 Program Manager\" is visually at position 65 but receives focus at position 178 (drift: 113).",
+      "selector": "footer > div > div > div:nth-of-type(3) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a>Find Your Section 508 Program Manager</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Content Library\" is visually at position 106 but receives focus at position 179 (drift: 73).",
+      "selector": "footer > div > div > div:nth-of-type(3) > ul > li:nth-of-type(5) > a",
+      "elementHtml": "<a>Content Library</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Accessibility Playbooks\" is visually at position 18 but receives focus at position 180 (drift: 162).",
+      "selector": "footer > div > div > div:nth-of-type(4) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a>Accessibility Playbooks</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"ACR Library\" is visually at position 21 but receives focus at position 181 (drift: 160).",
+      "selector": "footer > div > div > div:nth-of-type(4) > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a>ACR Library</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Acronyms & Abbreviations\" is visually at position 59 but receives focus at position 182 (drift: 123).",
+      "selector": "footer > div > div > div:nth-of-type(4) > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a>Acronyms & Abbreviations</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Glossary of Terms\" is visually at position 66 but receives focus at position 183 (drift: 117).",
+      "selector": "footer > div > div > div:nth-of-type(4) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a>Glossary of Terms</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Website Policies\" is visually at position 67 but receives focus at position 184 (drift: 117).",
+      "selector": "footer > div > div > div:nth-of-type(4) > ul > li:nth-of-type(5) > a",
+      "elementHtml": "<a>Website Policies</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"div:nth-of-type(2) > section:nth-of-type(1) > div > div:nth-of-type(1) > a\" is visually at position 109 but receives focus at position 185 (drift: 76).",
+      "selector": "div:nth-of-type(2) > section:nth-of-type(1) > div > div:nth-of-type(1) > a",
+      "elementHtml": "<a></a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"General Services Administration\" is visually at position 119 but receives focus at position 186 (drift: 67).",
+      "selector": "div:nth-of-type(2) > section:nth-of-type(1) > div > div:nth-of-type(2) > p:nth-of-type(2) > a",
+      "elementHtml": "<a>General Services Administration</a>",
+      "discoveredAt": "2026-04-07T03:38:12.509Z",
+      "pageUrl": "https://www.section508.gov/events/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    }
+  ]
+}

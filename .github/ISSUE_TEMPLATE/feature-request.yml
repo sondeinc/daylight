@@ -1,0 +1,21 @@
+name: Feature Request
+description: Suggest an improvement to Daylight
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What would you like?
+      description: Describe the feature or improvement
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why would this help?
+      description: >
+        How would this make Daylight more useful? Who would benefit?
+    validations:
+      required: false

@@ -1,0 +1,2962 @@
+{
+  "url": "https://kingcounty.gov",
+  "slug": "kingcounty-gov",
+  "status": "complete",
+  "scanDate": "2026-04-07T10:45:18.414Z",
+  "scanConfig": {
+    "scope": "site",
+    "maxPages": 50,
+    "racks": [
+      "rack-live-a11y",
+      "rack-live-free"
+    ],
+    "individualProbes": [],
+    "excludedProbes": [],
+    "timeBudgetMs": 300000,
+    "maxFindings": null
+  },
+  "sondeScore": {
+    "score": 939,
+    "rawPenalty": 931.5,
+    "normalizedPenalty": 49.026315789473685,
+    "pagesScanned": 19,
+    "weightsVersion": "v0.1"
+  },
+  "avgFindingsPerPage": 25.2,
+  "elementComplianceRate": 99.5,
+  "totalElements": 26039,
+  "elementsWithFindings": 118,
+  "complianceSummary": {
+    "total": 478,
+    "byLevel": {},
+    "bySeverity": {
+      "critical": 37,
+      "high": 82,
+      "medium": 301,
+      "low": 58
+    },
+    "byCriterion": {
+      "WCAG 1.4.3": 7,
+      "wcag2a": 5,
+      "wcag2aa": 1,
+      "WCAG 2.4.3": 62,
+      "WCAG 4.1.3": 21,
+      "WCAG 1.4.12": 6,
+      "WCAG 1.4.10": 1
+    }
+  },
+  "summary": {
+    "pagesAnalyzed": 19,
+    "pagesFailed": 0,
+    "totalFindings": 478,
+    "bySeverity": {
+      "critical": 37,
+      "high": 82,
+      "medium": 301,
+      "low": 58
+    },
+    "byProbe": {},
+    "byType": {},
+    "durationMs": 312591
+  },
+  "jurisdiction": "WA",
+  "entityName": "King County (WA)",
+  "findings": [
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 3:1 for large text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"expand_more\"",
+      "selector": "#heroScrollTo",
+      "elementHtml": "<span tabindex=\"0\" id=\"heroScrollTo\" class=\"material-icons scroll-down-arrow\" translate=\"no\">expand_more</span>",
+      "discoveredAt": "2026-04-07T03:40:33.353Z",
+      "pageUrl": "https://kingcounty.gov/en",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#949494",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 3.0334698257384747,
+        "contrastRequiredRatio": 3,
+        "contrastIsLargeText": true,
+        "contrastTextSample": "expand_more",
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum"
+      }
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 3:1 for large text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"Seattle/King County Clinic is April 23 - 26\"",
+      "selector": "h3.hero-title",
+      "elementHtml": "<h3 class=\"hero-title\">\n                    Seattle/King County Clinic is April 23 - 26\n                </h3>",
+      "discoveredAt": "2026-04-07T03:40:33.353Z",
+      "pageUrl": "https://kingcounty.gov/en",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#949494",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 3.0334698257384747,
+        "contrastRequiredRatio": 3,
+        "contrastIsLargeText": true,
+        "contrastTextSample": "Seattle/King County Clinic is April 23 - 26",
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum"
+      }
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"King County is proud to be part of the Seattle/King County C\"",
+      "selector": "p.hero-text",
+      "elementHtml": "<p class=\"hero-text\">\n                        King County is proud to be part of the Seattle/King County Clinic, the largest community-driven free health clinic of its kind in the United States.<br>\n ",
+      "discoveredAt": "2026-04-07T03:40:33.353Z",
+      "pageUrl": "https://kingcounty.gov/en",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#767676",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.542224959605253,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "King County is proud to be part of the Seattle/King County C",
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum"
+      }
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.72:1 (required: 4.5:1 for normal text). Foreground: rgb(68, 68, 68), background: rgb(24, 112, 137). Text: \"Translate\"",
+      "selector": "a.VIpgJd-ZVi9od-l4eHX-hSRGPd",
+      "elementHtml": "<a class=\"VIpgJd-ZVi9od-l4eHX-hSRGPd\" href=\"https://translate.google.com\" target=\"_blank\"><img src=\"https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_42x16dp.png\" width=\"37px\" hei",
+      "discoveredAt": "2026-04-07T03:44:40.186Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/king-county-legislation-codes",
+      "metadata": {
+        "contrastForeground": "#444444",
+        "contrastBackground": "#187089",
+        "contrastSuggestedForeground": "#e6e6e6",
+        "contrastRatio": 1.7242799195294112,
+        "contrastSuggestedRatio": 4.525863152721228,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Translate",
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum"
+      }
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.02:1 (required: 4.5:1 for normal text). Foreground: rgb(102, 102, 102), background: rgb(24, 112, 137). Text: \"Select LanguageAbkhazAcehneseAcholiAfarAfrikaansAlbanianAlur\"",
+      "selector": "div.skiptranslate.goog-te-gadget",
+      "elementHtml": "<div class=\"skiptranslate goog-te-gadget\" dir=\"ltr\" style=\"\"><div id=\":0.targetLanguage\"><select class=\"goog-te-combo\" aria-label=\"Language Translate Widget\"><option value=\"\">Select Language</option><",
+      "discoveredAt": "2026-04-07T03:44:54.884Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county",
+      "metadata": {
+        "contrastForeground": "#666666",
+        "contrastBackground": "#187089",
+        "contrastSuggestedForeground": "#e6e6e6",
+        "contrastRatio": 1.0165059585784009,
+        "contrastSuggestedRatio": 4.525863152721228,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Select LanguageAbkhazAcehneseAcholiAfarAfrikaansAlbanianAlur",
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum"
+      }
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.72:1 (required: 4.5:1 for normal text). Foreground: rgb(68, 68, 68), background: rgb(24, 112, 137). Text: \"Translate\"",
+      "selector": "a.VIpgJd-ZVi9od-l4eHX-hSRGPd",
+      "elementHtml": "<a class=\"VIpgJd-ZVi9od-l4eHX-hSRGPd\" href=\"https://translate.google.com\" target=\"_blank\"><img src=\"https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_42x16dp.png\" width=\"37px\" hei",
+      "discoveredAt": "2026-04-07T03:44:54.884Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county",
+      "metadata": {
+        "contrastForeground": "#444444",
+        "contrastBackground": "#187089",
+        "contrastSuggestedForeground": "#e6e6e6",
+        "contrastRatio": 1.7242799195294112,
+        "contrastSuggestedRatio": 4.525863152721228,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Translate",
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum"
+      }
+    },
+    {
+      "probe": "axe-core",
+      "standard": "wcag2a",
+      "severity": "high",
+      "description": "<html> element must have a lang attribute: Fix any of the following:\n  The <html> element does not have a lang attribute",
+      "selector": "html",
+      "elementHtml": "<html><head><title>Object moved</title></head><body>\n<h2>Object moved to <a href=\"/404?item=%2fen%2f404%2f404-folder-test-js+(route%3a+%7b*pathInfo%7d)&amp;user=extranet%5cAnonymous&amp;site=KCGov\">he...",
+      "discoveredAt": "2026-04-07T03:41:04.486Z",
+      "pageUrl": "https://kingcounty.gov/en/404/404-folder-test-js"
+    },
+    {
+      "probe": "axe-core",
+      "standard": "wcag2a",
+      "severity": "high",
+      "description": "<html> element must have a lang attribute: Fix any of the following:\n  The <html> element does not have a lang attribute",
+      "selector": "html",
+      "elementHtml": "<html><head><title>Object moved</title></head><body>\n<h2>Object moved to <a href=\"/404?item=%2fen%2fcategories+(route%3a+%7b*pathInfo%7d)&amp;user=extranet%5cAnonymous&amp;site=KCGov\">here</a>.</h2>\n\n...",
+      "discoveredAt": "2026-04-07T03:41:50.077Z",
+      "pageUrl": "https://kingcounty.gov/en/categories"
+    },
+    {
+      "probe": "axe-core",
+      "standard": "wcag2a",
+      "severity": "high",
+      "description": "<li> elements must be contained in a <ul> or <ol>: Fix any of the following:\n  List item does not have a <ul>, <ol> parent element",
+      "selector": ".page-item:nth-child(2)",
+      "elementHtml": "<li class=\"page-item\"><button class=\"page-link\">2</button></li>",
+      "discoveredAt": "2026-04-07T03:44:55.089Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county"
+    },
+    {
+      "probe": "axe-core",
+      "standard": "wcag2a",
+      "severity": "high",
+      "description": "<li> elements must be contained in a <ul> or <ol>: Fix any of the following:\n  List item does not have a <ul>, <ol> parent element",
+      "selector": "#pageButtons > .disabled.page-item",
+      "elementHtml": "<li class=\"page-item disabled\"><button class=\"page-link active\">1</button></li>",
+      "discoveredAt": "2026-04-07T03:44:55.089Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county"
+    },
+    {
+      "probe": "axe-core",
+      "standard": "wcag2a",
+      "severity": "high",
+      "description": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements: Fix all of the following:\n  List element has direct children that are not allowed: span",
+      "selector": "#cat-pagination",
+      "elementHtml": "<ul id=\"cat-pagination\" class=\"pagination\" style=\"justify-content: center; padding-top: 20px;\">",
+      "discoveredAt": "2026-04-07T03:44:55.089Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county"
+    },
+    {
+      "probe": "axe-core",
+      "standard": "wcag2aa",
+      "severity": "high",
+      "description": "Elements must meet minimum color contrast ratio thresholds: Fix any of the following:\n  Element has insufficient color contrast of 3.97 (foreground color: #007bff, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+      "selector": "#next",
+      "elementHtml": "<button id=\"next\" class=\"page-link\">Next</button>",
+      "discoveredAt": "2026-04-07T03:44:55.089Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county"
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"div:nth-of-type(1) > a\" to \"Here's how you know\" (visual distance: 499px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#HowToKnow",
+      "elementHtml": "<a>Here's how you know</a>",
+      "discoveredAt": "2026-04-07T03:40:25.116Z",
+      "pageUrl": "https://kingcounty.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Metropolitan King County Council\" to \"About Rod\" (visual distance: 391px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#maincontent > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > section > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > a",
+      "elementHtml": "<a>About Rod</a>",
+      "discoveredAt": "2026-04-07T03:40:25.116Z",
+      "pageUrl": "https://kingcounty.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Metropolitan King County Council\" to \"About Rod\" (visual distance: 391px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#maincontent > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > section > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > a",
+      "elementHtml": "<a>About Rod</a>",
+      "discoveredAt": "2026-04-07T03:40:44.044Z",
+      "pageUrl": "https://kingcounty.gov/en",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Task Title 4\" to \"Task Title 5\" (visual distance: 946px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#maincontent > div:nth-of-type(2) > div:nth-of-type(3) > div > div > div > section > div:nth-of-type(2) > div:nth-of-type(5) > a",
+      "elementHtml": "<a>Task Title 5</a>",
+      "discoveredAt": "2026-04-07T03:41:17.764Z",
+      "pageUrl": "https://kingcounty.gov/en/404/404-folder-test-js/test-page-for-pdf-publishing",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"About DAJD\" to \"About DCHS\" (visual distance: 346px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#maincontent > div:nth-of-type(1) > div:nth-of-type(4) > div > div > div > div > div:nth-of-type(2) > h3 > a",
+      "elementHtml": "<a>About DCHS</a>",
+      "discoveredAt": "2026-04-07T03:42:03.267Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/about-king-county",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Partner agency resources\" to \"Request for proposals\" (visual distance: 345px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#maincontent > div:nth-of-type(2) > div > div > div > div > div > div:nth-of-type(11) > h3 > a",
+      "elementHtml": "<a>Request for proposals</a>",
+      "discoveredAt": "2026-04-07T03:42:20.827Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/about-king-county/about-prosecuting-attorneys-office",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"File or respond to a complaint with Code Enforcement\" to \"Inspections\" (visual distance: 339px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#category-items > div:nth-of-type(5) > a",
+      "elementHtml": "<a>Inspections</a>",
+      "discoveredAt": "2026-04-07T03:43:12.000Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/buildings-property/permits-inspections-codes-building-land-use",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Permits customer services\" to \"Pet licenses\" (visual distance: 346px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#maincontent > div:nth-of-type(1) > div:nth-of-type(4) > div > div > div > div > div:nth-of-type(9) > h3 > a",
+      "elementHtml": "<a>Pet licenses</a>",
+      "discoveredAt": "2026-04-07T03:43:27.412Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/certificates-permits-licenses",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Protection orders from District Court\" to \"Protection orders from Superior Court Clerk\" (visual distance: 310px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#maincontent > div:nth-of-type(1) > div:nth-of-type(3) > div > div > div > div > div:nth-of-type(7) > h3 > a",
+      "elementHtml": "<a>Protection orders from Superior Court Clerk</a>",
+      "discoveredAt": "2026-04-07T03:43:45.282Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/courts-jails-legal-system",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"King County Executive\" to \"Local Services\" (visual distance: 346px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#maincontent > div:nth-of-type(1) > div:nth-of-type(4) > div > div > div > div > div:nth-of-type(8) > h3 > a",
+      "elementHtml": "<a>Local Services</a>",
+      "discoveredAt": "2026-04-07T03:44:16.866Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Jobs\" to \"Accessibility\" (visual distance: 911px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "footer > div:nth-of-type(2) > div > div > div:nth-of-type(1) > ul > li > a",
+      "elementHtml": "<a>Accessibility</a>",
+      "discoveredAt": "2026-04-07T03:44:48.757Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/king-county-legislation-codes",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Community office hours - Local Services\" to \"Community recipients\" (visual distance: 318px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#category-items > div:nth-of-type(5) > a",
+      "elementHtml": "<a>Community recipients</a>",
+      "discoveredAt": "2026-04-07T03:45:05.518Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Fire Safety Burn Bans\" to \"Information for Alan M. Painter Grant recipients\" (visual distance: 311px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#category-items > div:nth-of-type(9) > a",
+      "elementHtml": "<a>Information for Alan M. Painter Grant recipients</a>",
+      "discoveredAt": "2026-04-07T03:45:05.518Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Skip to main content\" to \"header > div > div:nth-of-type(1) > div:nth-of-type(1) > a\" (visual distance: 539px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "header > div > div:nth-of-type(1) > div:nth-of-type(1) > a",
+      "elementHtml": "<a></a>",
+      "discoveredAt": "2026-04-07T03:45:05.518Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:40:13.676Z",
+      "pageUrl": "https://kingcounty.gov/"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:40:13.676Z",
+      "pageUrl": "https://kingcounty.gov/"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:40:33.330Z",
+      "pageUrl": "https://kingcounty.gov/en"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:40:33.330Z",
+      "pageUrl": "https://kingcounty.gov/en"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:40:50.147Z",
+      "pageUrl": "https://kingcounty.gov/en/404"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:40:50.147Z",
+      "pageUrl": "https://kingcounty.gov/en/404"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:41:04.461Z",
+      "pageUrl": "https://kingcounty.gov/en/404/404-folder-test-js"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:41:04.461Z",
+      "pageUrl": "https://kingcounty.gov/en/404/404-folder-test-js"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:41:07.972Z",
+      "pageUrl": "https://kingcounty.gov/en/404/404-folder-test-js/test-page-for-pdf-publishing"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:41:07.972Z",
+      "pageUrl": "https://kingcounty.gov/en/404/404-folder-test-js/test-page-for-pdf-publishing"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:41:24.176Z",
+      "pageUrl": "https://kingcounty.gov/en/calendar"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:41:24.176Z",
+      "pageUrl": "https://kingcounty.gov/en/calendar"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:41:50.052Z",
+      "pageUrl": "https://kingcounty.gov/en/categories"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:41:50.052Z",
+      "pageUrl": "https://kingcounty.gov/en/categories"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:41:53.990Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/about-king-county"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:41:53.990Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/about-king-county"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:42:09.362Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/about-king-county/about-prosecuting-attorneys-office"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:42:09.362Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/about-king-county/about-prosecuting-attorneys-office"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:42:26.994Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/animals-pets-pests"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:42:26.994Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/animals-pets-pests"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:42:44.871Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/buildings-property"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:42:44.871Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/buildings-property"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:43:01.470Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/buildings-property/permits-inspections-codes-building-land-use"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:43:01.470Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/buildings-property/permits-inspections-codes-building-land-use"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:43:18.576Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/certificates-permits-licenses"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:43:18.576Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/certificates-permits-licenses"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:43:33.453Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/courts-jails-legal-system"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:43:33.453Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/courts-jails-legal-system"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:43:51.360Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-and-leadership"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:43:51.360Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-and-leadership"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:44:07.353Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:44:07.353Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:44:23.412Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/government-oversight"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:44:23.412Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/government-oversight"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:44:40.168Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/king-county-legislation-codes"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:44:40.168Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/king-county-legislation-codes"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:44:54.861Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:44:54.861Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "low",
+      "description": "Headings should not be empty: Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+      "selector": ".editorial-spotlight-title > h2",
+      "elementHtml": "<h2></h2>",
+      "discoveredAt": "2026-04-07T03:41:08.182Z",
+      "pageUrl": "https://kingcounty.gov/en/404/404-folder-test-js/test-page-for-pdf-publishing"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "low",
+      "description": "Headings should not be empty: Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+      "selector": ".link-list > h2",
+      "elementHtml": "<h2></h2>",
+      "discoveredAt": "2026-04-07T03:41:54.205Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/about-king-county"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "low",
+      "description": "Headings should not be empty: Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+      "selector": ".link-list > h2",
+      "elementHtml": "<h2></h2>",
+      "discoveredAt": "2026-04-07T03:42:45.079Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/buildings-property"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "low",
+      "description": "Headings should not be empty: Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+      "selector": ".link-list > h2",
+      "elementHtml": "<h2></h2>",
+      "discoveredAt": "2026-04-07T03:43:18.760Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/certificates-permits-licenses"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "low",
+      "description": "Headings should not be empty: Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+      "selector": ".link-list > h2",
+      "elementHtml": "<h2></h2>",
+      "discoveredAt": "2026-04-07T03:43:51.575Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-and-leadership"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "low",
+      "description": "Headings should not be empty: Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+      "selector": ".link-list > h2",
+      "elementHtml": "<h2></h2>",
+      "discoveredAt": "2026-04-07T03:44:07.551Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:40:13.676Z",
+      "pageUrl": "https://kingcounty.gov/"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:40:33.330Z",
+      "pageUrl": "https://kingcounty.gov/en"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:40:50.147Z",
+      "pageUrl": "https://kingcounty.gov/en/404"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:41:04.461Z",
+      "pageUrl": "https://kingcounty.gov/en/404/404-folder-test-js"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:41:07.972Z",
+      "pageUrl": "https://kingcounty.gov/en/404/404-folder-test-js/test-page-for-pdf-publishing"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:41:24.176Z",
+      "pageUrl": "https://kingcounty.gov/en/calendar"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:41:50.052Z",
+      "pageUrl": "https://kingcounty.gov/en/categories"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:41:53.990Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/about-king-county"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:42:09.362Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/about-king-county/about-prosecuting-attorneys-office"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:42:26.994Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/animals-pets-pests"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:42:44.871Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/buildings-property"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:43:01.470Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/buildings-property/permits-inspections-codes-building-land-use"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:43:18.576Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/certificates-permits-licenses"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:43:33.453Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/courts-jails-legal-system"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:43:51.360Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-and-leadership"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:44:07.353Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:44:23.412Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/government-oversight"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:44:40.168Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/king-county-legislation-codes"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:44:54.861Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-07T03:40:13.896Z",
+      "pageUrl": "https://kingcounty.gov/"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-07T03:40:13.896Z",
+      "pageUrl": "https://kingcounty.gov/"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-07T03:40:33.462Z",
+      "pageUrl": "https://kingcounty.gov/en"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-07T03:40:33.462Z",
+      "pageUrl": "https://kingcounty.gov/en"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-07T03:40:50.253Z",
+      "pageUrl": "https://kingcounty.gov/en/404"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-07T03:40:50.253Z",
+      "pageUrl": "https://kingcounty.gov/en/404"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-07T03:41:08.134Z",
+      "pageUrl": "https://kingcounty.gov/en/404/404-folder-test-js/test-page-for-pdf-publishing"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-07T03:41:08.134Z",
+      "pageUrl": "https://kingcounty.gov/en/404/404-folder-test-js/test-page-for-pdf-publishing"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-07T03:41:24.290Z",
+      "pageUrl": "https://kingcounty.gov/en/calendar"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-07T03:41:24.290Z",
+      "pageUrl": "https://kingcounty.gov/en/calendar"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-border\" still running after page readiness",
+      "selector": "div",
+      "elementHtml": "<div class=\"spinner-border\" role=\"status\"><span class=\"sr-only\">Loading...</span></div>",
+      "discoveredAt": "2026-04-07T03:41:24.290Z",
+      "pageUrl": "https://kingcounty.gov/en/calendar"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-07T03:41:54.103Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/about-king-county"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-07T03:41:54.103Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/about-king-county"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-07T03:42:09.481Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/about-king-county/about-prosecuting-attorneys-office"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-07T03:42:09.481Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/about-king-county/about-prosecuting-attorneys-office"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-07T03:42:27.112Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/animals-pets-pests"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-07T03:42:27.112Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/animals-pets-pests"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-07T03:42:45.037Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/buildings-property"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-07T03:42:45.037Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/buildings-property"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-07T03:43:01.573Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/buildings-property/permits-inspections-codes-building-land-use"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-07T03:43:01.573Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/buildings-property/permits-inspections-codes-building-land-use"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-07T03:43:33.560Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/courts-jails-legal-system"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-07T03:43:33.560Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/courts-jails-legal-system"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-07T03:43:51.482Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-and-leadership"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-07T03:43:51.482Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-and-leadership"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-07T03:44:07.454Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-07T03:44:07.454Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-07T03:44:23.557Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/government-oversight"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-07T03:44:23.557Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/government-oversight"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-07T03:44:40.241Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/king-county-legislation-codes"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-07T03:44:40.241Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/king-county-legislation-codes"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-07T03:44:54.979Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-07T03:44:54.979Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
+      "selector": ".hero-title",
+      "elementHtml": "<h3 class=\"hero-title\">\n                    Seattle/King County Clinic is April 23 - 26\n                </h3>",
+      "discoveredAt": "2026-04-07T03:40:14.029Z",
+      "pageUrl": "https://kingcounty.gov/"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".note-text",
+      "elementHtml": "<div class=\"note-text\">",
+      "discoveredAt": "2026-04-07T03:40:14.029Z",
+      "pageUrl": "https://kingcounty.gov/"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
+      "selector": ".hero-title",
+      "elementHtml": "<h3 class=\"hero-title\">\n                    Seattle/King County Clinic is April 23 - 26\n                </h3>",
+      "discoveredAt": "2026-04-07T03:40:33.555Z",
+      "pageUrl": "https://kingcounty.gov/en"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "h2",
+      "elementHtml": "<h2>Object moved to <a href=\"/404?item=%2fen%2f404%2f404-folder-test-js+(route%3a+%7b*pathInfo%7d)&amp;user=extranet%5cAnonymous&amp;site=KCGov\">here</a>.</h2>",
+      "discoveredAt": "2026-04-07T03:41:04.486Z",
+      "pageUrl": "https://kingcounty.gov/en/404/404-folder-test-js"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Document should have one main landmark: Fix all of the following:\n  Document does not have a main landmark",
+      "selector": "html",
+      "elementHtml": "<html><head><title>Object moved</title></head><body>\n<h2>Object moved to <a href=\"/404?item=%2fen%2f404%2f404-folder-test-js+(route%3a+%7b*pathInfo%7d)&amp;user=extranet%5cAnonymous&amp;site=KCGov\">he...",
+      "discoveredAt": "2026-04-07T03:41:04.486Z",
+      "pageUrl": "https://kingcounty.gov/en/404/404-folder-test-js"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Page should contain a level-one heading: Fix all of the following:\n  Page must have a level-one heading",
+      "selector": "html",
+      "elementHtml": "<html><head><title>Object moved</title></head><body>\n<h2>Object moved to <a href=\"/404?item=%2fen%2f404%2f404-folder-test-js+(route%3a+%7b*pathInfo%7d)&amp;user=extranet%5cAnonymous&amp;site=KCGov\">he...",
+      "discoveredAt": "2026-04-07T03:41:04.486Z",
+      "pageUrl": "https://kingcounty.gov/en/404/404-folder-test-js"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": "div:nth-child(2) > .two-col-container.container > .row > .col-lg-4.right-rail",
+      "elementHtml": "<aside class=\"col-md-12 col-lg-4 right-rail\">",
+      "discoveredAt": "2026-04-07T03:41:08.182Z",
+      "pageUrl": "https://kingcounty.gov/en/404/404-folder-test-js/test-page-for-pdf-publishing"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": "div:nth-child(2) > .two-col-container.container > .row > aside",
+      "elementHtml": "<aside class=\"col-md-12 col-lg-4 right-rail\">\n                \n            </aside>",
+      "discoveredAt": "2026-04-07T03:41:24.388Z",
+      "pageUrl": "https://kingcounty.gov/en/calendar"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "h2",
+      "elementHtml": "<h2>Object moved to <a href=\"/404?item=%2fen%2fcategories+(route%3a+%7b*pathInfo%7d)&amp;user=extranet%5cAnonymous&amp;site=KCGov\">here</a>.</h2>",
+      "discoveredAt": "2026-04-07T03:41:50.077Z",
+      "pageUrl": "https://kingcounty.gov/en/categories"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Page should contain a level-one heading: Fix all of the following:\n  Page must have a level-one heading",
+      "selector": "html",
+      "elementHtml": "<html><head><title>Object moved</title></head><body>\n<h2>Object moved to <a href=\"/404?item=%2fen%2fcategories+(route%3a+%7b*pathInfo%7d)&amp;user=extranet%5cAnonymous&amp;site=KCGov\">here</a>.</h2>\n\n...",
+      "discoveredAt": "2026-04-07T03:41:50.077Z",
+      "pageUrl": "https://kingcounty.gov/en/categories"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Document should have one main landmark: Fix all of the following:\n  Document does not have a main landmark",
+      "selector": "html",
+      "elementHtml": "<html><head><title>Object moved</title></head><body>\n<h2>Object moved to <a href=\"/404?item=%2fen%2fcategories+(route%3a+%7b*pathInfo%7d)&amp;user=extranet%5cAnonymous&amp;site=KCGov\">here</a>.</h2>\n\n...",
+      "discoveredAt": "2026-04-07T03:41:50.077Z",
+      "pageUrl": "https://kingcounty.gov/en/categories"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": ".pt-large.pb-large:nth-child(4) > .two-col-container.container > .row > aside",
+      "elementHtml": "<aside class=\"col-md-12 col-lg-4 right-rail\">\n                \n            </aside>",
+      "discoveredAt": "2026-04-07T03:41:54.205Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/about-king-county"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": ".border-bottom-overcast > .two-col-container.container > .row > aside",
+      "elementHtml": "<aside class=\"col-md-12 col-lg-4 right-rail\">\n                \n            </aside>",
+      "discoveredAt": "2026-04-07T03:42:27.209Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/animals-pets-pests"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": ".pt-large.border-bottom-overcast.pb-large > .two-col-container.container > .row > aside",
+      "elementHtml": "<aside class=\"col-md-12 col-lg-4 right-rail\">\n                \n            </aside>",
+      "discoveredAt": "2026-04-07T03:42:45.079Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/buildings-property"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
+      "selector": ".category-item:nth-child(1) > a > h3",
+      "elementHtml": "<h3>Building and fire codes</h3>",
+      "discoveredAt": "2026-04-07T03:43:01.791Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/buildings-property/permits-inspections-codes-building-land-use"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": ".pt-large.border-bottom-overcast.pb-large > .two-col-container.container > .row > aside",
+      "elementHtml": "<aside class=\"col-md-12 col-lg-4 right-rail\">\n                \n            </aside>",
+      "discoveredAt": "2026-04-07T03:43:18.760Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/certificates-permits-licenses"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": ".border-bottom-overcast > .two-col-container.container > .row > aside",
+      "elementHtml": "<aside class=\"col-md-12 col-lg-4 right-rail\">\n                \n            </aside>",
+      "discoveredAt": "2026-04-07T03:43:33.681Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/courts-jails-legal-system"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": ".border-bottom-overcast > .two-col-container.container > .row > aside",
+      "elementHtml": "<aside class=\"col-md-12 col-lg-4 right-rail\">\n                \n            </aside>",
+      "discoveredAt": "2026-04-07T03:43:51.575Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-and-leadership"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": ".pt-large.border-bottom-overcast.pb-large > .two-col-container.container > .row > aside",
+      "elementHtml": "<aside class=\"col-md-12 col-lg-4 right-rail\">\n                \n            </aside>",
+      "discoveredAt": "2026-04-07T03:44:07.551Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
+      "selector": ".category-item:nth-child(1) > a > h3",
+      "elementHtml": "<h3>Auditor's Office</h3>",
+      "discoveredAt": "2026-04-07T03:44:23.708Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/government-oversight"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
+      "selector": ".category-item:nth-child(1) > a > h3",
+      "elementHtml": "<h3>About King County’s Participatory Budgeting program</h3>",
+      "discoveredAt": "2026-04-07T03:44:55.089Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county"
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "severity": "medium",
+      "description": "Insufficient color contrast: 3.98:1 (required: 4.5:1 for normal text). Foreground: rgb(0, 123, 255), background: rgb(255, 255, 255). Text: \"Next\"",
+      "selector": "#next",
+      "elementHtml": "<button id=\"next\" class=\"page-link\">Next</button>",
+      "discoveredAt": "2026-04-07T03:44:54.884Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county",
+      "metadata": {
+        "contrastForeground": "#007bff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#0072ed",
+        "contrastRatio": 3.979395412917911,
+        "contrastSuggestedRatio": 4.535822846777721,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Next",
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum"
+      }
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "severity": "medium",
+      "description": "Clicking \"English\" inserts 2 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#languageMenuButton",
+      "elementHtml": "<button aria-label=\"Language selector\" aria-describedby=\"langSelected\" class=\"btn btn-link dropdown-toggle\" type=\"button\" id=\"languageMenuButton\" data-toggle=\"modal\" data-target=\"#langList\" aria-haspo",
+      "discoveredAt": "2026-04-07T03:40:32.286Z",
+      "pageUrl": "https://kingcounty.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages"
+      }
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "severity": "medium",
+      "description": "Clicking \"English\" inserts 2 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#languageMenuButton",
+      "elementHtml": "<button aria-label=\"Language selector\" aria-describedby=\"langSelected\" class=\"btn btn-link dropdown-toggle\" type=\"button\" id=\"languageMenuButton\" data-toggle=\"modal\" data-target=\"#langList\" aria-haspo",
+      "discoveredAt": "2026-04-07T03:40:49.285Z",
+      "pageUrl": "https://kingcounty.gov/en",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages"
+      }
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "severity": "medium",
+      "description": "Clicking \"English\" inserts 2 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#languageMenuButton",
+      "elementHtml": "<button aria-label=\"Language selector\" aria-describedby=\"langSelected\" class=\"btn btn-link dropdown-toggle\" type=\"button\" id=\"languageMenuButton\" data-toggle=\"modal\" data-target=\"#langList\" aria-haspo",
+      "discoveredAt": "2026-04-07T03:41:03.807Z",
+      "pageUrl": "https://kingcounty.gov/en/404",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages"
+      }
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "severity": "medium",
+      "description": "Clicking \"English\" inserts 2 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#languageMenuButton",
+      "elementHtml": "<button aria-label=\"Language selector\" aria-describedby=\"langSelected\" class=\"btn btn-link dropdown-toggle\" type=\"button\" id=\"languageMenuButton\" data-toggle=\"modal\" data-target=\"#langList\" aria-haspo",
+      "discoveredAt": "2026-04-07T03:41:23.158Z",
+      "pageUrl": "https://kingcounty.gov/en/404/404-folder-test-js/test-page-for-pdf-publishing",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages"
+      }
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "severity": "medium",
+      "description": "Clicking \"chevron_left\" inserts 18 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#previous-btn",
+      "elementHtml": "<button type=\"button\" class=\"btn btn-secondary\" id=\"previous-btn\" title=\"Previous week\"><span class=\"material-icons\" style=\"vertical-align: middle;\">chevron_left</span></button>",
+      "discoveredAt": "2026-04-07T03:41:49.437Z",
+      "pageUrl": "https://kingcounty.gov/en/calendar",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages"
+      }
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "severity": "medium",
+      "description": "Clicking \"chevron_right\" inserts 22 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#next-btn",
+      "elementHtml": "<button type=\"button\" class=\"btn btn-secondary\" id=\"next-btn\" title=\"Next week\"><span class=\"material-icons\" style=\"vertical-align: middle;\">chevron_right</span></button>",
+      "discoveredAt": "2026-04-07T03:41:49.437Z",
+      "pageUrl": "https://kingcounty.gov/en/calendar",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages"
+      }
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "severity": "medium",
+      "description": "Clicking \"Month\" inserts 4 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#cal-month-btn",
+      "elementHtml": "<button type=\"button\" class=\"btn btn-primary \" id=\"cal-month-btn\">Month</button>",
+      "discoveredAt": "2026-04-07T03:41:49.437Z",
+      "pageUrl": "https://kingcounty.gov/en/calendar",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages"
+      }
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "severity": "medium",
+      "description": "Clicking \"English\" inserts 2 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#languageMenuButton",
+      "elementHtml": "<button aria-label=\"Language selector\" aria-describedby=\"langSelected\" class=\"btn btn-link dropdown-toggle\" type=\"button\" id=\"languageMenuButton\" data-toggle=\"modal\" data-target=\"#langList\" aria-haspo",
+      "discoveredAt": "2026-04-07T03:41:49.437Z",
+      "pageUrl": "https://kingcounty.gov/en/calendar",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages"
+      }
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "severity": "medium",
+      "description": "Clicking \"English\" inserts 2 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#languageMenuButton",
+      "elementHtml": "<button aria-label=\"Language selector\" aria-describedby=\"langSelected\" class=\"btn btn-link dropdown-toggle\" type=\"button\" id=\"languageMenuButton\" data-toggle=\"modal\" data-target=\"#langList\" aria-haspo",
+      "discoveredAt": "2026-04-07T03:42:08.502Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/about-king-county",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages"
+      }
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "severity": "medium",
+      "description": "Clicking \"English\" inserts 2 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#languageMenuButton",
+      "elementHtml": "<button aria-label=\"Language selector\" aria-describedby=\"langSelected\" class=\"btn btn-link dropdown-toggle\" type=\"button\" id=\"languageMenuButton\" data-toggle=\"modal\" data-target=\"#langList\" aria-haspo",
+      "discoveredAt": "2026-04-07T03:42:26.140Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/about-king-county/about-prosecuting-attorneys-office",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages"
+      }
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "severity": "medium",
+      "description": "Clicking \"English\" inserts 2 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#languageMenuButton",
+      "elementHtml": "<button aria-label=\"Language selector\" aria-describedby=\"langSelected\" class=\"btn btn-link dropdown-toggle\" type=\"button\" id=\"languageMenuButton\" data-toggle=\"modal\" data-target=\"#langList\" aria-haspo",
+      "discoveredAt": "2026-04-07T03:42:43.975Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/animals-pets-pests",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages"
+      }
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "severity": "medium",
+      "description": "Clicking \"English\" inserts 2 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#languageMenuButton",
+      "elementHtml": "<button aria-label=\"Language selector\" aria-describedby=\"langSelected\" class=\"btn btn-link dropdown-toggle\" type=\"button\" id=\"languageMenuButton\" data-toggle=\"modal\" data-target=\"#langList\" aria-haspo",
+      "discoveredAt": "2026-04-07T03:43:00.491Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/buildings-property",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages"
+      }
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "severity": "medium",
+      "description": "Clicking \"English\" inserts 2 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#languageMenuButton",
+      "elementHtml": "<button aria-label=\"Language selector\" aria-describedby=\"langSelected\" class=\"btn btn-link dropdown-toggle\" type=\"button\" id=\"languageMenuButton\" data-toggle=\"modal\" data-target=\"#langList\" aria-haspo",
+      "discoveredAt": "2026-04-07T03:43:17.296Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/buildings-property/permits-inspections-codes-building-land-use",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages"
+      }
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "severity": "medium",
+      "description": "Clicking \"English\" inserts 2 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#languageMenuButton",
+      "elementHtml": "<button aria-label=\"Language selector\" aria-describedby=\"langSelected\" class=\"btn btn-link dropdown-toggle\" type=\"button\" id=\"languageMenuButton\" data-toggle=\"modal\" data-target=\"#langList\" aria-haspo",
+      "discoveredAt": "2026-04-07T03:43:32.619Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/certificates-permits-licenses",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages"
+      }
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "severity": "medium",
+      "description": "Clicking \"English\" inserts 2 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#languageMenuButton",
+      "elementHtml": "<button aria-label=\"Language selector\" aria-describedby=\"langSelected\" class=\"btn btn-link dropdown-toggle\" type=\"button\" id=\"languageMenuButton\" data-toggle=\"modal\" data-target=\"#langList\" aria-haspo",
+      "discoveredAt": "2026-04-07T03:43:50.506Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/courts-jails-legal-system",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages"
+      }
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "severity": "medium",
+      "description": "Clicking \"English\" inserts 2 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#languageMenuButton",
+      "elementHtml": "<button aria-label=\"Language selector\" aria-describedby=\"langSelected\" class=\"btn btn-link dropdown-toggle\" type=\"button\" id=\"languageMenuButton\" data-toggle=\"modal\" data-target=\"#langList\" aria-haspo",
+      "discoveredAt": "2026-04-07T03:44:06.428Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-and-leadership",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages"
+      }
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "severity": "medium",
+      "description": "Clicking \"English\" inserts 2 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#languageMenuButton",
+      "elementHtml": "<button aria-label=\"Language selector\" aria-describedby=\"langSelected\" class=\"btn btn-link dropdown-toggle\" type=\"button\" id=\"languageMenuButton\" data-toggle=\"modal\" data-target=\"#langList\" aria-haspo",
+      "discoveredAt": "2026-04-07T03:44:22.076Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages"
+      }
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "severity": "medium",
+      "description": "Clicking \"English\" inserts 2 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#languageMenuButton",
+      "elementHtml": "<button aria-label=\"Language selector\" aria-describedby=\"langSelected\" class=\"btn btn-link dropdown-toggle\" type=\"button\" id=\"languageMenuButton\" data-toggle=\"modal\" data-target=\"#langList\" aria-haspo",
+      "discoveredAt": "2026-04-07T03:44:39.308Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/government-oversight",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages"
+      }
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "severity": "medium",
+      "description": "Clicking \"English\" inserts 2 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#languageMenuButton",
+      "elementHtml": "<button aria-label=\"Language selector\" aria-describedby=\"langSelected\" class=\"btn btn-link dropdown-toggle\" type=\"button\" id=\"languageMenuButton\" data-toggle=\"modal\" data-target=\"#langList\" aria-haspo",
+      "discoveredAt": "2026-04-07T03:44:53.964Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/king-county-legislation-codes",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages"
+      }
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "severity": "medium",
+      "description": "Clicking \"English\" inserts 2 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#languageMenuButton",
+      "elementHtml": "<button aria-label=\"Language selector\" aria-describedby=\"langSelected\" class=\"btn btn-link dropdown-toggle\" type=\"button\" id=\"languageMenuButton\" data-toggle=\"modal\" data-target=\"#langList\" aria-haspo",
+      "discoveredAt": "2026-04-07T03:45:18.392Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages"
+      }
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "severity": "medium",
+      "description": "Clicking \"2\" inserts 2 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#pageButtons > li:nth-of-type(2) > button",
+      "elementHtml": "<button class=\"page-link\">2</button>",
+      "discoveredAt": "2026-04-07T03:45:18.392Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Metropolitan King County Council\" is visually at position 80 but receives focus at position 31 (drift: 49).",
+      "selector": "#maincontent > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > section > div:nth-of-type(1) > div > p:nth-of-type(1) > a",
+      "elementHtml": "<a>Metropolitan King County Council</a>",
+      "discoveredAt": "2026-04-07T03:40:25.116Z",
+      "pageUrl": "https://kingcounty.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"About Steffanie\" is visually at position 65 but receives focus at position 36 (drift: 29).",
+      "selector": "#maincontent > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > section > div:nth-of-type(2) > div:nth-of-type(5) > div:nth-of-type(2) > a",
+      "elementHtml": "<a>About Steffanie</a>",
+      "discoveredAt": "2026-04-07T03:40:25.116Z",
+      "pageUrl": "https://kingcounty.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"About Claudia\" is visually at position 66 but receives focus at position 37 (drift: 29).",
+      "selector": "#maincontent > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > section > div:nth-of-type(2) > div:nth-of-type(6) > div:nth-of-type(2) > a",
+      "elementHtml": "<a>About Claudia</a>",
+      "discoveredAt": "2026-04-07T03:40:25.116Z",
+      "pageUrl": "https://kingcounty.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"About Claudia\" is visually at position 64 but receives focus at position 35 (drift: 29).",
+      "selector": "#maincontent > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > section > div:nth-of-type(2) > div:nth-of-type(6) > div:nth-of-type(2) > a",
+      "elementHtml": "<a>About Claudia</a>",
+      "discoveredAt": "2026-04-07T03:40:44.044Z",
+      "pageUrl": "https://kingcounty.gov/en",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"About Steffanie\" is visually at position 63 but receives focus at position 34 (drift: 29).",
+      "selector": "#maincontent > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > section > div:nth-of-type(2) > div:nth-of-type(5) > div:nth-of-type(2) > a",
+      "elementHtml": "<a>About Steffanie</a>",
+      "discoveredAt": "2026-04-07T03:40:44.044Z",
+      "pageUrl": "https://kingcounty.gov/en",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"About Jorge\" is visually at position 62 but receives focus at position 33 (drift: 29).",
+      "selector": "#maincontent > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > section > div:nth-of-type(2) > div:nth-of-type(4) > div:nth-of-type(2) > a",
+      "elementHtml": "<a>About Jorge</a>",
+      "discoveredAt": "2026-04-07T03:40:44.044Z",
+      "pageUrl": "https://kingcounty.gov/en",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Metropolitan King County Council\" is visually at position 78 but receives focus at position 29 (drift: 49).",
+      "selector": "#maincontent > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > section > div:nth-of-type(1) > div > p:nth-of-type(1) > a",
+      "elementHtml": "<a>Metropolitan King County Council</a>",
+      "discoveredAt": "2026-04-07T03:40:44.044Z",
+      "pageUrl": "https://kingcounty.gov/en",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Data transparency\" is visually at position 22 but receives focus at position 45 (drift: 23).",
+      "selector": "footer > nav > div > div > div:nth-of-type(2) > div > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a>Data transparency</a>",
+      "discoveredAt": "2026-04-07T03:40:58.573Z",
+      "pageUrl": "https://kingcounty.gov/en/404",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"footer > nav > div > div > div:nth-of-type(1) > div > a:nth-of-type(2)\" is visually at position 17 but receives focus at position 41 (drift: 24).",
+      "selector": "footer > nav > div > div > div:nth-of-type(1) > div > a:nth-of-type(2)",
+      "elementHtml": "<a></a>",
+      "discoveredAt": "2026-04-07T03:40:58.573Z",
+      "pageUrl": "https://kingcounty.gov/en/404",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"footer > nav > div > div > div:nth-of-type(1) > div > a:nth-of-type(3)\" is visually at position 18 but receives focus at position 42 (drift: 24).",
+      "selector": "footer > nav > div > div > div:nth-of-type(1) > div > a:nth-of-type(3)",
+      "elementHtml": "<a></a>",
+      "discoveredAt": "2026-04-07T03:40:58.573Z",
+      "pageUrl": "https://kingcounty.gov/en/404",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Terms of use\" is visually at position 13 but receives focus at position 43 (drift: 30).",
+      "selector": "footer > nav > div > div > div:nth-of-type(2) > div > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a>Terms of use</a>",
+      "discoveredAt": "2026-04-07T03:40:58.573Z",
+      "pageUrl": "https://kingcounty.gov/en/404",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"footer > nav > div > div > div:nth-of-type(1) > div > a:nth-of-type(1)\" is visually at position 16 but receives focus at position 40 (drift: 24).",
+      "selector": "footer > nav > div > div > div:nth-of-type(1) > div > a:nth-of-type(1)",
+      "elementHtml": "<a></a>",
+      "discoveredAt": "2026-04-07T03:40:58.573Z",
+      "pageUrl": "https://kingcounty.gov/en/404",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Privacy\" is visually at position 19 but receives focus at position 44 (drift: 25).",
+      "selector": "footer > nav > div > div > div:nth-of-type(2) > div > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a>Privacy</a>",
+      "discoveredAt": "2026-04-07T03:40:58.573Z",
+      "pageUrl": "https://kingcounty.gov/en/404",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Jobs\" is visually at position 45 but receives focus at position 71 (drift: 26).",
+      "selector": "footer > nav > div > div > div:nth-of-type(4) > div > ul > li:nth-of-type(5) > a",
+      "elementHtml": "<a>Jobs</a>",
+      "discoveredAt": "2026-04-07T03:41:17.764Z",
+      "pageUrl": "https://kingcounty.gov/en/404/404-folder-test-js/test-page-for-pdf-publishing",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Task Title 4\" is visually at position 68 but receives focus at position 26 (drift: 42).",
+      "selector": "#maincontent > div:nth-of-type(2) > div:nth-of-type(3) > div > div > div > section > div:nth-of-type(2) > div:nth-of-type(4) > a",
+      "elementHtml": "<a>Task Title 4</a>",
+      "discoveredAt": "2026-04-07T03:41:17.764Z",
+      "pageUrl": "https://kingcounty.gov/en/404/404-folder-test-js/test-page-for-pdf-publishing",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Task Title 3\" is visually at position 60 but receives focus at position 25 (drift: 35).",
+      "selector": "#maincontent > div:nth-of-type(2) > div:nth-of-type(3) > div > div > div > section > div:nth-of-type(2) > div:nth-of-type(3) > a",
+      "elementHtml": "<a>Task Title 3</a>",
+      "discoveredAt": "2026-04-07T03:41:17.764Z",
+      "pageUrl": "https://kingcounty.gov/en/404/404-folder-test-js/test-page-for-pdf-publishing",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Task Title 2\" is visually at position 59 but receives focus at position 24 (drift: 35).",
+      "selector": "#maincontent > div:nth-of-type(2) > div:nth-of-type(3) > div > div > div > section > div:nth-of-type(2) > div:nth-of-type(2) > a",
+      "elementHtml": "<a>Task Title 2</a>",
+      "discoveredAt": "2026-04-07T03:41:17.764Z",
+      "pageUrl": "https://kingcounty.gov/en/404/404-folder-test-js/test-page-for-pdf-publishing",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Task Title 1\" is visually at position 58 but receives focus at position 23 (drift: 35).",
+      "selector": "#maincontent > div:nth-of-type(2) > div:nth-of-type(3) > div > div > div > section > div:nth-of-type(2) > div:nth-of-type(1) > a",
+      "elementHtml": "<a>Task Title 1</a>",
+      "discoveredAt": "2026-04-07T03:41:17.764Z",
+      "pageUrl": "https://kingcounty.gov/en/404/404-folder-test-js/test-page-for-pdf-publishing",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Locate a person in jail\" is visually at position 59 but receives focus at position 19 (drift: 40).",
+      "selector": "#maincontent > div:nth-of-type(1) > div:nth-of-type(3) > div > div > div > div > div:nth-of-type(12) > h3 > a",
+      "elementHtml": "<a>Locate a person in jail</a>",
+      "discoveredAt": "2026-04-07T03:43:45.282Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/courts-jails-legal-system",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Superior Court E-Filing\" is visually at position 44 but receives focus at position 18 (drift: 26).",
+      "selector": "#maincontent > div:nth-of-type(1) > div:nth-of-type(3) > div > div > div > div > div:nth-of-type(11) > h3 > a",
+      "elementHtml": "<a>Superior Court E-Filing</a>",
+      "discoveredAt": "2026-04-07T03:43:45.282Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/courts-jails-legal-system",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"footer > nav > div > div > div:nth-of-type(1) > div > a:nth-of-type(1)\" is visually at position 17 but receives focus at position 46 (drift: 29).",
+      "selector": "footer > nav > div > div > div:nth-of-type(1) > div > a:nth-of-type(1)",
+      "elementHtml": "<a></a>",
+      "discoveredAt": "2026-04-07T03:44:01.199Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-and-leadership",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"King County Executive\" is visually at position 61 but receives focus at position 17 (drift: 44).",
+      "selector": "#maincontent > div:nth-of-type(1) > div:nth-of-type(4) > div > div > div > div > div:nth-of-type(7) > h3 > a",
+      "elementHtml": "<a>King County Executive</a>",
+      "discoveredAt": "2026-04-07T03:44:16.866Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Executive Climate Office\" is visually at position 58 but receives focus at position 11 (drift: 47).",
+      "selector": "#maincontent > div:nth-of-type(1) > div:nth-of-type(4) > div > div > div > div > div:nth-of-type(1) > h3 > a",
+      "elementHtml": "<a>Executive Climate Office</a>",
+      "discoveredAt": "2026-04-07T03:44:16.866Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Hearing Examiner\" is visually at position 38 but receives focus at position 12 (drift: 26).",
+      "selector": "#category-items > div:nth-of-type(6) > a",
+      "elementHtml": "<a>Hearing Examiner</a>",
+      "discoveredAt": "2026-04-07T03:44:34.104Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/government-oversight",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Board of Appeals and Equalization\" is visually at position 37 but receives focus at position 8 (drift: 29).",
+      "selector": "#category-items > div:nth-of-type(2) > a",
+      "elementHtml": "<a>Board of Appeals and Equalization</a>",
+      "discoveredAt": "2026-04-07T03:44:34.104Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/government-oversight",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Recruitment\" is visually at position 55 but receives focus at position 16 (drift: 39).",
+      "selector": "#category-items > div:nth-of-type(10) > a",
+      "elementHtml": "<a>Recruitment</a>",
+      "discoveredAt": "2026-04-07T03:44:34.104Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/government-oversight",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"King County Districting Committee\" is visually at position 57 but receives focus at position 13 (drift: 44).",
+      "selector": "#category-items > div:nth-of-type(7) > a",
+      "elementHtml": "<a>King County Districting Committee</a>",
+      "discoveredAt": "2026-04-07T03:44:34.104Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/government-oversight",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Office of the Ombuds\" is visually at position 39 but receives focus at position 15 (drift: 24).",
+      "selector": "#category-items > div:nth-of-type(9) > a",
+      "elementHtml": "<a>Office of the Ombuds</a>",
+      "discoveredAt": "2026-04-07T03:44:34.104Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/government-oversight",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"#BackToTop\" is visually at position 33 but receives focus at position 63 (drift: 30).",
+      "selector": "#BackToTop",
+      "elementHtml": "<a></a>",
+      "discoveredAt": "2026-04-07T03:45:05.518Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Community office hours - Local Services\" is visually at position 34 but receives focus at position 10 (drift: 24).",
+      "selector": "#category-items > div:nth-of-type(4) > a",
+      "elementHtml": "<a>Community office hours - Local Services</a>",
+      "discoveredAt": "2026-04-07T03:45:05.518Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"footer > nav > div > div > div:nth-of-type(1) > div > a:nth-of-type(3)\" is visually at position 18 but receives focus at position 49 (drift: 31).",
+      "selector": "footer > nav > div > div > div:nth-of-type(1) > div > a:nth-of-type(3)",
+      "elementHtml": "<a></a>",
+      "discoveredAt": "2026-04-07T03:45:05.518Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"footer > nav > div > div > div:nth-of-type(1) > div > a:nth-of-type(2)\" is visually at position 17 but receives focus at position 48 (drift: 31).",
+      "selector": "footer > nav > div > div > div:nth-of-type(1) > div > a:nth-of-type(2)",
+      "elementHtml": "<a></a>",
+      "discoveredAt": "2026-04-07T03:45:05.518Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Community Needs List\" is visually at position 31 but receives focus at position 9 (drift: 22).",
+      "selector": "#category-items > div:nth-of-type(3) > a",
+      "elementHtml": "<a>Community Needs List</a>",
+      "discoveredAt": "2026-04-07T03:45:05.518Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Directory\" is visually at position 20 but receives focus at position 54 (drift: 34).",
+      "selector": "footer > nav > div > div > div:nth-of-type(3) > div > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a>Directory</a>",
+      "discoveredAt": "2026-04-07T03:45:05.518Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Contact us\" is visually at position 13 but receives focus at position 53 (drift: 40).",
+      "selector": "footer > nav > div > div > div:nth-of-type(3) > div > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a>Contact us</a>",
+      "discoveredAt": "2026-04-07T03:45:05.518Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"footer > nav > div > div > div:nth-of-type(1) > div > a:nth-of-type(1)\" is visually at position 16 but receives focus at position 47 (drift: 31).",
+      "selector": "footer > nav > div > div > div:nth-of-type(1) > div > a:nth-of-type(1)",
+      "elementHtml": "<a></a>",
+      "discoveredAt": "2026-04-07T03:45:05.518Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Data transparency\" is visually at position 22 but receives focus at position 52 (drift: 30).",
+      "selector": "footer > nav > div > div > div:nth-of-type(2) > div > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a>Data transparency</a>",
+      "discoveredAt": "2026-04-07T03:45:05.518Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Privacy\" is visually at position 19 but receives focus at position 51 (drift: 32).",
+      "selector": "footer > nav > div > div > div:nth-of-type(2) > div > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a>Privacy</a>",
+      "discoveredAt": "2026-04-07T03:45:05.518Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Accessibility\" is visually at position 37 but receives focus at position 62 (drift: 25).",
+      "selector": "footer > div:nth-of-type(2) > div > div > div:nth-of-type(1) > ul > li > a",
+      "elementHtml": "<a>Accessibility</a>",
+      "discoveredAt": "2026-04-07T03:45:05.518Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Employee resources\" is visually at position 30 but receives focus at position 60 (drift: 30).",
+      "selector": "footer > nav > div > div > div:nth-of-type(4) > div > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a>Employee resources</a>",
+      "discoveredAt": "2026-04-07T03:45:05.518Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Holidays and closures\" is visually at position 24 but receives focus at position 59 (drift: 35).",
+      "selector": "footer > nav > div > div > div:nth-of-type(4) > div > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a>Holidays and closures</a>",
+      "discoveredAt": "2026-04-07T03:45:05.518Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Office locations\" is visually at position 21 but receives focus at position 58 (drift: 37).",
+      "selector": "footer > nav > div > div > div:nth-of-type(4) > div > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a>Office locations</a>",
+      "discoveredAt": "2026-04-07T03:45:05.518Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Departments\" is visually at position 14 but receives focus at position 57 (drift: 43).",
+      "selector": "footer > nav > div > div > div:nth-of-type(4) > div > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a>Departments</a>",
+      "discoveredAt": "2026-04-07T03:45:05.518Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Jobs\" is visually at position 32 but receives focus at position 61 (drift: 29).",
+      "selector": "footer > nav > div > div > div:nth-of-type(4) > div > ul > li:nth-of-type(5) > a",
+      "elementHtml": "<a>Jobs</a>",
+      "discoveredAt": "2026-04-07T03:45:05.518Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Terms of use\" is visually at position 12 but receives focus at position 50 (drift: 38).",
+      "selector": "footer > nav > div > div > div:nth-of-type(2) > div > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a>Terms of use</a>",
+      "discoveredAt": "2026-04-07T03:45:05.518Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Customer service\" is visually at position 29 but receives focus at position 56 (drift: 27).",
+      "selector": "footer > nav > div > div > div:nth-of-type(3) > div > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a>Customer service</a>",
+      "discoveredAt": "2026-04-07T03:45:05.518Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Elected officials\" is visually at position 23 but receives focus at position 55 (drift: 32).",
+      "selector": "footer > nav > div > div > div:nth-of-type(3) > div > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a>Elected officials</a>",
+      "discoveredAt": "2026-04-07T03:45:05.518Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Fire Safety Burn Bans\" is visually at position 35 but receives focus at position 14 (drift: 21).",
+      "selector": "#category-items > div:nth-of-type(8) > a",
+      "elementHtml": "<a>Fire Safety Burn Bans</a>",
+      "discoveredAt": "2026-04-07T03:45:05.518Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://kingcounty.gov/en/sitecore returns 404 Not Found",
+      "selector": "#maincontent > div:nth-of-type(1) > aside > div > div > div:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"https://kingcounty.gov/en/sitecore\">OPTIONAL LINK</a>",
+      "discoveredAt": "2026-04-07T03:41:13.664Z",
+      "pageUrl": "https://kingcounty.gov/en/404/404-folder-test-js/test-page-for-pdf-publishing"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://kingcounty.gov/en/404/404-folder-test-js/-/media/1b6d086cd3dc4261b6f8dd3323870804.ashx returns 404 Not Found",
+      "selector": "#maincontent > div:nth-of-type(1) > div:nth-of-type(2) > div > div > div > div > ul > li:nth-of-type(6) > a",
+      "elementHtml": "<a href=\"https://kingcounty.gov/en/404/404-folder-test-js/-/media/1b6d086cd3dc4261b6f8dd3323870804.ashx\">Universal Design bookletDigital 182026</a>",
+      "discoveredAt": "2026-04-07T03:41:13.664Z",
+      "pageUrl": "https://kingcounty.gov/en/404/404-folder-test-js/test-page-for-pdf-publishing"
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "severity": "medium",
+      "description": "Content clipped by 71px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "h1.sr-only",
+      "elementHtml": "<h1 class=\"sr-only\">Home</h1>",
+      "discoveredAt": "2026-04-07T03:40:45.416Z",
+      "pageUrl": "https://kingcounty.gov/en",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing"
+      }
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "severity": "medium",
+      "description": "Content clipped by 53px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "h2.sr-only",
+      "elementHtml": "<h2 class=\"sr-only\">\n            Topic Cards\n        </h2>",
+      "discoveredAt": "2026-04-07T03:41:19.307Z",
+      "pageUrl": "https://kingcounty.gov/en/404/404-folder-test-js/test-page-for-pdf-publishing",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing"
+      }
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "severity": "medium",
+      "description": "Content clipped by 24px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "div.topic-card-footer",
+      "elementHtml": "<div class=\"topic-card-footer\">Add text for your Topic 4 description and embed a URL to the Topic Detail Page here.</div>",
+      "discoveredAt": "2026-04-07T03:41:19.307Z",
+      "pageUrl": "https://kingcounty.gov/en/404/404-folder-test-js/test-page-for-pdf-publishing",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing"
+      }
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "severity": "medium",
+      "description": "Content clipped by 200px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "#filterRow",
+      "elementHtml": "<div class=\"row filter-row smooth-transition\" id=\"filterRow\"><div class=\"container\"><div class=\"kc-form calendar-filters\"><div class=\"kc-form-element button clear-button-row\"><input type=\"submit\" name",
+      "discoveredAt": "2026-04-07T03:41:34.022Z",
+      "pageUrl": "https://kingcounty.gov/en/calendar",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing"
+      }
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "severity": "medium",
+      "description": "Content clipped by 24px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "a.sr-only.sr-only-focusable",
+      "elementHtml": "<a href=\"#maincontent\" class=\"sr-only sr-only-focusable\">Skip to main content</a>",
+      "discoveredAt": "2026-04-07T03:45:06.880Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing"
+      }
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "severity": "medium",
+      "description": "Page requires horizontal scrolling at 320px width (1px overflow). Content should reflow without horizontal scrolling at this width.",
+      "selector": "html",
+      "elementHtml": "<html>",
+      "discoveredAt": "2026-04-07T03:45:06.880Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow"
+      }
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "severity": "medium",
+      "description": "Content clipped by 53px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "#footerLinks",
+      "elementHtml": "<h2 id=\"footerLinks\" class=\"sr-only\">Footer Links</h2>",
+      "discoveredAt": "2026-04-07T03:45:06.880Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing"
+      }
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Frame-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:40:13.676Z",
+      "pageUrl": "https://kingcounty.gov/"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Content-Type-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:40:13.676Z",
+      "pageUrl": "https://kingcounty.gov/"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Frame-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:40:33.330Z",
+      "pageUrl": "https://kingcounty.gov/en"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Content-Type-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:40:33.330Z",
+      "pageUrl": "https://kingcounty.gov/en"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Content-Type-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:40:50.147Z",
+      "pageUrl": "https://kingcounty.gov/en/404"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Frame-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:40:50.147Z",
+      "pageUrl": "https://kingcounty.gov/en/404"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Frame-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:41:04.461Z",
+      "pageUrl": "https://kingcounty.gov/en/404/404-folder-test-js"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Content-Type-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:41:04.461Z",
+      "pageUrl": "https://kingcounty.gov/en/404/404-folder-test-js"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Content-Type-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:41:07.972Z",
+      "pageUrl": "https://kingcounty.gov/en/404/404-folder-test-js/test-page-for-pdf-publishing"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Frame-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:41:07.972Z",
+      "pageUrl": "https://kingcounty.gov/en/404/404-folder-test-js/test-page-for-pdf-publishing"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Content-Type-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:41:24.176Z",
+      "pageUrl": "https://kingcounty.gov/en/calendar"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Frame-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:41:24.176Z",
+      "pageUrl": "https://kingcounty.gov/en/calendar"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Content-Type-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:41:50.052Z",
+      "pageUrl": "https://kingcounty.gov/en/categories"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Frame-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:41:50.052Z",
+      "pageUrl": "https://kingcounty.gov/en/categories"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Content-Type-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:41:53.990Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/about-king-county"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Frame-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:41:53.990Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/about-king-county"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Content-Type-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:42:09.362Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/about-king-county/about-prosecuting-attorneys-office"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Frame-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:42:09.362Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/about-king-county/about-prosecuting-attorneys-office"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Frame-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:42:26.994Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/animals-pets-pests"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Content-Type-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:42:26.994Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/animals-pets-pests"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Content-Type-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:42:44.871Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/buildings-property"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Frame-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:42:44.871Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/buildings-property"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Content-Type-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:43:01.470Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/buildings-property/permits-inspections-codes-building-land-use"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Frame-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:43:01.470Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/buildings-property/permits-inspections-codes-building-land-use"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Content-Type-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:43:18.576Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/certificates-permits-licenses"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Frame-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:43:18.576Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/certificates-permits-licenses"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Frame-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:43:33.453Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/courts-jails-legal-system"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Content-Type-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:43:33.453Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/courts-jails-legal-system"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Frame-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:43:51.360Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-and-leadership"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Content-Type-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:43:51.360Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-and-leadership"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Frame-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:44:07.353Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Content-Type-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:44:07.353Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Content-Type-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:44:23.412Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/government-oversight"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Frame-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:44:23.412Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/government-oversight"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Content-Type-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:44:40.168Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/king-county-legislation-codes"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Frame-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:44:40.168Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/king-county-legislation-codes"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Content-Type-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:44:54.861Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Frame-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:44:54.861Z",
+      "pageUrl": "https://kingcounty.gov/en/categories/governance-leadership/local-government-unincorporated-king-county"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#cal-container > div > div > div",
+      "elementHtml": "<div class=\"spinner-border\" role=\"status\"><span class=\"sr-only\">Loading...</span></div>",
+      "discoveredAt": "2026-04-07T03:41:24.290Z",
+      "pageUrl": "https://kingcounty.gov/en/calendar"
+    }
+  ]
+}

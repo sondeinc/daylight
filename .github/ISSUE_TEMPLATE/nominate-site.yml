@@ -1,0 +1,66 @@
+name: Nominate a Government Site
+description: Suggest a government website for accessibility scanning
+title: "[Nomination] "
+labels: ["nomination"]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Website URL
+      description: The main URL of the government website
+      placeholder: "https://example.gov"
+    validations:
+      required: true
+
+  - type: input
+    id: entity
+    attributes:
+      label: Entity name
+      description: The name of the government entity
+      placeholder: "Dallas County"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: jurisdiction
+    attributes:
+      label: Jurisdiction
+      description: The level of government
+      options:
+        - Federal
+        - State
+        - County
+        - City / Municipal
+        - Territory
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: state
+    attributes:
+      label: State / Territory
+      description: If applicable, the U.S. state or territory
+      placeholder: "TX"
+    validations:
+      required: false
+
+  - type: input
+    id: population
+    attributes:
+      label: Estimated population served
+      description: Approximate number of people who rely on this website
+      placeholder: "2.6 million"
+    validations:
+      required: false
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why does this matter?
+      description: >
+        Personal stories are powerful. Why should this site be scanned?
+        (e.g., "My grandmother uses a screen reader and can't pay her property
+        tax online")
+    validations:
+      required: false

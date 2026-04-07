@@ -1,0 +1,40 @@
+name: Report a Scanning Issue
+description: Report a false positive, missing finding, or scoring concern
+title: "[Report] "
+labels: ["scanning-issue"]
+body:
+  - type: input
+    id: site
+    attributes:
+      label: Which site or report?
+      description: The URL of the report page or the entity name
+      placeholder: "https://daylight.sonde.life/section508/lacounty-gov/ or Los Angeles County"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: What seems wrong?
+      options:
+        - False positive (finding reported but not actually an issue)
+        - Missing finding (real issue not detected)
+        - Scoring concern (score seems too high or too low)
+        - Incorrect metadata (wrong entity name, URL, jurisdiction)
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: >
+        Include as much detail as possible: finding ID, WCAG criterion,
+        what you observed on the live site, screenshots if helpful.
+      placeholder: |
+        Finding ID: finding-axe-image-alt-abc123
+        WCAG: 1.1.1
+        The image actually has an alt attribute — it's set via JavaScript after page load.
+    validations:
+      required: true

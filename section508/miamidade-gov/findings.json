@@ -1,0 +1,3101 @@
+{
+  "url": "https://miamidade.gov",
+  "slug": "miamidade-gov",
+  "status": "complete",
+  "scanDate": "2026-04-07T10:40:05.249Z",
+  "scanConfig": {
+    "scope": "site",
+    "maxPages": 50,
+    "racks": [
+      "rack-live-a11y",
+      "rack-live-free"
+    ],
+    "individualProbes": [],
+    "excludedProbes": [],
+    "timeBudgetMs": 300000,
+    "maxFindings": null
+  },
+  "sondeScore": {
+    "score": 942,
+    "rawPenalty": 598.25,
+    "normalizedPenalty": 46.01923076923077,
+    "pagesScanned": 13,
+    "weightsVersion": "v0.1"
+  },
+  "avgFindingsPerPage": 35.3,
+  "elementComplianceRate": 99,
+  "totalElements": 10248,
+  "elementsWithFindings": 101,
+  "complianceSummary": {
+    "total": 459,
+    "byLevel": {},
+    "bySeverity": {
+      "critical": 13,
+      "high": 43,
+      "medium": 318,
+      "low": 85
+    },
+    "byCriterion": {
+      "WCAG 1.4.3": 8,
+      "wcag2a": 2,
+      "WCAG 2.4.3": 53,
+      "WCAG 4.1.3": 8,
+      "WCAG 1.4.12": 11,
+      "WCAG 1.4.10": 1
+    }
+  },
+  "summary": {
+    "pagesAnalyzed": 13,
+    "pagesFailed": 0,
+    "totalFindings": 459,
+    "bySeverity": {
+      "critical": 13,
+      "high": 43,
+      "medium": 318,
+      "low": 85
+    },
+    "byProbe": {},
+    "byType": {},
+    "durationMs": 344266
+  },
+  "jurisdiction": "FL",
+  "entityName": "Miami-Dade County",
+  "findings": [
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 3:1 for large text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"ACCESS FORBIDDEN\"",
+      "selector": "h1",
+      "elementHtml": "<h1>ACCESS FORBIDDEN</h1>",
+      "discoveredAt": "2026-04-07T03:36:39.571Z",
+      "pageUrl": "https://accounts.miamidade.gov/97698a1d-dfd7-4231-aa5b-dd1089aea1b1/b2c_1a_signupsignin/oauth2/v2.0/logout?post_logout_redirect_uri=https%3A%2F%2Fwww.miamidade.gov%2Fglobal%2Fhome.page",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#949494",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 3.0334698257384747,
+        "contrastRequiredRatio": 3,
+        "contrastIsLargeText": true,
+        "contrastTextSample": "ACCESS FORBIDDEN",
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum"
+      }
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"Access to this page is denied. Try another browser or a diff\"",
+      "selector": "p.banner-404-text",
+      "elementHtml": "<p class=\"banner-404-text\">Access to this page is denied. Try another browser or a different device. Alternatively, you can close your browser window and try again. Still not working? <br>Connect with",
+      "discoveredAt": "2026-04-07T03:36:39.571Z",
+      "pageUrl": "https://accounts.miamidade.gov/97698a1d-dfd7-4231-aa5b-dd1089aea1b1/b2c_1a_signupsignin/oauth2/v2.0/logout?post_logout_redirect_uri=https%3A%2F%2Fwww.miamidade.gov%2Fglobal%2Fhome.page",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#767676",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.542224959605253,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Access to this page is denied. Try another browser or a diff",
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum"
+      }
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 3:1 for large text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"403\"",
+      "selector": "h2.sub-titles",
+      "elementHtml": "<h2 class=\"sub-titles\">403</h2>",
+      "discoveredAt": "2026-04-07T03:36:39.571Z",
+      "pageUrl": "https://accounts.miamidade.gov/97698a1d-dfd7-4231-aa5b-dd1089aea1b1/b2c_1a_signupsignin/oauth2/v2.0/logout?post_logout_redirect_uri=https%3A%2F%2Fwww.miamidade.gov%2Fglobal%2Fhome.page",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#949494",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 3.0334698257384747,
+        "contrastRequiredRatio": 3,
+        "contrastIsLargeText": true,
+        "contrastTextSample": "403",
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum"
+      }
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 3:1 for large text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"Welcome to Miami-Dade 311\"",
+      "selector": "h2.sub-titles",
+      "elementHtml": "<h2 class=\"sub-titles\">Welcome to Miami-Dade 311</h2>",
+      "discoveredAt": "2026-04-07T03:35:11.846Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#949494",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 3.0334698257384747,
+        "contrastRequiredRatio": 3,
+        "contrastIsLargeText": true,
+        "contrastTextSample": "Welcome to Miami-Dade 311",
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum"
+      }
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"The Miami-Dade County 311 Contact Center offers convenient a\"",
+      "selector": "p",
+      "elementHtml": "<p>The Miami-Dade County 311 Contact Center offers convenient access to essential County and City of Miami services. Whether you need to report an issue, schedule an appointment with a County Departme",
+      "discoveredAt": "2026-04-07T03:35:11.846Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#767676",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.542224959605253,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "The Miami-Dade County 311 Contact Center offers convenient a",
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum"
+      }
+    },
+    {
+      "probe": "axe-core",
+      "standard": "wcag2a",
+      "severity": "high",
+      "description": "Documents must have <title> element to aid in navigation: Fix any of the following:\n  Document does not have a non-empty <title> element",
+      "selector": "html",
+      "elementHtml": "<html lang=\"en\">",
+      "discoveredAt": "2026-04-07T03:36:35.642Z",
+      "pageUrl": "https://accounts.miamidade.gov/97698a1d-dfd7-4231-aa5b-dd1089aea1b1/b2c_1a_signupsignin/oauth2/v2.0/authorize?response_type=code&client_id=8604f194-1449-4e38-83a2-13625e403cb2&redirect_uri=https%3A%2F%2Fwww.miamidade.gov%2Fglobal%2Flogin.page&scope=openid+profile+email+phone+address+8604f194-1449-4e38-83a2-13625e403cb2"
+    },
+    {
+      "probe": "axe-core",
+      "standard": "wcag2a",
+      "severity": "high",
+      "description": "Documents must have <title> element to aid in navigation: Fix any of the following:\n  Document does not have a non-empty <title> element",
+      "selector": "html",
+      "elementHtml": "<html lang=\"en\">",
+      "discoveredAt": "2026-04-07T03:36:39.595Z",
+      "pageUrl": "https://accounts.miamidade.gov/97698a1d-dfd7-4231-aa5b-dd1089aea1b1/b2c_1a_signupsignin/oauth2/v2.0/logout?post_logout_redirect_uri=https%3A%2F%2Fwww.miamidade.gov%2Fglobal%2Fhome.page"
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "severity": "high",
+      "description": "Insufficient color contrast: 2.68:1 (required: 4.5:1 for normal text). Foreground: rgb(255, 255, 255), background: rgb(158, 158, 158). Text: \"Filters\"",
+      "selector": "span",
+      "elementHtml": "<span _ngcontent-ng-c58074449=\"\">Filters</span>",
+      "discoveredAt": "2026-04-07T03:36:07.671Z",
+      "pageUrl": "https://www.miamidade.gov/global/calendar/global.page",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#9e9e9e",
+        "contrastSuggestedForeground": "#363636",
+        "contrastRatio": 2.6791562985840893,
+        "contrastSuggestedRatio": 4.510494923140855,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Filters",
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum"
+      }
+    },
+    {
+      "probe": "console-health",
+      "severity": "high",
+      "description": "Console error: TypeError: Cannot read properties of undefined (reading 'src')\n    at https://www.miamidade.gov/global/navigation/service-index.page:680:33\n    at new At (https://www.miamidade.gov/resources/components/search-index/js/polyfills.4eba05f77585da50.js:1:120363)\n    at loadScript (https://www.miamidade.gov/global/navigation/service-index.page:678:12)\n    at https://www.miamidade.gov/global/navigation/service-index.page:721:25",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:36:44.176Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page"
+    },
+    {
+      "probe": "console-health",
+      "severity": "high",
+      "description": "Console error: An error occurred while loading scripts: TypeError: Cannot read properties of undefined (reading 'src')\n    at https://www.miamidade.gov/global/navigation/service-index.page:680:33\n    at new At (https://www.miamidade.gov/resources/components/search-index/js/polyfills.4eba05f77585da50.js:1:120363)\n    at loadScript (https://www.miamidade.gov/global/navigation/service-index.page:678:12)\n    at https://www.miamidade.gov/global/navigation/service-index.page:721:25",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:36:44.176Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page"
+    },
+    {
+      "probe": "console-health",
+      "severity": "high",
+      "description": "Console error: An error occurred while loading scripts: TypeError: Cannot read properties of undefined (reading 'src')\n    at https://www.miamidade.gov/global/navigation/service-index.page:680:33\n    at new At (https://www.miamidade.gov/resources/components/search-index/js/polyfills.4eba05f77585da50.js:1:120363)\n    at loadScript (https://www.miamidade.gov/global/navigation/service-index.page:678:12)\n    at https://www.miamidade.gov/global/navigation/service-index.page:721:25",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:37:08.311Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=animals-pets"
+    },
+    {
+      "probe": "console-health",
+      "severity": "high",
+      "description": "Console error: TypeError: Cannot read properties of undefined (reading 'src')\n    at https://www.miamidade.gov/global/navigation/service-index.page:680:33\n    at new At (https://www.miamidade.gov/resources/components/search-index/js/polyfills.4eba05f77585da50.js:1:120363)\n    at loadScript (https://www.miamidade.gov/global/navigation/service-index.page:678:12)\n    at https://www.miamidade.gov/global/navigation/service-index.page:721:25",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:37:08.311Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=animals-pets"
+    },
+    {
+      "probe": "console-health",
+      "severity": "high",
+      "description": "Console error: An error occurred while loading scripts: TypeError: Cannot read properties of undefined (reading 'src')\n    at https://www.miamidade.gov/global/navigation/service-index.page:680:33\n    at new At (https://www.miamidade.gov/resources/components/search-index/js/polyfills.4eba05f77585da50.js:1:120363)\n    at loadScript (https://www.miamidade.gov/global/navigation/service-index.page:678:12)\n    at https://www.miamidade.gov/global/navigation/service-index.page:721:25",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:37:48.014Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=building-development"
+    },
+    {
+      "probe": "console-health",
+      "severity": "high",
+      "description": "Console error: TypeError: Cannot read properties of undefined (reading 'src')\n    at https://www.miamidade.gov/global/navigation/service-index.page:680:33\n    at new At (https://www.miamidade.gov/resources/components/search-index/js/polyfills.4eba05f77585da50.js:1:120363)\n    at loadScript (https://www.miamidade.gov/global/navigation/service-index.page:678:12)\n    at https://www.miamidade.gov/global/navigation/service-index.page:721:25",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:37:48.014Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=building-development"
+    },
+    {
+      "probe": "console-health",
+      "severity": "high",
+      "description": "Console error: TypeError: Cannot read properties of undefined (reading 'src')\n    at https://www.miamidade.gov/global/navigation/service-index.page:680:33\n    at new At (https://www.miamidade.gov/resources/components/search-index/js/polyfills.4eba05f77585da50.js:1:120363)\n    at loadScript (https://www.miamidade.gov/global/navigation/service-index.page:678:12)\n    at https://www.miamidade.gov/global/navigation/service-index.page:721:25",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:38:19.361Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=business-industry"
+    },
+    {
+      "probe": "console-health",
+      "severity": "high",
+      "description": "Console error: An error occurred while loading scripts: TypeError: Cannot read properties of undefined (reading 'src')\n    at https://www.miamidade.gov/global/navigation/service-index.page:680:33\n    at new At (https://www.miamidade.gov/resources/components/search-index/js/polyfills.4eba05f77585da50.js:1:120363)\n    at loadScript (https://www.miamidade.gov/global/navigation/service-index.page:678:12)\n    at https://www.miamidade.gov/global/navigation/service-index.page:721:25",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:38:19.361Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=business-industry"
+    },
+    {
+      "probe": "console-health",
+      "severity": "high",
+      "description": "Console error: TypeError: Cannot read properties of undefined (reading 'src')\n    at https://www.miamidade.gov/global/navigation/service-index.page:680:33\n    at new At (https://www.miamidade.gov/resources/components/search-index/js/polyfills.4eba05f77585da50.js:1:120363)\n    at loadScript (https://www.miamidade.gov/global/navigation/service-index.page:678:12)\n    at https://www.miamidade.gov/global/navigation/service-index.page:721:25",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:38:50.546Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=courts-records"
+    },
+    {
+      "probe": "console-health",
+      "severity": "high",
+      "description": "Console error: An error occurred while loading scripts: TypeError: Cannot read properties of undefined (reading 'src')\n    at https://www.miamidade.gov/global/navigation/service-index.page:680:33\n    at new At (https://www.miamidade.gov/resources/components/search-index/js/polyfills.4eba05f77585da50.js:1:120363)\n    at loadScript (https://www.miamidade.gov/global/navigation/service-index.page:678:12)\n    at https://www.miamidade.gov/global/navigation/service-index.page:721:25",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:38:50.546Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=courts-records"
+    },
+    {
+      "probe": "console-health",
+      "severity": "high",
+      "description": "Console error: TypeError: Cannot read properties of undefined (reading 'src')\n    at https://www.miamidade.gov/global/navigation/service-index.page:680:33\n    at new At (https://www.miamidade.gov/resources/components/search-index/js/polyfills.4eba05f77585da50.js:1:120363)\n    at loadScript (https://www.miamidade.gov/global/navigation/service-index.page:678:12)\n    at https://www.miamidade.gov/global/navigation/service-index.page:721:25",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:39:21.035Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting"
+    },
+    {
+      "probe": "console-health",
+      "severity": "high",
+      "description": "Console error: An error occurred while loading scripts: TypeError: Cannot read properties of undefined (reading 'src')\n    at https://www.miamidade.gov/global/navigation/service-index.page:680:33\n    at new At (https://www.miamidade.gov/resources/components/search-index/js/polyfills.4eba05f77585da50.js:1:120363)\n    at loadScript (https://www.miamidade.gov/global/navigation/service-index.page:678:12)\n    at https://www.miamidade.gov/global/navigation/service-index.page:721:25",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:39:21.035Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting"
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"How else can 311 be reached by phone?\" to \"What kind of information does 311 provide?\" (visual distance: 328px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#FrequentlyAskedQuestions > div > ul > li:nth-of-type(2) > button",
+      "elementHtml": "<button>What kind of information does 311 provide?</button>",
+      "discoveredAt": "2026-04-07T03:35:19.162Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"#twitterShare\" to \"Available on the App Store\" (visual distance: 671px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#DirectMobileApp > div > div > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a>Available on the App Store</a>",
+      "discoveredAt": "2026-04-07T03:35:19.162Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Elected Officials\" to \"Top Services\" (visual distance: 803px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#iw_comp1528109900064 > section:nth-of-type(3) > div > div > div > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a>Top Services</a>",
+      "discoveredAt": "2026-04-07T03:34:55.252Z",
+      "pageUrl": "https://www.miamidade.gov/global/home.page",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"#twitterShare\" to \"Mayor's Office\" (visual distance: 364px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#iw_comp1625265218829 > section > div > div > div > div > div:nth-of-type(1) > a",
+      "elementHtml": "<a>Mayor's Office</a>",
+      "discoveredAt": "2026-04-07T03:34:55.252Z",
+      "pageUrl": "https://www.miamidade.gov/global/home.page",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Water Bill\" to \"View Online Services\" (visual distance: 454px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#OnlineServices > div > a",
+      "elementHtml": "<a>View Online Services</a>",
+      "discoveredAt": "2026-04-07T03:36:52.799Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Certified Copies\" to \"Civil, Family and Probate Courts Case Search\" (visual distance: 396px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#iw_comp1646063340809 > div > mdc-index-search-root > div > mdc-index > main > div > div > mdc-index-list-view > div > mdc-index-item-list > section > div > div:nth-of-type(3) > mdc-search-item > div > h3 > a",
+      "elementHtml": "<a>Civil, Family and Probate Courts Case Search</a>",
+      "discoveredAt": "2026-04-07T03:36:52.799Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Pet Retention Program\" to \"Page number 1\" (visual distance: 410px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#iw_comp1646063340809 > div > mdc-index-search-root > div > mdc-index > main > div > div > mdc-index-pagination > div > div:nth-of-type(2) > nav > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a>Page number 1</a>",
+      "discoveredAt": "2026-04-07T03:37:22.601Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=animals-pets",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"New Water Connection from Well Water\" to \"First Time Sewer Connection (Existing Sewer Lateral)\" (visual distance: 317px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#iw_comp1646063340809 > div > mdc-index-search-root > div > mdc-index > main > div > div > mdc-index-list-view > div > mdc-index-item-list > section > div > div:nth-of-type(10) > mdc-search-item > div > h3 > a",
+      "elementHtml": "<a>First Time Sewer Connection (Existing Sewer Lateral)</a>",
+      "discoveredAt": "2026-04-07T03:37:56.475Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=building-development",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Water Bill\" to \"View Online Services\" (visual distance: 454px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#OnlineServices > div > a",
+      "elementHtml": "<a>View Online Services</a>",
+      "discoveredAt": "2026-04-07T03:38:27.476Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=business-industry",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Water Bill\" to \"View Online Services\" (visual distance: 454px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#OnlineServices > div > a",
+      "elementHtml": "<a>View Online Services</a>",
+      "discoveredAt": "2026-04-07T03:38:58.077Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=courts-records",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Office of the Supervisor of Elections Documents Requests\" to \"Vote by Mail\" (visual distance: 414px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#iw_comp1646063340809 > div > mdc-index-search-root > div > mdc-index > main > div > div > mdc-index-list-view > div > mdc-index-item-list > section > div > div:nth-of-type(3) > mdc-search-item > div > h3 > a",
+      "elementHtml": "<a>Vote by Mail</a>",
+      "discoveredAt": "2026-04-07T03:39:36.480Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Water Bill\" to \"View Online Services\" (visual distance: 454px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#OnlineServices > div > a",
+      "elementHtml": "<a>View Online Services</a>",
+      "discoveredAt": "2026-04-07T03:39:36.480Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:36:35.598Z",
+      "pageUrl": "https://accounts.miamidade.gov/97698a1d-dfd7-4231-aa5b-dd1089aea1b1/b2c_1a_signupsignin/oauth2/v2.0/authorize?response_type=code&client_id=8604f194-1449-4e38-83a2-13625e403cb2&redirect_uri=https%3A%2F%2Fwww.miamidade.gov%2Fglobal%2Flogin.page&scope=openid+profile+email+phone+address+8604f194-1449-4e38-83a2-13625e403cb2"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:36:35.598Z",
+      "pageUrl": "https://accounts.miamidade.gov/97698a1d-dfd7-4231-aa5b-dd1089aea1b1/b2c_1a_signupsignin/oauth2/v2.0/authorize?response_type=code&client_id=8604f194-1449-4e38-83a2-13625e403cb2&redirect_uri=https%3A%2F%2Fwww.miamidade.gov%2Fglobal%2Flogin.page&scope=openid+profile+email+phone+address+8604f194-1449-4e38-83a2-13625e403cb2"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:36:39.555Z",
+      "pageUrl": "https://accounts.miamidade.gov/97698a1d-dfd7-4231-aa5b-dd1089aea1b1/b2c_1a_signupsignin/oauth2/v2.0/logout?post_logout_redirect_uri=https%3A%2F%2Fwww.miamidade.gov%2Fglobal%2Fhome.page"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:36:39.555Z",
+      "pageUrl": "https://accounts.miamidade.gov/97698a1d-dfd7-4231-aa5b-dd1089aea1b1/b2c_1a_signupsignin/oauth2/v2.0/logout?post_logout_redirect_uri=https%3A%2F%2Fwww.miamidade.gov%2Fglobal%2Fhome.page"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:35:42.020Z",
+      "pageUrl": "https://www.miamidade.gov/global/webcasting/home.page"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:35:42.020Z",
+      "pageUrl": "https://www.miamidade.gov/global/webcasting/home.page"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "low",
+      "description": "Users should be able to zoom and scale the text up to 500%: Fix any of the following:\n  <meta> tag limits zooming on mobile devices",
+      "selector": "meta[name=\"viewport\"]",
+      "elementHtml": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=2.0\">",
+      "discoveredAt": "2026-04-07T03:35:12.556Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "low",
+      "description": "Users should be able to zoom and scale the text up to 500%: Fix any of the following:\n  <meta> tag limits zooming on mobile devices",
+      "selector": "meta[name=\"viewport\"]",
+      "elementHtml": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=2.0\">",
+      "discoveredAt": "2026-04-07T03:36:08.216Z",
+      "pageUrl": "https://www.miamidade.gov/global/calendar/global.page"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "low",
+      "description": "Users should be able to zoom and scale the text up to 500%: Fix any of the following:\n  <meta> tag limits zooming on mobile devices",
+      "selector": "meta[name=\"viewport\"]",
+      "elementHtml": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=2.0\">",
+      "discoveredAt": "2026-04-07T03:34:43.793Z",
+      "pageUrl": "https://www.miamidade.gov/global/home.page"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "low",
+      "description": "Users should be able to zoom and scale the text up to 500%: Fix any of the following:\n  <meta> tag limits zooming on mobile devices",
+      "selector": "meta[name=\"viewport\"]",
+      "elementHtml": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=2.0\">",
+      "discoveredAt": "2026-04-07T03:36:43.485Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "low",
+      "description": "Users should be able to zoom and scale the text up to 500%: Fix any of the following:\n  <meta> tag limits zooming on mobile devices",
+      "selector": "meta[name=\"viewport\"]",
+      "elementHtml": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=2.0\">",
+      "discoveredAt": "2026-04-07T03:37:07.571Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=animals-pets"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "low",
+      "description": "Users should be able to zoom and scale the text up to 500%: Fix any of the following:\n  <meta> tag limits zooming on mobile devices",
+      "selector": "meta[name=\"viewport\"]",
+      "elementHtml": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=2.0\">",
+      "discoveredAt": "2026-04-07T03:37:47.226Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=building-development"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "low",
+      "description": "Users should be able to zoom and scale the text up to 500%: Fix any of the following:\n  <meta> tag limits zooming on mobile devices",
+      "selector": "meta[name=\"viewport\"]",
+      "elementHtml": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=2.0\">",
+      "discoveredAt": "2026-04-07T03:38:18.616Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=business-industry"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "low",
+      "description": "Users should be able to zoom and scale the text up to 500%: Fix any of the following:\n  <meta> tag limits zooming on mobile devices",
+      "selector": "meta[name=\"viewport\"]",
+      "elementHtml": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=2.0\">",
+      "discoveredAt": "2026-04-07T03:38:49.804Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=courts-records"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "low",
+      "description": "Users should be able to zoom and scale the text up to 500%: Fix any of the following:\n  <meta> tag limits zooming on mobile devices",
+      "selector": "meta[name=\"viewport\"]",
+      "elementHtml": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=2.0\">",
+      "discoveredAt": "2026-04-07T03:39:20.286Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "low",
+      "description": "Users should be able to zoom and scale the text up to 500%: Fix any of the following:\n  <meta> tag limits zooming on mobile devices",
+      "selector": "meta[name=\"viewport\"]",
+      "elementHtml": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=2.0\">",
+      "discoveredAt": "2026-04-07T03:35:42.990Z",
+      "pageUrl": "https://www.miamidade.gov/global/webcasting/home.page"
+    },
+    {
+      "probe": "console-health",
+      "severity": "low",
+      "description": "Console warning: Couldn't load preload assets:  ProgressEvent (2 occurrences)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:36:36.598Z",
+      "pageUrl": "https://accounts.miamidade.gov/97698a1d-dfd7-4231-aa5b-dd1089aea1b1/b2c_1a_signupsignin/oauth2/v2.0/authorize?response_type=code&client_id=8604f194-1449-4e38-83a2-13625e403cb2&redirect_uri=https%3A%2F%2Fwww.miamidade.gov%2Fglobal%2Flogin.page&scope=openid+profile+email+phone+address+8604f194-1449-4e38-83a2-13625e403cb2"
+    },
+    {
+      "probe": "console-health",
+      "severity": "low",
+      "description": "Console warning: Couldn't load preload assets:  ProgressEvent (3 occurrences)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:36:40.555Z",
+      "pageUrl": "https://accounts.miamidade.gov/97698a1d-dfd7-4231-aa5b-dd1089aea1b1/b2c_1a_signupsignin/oauth2/v2.0/logout?post_logout_redirect_uri=https%3A%2F%2Fwww.miamidade.gov%2Fglobal%2Fhome.page"
+    },
+    {
+      "probe": "console-health",
+      "severity": "low",
+      "description": "Console warning: Couldn't load preload assets:  ProgressEvent (3 occurrences)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:36:44.176Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page"
+    },
+    {
+      "probe": "console-health",
+      "severity": "low",
+      "description": "Console warning: Couldn't load preload assets:  ProgressEvent (3 occurrences)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:37:08.311Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=animals-pets"
+    },
+    {
+      "probe": "console-health",
+      "severity": "low",
+      "description": "Console warning: Couldn't load preload assets:  ProgressEvent (3 occurrences)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:37:48.014Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=building-development"
+    },
+    {
+      "probe": "console-health",
+      "severity": "low",
+      "description": "Console warning: Couldn't load preload assets:  ProgressEvent (3 occurrences)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:38:19.361Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=business-industry"
+    },
+    {
+      "probe": "console-health",
+      "severity": "low",
+      "description": "Console warning: Couldn't load preload assets:  ProgressEvent (3 occurrences)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:38:50.546Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=courts-records"
+    },
+    {
+      "probe": "console-health",
+      "severity": "low",
+      "description": "Console warning: Couldn't load preload assets:  ProgressEvent (3 occurrences)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:39:21.035Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.miamidade.gov/global/public-information-guide/311-contact-center/home.page returns 404 Not Found",
+      "selector": "#iw_comp1612805229346 > section > div:nth-of-type(1) > div > div > div > p > a:nth-of-type(1)",
+      "elementHtml": "<a href=\"https://www.miamidade.gov/global/public-information-guide/311-contact-center/home.page\">311 Contact Center</a>",
+      "discoveredAt": "2026-04-07T03:36:35.731Z",
+      "pageUrl": "https://accounts.miamidade.gov/97698a1d-dfd7-4231-aa5b-dd1089aea1b1/b2c_1a_signupsignin/oauth2/v2.0/authorize?response_type=code&client_id=8604f194-1449-4e38-83a2-13625e403cb2&redirect_uri=https%3A%2F%2Fwww.miamidade.gov%2Fglobal%2Flogin.page&scope=openid+profile+email+phone+address+8604f194-1449-4e38-83a2-13625e403cb2"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.miamidade.gov/global/public-information-guide/311-contact-center/home.page returns 404 Not Found",
+      "selector": "#iw_comp1612805229346 > section > div:nth-of-type(1) > div > div > div > p > a:nth-of-type(1)",
+      "elementHtml": "<a href=\"https://www.miamidade.gov/global/public-information-guide/311-contact-center/home.page\">311 Contact Center</a>",
+      "discoveredAt": "2026-04-07T03:36:39.707Z",
+      "pageUrl": "https://accounts.miamidade.gov/97698a1d-dfd7-4231-aa5b-dd1089aea1b1/b2c_1a_signupsignin/oauth2/v2.0/logout?post_logout_redirect_uri=https%3A%2F%2Fwww.miamidade.gov%2Fglobal%2Fhome.page"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://accounts.miamidade.gov/myaccount/preferences returns 404 Not Found",
+      "selector": "#iw_comp1553655066001 > header > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a href=\"https://accounts.miamidade.gov/myaccount/preferences\">Content Preferences</a>",
+      "discoveredAt": "2026-04-07T03:35:15.815Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://x.com/miamidade311 returns 403 Forbidden",
+      "selector": "#EngageonSocialMedia > div > div:nth-of-type(2) > div > div > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://x.com/miamidade311\">X (formerly Twitter)</a>",
+      "discoveredAt": "2026-04-07T03:35:15.815Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://x.com/MiamiDadeCITD returns 403 Forbidden",
+      "selector": "#contactUs > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"https://x.com/MiamiDadeCITD\"></a>",
+      "discoveredAt": "2026-04-07T03:35:15.815Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.twitter.com/MiamiDadeCounty returns 403 Forbidden",
+      "selector": "#iw_comp1646403036035 > section:nth-of-type(2) > div > div > div > div:nth-of-type(1) > div > div:nth-of-type(2) > a:nth-of-type(4)",
+      "elementHtml": "<a href=\"https://www.twitter.com/MiamiDadeCounty\">Miami-Dade County X - Opens a warning dialog</a>",
+      "discoveredAt": "2026-04-07T03:35:15.815Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.twitter.com/MiamiDadeCounty returns 403 Forbidden",
+      "selector": "#iw_comp1646403036033 > section:nth-of-type(2) > div > div > div > div:nth-of-type(1) > div > div:nth-of-type(2) > a:nth-of-type(4)",
+      "elementHtml": "<a href=\"https://www.twitter.com/MiamiDadeCounty\">Miami-Dade County X - Opens a warning dialog</a>",
+      "discoveredAt": "2026-04-07T03:36:11.397Z",
+      "pageUrl": "https://www.miamidade.gov/global/calendar/global.page"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://accounts.miamidade.gov/myaccount/preferences returns 404 Not Found",
+      "selector": "#iw_comp1563896274062 > header > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a href=\"https://accounts.miamidade.gov/myaccount/preferences\">Content Preferences</a>",
+      "discoveredAt": "2026-04-07T03:36:11.397Z",
+      "pageUrl": "https://www.miamidade.gov/global/calendar/global.page"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://accounts.miamidade.gov/myaccount/preferences returns 404 Not Found",
+      "selector": "#iw_comp1553655066001 > header > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a href=\"https://accounts.miamidade.gov/myaccount/preferences\">Content Preferences</a>",
+      "discoveredAt": "2026-04-07T03:34:51.548Z",
+      "pageUrl": "https://www.miamidade.gov/global/home.page"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.twitter.com/MiamiDadeCounty returns 403 Forbidden",
+      "selector": "#iw_comp1646403036035 > section:nth-of-type(2) > div > div > div > div:nth-of-type(1) > div > div:nth-of-type(2) > a:nth-of-type(4)",
+      "elementHtml": "<a href=\"https://www.twitter.com/MiamiDadeCounty\">Miami-Dade County X - Opens a warning dialog</a>",
+      "discoveredAt": "2026-04-07T03:34:51.548Z",
+      "pageUrl": "https://www.miamidade.gov/global/home.page"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.twitter.com/MiamiDadeCounty returns 403 Forbidden",
+      "selector": "#iw_comp1646403036035 > section:nth-of-type(2) > div > div > div > div:nth-of-type(1) > div > div:nth-of-type(2) > a:nth-of-type(4)",
+      "elementHtml": "<a href=\"https://www.twitter.com/MiamiDadeCounty\">Miami-Dade County X - Opens a warning dialog</a>",
+      "discoveredAt": "2026-04-07T03:36:48.924Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://accounts.miamidade.gov/myaccount/preferences returns 404 Not Found",
+      "selector": "#iw_comp1553655066001 > header > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a href=\"https://accounts.miamidade.gov/myaccount/preferences\">Content Preferences</a>",
+      "discoveredAt": "2026-04-07T03:36:48.924Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://accounts.miamidade.gov/myaccount/preferences returns 404 Not Found",
+      "selector": "#iw_comp1553655066001 > header > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a href=\"https://accounts.miamidade.gov/myaccount/preferences\">Content Preferences</a>",
+      "discoveredAt": "2026-04-07T03:37:18.484Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=animals-pets"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.twitter.com/MiamiDadeCounty returns 403 Forbidden",
+      "selector": "#iw_comp1646403036035 > section:nth-of-type(2) > div > div > div > div:nth-of-type(1) > div > div:nth-of-type(2) > a:nth-of-type(4)",
+      "elementHtml": "<a href=\"https://www.twitter.com/MiamiDadeCounty\">Miami-Dade County X - Opens a warning dialog</a>",
+      "discoveredAt": "2026-04-07T03:37:18.484Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=animals-pets"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://accounts.miamidade.gov/myaccount/preferences returns 404 Not Found",
+      "selector": "#iw_comp1553655066001 > header > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a href=\"https://accounts.miamidade.gov/myaccount/preferences\">Content Preferences</a>",
+      "discoveredAt": "2026-04-07T03:37:52.803Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=building-development"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.twitter.com/MiamiDadeCounty returns 403 Forbidden",
+      "selector": "#iw_comp1646403036035 > section:nth-of-type(2) > div > div > div > div:nth-of-type(1) > div > div:nth-of-type(2) > a:nth-of-type(4)",
+      "elementHtml": "<a href=\"https://www.twitter.com/MiamiDadeCounty\">Miami-Dade County X - Opens a warning dialog</a>",
+      "discoveredAt": "2026-04-07T03:37:52.803Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=building-development"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.twitter.com/MiamiDadeCounty returns 403 Forbidden",
+      "selector": "#iw_comp1646403036035 > section:nth-of-type(2) > div > div > div > div:nth-of-type(1) > div > div:nth-of-type(2) > a:nth-of-type(4)",
+      "elementHtml": "<a href=\"https://www.twitter.com/MiamiDadeCounty\">Miami-Dade County X - Opens a warning dialog</a>",
+      "discoveredAt": "2026-04-07T03:38:23.836Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=business-industry"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://accounts.miamidade.gov/myaccount/preferences returns 404 Not Found",
+      "selector": "#iw_comp1553655066001 > header > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a href=\"https://accounts.miamidade.gov/myaccount/preferences\">Content Preferences</a>",
+      "discoveredAt": "2026-04-07T03:38:23.836Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=business-industry"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.twitter.com/MiamiDadeCounty returns 403 Forbidden",
+      "selector": "#iw_comp1646403036035 > section:nth-of-type(2) > div > div > div > div:nth-of-type(1) > div > div:nth-of-type(2) > a:nth-of-type(4)",
+      "elementHtml": "<a href=\"https://www.twitter.com/MiamiDadeCounty\">Miami-Dade County X - Opens a warning dialog</a>",
+      "discoveredAt": "2026-04-07T03:38:54.422Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=courts-records"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://accounts.miamidade.gov/myaccount/preferences returns 404 Not Found",
+      "selector": "#iw_comp1553655066001 > header > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a href=\"https://accounts.miamidade.gov/myaccount/preferences\">Content Preferences</a>",
+      "discoveredAt": "2026-04-07T03:38:54.422Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=courts-records"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://accounts.miamidade.gov/myaccount/preferences returns 404 Not Found",
+      "selector": "#iw_comp1553655066001 > header > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a href=\"https://accounts.miamidade.gov/myaccount/preferences\">Content Preferences</a>",
+      "discoveredAt": "2026-04-07T03:39:29.607Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.twitter.com/MiamiDadeCounty returns 403 Forbidden",
+      "selector": "#iw_comp1646403036035 > section:nth-of-type(2) > div > div > div > div:nth-of-type(1) > div > div:nth-of-type(2) > a:nth-of-type(4)",
+      "elementHtml": "<a href=\"https://www.twitter.com/MiamiDadeCounty\">Miami-Dade County X - Opens a warning dialog</a>",
+      "discoveredAt": "2026-04-07T03:39:29.607Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.twitter.com/MiamiDadeCounty returns 403 Forbidden",
+      "selector": "#iw_comp1646403036035 > section:nth-of-type(2) > div > div > div > div:nth-of-type(1) > div > div:nth-of-type(2) > a:nth-of-type(4)",
+      "elementHtml": "<a href=\"https://www.twitter.com/MiamiDadeCounty\">Miami-Dade County X - Opens a warning dialog</a>",
+      "discoveredAt": "2026-04-07T03:35:45.919Z",
+      "pageUrl": "https://www.miamidade.gov/global/webcasting/home.page"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://accounts.miamidade.gov/myaccount/preferences returns 404 Not Found",
+      "selector": "#iw_comp1553655066001 > header > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a href=\"https://accounts.miamidade.gov/myaccount/preferences\">Content Preferences</a>",
+      "discoveredAt": "2026-04-07T03:35:45.919Z",
+      "pageUrl": "https://www.miamidade.gov/global/webcasting/home.page"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:36:35.598Z",
+      "pageUrl": "https://accounts.miamidade.gov/97698a1d-dfd7-4231-aa5b-dd1089aea1b1/b2c_1a_signupsignin/oauth2/v2.0/authorize?response_type=code&client_id=8604f194-1449-4e38-83a2-13625e403cb2&redirect_uri=https%3A%2F%2Fwww.miamidade.gov%2Fglobal%2Flogin.page&scope=openid+profile+email+phone+address+8604f194-1449-4e38-83a2-13625e403cb2"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:36:39.555Z",
+      "pageUrl": "https://accounts.miamidade.gov/97698a1d-dfd7-4231-aa5b-dd1089aea1b1/b2c_1a_signupsignin/oauth2/v2.0/logout?post_logout_redirect_uri=https%3A%2F%2Fwww.miamidade.gov%2Fglobal%2Fhome.page"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:35:11.799Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:36:07.623Z",
+      "pageUrl": "https://www.miamidade.gov/global/calendar/global.page"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:34:42.924Z",
+      "pageUrl": "https://www.miamidade.gov/global/home.page"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:36:43.174Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:37:07.310Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=animals-pets"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:37:47.013Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=building-development"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:38:18.361Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=business-industry"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:38:49.546Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=courts-records"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:39:20.035Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "low",
+      "description": "Missing Referrer-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:35:42.020Z",
+      "pageUrl": "https://www.miamidade.gov/global/webcasting/home.page"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-07T03:35:11.974Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-07T03:35:11.974Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-07T03:36:07.803Z",
+      "pageUrl": "https://www.miamidade.gov/global/calendar/global.page"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-07T03:36:07.803Z",
+      "pageUrl": "https://www.miamidade.gov/global/calendar/global.page"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-07T03:34:43.170Z",
+      "pageUrl": "https://www.miamidade.gov/global/home.page"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-07T03:34:43.170Z",
+      "pageUrl": "https://www.miamidade.gov/global/home.page"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-07T03:36:43.414Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-07T03:36:43.414Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-07T03:37:07.510Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=animals-pets"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-07T03:37:07.510Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=animals-pets"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-07T03:37:47.181Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=building-development"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-07T03:37:47.181Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=building-development"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-07T03:38:18.552Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=business-industry"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-07T03:38:18.552Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=business-industry"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-07T03:38:49.730Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=courts-records"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-07T03:38:49.730Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=courts-records"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-07T03:39:20.218Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-07T03:39:20.218Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#WelcometoMiamiDade",
+      "elementHtml": "<section style=\"background-image: url(/resources/images/banners/main-banner.jpg);\" class=\"ad banner-full-width spacing mobile-position-Center\" id=\"WelcometoMiamiDade\">",
+      "discoveredAt": "2026-04-07T03:35:12.556Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#ada-survey",
+      "elementHtml": "<a href=\"https://feedback.miamidade.gov/jfe/form/SV_bEg8ZtnDNi1XVXw\" class=\"sr-only\" id=\"ada-survey\">Assistive Technology Survey</a>",
+      "discoveredAt": "2026-04-07T03:35:12.556Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#ada-survey",
+      "elementHtml": "<a href=\"https://feedback.miamidade.gov/jfe/form/SV_bEg8ZtnDNi1XVXw\" class=\"sr-only\" id=\"ada-survey\">Assistive Technology Survey</a>",
+      "discoveredAt": "2026-04-07T03:36:08.216Z",
+      "pageUrl": "https://www.miamidade.gov/global/calendar/global.page"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#ada-survey",
+      "elementHtml": "<a href=\"https://feedback.miamidade.gov/jfe/form/SV_bEg8ZtnDNi1XVXw\" class=\"sr-only\" id=\"ada-survey\">Assistive Technology Survey</a>",
+      "discoveredAt": "2026-04-07T03:34:43.793Z",
+      "pageUrl": "https://www.miamidade.gov/global/home.page"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#BoardofCountyCommissioners",
+      "elementHtml": "<section class=\"spacing  \" id=\"BoardofCountyCommissioners\">",
+      "discoveredAt": "2026-04-07T03:34:43.793Z",
+      "pageUrl": "https://www.miamidade.gov/global/home.page"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#ada-survey",
+      "elementHtml": "<a href=\"https://feedback.miamidade.gov/jfe/form/SV_bEg8ZtnDNi1XVXw\" class=\"sr-only\" id=\"ada-survey\">Assistive Technology Survey</a>",
+      "discoveredAt": "2026-04-07T03:36:43.485Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": "#main-content",
+      "elementHtml": "<main role=\"main\" class=\"main-body-content-container\" id=\"main-content\">",
+      "discoveredAt": "2026-04-07T03:36:43.485Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Document should not have more than one main landmark: Fix any of the following:\n  Document has more than one main landmark",
+      "selector": "#main-content",
+      "elementHtml": "<main role=\"main\" class=\"main-body-content-container\" id=\"main-content\">",
+      "discoveredAt": "2026-04-07T03:36:43.485Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Main landmark should not be contained in another landmark: Fix any of the following:\n  The main landmark is contained in another landmark.",
+      "selector": "mdc-index > main",
+      "elementHtml": "<main _ngcontent-ng-c2272610662=\"\" aria-live=\"polite\" aria-atomic=\"true\">",
+      "discoveredAt": "2026-04-07T03:36:43.485Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#ada-survey",
+      "elementHtml": "<a href=\"https://feedback.miamidade.gov/jfe/form/SV_bEg8ZtnDNi1XVXw\" class=\"sr-only\" id=\"ada-survey\">Assistive Technology Survey</a>",
+      "discoveredAt": "2026-04-07T03:37:07.571Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=animals-pets"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": "#main-content",
+      "elementHtml": "<main role=\"main\" class=\"main-body-content-container\" id=\"main-content\">",
+      "discoveredAt": "2026-04-07T03:37:07.571Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=animals-pets"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Document should not have more than one main landmark: Fix any of the following:\n  Document has more than one main landmark",
+      "selector": "#main-content",
+      "elementHtml": "<main role=\"main\" class=\"main-body-content-container\" id=\"main-content\">",
+      "discoveredAt": "2026-04-07T03:37:07.571Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=animals-pets"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Main landmark should not be contained in another landmark: Fix any of the following:\n  The main landmark is contained in another landmark.",
+      "selector": "mdc-index > main",
+      "elementHtml": "<main _ngcontent-ng-c2272610662=\"\" aria-live=\"polite\" aria-atomic=\"true\">",
+      "discoveredAt": "2026-04-07T03:37:07.571Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=animals-pets"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Main landmark should not be contained in another landmark: Fix any of the following:\n  The main landmark is contained in another landmark.",
+      "selector": "mdc-index > main",
+      "elementHtml": "<main _ngcontent-ng-c2272610662=\"\" aria-live=\"polite\" aria-atomic=\"true\">",
+      "discoveredAt": "2026-04-07T03:37:47.226Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=building-development"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Document should not have more than one main landmark: Fix any of the following:\n  Document has more than one main landmark",
+      "selector": "#main-content",
+      "elementHtml": "<main role=\"main\" class=\"main-body-content-container\" id=\"main-content\">",
+      "discoveredAt": "2026-04-07T03:37:47.226Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=building-development"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#ada-survey",
+      "elementHtml": "<a href=\"https://feedback.miamidade.gov/jfe/form/SV_bEg8ZtnDNi1XVXw\" class=\"sr-only\" id=\"ada-survey\">Assistive Technology Survey</a>",
+      "discoveredAt": "2026-04-07T03:37:47.226Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=building-development"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": "#main-content",
+      "elementHtml": "<main role=\"main\" class=\"main-body-content-container\" id=\"main-content\">",
+      "discoveredAt": "2026-04-07T03:37:47.226Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=building-development"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#ada-survey",
+      "elementHtml": "<a href=\"https://feedback.miamidade.gov/jfe/form/SV_bEg8ZtnDNi1XVXw\" class=\"sr-only\" id=\"ada-survey\">Assistive Technology Survey</a>",
+      "discoveredAt": "2026-04-07T03:38:18.616Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=business-industry"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": "#main-content",
+      "elementHtml": "<main role=\"main\" class=\"main-body-content-container\" id=\"main-content\">",
+      "discoveredAt": "2026-04-07T03:38:18.616Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=business-industry"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Document should not have more than one main landmark: Fix any of the following:\n  Document has more than one main landmark",
+      "selector": "#main-content",
+      "elementHtml": "<main role=\"main\" class=\"main-body-content-container\" id=\"main-content\">",
+      "discoveredAt": "2026-04-07T03:38:18.616Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=business-industry"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Main landmark should not be contained in another landmark: Fix any of the following:\n  The main landmark is contained in another landmark.",
+      "selector": "mdc-index > main",
+      "elementHtml": "<main _ngcontent-ng-c2272610662=\"\" aria-live=\"polite\" aria-atomic=\"true\">",
+      "discoveredAt": "2026-04-07T03:38:18.616Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=business-industry"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#ada-survey",
+      "elementHtml": "<a href=\"https://feedback.miamidade.gov/jfe/form/SV_bEg8ZtnDNi1XVXw\" class=\"sr-only\" id=\"ada-survey\">Assistive Technology Survey</a>",
+      "discoveredAt": "2026-04-07T03:38:49.804Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=courts-records"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": "#main-content",
+      "elementHtml": "<main role=\"main\" class=\"main-body-content-container\" id=\"main-content\">",
+      "discoveredAt": "2026-04-07T03:38:49.804Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=courts-records"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Document should not have more than one main landmark: Fix any of the following:\n  Document has more than one main landmark",
+      "selector": "#main-content",
+      "elementHtml": "<main role=\"main\" class=\"main-body-content-container\" id=\"main-content\">",
+      "discoveredAt": "2026-04-07T03:38:49.804Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=courts-records"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Main landmark should not be contained in another landmark: Fix any of the following:\n  The main landmark is contained in another landmark.",
+      "selector": "mdc-index > main",
+      "elementHtml": "<main _ngcontent-ng-c2272610662=\"\" aria-live=\"polite\" aria-atomic=\"true\">",
+      "discoveredAt": "2026-04-07T03:38:49.804Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=courts-records"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Main landmark should not be contained in another landmark: Fix any of the following:\n  The main landmark is contained in another landmark.",
+      "selector": "mdc-index > main",
+      "elementHtml": "<main _ngcontent-ng-c2272610662=\"\" aria-live=\"polite\" aria-atomic=\"true\">",
+      "discoveredAt": "2026-04-07T03:39:20.286Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": "#main-content",
+      "elementHtml": "<main role=\"main\" class=\"main-body-content-container\" id=\"main-content\">",
+      "discoveredAt": "2026-04-07T03:39:20.286Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#ada-survey",
+      "elementHtml": "<a href=\"https://feedback.miamidade.gov/jfe/form/SV_bEg8ZtnDNi1XVXw\" class=\"sr-only\" id=\"ada-survey\">Assistive Technology Survey</a>",
+      "discoveredAt": "2026-04-07T03:39:20.286Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Document should not have more than one main landmark: Fix any of the following:\n  Document has more than one main landmark",
+      "selector": "#main-content",
+      "elementHtml": "<main role=\"main\" class=\"main-body-content-container\" id=\"main-content\">",
+      "discoveredAt": "2026-04-07T03:39:20.286Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting"
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#ada-survey",
+      "elementHtml": "<a href=\"https://feedback.miamidade.gov/jfe/form/SV_bEg8ZtnDNi1XVXw\" class=\"sr-only\" id=\"ada-survey\">Assistive Technology Survey</a>",
+      "discoveredAt": "2026-04-07T03:35:42.990Z",
+      "pageUrl": "https://www.miamidade.gov/global/webcasting/home.page"
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "severity": "medium",
+      "description": "Insufficient color contrast: 3.08:1 (required: 4.5:1 for normal text). Foreground: rgb(3, 155, 229), background: rgb(255, 255, 255). Text: \"Back to Search\"",
+      "selector": "button.search__input__skip__button",
+      "elementHtml": "<button _ngcontent-ng-c976234594=\"\" aria-roledescription=\"link\" class=\"search__input__skip__button\">Back to Search</button>",
+      "discoveredAt": "2026-04-07T03:36:07.671Z",
+      "pageUrl": "https://www.miamidade.gov/global/calendar/global.page",
+      "metadata": {
+        "contrastForeground": "#039be5",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#027db9",
+        "contrastRatio": 3.0774469076409,
+        "contrastSuggestedRatio": 4.529196541318313,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Back to Search",
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum"
+      }
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "severity": "medium",
+      "description": "Insufficient color contrast: 3.08:1 (required: 4.5:1 for normal text). Foreground: rgb(3, 155, 229), background: rgb(255, 255, 255). Text: \"Skip to Main Content\"",
+      "selector": "button.search__input__skip__button",
+      "elementHtml": "<button _ngcontent-ng-c411985369=\"\" aria-roledescription=\"link\" class=\"search__input__skip__button\">Skip to Main Content</button>",
+      "discoveredAt": "2026-04-07T03:36:07.671Z",
+      "pageUrl": "https://www.miamidade.gov/global/calendar/global.page",
+      "metadata": {
+        "contrastForeground": "#039be5",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#027db9",
+        "contrastRatio": 3.0774469076409,
+        "contrastSuggestedRatio": 4.529196541318313,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Skip to Main Content",
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum"
+      }
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "severity": "medium",
+      "description": "Clicking \"No\" inserts 2 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#mdc-qualtrics-helpful > div > div > fieldset > div > button:nth-of-type(2)",
+      "elementHtml": "<button class=\"QSI__EmbeddedFeedbackContainer_TextButton\" title=\"No\" style=\"font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: 1e",
+      "discoveredAt": "2026-04-07T03:35:40.036Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages"
+      }
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "severity": "medium",
+      "description": "Clicking \"No\" inserts 2 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#mdc-qualtrics-helpful > div > div > fieldset > div > button:nth-of-type(2)",
+      "elementHtml": "<button class=\"QSI__EmbeddedFeedbackContainer_TextButton\" title=\"No\" style=\"font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: 1e",
+      "discoveredAt": "2026-04-07T03:35:10.571Z",
+      "pageUrl": "https://www.miamidade.gov/global/home.page",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages"
+      }
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "severity": "medium",
+      "description": "Clicking \"No\" inserts 2 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#mdc-qualtrics-helpful > div > div > fieldset > div > button:nth-of-type(2)",
+      "elementHtml": "<button class=\"QSI__EmbeddedFeedbackContainer_TextButton\" title=\"No\" style=\"font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: 1e",
+      "discoveredAt": "2026-04-07T03:37:43.419Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=animals-pets",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages"
+      }
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "severity": "medium",
+      "description": "Clicking \"No\" inserts 2 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#mdc-qualtrics-helpful > div > div > fieldset > div > button:nth-of-type(2)",
+      "elementHtml": "<button class=\"QSI__EmbeddedFeedbackContainer_TextButton\" title=\"No\" style=\"font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: 1e",
+      "discoveredAt": "2026-04-07T03:38:17.287Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=building-development",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages"
+      }
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "severity": "medium",
+      "description": "Clicking \"No\" inserts 2 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#mdc-qualtrics-helpful > div > div > fieldset > div > button:nth-of-type(2)",
+      "elementHtml": "<button class=\"QSI__EmbeddedFeedbackContainer_TextButton\" title=\"No\" style=\"font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: 1e",
+      "discoveredAt": "2026-04-07T03:38:48.284Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=business-industry",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages"
+      }
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "severity": "medium",
+      "description": "Clicking \"No\" inserts 2 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#mdc-qualtrics-helpful > div > div > fieldset > div > button:nth-of-type(2)",
+      "elementHtml": "<button class=\"QSI__EmbeddedFeedbackContainer_TextButton\" title=\"No\" style=\"font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: 1e",
+      "discoveredAt": "2026-04-07T03:39:18.835Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=courts-records",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages"
+      }
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "severity": "medium",
+      "description": "Clicking \"No\" inserts 2 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#mdc-qualtrics-helpful > div > div > fieldset > div > button:nth-of-type(2)",
+      "elementHtml": "<button class=\"QSI__EmbeddedFeedbackContainer_TextButton\" title=\"No\" style=\"font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: 1e",
+      "discoveredAt": "2026-04-07T03:40:05.223Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages"
+      }
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "severity": "medium",
+      "description": "Clicking \"No\" inserts 2 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#mdc-qualtrics-helpful > div > div > fieldset > div > button:nth-of-type(2)",
+      "elementHtml": "<button class=\"QSI__EmbeddedFeedbackContainer_TextButton\" title=\"No\" style=\"font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: 1e",
+      "discoveredAt": "2026-04-07T03:36:03.717Z",
+      "pageUrl": "https://www.miamidade.gov/global/webcasting/home.page",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Social Media Directory\" is visually at position 30 but receives focus at position 55 (drift: 25).",
+      "selector": "#iw_comp1646403036035 > footer > div:nth-of-type(1) > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a>Social Media Directory</a>",
+      "discoveredAt": "2026-04-07T03:35:19.162Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Watch Government Meetings\" is visually at position 34 but receives focus at position 56 (drift: 22).",
+      "selector": "#iw_comp1646403036035 > footer > div:nth-of-type(1) > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a>Watch Government Meetings</a>",
+      "discoveredAt": "2026-04-07T03:35:19.162Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"#FBShare\" is visually at position 55 but receives focus at position 19 (drift: 36).",
+      "selector": "#FBShare",
+      "elementHtml": "<a></a>",
+      "discoveredAt": "2026-04-07T03:35:19.162Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Communications, Information & Technology\" is visually at position 46 but receives focus at position 18 (drift: 28).",
+      "selector": "#iw_comp1553655066004 > div > span:nth-of-type(7) > a",
+      "elementHtml": "<a>Communications, Information & Technology</a>",
+      "discoveredAt": "2026-04-07T03:35:19.162Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Departments\" is visually at position 44 but receives focus at position 17 (drift: 27).",
+      "selector": "#iw_comp1553655066004 > div > span:nth-of-type(5) > a",
+      "elementHtml": "<a>Departments</a>",
+      "discoveredAt": "2026-04-07T03:35:19.162Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Communications, Information and Technology\" is visually at position 14 but receives focus at position 33 (drift: 19).",
+      "selector": "#orgName",
+      "elementHtml": "<a>Communications, Information and Technology</a>",
+      "discoveredAt": "2026-04-07T03:35:19.162Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"How else can 311 be reached by phone?\" is visually at position 59 but receives focus at position 30 (drift: 29).",
+      "selector": "#FrequentlyAskedQuestions > div > ul > li:nth-of-type(1) > button",
+      "elementHtml": "<button>How else can 311 be reached by phone?</button>",
+      "discoveredAt": "2026-04-07T03:35:19.162Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"311@miamidade.gov\" is visually at position 54 but receives focus at position 25 (drift: 29).",
+      "selector": "#iw_comp1717410926516 > section > div > div > div > div > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-of-type(2) > p > a",
+      "elementHtml": "<a>311@miamidade.gov</a>",
+      "discoveredAt": "2026-04-07T03:35:19.162Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"#twitterShare\" is visually at position 56 but receives focus at position 20 (drift: 36).",
+      "selector": "#twitterShare",
+      "elementHtml": "<a></a>",
+      "discoveredAt": "2026-04-07T03:35:19.162Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"311 Contact Center\" is visually at position 22 but receives focus at position 49 (drift: 27).",
+      "selector": "#iw_comp1646403036035 > footer > div:nth-of-type(1) > div > div:nth-of-type(1) > div > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a>311 Contact Center</a>",
+      "discoveredAt": "2026-04-07T03:35:19.162Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Home\" is visually at position 42 but receives focus at position 15 (drift: 27).",
+      "selector": "#iw_comp1553655066004 > div > span:nth-of-type(1) > a",
+      "elementHtml": "<a>Home</a>",
+      "discoveredAt": "2026-04-07T03:35:19.162Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Government\" is visually at position 43 but receives focus at position 16 (drift: 27).",
+      "selector": "#iw_comp1553655066004 > div > span:nth-of-type(3) > a",
+      "elementHtml": "<a>Government</a>",
+      "discoveredAt": "2026-04-07T03:35:19.162Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Report a Problem\" is visually at position 2 but receives focus at position 23 (drift: 21).",
+      "selector": "#iw_comp1528109900064 > section:nth-of-type(3) > div > div > div > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a>Report a Problem</a>",
+      "discoveredAt": "2026-04-07T03:34:55.252Z",
+      "pageUrl": "https://www.miamidade.gov/global/home.page",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Yes\" is visually at position 23 but receives focus at position 51 (drift: 28).",
+      "selector": "#mdc-qualtrics-helpful > div > div > fieldset > div > button:nth-of-type(1)",
+      "elementHtml": "<button>Yes</button>",
+      "discoveredAt": "2026-04-07T03:36:52.799Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Traffic Citations\" is visually at position 56 but receives focus at position 29 (drift: 27).",
+      "selector": "#iw_comp1646063340809 > div > mdc-index-search-root > div > mdc-index > main > div > div > mdc-index-list-view > div > mdc-index-item-list > section > div > div:nth-of-type(9) > mdc-search-item > div > h3 > a",
+      "elementHtml": "<a>Traffic Citations</a>",
+      "discoveredAt": "2026-04-07T03:36:52.799Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Court Case Search\" is visually at position 43 but receives focus at position 21 (drift: 22).",
+      "selector": "#iw_comp1646063340809 > div > mdc-index-search-root > div > mdc-index > main > div > div > mdc-index-list-view > div > mdc-index-item-list > section > div > div:nth-of-type(1) > mdc-search-item > div > h3 > a",
+      "elementHtml": "<a>Court Case Search</a>",
+      "discoveredAt": "2026-04-07T03:36:52.799Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Mortgage Foreclosure Search\" is visually at position 62 but receives focus at position 26 (drift: 36).",
+      "selector": "#iw_comp1646063340809 > div > mdc-index-search-root > div > mdc-index > main > div > div > mdc-index-list-view > div > mdc-index-item-list > section > div > div:nth-of-type(6) > mdc-search-item > div > h3 > a",
+      "elementHtml": "<a>Mortgage Foreclosure Search</a>",
+      "discoveredAt": "2026-04-07T03:36:52.799Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"View Online Services\" is visually at position 18 but receives focus at position 50 (drift: 32).",
+      "selector": "#OnlineServices > div > a",
+      "elementHtml": "<a>View Online Services</a>",
+      "discoveredAt": "2026-04-07T03:36:52.799Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"#iw_comp1646403036035 > footer > div:nth-of-type(1) > div > div:nth-of-type(2) > div > p:nth-of-type(1) > a\" is visually at position 27 but receives focus at position 68 (drift: 41).",
+      "selector": "#iw_comp1646403036035 > footer > div:nth-of-type(1) > div > div:nth-of-type(2) > div > p:nth-of-type(1) > a",
+      "elementHtml": "<a></a>",
+      "discoveredAt": "2026-04-07T03:36:52.799Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Certified Copies\" is visually at position 61 but receives focus at position 22 (drift: 39).",
+      "selector": "#iw_comp1646063340809 > div > mdc-index-search-root > div > mdc-index > main > div > div > mdc-index-list-view > div > mdc-index-item-list > section > div > div:nth-of-type(2) > mdc-search-item > div > h3 > a",
+      "elementHtml": "<a>Certified Copies</a>",
+      "discoveredAt": "2026-04-07T03:36:52.799Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Pet Retention Program\" is visually at position 63 but receives focus at position 32 (drift: 31).",
+      "selector": "#iw_comp1646063340809 > div > mdc-index-search-root > div > mdc-index > main > div > div > mdc-index-list-view > div > mdc-index-item-list > section > div > div:nth-of-type(10) > mdc-search-item > div > h3 > a",
+      "elementHtml": "<a>Pet Retention Program</a>",
+      "discoveredAt": "2026-04-07T03:37:22.601Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=animals-pets",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"No\" is visually at position 24 but receives focus at position 48 (drift: 24).",
+      "selector": "#mdc-qualtrics-helpful > div > div > fieldset > div > button:nth-of-type(2)",
+      "elementHtml": "<button>No</button>",
+      "discoveredAt": "2026-04-07T03:38:27.476Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=business-industry",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"#iw_comp1646403036035 > footer > div:nth-of-type(1) > div > div:nth-of-type(2) > div > p:nth-of-type(1) > a\" is visually at position 27 but receives focus at position 64 (drift: 37).",
+      "selector": "#iw_comp1646403036035 > footer > div:nth-of-type(1) > div > div:nth-of-type(2) > div > p:nth-of-type(1) > a",
+      "elementHtml": "<a></a>",
+      "discoveredAt": "2026-04-07T03:38:27.476Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=business-industry",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"311 Contact Center\" is visually at position 33 but receives focus at position 54 (drift: 21).",
+      "selector": "#iw_comp1646403036035 > footer > div:nth-of-type(1) > div > div:nth-of-type(1) > div > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a>311 Contact Center</a>",
+      "discoveredAt": "2026-04-07T03:38:27.476Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=business-industry",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Legal Ads & Public Notices\" is visually at position 38 but receives focus at position 59 (drift: 21).",
+      "selector": "#iw_comp1646403036035 > footer > div:nth-of-type(1) > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a>Legal Ads & Public Notices</a>",
+      "discoveredAt": "2026-04-07T03:38:27.476Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=business-industry",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Contracting Opportunities\" is visually at position 47 but receives focus at position 27 (drift: 20).",
+      "selector": "#iw_comp1646063340809 > div > mdc-index-search-root > div > mdc-index > main > div > div > mdc-index-list-view > div > mdc-index-item-list > section > div > div:nth-of-type(5) > mdc-search-item > div > h3 > a",
+      "elementHtml": "<a>Contracting Opportunities</a>",
+      "discoveredAt": "2026-04-07T03:38:27.476Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=business-industry",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"No\" is visually at position 24 but receives focus at position 47 (drift: 23).",
+      "selector": "#mdc-qualtrics-helpful > div > div > fieldset > div > button:nth-of-type(2)",
+      "elementHtml": "<button>No</button>",
+      "discoveredAt": "2026-04-07T03:38:58.077Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=courts-records",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"#iw_comp1646403036035 > footer > div:nth-of-type(1) > div > div:nth-of-type(2) > div > p:nth-of-type(1) > a\" is visually at position 27 but receives focus at position 63 (drift: 36).",
+      "selector": "#iw_comp1646403036035 > footer > div:nth-of-type(1) > div > div:nth-of-type(2) > div > p:nth-of-type(1) > a",
+      "elementHtml": "<a></a>",
+      "discoveredAt": "2026-04-07T03:38:58.077Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=courts-records",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Legal Ads & Public Notices\" is visually at position 37 but receives focus at position 58 (drift: 21).",
+      "selector": "#iw_comp1646403036035 > footer > div:nth-of-type(1) > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a>Legal Ads & Public Notices</a>",
+      "discoveredAt": "2026-04-07T03:38:58.077Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=courts-records",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"311 Contact Center\" is visually at position 33 but receives focus at position 53 (drift: 20).",
+      "selector": "#iw_comp1646403036035 > footer > div:nth-of-type(1) > div > div:nth-of-type(1) > div > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a>311 Contact Center</a>",
+      "discoveredAt": "2026-04-07T03:38:58.077Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=courts-records",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Water Bill\" is visually at position 62 but receives focus at position 43 (drift: 19).",
+      "selector": "#OnlineServices > div > div > div > div > ul > li:nth-of-type(8) > a",
+      "elementHtml": "<a>Water Bill</a>",
+      "discoveredAt": "2026-04-07T03:39:36.480Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Legal Ads & Public Notices\" is visually at position 36 but receives focus at position 57 (drift: 21).",
+      "selector": "#iw_comp1646403036035 > footer > div:nth-of-type(1) > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a>Legal Ads & Public Notices</a>",
+      "discoveredAt": "2026-04-07T03:39:36.480Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"View Online Services\" is visually at position 18 but receives focus at position 44 (drift: 26).",
+      "selector": "#OnlineServices > div > a",
+      "elementHtml": "<a>View Online Services</a>",
+      "discoveredAt": "2026-04-07T03:39:36.480Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"311 Contact Center\" is visually at position 33 but receives focus at position 52 (drift: 19).",
+      "selector": "#iw_comp1646403036035 > footer > div:nth-of-type(1) > div > div:nth-of-type(1) > div > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a>311 Contact Center</a>",
+      "discoveredAt": "2026-04-07T03:39:36.480Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Office of the Supervisor of Elections Documents Requests\" is visually at position 60 but receives focus at position 24 (drift: 36).",
+      "selector": "#iw_comp1646063340809 > div > mdc-index-search-root > div > mdc-index > main > div > div > mdc-index-list-view > div > mdc-index-item-list > section > div > div:nth-of-type(2) > mdc-search-item > div > h3 > a",
+      "elementHtml": "<a>Office of the Supervisor of Elections Documents Requests</a>",
+      "discoveredAt": "2026-04-07T03:39:36.480Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Voter Information\" is visually at position 55 but receives focus at position 28 (drift: 27).",
+      "selector": "#iw_comp1646063340809 > div > mdc-index-search-root > div > mdc-index > main > div > div > mdc-index-list-view > div > mdc-index-item-list > section > div > div:nth-of-type(6) > mdc-search-item > div > h3 > a",
+      "elementHtml": "<a>Voter Information</a>",
+      "discoveredAt": "2026-04-07T03:39:36.480Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Yes\" is visually at position 23 but receives focus at position 45 (drift: 22).",
+      "selector": "#mdc-qualtrics-helpful > div > div > fieldset > div > button:nth-of-type(1)",
+      "elementHtml": "<button>Yes</button>",
+      "discoveredAt": "2026-04-07T03:39:36.480Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Transit Pass\" is visually at position 61 but receives focus at position 42 (drift: 19).",
+      "selector": "#OnlineServices > div > div > div > div > ul > li:nth-of-type(7) > a",
+      "elementHtml": "<a>Transit Pass</a>",
+      "discoveredAt": "2026-04-07T03:39:36.480Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"#iw_comp1646403036035 > footer > div:nth-of-type(1) > div > div:nth-of-type(2) > div > p:nth-of-type(1) > a\" is visually at position 27 but receives focus at position 62 (drift: 35).",
+      "selector": "#iw_comp1646403036035 > footer > div:nth-of-type(1) > div > div:nth-of-type(2) > div > p:nth-of-type(1) > a",
+      "elementHtml": "<a></a>",
+      "discoveredAt": "2026-04-07T03:39:36.480Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"Three Ways to Vote\" is visually at position 52 but receives focus at position 31 (drift: 21).",
+      "selector": "#iw_comp1646063340809 > div > mdc-index-search-root > div > mdc-index > main > div > div > mdc-index-list-view > div > mdc-index-item-list > section > div > div:nth-of-type(9) > mdc-search-item > div > h3 > a",
+      "elementHtml": "<a>Three Ways to Vote</a>",
+      "discoveredAt": "2026-04-07T03:39:36.480Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "severity": "medium",
+      "description": "\"No\" is visually at position 24 but receives focus at position 46 (drift: 22).",
+      "selector": "#mdc-qualtrics-helpful > div > div > fieldset > div > button:nth-of-type(2)",
+      "elementHtml": "<button>No</button>",
+      "discoveredAt": "2026-04-07T03:39:36.480Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+      }
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.miamidade.gov/global/logout.page returns 404 Not Found",
+      "selector": "#iw_comp1553655066001 > header > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.miamidade.gov/global/logout.page\">Sign Out</a>",
+      "discoveredAt": "2026-04-07T03:35:15.815Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.miamidade.gov/global/login.page returns 404 Not Found",
+      "selector": "#loginId-mobile",
+      "elementHtml": "<a href=\"https://www.miamidade.gov/global/login.page\">Login</a>",
+      "discoveredAt": "2026-04-07T03:35:15.815Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.miamidade.gov/global/self-service.page returns 404 Not Found",
+      "selector": "#iw_comp1553655066001 > header > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.miamidade.gov/global/self-service.page\">Self-Service</a>",
+      "discoveredAt": "2026-04-07T03:35:15.815Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.miamidade.gov/global/self-service.page returns 404 Not Found",
+      "selector": "#iw_comp1563896274062 > header > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.miamidade.gov/global/self-service.page\">Self-Service</a>",
+      "discoveredAt": "2026-04-07T03:36:11.397Z",
+      "pageUrl": "https://www.miamidade.gov/global/calendar/global.page"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.miamidade.gov/list returns 404 Not Found",
+      "selector": "#scrollContainer > mdc-calendar-list-view > div > div > mdc-calendar-navigation > div > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.miamidade.gov/list\">Today</a>",
+      "discoveredAt": "2026-04-07T03:36:11.397Z",
+      "pageUrl": "https://www.miamidade.gov/global/calendar/global.page"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.miamidade.gov/global/logout.page returns 404 Not Found",
+      "selector": "#iw_comp1563896274062 > header > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.miamidade.gov/global/logout.page\">Sign Out</a>",
+      "discoveredAt": "2026-04-07T03:36:11.397Z",
+      "pageUrl": "https://www.miamidade.gov/global/calendar/global.page"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.miamidade.gov/global/login.page returns 404 Not Found",
+      "selector": "#loginId-mobile",
+      "elementHtml": "<a href=\"https://www.miamidade.gov/global/login.page\">Login</a>",
+      "discoveredAt": "2026-04-07T03:36:11.397Z",
+      "pageUrl": "https://www.miamidade.gov/global/calendar/global.page"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.miamidade.gov/global/logout.page returns 404 Not Found",
+      "selector": "#iw_comp1553655066001 > header > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.miamidade.gov/global/logout.page\">Sign Out</a>",
+      "discoveredAt": "2026-04-07T03:34:51.548Z",
+      "pageUrl": "https://www.miamidade.gov/global/home.page"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.miamidade.gov/global/login.page returns 404 Not Found",
+      "selector": "#loginId-mobile",
+      "elementHtml": "<a href=\"https://www.miamidade.gov/global/login.page\">Login</a>",
+      "discoveredAt": "2026-04-07T03:34:51.548Z",
+      "pageUrl": "https://www.miamidade.gov/global/home.page"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.miamidade.gov/global/self-service.page returns 404 Not Found",
+      "selector": "#iw_comp1553655066001 > header > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.miamidade.gov/global/self-service.page\">Self-Service</a>",
+      "discoveredAt": "2026-04-07T03:34:51.548Z",
+      "pageUrl": "https://www.miamidade.gov/global/home.page"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.miamidade.gov/global/logout.page returns 404 Not Found",
+      "selector": "#iw_comp1553655066001 > header > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.miamidade.gov/global/logout.page\">Sign Out</a>",
+      "discoveredAt": "2026-04-07T03:36:48.924Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.miamidade.gov/global/self-service.page returns 404 Not Found",
+      "selector": "#iw_comp1553655066001 > header > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.miamidade.gov/global/self-service.page\">Self-Service</a>",
+      "discoveredAt": "2026-04-07T03:36:48.924Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.miamidade.gov/global/login.page returns 404 Not Found",
+      "selector": "#loginId-mobile",
+      "elementHtml": "<a href=\"https://www.miamidade.gov/global/login.page\">Login</a>",
+      "discoveredAt": "2026-04-07T03:36:48.924Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.miamidade.gov/global/login.page returns 404 Not Found",
+      "selector": "#loginId-mobile",
+      "elementHtml": "<a href=\"https://www.miamidade.gov/global/login.page\">Login</a>",
+      "discoveredAt": "2026-04-07T03:37:18.484Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=animals-pets"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.miamidade.gov/global/self-service.page returns 404 Not Found",
+      "selector": "#iw_comp1553655066001 > header > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.miamidade.gov/global/self-service.page\">Self-Service</a>",
+      "discoveredAt": "2026-04-07T03:37:18.484Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=animals-pets"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.miamidade.gov/global/logout.page returns 404 Not Found",
+      "selector": "#iw_comp1553655066001 > header > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.miamidade.gov/global/logout.page\">Sign Out</a>",
+      "discoveredAt": "2026-04-07T03:37:18.484Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=animals-pets"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.miamidade.gov/global/login.page returns 404 Not Found",
+      "selector": "#loginId-mobile",
+      "elementHtml": "<a href=\"https://www.miamidade.gov/global/login.page\">Login</a>",
+      "discoveredAt": "2026-04-07T03:37:52.803Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=building-development"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.miamidade.gov/global/self-service.page returns 404 Not Found",
+      "selector": "#iw_comp1553655066001 > header > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.miamidade.gov/global/self-service.page\">Self-Service</a>",
+      "discoveredAt": "2026-04-07T03:37:52.803Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=building-development"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.miamidade.gov/global/logout.page returns 404 Not Found",
+      "selector": "#iw_comp1553655066001 > header > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.miamidade.gov/global/logout.page\">Sign Out</a>",
+      "discoveredAt": "2026-04-07T03:37:52.803Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=building-development"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.miamidade.gov/global/logout.page returns 404 Not Found",
+      "selector": "#iw_comp1553655066001 > header > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.miamidade.gov/global/logout.page\">Sign Out</a>",
+      "discoveredAt": "2026-04-07T03:38:23.836Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=business-industry"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.miamidade.gov/global/login.page returns 404 Not Found",
+      "selector": "#loginId-mobile",
+      "elementHtml": "<a href=\"https://www.miamidade.gov/global/login.page\">Login</a>",
+      "discoveredAt": "2026-04-07T03:38:23.836Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=business-industry"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.miamidade.gov/global/self-service.page returns 404 Not Found",
+      "selector": "#iw_comp1553655066001 > header > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.miamidade.gov/global/self-service.page\">Self-Service</a>",
+      "discoveredAt": "2026-04-07T03:38:23.836Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=business-industry"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.miamidade.gov/global/logout.page returns 404 Not Found",
+      "selector": "#iw_comp1553655066001 > header > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.miamidade.gov/global/logout.page\">Sign Out</a>",
+      "discoveredAt": "2026-04-07T03:38:54.422Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=courts-records"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.miamidade.gov/global/login.page returns 404 Not Found",
+      "selector": "#loginId-mobile",
+      "elementHtml": "<a href=\"https://www.miamidade.gov/global/login.page\">Login</a>",
+      "discoveredAt": "2026-04-07T03:38:54.422Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=courts-records"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.miamidade.gov/global/self-service.page returns 404 Not Found",
+      "selector": "#iw_comp1553655066001 > header > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.miamidade.gov/global/self-service.page\">Self-Service</a>",
+      "discoveredAt": "2026-04-07T03:38:54.422Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=courts-records"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.miamidade.gov/global/self-service.page returns 404 Not Found",
+      "selector": "#iw_comp1553655066001 > header > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.miamidade.gov/global/self-service.page\">Self-Service</a>",
+      "discoveredAt": "2026-04-07T03:39:29.607Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.miamidade.gov/global/login.page returns 404 Not Found",
+      "selector": "#loginId-mobile",
+      "elementHtml": "<a href=\"https://www.miamidade.gov/global/login.page\">Login</a>",
+      "discoveredAt": "2026-04-07T03:39:29.607Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.miamidade.gov/global/logout.page returns 404 Not Found",
+      "selector": "#iw_comp1553655066001 > header > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.miamidade.gov/global/logout.page\">Sign Out</a>",
+      "discoveredAt": "2026-04-07T03:39:29.607Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.miamidade.gov/global/login.page returns 404 Not Found",
+      "selector": "#loginId-mobile",
+      "elementHtml": "<a href=\"https://www.miamidade.gov/global/login.page\">Login</a>",
+      "discoveredAt": "2026-04-07T03:35:45.919Z",
+      "pageUrl": "https://www.miamidade.gov/global/webcasting/home.page"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.miamidade.gov/global/self-service.page returns 404 Not Found",
+      "selector": "#iw_comp1553655066001 > header > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.miamidade.gov/global/self-service.page\">Self-Service</a>",
+      "discoveredAt": "2026-04-07T03:35:45.919Z",
+      "pageUrl": "https://www.miamidade.gov/global/webcasting/home.page"
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.miamidade.gov/global/logout.page returns 404 Not Found",
+      "selector": "#iw_comp1553655066001 > header > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > div > div:nth-of-type(3) > ul > li:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.miamidade.gov/global/logout.page\">Sign Out</a>",
+      "discoveredAt": "2026-04-07T03:35:45.919Z",
+      "pageUrl": "https://www.miamidade.gov/global/webcasting/home.page"
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "severity": "medium",
+      "description": "Content clipped by 84px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "section.ad.banner-404",
+      "elementHtml": "<section style=\"background-image: url(https://www.miamidade.gov/resources/images/banners/miami-skyline-bg7.jpg);\" class=\"ad banner-404 spacing mobile-position-Center\" id=\"\">\n<span class=\"section-overl",
+      "discoveredAt": "2026-04-07T03:36:42.368Z",
+      "pageUrl": "https://accounts.miamidade.gov/97698a1d-dfd7-4231-aa5b-dd1089aea1b1/b2c_1a_signupsignin/oauth2/v2.0/logout?post_logout_redirect_uri=https%3A%2F%2Fwww.miamidade.gov%2Fglobal%2Fhome.page",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing"
+      }
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "severity": "medium",
+      "description": "Content clipped by 18px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "#week-view-label",
+      "elementHtml": "<span id=\"week-view-label\" class=\"sr-only\">Show a week's events </span>",
+      "discoveredAt": "2026-04-07T03:36:15.801Z",
+      "pageUrl": "https://www.miamidade.gov/global/calendar/global.page",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing"
+      }
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "severity": "medium",
+      "description": "Content clipped by 17px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "#mainSearch",
+      "elementHtml": "<label _ngcontent-ng-c411985369=\"\" id=\"mainSearch\" for=\"calendar-title\" class=\"sr-only active\">Search</label>",
+      "discoveredAt": "2026-04-07T03:36:15.801Z",
+      "pageUrl": "https://www.miamidade.gov/global/calendar/global.page",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing"
+      }
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "severity": "medium",
+      "description": "Content clipped by 18px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "#day-view-label",
+      "elementHtml": "<span id=\"day-view-label\" class=\"sr-only\">Show a single day's events </span>",
+      "discoveredAt": "2026-04-07T03:36:15.801Z",
+      "pageUrl": "https://www.miamidade.gov/global/calendar/global.page",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing"
+      }
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "severity": "medium",
+      "description": "Content clipped by 22px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "#ada-survey",
+      "elementHtml": "<a href=\"https://feedback.miamidade.gov/jfe/form/SV_bEg8ZtnDNi1XVXw\" class=\"sr-only\" id=\"ada-survey\">Assistive Technology Survey</a>",
+      "discoveredAt": "2026-04-07T03:39:37.949Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing"
+      }
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "severity": "medium",
+      "description": "Content clipped by 38px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "#main-results",
+      "elementHtml": "<h2 _ngcontent-ng-c3114385617=\"\" id=\"main-results\" class=\"sr-only\">Main Results</h2>",
+      "discoveredAt": "2026-04-07T03:39:37.949Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing"
+      }
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "severity": "medium",
+      "description": "Content clipped by 17px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "label.sr-only.active",
+      "elementHtml": "<label _ngcontent-ng-c1522004535=\"\" for=\"mainSearch\" class=\"sr-only active\">Search</label>",
+      "discoveredAt": "2026-04-07T03:39:37.949Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing"
+      }
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "severity": "medium",
+      "description": "Page requires horizontal scrolling at 320px width (1px overflow). Content should reflow without horizontal scrolling at this width.",
+      "selector": "html",
+      "elementHtml": "<html>",
+      "discoveredAt": "2026-04-07T03:39:37.949Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow"
+      }
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "severity": "medium",
+      "description": "Content clipped by 17px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "#skipNavMain",
+      "elementHtml": "<a href=\"#main-content\" class=\"btn white skip-nav sr-only sr-only-focusable\" id=\"skipNavMain\">Skip to Primary Content</a>",
+      "discoveredAt": "2026-04-07T03:39:37.949Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing"
+      }
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "severity": "medium",
+      "description": "Content clipped by 22px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "span.sr-only",
+      "elementHtml": "<span _ngcontent-ng-c3124894365=\"\" class=\"sr-only\">Page number </span>",
+      "discoveredAt": "2026-04-07T03:39:37.949Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing"
+      }
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "severity": "medium",
+      "description": "Content clipped by 17px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "#mainDesktopSearch",
+      "elementHtml": "<label class=\"sr-only active\" id=\"mainDesktopSearch\">Desktop Search</label>",
+      "discoveredAt": "2026-04-07T03:39:37.949Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing"
+      }
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "severity": "medium",
+      "description": "Content clipped by 30px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "div.cd-search-trigger-desktop__arrow",
+      "elementHtml": "<div class=\"cd-search-trigger-desktop__arrow\"></div>",
+      "discoveredAt": "2026-04-07T03:39:37.949Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing"
+      }
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Frame-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:36:35.598Z",
+      "pageUrl": "https://accounts.miamidade.gov/97698a1d-dfd7-4231-aa5b-dd1089aea1b1/b2c_1a_signupsignin/oauth2/v2.0/authorize?response_type=code&client_id=8604f194-1449-4e38-83a2-13625e403cb2&redirect_uri=https%3A%2F%2Fwww.miamidade.gov%2Fglobal%2Flogin.page&scope=openid+profile+email+phone+address+8604f194-1449-4e38-83a2-13625e403cb2"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Content-Type-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:36:35.598Z",
+      "pageUrl": "https://accounts.miamidade.gov/97698a1d-dfd7-4231-aa5b-dd1089aea1b1/b2c_1a_signupsignin/oauth2/v2.0/authorize?response_type=code&client_id=8604f194-1449-4e38-83a2-13625e403cb2&redirect_uri=https%3A%2F%2Fwww.miamidade.gov%2Fglobal%2Flogin.page&scope=openid+profile+email+phone+address+8604f194-1449-4e38-83a2-13625e403cb2"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Content-Type-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:36:39.555Z",
+      "pageUrl": "https://accounts.miamidade.gov/97698a1d-dfd7-4231-aa5b-dd1089aea1b1/b2c_1a_signupsignin/oauth2/v2.0/logout?post_logout_redirect_uri=https%3A%2F%2Fwww.miamidade.gov%2Fglobal%2Fhome.page"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Frame-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:36:39.555Z",
+      "pageUrl": "https://accounts.miamidade.gov/97698a1d-dfd7-4231-aa5b-dd1089aea1b1/b2c_1a_signupsignin/oauth2/v2.0/logout?post_logout_redirect_uri=https%3A%2F%2Fwww.miamidade.gov%2Fglobal%2Fhome.page"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Frame-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:35:11.799Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Frame-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:36:07.623Z",
+      "pageUrl": "https://www.miamidade.gov/global/calendar/global.page"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Frame-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:34:42.924Z",
+      "pageUrl": "https://www.miamidade.gov/global/home.page"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Frame-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:36:43.174Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Frame-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:37:07.310Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=animals-pets"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Frame-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:37:47.013Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=building-development"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Frame-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:38:18.361Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=business-industry"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Frame-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:38:49.546Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=courts-records"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Frame-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:39:20.035Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Content-Type-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:35:42.020Z",
+      "pageUrl": "https://www.miamidade.gov/global/webcasting/home.page"
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "Missing X-Frame-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-07T03:35:42.020Z",
+      "pageUrl": "https://www.miamidade.gov/global/webcasting/home.page"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1596804983225",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1596804983225\"> \n    <div class=\"iw_component\" id=\"iw_comp1622248827047\">\n      <!--ls:begin[component-1622248827047]--><style>#iw_comp1622248827047{}</st",
+      "discoveredAt": "2026-04-07T03:36:35.642Z",
+      "pageUrl": "https://accounts.miamidade.gov/97698a1d-dfd7-4231-aa5b-dd1089aea1b1/b2c_1a_signupsignin/oauth2/v2.0/authorize?response_type=code&client_id=8604f194-1449-4e38-83a2-13625e403cb2&redirect_uri=https%3A%2F%2Fwww.miamidade.gov%2Fglobal%2Flogin.page&scope=openid+profile+email+phone+address+8604f194-1449-4e38-83a2-13625e403cb2"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1596804983225",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1596804983225\"> \n    <div class=\"iw_component\" id=\"iw_comp1622248827047\">\n      <!--ls:begin[component-1622248827047]--><style>#iw_comp1622248827047{}</st",
+      "discoveredAt": "2026-04-07T03:36:39.595Z",
+      "pageUrl": "https://accounts.miamidade.gov/97698a1d-dfd7-4231-aa5b-dd1089aea1b1/b2c_1a_signupsignin/oauth2/v2.0/logout?post_logout_redirect_uri=https%3A%2F%2Fwww.miamidade.gov%2Fglobal%2Fhome.page"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1553655066007",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1553655066007\"> \n      <div class=\"iw_component\" id=\"iw_comp1717410926489\">\n        <!--ls:begin[component-1717410926489]--><style>#iw_comp1717410926489{}",
+      "discoveredAt": "2026-04-07T03:35:11.974Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1553655066006",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1553655066006\"> \n      <div class=\"iw_component\" id=\"iw_comp1717410926517\">\n        <!--ls:begin[component-1717410926517]--><style>#iw_comp1717410926517{}",
+      "discoveredAt": "2026-04-07T03:35:11.974Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1553655066008",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1553655066008\"> \n    <div class=\"iw_component\" id=\"iw_comp1717410926555\">\n      <!--ls:begin[component-1717410926555]--><style>#iw_comp1717410926555{}</st",
+      "discoveredAt": "2026-04-07T03:35:11.974Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1553655066009",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1553655066009\"> \n      <div class=\"iw_component\" id=\"iw_comp1717410926506\">\n        <!--ls:begin[component-1717410926506]--><style>#iw_comp1717410926506{}",
+      "discoveredAt": "2026-04-07T03:35:11.974Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1553655066010",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1553655066010\"> \n      <div class=\"iw_component\" id=\"iw_comp1717410926537\">\n        <!--ls:begin[component-1717410926537]--><style>#iw_comp1717410926537{}",
+      "discoveredAt": "2026-04-07T03:35:11.974Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1553655066002",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1553655066002\"> \n   <div class=\"iw_component\" id=\"iw_comp1717410927951\">\n     <style>#iw_comp1717410927951{}</style><section style=\"background-image: url(",
+      "discoveredAt": "2026-04-07T03:35:11.974Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1553655066005",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1553655066005\"> \n    <div class=\"iw_component\" id=\"iw_comp1717410926488\">\n      <!--ls:begin[component-1717410926488]--><style>#iw_comp1717410926488{}</st",
+      "discoveredAt": "2026-04-07T03:35:11.974Z",
+      "pageUrl": "https://www.miamidade.gov/global/311/home.page"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1553655066005",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1553655066005\"> \n    <div class=\"iw_component\" id=\"iw_comp1561908444592\">\n      <!--ls:begin[component-1561908444592]--><style>#iw_comp1561908444592{}</st",
+      "discoveredAt": "2026-04-07T03:36:07.803Z",
+      "pageUrl": "https://www.miamidade.gov/global/calendar/global.page"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1553655066012",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1553655066012\"> \n   <div class=\"iw_component\" id=\"iw_comp1558391182283\">\n     <!--ls:begin[component-1558391182283]--><style>#iw_comp1558391182283{}</styl",
+      "discoveredAt": "2026-04-07T03:34:43.170Z",
+      "pageUrl": "https://www.miamidade.gov/global/home.page"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1553655066008",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1553655066008\"> \n    <div class=\"iw_component\" id=\"iw_comp1561765342453\">\n      <!--ls:begin[component-1561765342453]--><style>#iw_comp1561765342453{}</st",
+      "discoveredAt": "2026-04-07T03:34:43.170Z",
+      "pageUrl": "https://www.miamidade.gov/global/home.page"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1553655066011",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1553655066011\"> \n    <div class=\"iw_component\" id=\"iw_comp1722252325664\">\n      <!--ls:begin[component-1722252325664]--><style>#iw_comp1722252325664{}</st",
+      "discoveredAt": "2026-04-07T03:34:43.170Z",
+      "pageUrl": "https://www.miamidade.gov/global/home.page"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1553655066005",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1553655066005\"> \n    <div class=\"iw_component\" id=\"iw_comp1628129898739\">\n      <!--ls:begin[component-1628129898739]--><style>#iw_comp1628129898739{}</st",
+      "discoveredAt": "2026-04-07T03:34:43.170Z",
+      "pageUrl": "https://www.miamidade.gov/global/home.page"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1553655066002",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1553655066002\"> \n   <div class=\"iw_component\" id=\"iw_comp1528109900085\">\n     <style>#iw_comp1528109900085{}</style><style>\n\n    .d-flex {\n      display: ",
+      "discoveredAt": "2026-04-07T03:34:43.170Z",
+      "pageUrl": "https://www.miamidade.gov/global/home.page"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1553655066007",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1553655066007\"> \n      <div class=\"iw_component\" id=\"iw_comp1687452113862\">\n        <!--ls:begin[component-1687452113862]--><style>#iw_comp1687452113862{}",
+      "discoveredAt": "2026-04-07T03:36:43.414Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1553655066006",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1553655066006\"> \n      <div class=\"iw_component\" id=\"iw_comp1646063340809\">\n        <!--ls:begin[component-1646063340809]--><style>#iw_comp1646063340809{}",
+      "discoveredAt": "2026-04-07T03:36:43.414Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1553655066005",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1553655066005\"> \n    <div class=\"iw_component\" id=\"iw_comp1650302293978\">\n      <!--ls:begin[component-1650302293978]--><style>#iw_comp1650302293978{}</st",
+      "discoveredAt": "2026-04-07T03:36:43.414Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1553655066007",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1553655066007\"> \n      <div class=\"iw_component\" id=\"iw_comp1687452113862\">\n        <!--ls:begin[component-1687452113862]--><style>#iw_comp1687452113862{}",
+      "discoveredAt": "2026-04-07T03:37:07.510Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=animals-pets"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1553655066006",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1553655066006\"> \n      <div class=\"iw_component\" id=\"iw_comp1646063340809\">\n        <!--ls:begin[component-1646063340809]--><style>#iw_comp1646063340809{}",
+      "discoveredAt": "2026-04-07T03:37:07.510Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=animals-pets"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1553655066005",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1553655066005\"> \n    <div class=\"iw_component\" id=\"iw_comp1650302293978\">\n      <!--ls:begin[component-1650302293978]--><style>#iw_comp1650302293978{}</st",
+      "discoveredAt": "2026-04-07T03:37:07.510Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=animals-pets"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1553655066007",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1553655066007\"> \n      <div class=\"iw_component\" id=\"iw_comp1687452113862\">\n        <!--ls:begin[component-1687452113862]--><style>#iw_comp1687452113862{}",
+      "discoveredAt": "2026-04-07T03:37:47.181Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=building-development"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1553655066006",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1553655066006\"> \n      <div class=\"iw_component\" id=\"iw_comp1646063340809\">\n        <!--ls:begin[component-1646063340809]--><style>#iw_comp1646063340809{}",
+      "discoveredAt": "2026-04-07T03:37:47.181Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=building-development"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1553655066005",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1553655066005\"> \n    <div class=\"iw_component\" id=\"iw_comp1650302293978\">\n      <!--ls:begin[component-1650302293978]--><style>#iw_comp1650302293978{}</st",
+      "discoveredAt": "2026-04-07T03:37:47.181Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=building-development"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1553655066007",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1553655066007\"> \n      <div class=\"iw_component\" id=\"iw_comp1687452113862\">\n        <!--ls:begin[component-1687452113862]--><style>#iw_comp1687452113862{}",
+      "discoveredAt": "2026-04-07T03:38:18.552Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=business-industry"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1553655066006",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1553655066006\"> \n      <div class=\"iw_component\" id=\"iw_comp1646063340809\">\n        <!--ls:begin[component-1646063340809]--><style>#iw_comp1646063340809{}",
+      "discoveredAt": "2026-04-07T03:38:18.552Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=business-industry"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1553655066005",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1553655066005\"> \n    <div class=\"iw_component\" id=\"iw_comp1650302293978\">\n      <!--ls:begin[component-1650302293978]--><style>#iw_comp1650302293978{}</st",
+      "discoveredAt": "2026-04-07T03:38:18.552Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=business-industry"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1553655066005",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1553655066005\"> \n    <div class=\"iw_component\" id=\"iw_comp1650302293978\">\n      <!--ls:begin[component-1650302293978]--><style>#iw_comp1650302293978{}</st",
+      "discoveredAt": "2026-04-07T03:38:49.730Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=courts-records"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1553655066006",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1553655066006\"> \n      <div class=\"iw_component\" id=\"iw_comp1646063340809\">\n        <!--ls:begin[component-1646063340809]--><style>#iw_comp1646063340809{}",
+      "discoveredAt": "2026-04-07T03:38:49.730Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=courts-records"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1553655066007",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1553655066007\"> \n      <div class=\"iw_component\" id=\"iw_comp1687452113862\">\n        <!--ls:begin[component-1687452113862]--><style>#iw_comp1687452113862{}",
+      "discoveredAt": "2026-04-07T03:38:49.730Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=courts-records"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1553655066007",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1553655066007\"> \n      <div class=\"iw_component\" id=\"iw_comp1687452113862\">\n        <!--ls:begin[component-1687452113862]--><style>#iw_comp1687452113862{}",
+      "discoveredAt": "2026-04-07T03:39:20.218Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1553655066006",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1553655066006\"> \n      <div class=\"iw_component\" id=\"iw_comp1646063340809\">\n        <!--ls:begin[component-1646063340809]--><style>#iw_comp1646063340809{}",
+      "discoveredAt": "2026-04-07T03:39:20.218Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1553655066005",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1553655066005\"> \n    <div class=\"iw_component\" id=\"iw_comp1650302293978\">\n      <!--ls:begin[component-1650302293978]--><style>#iw_comp1650302293978{}</st",
+      "discoveredAt": "2026-04-07T03:39:20.218Z",
+      "pageUrl": "https://www.miamidade.gov/global/navigation/service-index.page?INTERESTCATEGORY=elections-voting"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1553655066010",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1553655066010\"> \n      <div class=\"iw_component\" id=\"iw_comp1605727175036\">\n        <!--ls:begin[component-1605727175036]--><style>#iw_comp1605727175036{}",
+      "discoveredAt": "2026-04-07T03:35:42.179Z",
+      "pageUrl": "https://www.miamidade.gov/global/webcasting/home.page"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1553655066009",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1553655066009\"> \n      <div class=\"iw_component\" id=\"iw_comp1587516713639\">\n        <!--ls:begin[component-1587516713639]--><style>#iw_comp1587516713639{}",
+      "discoveredAt": "2026-04-07T03:35:42.179Z",
+      "pageUrl": "https://www.miamidade.gov/global/webcasting/home.page"
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <div> persists after page readiness",
+      "selector": "#iw_placeholder1553655066005",
+      "elementHtml": "<div class=\"iw_placeholder\" id=\"iw_placeholder1553655066005\"> \n    <div class=\"iw_component\" id=\"iw_comp1587516713378\">\n      <style>#iw_comp1591293135038{}</style><style>\n\t@media (min-width: 1266px) ",
+      "discoveredAt": "2026-04-07T03:35:42.179Z",
+      "pageUrl": "https://www.miamidade.gov/global/webcasting/home.page"
+    }
+  ]
+}
