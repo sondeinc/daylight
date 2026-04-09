@@ -126,6 +126,33 @@ scanned varies by site size and configuration.
 
 ---
 
+<!-- Keep in sync with renderAuditSite.tsx meth-how-scans section -->
+## How Sonde Scans
+
+Every finding in a Daylight report is produced by deterministic algorithms —
+no AI, no large language models, no tokens consumed. This is a deliberate
+design choice with real consequences:
+
+- **100% consistent.** Run the same scan twice, get identical results. There is
+  no randomness, no temperature parameter, no model drift. If a finding appears
+  today, it will appear tomorrow under the same conditions.
+- **Repeatable and verifiable.** Fix a violation in your code, rescan, and
+  confirm the finding is gone. Every fix is provable because the analysis is
+  provable.
+- **Full provenance.** Every finding traces back to the specific rule or probe
+  that detected it, the DOM element that triggered it, and (where possible) the
+  source code location responsible. You always know *what* found a problem and
+  *why*.
+- **No hallucinations.** Deterministic rules either match or they don't. Sonde
+  will never invent a violation that doesn't exist or miss one because a model
+  was having a bad day.
+
+This matters for procurement, for legal compliance, and for trust. When a VPAT
+says "Does Not Support," that judgment is backed by a reproducible algorithm —
+not a probability estimate.
+
+---
+
 ## Section 508 Crosswalk
 
 Each WCAG 2.1 AA criterion is mapped to the corresponding Section 508
