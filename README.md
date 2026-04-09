@@ -32,8 +32,7 @@ Clone the repo and serve the site on your machine:
 ```bash
 git clone https://github.com/sondeinc/daylight.git
 cd daylight
-./day           # Mac / Linux
-day.cmd         # Windows
+npm run day       # or: ./day (Mac/Linux) | day.cmd (Windows)
 ```
 
 Opens at **http://localhost:3000/section508/**. Requires [Node.js](https://nodejs.org).
