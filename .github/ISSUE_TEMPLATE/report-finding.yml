@@ -1,0 +1,74 @@
+name: "Report a Finding"
+description: Report feedback on a specific accessibility finding
+title: "[Finding] "
+labels: ["finding-feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Thank you for reviewing this finding.** Your feedback directly improves
+        Sonde's scanning accuracy. Every report helps.
+
+  - type: input
+    id: finding-url
+    attributes:
+      label: Finding URL
+      description: Direct link to the finding on the Daylight report
+      placeholder: "https://daylight.sonde.life/section508/lacounty-gov/#finding-axe-abc123"
+    validations:
+      required: true
+
+  - type: input
+    id: finding-id
+    attributes:
+      label: Finding ID
+      description: The finding identifier (from the report card)
+      placeholder: "finding-axe-abc123"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: feedback-type
+    attributes:
+      label: What's your feedback?
+      options:
+        - False positive (this is not actually an issue)
+        - Incorrect severity (the severity should be different)
+        - Missing context (the finding is correct but needs more detail)
+        - Incorrect element (the finding points to the wrong element)
+        - Already fixed (the site has resolved this issue)
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: >
+        What did you observe? If this is a false positive, explain why the
+        element is actually accessible. Screenshots welcome.
+      placeholder: |
+        The image actually has an alt attribute — it's set via JavaScript after page load.
+        The axe-core scan may have run before the JS executed.
+    validations:
+      required: true
+
+  - type: input
+    id: wcag-criterion
+    attributes:
+      label: WCAG Criterion
+      description: If known, which WCAG success criterion is relevant
+      placeholder: "1.1.1"
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: >
+        Any other context: your assistive technology setup, browser version,
+        how you discovered this, etc.
+    validations:
+      required: false

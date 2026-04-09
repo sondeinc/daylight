@@ -1,0 +1,4059 @@
+{
+  "url": "https://nyc.gov",
+  "slug": "nyc-gov",
+  "status": "complete",
+  "scanDate": "2026-04-09T23:19:50.437Z",
+  "scanConfig": {
+    "scope": "site",
+    "maxPages": 50,
+    "racks": [
+      "rack-live-a11y",
+      "rack-live-free"
+    ],
+    "individualProbes": [],
+    "excludedProbes": [],
+    "timeBudgetMs": 300000,
+    "maxFindings": null
+  },
+  "sondeScore": {
+    "score": 970,
+    "rawPenalty": 302.5,
+    "normalizedPenalty": 23.26923076923077,
+    "pagesScanned": 13,
+    "weightsVersion": "v0.1"
+  },
+  "avgFindingsPerPage": 14.2,
+  "elementComplianceRate": 99.2,
+  "totalElements": 7769,
+  "elementsWithFindings": 62,
+  "complianceSummary": {
+    "total": 184,
+    "byLevel": {
+      "AA": 36,
+      "A": 35
+    },
+    "bySeverity": {
+      "critical": 6,
+      "high": 42,
+      "medium": 110,
+      "low": 26
+    },
+    "byCriterion": {
+      "WCAG 1.4.3": 7,
+      "WCAG 1.1.1": 14,
+      "WCAG 2.4.3": 4,
+      "WCAG 2.4.1": 1,
+      "WCAG 1.3.1": 13,
+      "WCAG 1.4.1": 3,
+      "WCAG 2.4.5": 6,
+      "WCAG 1.4.12": 9,
+      "WCAG 1.4.10": 14
+    }
+  },
+  "summary": {
+    "pagesAnalyzed": 13,
+    "pagesFailed": 0,
+    "totalFindings": 184,
+    "bySeverity": {
+      "critical": 6,
+      "high": 42,
+      "medium": 110,
+      "low": 26
+    },
+    "byProbe": {},
+    "byType": {},
+    "durationMs": 321964
+  },
+  "jurisdiction": "NY",
+  "entityName": "New York City",
+  "findings": [
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"What's happening?\"",
+      "selector": "span.small-paragraph",
+      "elementHtml": "<span class=\"small-paragraph\">What's happening?</span>",
+      "discoveredAt": "2026-04-09T16:14:47.895Z",
+      "pageUrl": "https://www.nyc.gov/main",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#767676",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.542224959605253,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "What's happening?",
+        "backendNodeId": 745,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.14:1 (required: 3:1 for large text). Foreground: rgb(255, 255, 255), background: rgb(226, 243, 255). Text: \"Find what you need on nyc.gov\"",
+      "selector": "span.main-heading--subhead",
+      "elementHtml": "<span class=\"main-heading--subhead\">Find what you need on nyc.gov</span>",
+      "discoveredAt": "2026-04-09T16:14:47.895Z",
+      "pageUrl": "https://www.nyc.gov/main",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#e2f3ff",
+        "contrastSuggestedForeground": "#8b8b8b",
+        "contrastRatio": 1.1352586620444294,
+        "contrastSuggestedRatio": 3.0011382608056536,
+        "contrastRequiredRatio": 3,
+        "contrastIsLargeText": true,
+        "contrastTextSample": "Find what you need on nyc.gov",
+        "backendNodeId": 484,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 3:1 for large text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"Child care map\"",
+      "selector": "span.cmp-accordion__title",
+      "elementHtml": "<span class=\"cmp-accordion__title\">Child care map</span>",
+      "discoveredAt": "2026-04-09T16:14:47.895Z",
+      "pageUrl": "https://www.nyc.gov/main",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#949494",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 3.0334698257384747,
+        "contrastRequiredRatio": 3,
+        "contrastIsLargeText": true,
+        "contrastTextSample": "Child care map",
+        "backendNodeId": 282,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"Posted April 6, 2026\"",
+      "selector": "p.cmp-teaser__pretitle",
+      "elementHtml": "<p class=\"cmp-teaser__pretitle\">Posted April 6, 2026</p>",
+      "discoveredAt": "2026-04-09T16:14:47.895Z",
+      "pageUrl": "https://www.nyc.gov/main",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#767676",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.542224959605253,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Posted April 6, 2026",
+        "backendNodeId": 741,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"Find licensed child care providers in NYC and filter by dist\"",
+      "selector": "p",
+      "elementHtml": "<p>Find licensed child care providers in NYC and filter by distance, cost, facility type, and more.</p>",
+      "discoveredAt": "2026-04-09T16:14:47.895Z",
+      "pageUrl": "https://www.nyc.gov/main",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#767676",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.542224959605253,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Find licensed child care providers in NYC and filter by dist",
+        "backendNodeId": 293,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 3:1 for large text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"Welcome to the Mayor’s Office\"",
+      "selector": "h1.nyc-hero__title",
+      "elementHtml": "<h1 class=\"nyc-hero__title\" data-heading-only=\"true\" data-has-bread=\"false\">\n            Welcome to the Mayor’s Office\n          </h1>",
+      "discoveredAt": "2026-04-09T16:15:59.244Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#949494",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 3.0334698257384747,
+        "contrastRequiredRatio": 3,
+        "contrastIsLargeText": true,
+        "contrastTextSample": "Welcome to the Mayor’s Office",
+        "backendNodeId": 9977,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"359\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-09T16:14:48.064Z",
+      "pageUrl": "https://www.nyc.gov/main",
+      "metadata": {
+        "backendNodeId": 359,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"10021\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" desc=\"Zohran Mamdani\" -->",
+      "discoveredAt": "2026-04-09T16:15:59.328Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office",
+      "metadata": {
+        "backendNodeId": 10021,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"10163\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-09T16:15:59.328Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office",
+      "metadata": {
+        "backendNodeId": 10163,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"5940\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-09T16:15:41.366Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/config",
+      "metadata": {
+        "backendNodeId": 5940,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"22334\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-09T16:16:49.305Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/contact-the-mayor",
+      "metadata": {
+        "backendNodeId": 22334,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"16661\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-09T16:16:27.832Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/mayors-office-accessibility",
+      "metadata": {
+        "backendNodeId": 16661,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"37095\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-09T16:17:36.052Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-1",
+      "metadata": {
+        "backendNodeId": 37095,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"43165\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-09T16:17:55.194Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-10",
+      "metadata": {
+        "backendNodeId": 43165,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"49248\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-09T16:18:14.051Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-11",
+      "metadata": {
+        "backendNodeId": 49248,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"55256\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-09T16:18:32.321Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-12",
+      "metadata": {
+        "backendNodeId": 55256,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"61381\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-09T16:18:50.898Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-13",
+      "metadata": {
+        "backendNodeId": 61381,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"67472\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-09T16:19:09.484Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-14",
+      "metadata": {
+        "backendNodeId": 67472,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"73584\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-09T16:19:29.287Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-15",
+      "metadata": {
+        "backendNodeId": 73584,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"30993\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-09T16:17:09.045Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/?",
+      "metadata": {
+        "backendNodeId": 30993,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Insufficient color contrast: 2.85:1 (required: 3:1 for large text). Foreground: rgba(0, 0, 0, 0), background: rgb(108, 149, 255). Text: \"English\"",
+      "selector": "span.cmp-language-navigation__action-button--language",
+      "elementHtml": "<span class=\"cmp-language-navigation__action-button--language\" aria-hidden=\"true\">English</span>",
+      "discoveredAt": "2026-04-09T16:17:35.975Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-1",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#6c95ff",
+        "contrastSuggestedForeground": "#4c4c4c",
+        "contrastRatio": 2.845294253794835,
+        "contrastSuggestedRatio": 3.0181139078257737,
+        "contrastRequiredRatio": 3,
+        "contrastIsLargeText": true,
+        "contrastTextSample": "English",
+        "backendNodeId": 37103,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Spring Book Swap and Upcycled Paper Crafts with New York Pub\" to \"Learn to Swim Seward Park Class A\" (visual distance: 644px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#carousel-QQgG3IoGV2 > ol > li:nth-of-type(5) > div > div > div > div > div > div:nth-of-type(1) > h3 > a",
+      "elementHtml": "<a>Learn to Swim Seward Park Class A</a>",
+      "discoveredAt": "2026-04-09T16:14:57.528Z",
+      "pageUrl": "https://www.nyc.gov/main",
+      "metadata": {
+        "backendNodeId": 2263,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Privacy Policy\" to \"Terms of Service\" (visual distance: 447px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#text-cdfccab206 > p > a:nth-of-type(2)",
+      "elementHtml": "<a>Terms of Service</a>",
+      "discoveredAt": "2026-04-09T16:16:55.635Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/contact-the-mayor",
+      "metadata": {
+        "backendNodeId": 23618,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-09T16:14:47.849Z",
+      "pageUrl": "https://www.nyc.gov/main",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-09T16:15:59.226Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-09T16:15:41.262Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/config",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-09T16:16:49.115Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/contact-the-mayor",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-09T16:16:27.700Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/mayors-office-accessibility",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-09T16:17:35.935Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-1",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-09T16:17:55.107Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-10",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-09T16:18:13.958Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-11",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-09T16:18:32.232Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-12",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-09T16:18:50.808Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-13",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-09T16:19:09.389Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-14",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-09T16:19:29.194Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-15",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Content-Security-Policy header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-09T16:17:08.958Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/?",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "keyboard-trap",
+      "standard": "WCAG 2.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks",
+      "conformanceLevel": "A",
+      "severity": "low",
+      "description": "Deep focus region: navigation \"Footer\" has 15 tab stops before focus escapes. Consider adding skip navigation or grouping with arrow keys.",
+      "selector": "#container-navigation-items",
+      "elementHtml": "<div role=\"navigation\">Footer</div>",
+      "discoveredAt": "2026-04-09T16:17:16.303Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/?",
+      "metadata": {
+        "backendNodeId": 31098,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "keyboard-trap"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.1"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://new.mta.info/ returns 403 Forbidden",
+      "selector": "#status--feed-heading-3 > h4 > a",
+      "elementHtml": "<a href=\"https://new.mta.info/\">Check transit alerts</a>",
+      "discoveredAt": "2026-04-09T16:14:54.217Z",
+      "pageUrl": "https://www.nyc.gov/main",
+      "metadata": {
+        "backendNodeId": 1621,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: http://www.twitter.com/nycmayorsoffice returns 520 <none>",
+      "selector": "#socialmedia-a-c3a8dad35c",
+      "elementHtml": "<a href=\"http://www.twitter.com/nycmayorsoffice\"></a>",
+      "discoveredAt": "2026-04-09T16:16:02.519Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office",
+      "metadata": {
+        "backendNodeId": 10282,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://a860-openrecords.nyc.gov/ returns 403 Forbidden",
+      "selector": "#text-07ec79a4b7 > p:nth-of-type(1) > a:nth-of-type(3)",
+      "elementHtml": "<a href=\"https://a860-openrecords.nyc.gov/\">Freedom of Information Law (FOIL) tracker</a>",
+      "discoveredAt": "2026-04-09T16:16:52.248Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/contact-the-mayor",
+      "metadata": {
+        "backendNodeId": 22571,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: http://www.twitter.com/nycmayorsoffice returns 520 <none>",
+      "selector": "#socialmedia-a-c3a8dad35c",
+      "elementHtml": "<a href=\"http://www.twitter.com/nycmayorsoffice\"></a>",
+      "discoveredAt": "2026-04-09T16:16:52.248Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/contact-the-mayor",
+      "metadata": {
+        "backendNodeId": 23666,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: http://www.twitter.com/nycmayorsoffice returns 520 <none>",
+      "selector": "#socialmedia-a-c3a8dad35c",
+      "elementHtml": "<a href=\"http://www.twitter.com/nycmayorsoffice\"></a>",
+      "discoveredAt": "2026-04-09T16:16:31.463Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/mayors-office-accessibility",
+      "metadata": {
+        "backendNodeId": 16865,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: http://www.twitter.com/nycmayorsoffice returns 520 <none>",
+      "selector": "#socialmedia-a-c3a8dad35c",
+      "elementHtml": "<a href=\"http://www.twitter.com/nycmayorsoffice\"></a>",
+      "discoveredAt": "2026-04-09T16:17:39.354Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-1",
+      "metadata": {
+        "backendNodeId": 37206,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: http://www.twitter.com/nycmayorsoffice returns 520 <none>",
+      "selector": "#socialmedia-a-c3a8dad35c",
+      "elementHtml": "<a href=\"http://www.twitter.com/nycmayorsoffice\"></a>",
+      "discoveredAt": "2026-04-09T16:17:58.625Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-10",
+      "metadata": {
+        "backendNodeId": 43272,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: http://www.twitter.com/nycmayorsoffice returns 520 <none>",
+      "selector": "#socialmedia-a-c3a8dad35c",
+      "elementHtml": "<a href=\"http://www.twitter.com/nycmayorsoffice\"></a>",
+      "discoveredAt": "2026-04-09T16:18:17.188Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-11",
+      "metadata": {
+        "backendNodeId": 49357,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: http://www.twitter.com/nycmayorsoffice returns 520 <none>",
+      "selector": "#socialmedia-a-c3a8dad35c",
+      "elementHtml": "<a href=\"http://www.twitter.com/nycmayorsoffice\"></a>",
+      "discoveredAt": "2026-04-09T16:18:35.491Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-12",
+      "metadata": {
+        "backendNodeId": 55362,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: http://www.twitter.com/nycmayorsoffice returns 520 <none>",
+      "selector": "#socialmedia-a-c3a8dad35c",
+      "elementHtml": "<a href=\"http://www.twitter.com/nycmayorsoffice\"></a>",
+      "discoveredAt": "2026-04-09T16:18:53.937Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-13",
+      "metadata": {
+        "backendNodeId": 61488,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: http://www.twitter.com/nycmayorsoffice returns 520 <none>",
+      "selector": "#socialmedia-a-c3a8dad35c",
+      "elementHtml": "<a href=\"http://www.twitter.com/nycmayorsoffice\"></a>",
+      "discoveredAt": "2026-04-09T16:19:13.943Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-14",
+      "metadata": {
+        "backendNodeId": 67579,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: http://www.twitter.com/nycmayorsoffice returns 520 <none>",
+      "selector": "#socialmedia-a-c3a8dad35c",
+      "elementHtml": "<a href=\"http://www.twitter.com/nycmayorsoffice\"></a>",
+      "discoveredAt": "2026-04-09T16:19:33.404Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-15",
+      "metadata": {
+        "backendNodeId": 73693,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: http://www.twitter.com/nycmayorsoffice returns 520 <none>",
+      "selector": "#socialmedia-a-c3a8dad35c",
+      "elementHtml": "<a href=\"http://www.twitter.com/nycmayorsoffice\"></a>",
+      "discoveredAt": "2026-04-09T16:17:12.568Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/?",
+      "metadata": {
+        "backendNodeId": 31087,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.3.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Page has 2 \"navigation\" landmarks but only 1 have distinct labels. Screen reader users cannot distinguish between them.",
+      "selector": "[role=\"navigation\"]",
+      "elementHtml": "<!-- 2 navigation landmarks, 1 labeled -->",
+      "discoveredAt": "2026-04-09T16:14:48.064Z",
+      "pageUrl": "https://www.nyc.gov/main",
+      "metadata": {
+        "backendNodeId": 864,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.3.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.3.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.3.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Page has 4 \"navigation\" landmarks but only 1 have distinct labels. Screen reader users cannot distinguish between them.",
+      "selector": "[role=\"navigation\"]",
+      "elementHtml": "<!-- 4 navigation landmarks, 1 labeled -->",
+      "discoveredAt": "2026-04-09T16:15:59.328Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office",
+      "metadata": {
+        "backendNodeId": 10293,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.3.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.3.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.3.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Page has 2 \"navigation\" landmarks but only 1 have distinct labels. Screen reader users cannot distinguish between them.",
+      "selector": "[role=\"navigation\"]",
+      "elementHtml": "<!-- 2 navigation landmarks, 1 labeled -->",
+      "discoveredAt": "2026-04-09T16:15:41.366Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/config",
+      "metadata": {
+        "backendNodeId": 5984,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.3.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.3.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.3.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Page has 4 \"navigation\" landmarks but only 1 have distinct labels. Screen reader users cannot distinguish between them.",
+      "selector": "[role=\"navigation\"]",
+      "elementHtml": "<!-- 4 navigation landmarks, 1 labeled -->",
+      "discoveredAt": "2026-04-09T16:16:49.305Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/contact-the-mayor",
+      "metadata": {
+        "backendNodeId": 23680,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.3.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.3.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.3.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Page has 4 \"navigation\" landmarks but only 1 have distinct labels. Screen reader users cannot distinguish between them.",
+      "selector": "[role=\"navigation\"]",
+      "elementHtml": "<!-- 4 navigation landmarks, 1 labeled -->",
+      "discoveredAt": "2026-04-09T16:16:27.832Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/mayors-office-accessibility",
+      "metadata": {
+        "backendNodeId": 16879,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.3.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.3.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.3.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Page has 5 \"navigation\" landmarks but only 2 have distinct labels. Screen reader users cannot distinguish between them.",
+      "selector": "[role=\"navigation\"]",
+      "elementHtml": "<!-- 5 navigation landmarks, 2 labeled -->",
+      "discoveredAt": "2026-04-09T16:17:36.052Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-1",
+      "metadata": {
+        "backendNodeId": 37127,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.3.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.3.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.3.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Page has 5 \"navigation\" landmarks but only 2 have distinct labels. Screen reader users cannot distinguish between them.",
+      "selector": "[role=\"navigation\"]",
+      "elementHtml": "<!-- 5 navigation landmarks, 2 labeled -->",
+      "discoveredAt": "2026-04-09T16:17:55.194Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-10",
+      "metadata": {
+        "backendNodeId": 43197,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.3.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.3.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.3.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Page has 5 \"navigation\" landmarks but only 2 have distinct labels. Screen reader users cannot distinguish between them.",
+      "selector": "[role=\"navigation\"]",
+      "elementHtml": "<!-- 5 navigation landmarks, 2 labeled -->",
+      "discoveredAt": "2026-04-09T16:18:14.051Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-11",
+      "metadata": {
+        "backendNodeId": 49280,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.3.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.3.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.3.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Page has 5 \"navigation\" landmarks but only 2 have distinct labels. Screen reader users cannot distinguish between them.",
+      "selector": "[role=\"navigation\"]",
+      "elementHtml": "<!-- 5 navigation landmarks, 2 labeled -->",
+      "discoveredAt": "2026-04-09T16:18:32.321Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-12",
+      "metadata": {
+        "backendNodeId": 55288,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.3.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.3.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.3.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Page has 5 \"navigation\" landmarks but only 2 have distinct labels. Screen reader users cannot distinguish between them.",
+      "selector": "[role=\"navigation\"]",
+      "elementHtml": "<!-- 5 navigation landmarks, 2 labeled -->",
+      "discoveredAt": "2026-04-09T16:18:50.898Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-13",
+      "metadata": {
+        "backendNodeId": 61413,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.3.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.3.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.3.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Page has 5 \"navigation\" landmarks but only 2 have distinct labels. Screen reader users cannot distinguish between them.",
+      "selector": "[role=\"navigation\"]",
+      "elementHtml": "<!-- 5 navigation landmarks, 2 labeled -->",
+      "discoveredAt": "2026-04-09T16:19:09.484Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-14",
+      "metadata": {
+        "backendNodeId": 67504,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.3.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.3.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.3.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Page has 5 \"navigation\" landmarks but only 2 have distinct labels. Screen reader users cannot distinguish between them.",
+      "selector": "[role=\"navigation\"]",
+      "elementHtml": "<!-- 5 navigation landmarks, 2 labeled -->",
+      "discoveredAt": "2026-04-09T16:19:29.287Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-15",
+      "metadata": {
+        "backendNodeId": 73616,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.3.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.3.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.3.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Page has 4 \"navigation\" landmarks but only 1 have distinct labels. Screen reader users cannot distinguish between them.",
+      "selector": "[role=\"navigation\"]",
+      "elementHtml": "<!-- 4 navigation landmarks, 1 labeled -->",
+      "discoveredAt": "2026-04-09T16:17:09.045Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/?",
+      "metadata": {
+        "backendNodeId": 31098,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.3.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.3.1"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
+      "selector": ".pane--header > h3",
+      "elementHtml": "<h3><span>Thursday,</span><span>April 9, 2026</span></h3>",
+      "discoveredAt": "2026-04-09T16:14:48.080Z",
+      "pageUrl": "https://www.nyc.gov/main",
+      "metadata": {
+        "backendNodeId": 1535,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
+      "selector": "#text-f1e4d1f096 > h4",
+      "elementHtml": "<h4>112th Mayor of New York City</h4>",
+      "discoveredAt": "2026-04-09T16:15:59.335Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office",
+      "metadata": {
+        "backendNodeId": 10217,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": "#primary-navigation",
+      "elementHtml": "<nav id=\"primary-navigation\" class=\"cmp-navigation\">",
+      "discoveredAt": "2026-04-09T16:15:59.335Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office",
+      "metadata": {
+        "backendNodeId": 10105,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
+      "selector": "#title-e8f49a59b9 > h4",
+      "elementHtml": "<h4 class=\"cmp-title__text\">Office of the Mayor</h4>",
+      "discoveredAt": "2026-04-09T16:15:59.335Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office",
+      "metadata": {
+        "backendNodeId": 10252,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
+      "selector": "#title-4ed4649fca > .cmp-title__text",
+      "elementHtml": "<h3 class=\"cmp-title__text\">More on nyc.gov</h3>",
+      "discoveredAt": "2026-04-09T16:15:41.374Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/config",
+      "metadata": {
+        "backendNodeId": 5982,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": "#primary-navigation",
+      "elementHtml": "<nav id=\"primary-navigation\" class=\"cmp-navigation\">",
+      "discoveredAt": "2026-04-09T16:16:49.696Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/contact-the-mayor",
+      "metadata": {
+        "backendNodeId": 22284,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
+      "selector": "#title-142e863eb1 > h3",
+      "elementHtml": "<h3 class=\"cmp-title__text\">Mailing address&nbsp;</h3>",
+      "discoveredAt": "2026-04-09T16:16:49.696Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/contact-the-mayor",
+      "metadata": {
+        "backendNodeId": 22581,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": "#primary-navigation",
+      "elementHtml": "<nav id=\"primary-navigation\" class=\"cmp-navigation\">",
+      "discoveredAt": "2026-04-09T16:16:27.842Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/mayors-office-accessibility",
+      "metadata": {
+        "backendNodeId": 16602,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
+      "selector": "#title-e8f49a59b9 > h4",
+      "elementHtml": "<h4 class=\"cmp-title__text\">Office of the Mayor</h4>",
+      "discoveredAt": "2026-04-09T16:16:27.842Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/mayors-office-accessibility",
+      "metadata": {
+        "backendNodeId": 16831,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
+      "selector": "#title-e8f49a59b9 > h4",
+      "elementHtml": "<h4 class=\"cmp-title__text\">Office of the Mayor</h4>",
+      "discoveredAt": "2026-04-09T16:17:36.059Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-1",
+      "metadata": {
+        "backendNodeId": 37175,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": "#primary-navigation",
+      "elementHtml": "<nav id=\"primary-navigation\" class=\"cmp-navigation\">",
+      "discoveredAt": "2026-04-09T16:17:36.059Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-1",
+      "metadata": {
+        "backendNodeId": 37038,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": "#primary-navigation",
+      "elementHtml": "<nav id=\"primary-navigation\" class=\"cmp-navigation\">",
+      "discoveredAt": "2026-04-09T16:17:55.201Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-10",
+      "metadata": {
+        "backendNodeId": 43107,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
+      "selector": "#title-e8f49a59b9 > h4",
+      "elementHtml": "<h4 class=\"cmp-title__text\">Office of the Mayor</h4>",
+      "discoveredAt": "2026-04-09T16:17:55.201Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-10",
+      "metadata": {
+        "backendNodeId": 43241,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
+      "selector": "#title-e8f49a59b9 > h4",
+      "elementHtml": "<h4 class=\"cmp-title__text\">Office of the Mayor</h4>",
+      "discoveredAt": "2026-04-09T16:18:14.058Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-11",
+      "metadata": {
+        "backendNodeId": 49326,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": "#primary-navigation",
+      "elementHtml": "<nav id=\"primary-navigation\" class=\"cmp-navigation\">",
+      "discoveredAt": "2026-04-09T16:18:14.058Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-11",
+      "metadata": {
+        "backendNodeId": 49190,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
+      "selector": "#title-e8f49a59b9 > h4",
+      "elementHtml": "<h4 class=\"cmp-title__text\">Office of the Mayor</h4>",
+      "discoveredAt": "2026-04-09T16:18:32.329Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-12",
+      "metadata": {
+        "backendNodeId": 55331,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": "#primary-navigation",
+      "elementHtml": "<nav id=\"primary-navigation\" class=\"cmp-navigation\">",
+      "discoveredAt": "2026-04-09T16:18:32.329Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-12",
+      "metadata": {
+        "backendNodeId": 55198,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
+      "selector": "#title-e8f49a59b9 > h4",
+      "elementHtml": "<h4 class=\"cmp-title__text\">Office of the Mayor</h4>",
+      "discoveredAt": "2026-04-09T16:18:50.906Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-13",
+      "metadata": {
+        "backendNodeId": 61457,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": "#primary-navigation",
+      "elementHtml": "<nav id=\"primary-navigation\" class=\"cmp-navigation\">",
+      "discoveredAt": "2026-04-09T16:18:50.906Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-13",
+      "metadata": {
+        "backendNodeId": 61323,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
+      "selector": "#title-e8f49a59b9 > h4",
+      "elementHtml": "<h4 class=\"cmp-title__text\">Office of the Mayor</h4>",
+      "discoveredAt": "2026-04-09T16:19:09.492Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-14",
+      "metadata": {
+        "backendNodeId": 67548,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": "#primary-navigation",
+      "elementHtml": "<nav id=\"primary-navigation\" class=\"cmp-navigation\">",
+      "discoveredAt": "2026-04-09T16:19:09.492Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-14",
+      "metadata": {
+        "backendNodeId": 67415,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
+      "selector": "#title-e8f49a59b9 > h4",
+      "elementHtml": "<h4 class=\"cmp-title__text\">Office of the Mayor</h4>",
+      "discoveredAt": "2026-04-09T16:19:29.299Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-15",
+      "metadata": {
+        "backendNodeId": 73662,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": "#primary-navigation",
+      "elementHtml": "<nav id=\"primary-navigation\" class=\"cmp-navigation\">",
+      "discoveredAt": "2026-04-09T16:19:29.299Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/2022/01/emergency-executive-order-15",
+      "metadata": {
+        "backendNodeId": 73527,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": "#primary-navigation",
+      "elementHtml": "<nav id=\"primary-navigation\" class=\"cmp-navigation\">",
+      "discoveredAt": "2026-04-09T16:17:09.052Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/?",
+      "metadata": {
+        "backendNodeId": 30935,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
+      "selector": "#title-e8f49a59b9 > h4",
+      "elementHtml": "<h4 class=\"cmp-title__text\">Office of the Mayor</h4>",
+      "discoveredAt": "2026-04-09T16:17:09.052Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/?",
+      "metadata": {
+        "backendNodeId": 31056,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(5, 26, 219), text: rgb(0, 0, 0)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#status--feed-body-1 > div:nth-of-type(1) > p:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"https://www.nyc.gov/assets/dsny/forms/collection-schedule\"><u>Check your collection schedule</u></a>",
+      "discoveredAt": "2026-04-09T16:14:47.905Z",
+      "pageUrl": "https://www.nyc.gov/main",
+      "metadata": {
+        "backendNodeId": 1586,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(5, 26, 219), text: rgb(0, 0, 0)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#status--feed-body-2 > div:nth-of-type(1) > p:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"https://www.schools.nyc.gov/calendar\"><u>View the public school calendar</u></a>",
+      "discoveredAt": "2026-04-09T16:14:47.905Z",
+      "pageUrl": "https://www.nyc.gov/main",
+      "metadata": {
+        "backendNodeId": 1612,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(5, 26, 219), text: rgb(0, 0, 0)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#status--feed-body-0 > div:nth-of-type(1) > p:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"https://www.nyc.gov/html/dot/html/motorist/alternate-side-parking.shtml\"><u>View the full year alternate side parking calendar</u></a>",
+      "discoveredAt": "2026-04-09T16:14:47.905Z",
+      "pageUrl": "https://www.nyc.gov/main",
+      "metadata": {
+        "backendNodeId": 1556,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "\"Website feedback\" is visually at position 12 but receives focus at position 20 (drift: 8).",
+      "selector": "#globalnavigation-a-level-0-c77cf61670",
+      "elementHtml": "<a>Website feedback</a>",
+      "discoveredAt": "2026-04-09T16:15:46.529Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/config",
+      "metadata": {
+        "backendNodeId": 6018,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "\"Your government\" is visually at position 22 but receives focus at position 14 (drift: 8).",
+      "selector": "#globalnavigation-a-level-0-38da6a744a",
+      "elementHtml": "<a>Your government</a>",
+      "discoveredAt": "2026-04-09T16:15:46.529Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/config",
+      "metadata": {
+        "backendNodeId": 5998,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.nyc.gov/mayors-office/config#mainContent returns 404 Not Found",
+      "selector": "div:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.nyc.gov/mayors-office/config#mainContent\">Skip to main content</a>",
+      "discoveredAt": "2026-04-09T16:15:44.570Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/config",
+      "metadata": {
+        "backendNodeId": 5469,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "navigation-ways",
+      "standard": "WCAG 2.4.5",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Page has only one navigation mechanism (navigation). WCAG requires at least two ways to locate a page within a set of pages.",
+      "selector": "html",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-09T16:14:47.905Z",
+      "pageUrl": "https://www.nyc.gov/main",
+      "metadata": {
+        "backendNodeId": 230,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "navigation-ways"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 2.4.5"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 2.4.5"
+      ]
+    },
+    {
+      "probe": "navigation-ways",
+      "standard": "WCAG 2.4.5",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Page has only one navigation mechanism (navigation). WCAG requires at least two ways to locate a page within a set of pages.",
+      "selector": "html",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-09T16:15:59.249Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office",
+      "metadata": {
+        "backendNodeId": 10027,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "navigation-ways"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 2.4.5"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 2.4.5"
+      ]
+    },
+    {
+      "probe": "navigation-ways",
+      "standard": "WCAG 2.4.5",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Page has only one navigation mechanism (navigation). WCAG requires at least two ways to locate a page within a set of pages.",
+      "selector": "html",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-09T16:15:41.307Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/config",
+      "metadata": {
+        "backendNodeId": 5808,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "navigation-ways"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 2.4.5"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 2.4.5"
+      ]
+    },
+    {
+      "probe": "navigation-ways",
+      "standard": "WCAG 2.4.5",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Page has only one navigation mechanism (navigation). WCAG requires at least two ways to locate a page within a set of pages.",
+      "selector": "html",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-09T16:16:49.173Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/contact-the-mayor",
+      "metadata": {
+        "backendNodeId": 22207,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "navigation-ways"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 2.4.5"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 2.4.5"
+      ]
+    },
+    {
+      "probe": "navigation-ways",
+      "standard": "WCAG 2.4.5",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Page has only one navigation mechanism (navigation). WCAG requires at least two ways to locate a page within a set of pages.",
+      "selector": "html",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-09T16:16:27.750Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/mayors-office-accessibility",
+      "metadata": {
+        "backendNodeId": 16525,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "navigation-ways"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 2.4.5"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 2.4.5"
+      ]
+    },
+    {
+      "probe": "navigation-ways",
+      "standard": "WCAG 2.4.5",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Page has only one navigation mechanism (navigation). WCAG requires at least two ways to locate a page within a set of pages.",
+      "selector": "html",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-09T16:17:08.980Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/?",
+      "metadata": {
+        "backendNodeId": 30857,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "navigation-ways"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 2.4.5"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 2.4.5"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 27px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "span.carousel-annoucer.sr-only",
+      "elementHtml": "<span class=\"carousel-annoucer sr-only\" aria-atomic=\"true\" aria-live=\"polite\">showing slide&nbsp;5 of 5</span>",
+      "discoveredAt": "2026-04-09T16:14:59.518Z",
+      "pageUrl": "https://www.nyc.gov/main",
+      "metadata": {
+        "backendNodeId": 1033,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 249px at 320px width.",
+      "selector": "li.carousel-slide",
+      "elementHtml": "<li class=\"carousel-slide \" data-si=\"5\"><div class=\"carousel-slide-content\"><div class=\"carousel-slide-content--desc\"><div class=\"teaser cmp-teaser--event  labelled\"><div class=\"cmp-teaser__content\"><",
+      "discoveredAt": "2026-04-09T16:14:59.518Z",
+      "pageUrl": "https://www.nyc.gov/main",
+      "metadata": {
+        "backendNodeId": 1131,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 249px at 320px width.",
+      "selector": "div.carousel-slide-content",
+      "elementHtml": "<div class=\"carousel-slide-content\"><div class=\"carousel-slide-content--desc\"><div class=\"teaser cmp-teaser--event  labelled\"><div class=\"cmp-teaser__content\"><div class=\"cmp-teaser__desc\"><div><h3 cl",
+      "discoveredAt": "2026-04-09T16:14:59.518Z",
+      "pageUrl": "https://www.nyc.gov/main",
+      "metadata": {
+        "backendNodeId": 1130,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 214px at 320px width.",
+      "selector": "h3.cmp-teaser__title",
+      "elementHtml": "<h3 class=\"cmp-teaser__title\"><a href=\"/main/events?permalinkName=nature-sketching&amp;id=920096&amp;sequence=1\">Nature Sketching</a></h3>",
+      "discoveredAt": "2026-04-09T16:14:59.518Z",
+      "pageUrl": "https://www.nyc.gov/main",
+      "metadata": {
+        "backendNodeId": 2164,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 249px at 320px width.",
+      "selector": "div.carousel-slide-content--desc",
+      "elementHtml": "<div class=\"carousel-slide-content--desc\"><div class=\"teaser cmp-teaser--event  labelled\"><div class=\"cmp-teaser__content\"><div class=\"cmp-teaser__desc\"><div><h3 class=\"cmp-teaser__title\"><a href=\"/ma",
+      "discoveredAt": "2026-04-09T16:14:59.518Z",
+      "pageUrl": "https://www.nyc.gov/main",
+      "metadata": {
+        "backendNodeId": 1129,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 234px at 320px width.",
+      "selector": "div.teaser.cmp-teaser--event",
+      "elementHtml": "<div class=\"teaser cmp-teaser--event  labelled\"><div class=\"cmp-teaser__content\"><div class=\"cmp-teaser__desc\"><div><h3 class=\"cmp-teaser__title\"><a href=\"/main/events?permalinkName=nature-sketching&a",
+      "discoveredAt": "2026-04-09T16:14:59.518Z",
+      "pageUrl": "https://www.nyc.gov/main",
+      "metadata": {
+        "backendNodeId": 1128,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 168px at 320px width.",
+      "selector": "a",
+      "elementHtml": "<a href=\"/main/events?permalinkName=nature-sketching&amp;id=920096&amp;sequence=1\">Nature Sketching</a>",
+      "discoveredAt": "2026-04-09T16:14:59.518Z",
+      "pageUrl": "https://www.nyc.gov/main",
+      "metadata": {
+        "backendNodeId": 269,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 214px at 320px width.",
+      "selector": "div",
+      "elementHtml": "<div><h3 class=\"cmp-teaser__title\"><a href=\"/main/events?permalinkName=nature-sketching&amp;id=920096&amp;sequence=1\">Nature Sketching</a></h3><p>Join Rangers as they hike and sketch the beautiful sce",
+      "discoveredAt": "2026-04-09T16:14:59.518Z",
+      "pageUrl": "https://www.nyc.gov/main",
+      "metadata": {
+        "backendNodeId": 268,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 150px at 320px width.",
+      "selector": "p",
+      "elementHtml": "<p>Photo by David Benyukhis</p>",
+      "discoveredAt": "2026-04-09T16:14:59.518Z",
+      "pageUrl": "https://www.nyc.gov/main",
+      "metadata": {
+        "backendNodeId": 293,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 61px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "#carousel-title-QcPwx6LOoj",
+      "elementHtml": "<span id=\"carousel-title-QcPwx6LOoj\" class=\"carousel-title sr-only\" aria-hidden=\"true\">Latest News</span>",
+      "discoveredAt": "2026-04-09T16:14:59.518Z",
+      "pageUrl": "https://www.nyc.gov/main",
+      "metadata": {
+        "backendNodeId": 1032,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 214px at 320px width.",
+      "selector": "div.cmp-teaser__desc",
+      "elementHtml": "<div class=\"cmp-teaser__desc\"><div><h3 class=\"cmp-teaser__title\"><a href=\"/main/events?permalinkName=nature-sketching&amp;id=920096&amp;sequence=1\">Nature Sketching</a></h3><p>Join Rangers as they hik",
+      "discoveredAt": "2026-04-09T16:14:59.518Z",
+      "pageUrl": "https://www.nyc.gov/main",
+      "metadata": {
+        "backendNodeId": 2182,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 234px at 320px width.",
+      "selector": "div.cmp-teaser__content",
+      "elementHtml": "<div class=\"cmp-teaser__content\"><div class=\"cmp-teaser__desc\"><div><h3 class=\"cmp-teaser__title\"><a href=\"/main/events?permalinkName=nature-sketching&amp;id=920096&amp;sequence=1\">Nature Sketching</a",
+      "discoveredAt": "2026-04-09T16:14:59.518Z",
+      "pageUrl": "https://www.nyc.gov/main",
+      "metadata": {
+        "backendNodeId": 642,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 61px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "#carousel-title-45xAjvlVEV",
+      "elementHtml": "<span id=\"carousel-title-45xAjvlVEV\" class=\"carousel-title sr-only\" aria-hidden=\"true\">latest news</span>",
+      "discoveredAt": "2026-04-09T16:16:07.298Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office",
+      "metadata": {
+        "backendNodeId": 9426,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 186px at 320px width.",
+      "selector": "iframe",
+      "elementHtml": "<iframe title=\"reCAPTCHA\" width=\"256\" height=\"60\" role=\"presentation\" name=\"a-jxxi63ltkjwp\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-top-n",
+      "discoveredAt": "2026-04-09T16:16:57.761Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/contact-the-mayor",
+      "metadata": {
+        "backendNodeId": 22216,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 186px at 320px width.",
+      "selector": "div.grecaptcha-error",
+      "elementHtml": "<div class=\"grecaptcha-error\"></div>",
+      "discoveredAt": "2026-04-09T16:16:57.761Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/contact-the-mayor",
+      "metadata": {
+        "backendNodeId": 24200,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 186px at 320px width.",
+      "selector": "div.grecaptcha-badge",
+      "elementHtml": "<div class=\"grecaptcha-badge\" data-style=\"bottomright\" style=\"width: 256px; height: 60px; display: block; transition: right 0.3s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px",
+      "discoveredAt": "2026-04-09T16:16:57.761Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/contact-the-mayor",
+      "metadata": {
+        "backendNodeId": 24198,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 7px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "div.grecaptcha-badge",
+      "elementHtml": "<div class=\"grecaptcha-badge\" data-style=\"bottomright\" style=\"width: 256px; height: 60px; display: block; transition: right 0.3s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px",
+      "discoveredAt": "2026-04-09T16:16:57.761Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/contact-the-mayor",
+      "metadata": {
+        "backendNodeId": 24198,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 186px at 320px width.",
+      "selector": "div.grecaptcha-logo",
+      "elementHtml": "<div class=\"grecaptcha-logo\"><iframe title=\"reCAPTCHA\" width=\"256\" height=\"60\" role=\"presentation\" name=\"a-jxxi63ltkjwp\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allow-same-ori",
+      "discoveredAt": "2026-04-09T16:16:57.761Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/contact-the-mayor",
+      "metadata": {
+        "backendNodeId": 24199,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 134px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "span.cmp-link__screen-reader-only",
+      "elementHtml": "<span class=\"cmp-link__screen-reader-only\">opens in a new tab</span>",
+      "discoveredAt": "2026-04-09T16:16:36.681Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/mayors-office-accessibility",
+      "metadata": {
+        "backendNodeId": 16704,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 25px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "#filter-header-GGp8p68DKx",
+      "elementHtml": "<span id=\"filter-header-GGp8p68DKx\">News filter control</span>",
+      "discoveredAt": "2026-04-09T16:17:17.654Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/?",
+      "metadata": {
+        "backendNodeId": 30158,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 42px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "span.sr-only",
+      "elementHtml": "<span class=\"sr-only\">NYC</span>",
+      "discoveredAt": "2026-04-09T16:17:17.654Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/?",
+      "metadata": {
+        "backendNodeId": 29754,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 114px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "div.modal__pane",
+      "elementHtml": "<div class=\"modal__pane\">\n      <div class=\"modal__header\">\n        <div class=\"modal__header-content\">\n          <button type=\"button\" class=\"modal__close-button\" data-close-modal=\"\" aria-controls=\"g",
+      "discoveredAt": "2026-04-09T16:17:17.654Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/?",
+      "metadata": {
+        "backendNodeId": 29770,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 27px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "label.sr-only",
+      "elementHtml": "<label for=\"filter\" class=\"sr-only\">Filter languages</label>",
+      "discoveredAt": "2026-04-09T16:17:17.654Z",
+      "pageUrl": "https://www.nyc.gov/mayors-office/news/?",
+      "metadata": {
+        "backendNodeId": 29791,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    }
+  ]
+}

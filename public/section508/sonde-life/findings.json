@@ -1,0 +1,2235 @@
+{
+  "url": "https://daylight.sonde.life/section508",
+  "slug": "sonde-life",
+  "status": "complete",
+  "scanDate": "2026-04-09T23:31:40.602Z",
+  "scanConfig": {
+    "scope": "site",
+    "maxPages": 50,
+    "racks": [
+      "rack-live-a11y",
+      "rack-live-free"
+    ],
+    "individualProbes": [],
+    "excludedProbes": [],
+    "timeBudgetMs": 300000,
+    "maxFindings": null
+  },
+  "sondeScore": {
+    "score": 991,
+    "rawPenalty": 83.5,
+    "normalizedPenalty": 6.958333333333333,
+    "pagesScanned": 12,
+    "weightsVersion": "v0.1"
+  },
+  "avgFindingsPerPage": 9.1,
+  "elementComplianceRate": 100,
+  "totalElements": 233440,
+  "elementsWithFindings": 16,
+  "complianceSummary": {
+    "total": 109,
+    "byLevel": {
+      "AA": 8
+    },
+    "bySeverity": {
+      "critical": 0,
+      "high": 12,
+      "medium": 31,
+      "low": 66
+    },
+    "byCriterion": {
+      "WCAG 2.4.5": 2,
+      "WCAG 1.4.10": 6
+    }
+  },
+  "summary": {
+    "pagesAnalyzed": 12,
+    "pagesFailed": 0,
+    "totalFindings": 109,
+    "bySeverity": {
+      "critical": 0,
+      "high": 12,
+      "medium": 31,
+      "low": 66
+    },
+    "byProbe": {},
+    "byType": {},
+    "durationMs": 330967
+  },
+  "jurisdiction": "Sonde",
+  "entityName": "Sonde Daylight",
+  "findings": [
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-09T16:26:16.783Z",
+      "pageUrl": "http://127.0.0.1:65501/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-09T16:28:24.164Z",
+      "pageUrl": "http://127.0.0.1:65501/clarkcountynv-gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-09T16:30:30.529Z",
+      "pageUrl": "http://127.0.0.1:65501/cookcountyil-gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-09T16:29:57.927Z",
+      "pageUrl": "http://127.0.0.1:65501/harriscountytx-gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-09T16:28:52.783Z",
+      "pageUrl": "http://127.0.0.1:65501/kingcounty-gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-09T16:27:19.548Z",
+      "pageUrl": "http://127.0.0.1:65501/lacounty-gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-09T16:29:24.218Z",
+      "pageUrl": "http://127.0.0.1:65501/maricopa-gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-09T16:26:22.078Z",
+      "pageUrl": "http://127.0.0.1:65501/methodology/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-09T16:27:53.065Z",
+      "pageUrl": "http://127.0.0.1:65501/miamidade-gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-09T16:26:50.299Z",
+      "pageUrl": "http://127.0.0.1:65501/nyc-gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-09T16:31:02.742Z",
+      "pageUrl": "http://127.0.0.1:65501/sandiegocounty-gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-09T16:26:26.573Z",
+      "pageUrl": "http://127.0.0.1:65501/section508-gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/discussions/categories/nominations?utm_source=daylight&utm_medium=cta&utm_campaign=section508 returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(4) > div > p:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/discussions/categories/nominations?utm_source=daylight&amp;utm_medium=cta&amp;utm_campaign=section508\">Apply for a Free Scan →</a>",
+      "discoveredAt": "2026-04-09T16:26:18.490Z",
+      "pageUrl": "http://127.0.0.1:65501/",
+      "metadata": {
+        "backendNodeId": 471,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://sonde.life/?utm_source=daylight&utm_medium=nav&utm_campaign=section508 returns 525 <none>",
+      "selector": "div > main > nav > a",
+      "elementHtml": "<a href=\"https://sonde.life/?utm_source=daylight&amp;utm_medium=nav&amp;utm_campaign=section508\">Sonde Daylight Project</a>",
+      "discoveredAt": "2026-04-09T16:26:18.490Z",
+      "pageUrl": "http://127.0.0.1:65501/",
+      "metadata": {
+        "backendNodeId": 198,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/discussions/categories/nominations?utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=clarkcountynv-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(3)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/discussions/categories/nominations?utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=clarkcountynv-gov\">Nominate a Site</a>",
+      "discoveredAt": "2026-04-09T16:28:24.968Z",
+      "pageUrl": "http://127.0.0.1:65501/clarkcountynv-gov/",
+      "metadata": {
+        "backendNodeId": 106888,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://sonde.life/?utm_source=daylight&utm_medium=nav&utm_campaign=section508&utm_content=Clark+County+%28NV%29 returns 525 <none>",
+      "selector": "div > main > div > nav:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://sonde.life/?utm_source=daylight&amp;utm_medium=nav&amp;utm_campaign=section508&amp;utm_content=Clark+County+%28NV%29\">Sonde Daylight Project</a>",
+      "discoveredAt": "2026-04-09T16:28:24.968Z",
+      "pageUrl": "http://127.0.0.1:65501/clarkcountynv-gov/",
+      "metadata": {
+        "backendNodeId": 99205,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/blob/main/section508/clarkcountynv-gov/findings.json?utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=clarkcountynv-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(1)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/blob/main/section508/clarkcountynv-gov/findings.json?utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=clarkcountynv-gov\">View Findings Data</a>",
+      "discoveredAt": "2026-04-09T16:28:24.968Z",
+      "pageUrl": "http://127.0.0.1:65501/clarkcountynv-gov/",
+      "metadata": {
+        "backendNodeId": 106882,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/commits/main/section508/clarkcountynv-gov/?utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=clarkcountynv-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(2)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/commits/main/section508/clarkcountynv-gov/?utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=clarkcountynv-gov\">Track Changes</a>",
+      "discoveredAt": "2026-04-09T16:28:24.968Z",
+      "pageUrl": "http://127.0.0.1:65501/clarkcountynv-gov/",
+      "metadata": {
+        "backendNodeId": 106885,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/issues/new?template=report-scanning-issue.yml&title=Scanning+issue%3A+Clark+County+%28NV%29&utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=clarkcountynv-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(4)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/issues/new?template=report-scanning-issue.yml&amp;title=Scanning+issue%3A+Clark+County+%28NV%29&amp;utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=clarkcountynv-gov\">Report a Scanning Issue</a>",
+      "discoveredAt": "2026-04-09T16:28:24.968Z",
+      "pageUrl": "http://127.0.0.1:65501/clarkcountynv-gov/",
+      "metadata": {
+        "backendNodeId": 106891,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/discussions/categories/nominations?utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=cookcountyil-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(3)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/discussions/categories/nominations?utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=cookcountyil-gov\">Nominate a Site</a>",
+      "discoveredAt": "2026-04-09T16:30:31.585Z",
+      "pageUrl": "http://127.0.0.1:65501/cookcountyil-gov/",
+      "metadata": {
+        "backendNodeId": 233629,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/blob/main/section508/cookcountyil-gov/findings.json?utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=cookcountyil-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(1)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/blob/main/section508/cookcountyil-gov/findings.json?utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=cookcountyil-gov\">View Findings Data</a>",
+      "discoveredAt": "2026-04-09T16:30:31.585Z",
+      "pageUrl": "http://127.0.0.1:65501/cookcountyil-gov/",
+      "metadata": {
+        "backendNodeId": 233623,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/commits/main/section508/cookcountyil-gov/?utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=cookcountyil-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(2)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/commits/main/section508/cookcountyil-gov/?utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=cookcountyil-gov\">Track Changes</a>",
+      "discoveredAt": "2026-04-09T16:30:31.585Z",
+      "pageUrl": "http://127.0.0.1:65501/cookcountyil-gov/",
+      "metadata": {
+        "backendNodeId": 233626,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://sonde.life/?utm_source=daylight&utm_medium=nav&utm_campaign=section508&utm_content=Cook+County+%28IL%29 returns 525 <none>",
+      "selector": "div > main > div > nav:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://sonde.life/?utm_source=daylight&amp;utm_medium=nav&amp;utm_campaign=section508&amp;utm_content=Cook+County+%28IL%29\">Sonde Daylight Project</a>",
+      "discoveredAt": "2026-04-09T16:30:31.585Z",
+      "pageUrl": "http://127.0.0.1:65501/cookcountyil-gov/",
+      "metadata": {
+        "backendNodeId": 204833,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/issues/new?template=report-scanning-issue.yml&title=Scanning+issue%3A+Cook+County+%28IL%29&utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=cookcountyil-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(4)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/issues/new?template=report-scanning-issue.yml&amp;title=Scanning+issue%3A+Cook+County+%28IL%29&amp;utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=cookcountyil-gov\">Report a Scanning Issue</a>",
+      "discoveredAt": "2026-04-09T16:30:31.585Z",
+      "pageUrl": "http://127.0.0.1:65501/cookcountyil-gov/",
+      "metadata": {
+        "backendNodeId": 233632,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/blob/main/section508/harriscountytx-gov/findings.json?utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=harriscountytx-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(1)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/blob/main/section508/harriscountytx-gov/findings.json?utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=harriscountytx-gov\">View Findings Data</a>",
+      "discoveredAt": "2026-04-09T16:30:01.578Z",
+      "pageUrl": "http://127.0.0.1:65501/harriscountytx-gov/",
+      "metadata": {
+        "backendNodeId": 198431,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/commits/main/section508/harriscountytx-gov/?utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=harriscountytx-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(2)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/commits/main/section508/harriscountytx-gov/?utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=harriscountytx-gov\">Track Changes</a>",
+      "discoveredAt": "2026-04-09T16:30:01.578Z",
+      "pageUrl": "http://127.0.0.1:65501/harriscountytx-gov/",
+      "metadata": {
+        "backendNodeId": 198434,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://sonde.life/?utm_source=daylight&utm_medium=nav&utm_campaign=section508&utm_content=Harris+County returns 525 <none>",
+      "selector": "div > main > div > nav:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://sonde.life/?utm_source=daylight&amp;utm_medium=nav&amp;utm_campaign=section508&amp;utm_content=Harris+County\">Sonde Daylight Project</a>",
+      "discoveredAt": "2026-04-09T16:30:01.578Z",
+      "pageUrl": "http://127.0.0.1:65501/harriscountytx-gov/",
+      "metadata": {
+        "backendNodeId": 170511,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/discussions/categories/nominations?utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=harriscountytx-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(3)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/discussions/categories/nominations?utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=harriscountytx-gov\">Nominate a Site</a>",
+      "discoveredAt": "2026-04-09T16:30:01.578Z",
+      "pageUrl": "http://127.0.0.1:65501/harriscountytx-gov/",
+      "metadata": {
+        "backendNodeId": 198437,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/issues/new?template=report-scanning-issue.yml&title=Scanning+issue%3A+Harris+County&utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=harriscountytx-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(4)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/issues/new?template=report-scanning-issue.yml&amp;title=Scanning+issue%3A+Harris+County&amp;utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=harriscountytx-gov\">Report a Scanning Issue</a>",
+      "discoveredAt": "2026-04-09T16:30:01.578Z",
+      "pageUrl": "http://127.0.0.1:65501/harriscountytx-gov/",
+      "metadata": {
+        "backendNodeId": 198440,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/commits/main/section508/kingcounty-gov/?utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=kingcounty-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(2)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/commits/main/section508/kingcounty-gov/?utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=kingcounty-gov\">Track Changes</a>",
+      "discoveredAt": "2026-04-09T16:28:54.521Z",
+      "pageUrl": "http://127.0.0.1:65501/kingcounty-gov/",
+      "metadata": {
+        "backendNodeId": 134762,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://sonde.life/?utm_source=daylight&utm_medium=nav&utm_campaign=section508&utm_content=King+County+%28WA%29 returns 525 <none>",
+      "selector": "div > main > div > nav:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://sonde.life/?utm_source=daylight&amp;utm_medium=nav&amp;utm_campaign=section508&amp;utm_content=King+County+%28WA%29\">Sonde Daylight Project</a>",
+      "discoveredAt": "2026-04-09T16:28:54.521Z",
+      "pageUrl": "http://127.0.0.1:65501/kingcounty-gov/",
+      "metadata": {
+        "backendNodeId": 108530,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/issues/new?template=report-scanning-issue.yml&title=Scanning+issue%3A+King+County+%28WA%29&utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=kingcounty-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(4)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/issues/new?template=report-scanning-issue.yml&amp;title=Scanning+issue%3A+King+County+%28WA%29&amp;utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=kingcounty-gov\">Report a Scanning Issue</a>",
+      "discoveredAt": "2026-04-09T16:28:54.521Z",
+      "pageUrl": "http://127.0.0.1:65501/kingcounty-gov/",
+      "metadata": {
+        "backendNodeId": 134768,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/blob/main/section508/kingcounty-gov/findings.json?utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=kingcounty-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(1)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/blob/main/section508/kingcounty-gov/findings.json?utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=kingcounty-gov\">View Findings Data</a>",
+      "discoveredAt": "2026-04-09T16:28:54.521Z",
+      "pageUrl": "http://127.0.0.1:65501/kingcounty-gov/",
+      "metadata": {
+        "backendNodeId": 134759,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/discussions/categories/nominations?utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=kingcounty-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(3)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/discussions/categories/nominations?utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=kingcounty-gov\">Nominate a Site</a>",
+      "discoveredAt": "2026-04-09T16:28:54.521Z",
+      "pageUrl": "http://127.0.0.1:65501/kingcounty-gov/",
+      "metadata": {
+        "backendNodeId": 134765,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/issues/new?template=report-scanning-issue.yml&title=Scanning+issue%3A+Los+Angeles+County&utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=lacounty-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(4)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/issues/new?template=report-scanning-issue.yml&amp;title=Scanning+issue%3A+Los+Angeles+County&amp;utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=lacounty-gov\">Report a Scanning Issue</a>",
+      "discoveredAt": "2026-04-09T16:27:20.933Z",
+      "pageUrl": "http://127.0.0.1:65501/lacounty-gov/",
+      "metadata": {
+        "backendNodeId": 68280,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/commits/main/section508/lacounty-gov/?utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=lacounty-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(2)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/commits/main/section508/lacounty-gov/?utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=lacounty-gov\">Track Changes</a>",
+      "discoveredAt": "2026-04-09T16:27:20.933Z",
+      "pageUrl": "http://127.0.0.1:65501/lacounty-gov/",
+      "metadata": {
+        "backendNodeId": 68274,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/blob/main/section508/lacounty-gov/findings.json?utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=lacounty-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(1)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/blob/main/section508/lacounty-gov/findings.json?utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=lacounty-gov\">View Findings Data</a>",
+      "discoveredAt": "2026-04-09T16:27:20.933Z",
+      "pageUrl": "http://127.0.0.1:65501/lacounty-gov/",
+      "metadata": {
+        "backendNodeId": 68271,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://sonde.life/?utm_source=daylight&utm_medium=nav&utm_campaign=section508&utm_content=Los+Angeles+County returns 525 <none>",
+      "selector": "div > main > div > nav:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://sonde.life/?utm_source=daylight&amp;utm_medium=nav&amp;utm_campaign=section508&amp;utm_content=Los+Angeles+County\">Sonde Daylight Project</a>",
+      "discoveredAt": "2026-04-09T16:27:20.933Z",
+      "pageUrl": "http://127.0.0.1:65501/lacounty-gov/",
+      "metadata": {
+        "backendNodeId": 38900,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/discussions/categories/nominations?utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=lacounty-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(3)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/discussions/categories/nominations?utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=lacounty-gov\">Nominate a Site</a>",
+      "discoveredAt": "2026-04-09T16:27:20.933Z",
+      "pageUrl": "http://127.0.0.1:65501/lacounty-gov/",
+      "metadata": {
+        "backendNodeId": 68277,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/issues/new?template=report-scanning-issue.yml&title=Scanning+issue%3A+Maricopa+County&utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=maricopa-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(4)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/issues/new?template=report-scanning-issue.yml&amp;title=Scanning+issue%3A+Maricopa+County&amp;utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=maricopa-gov\">Report a Scanning Issue</a>",
+      "discoveredAt": "2026-04-09T16:29:26.596Z",
+      "pageUrl": "http://127.0.0.1:65501/maricopa-gov/",
+      "metadata": {
+        "backendNodeId": 164484,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/commits/main/section508/maricopa-gov/?utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=maricopa-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(2)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/commits/main/section508/maricopa-gov/?utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=maricopa-gov\">Track Changes</a>",
+      "discoveredAt": "2026-04-09T16:29:26.596Z",
+      "pageUrl": "http://127.0.0.1:65501/maricopa-gov/",
+      "metadata": {
+        "backendNodeId": 164478,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/blob/main/section508/maricopa-gov/findings.json?utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=maricopa-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(1)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/blob/main/section508/maricopa-gov/findings.json?utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=maricopa-gov\">View Findings Data</a>",
+      "discoveredAt": "2026-04-09T16:29:26.596Z",
+      "pageUrl": "http://127.0.0.1:65501/maricopa-gov/",
+      "metadata": {
+        "backendNodeId": 164475,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/discussions/categories/nominations?utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=maricopa-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(3)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/discussions/categories/nominations?utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=maricopa-gov\">Nominate a Site</a>",
+      "discoveredAt": "2026-04-09T16:29:26.596Z",
+      "pageUrl": "http://127.0.0.1:65501/maricopa-gov/",
+      "metadata": {
+        "backendNodeId": 164481,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://sonde.life/?utm_source=daylight&utm_medium=nav&utm_campaign=section508&utm_content=Maricopa+County returns 525 <none>",
+      "selector": "div > main > div > nav:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://sonde.life/?utm_source=daylight&amp;utm_medium=nav&amp;utm_campaign=section508&amp;utm_content=Maricopa+County\">Sonde Daylight Project</a>",
+      "discoveredAt": "2026-04-09T16:29:26.596Z",
+      "pageUrl": "http://127.0.0.1:65501/maricopa-gov/",
+      "metadata": {
+        "backendNodeId": 138801,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/discussions/categories/nominations?utm_source=daylight&utm_medium=cta&utm_campaign=section508&utm_content=methodology returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(10) > p:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/discussions/categories/nominations?utm_source=daylight&amp;utm_medium=cta&amp;utm_campaign=section508&amp;utm_content=methodology\">Apply for a Free Scan →</a>",
+      "discoveredAt": "2026-04-09T16:26:22.582Z",
+      "pageUrl": "http://127.0.0.1:65501/methodology/",
+      "metadata": {
+        "backendNodeId": 793,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://sonde.life/?utm_source=daylight&utm_medium=nav&utm_campaign=section508&utm_content=methodology returns 525 <none>",
+      "selector": "div > main > nav > a",
+      "elementHtml": "<a href=\"https://sonde.life/?utm_source=daylight&amp;utm_medium=nav&amp;utm_campaign=section508&amp;utm_content=methodology\">Sonde Daylight Project</a>",
+      "discoveredAt": "2026-04-09T16:26:22.582Z",
+      "pageUrl": "http://127.0.0.1:65501/methodology/",
+      "metadata": {
+        "backendNodeId": 646,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/issues/new?template=report-scanning-issue.yml&title=Scanning+issue%3A+Miami-Dade+County&utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=miamidade-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(4)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/issues/new?template=report-scanning-issue.yml&amp;title=Scanning+issue%3A+Miami-Dade+County&amp;utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=miamidade-gov\">Report a Scanning Issue</a>",
+      "discoveredAt": "2026-04-09T16:27:54.322Z",
+      "pageUrl": "http://127.0.0.1:65501/miamidade-gov/",
+      "metadata": {
+        "backendNodeId": 96098,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://sonde.life/?utm_source=daylight&utm_medium=nav&utm_campaign=section508&utm_content=Miami-Dade+County returns 525 <none>",
+      "selector": "div > main > div > nav:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://sonde.life/?utm_source=daylight&amp;utm_medium=nav&amp;utm_campaign=section508&amp;utm_content=Miami-Dade+County\">Sonde Daylight Project</a>",
+      "discoveredAt": "2026-04-09T16:27:54.322Z",
+      "pageUrl": "http://127.0.0.1:65501/miamidade-gov/",
+      "metadata": {
+        "backendNodeId": 71923,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/commits/main/section508/miamidade-gov/?utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=miamidade-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(2)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/commits/main/section508/miamidade-gov/?utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=miamidade-gov\">Track Changes</a>",
+      "discoveredAt": "2026-04-09T16:27:54.322Z",
+      "pageUrl": "http://127.0.0.1:65501/miamidade-gov/",
+      "metadata": {
+        "backendNodeId": 96092,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/discussions/categories/nominations?utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=miamidade-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(3)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/discussions/categories/nominations?utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=miamidade-gov\">Nominate a Site</a>",
+      "discoveredAt": "2026-04-09T16:27:54.322Z",
+      "pageUrl": "http://127.0.0.1:65501/miamidade-gov/",
+      "metadata": {
+        "backendNodeId": 96095,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/blob/main/section508/miamidade-gov/findings.json?utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=miamidade-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(1)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/blob/main/section508/miamidade-gov/findings.json?utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=miamidade-gov\">View Findings Data</a>",
+      "discoveredAt": "2026-04-09T16:27:54.322Z",
+      "pageUrl": "http://127.0.0.1:65501/miamidade-gov/",
+      "metadata": {
+        "backendNodeId": 96089,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://sonde.life/?utm_source=daylight&utm_medium=nav&utm_campaign=section508&utm_content=New+York+City returns 525 <none>",
+      "selector": "div > main > div > nav:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://sonde.life/?utm_source=daylight&amp;utm_medium=nav&amp;utm_campaign=section508&amp;utm_content=New+York+City\">Sonde Daylight Project</a>",
+      "discoveredAt": "2026-04-09T16:26:52.600Z",
+      "pageUrl": "http://127.0.0.1:65501/nyc-gov/",
+      "metadata": {
+        "backendNodeId": 29167,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/commits/main/section508/nyc-gov/?utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=nyc-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(2)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/commits/main/section508/nyc-gov/?utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=nyc-gov\">Track Changes</a>",
+      "discoveredAt": "2026-04-09T16:26:52.600Z",
+      "pageUrl": "http://127.0.0.1:65501/nyc-gov/",
+      "metadata": {
+        "backendNodeId": 36356,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/blob/main/section508/nyc-gov/findings.json?utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=nyc-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(1)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/blob/main/section508/nyc-gov/findings.json?utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=nyc-gov\">View Findings Data</a>",
+      "discoveredAt": "2026-04-09T16:26:52.600Z",
+      "pageUrl": "http://127.0.0.1:65501/nyc-gov/",
+      "metadata": {
+        "backendNodeId": 36353,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/discussions/categories/nominations?utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=nyc-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(3)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/discussions/categories/nominations?utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=nyc-gov\">Nominate a Site</a>",
+      "discoveredAt": "2026-04-09T16:26:52.600Z",
+      "pageUrl": "http://127.0.0.1:65501/nyc-gov/",
+      "metadata": {
+        "backendNodeId": 36359,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/issues/new?template=report-scanning-issue.yml&title=Scanning+issue%3A+New+York+City&utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=nyc-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(4)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/issues/new?template=report-scanning-issue.yml&amp;title=Scanning+issue%3A+New+York+City&amp;utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=nyc-gov\">Report a Scanning Issue</a>",
+      "discoveredAt": "2026-04-09T16:26:52.600Z",
+      "pageUrl": "http://127.0.0.1:65501/nyc-gov/",
+      "metadata": {
+        "backendNodeId": 36362,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/blob/main/section508/sandiegocounty-gov/findings.json?utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=sandiegocounty-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(1)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/blob/main/section508/sandiegocounty-gov/findings.json?utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=sandiegocounty-gov\">View Findings Data</a>",
+      "discoveredAt": "2026-04-09T16:31:04.517Z",
+      "pageUrl": "http://127.0.0.1:65501/sandiegocounty-gov/",
+      "metadata": {
+        "backendNodeId": 280308,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/discussions/categories/nominations?utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=sandiegocounty-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(3)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/discussions/categories/nominations?utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=sandiegocounty-gov\">Nominate a Site</a>",
+      "discoveredAt": "2026-04-09T16:31:04.517Z",
+      "pageUrl": "http://127.0.0.1:65501/sandiegocounty-gov/",
+      "metadata": {
+        "backendNodeId": 280314,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://sonde.life/?utm_source=daylight&utm_medium=nav&utm_campaign=section508&utm_content=San+Diego+County returns 525 <none>",
+      "selector": "div > main > div > nav:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://sonde.life/?utm_source=daylight&amp;utm_medium=nav&amp;utm_campaign=section508&amp;utm_content=San+Diego+County\">Sonde Daylight Project</a>",
+      "discoveredAt": "2026-04-09T16:31:04.517Z",
+      "pageUrl": "http://127.0.0.1:65501/sandiegocounty-gov/",
+      "metadata": {
+        "backendNodeId": 238546,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/commits/main/section508/sandiegocounty-gov/?utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=sandiegocounty-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(2)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/commits/main/section508/sandiegocounty-gov/?utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=sandiegocounty-gov\">Track Changes</a>",
+      "discoveredAt": "2026-04-09T16:31:04.517Z",
+      "pageUrl": "http://127.0.0.1:65501/sandiegocounty-gov/",
+      "metadata": {
+        "backendNodeId": 280311,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/issues/new?template=report-scanning-issue.yml&title=Scanning+issue%3A+San+Diego+County&utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=sandiegocounty-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(4)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/issues/new?template=report-scanning-issue.yml&amp;title=Scanning+issue%3A+San+Diego+County&amp;utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=sandiegocounty-gov\">Report a Scanning Issue</a>",
+      "discoveredAt": "2026-04-09T16:31:04.517Z",
+      "pageUrl": "http://127.0.0.1:65501/sandiegocounty-gov/",
+      "metadata": {
+        "backendNodeId": 280317,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/blob/main/section508/section508-gov/findings.json?utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=section508-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(1)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/blob/main/section508/section508-gov/findings.json?utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=section508-gov\">View Findings Data</a>",
+      "discoveredAt": "2026-04-09T16:26:27.783Z",
+      "pageUrl": "http://127.0.0.1:65501/section508-gov/",
+      "metadata": {
+        "backendNodeId": 26189,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/issues/new?template=report-scanning-issue.yml&title=Scanning+issue%3A+Section508.gov+%28GSA%29&utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=section508-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(4)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/issues/new?template=report-scanning-issue.yml&amp;title=Scanning+issue%3A+Section508.gov+%28GSA%29&amp;utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=section508-gov\">Report a Scanning Issue</a>",
+      "discoveredAt": "2026-04-09T16:26:27.783Z",
+      "pageUrl": "http://127.0.0.1:65501/section508-gov/",
+      "metadata": {
+        "backendNodeId": 26198,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/commits/main/section508/section508-gov/?utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=section508-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(2)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/commits/main/section508/section508-gov/?utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=section508-gov\">Track Changes</a>",
+      "discoveredAt": "2026-04-09T16:26:27.783Z",
+      "pageUrl": "http://127.0.0.1:65501/section508-gov/",
+      "metadata": {
+        "backendNodeId": 26192,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://sonde.life/?utm_source=daylight&utm_medium=nav&utm_campaign=section508&utm_content=Section508.gov+%28GSA%29 returns 525 <none>",
+      "selector": "div > main > div > nav:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://sonde.life/?utm_source=daylight&amp;utm_medium=nav&amp;utm_campaign=section508&amp;utm_content=Section508.gov+%28GSA%29\">Sonde Daylight Project</a>",
+      "discoveredAt": "2026-04-09T16:26:27.783Z",
+      "pageUrl": "http://127.0.0.1:65501/section508-gov/",
+      "metadata": {
+        "backendNodeId": 1233,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://github.com/sondeinc/daylight/discussions/categories/nominations?utm_source=daylight&utm_medium=report&utm_campaign=section508&utm_content=section508-gov returns 404 Not Found",
+      "selector": "div > main > section:nth-of-type(5) > div > a:nth-of-type(3)",
+      "elementHtml": "<a href=\"https://github.com/sondeinc/daylight/discussions/categories/nominations?utm_source=daylight&amp;utm_medium=report&amp;utm_campaign=section508&amp;utm_content=section508-gov\">Nominate a Site</a>",
+      "discoveredAt": "2026-04-09T16:26:27.783Z",
+      "pageUrl": "http://127.0.0.1:65501/section508-gov/",
+      "metadata": {
+        "backendNodeId": 26195,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "navigation-ways",
+      "standard": "WCAG 2.4.5",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Page has only one navigation mechanism (navigation). WCAG requires at least two ways to locate a page within a set of pages.",
+      "selector": "html",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-09T16:26:16.831Z",
+      "sourceLocation": {
+        "file": "index.html",
+        "line": 2,
+        "column": 1,
+        "confidence": "low",
+        "strategy": "html-source"
+      },
+      "pageUrl": "http://127.0.0.1:65501/",
+      "metadata": {
+        "backendNodeId": 177,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "navigation-ways"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 2.4.5"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 2.4.5"
+      ]
+    },
+    {
+      "probe": "navigation-ways",
+      "standard": "WCAG 2.4.5",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Page has only one navigation mechanism (navigation). WCAG requires at least two ways to locate a page within a set of pages.",
+      "selector": "html",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-09T16:26:22.097Z",
+      "sourceLocation": {
+        "file": "methodology/index.html",
+        "line": 2,
+        "column": 1,
+        "confidence": "low",
+        "strategy": "html-source"
+      },
+      "pageUrl": "http://127.0.0.1:65501/methodology/",
+      "metadata": {
+        "backendNodeId": 627,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "navigation-ways"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 2.4.5"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 2.4.5"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Page requires horizontal scrolling at 320px width (77px overflow). Content should reflow without horizontal scrolling at this width.",
+      "selector": "html",
+      "elementHtml": "<html>",
+      "discoveredAt": "2026-04-09T16:26:25.055Z",
+      "sourceLocation": {
+        "file": "methodology/index.html",
+        "line": 2,
+        "column": 1,
+        "confidence": "low",
+        "strategy": "html-source"
+      },
+      "pageUrl": "http://127.0.0.1:65501/methodology/",
+      "metadata": {
+        "backendNodeId": 627,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 83px at 320px width.",
+      "selector": "div",
+      "elementHtml": "<div><strong class=\"fix-label\">Sonde Fix Plan</strong><p class=\"fix-text\">Ensure links have discernible text. See: <a href=\"https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context\" target=",
+      "discoveredAt": "2026-04-09T16:31:17.058Z",
+      "pageUrl": "http://127.0.0.1:65501/sandiegocounty-gov/",
+      "metadata": {
+        "backendNodeId": 238539,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 48px at 320px width.",
+      "selector": "div.nav-links",
+      "elementHtml": "<div class=\"nav-links\"><a href=\"../\">Leaderboard</a></div>",
+      "discoveredAt": "2026-04-09T16:31:17.058Z",
+      "sourceLocation": {
+        "file": "sandiegocounty-gov/index.html",
+        "line": 1424,
+        "column": 2108,
+        "confidence": "medium",
+        "strategy": "html-source"
+      },
+      "pageUrl": "http://127.0.0.1:65501/sandiegocounty-gov/",
+      "metadata": {
+        "backendNodeId": 238574,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 83px at 320px width.",
+      "selector": "p.fix-text",
+      "elementHtml": "<p class=\"fix-text\">Ensure links have discernible text. See: <a href=\"https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.w3.org/",
+      "discoveredAt": "2026-04-09T16:31:17.058Z",
+      "sourceLocation": {
+        "file": "sandiegocounty-gov/index.html",
+        "line": 1424,
+        "column": 18030,
+        "confidence": "low",
+        "strategy": "html-source"
+      },
+      "pageUrl": "http://127.0.0.1:65501/sandiegocounty-gov/",
+      "metadata": {
+        "backendNodeId": 238780,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 83px at 320px width.",
+      "selector": "strong.fix-label",
+      "elementHtml": "<strong class=\"fix-label\">Sonde Fix Plan</strong>",
+      "discoveredAt": "2026-04-09T16:31:17.058Z",
+      "sourceLocation": {
+        "file": "sandiegocounty-gov/index.html",
+        "line": 1424,
+        "column": 17981,
+        "confidence": "low",
+        "strategy": "html-source"
+      },
+      "pageUrl": "http://127.0.0.1:65501/sandiegocounty-gov/",
+      "metadata": {
+        "backendNodeId": 238779,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 48px at 320px width.",
+      "selector": "a",
+      "elementHtml": "<a href=\"../\">Leaderboard</a>",
+      "discoveredAt": "2026-04-09T16:31:17.058Z",
+      "pageUrl": "http://127.0.0.1:65501/sandiegocounty-gov/",
+      "metadata": {
+        "backendNodeId": 238546,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    }
+  ]
+}
