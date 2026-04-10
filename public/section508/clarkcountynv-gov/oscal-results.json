@@ -1,0 +1,621 @@
+{
+  "assessment-results": {
+    "uuid": "27608fce-a7ed-4751-bdb5-dd69ac4d06ac",
+    "metadata": {
+      "title": "Section 508 Assessment: Clark County (NV)",
+      "last-modified": "2026-04-10T00:36:21.907Z",
+      "version": "1.0",
+      "oscal-version": "1.0.6"
+    },
+    "results": [
+      {
+        "uuid": "f40b5fa3-2d74-4f84-84fb-2fff4766556f",
+        "title": "Section 508 Assessment: Clark County (NV)",
+        "description": "Sonde automated accessibility assessment of https://clarkcountynv.gov",
+        "start": "2026-04-10T00:36:21.907Z",
+        "findings": [
+          {
+            "uuid": "ea21ecc5-9c6f-4b14-a755-023a0fc4e5e7",
+            "title": "WCAG 1.1.1: Non-text Content",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-1.1.1",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "2de63060-de98-4c9b-9193-f34312faebda",
+            "title": "WCAG 1.2.1: Audio-only and Video-only (Prerecorded)",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-1.2.1",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "e3556427-a6f0-4fa5-a3e0-b73a2ee6783d",
+            "title": "WCAG 1.2.2: Captions (Prerecorded)",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-1.2.2",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "e3815fa4-6fa0-418a-ac29-b91dde909300",
+            "title": "WCAG 1.2.3: Audio Description or Media Alternative (Prerecorded)",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-1.2.3",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "7bc22f64-089e-4b60-896b-034e21acc2d3",
+            "title": "WCAG 1.2.4: Captions (Live)",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-1.2.4",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "4b84a977-e8cc-4711-9faa-fd191a818d21",
+            "title": "WCAG 1.2.5: Audio Description (Prerecorded)",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-1.2.5",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "b72904a8-51ec-404b-b5de-d22681ebc571",
+            "title": "WCAG 1.3.1: Info and Relationships",
+            "description": "7 findings detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-1.3.1",
+              "status": {
+                "state": "not-satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "917dfd9a-fe6d-4161-ade1-05f9b5ff33de",
+            "title": "WCAG 1.3.2: Meaningful Sequence",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-1.3.2",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "841eb700-1ecc-442c-a1b3-190abb313da7",
+            "title": "WCAG 1.3.3: Sensory Characteristics",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-1.3.3",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "68f13926-e376-48f6-872a-ac7b1209b29a",
+            "title": "WCAG 1.3.4: Orientation",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-1.3.4",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "17345c7b-8efc-4b07-a91b-8413c1e76cd4",
+            "title": "WCAG 1.3.5: Identify Input Purpose",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-1.3.5",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "76a13a62-fb7c-40c4-8928-9eef97955b42",
+            "title": "WCAG 1.4.1: Use of Color",
+            "description": "14 findings detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-1.4.1",
+              "status": {
+                "state": "not-satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "114efdcc-4c98-421b-b917-6e86e8bd859d",
+            "title": "WCAG 1.4.2: Audio Control",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-1.4.2",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "6d9883ac-8b60-4bcb-9e7d-9075eb872d31",
+            "title": "WCAG 1.4.3: Contrast (Minimum)",
+            "description": "4 findings detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-1.4.3",
+              "status": {
+                "state": "not-satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "799012e1-4269-498a-8c7c-8bfcbba45019",
+            "title": "WCAG 1.4.4: Resize Text",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-1.4.4",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "1735bdf5-2032-458b-adce-1e8b1dde730b",
+            "title": "WCAG 1.4.5: Images of Text",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-1.4.5",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "2b3be65d-8a19-418c-971b-241c88b9e235",
+            "title": "WCAG 1.4.10: Reflow",
+            "description": "1 finding detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-1.4.10",
+              "status": {
+                "state": "not-satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "c06cc2f7-6616-43d2-bb5c-dd0fbb2d72e0",
+            "title": "WCAG 1.4.11: Non-text Contrast",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-1.4.11",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "cdcf9dae-a57d-4486-8a6f-07afba3a3735",
+            "title": "WCAG 1.4.12: Text Spacing",
+            "description": "1 finding detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-1.4.12",
+              "status": {
+                "state": "not-satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "db1ae759-bdf7-42e9-95f9-48f279807d3b",
+            "title": "WCAG 1.4.13: Content on Hover or Focus",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-1.4.13",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "183c0be4-0036-442a-a4e7-6d7a4ba03b87",
+            "title": "WCAG 2.1.1: Keyboard",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-2.1.1",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "8cba2111-f812-44d6-a1f6-6820a3652163",
+            "title": "WCAG 2.1.2: No Keyboard Trap",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-2.1.2",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "7dc24718-b3a9-4cb4-8fd2-e9875458854f",
+            "title": "WCAG 2.1.4: Character Key Shortcuts",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-2.1.4",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "37112354-d676-4a7e-a6d6-e4262b2fd0b1",
+            "title": "WCAG 2.2.1: Timing Adjustable",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-2.2.1",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "3aab2019-b2a4-47bd-8e16-a791bdeefc75",
+            "title": "WCAG 2.2.2: Pause, Stop, Hide",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-2.2.2",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "c4e28da2-c60f-49a9-9d24-19b05ff7f220",
+            "title": "WCAG 2.3.1: Three Flashes or Below Threshold",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-2.3.1",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "26dd8e7b-c9e0-418f-b03a-53f76f06db57",
+            "title": "WCAG 2.4.1: Bypass Blocks",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-2.4.1",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "cff21637-be83-429b-8f2b-47f6c3795b8a",
+            "title": "WCAG 2.4.2: Page Titled",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-2.4.2",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "69ea32f6-c885-450a-8392-2e2a6c5c2165",
+            "title": "WCAG 2.4.3: Focus Order",
+            "description": "31 findings detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-2.4.3",
+              "status": {
+                "state": "not-satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "5a999387-ee4e-42a2-bf10-00a4061a3c31",
+            "title": "WCAG 2.4.4: Link Purpose (In Context)",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-2.4.4",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "47c8a4ae-06c0-4e3a-bd97-b942153742d8",
+            "title": "WCAG 2.4.5: Multiple Ways",
+            "description": "1 finding detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-2.4.5",
+              "status": {
+                "state": "not-satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "d7bf8319-1207-4e20-b62d-8eaa72b86f5a",
+            "title": "WCAG 2.4.6: Headings and Labels",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-2.4.6",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "ba059ae3-64b1-4783-a5c2-c27f9b49c046",
+            "title": "WCAG 2.4.7: Focus Visible",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-2.4.7",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "aa8c5759-8da6-4552-b92e-6e930444f830",
+            "title": "WCAG 2.5.1: Pointer Gestures",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-2.5.1",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "d2042b3e-c0b5-4aa6-afca-82a7d677291d",
+            "title": "WCAG 2.5.2: Pointer Cancellation",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-2.5.2",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "f7260bbe-32ee-4c63-8ca8-e9c396bdc322",
+            "title": "WCAG 2.5.3: Label in Name",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-2.5.3",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "87043493-f866-42e7-8578-b1f0e7ca314c",
+            "title": "WCAG 2.5.4: Motion Actuation",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-2.5.4",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "08588b3d-5ed1-4750-9d1d-ddcaf809fa38",
+            "title": "WCAG 3.1.1: Language of Page",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-3.1.1",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "39ccbe71-fea7-47c2-b04d-9fb6d4c34b6a",
+            "title": "WCAG 3.1.2: Language of Parts",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-3.1.2",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "4cabfcb9-cb9f-4150-ae98-2da200ef4385",
+            "title": "WCAG 3.2.1: On Focus",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-3.2.1",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "f40f67ff-f394-46c0-bef9-c419aa8f22d6",
+            "title": "WCAG 3.2.2: On Input",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-3.2.2",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "2c8ebba6-dcdf-4fb9-8317-97554cd4a661",
+            "title": "WCAG 3.2.3: Consistent Navigation",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-3.2.3",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "3ce064a6-48b8-454e-853a-149b0ac33998",
+            "title": "WCAG 3.2.4: Consistent Identification",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-3.2.4",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "60c647f1-3a1e-4573-8703-7c0d8657918f",
+            "title": "WCAG 3.3.1: Error Identification",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-3.3.1",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "a0f6fe98-e2c3-4784-a6ef-eaaa434c57c3",
+            "title": "WCAG 3.3.2: Labels or Instructions",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-3.3.2",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "e4d81eaa-3379-47cc-9320-de776c132b3f",
+            "title": "WCAG 3.3.3: Error Suggestion",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-3.3.3",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "571b721e-67f5-441f-ae33-f528c44362a6",
+            "title": "WCAG 3.3.4: Error Prevention (Legal, Financial, Data)",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-3.3.4",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "a6ff27b9-3262-48b2-b1a1-c0c8f0abe8ac",
+            "title": "WCAG 4.1.1: Parsing",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-4.1.1",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "751c4cb1-95df-4272-9c2b-dc4c6d68b207",
+            "title": "WCAG 4.1.2: Name, Role, Value",
+            "description": "No violations detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-4.1.2",
+              "status": {
+                "state": "satisfied"
+              }
+            }
+          },
+          {
+            "uuid": "f6028574-3669-4caa-92f2-e2cca8663809",
+            "title": "WCAG 4.1.3: Status Messages",
+            "description": "1 finding detected",
+            "target": {
+              "type": "objective-id",
+              "target-id": "WCAG-4.1.3",
+              "status": {
+                "state": "not-satisfied"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

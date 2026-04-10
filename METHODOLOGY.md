@@ -115,13 +115,41 @@ calibration are always documented in the changelog below.
 Each site is scanned using:
 
 - **axe-core** — industry-standard WCAG 2.1 AA rule engine
-- **Custom probes** — keyboard navigation, focus management, color contrast
-  with suggested fixes, heading hierarchy, page language detection
+- **Custom probes** — keyboard navigation, focus management, color contrast,
+  page language, media accessibility, timing controls, navigation consistency,
+  color-as-indicator detection, and more
 - **Source tracing** — findings are traced back to source code locations where
   possible, with confidence levels (high/medium/low)
 
 Pages are discovered by crawling from the site's homepage. The number of pages
 scanned varies by site size and configuration.
+
+---
+
+<!-- Keep in sync with renderAuditSite.tsx meth-how-scans section -->
+## How Sonde Scans
+
+Every finding in a Daylight report is produced by deterministic algorithms —
+no AI, no large language models, no tokens consumed. This is a deliberate
+design choice with real consequences:
+
+- **100% consistent.** Run the same scan twice, get identical results. There is
+  no randomness, no temperature parameter, no model drift. If a finding appears
+  today, it will appear tomorrow under the same conditions.
+- **Repeatable and verifiable.** Fix a violation in your code, rescan, and
+  confirm the finding is gone. Every fix is provable because the analysis is
+  provable.
+- **Full provenance.** Every finding traces back to the specific rule or probe
+  that detected it, the DOM element that triggered it, and (where possible) the
+  source code location responsible. You always know *what* found a problem and
+  *why*.
+- **No hallucinations.** Deterministic rules either match or they don't. Sonde
+  will never invent a violation that doesn't exist or miss one because a model
+  was having a bad day.
+
+This matters for procurement, for legal compliance, and for trust. When a VPAT
+says "Does Not Support," that judgment is backed by a reproducible algorithm —
+not a probability estimate.
 
 ---
 
@@ -131,6 +159,45 @@ Each WCAG 2.1 AA criterion is mapped to the corresponding Section 508
 provision using the official crosswalk. Reports show both the WCAG criterion
 (e.g., "1.1.1 Non-text Content") and the Section 508 provision (e.g.,
 "E205.4, 602.3") for each finding.
+
+---
+
+## VPAT (Voluntary Product Accessibility Template)
+
+Each scanned site includes a downloadable
+[VPAT](https://www.itic.org/policy/accessibility/vpat) — the industry-standard
+format for documenting product accessibility conformance. The VPAT is published
+by the [Information Technology Industry Council (ITI)](https://www.itic.org/)
+and is widely used in government and enterprise procurement to evaluate whether
+a product meets accessibility requirements.
+
+Our VPAT reports cover all 50 WCAG 2.1 Level A and Level AA success criteria,
+with each criterion rated as:
+
+- **Supports** — no automated violations detected
+- **Partially Supports** — violations found on some but not all pages
+- **Does Not Support** — violations found across all scanned pages
+- **Not Evaluated** — criterion requires human judgment beyond automated testing
+
+Each VPAT also includes the [Section 508](https://www.section508.gov/)
+crosswalk, mapping WCAG criteria to their corresponding Section 508 provisions.
+
+---
+
+## OSCAL (Open Security Controls Assessment Language)
+
+Each scanned site includes a downloadable assessment results file in
+[OSCAL](https://pages.nist.gov/OSCAL/) format — a standardized, machine-readable
+data format developed by [NIST](https://www.nist.gov/) for expressing security
+and compliance assessment information.
+
+OSCAL enables automated processing of compliance data across tools and
+organizations. Government agencies and their contractors increasingly use OSCAL
+for [FedRAMP](https://www.fedramp.gov/) authorization packages, continuous
+monitoring, and supply chain risk management. Our OSCAL export follows the
+[Assessment Results](https://pages.nist.gov/OSCAL/concepts/layer/assessment/assessment-results/)
+model, making scan findings directly consumable by GRC (Governance, Risk, and
+Compliance) platforms and procurement workflows.
 
 ---
 
