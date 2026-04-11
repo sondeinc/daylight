@@ -1,0 +1,300 @@
+{
+  "url": "https://hindsco.com",
+  "slug": "hindsco-com",
+  "status": "complete",
+  "scanDate": "2026-04-11T17:03:26.899Z",
+  "scanConfig": {
+    "scope": "site",
+    "maxPages": 50,
+    "racks": [
+      "rack-live-a11y",
+      "rack-live-free"
+    ],
+    "individualProbes": [],
+    "excludedProbes": [],
+    "timeBudgetMs": 300000,
+    "maxFindings": null
+  },
+  "sondeScore": {
+    "score": 985,
+    "rawPenalty": 23,
+    "normalizedPenalty": 11.5,
+    "pagesScanned": 2,
+    "weightsVersion": "v0.1"
+  },
+  "avgFindingsPerPage": 6.5,
+  "elementComplianceRate": 71.4,
+  "totalElements": 14,
+  "elementsWithFindings": 4,
+  "complianceSummary": {
+    "total": 13,
+    "byLevel": {
+      "A": 1,
+      "AA": 1
+    },
+    "bySeverity": {
+      "critical": 0,
+      "high": 5,
+      "medium": 8,
+      "low": 0
+    },
+    "byCriterion": {
+      "WCAG 3.1.1": 1,
+      "WCAG 2.4.5": 1
+    }
+  },
+  "summary": {
+    "pagesAnalyzed": 2,
+    "pagesFailed": 0,
+    "totalFindings": 13,
+    "bySeverity": {
+      "critical": 0,
+      "high": 5,
+      "medium": 8,
+      "low": 0
+    },
+    "byProbe": {},
+    "byType": {},
+    "durationMs": 32367
+  },
+  "jurisdiction": "MS",
+  "entityName": "Hinds County (MS)",
+  "findings": [
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 3.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/language-of-page",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "<html> element must have a lang attribute: Fix any of the following:\n  The <html> element does not have a lang attribute",
+      "selector": "html",
+      "elementHtml": "<html>",
+      "discoveredAt": "2026-04-11T10:03:00.124Z",
+      "pageUrl": "https://forsale.godaddy.com/forsale/hindsco.com?utm_source=TDFS_BINNS2&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-binns2_base&traffic_type=TDFS_BINNS2&traffic_id=binns2&",
+      "metadata": {
+        "backendNodeId": 6,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/language-of-page",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "language-page"
+          }
+        ],
+        "provenanceConfidence": "high",
+        "detectedBy": [
+          "axe-core",
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 3.1.1"
+        ]
+      },
+      "detectedBy": [
+        "axe-core",
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 3.1.1"
+      ]
+    },
+    {
+      "probe": "navigation-ways",
+      "standard": "WCAG 2.4.5",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Page has no detectable navigation mechanisms (no <nav>, search, sitemap link, breadcrumbs, or table of contents). Users need multiple ways to locate content.",
+      "selector": "html",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-11T10:03:00.107Z",
+      "pageUrl": "https://forsale.godaddy.com/forsale/hindsco.com?utm_source=TDFS_BINNS2&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-binns2_base&traffic_type=TDFS_BINNS2&traffic_id=binns2&",
+      "metadata": {
+        "backendNodeId": 6,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "navigation-ways"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 2.4.5"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 2.4.5"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-11T10:03:00.068Z",
+      "pageUrl": "https://forsale.godaddy.com/forsale/hindsco.com?utm_source=TDFS_BINNS2&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-binns2_base&traffic_type=TDFS_BINNS2&traffic_id=binns2&",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "h1",
+      "elementHtml": "<h1>Access Denied</h1>",
+      "discoveredAt": "2026-04-11T10:03:00.124Z",
+      "pageUrl": "https://forsale.godaddy.com/forsale/hindsco.com?utm_source=TDFS_BINNS2&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-binns2_base&traffic_type=TDFS_BINNS2&traffic_id=binns2&",
+      "metadata": {
+        "backendNodeId": 10,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "p:nth-child(2)",
+      "elementHtml": "<p>\nReference #18.942d3e17.1775901779.51dc7052\n</p>",
+      "discoveredAt": "2026-04-11T10:03:00.124Z",
+      "pageUrl": "https://forsale.godaddy.com/forsale/hindsco.com?utm_source=TDFS_BINNS2&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-binns2_base&traffic_type=TDFS_BINNS2&traffic_id=binns2&",
+      "metadata": {
+        "backendNodeId": 11,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "p:nth-child(3)",
+      "elementHtml": "<p>https://errors.edgesuite.net/18.942d3e17.1775901779.51dc7052</p>",
+      "discoveredAt": "2026-04-11T10:03:00.124Z",
+      "pageUrl": "https://forsale.godaddy.com/forsale/hindsco.com?utm_source=TDFS_BINNS2&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-binns2_base&traffic_type=TDFS_BINNS2&traffic_id=binns2&",
+      "metadata": {
+        "backendNodeId": 12,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Document should have one main landmark: Fix all of the following:\n  Document does not have a main landmark",
+      "selector": "html",
+      "elementHtml": "<html>",
+      "discoveredAt": "2026-04-11T10:03:00.124Z",
+      "pageUrl": "https://forsale.godaddy.com/forsale/hindsco.com?utm_source=TDFS_BINNS2&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-binns2_base&traffic_type=TDFS_BINNS2&traffic_id=binns2&",
+      "metadata": {
+        "backendNodeId": 6,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4829 @@
+{
+  "url": "https://fultoncountyga.gov",
+  "slug": "fultoncountyga-gov",
+  "status": "complete",
+  "scanDate": "2026-04-11T17:00:31.104Z",
+  "scanConfig": {
+    "scope": "site",
+    "maxPages": 50,
+    "racks": [
+      "rack-live-a11y",
+      "rack-live-free"
+    ],
+    "individualProbes": [],
+    "excludedProbes": [],
+    "timeBudgetMs": 300000,
+    "maxFindings": null
+  },
+  "sondeScore": {
+    "score": 918,
+    "rawPenalty": 334.5,
+    "normalizedPenalty": 66.9,
+    "pagesScanned": 5,
+    "weightsVersion": "v0.1"
+  },
+  "avgFindingsPerPage": 37.4,
+  "elementComplianceRate": 99,
+  "totalElements": 7419,
+  "elementsWithFindings": 71,
+  "complianceSummary": {
+    "total": 187,
+    "byLevel": {
+      "AA": 34,
+      "A": 73
+    },
+    "bySeverity": {
+      "critical": 11,
+      "high": 34,
+      "medium": 116,
+      "low": 26
+    },
+    "byCriterion": {
+      "WCAG 1.4.3": 18,
+      "WCAG 1.1.1": 21,
+      "WCAG 2.4.3": 1,
+      "WCAG 2.4.1": 1,
+      "WCAG 1.4.1": 50,
+      "WCAG 4.1.3": 4,
+      "WCAG 1.4.12": 3,
+      "WCAG 1.4.10": 9
+    }
+  },
+  "summary": {
+    "pagesAnalyzed": 5,
+    "pagesFailed": 0,
+    "totalFindings": 187,
+    "bySeverity": {
+      "critical": 11,
+      "high": 34,
+      "medium": 116,
+      "low": 26
+    },
+    "byProbe": {},
+    "byType": {},
+    "durationMs": 320702
+  },
+  "jurisdiction": "GA",
+  "entityName": "Fulton County (GA)",
+  "findings": [
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"Robb Pitts\"",
+      "selector": "em",
+      "elementHtml": "<em>Robb Pitts</em>",
+      "discoveredAt": "2026-04-11T09:55:24.208Z",
+      "pageUrl": "https://fultoncountyga.gov/",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#767676",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.542224959605253,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Robb Pitts",
+        "backendNodeId": 1375,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"Bridget Thorne is the Commissioner for District 1 which enco\"",
+      "selector": "p",
+      "elementHtml": "<p style=\"margin-bottom: 0in;\"><strong><em>Bridget Thorne</em></strong> is the Commissioner for District 1 which encompasses Johns Creek, and parts of Roswell, Alpharetta, and Sandy Springs. </p>",
+      "discoveredAt": "2026-04-11T09:55:24.208Z",
+      "pageUrl": "https://fultoncountyga.gov/",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#767676",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.542224959605253,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Bridget Thorne is the Commissioner for District 1 which enco",
+        "backendNodeId": 1405,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"Vice Chair Khadijah Abdur-Rahman\"",
+      "selector": "strong",
+      "elementHtml": "<strong>Vice Chair Khadijah Abdur-Rahman</strong>",
+      "discoveredAt": "2026-04-11T09:55:24.208Z",
+      "pageUrl": "https://fultoncountyga.gov/",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#767676",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.542224959605253,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Vice Chair Khadijah Abdur-Rahman",
+        "backendNodeId": 1374,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"Robb Pitts is the Chairman of Fulton County Board of Commiss\"",
+      "selector": "div",
+      "elementHtml": "<div><strong><em>Robb Pitts</em></strong>&nbsp;is the Chairman of Fulton County Board of Commissioners. He previously served on the Fulton County Board of Commissioners from November 2002 to December ",
+      "discoveredAt": "2026-04-11T09:55:24.208Z",
+      "pageUrl": "https://fultoncountyga.gov/",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#767676",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.542224959605253,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Robb Pitts is the Chairman of Fulton County Board of Commiss",
+        "backendNodeId": 228,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"Dana Barrett is the Fulton County Commissioner representing \"",
+      "selector": "span",
+      "elementHtml": "<span><strong><em>Dana Barrett </em></strong>is the Fulton County Commissioner representing District 3 which includes all of Buckhead, and parts of both Sandy Springs and Midtown.&nbsp;</span>",
+      "discoveredAt": "2026-04-11T09:55:24.208Z",
+      "pageUrl": "https://fultoncountyga.gov/",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#767676",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.542224959605253,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Dana Barrett is the Fulton County Commissioner representing ",
+        "backendNodeId": 2060,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 3:1 for large text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"Read More\"",
+      "selector": "a.cta-primary",
+      "elementHtml": "<a href=\"/Commissioners/Robb-Pitts\" class=\"cta-primary\" aria-label=\"Read more about Robb Pitts\" tabindex=\"-1\">\n                            Read More\n                            <svg version=\"1.1\" xmln",
+      "discoveredAt": "2026-04-11T09:55:24.208Z",
+      "pageUrl": "https://fultoncountyga.gov/",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#949494",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 3.0334698257384747,
+        "contrastRequiredRatio": 3,
+        "contrastIsLargeText": true,
+        "contrastTextSample": "Read More",
+        "backendNodeId": 1132,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.44:1 (required: 4.5:1 for normal text). Foreground: rgb(68, 68, 68), background: rgb(0, 45, 83). Text: \"Translate\"",
+      "selector": "a.VIpgJd-ZVi9od-l4eHX-hSRGPd",
+      "elementHtml": "<a class=\"VIpgJd-ZVi9od-l4eHX-hSRGPd\" href=\"https://translate.google.com\" target=\"_blank\"><img src=\"https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_42x16dp.png\" width=\"37px\" hei",
+      "discoveredAt": "2026-04-11T09:58:29.293Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "contrastForeground": "#444444",
+        "contrastBackground": "#002d53",
+        "contrastSuggestedForeground": "#939393",
+        "contrastRatio": 1.4371555700530072,
+        "contrastSuggestedRatio": 4.556148908226392,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Translate",
+        "backendNodeId": 11647,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.44:1 (required: 4.5:1 for normal text). Foreground: rgb(68, 68, 68), background: rgb(0, 45, 83). Text: \"Translate\"",
+      "selector": "a.VIpgJd-ZVi9od-l4eHX-hSRGPd",
+      "elementHtml": "<a class=\"VIpgJd-ZVi9od-l4eHX-hSRGPd\" href=\"https://translate.google.com\" target=\"_blank\"><img src=\"https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_42x16dp.png\" width=\"37px\" hei",
+      "discoveredAt": "2026-04-11T09:59:37.556Z",
+      "pageUrl": "https://fultoncountyga.gov/Payments",
+      "metadata": {
+        "contrastForeground": "#444444",
+        "contrastBackground": "#002d53",
+        "contrastSuggestedForeground": "#939393",
+        "contrastRatio": 1.4371555700530072,
+        "contrastSuggestedRatio": 4.556148908226392,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Translate",
+        "backendNodeId": 16592,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"226\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-11T09:55:24.411Z",
+      "pageUrl": "https://fultoncountyga.gov/",
+      "metadata": {
+        "backendNodeId": 226,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"2056\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-11T09:55:24.411Z",
+      "pageUrl": "https://fultoncountyga.gov/",
+      "metadata": {
+        "backendNodeId": 2056,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"1389\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-11T09:55:24.411Z",
+      "pageUrl": "https://fultoncountyga.gov/",
+      "metadata": {
+        "backendNodeId": 1389,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"1358\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-11T09:55:24.411Z",
+      "pageUrl": "https://fultoncountyga.gov/",
+      "metadata": {
+        "backendNodeId": 1358,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"1081\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-11T09:55:24.411Z",
+      "pageUrl": "https://fultoncountyga.gov/",
+      "metadata": {
+        "backendNodeId": 1081,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"1513\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-11T09:55:24.411Z",
+      "pageUrl": "https://fultoncountyga.gov/",
+      "metadata": {
+        "backendNodeId": 1513,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"1483\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-11T09:55:24.411Z",
+      "pageUrl": "https://fultoncountyga.gov/",
+      "metadata": {
+        "backendNodeId": 1483,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"1451\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-11T09:55:24.411Z",
+      "pageUrl": "https://fultoncountyga.gov/",
+      "metadata": {
+        "backendNodeId": 1451,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"1420\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-11T09:55:24.411Z",
+      "pageUrl": "https://fultoncountyga.gov/",
+      "metadata": {
+        "backendNodeId": 1420,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"11642\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-11T09:58:29.515Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "backendNodeId": 11642,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"9811\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-11T09:58:29.515Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "backendNodeId": 9811,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"10665\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-11T09:58:29.515Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "backendNodeId": 10665,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"3425\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-11T09:56:50.018Z",
+      "pageUrl": "https://fultoncountyga.gov/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections",
+      "metadata": {
+        "backendNodeId": 3425,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"4278\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-11T09:56:50.018Z",
+      "pageUrl": "https://fultoncountyga.gov/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections",
+      "metadata": {
+        "backendNodeId": 4278,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"5611\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-11T09:56:50.018Z",
+      "pageUrl": "https://fultoncountyga.gov/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections",
+      "metadata": {
+        "backendNodeId": 5611,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"8091\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-11T09:57:47.780Z",
+      "pageUrl": "https://fultoncountyga.gov/Jobs",
+      "metadata": {
+        "backendNodeId": 8091,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"8711\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-11T09:57:47.780Z",
+      "pageUrl": "https://fultoncountyga.gov/Jobs",
+      "metadata": {
+        "backendNodeId": 8711,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"7237\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-11T09:57:47.780Z",
+      "pageUrl": "https://fultoncountyga.gov/Jobs",
+      "metadata": {
+        "backendNodeId": 7237,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"15086\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-11T09:59:37.714Z",
+      "pageUrl": "https://fultoncountyga.gov/Payments",
+      "metadata": {
+        "backendNodeId": 15086,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"15940\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-11T09:59:37.714Z",
+      "pageUrl": "https://fultoncountyga.gov/Payments",
+      "metadata": {
+        "backendNodeId": 15940,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"16587\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-11T09:59:37.714Z",
+      "pageUrl": "https://fultoncountyga.gov/Payments",
+      "metadata": {
+        "backendNodeId": 16587,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Elements must meet minimum color contrast ratio thresholds: Fix any of the following:\n  Element has insufficient color contrast of 2.4 (foreground color: #a7a7a7, background color: #ffffff, font size: 28.5pt (38px), font weight: normal). Expected contrast ratio of 3:1",
+      "selector": ".v-outside.v-future.v-calendar-weekly__day:nth-child(7) > .v-calendar-weekly__day-label",
+      "elementHtml": "<div class=\"v-calendar-weekly__day-label\">\n\t\t\t\t\t\t02\n\t\t\t\t\t</div>",
+      "discoveredAt": "2026-04-11T09:58:29.527Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "backendNodeId": 14362,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Elements must meet minimum color contrast ratio thresholds: Fix any of the following:\n  Element has insufficient color contrast of 2.4 (foreground color: #a7a7a7, background color: #ffffff, font size: 28.5pt (38px), font weight: normal). Expected contrast ratio of 3:1",
+      "selector": ".v-outside.v-future.v-calendar-weekly__day:nth-child(6) > .v-calendar-weekly__day-label",
+      "elementHtml": "<div class=\"v-calendar-weekly__day-label\">\n\t\t\t\t\t\t01\n\t\t\t\t\t</div>",
+      "discoveredAt": "2026-04-11T09:58:29.527Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "backendNodeId": 14353,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Elements must meet minimum color contrast ratio thresholds: Fix any of the following:\n  Element has insufficient color contrast of 2.4 (foreground color: #a7a7a7, background color: #ffffff, font size: 28.5pt (38px), font weight: normal). Expected contrast ratio of 3:1",
+      "selector": ".v-outside.v-past.v-calendar-weekly__day:nth-child(3) > .v-calendar-weekly__day-label",
+      "elementHtml": "<div class=\"v-calendar-weekly__day-label\">\n\t\t\t\t\t\t31\n\t\t\t\t\t</div>",
+      "discoveredAt": "2026-04-11T09:58:29.527Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "backendNodeId": 11197,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Elements must meet minimum color contrast ratio thresholds: Fix any of the following:\n  Element has insufficient color contrast of 2.4 (foreground color: #a7a7a7, background color: #ffffff, font size: 28.5pt (38px), font weight: normal). Expected contrast ratio of 3:1",
+      "selector": ".v-outside.v-past.v-calendar-weekly__day:nth-child(1) > .v-calendar-weekly__day-label",
+      "elementHtml": "<div class=\"v-calendar-weekly__day-label\">\n\t\t\t\t\t\t29\n\t\t\t\t\t</div>",
+      "discoveredAt": "2026-04-11T09:58:29.527Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "backendNodeId": 11181,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "high",
+        "detectedBy": [
+          "axe-core",
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "axe-core",
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Elements must meet minimum color contrast ratio thresholds: Fix any of the following:\n  Element has insufficient color contrast of 2.4 (foreground color: #a7a7a7, background color: #ffffff, font size: 28.5pt (38px), font weight: normal). Expected contrast ratio of 3:1",
+      "selector": ".v-outside.v-past.v-calendar-weekly__day:nth-child(2) > .v-calendar-weekly__day-label",
+      "elementHtml": "<div class=\"v-calendar-weekly__day-label\">\n\t\t\t\t\t\t30\n\t\t\t\t\t</div>",
+      "discoveredAt": "2026-04-11T09:58:29.527Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "backendNodeId": 11189,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Insufficient color contrast: 2.30:1 (required: 4.5:1 for normal text). Foreground: rgb(0, 0, 0), background: rgb(22, 74, 124). Text: \"More information\"",
+      "selector": "span.sr-only",
+      "elementHtml": "<span class=\"sr-only\">More information</span>",
+      "discoveredAt": "2026-04-11T09:55:24.208Z",
+      "pageUrl": "https://fultoncountyga.gov/",
+      "metadata": {
+        "contrastForeground": "#000000",
+        "contrastBackground": "#164a7c",
+        "contrastSuggestedForeground": "#b7b7b7",
+        "contrastRatio": 2.3046735885072662,
+        "contrastSuggestedRatio": 4.543216000380341,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "More information",
+        "backendNodeId": 261,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Insufficient color contrast: 2.44:1 (required: 4.5:1 for normal text). Foreground: rgb(102, 102, 102), background: rgb(0, 45, 83). Text: \"Select LanguageChinese (Simplified)DanishFrenchGermanItalian\"",
+      "selector": "div.skiptranslate.goog-te-gadget",
+      "elementHtml": "<div class=\"skiptranslate goog-te-gadget\" dir=\"ltr\" style=\"\"><div id=\":0.targetLanguage\"><select class=\"goog-te-combo\" aria-label=\"Language Translate Widget\"><option value=\"\">Select Language</option><",
+      "discoveredAt": "2026-04-11T09:58:29.293Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "contrastForeground": "#666666",
+        "contrastBackground": "#002d53",
+        "contrastSuggestedForeground": "#939393",
+        "contrastRatio": 2.437819935800324,
+        "contrastSuggestedRatio": 4.556148908226392,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Select LanguageChinese (Simplified)DanishFrenchGermanItalian",
+        "backendNodeId": 11649,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Clear All\" to \"SHOW EVENTS\" (visual distance: 1385px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#app > div > div > div:nth-of-type(2) > div:nth-of-type(4) > div:nth-of-type(3) > button",
+      "elementHtml": "<button>SHOW EVENTS</button>",
+      "discoveredAt": "2026-04-11T09:58:52.631Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "backendNodeId": 14476,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-11T09:55:24.159Z",
+      "pageUrl": "https://fultoncountyga.gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-11T09:58:29.242Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-11T09:56:49.706Z",
+      "pageUrl": "https://fultoncountyga.gov/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-11T09:57:47.592Z",
+      "pageUrl": "https://fultoncountyga.gov/Jobs",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-11T09:59:37.508Z",
+      "pageUrl": "https://fultoncountyga.gov/Payments",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "keyboard-trap",
+      "standard": "WCAG 2.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks",
+      "conformanceLevel": "A",
+      "severity": "low",
+      "description": "Deep focus region: nav \"Utility Navigation\" has 12 tab stops before focus escapes. Consider adding skip navigation or grouping with arrow keys.",
+      "selector": "nav[aria-label=\"Utility\\ Navigation\"]",
+      "elementHtml": "<nav role=\"nav\">Utility Navigation</nav>",
+      "discoveredAt": "2026-04-11T09:58:53.299Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "backendNodeId": 9807,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "keyboard-trap"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.1"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: http://bidboard.fultoncountyga.gov/Apps/bidboard/MainSearchPage.php returns 404 Not Found",
+      "selector": "#PrimaryMenu-2_SecondaryMenu-1 > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"http://bidboard.fultoncountyga.gov/Apps/bidboard/MainSearchPage.php\">Bid Board Archives</a>",
+      "discoveredAt": "2026-04-11T09:55:43.527Z",
+      "pageUrl": "https://fultoncountyga.gov/",
+      "metadata": {
+        "backendNodeId": 651,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://twitter.com/fultoninfo?lang=en returns 403 Forbidden",
+      "selector": "#accordionDesktopSocial > div > a:nth-of-type(1)",
+      "elementHtml": "<a href=\"https://twitter.com/fultoninfo?lang=en\">Twitter</a>",
+      "discoveredAt": "2026-04-11T09:55:43.527Z",
+      "pageUrl": "https://fultoncountyga.gov/",
+      "metadata": {
+        "backendNodeId": 230,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: http://bidboard.fultoncountyga.gov/Apps/bidboard/MainSearchPage.php returns 404 Not Found",
+      "selector": "#PrimaryMenu-2_SecondaryMenu-1 > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"http://bidboard.fultoncountyga.gov/Apps/bidboard/MainSearchPage.php\">Bid Board Archives</a>",
+      "discoveredAt": "2026-04-11T09:58:47.585Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "backendNodeId": 10235,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://twitter.com/fultoninfo?lang=en returns 403 Forbidden",
+      "selector": "#accordionDesktopSocial > div > a:nth-of-type(1)",
+      "elementHtml": "<a href=\"https://twitter.com/fultoninfo?lang=en\">Twitter</a>",
+      "discoveredAt": "2026-04-11T09:58:47.585Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "backendNodeId": 9815,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: http://bidboard.fultoncountyga.gov/Apps/bidboard/MainSearchPage.php returns 404 Not Found",
+      "selector": "#PrimaryMenu-2_SecondaryMenu-1 > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"http://bidboard.fultoncountyga.gov/Apps/bidboard/MainSearchPage.php\">Bid Board Archives</a>",
+      "discoveredAt": "2026-04-11T09:57:07.240Z",
+      "pageUrl": "https://fultoncountyga.gov/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections",
+      "metadata": {
+        "backendNodeId": 3848,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://twitter.com/fultoninfo?lang=en returns 403 Forbidden",
+      "selector": "#accordionDesktopSocial > div > a:nth-of-type(1)",
+      "elementHtml": "<a href=\"https://twitter.com/fultoninfo?lang=en\">Twitter</a>",
+      "discoveredAt": "2026-04-11T09:57:07.240Z",
+      "pageUrl": "https://fultoncountyga.gov/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections",
+      "metadata": {
+        "backendNodeId": 3429,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://twitter.com/fultoninfo?lang=en returns 403 Forbidden",
+      "selector": "#accordionDesktopSocial > div > a:nth-of-type(1)",
+      "elementHtml": "<a href=\"https://twitter.com/fultoninfo?lang=en\">Twitter</a>",
+      "discoveredAt": "2026-04-11T09:58:03.551Z",
+      "pageUrl": "https://fultoncountyga.gov/Jobs",
+      "metadata": {
+        "backendNodeId": 7241,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: http://bidboard.fultoncountyga.gov/Apps/bidboard/MainSearchPage.php returns 404 Not Found",
+      "selector": "#PrimaryMenu-2_SecondaryMenu-1 > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"http://bidboard.fultoncountyga.gov/Apps/bidboard/MainSearchPage.php\">Bid Board Archives</a>",
+      "discoveredAt": "2026-04-11T09:58:03.551Z",
+      "pageUrl": "https://fultoncountyga.gov/Jobs",
+      "metadata": {
+        "backendNodeId": 7661,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://twitter.com/fultoninfo?lang=en returns 403 Forbidden",
+      "selector": "#accordionDesktopSocial > div > a:nth-of-type(1)",
+      "elementHtml": "<a href=\"https://twitter.com/fultoninfo?lang=en\">Twitter</a>",
+      "discoveredAt": "2026-04-11T10:00:06.192Z",
+      "pageUrl": "https://fultoncountyga.gov/Payments",
+      "metadata": {
+        "backendNodeId": 15090,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: http://bidboard.fultoncountyga.gov/Apps/bidboard/MainSearchPage.php returns 404 Not Found",
+      "selector": "#PrimaryMenu-2_SecondaryMenu-1 > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"http://bidboard.fultoncountyga.gov/Apps/bidboard/MainSearchPage.php\">Bid Board Archives</a>",
+      "discoveredAt": "2026-04-11T10:00:06.192Z",
+      "pageUrl": "https://fultoncountyga.gov/Payments",
+      "metadata": {
+        "backendNodeId": 15510,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Link timeout: https://payments.lexisnexis.com/ga/fulton/boardofhealth did not respond within 5000ms",
+      "selector": "#main-content > div:nth-of-type(3) > div > ul > li:nth-of-type(10) > div > footer > a",
+      "elementHtml": "<a href=\"https://payments.lexisnexis.com/ga/fulton/boardofhealth\">Pay Here                            about Environmental Payment Link</a>",
+      "discoveredAt": "2026-04-11T10:00:06.192Z",
+      "pageUrl": "https://fultoncountyga.gov/Payments",
+      "metadata": {
+        "backendNodeId": 16110,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-11T09:55:24.413Z",
+      "pageUrl": "https://fultoncountyga.gov/",
+      "metadata": {
+        "backendNodeId": 1087,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-11T09:55:24.413Z",
+      "pageUrl": "https://fultoncountyga.gov/",
+      "metadata": {
+        "backendNodeId": 226,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-11T09:58:29.516Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "backendNodeId": 10671,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-11T09:58:29.516Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "backendNodeId": 9811,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-11T09:56:50.020Z",
+      "pageUrl": "https://fultoncountyga.gov/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections",
+      "metadata": {
+        "backendNodeId": 4284,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-11T09:56:50.020Z",
+      "pageUrl": "https://fultoncountyga.gov/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections",
+      "metadata": {
+        "backendNodeId": 3425,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-11T09:57:47.781Z",
+      "pageUrl": "https://fultoncountyga.gov/Jobs",
+      "metadata": {
+        "backendNodeId": 8097,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-11T09:57:47.781Z",
+      "pageUrl": "https://fultoncountyga.gov/Jobs",
+      "metadata": {
+        "backendNodeId": 7237,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-11T09:59:37.715Z",
+      "pageUrl": "https://fultoncountyga.gov/Payments",
+      "metadata": {
+        "backendNodeId": 15946,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-11T09:59:37.715Z",
+      "pageUrl": "https://fultoncountyga.gov/Payments",
+      "metadata": {
+        "backendNodeId": 15086,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Page should contain a level-one heading: Fix all of the following:\n  Page must have a level-one heading",
+      "selector": "html",
+      "elementHtml": "<html lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" style=\"height: 100%;\">",
+      "discoveredAt": "2026-04-11T09:58:29.527Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "backendNodeId": 9789,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
+      "selector": ".footer__contact-heading",
+      "elementHtml": "<h4 class=\"footer__contact-heading\">",
+      "discoveredAt": "2026-04-11T09:56:50.309Z",
+      "pageUrl": "https://fultoncountyga.gov/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections",
+      "metadata": {
+        "backendNodeId": 5075,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-0 > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"\" class=\"tertiary-menu__link\" title=\"\">Birth Certificate</a>",
+      "discoveredAt": "2026-04-11T09:55:24.221Z",
+      "pageUrl": "https://fultoncountyga.gov/",
+      "metadata": {
+        "backendNodeId": 287,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(0, 45, 83), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://visitor.r20.constantcontact.com/manage/optin?v=001pRmNkNNhb38xsI9BKzPGAT6VX8gu-AdhuhhypsqgiD4L_n71y2QtjvjalpJ0jMH4yHmAnfjHZ4_UY1WVZXtiAPhvFMP23kGALCNjleiUzU0%3D\" class=\"primary-menu__",
+      "discoveredAt": "2026-04-11T09:55:24.221Z",
+      "pageUrl": "https://fultoncountyga.gov/",
+      "metadata": {
+        "backendNodeId": 269,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-1 > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections/Become-a-Poll-Worker\" class=\"tertiary-menu__link\" target=\"_blank\" title=\"\" rel=\"noopener noreferrer\">Become a Poll W",
+      "discoveredAt": "2026-04-11T09:55:24.221Z",
+      "pageUrl": "https://fultoncountyga.gov/",
+      "metadata": {
+        "backendNodeId": 311,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-1 > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a href=\"/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections/Early-Voting-Locations\" class=\"tertiary-menu__link\" title=\"\">Early Voting Locations</a>",
+      "discoveredAt": "2026-04-11T09:55:24.221Z",
+      "pageUrl": "https://fultoncountyga.gov/",
+      "metadata": {
+        "backendNodeId": 313,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-1 > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections/Absentee-Voting\" class=\"tertiary-menu__link\" target=\"_blank\" title=\"\" rel=\"noopener noreferrer\">Absentee Voting</a>",
+      "discoveredAt": "2026-04-11T09:55:24.221Z",
+      "pageUrl": "https://fultoncountyga.gov/",
+      "metadata": {
+        "backendNodeId": 309,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-0 > ul > li:nth-of-type(5) > a",
+      "elementHtml": "<a href=\"/Inside-Fulton-County/Fulton-County-Departments/Clerk-of-Superior-Court/Notary\" class=\"tertiary-menu__link\" title=\"\">Notary</a>",
+      "discoveredAt": "2026-04-11T09:55:24.221Z",
+      "pageUrl": "https://fultoncountyga.gov/",
+      "metadata": {
+        "backendNodeId": 295,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-0 > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"/Inside-Fulton-County/Fulton-County-Departments/Clerk-of-Superior-Court/Passports\" class=\"tertiary-menu__link\" title=\"\">Passports</a>",
+      "discoveredAt": "2026-04-11T09:55:24.221Z",
+      "pageUrl": "https://fultoncountyga.gov/",
+      "metadata": {
+        "backendNodeId": 293,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-0 > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a href=\"https://www.fultonprobatega.org/201/Weapons-Carry-Licenses-WCL\" class=\"tertiary-menu__link external-link\" title=\"\">Weapons Carry Licenses</a>",
+      "discoveredAt": "2026-04-11T09:55:24.221Z",
+      "pageUrl": "https://fultoncountyga.gov/",
+      "metadata": {
+        "backendNodeId": 291,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-1 > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections/Voter-Registration\" class=\"tertiary-menu__link\" target=\"_blank\" title=\"\" rel=\"noopener noreferrer\">Voter Registratio",
+      "discoveredAt": "2026-04-11T09:55:24.221Z",
+      "pageUrl": "https://fultoncountyga.gov/",
+      "metadata": {
+        "backendNodeId": 315,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-0 > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"https://www.fultonprobatega.org/195/Marriage-Licenses\" class=\"tertiary-menu__link external-link\" title=\"\">Marriage License</a>",
+      "discoveredAt": "2026-04-11T09:55:24.221Z",
+      "pageUrl": "https://fultoncountyga.gov/",
+      "metadata": {
+        "backendNodeId": 289,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-1 > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections/Absentee-Voting\" class=\"tertiary-menu__link\" target=\"_blank\" title=\"\" rel=\"noopener noreferrer\">Absentee Voting</a>",
+      "discoveredAt": "2026-04-11T09:58:29.307Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "backendNodeId": 9893,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-0 > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"\" class=\"tertiary-menu__link\" title=\"\">Birth Certificate</a>",
+      "discoveredAt": "2026-04-11T09:58:29.307Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "backendNodeId": 9871,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-1 > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections/Voter-Registration\" class=\"tertiary-menu__link\" target=\"_blank\" title=\"\" rel=\"noopener noreferrer\">Voter Registratio",
+      "discoveredAt": "2026-04-11T09:58:29.307Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "backendNodeId": 9899,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-0 > ul > li:nth-of-type(5) > a",
+      "elementHtml": "<a href=\"/Inside-Fulton-County/Fulton-County-Departments/Clerk-of-Superior-Court/Notary\" class=\"tertiary-menu__link\" title=\"\">Notary</a>",
+      "discoveredAt": "2026-04-11T09:58:29.307Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "backendNodeId": 9879,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-1 > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a href=\"/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections/Early-Voting-Locations\" class=\"tertiary-menu__link\" title=\"\">Early Voting Locations</a>",
+      "discoveredAt": "2026-04-11T09:58:29.307Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "backendNodeId": 9897,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(0, 45, 83), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://visitor.r20.constantcontact.com/manage/optin?v=001pRmNkNNhb38xsI9BKzPGAT6VX8gu-AdhuhhypsqgiD4L_n71y2QtjvjalpJ0jMH4yHmAnfjHZ4_UY1WVZXtiAPhvFMP23kGALCNjleiUzU0%3D\" class=\"primary-menu__",
+      "discoveredAt": "2026-04-11T09:58:29.307Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "backendNodeId": 9853,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-0 > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"/Inside-Fulton-County/Fulton-County-Departments/Clerk-of-Superior-Court/Passports\" class=\"tertiary-menu__link\" title=\"\">Passports</a>",
+      "discoveredAt": "2026-04-11T09:58:29.307Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "backendNodeId": 9877,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-0 > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"https://www.fultonprobatega.org/195/Marriage-Licenses\" class=\"tertiary-menu__link external-link\" title=\"\">Marriage License</a>",
+      "discoveredAt": "2026-04-11T09:58:29.307Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "backendNodeId": 9873,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-1 > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections/Become-a-Poll-Worker\" class=\"tertiary-menu__link\" target=\"_blank\" title=\"\" rel=\"noopener noreferrer\">Become a Poll W",
+      "discoveredAt": "2026-04-11T09:58:29.307Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "backendNodeId": 9895,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-0 > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a href=\"https://www.fultonprobatega.org/201/Weapons-Carry-Licenses-WCL\" class=\"tertiary-menu__link external-link\" title=\"\">Weapons Carry Licenses</a>",
+      "discoveredAt": "2026-04-11T09:58:29.307Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "backendNodeId": 9875,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-0 > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"https://www.fultonprobatega.org/195/Marriage-Licenses\" class=\"tertiary-menu__link external-link\" title=\"\">Marriage License</a>",
+      "discoveredAt": "2026-04-11T09:56:49.772Z",
+      "pageUrl": "https://fultoncountyga.gov/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections",
+      "metadata": {
+        "backendNodeId": 3486,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-1 > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections/Absentee-Voting\" class=\"tertiary-menu__link\" target=\"_blank\" title=\"\" rel=\"noopener noreferrer\">Absentee Voting</a>",
+      "discoveredAt": "2026-04-11T09:56:49.772Z",
+      "pageUrl": "https://fultoncountyga.gov/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections",
+      "metadata": {
+        "backendNodeId": 3506,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-0 > ul > li:nth-of-type(5) > a",
+      "elementHtml": "<a href=\"/Inside-Fulton-County/Fulton-County-Departments/Clerk-of-Superior-Court/Notary\" class=\"tertiary-menu__link\" title=\"\">Notary</a>",
+      "discoveredAt": "2026-04-11T09:56:49.772Z",
+      "pageUrl": "https://fultoncountyga.gov/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections",
+      "metadata": {
+        "backendNodeId": 3492,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-0 > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"\" class=\"tertiary-menu__link\" title=\"\">Birth Certificate</a>",
+      "discoveredAt": "2026-04-11T09:56:49.772Z",
+      "pageUrl": "https://fultoncountyga.gov/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections",
+      "metadata": {
+        "backendNodeId": 3484,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-1 > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a href=\"/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections/Early-Voting-Locations\" class=\"tertiary-menu__link\" title=\"\">Early Voting Locations</a>",
+      "discoveredAt": "2026-04-11T09:56:49.772Z",
+      "pageUrl": "https://fultoncountyga.gov/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections",
+      "metadata": {
+        "backendNodeId": 3510,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-0 > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a href=\"https://www.fultonprobatega.org/201/Weapons-Carry-Licenses-WCL\" class=\"tertiary-menu__link external-link\" title=\"\">Weapons Carry Licenses</a>",
+      "discoveredAt": "2026-04-11T09:56:49.772Z",
+      "pageUrl": "https://fultoncountyga.gov/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections",
+      "metadata": {
+        "backendNodeId": 3488,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-1 > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections/Become-a-Poll-Worker\" class=\"tertiary-menu__link\" target=\"_blank\" title=\"\" rel=\"noopener noreferrer\">Become a Poll W",
+      "discoveredAt": "2026-04-11T09:56:49.772Z",
+      "pageUrl": "https://fultoncountyga.gov/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections",
+      "metadata": {
+        "backendNodeId": 3508,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-0 > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"/Inside-Fulton-County/Fulton-County-Departments/Clerk-of-Superior-Court/Passports\" class=\"tertiary-menu__link\" title=\"\">Passports</a>",
+      "discoveredAt": "2026-04-11T09:56:49.772Z",
+      "pageUrl": "https://fultoncountyga.gov/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections",
+      "metadata": {
+        "backendNodeId": 3490,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-1 > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections/Voter-Registration\" class=\"tertiary-menu__link\" target=\"_blank\" title=\"\" rel=\"noopener noreferrer\">Voter Registratio",
+      "discoveredAt": "2026-04-11T09:56:49.772Z",
+      "pageUrl": "https://fultoncountyga.gov/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections",
+      "metadata": {
+        "backendNodeId": 3512,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(0, 45, 83), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://visitor.r20.constantcontact.com/manage/optin?v=001pRmNkNNhb38xsI9BKzPGAT6VX8gu-AdhuhhypsqgiD4L_n71y2QtjvjalpJ0jMH4yHmAnfjHZ4_UY1WVZXtiAPhvFMP23kGALCNjleiUzU0%3D\" class=\"primary-menu__",
+      "discoveredAt": "2026-04-11T09:56:49.772Z",
+      "pageUrl": "https://fultoncountyga.gov/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections",
+      "metadata": {
+        "backendNodeId": 3466,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-1 > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections/Absentee-Voting\" class=\"tertiary-menu__link\" target=\"_blank\" title=\"\" rel=\"noopener noreferrer\">Absentee Voting</a>",
+      "discoveredAt": "2026-04-11T09:57:47.649Z",
+      "pageUrl": "https://fultoncountyga.gov/Jobs",
+      "metadata": {
+        "backendNodeId": 7319,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-0 > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"\" class=\"tertiary-menu__link\" title=\"\">Birth Certificate</a>",
+      "discoveredAt": "2026-04-11T09:57:47.649Z",
+      "pageUrl": "https://fultoncountyga.gov/Jobs",
+      "metadata": {
+        "backendNodeId": 7297,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-0 > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"/Inside-Fulton-County/Fulton-County-Departments/Clerk-of-Superior-Court/Passports\" class=\"tertiary-menu__link\" title=\"\">Passports</a>",
+      "discoveredAt": "2026-04-11T09:57:47.649Z",
+      "pageUrl": "https://fultoncountyga.gov/Jobs",
+      "metadata": {
+        "backendNodeId": 7303,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-1 > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections/Voter-Registration\" class=\"tertiary-menu__link\" target=\"_blank\" title=\"\" rel=\"noopener noreferrer\">Voter Registratio",
+      "discoveredAt": "2026-04-11T09:57:47.649Z",
+      "pageUrl": "https://fultoncountyga.gov/Jobs",
+      "metadata": {
+        "backendNodeId": 7325,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(0, 45, 83), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://visitor.r20.constantcontact.com/manage/optin?v=001pRmNkNNhb38xsI9BKzPGAT6VX8gu-AdhuhhypsqgiD4L_n71y2QtjvjalpJ0jMH4yHmAnfjHZ4_UY1WVZXtiAPhvFMP23kGALCNjleiUzU0%3D\" class=\"primary-menu__",
+      "discoveredAt": "2026-04-11T09:57:47.649Z",
+      "pageUrl": "https://fultoncountyga.gov/Jobs",
+      "metadata": {
+        "backendNodeId": 7279,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-1 > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a href=\"/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections/Early-Voting-Locations\" class=\"tertiary-menu__link\" title=\"\">Early Voting Locations</a>",
+      "discoveredAt": "2026-04-11T09:57:47.649Z",
+      "pageUrl": "https://fultoncountyga.gov/Jobs",
+      "metadata": {
+        "backendNodeId": 7323,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-0 > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a href=\"https://www.fultonprobatega.org/201/Weapons-Carry-Licenses-WCL\" class=\"tertiary-menu__link external-link\" title=\"\">Weapons Carry Licenses</a>",
+      "discoveredAt": "2026-04-11T09:57:47.649Z",
+      "pageUrl": "https://fultoncountyga.gov/Jobs",
+      "metadata": {
+        "backendNodeId": 7301,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-1 > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections/Become-a-Poll-Worker\" class=\"tertiary-menu__link\" target=\"_blank\" title=\"\" rel=\"noopener noreferrer\">Become a Poll W",
+      "discoveredAt": "2026-04-11T09:57:47.649Z",
+      "pageUrl": "https://fultoncountyga.gov/Jobs",
+      "metadata": {
+        "backendNodeId": 7321,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-0 > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"https://www.fultonprobatega.org/195/Marriage-Licenses\" class=\"tertiary-menu__link external-link\" title=\"\">Marriage License</a>",
+      "discoveredAt": "2026-04-11T09:57:47.649Z",
+      "pageUrl": "https://fultoncountyga.gov/Jobs",
+      "metadata": {
+        "backendNodeId": 7299,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-0 > ul > li:nth-of-type(5) > a",
+      "elementHtml": "<a href=\"/Inside-Fulton-County/Fulton-County-Departments/Clerk-of-Superior-Court/Notary\" class=\"tertiary-menu__link\" title=\"\">Notary</a>",
+      "discoveredAt": "2026-04-11T09:57:47.649Z",
+      "pageUrl": "https://fultoncountyga.gov/Jobs",
+      "metadata": {
+        "backendNodeId": 7305,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-1 > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections/Voter-Registration\" class=\"tertiary-menu__link\" target=\"_blank\" title=\"\" rel=\"noopener noreferrer\">Voter Registratio",
+      "discoveredAt": "2026-04-11T09:59:37.567Z",
+      "pageUrl": "https://fultoncountyga.gov/Payments",
+      "metadata": {
+        "backendNodeId": 15174,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-0 > ul > li:nth-of-type(5) > a",
+      "elementHtml": "<a href=\"/Inside-Fulton-County/Fulton-County-Departments/Clerk-of-Superior-Court/Notary\" class=\"tertiary-menu__link\" title=\"\">Notary</a>",
+      "discoveredAt": "2026-04-11T09:59:37.567Z",
+      "pageUrl": "https://fultoncountyga.gov/Payments",
+      "metadata": {
+        "backendNodeId": 15154,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-1 > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections/Become-a-Poll-Worker\" class=\"tertiary-menu__link\" target=\"_blank\" title=\"\" rel=\"noopener noreferrer\">Become a Poll W",
+      "discoveredAt": "2026-04-11T09:59:37.567Z",
+      "pageUrl": "https://fultoncountyga.gov/Payments",
+      "metadata": {
+        "backendNodeId": 15170,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-1 > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a href=\"/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections/Early-Voting-Locations\" class=\"tertiary-menu__link\" title=\"\">Early Voting Locations</a>",
+      "discoveredAt": "2026-04-11T09:59:37.567Z",
+      "pageUrl": "https://fultoncountyga.gov/Payments",
+      "metadata": {
+        "backendNodeId": 15172,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-0 > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"/Inside-Fulton-County/Fulton-County-Departments/Clerk-of-Superior-Court/Passports\" class=\"tertiary-menu__link\" title=\"\">Passports</a>",
+      "discoveredAt": "2026-04-11T09:59:37.567Z",
+      "pageUrl": "https://fultoncountyga.gov/Payments",
+      "metadata": {
+        "backendNodeId": 15152,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(0, 45, 83), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://visitor.r20.constantcontact.com/manage/optin?v=001pRmNkNNhb38xsI9BKzPGAT6VX8gu-AdhuhhypsqgiD4L_n71y2QtjvjalpJ0jMH4yHmAnfjHZ4_UY1WVZXtiAPhvFMP23kGALCNjleiUzU0%3D\" class=\"primary-menu__",
+      "discoveredAt": "2026-04-11T09:59:37.567Z",
+      "pageUrl": "https://fultoncountyga.gov/Payments",
+      "metadata": {
+        "backendNodeId": 15128,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-0 > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a href=\"https://www.fultonprobatega.org/201/Weapons-Carry-Licenses-WCL\" class=\"tertiary-menu__link external-link\" title=\"\">Weapons Carry Licenses</a>",
+      "discoveredAt": "2026-04-11T09:59:37.567Z",
+      "pageUrl": "https://fultoncountyga.gov/Payments",
+      "metadata": {
+        "backendNodeId": 15150,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-0 > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"https://www.fultonprobatega.org/195/Marriage-Licenses\" class=\"tertiary-menu__link external-link\" title=\"\">Marriage License</a>",
+      "discoveredAt": "2026-04-11T09:59:37.567Z",
+      "pageUrl": "https://fultoncountyga.gov/Payments",
+      "metadata": {
+        "backendNodeId": 15148,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-1 > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections/Absentee-Voting\" class=\"tertiary-menu__link\" target=\"_blank\" title=\"\" rel=\"noopener noreferrer\">Absentee Voting</a>",
+      "discoveredAt": "2026-04-11T09:59:37.567Z",
+      "pageUrl": "https://fultoncountyga.gov/Payments",
+      "metadata": {
+        "backendNodeId": 15168,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(80, 80, 80), text: rgb(33, 37, 41)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-0 > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"\" class=\"tertiary-menu__link\" title=\"\">Birth Certificate</a>",
+      "discoveredAt": "2026-04-11T09:59:37.567Z",
+      "pageUrl": "https://fultoncountyga.gov/Payments",
+      "metadata": {
+        "backendNodeId": 15146,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Insufficient color contrast: 3.48:1 (required: 4.5:1 for normal text). Foreground: rgb(238, 68, 170), background: rgb(255, 255, 255). Text: \"customerservice@fultoncountyga.gov\"",
+      "selector": "a.email",
+      "elementHtml": "<a class=\"email\" href=\"mailto:customerservice@fultoncountyga.gov\">customerservice@fultoncountyga.gov</a>",
+      "discoveredAt": "2026-04-11T09:58:29.293Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "contrastForeground": "#ee44aa",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#e0148f",
+        "contrastRatio": 3.4752484940805326,
+        "contrastSuggestedRatio": 4.500493365074684,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "customerservice@fultoncountyga.gov",
+        "backendNodeId": 10662,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Insufficient color contrast: 3.48:1 (required: 4.5:1 for normal text). Foreground: rgb(238, 68, 170), background: rgb(255, 255, 255). Text: \"404-612-4000\"",
+      "selector": "a.phone",
+      "elementHtml": "<a class=\"phone\" href=\"tel:404-612-4000\">404-612-4000</a>",
+      "discoveredAt": "2026-04-11T09:58:29.293Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "contrastForeground": "#ee44aa",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#e0148f",
+        "contrastRatio": 3.4752484940805326,
+        "contrastSuggestedRatio": 4.500493365074684,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "404-612-4000",
+        "backendNodeId": 10659,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Insufficient color contrast: 3.48:1 (required: 4.5:1 for normal text). Foreground: rgb(238, 68, 170), background: rgb(255, 255, 255). Text: \"141 Pryor St. SW \nAtlanta, GA 30303\"",
+      "selector": "a.address",
+      "elementHtml": "<a class=\"address\" href=\"https://www.google.com/maps/place/141+Pryor+St+SW,+Atlanta,+GA+30303/@33.751422,-84.393632,17z/data=!3m1!4b1!4m5!3m4!1s0x88f5039da35b24a5:0xb7d97e7eb909787b!8m2!3d33.751422!4d",
+      "discoveredAt": "2026-04-11T09:58:29.293Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "contrastForeground": "#ee44aa",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#e0148f",
+        "contrastRatio": 3.4752484940805326,
+        "contrastSuggestedRatio": 4.500493365074684,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "141 Pryor St. SW \nAtlanta, GA 30303",
+        "backendNodeId": 10655,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Clicking \"Previous Month\" inserts 31 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#main-content > div > header > div:nth-of-type(1) > div > div:nth-of-type(1) > button:nth-of-type(1)",
+      "elementHtml": "<button type=\"button\" class=\"date-selector__month-prev\"><span class=\"sr-only\">Previous Month</span><svg aria-hidden=\"true\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.o",
+      "discoveredAt": "2026-04-11T09:59:35.684Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "backendNodeId": 11118,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "dynamic-content-audit"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.3"
+      ]
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Clicking \"Next Month\" inserts 17 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#main-content > div > header > div:nth-of-type(1) > div > div:nth-of-type(1) > button:nth-of-type(2)",
+      "elementHtml": "<button type=\"button\" class=\"date-selector__month-next\"><span class=\"sr-only\">Next Month</span><svg aria-hidden=\"true\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1",
+      "discoveredAt": "2026-04-11T09:59:35.684Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "backendNodeId": 11123,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "dynamic-content-audit"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.3"
+      ]
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Clicking \"Show Events1Events Today\" inserts 1 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#app > div > div > div:nth-of-type(3) > div:nth-of-type(5) > div:nth-of-type(2) > button",
+      "elementHtml": "<button type=\"button\" class=\"vcal__event-count\"><span class=\"sr-only\">Show Events</span><span class=\"vcal__event-count-number\">1</span><span class=\"vcal__event-count-label\">Events Today</span></button",
+      "discoveredAt": "2026-04-11T09:59:35.684Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "backendNodeId": 14523,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "dynamic-content-audit"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.3"
+      ]
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Clicking \"Show Events1Events Today\" inserts 1 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#app > div > div > div:nth-of-type(3) > div:nth-of-type(7) > div:nth-of-type(2) > button",
+      "elementHtml": "<button type=\"button\" class=\"vcal__event-count\"><span class=\"sr-only\">Show Events</span><span class=\"vcal__event-count-number\">1</span><span class=\"vcal__event-count-label\">Events Today</span></button",
+      "discoveredAt": "2026-04-11T09:59:35.684Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "backendNodeId": 14550,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "dynamic-content-audit"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.3"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://fultoncountyga.gov/Inside-Fulton-County/Fulton-County-Departments/-/media/F446AAA8FC844A049E7938935759850B.ashx returns 404 Not Found",
+      "selector": "#accordionFaq_668C18C6 > div > a",
+      "elementHtml": "<a href=\"https://fultoncountyga.gov/Inside-Fulton-County/Fulton-County-Departments/-/media/F446AAA8FC844A049E7938935759850B.ashx\">Click here to view the notice.</a>",
+      "discoveredAt": "2026-04-11T09:57:07.240Z",
+      "pageUrl": "https://fultoncountyga.gov/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections",
+      "metadata": {
+        "backendNodeId": 4378,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 23px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "label.sr-only",
+      "elementHtml": "<label for=\"siteSearchBar\" class=\"sr-only\">Site Search</label>",
+      "discoveredAt": "2026-04-11T09:55:53.640Z",
+      "pageUrl": "https://fultoncountyga.gov/",
+      "metadata": {
+        "backendNodeId": 1093,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 320px at 320px width.",
+      "selector": "#PrimaryMenu-0",
+      "elementHtml": "<div class=\"secondary-menu\" id=\"PrimaryMenu-0\">\n                                        <button type=\"button\" class=\"return-to-primary-menu\">\n                                            <svg version=\"",
+      "discoveredAt": "2026-04-11T09:58:54.650Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "backendNodeId": 9856,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 320px at 320px width.",
+      "selector": "button.return-to-primary-menu",
+      "elementHtml": "<button type=\"button\" class=\"return-to-primary-menu\">\n                                            <svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewB",
+      "discoveredAt": "2026-04-11T09:58:54.650Z",
+      "pageUrl": "https://fultoncountyga.gov/Calendar",
+      "metadata": {
+        "backendNodeId": 9857,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 21px at 320px width.",
+      "selector": "svg",
+      "elementHtml": "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 257.6 451.8\" xml:space=\"preserve\">\n                                                <path d",
+      "discoveredAt": "2026-04-11T09:58:08.946Z",
+      "pageUrl": "https://fultoncountyga.gov/Jobs",
+      "metadata": {
+        "backendNodeId": 7237,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 320px at 320px width.",
+      "selector": "a.current-page-label",
+      "elementHtml": "<a href=\"/Services\" class=\"current-page-label\">Services</a>",
+      "discoveredAt": "2026-04-11T09:58:08.946Z",
+      "pageUrl": "https://fultoncountyga.gov/Jobs",
+      "metadata": {
+        "backendNodeId": 7286,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 320px at 320px width.",
+      "selector": "ul.secondary-menu__list",
+      "elementHtml": "<ul class=\"secondary-menu__list\">\n                                                        <li class=\"secondary-menu__item secondary-menu__item--has-sub\">\n                                              ",
+      "discoveredAt": "2026-04-11T09:58:08.946Z",
+      "pageUrl": "https://fultoncountyga.gov/Jobs",
+      "metadata": {
+        "backendNodeId": 7287,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 23px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "span.sr-only",
+      "elementHtml": "<span class=\"sr-only\">Toggle Search</span>",
+      "discoveredAt": "2026-04-11T09:58:08.946Z",
+      "pageUrl": "https://fultoncountyga.gov/Jobs",
+      "metadata": {
+        "backendNodeId": 7272,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 640px at 320px width.",
+      "selector": "#PrimaryMenu-0_SecondaryMenu-0",
+      "elementHtml": "<div class=\"tertiary-menu\" id=\"PrimaryMenu-0_SecondaryMenu-0\">\n                                                                <button type=\"button\" class=\"return-to-primary-menu\">\n                   ",
+      "discoveredAt": "2026-04-11T09:58:08.946Z",
+      "pageUrl": "https://fultoncountyga.gov/Jobs",
+      "metadata": {
+        "backendNodeId": 7290,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 18px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "span",
+      "elementHtml": "<span style=\"white-space:nowrap\"><a class=\"VIpgJd-ZVi9od-l4eHX-hSRGPd\" href=\"https://translate.google.com\" target=\"_blank\"><img src=\"https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_co",
+      "discoveredAt": "2026-04-11T09:58:08.946Z",
+      "pageUrl": "https://fultoncountyga.gov/Jobs",
+      "metadata": {
+        "backendNodeId": 8715,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 320px at 320px width.",
+      "selector": "li.secondary-menu__item.secondary-menu__item--has-sub",
+      "elementHtml": "<li class=\"secondary-menu__item secondary-menu__item--has-sub\">\n                                                            <button type=\"button\" class=\"secondary-menu__toggle\" aria-expanded=\"false\" a",
+      "discoveredAt": "2026-04-11T09:58:08.946Z",
+      "pageUrl": "https://fultoncountyga.gov/Jobs",
+      "metadata": {
+        "backendNodeId": 7288,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 305px at 320px width.",
+      "selector": "#PrimaryBtn-0_SecondaryBtn-0",
+      "elementHtml": "<button type=\"button\" class=\"secondary-menu__toggle\" aria-expanded=\"false\" aria-controls=\"PrimaryMenu-0_SecondaryMenu-0\" id=\"PrimaryBtn-0_SecondaryBtn-0\">\n                                             ",
+      "discoveredAt": "2026-04-11T09:58:08.946Z",
+      "pageUrl": "https://fultoncountyga.gov/Jobs",
+      "metadata": {
+        "backendNodeId": 7289,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 21px at 320px width.",
+      "selector": "path",
+      "elementHtml": "<path d=\"M14.2,204.5L200.5,18.2c11.9-11.9,31.1-11.9,42.9,0c11.8,11.8,11.8,31.1,0,42.9L78.6,226l164.8,164.8 c11.9,11.9,11.9,31.1,0,42.9c-11.8,11.9-31,11.9-42.9,0L14.2,247.4c-5.9-5.9-8.9-13.7-8.9-21.4C5",
+      "discoveredAt": "2026-04-11T09:58:08.946Z",
+      "pageUrl": "https://fultoncountyga.gov/Jobs",
+      "metadata": {
+        "backendNodeId": 7238,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    }
+  ]
+}

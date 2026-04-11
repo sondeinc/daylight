@@ -1,0 +1,672 @@
+{
+  "url": "https://waynecounty.com",
+  "slug": "waynecounty-com",
+  "status": "incomplete",
+  "scanDate": "2026-04-11T17:02:40.071Z",
+  "scanConfig": {
+    "scope": "site",
+    "maxPages": 50,
+    "racks": [
+      "rack-live-a11y",
+      "rack-live-free"
+    ],
+    "individualProbes": [],
+    "excludedProbes": [],
+    "timeBudgetMs": 300000,
+    "maxFindings": null
+  },
+  "sondeScore": {
+    "score": 955,
+    "rawPenalty": 35,
+    "normalizedPenalty": 35,
+    "pagesScanned": 1,
+    "weightsVersion": "v0.1"
+  },
+  "avgFindingsPerPage": 18,
+  "elementComplianceRate": 98.5,
+  "totalElements": 910,
+  "elementsWithFindings": 14,
+  "complianceSummary": {
+    "total": 18,
+    "byLevel": {
+      "A": 3,
+      "AA": 9
+    },
+    "bySeverity": {
+      "critical": 1,
+      "high": 4,
+      "medium": 13,
+      "low": 0
+    },
+    "byCriterion": {
+      "WCAG 1.1.1": 2,
+      "WCAG 3.1.1": 1,
+      "WCAG 2.4.5": 1,
+      "WCAG 1.4.10": 1,
+      "WCAG 1.4.12": 7
+    }
+  },
+  "summary": {
+    "pagesAnalyzed": 1,
+    "pagesFailed": 0,
+    "totalFindings": 18,
+    "bySeverity": {
+      "critical": 1,
+      "high": 4,
+      "medium": 13,
+      "low": 0
+    },
+    "byProbe": {},
+    "byType": {},
+    "durationMs": 27896
+  },
+  "jurisdiction": "MI",
+  "entityName": "Wayne County (MI)",
+  "findings": [
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "critical",
+      "description": "Images must have alternative text: Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+      "selector": "img",
+      "elementHtml": "<img src=\"https://utility.waynecountymi.gov/media/County/icon_logo.png\" height=\"100px;\" style=\"padding:20px 0\">",
+      "discoveredAt": "2026-04-11T10:02:19.625Z",
+      "pageUrl": "https://utility.waynecountymi.gov/wc_redirect.html?r=/",
+      "metadata": {
+        "backendNodeId": 323,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"42\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-11T10:02:19.620Z",
+      "pageUrl": "https://utility.waynecountymi.gov/wc_redirect.html?r=/",
+      "metadata": {
+        "backendNodeId": 42,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 3.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/language-of-page",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "<html> element must have a lang attribute: Fix any of the following:\n  The <html> element does not have a lang attribute",
+      "selector": "html",
+      "elementHtml": "<html>",
+      "discoveredAt": "2026-04-11T10:02:19.625Z",
+      "pageUrl": "https://utility.waynecountymi.gov/wc_redirect.html?r=/",
+      "metadata": {
+        "backendNodeId": 330,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/language-of-page",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "language-page"
+          }
+        ],
+        "provenanceConfidence": "high",
+        "detectedBy": [
+          "axe-core",
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 3.1.1"
+        ]
+      },
+      "detectedBy": [
+        "axe-core",
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 3.1.1"
+      ]
+    },
+    {
+      "probe": "navigation-ways",
+      "standard": "WCAG 2.4.5",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Page has no detectable navigation mechanisms (no <nav>, search, sitemap link, breadcrumbs, or table of contents). Users need multiple ways to locate content.",
+      "selector": "html",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-11T10:02:19.604Z",
+      "pageUrl": "https://utility.waynecountymi.gov/wc_redirect.html?r=/",
+      "metadata": {
+        "backendNodeId": 330,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "navigation-ways"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 2.4.5"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 2.4.5"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-11T10:02:19.563Z",
+      "pageUrl": "https://utility.waynecountymi.gov/wc_redirect.html?r=/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "img",
+      "elementHtml": "<img src=\"https://utility.waynecountymi.gov/media/County/icon_logo.png\" height=\"100px;\" style=\"padding:20px 0\">",
+      "discoveredAt": "2026-04-11T10:02:19.625Z",
+      "pageUrl": "https://utility.waynecountymi.gov/wc_redirect.html?r=/",
+      "metadata": {
+        "backendNodeId": 323,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Document should have one main landmark: Fix all of the following:\n  Document does not have a main landmark",
+      "selector": "html",
+      "elementHtml": "<html>",
+      "discoveredAt": "2026-04-11T10:02:19.625Z",
+      "pageUrl": "https://utility.waynecountymi.gov/wc_redirect.html?r=/",
+      "metadata": {
+        "backendNodeId": 330,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          },
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".feature-background-blurb",
+      "elementHtml": "<div class=\"feature-background-blurb\">\n        <span class=\"profile-featured-text\">\n\t\t\tWELCOME TO<br><span>Wayne County</span>\n        </span>\n    </div>",
+      "discoveredAt": "2026-04-11T10:02:19.625Z",
+      "pageUrl": "https://utility.waynecountymi.gov/wc_redirect.html?r=/",
+      "metadata": {
+        "backendNodeId": 953,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".redirect",
+      "elementHtml": "<div class=\"redirect\">\n        <div class=\"notice_start\">WayneCounty.com</div><br>\n        <div class=\"notice\">IS NOW</div><br>\n        <div class=\"notice_end\">WayneCountyMI.gov!</div>\n        <div cl...",
+      "discoveredAt": "2026-04-11T10:02:19.625Z",
+      "pageUrl": "https://utility.waynecountymi.gov/wc_redirect.html?r=/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".teal_bar",
+      "elementHtml": "<div class=\"teal_bar\">You are being redirected to our new website!</div>",
+      "discoveredAt": "2026-04-11T10:02:19.625Z",
+      "pageUrl": "https://utility.waynecountymi.gov/wc_redirect.html?r=/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 8px at 320px width.",
+      "selector": "#tabs-header-1",
+      "elementHtml": "<div id=\"tabs-header-1\" class=\"js-element clearfix tab-group-header\" role=\"tablist\" aria-label=\"Tab selection with 3 tabs\" aria-describedby=\"tabs-header-1-description\" aria-orientation=\"horizontal\"><a",
+      "discoveredAt": "2026-04-11T10:02:30.382Z",
+      "pageUrl": "https://utility.waynecountymi.gov/wc_redirect.html?r=/",
+      "metadata": {
+        "backendNodeId": 1673,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 65px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "#horizontal-menu-description",
+      "elementHtml": "<div class=\"visuallyhidden list_help\" id=\"horizontal-menu-description\"><p>Select the Escape key to close the menu. Focus will then be set to the first menu item.</p></div>",
+      "discoveredAt": "2026-04-11T10:02:30.382Z",
+      "pageUrl": "https://utility.waynecountymi.gov/wc_redirect.html?r=/",
+      "metadata": {
+        "backendNodeId": 1670,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 23px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "#skip-to-content-link",
+      "elementHtml": "<a href=\"#main-content\" class=\"visuallyhidden focusable\" id=\"skip-to-content-link\">Skip to main content</a>",
+      "discoveredAt": "2026-04-11T10:02:30.382Z",
+      "pageUrl": "https://utility.waynecountymi.gov/wc_redirect.html?r=/",
+      "metadata": {
+        "backendNodeId": 403,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 23px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "#ctl07_lblSearch",
+      "elementHtml": "<label for=\"ctl07_txtSearch\" id=\"ctl07_lblSearch\" class=\"sc-search-label\">Search</label>",
+      "discoveredAt": "2026-04-11T10:02:30.382Z",
+      "pageUrl": "https://utility.waynecountymi.gov/wc_redirect.html?r=/",
+      "metadata": {
+        "backendNodeId": 505,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 23px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "span.visuallyhidden",
+      "elementHtml": "<span class=\"visuallyhidden\"> is your current preferred language.</span>",
+      "discoveredAt": "2026-04-11T10:02:30.382Z",
+      "pageUrl": "https://utility.waynecountymi.gov/wc_redirect.html?r=/",
+      "metadata": {
+        "backendNodeId": 430,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 59px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "div.visuallyhidden",
+      "elementHtml": "<div class=\"visuallyhidden\"><h1 class=\"oc-page-title \">Home</h1></div>",
+      "discoveredAt": "2026-04-11T10:02:30.382Z",
+      "pageUrl": "https://utility.waynecountymi.gov/wc_redirect.html?r=/",
+      "metadata": {
+        "backendNodeId": 1657,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 65px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "#tabs-header-1-description",
+      "elementHtml": "<div class=\"visuallyhidden list_help\" id=\"tabs-header-1-description\" aria-hidden=\"true\"><p>Press left and right keys to move between tabs. Press down to focus tab content.</p></div>",
+      "discoveredAt": "2026-04-11T10:02:30.382Z",
+      "pageUrl": "https://utility.waynecountymi.gov/wc_redirect.html?r=/",
+      "metadata": {
+        "backendNodeId": 1675,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 23px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "span.visuallyhidden.opensubmenu",
+      "elementHtml": "<span class=\"visuallyhidden opensubmenu text\">Sub-menu</span>",
+      "discoveredAt": "2026-04-11T10:02:30.382Z",
+      "pageUrl": "https://utility.waynecountymi.gov/wc_redirect.html?r=/",
+      "metadata": {
+        "backendNodeId": 522,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    }
+  ]
+}

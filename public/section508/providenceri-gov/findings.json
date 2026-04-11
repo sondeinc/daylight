@@ -1,0 +1,2577 @@
+{
+  "url": "https://providenceri.gov",
+  "slug": "providenceri-gov",
+  "status": "complete",
+  "scanDate": "2026-04-11T17:16:58.783Z",
+  "scanConfig": {
+    "scope": "site",
+    "maxPages": 50,
+    "racks": [
+      "rack-live-a11y",
+      "rack-live-free"
+    ],
+    "individualProbes": [],
+    "excludedProbes": [],
+    "timeBudgetMs": 300000,
+    "maxFindings": null
+  },
+  "sondeScore": {
+    "score": 943,
+    "rawPenalty": 137,
+    "normalizedPenalty": 45.666666666666664,
+    "pagesScanned": 3,
+    "weightsVersion": "v0.1"
+  },
+  "avgFindingsPerPage": 35,
+  "elementComplianceRate": 89.7,
+  "totalElements": 741,
+  "elementsWithFindings": 76,
+  "complianceSummary": {
+    "total": 105,
+    "byLevel": {
+      "AA": 13,
+      "A": 19
+    },
+    "bySeverity": {
+      "critical": 2,
+      "high": 16,
+      "medium": 63,
+      "low": 24
+    },
+    "byCriterion": {
+      "WCAG 1.4.3": 5,
+      "WCAG 1.1.1": 4,
+      "WCAG 2.4.3": 3,
+      "WCAG 2.4.5": 1,
+      "WCAG 2.4.1": 1,
+      "WCAG 1.4.4": 1,
+      "WCAG 1.4.1": 11,
+      "WCAG 3.2.3": 1,
+      "WCAG 1.4.10": 4,
+      "WCAG 1.4.12": 1
+    }
+  },
+  "summary": {
+    "pagesAnalyzed": 3,
+    "pagesFailed": 0,
+    "totalFindings": 105,
+    "bySeverity": {
+      "critical": 2,
+      "high": 16,
+      "medium": 63,
+      "low": 24
+    },
+    "byProbe": {},
+    "byType": {},
+    "durationMs": 326888
+  },
+  "jurisdiction": "RI",
+  "entityName": "City of Providence",
+  "findings": [
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.77:1 (required: 4.5:1 for normal text). Foreground: rgb(102, 102, 102), background: rgb(16, 71, 90). Text: \"Change LanguageSelect LanguageArabicChinese (Simplified)Hait\"",
+      "selector": "div.skiptranslate.goog-te-gadget",
+      "elementHtml": "<div class=\"skiptranslate goog-te-gadget\" dir=\"ltr\" style=\"\"><div id=\":0.targetLanguage\"><label for=\"google-trans-select\">Change Language</label><select class=\"goog-te-combo\" aria-label=\"Language Tran",
+      "discoveredAt": "2026-04-11T10:11:39.756Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "contrastForeground": "#666666",
+        "contrastBackground": "#10475a",
+        "contrastSuggestedForeground": "#adadad",
+        "contrastRatio": 1.7660211096172282,
+        "contrastSuggestedRatio": 4.518524066779853,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Change LanguageSelect LanguageArabicChinese (Simplified)Hait",
+        "backendNodeId": 888,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.04:1 (required: 4.5:1 for normal text). Foreground: rgb(68, 68, 68), background: rgb(16, 71, 90). Text: \"Translate\"",
+      "selector": "a.VIpgJd-ZVi9od-l4eHX-hSRGPd",
+      "elementHtml": "<a class=\"VIpgJd-ZVi9od-l4eHX-hSRGPd\" href=\"https://translate.google.com\" target=\"_blank\"><img src=\"https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_42x16dp.png\" width=\"37px\" hei",
+      "discoveredAt": "2026-04-11T10:11:39.756Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "contrastForeground": "#444444",
+        "contrastBackground": "#10475a",
+        "contrastSuggestedForeground": "#adadad",
+        "contrastRatio": 1.0411134297678815,
+        "contrastSuggestedRatio": 4.518524066779853,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Translate",
+        "backendNodeId": 886,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"27\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-11T10:13:58.980Z",
+      "pageUrl": "chrome-error://chromewebdata/",
+      "metadata": {
+        "backendNodeId": 27,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"881\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-11T10:11:39.882Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 881,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"293\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-11T10:11:39.882Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 293,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"269\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-11T10:11:39.882Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 269,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Insufficient color contrast: 2.38:1 (required: 4.5:1 for normal text). Foreground: rgb(143, 143, 143), background: rgb(221, 221, 221). Text: \"www.providenceri.gov took too long to respond.\"",
+      "selector": "#sub-frame-error-details",
+      "elementHtml": "<div id=\"sub-frame-error-details\"><strong>www.providenceri.gov</strong> took too long to respond.</div>",
+      "discoveredAt": "2026-04-11T10:13:58.953Z",
+      "pageUrl": "chrome-error://chromewebdata/",
+      "metadata": {
+        "contrastForeground": "#8f8f8f",
+        "contrastBackground": "#dddddd",
+        "contrastSuggestedForeground": "#616161",
+        "contrastRatio": 2.380995222660319,
+        "contrastSuggestedRatio": 4.55976345949787,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "www.providenceri.gov took too long to respond.",
+        "backendNodeId": 167,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Insufficient color contrast: 2.38:1 (required: 4.5:1 for normal text). Foreground: rgb(143, 143, 143), background: rgb(221, 221, 221). Text: \"www.providenceri.gov\"",
+      "selector": "strong",
+      "elementHtml": "<strong>www.providenceri.gov</strong>",
+      "discoveredAt": "2026-04-11T10:13:58.953Z",
+      "pageUrl": "chrome-error://chromewebdata/",
+      "metadata": {
+        "contrastForeground": "#8f8f8f",
+        "contrastBackground": "#dddddd",
+        "contrastSuggestedForeground": "#616161",
+        "contrastRatio": 2.380995222660319,
+        "contrastSuggestedRatio": 4.55976345949787,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "www.providenceri.gov",
+        "backendNodeId": 146,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "console-health",
+      "severity": "high",
+      "description": "Console warning: Couldn't load preload assets:  ProgressEvent",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-11T10:13:59.915Z",
+      "pageUrl": "chrome-error://chromewebdata/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "console-health"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "console-health"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "console-health",
+      "severity": "high",
+      "description": "Console warning: Couldn't load preload assets:  ProgressEvent",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-11T10:11:40.714Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "console-health"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Reload\" to \"Details\" (visual distance: 526px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#details-button",
+      "elementHtml": "<button>Details</button>",
+      "discoveredAt": "2026-04-11T10:16:09.411Z",
+      "pageUrl": "chrome-error://chromewebdata/",
+      "metadata": {
+        "backendNodeId": 397,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Show Accessibility options toolbar\" to \"close accessibility options toolbar\" (visual distance: 422px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#closeit",
+      "elementHtml": "<div>close accessibility options toolbar</div>",
+      "discoveredAt": "2026-04-11T10:12:27.460Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 272,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "navigation-ways",
+      "standard": "WCAG 2.4.5",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Page has no detectable navigation mechanisms (no <nav>, search, sitemap link, breadcrumbs, or table of contents). Users need multiple ways to locate content.",
+      "selector": "html",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-11T10:15:41.300Z",
+      "pageUrl": "chrome-error://chromewebdata/",
+      "metadata": {
+        "backendNodeId": 436,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "navigation-ways"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 2.4.5"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 2.4.5"
+      ]
+    },
+    {
+      "probe": "keyboard-trap",
+      "standard": "WCAG 2.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks",
+      "conformanceLevel": "A",
+      "severity": "low",
+      "description": "Deep focus region: nav \"CITY HALL\n\n\tI Want to…\n\tMayor’s Office\n\t\" has 21 tab stops before focus escapes. Consider adding skip navigation or grouping with arrow keys.",
+      "selector": "nav",
+      "elementHtml": "<nav role=\"nav\">CITY HALL\n\n\tI Want to…\n\tMayor’s Office\n\t</nav>",
+      "discoveredAt": "2026-04-11T10:12:29.400Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 355,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "keyboard-trap"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "keyboard-trap"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.1"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Link timeout: https://www.providenceri.gov/i-want-to did not respond within 5000ms",
+      "selector": "#Top-Requests > div > div:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/i-want-to\">I want to...</a>",
+      "discoveredAt": "2026-04-11T10:12:26.329Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 468,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Link timeout: https://www.providenceri.gov/public-works/waste-pickup-schedule/ did not respond within 5000ms",
+      "selector": "#Top-Requests > div > div:nth-of-type(2) > ul > li:nth-of-type(13) > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/public-works/waste-pickup-schedule/\">Waste Pickup Schedule</a>",
+      "discoveredAt": "2026-04-11T10:12:26.329Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 497,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Link timeout: https://www.providenceri.gov/city-of-providence-announces-summer-rates-for-providence-community-electricity-program-2/ did not respond within 5000ms",
+      "selector": "#main-content-div > div:nth-of-type(1) > section:nth-of-type(2) > div > div:nth-of-type(3) > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/city-of-providence-announces-summer-rates-for-providence-community-electricity-program-2/\">City of Providence Announces Summer Rates for Providence Community Electricity P</a>",
+      "discoveredAt": "2026-04-11T10:12:26.329Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 519,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Link timeout: https://www.providenceri.gov/newsletter-spanish/ did not respond within 5000ms",
+      "selector": "#ic_signupform > div > div:nth-of-type(1) > h3 > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/newsletter-spanish/\">Haga clic aquí para español</a>",
+      "discoveredAt": "2026-04-11T10:12:26.329Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 657,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Link timeout: http://wmq.etimspayments.com/pbw/include/providence/input.jsp did not respond within 5000ms",
+      "selector": "#Top-Requests > div > div:nth-of-type(2) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"http://wmq.etimspayments.com/pbw/include/providence/input.jsp\">Pay my parking ticket</a>",
+      "discoveredAt": "2026-04-11T10:12:26.329Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 479,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: http://pvdbusiness.com/business-portal/index.php returns 521 <none>",
+      "selector": "#menu-item-9959 > a",
+      "elementHtml": "<a href=\"http://pvdbusiness.com/business-portal/index.php\">Starting a Business</a>",
+      "discoveredAt": "2026-04-11T10:12:26.329Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 434,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Link timeout: https://www.providenceri.gov/vital-records/ did not respond within 5000ms",
+      "selector": "#Top-Requests > div > div:nth-of-type(2) > ul > li:nth-of-type(9) > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/vital-records/\">Marriage, Birth, Death Certificates</a>",
+      "discoveredAt": "2026-04-11T10:12:26.329Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 489,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Link timeout: https://www.providenceri.gov/rentfund/ did not respond within 5000ms",
+      "selector": "#main-content-div > div:nth-of-type(1) > section:nth-of-type(2) > div > div:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/rentfund/\">Mayor Brett Smiley Announces Housing Stabilization Package to Further Protect Pr</a>",
+      "discoveredAt": "2026-04-11T10:12:26.329Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 528,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://twitter.com/PVDMayor returns 403 Forbidden",
+      "selector": "#social-media > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"https://twitter.com/PVDMayor\">Twitter Icon</a>",
+      "discoveredAt": "2026-04-11T10:12:26.329Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 702,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Link timeout: https://www.providenceri.gov/mayor-brett-smiley-announces-applications-for-2026-mayoral-fellows/ did not respond within 5000ms",
+      "selector": "#main-content-div > div:nth-of-type(1) > section:nth-of-type(2) > div > div:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/mayor-brett-smiley-announces-applications-for-2026-mayoral-fellows/\">Mayor Brett Smiley Announces Applications for 2026 Mayoral Fellows\n            M</a>",
+      "discoveredAt": "2026-04-11T10:12:26.329Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 501,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://council.providenceri.gov/ returns 403 Forbidden",
+      "selector": "#menu-item-7096 > a",
+      "elementHtml": "<a href=\"https://council.providenceri.gov/\">City Council</a>",
+      "discoveredAt": "2026-04-11T10:12:26.329Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 367,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Link timeout: https://www.providenceri.gov/tax-collector/online-tax-payment-system/ did not respond within 5000ms",
+      "selector": "#Top-Requests > div > div:nth-of-type(2) > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/tax-collector/online-tax-payment-system/\">Pay Taxes</a>",
+      "discoveredAt": "2026-04-11T10:12:26.329Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 477,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Link timeout: https://plan.providenceri.gov/ did not respond within 5000ms",
+      "selector": "#comp-plan > div > div:nth-of-type(2) > div > a",
+      "elementHtml": "<a href=\"https://plan.providenceri.gov/\">Learn More about the Comp Plan</a>",
+      "discoveredAt": "2026-04-11T10:12:26.329Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 630,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://jobs.providenceri.gov/ returns 403 Forbidden",
+      "selector": "#Top-Requests > div > div:nth-of-type(2) > ul > li:nth-of-type(6) > a",
+      "elementHtml": "<a href=\"https://jobs.providenceri.gov/\">Job Opportunities</a>",
+      "discoveredAt": "2026-04-11T10:12:26.329Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 483,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Link timeout: https://www.providenceri.gov/animal-control/adoptions/ did not respond within 5000ms",
+      "selector": "#Top-Requests > div > div:nth-of-type(2) > ul > li:nth-of-type(8) > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/animal-control/adoptions/\">Animal Adoption</a>",
+      "discoveredAt": "2026-04-11T10:12:26.329Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 487,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Link timeout: https://www.providenceri.gov/ethics/filings-elected-officials/ did not respond within 5000ms",
+      "selector": "#open-government > div > div:nth-of-type(2) > ul > li:nth-of-type(8) > div > div > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/ethics/filings-elected-officials/\">Details</a>",
+      "discoveredAt": "2026-04-11T10:12:26.329Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 618,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-11T10:11:39.885Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 269,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-11T10:11:39.885Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 882,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Document should have one main landmark: Fix all of the following:\n  Document does not have a main landmark",
+      "selector": "html",
+      "elementHtml": "<html dir=\"ltr\" lang=\"en\">",
+      "discoveredAt": "2026-04-11T10:13:58.985Z",
+      "pageUrl": "chrome-error://chromewebdata/",
+      "metadata": {
+        "backendNodeId": 193,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "li:nth-child(1)",
+      "elementHtml": "<li>Checking the connection</li>",
+      "discoveredAt": "2026-04-11T10:13:58.985Z",
+      "pageUrl": "chrome-error://chromewebdata/",
+      "metadata": {
+        "backendNodeId": 147,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "h1",
+      "elementHtml": "<h1>\n            <span>This site can’t be reached</span>\n          </h1>",
+      "discoveredAt": "2026-04-11T10:13:58.985Z",
+      "pageUrl": "chrome-error://chromewebdata/",
+      "metadata": {
+        "backendNodeId": 173,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#suggestions-list > p",
+      "elementHtml": "<p><!--?lit$260818005$-->Try:</p>",
+      "discoveredAt": "2026-04-11T10:13:58.985Z",
+      "pageUrl": "chrome-error://chromewebdata/",
+      "metadata": {
+        "backendNodeId": 151,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".error-code",
+      "elementHtml": "<div class=\"error-code\"><!--?lit$260818005$-->ERR_CONNECTION_TIMED_OUT</div>",
+      "discoveredAt": "2026-04-11T10:13:58.985Z",
+      "pageUrl": "chrome-error://chromewebdata/",
+      "metadata": {
+        "backendNodeId": 175,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#main-message > p",
+      "elementHtml": "<p><strong>www.providenceri.gov</strong> took too long to respond.</p>",
+      "discoveredAt": "2026-04-11T10:13:58.985Z",
+      "pageUrl": "chrome-error://chromewebdata/",
+      "metadata": {
+        "backendNodeId": 145,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 1.4.4",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/resize-text",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Zooming and scaling must not be disabled: Fix any of the following:\n  user-scalable=no on <meta> tag disables zooming on mobile devices",
+      "selector": "meta[name=\"viewport\"]",
+      "elementHtml": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0,\n                                 maximum-scale=1.0, user-scalable=no\">",
+      "discoveredAt": "2026-04-11T10:13:58.985Z",
+      "pageUrl": "chrome-error://chromewebdata/",
+      "metadata": {
+        "backendNodeId": 198,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/resize-text",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 1.4.4"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 1.4.4"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#skip1",
+      "elementHtml": "<div id=\"skip1\" tabindex=\"0\" role=\"link\" class=\"skipper\" onclick=\"skipto('menu');\" onkeydown=\"keypress(event,'skip2menu');\" title=\"skip to menu\" aria-label=\"skip to menu\">Skip To Menu</div>",
+      "discoveredAt": "2026-04-11T10:11:39.897Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 264,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#lang",
+      "elementHtml": "<div class=\"controls-l\" role=\"link\" tabindex=\"0\" zindex=\"9998\" onclick=\"showlangl('show');\" onfocus=\"showlang('show');\" id=\"lang\" title=\"Show Language options toolbar\" aria-label=\"Show Language option...",
+      "discoveredAt": "2026-04-11T10:11:39.897Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 292,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#access",
+      "elementHtml": "<div class=\"controls\" role=\"link\" tabindex=\"0\" zindex=\"9998\" onclick=\"showpanel('show');\" onfocus=\"showpanel('show');\" id=\"access\" title=\"Show Accessibility options toolbar\" aria-label=\"Show Accessibi...",
+      "discoveredAt": "2026-04-11T10:11:39.897Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 268,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#skip2",
+      "elementHtml": "<div id=\"skip2\" tabindex=\"0\" role=\"link\" class=\"skipper\" onclick=\"skipto('content');\" onkeydown=\"keypress(event,'skip2content');\" title=\"skip to content area\" aria-label=\"skip to content area\">Skip To...",
+      "discoveredAt": "2026-04-11T10:11:39.897Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 265,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#skip3",
+      "elementHtml": "<div id=\"skip3\" tabindex=\"0\" role=\"link\" class=\"skipper\" style=\"min-width:25px;min-height:25px;\" onclick=\"skipto('access');\" onkeydown=\"keypress(event,'skip2access');\" title=\"skip to accessibility opt...",
+      "discoveredAt": "2026-04-11T10:11:39.897Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 266,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#skip4",
+      "elementHtml": "<div id=\"skip4\" tabindex=\"0\" role=\"link\" class=\"skipper\" onclick=\"skipto('lang');\" onkeydown=\"keypress(event,'skip2lang');\" title=\"skip to language options toolbar\" aria-label=\"skip to language option...",
+      "discoveredAt": "2026-04-11T10:11:39.897Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 267,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(138, 180, 248), text: rgb(154, 160, 166)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#suggestions-list > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"#buttons\" onclick=\"toggleHelpBox()\">Checking the proxy and the firewall</a>",
+      "discoveredAt": "2026-04-11T10:15:41.300Z",
+      "pageUrl": "chrome-error://chromewebdata/",
+      "metadata": {
+        "backendNodeId": 391,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(16, 71, 90), text: rgb(51, 51, 51)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#menu-item-205071 > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/purchasing/openrfpsummary/\">Purchasing – Open RFPs</a>",
+      "discoveredAt": "2026-04-11T10:11:39.764Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 380,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(16, 71, 90), text: rgb(51, 51, 51)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#menu-item-7311 > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/i-want-to/\" title=\"Quick links I want to common web tasks\">I Want to…</a>",
+      "discoveredAt": "2026-04-11T10:11:39.764Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 361,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(16, 71, 90), text: rgb(51, 51, 51)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#menu-item-7312 > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/inspection-standards/\" title=\"Link to Inspections and Standards\">Construction</a>",
+      "discoveredAt": "2026-04-11T10:11:39.764Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 376,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(16, 71, 90), text: rgb(51, 51, 51)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#menu-item-7098 > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/departments/\" title=\"List of City Departments\">Departments</a>",
+      "discoveredAt": "2026-04-11T10:11:39.764Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 365,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(16, 71, 90), text: rgb(51, 51, 51)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#menu-item-7096 > a",
+      "elementHtml": "<a href=\"https://council.providenceri.gov/\" title=\"Link to City Council\">City Council</a>",
+      "discoveredAt": "2026-04-11T10:11:39.764Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 367,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(16, 71, 90), text: rgb(51, 51, 51)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#menu-item-10091 > a",
+      "elementHtml": "<a target=\"_blank\" rel=\"noreferrer noopener\" href=\"https://library.municode.com/ri/providence/codes/code_of_ordinances\" title=\"City of Providence Code of Ordinances (opens in a new window)\">Code of Or",
+      "discoveredAt": "2026-04-11T10:11:39.764Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 369,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(16, 71, 90), text: rgb(51, 51, 51)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#menu-item-7733 > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/ethics/\" title=\"Ethics in Providence\">Ethics</a>",
+      "discoveredAt": "2026-04-11T10:11:39.764Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 378,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(16, 71, 90), text: rgb(51, 51, 51)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#menu-item-201500 > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/hr/jobs/\">More Job Opportunities</a>",
+      "discoveredAt": "2026-04-11T10:11:39.764Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 371,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(16, 71, 90), text: rgb(51, 51, 51)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#menu-item-10654 > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/board-of-licenses/\" title=\"Board of Licenses for a business\">Running a Business</a>",
+      "discoveredAt": "2026-04-11T10:11:39.764Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 382,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(16, 71, 90), text: rgb(51, 51, 51)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#menu-item-7314 > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/mayors-office/\" title=\"Mayor of Providence Office\">Mayor’s Office</a>",
+      "discoveredAt": "2026-04-11T10:11:39.764Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 363,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Insufficient color contrast: 3.60:1 (required: 4.5:1 for normal text). Foreground: rgb(119, 119, 119), background: rgb(32, 33, 36). Text: \"Check any cables and reboot any routers, modems, or other ne\"",
+      "selector": "div.suggestion-body",
+      "elementHtml": "<div class=\"suggestion-body\">Check any cables and reboot any routers, modems, or other network\n    devices you may be using.</div>",
+      "discoveredAt": "2026-04-11T10:13:58.953Z",
+      "pageUrl": "chrome-error://chromewebdata/",
+      "metadata": {
+        "contrastForeground": "#777777",
+        "contrastBackground": "#202124",
+        "contrastSuggestedForeground": "#888888",
+        "contrastRatio": 3.5950490557896613,
+        "contrastSuggestedRatio": 4.541457830816351,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Check any cables and reboot any routers, modems, or other ne",
+        "backendNodeId": 157,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "consistent-navigation",
+      "standard": "WCAG 3.2.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Navigation region \"nav\" (present on www.providenceri.gov) is missing on this page. Navigation should appear consistently across pages.",
+      "selector": "html",
+      "elementHtml": "<!-- missing: nav -->",
+      "discoveredAt": "2026-04-11T10:15:41.300Z",
+      "pageUrl": "chrome-error://chromewebdata/",
+      "metadata": {
+        "backendNodeId": 436,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "consistent-navigation"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "consistent-navigation"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 3.2.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 3.2.3"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "\"Show Accessibility options toolbar\" is visually at position 14 but receives focus at position 5 (drift: 9).",
+      "selector": "#access",
+      "elementHtml": "<div>Show Accessibility options toolbar</div>",
+      "discoveredAt": "2026-04-11T10:12:27.460Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 268,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Unreachable link: chrome-error://chromewebdata/#buttons — fetch failed",
+      "selector": "#suggestions-list > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"chrome-error://chromewebdata/#buttons\">Checking the proxy and the firewall</a>",
+      "discoveredAt": "2026-04-11T10:15:41.300Z",
+      "pageUrl": "chrome-error://chromewebdata/",
+      "metadata": {
+        "backendNodeId": 391,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.providenceri.gov/event/ returns 403 Forbidden",
+      "selector": "#menu-item-7089 > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/event/\">EVENTS</a>",
+      "discoveredAt": "2026-04-11T10:12:26.329Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 386,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.providenceri.gov/pvd-311/ returns 403 Forbidden",
+      "selector": "#menu-item-9833 > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/pvd-311/\">PVD 311</a>",
+      "discoveredAt": "2026-04-11T10:12:26.329Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 406,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.providenceri.gov/parks/ returns 403 Forbidden",
+      "selector": "#menu-item-220839 > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/parks/\">Providence Parks</a>",
+      "discoveredAt": "2026-04-11T10:12:26.329Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 399,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.providenceri.gov/board-of-licenses/ returns 403 Forbidden",
+      "selector": "#menu-item-10654 > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/board-of-licenses/\">Running a Business</a>",
+      "discoveredAt": "2026-04-11T10:12:26.329Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 382,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.providenceri.gov/public-property/private-events/ returns 403 Forbidden",
+      "selector": "#menu-item-229144 > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/public-property/private-events/\">City Hall Private Event</a>",
+      "discoveredAt": "2026-04-11T10:12:26.329Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 395,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.providenceri.gov/purchasing returns 403 Forbidden",
+      "selector": "#menu-item-211138 > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/purchasing\">Purchasing</a>",
+      "discoveredAt": "2026-04-11T10:12:26.329Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 436,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.providenceri.gov/inspection-standards/ returns 403 Forbidden",
+      "selector": "#menu-item-7312 > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/inspection-standards/\">Construction</a>",
+      "discoveredAt": "2026-04-11T10:12:26.329Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 376,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.providenceri.gov/news-events/ returns 403 Forbidden",
+      "selector": "#menu-item-7090 > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/news-events/\">NEWS</a>",
+      "discoveredAt": "2026-04-11T10:12:26.329Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 388,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.providenceri.gov/pvd311/ returns 403 Forbidden",
+      "selector": "#menu-item-250291 > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/pvd311/\">PVD 311</a>",
+      "discoveredAt": "2026-04-11T10:12:26.329Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 390,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.providenceri.gov/mayors-office/ returns 403 Forbidden",
+      "selector": "header > div:nth-of-type(2) > div > div:nth-of-type(1) > div:nth-of-type(3) > h3 > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/mayors-office/\">Mayor Brett Smiley</a>",
+      "discoveredAt": "2026-04-11T10:12:26.329Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 341,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.providenceri.gov/doing-business/ returns 403 Forbidden",
+      "selector": "#menu-item-7088 > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/doing-business/\">DOING BUSINESS</a>",
+      "discoveredAt": "2026-04-11T10:12:26.329Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 373,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.providenceri.gov/departments/ returns 403 Forbidden",
+      "selector": "#menu-item-7098 > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/departments/\">Departments</a>",
+      "discoveredAt": "2026-04-11T10:12:26.329Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 365,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.providenceri.gov/ethics/ returns 403 Forbidden",
+      "selector": "#menu-item-7733 > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/ethics/\">Ethics</a>",
+      "discoveredAt": "2026-04-11T10:12:26.329Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 378,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.providenceri.gov/hr/jobs/ returns 403 Forbidden",
+      "selector": "#menu-item-201500 > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/hr/jobs/\">More Job Opportunities</a>",
+      "discoveredAt": "2026-04-11T10:12:26.329Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 371,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.providenceri.gov/ returns 403 Forbidden",
+      "selector": "header > div:nth-of-type(2) > div > div:nth-of-type(1) > div:nth-of-type(1) > h3 > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/\">City Of Providence</a>",
+      "discoveredAt": "2026-04-11T10:12:26.329Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 336,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.providenceri.gov/law-department/nondiscrimination-policy-statement/ returns 403 Forbidden",
+      "selector": "header > div:nth-of-type(2) > div > div:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/law-department/nondiscrimination-policy-statement/\">Accessibility</a>",
+      "discoveredAt": "2026-04-11T10:12:26.329Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 345,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.providenceri.gov/purchasing/openrfpsummary/ returns 403 Forbidden",
+      "selector": "#menu-item-205071 > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/purchasing/openrfpsummary/\">Purchasing – Open RFPs</a>",
+      "discoveredAt": "2026-04-11T10:12:26.329Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 380,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://www.providenceri.gov/i-want-to/ returns 403 Forbidden",
+      "selector": "#menu-item-7311 > a",
+      "elementHtml": "<a href=\"https://www.providenceri.gov/i-want-to/\">I Want to…</a>",
+      "discoveredAt": "2026-04-11T10:12:26.329Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 361,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 186px at 320px width.",
+      "selector": "div.grecaptcha-error",
+      "elementHtml": "<div class=\"grecaptcha-error\"></div>",
+      "discoveredAt": "2026-04-11T10:12:30.739Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 939,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 186px at 320px width.",
+      "selector": "div.grecaptcha-badge",
+      "elementHtml": "<div class=\"grecaptcha-badge\" data-style=\"bottomright\" style=\"width: 256px; height: 60px; position: fixed; visibility: hidden; display: block; transition: right 0.3s; bottom: 14px; right: -186px; box-",
+      "discoveredAt": "2026-04-11T10:12:30.739Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 937,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 186px at 320px width.",
+      "selector": "div.grecaptcha-logo",
+      "elementHtml": "<div class=\"grecaptcha-logo\"><iframe title=\"reCAPTCHA\" width=\"256\" height=\"60\" role=\"presentation\" name=\"a-budi9ku4ooww\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allow-same-ori",
+      "discoveredAt": "2026-04-11T10:12:30.739Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 938,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 80px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "#search-form",
+      "elementHtml": "<form role=\"search\" method=\"get\" id=\"search-form\" class=\"search-form\" action=\"https://www.providenceri.gov/\">\n\t\t\t<label class=\"screen-reader-text\" for=\"s\">Search Form</label>\n\t\t\t<input type=\"text\" val",
+      "discoveredAt": "2026-04-11T10:12:30.739Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 454,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 186px at 320px width.",
+      "selector": "iframe",
+      "elementHtml": "<iframe title=\"reCAPTCHA\" width=\"256\" height=\"60\" role=\"presentation\" name=\"a-budi9ku4ooww\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-top-n",
+      "discoveredAt": "2026-04-11T10:12:30.739Z",
+      "pageUrl": "https://www.providenceri.gov/",
+      "metadata": {
+        "backendNodeId": 943,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    }
+  ]
+}
