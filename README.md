@@ -1,6 +1,6 @@
 # Daylight
 
-**Shining daylight on government website accessibility.**
+**Illuminating accessibility for software.**
 
 On April 24, 2026, large government entities face a legal deadline to make
 their websites accessible. We built a scanner. We scanned them. We published
@@ -10,11 +10,11 @@ work where anyone can see it.
 
 ---
 
-## Live Leaderboard
+## Live Leaderboards
 
-Visit **[daylight.sonde.life/section508](https://daylight.sonde.life/section508)**
-for the full interactive leaderboard with sortable columns, severity filters,
-and per-site drill-down reports.
+- **[Government (Section 508)](https://daylight.sonde.life/section508)** — US government websites
+- **[Financial (ADA Title III)](https://daylight.sonde.life/financial)** — Major financial institutions
+- **[Methodology](https://daylight.sonde.life/methodology)** — How the Sonde Score works
 
 | Rank | Website | Sonde Score | Findings | Pages |
 |------|---------|:-----------:|:--------:|:-----:|
@@ -32,10 +32,11 @@ Clone the repo and serve the site on your machine:
 ```bash
 git clone https://github.com/sondeinc/daylight.git
 cd daylight
-npm run day       # or: ./day (Mac/Linux) | day.cmd (Windows)
+pnpm install
+pnpm day
 ```
 
-Opens at **http://localhost:3000/section508/**. Requires [Node.js](https://nodejs.org).
+Opens at **http://localhost:5080/**. Requires [Node.js](https://nodejs.org) and [pnpm](https://pnpm.io).
 
 ---
 

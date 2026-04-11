@@ -2,7 +2,7 @@
   "url": "https://clarkcountynv.gov",
   "slug": "clarkcountynv-gov",
   "status": "complete",
-  "scanDate": "2026-04-09T23:25:12.565Z",
+  "scanDate": "2026-04-10T11:38:05.368Z",
   "scanConfig": {
     "scope": "site",
     "maxPages": 50,
@@ -16,52 +16,52 @@
     "maxFindings": null
   },
   "sondeScore": {
-    "score": 944,
-    "rawPenalty": 355.25,
-    "normalizedPenalty": 44.40625,
-    "pagesScanned": 8,
+    "score": 943,
+    "rawPenalty": 316.75,
+    "normalizedPenalty": 45.25,
+    "pagesScanned": 7,
     "weightsVersion": "v0.1"
   },
-  "avgFindingsPerPage": 17.8,
+  "avgFindingsPerPage": 17.9,
   "elementComplianceRate": 99.7,
-  "totalElements": 10320,
+  "totalElements": 9030,
   "elementsWithFindings": 30,
   "complianceSummary": {
-    "total": 142,
+    "total": 125,
     "byLevel": {
-      "AA": 8,
-      "A": 52
+      "AA": 13,
+      "A": 45
     },
     "bySeverity": {
-      "critical": 22,
-      "high": 17,
-      "medium": 78,
-      "low": 25
+      "critical": 18,
+      "high": 22,
+      "medium": 66,
+      "low": 19
     },
     "byCriterion": {
       "WCAG 1.4.3": 4,
-      "WCAG 2.4.3": 31,
+      "WCAG 2.5.8": 6,
+      "WCAG 2.4.3": 27,
       "WCAG 2.4.5": 1,
-      "WCAG 1.3.1": 7,
-      "WCAG 1.4.1": 14,
-      "WCAG 4.1.3": 1,
+      "WCAG 1.3.1": 6,
+      "WCAG 1.4.1": 12,
       "WCAG 1.4.12": 1,
       "WCAG 1.4.10": 1
     }
   },
   "summary": {
-    "pagesAnalyzed": 8,
+    "pagesAnalyzed": 7,
     "pagesFailed": 0,
-    "totalFindings": 142,
+    "totalFindings": 125,
     "bySeverity": {
-      "critical": 22,
-      "high": 17,
-      "medium": 78,
-      "low": 25
+      "critical": 18,
+      "high": 22,
+      "medium": 66,
+      "low": 19
     },
     "byProbe": {},
     "byType": {},
-    "durationMs": 305479
+    "durationMs": 306267
   },
   "jurisdiction": "NV",
   "entityName": "Clark County (NV)",
@@ -72,10 +72,149 @@
       "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
       "conformanceLevel": "AA",
       "severity": "critical",
+      "description": "Insufficient color contrast: 1.40:1 (required: 3:1 for large text). Foreground: rgb(150, 56, 33), background: rgb(114, 41, 34). Text: \"View Meetings & Agendas\"",
+      "selector": "h2.tertiary-list-header",
+      "elementHtml": "<h2 class=\"tertiary-list-header\">View Meetings &amp; Agendas</h2>",
+      "discoveredAt": "2026-04-10T04:37:24.706Z",
+      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1219",
+      "metadata": {
+        "contrastForeground": "#963821",
+        "contrastBackground": "#722922",
+        "contrastSuggestedForeground": "#d96b50",
+        "contrastRatio": 1.403102978233911,
+        "contrastSuggestedRatio": 3.0009689934953077,
+        "contrastRequiredRatio": 3,
+        "contrastIsLargeText": true,
+        "contrastTextSample": "View Meetings & Agendas",
+        "backendNodeId": 101564,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
       "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"Air Pollution Control Hearing Board\"",
       "selector": "li",
       "elementHtml": "<li>Air Pollution Control Hearing Board</li>",
-      "discoveredAt": "2026-04-09T16:24:01.342Z",
+      "discoveredAt": "2026-04-10T04:37:24.706Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1219",
       "metadata": {
         "contrastForeground": "#ffffff",
@@ -86,7 +225,7 @@
         "contrastRequiredRatio": 4.5,
         "contrastIsLargeText": false,
         "contrastTextSample": "Air Pollution Control Hearing Board",
-        "backendNodeId": 102300,
+        "backendNodeId": 100797,
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
         "provenanceSources": [
           {
@@ -122,7 +261,7 @@
       "description": "Insufficient color contrast: 1.40:1 (required: 4.5:1 for normal text). Foreground: rgb(150, 56, 33), background: rgb(114, 41, 34). Text: \"County Commission Agendas\"",
       "selector": "a",
       "elementHtml": "<a href=\"https://clark.legistar.com/Calendar.aspx\" title=\"County Commission Agendas\" target=\"_blank\">County Commission Agendas</a>",
-      "discoveredAt": "2026-04-09T16:24:01.342Z",
+      "discoveredAt": "2026-04-10T04:37:24.706Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1219",
       "metadata": {
         "contrastForeground": "#963821",
@@ -133,7 +272,7 @@
         "contrastRequiredRatio": 4.5,
         "contrastIsLargeText": false,
         "contrastTextSample": "County Commission Agendas",
-        "backendNodeId": 102764,
+        "backendNodeId": 101261,
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
         "provenanceSources": [
           {
@@ -504,145 +643,6 @@
             "lens": "sonde-a11y",
             "probe": "color-contrast"
           },
-          {
-            "lens": "sonde-a11y",
-            "probe": "color-contrast"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "color-contrast"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "color-contrast"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "color-contrast"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "color-contrast"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "color-contrast"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "color-contrast"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "color-contrast"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "color-contrast"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "color-contrast"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "color-contrast"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "color-contrast"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "color-contrast"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "color-contrast"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "color-contrast"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "color-contrast"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "color-contrast"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "color-contrast"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "color-contrast"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "color-contrast"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "color-contrast"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "color-contrast"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "color-contrast"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "color-contrast"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "color-contrast"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-a11y"
-        ],
-        "standards": [
-          "WCAG 1.4.3"
-        ]
-      },
-      "detectedBy": [
-        "sonde-a11y"
-      ],
-      "standards": [
-        "WCAG 1.4.3"
-      ]
-    },
-    {
-      "probe": "color-contrast",
-      "standard": "WCAG 1.4.3",
-      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
-      "conformanceLevel": "AA",
-      "severity": "critical",
-      "description": "Insufficient color contrast: 1.40:1 (required: 3:1 for large text). Foreground: rgb(150, 56, 33), background: rgb(114, 41, 34). Text: \"View Meetings & Agendas\"",
-      "selector": "h2.tertiary-list-header",
-      "elementHtml": "<h2 class=\"tertiary-list-header\">View Meetings &amp; Agendas</h2>",
-      "discoveredAt": "2026-04-09T16:24:01.342Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1219",
-      "metadata": {
-        "contrastForeground": "#963821",
-        "contrastBackground": "#722922",
-        "contrastSuggestedForeground": "#d96b50",
-        "contrastRatio": 1.403102978233911,
-        "contrastSuggestedRatio": 3.0009689934953077,
-        "contrastRequiredRatio": 3,
-        "contrastIsLargeText": true,
-        "contrastTextSample": "View Meetings & Agendas",
-        "backendNodeId": 103067,
-        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
-        "provenanceSources": [
           {
             "lens": "sonde-a11y",
             "probe": "color-contrast"
@@ -768,7 +768,7 @@
       "description": "Insufficient color contrast: 1.00:1 (required: 3:1 for large text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"Air Pollution Control Hearing Board\"",
       "selector": "h1.page-title",
       "elementHtml": "<h1 class=\"page-title\">Air Pollution Control Hearing Board</h1>",
-      "discoveredAt": "2026-04-09T16:24:01.342Z",
+      "discoveredAt": "2026-04-10T04:37:24.706Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1219",
       "metadata": {
         "contrastForeground": "#ffffff",
@@ -779,7 +779,7 @@
         "contrastRequiredRatio": 3,
         "contrastIsLargeText": true,
         "contrastTextSample": "Air Pollution Control Hearing Board",
-        "backendNodeId": 102025,
+        "backendNodeId": 99160,
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
         "provenanceSources": [
           {
@@ -807,6 +807,213 @@
       ]
     },
     {
+      "probe": "axe-core",
+      "standard": "WCAG 2.5.8",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "All touch targets must be 24px large, or leave sufficient space: Fix any of the following:\n  Target has insufficient size (89.9px by 22.1px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.4px instead of at least 24px.",
+      "selector": ".desktop > .breadcrumbs > ul > li:nth-child(2) > a",
+      "elementHtml": "<a href=\"https://www.clarkcountynv.gov/government/\">Government</a>",
+      "discoveredAt": "2026-04-10T04:33:57.614Z",
+      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r105",
+      "metadata": {
+        "backendNodeId": 24829,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 2.5.8"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 2.5.8"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 2.5.8",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "All touch targets must be 24px large, or leave sufficient space: Fix any of the following:\n  Target has insufficient size (43.9px by 22.1px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22px instead of at least 24px.",
+      "selector": ".desktop > .breadcrumbs > ul > li:nth-child(1) > a[href$=\"clarkcountynv.gov/\"]",
+      "elementHtml": "<a href=\"https://www.clarkcountynv.gov/\">Home</a>",
+      "discoveredAt": "2026-04-10T04:33:57.614Z",
+      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r105",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 2.5.8"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 2.5.8"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 2.5.8",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "All touch targets must be 24px large, or leave sufficient space: Fix any of the following:\n  Target has insufficient size (89.9px by 22.1px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.4px instead of at least 24px.",
+      "selector": ".desktop > .breadcrumbs > ul > li:nth-child(2) > a",
+      "elementHtml": "<a href=\"https://www.clarkcountynv.gov/government/\">Government</a>",
+      "discoveredAt": "2026-04-10T04:34:52.996Z",
+      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r106",
+      "metadata": {
+        "backendNodeId": 39467,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 2.5.8"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 2.5.8"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 2.5.8",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "All touch targets must be 24px large, or leave sufficient space: Fix any of the following:\n  Target has insufficient size (43.9px by 22.1px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22px instead of at least 24px.",
+      "selector": ".desktop > .breadcrumbs > ul > li:nth-child(1) > a[href$=\"clarkcountynv.gov/\"]",
+      "elementHtml": "<a href=\"https://www.clarkcountynv.gov/\">Home</a>",
+      "discoveredAt": "2026-04-10T04:34:52.996Z",
+      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r106",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 2.5.8"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 2.5.8"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 2.5.8",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "All touch targets must be 24px large, or leave sufficient space: Fix any of the following:\n  Target has insufficient size (89.9px by 22.1px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.4px instead of at least 24px.",
+      "selector": ".desktop > .breadcrumbs > ul > li:nth-child(2) > a",
+      "elementHtml": "<a href=\"https://www.clarkcountynv.gov/government/\">Government</a>",
+      "discoveredAt": "2026-04-10T04:35:35.205Z",
+      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r117",
+      "metadata": {
+        "backendNodeId": 53771,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 2.5.8"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 2.5.8"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 2.5.8",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "All touch targets must be 24px large, or leave sufficient space: Fix any of the following:\n  Target has insufficient size (43.9px by 22.1px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22px instead of at least 24px.",
+      "selector": ".desktop > .breadcrumbs > ul > li:nth-child(1) > a[href$=\"clarkcountynv.gov/\"]",
+      "elementHtml": "<a href=\"https://www.clarkcountynv.gov/\">Home</a>",
+      "discoveredAt": "2026-04-10T04:35:35.205Z",
+      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r117",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 2.5.8"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 2.5.8"
+      ]
+    },
+    {
       "probe": "focus-order",
       "standard": "WCAG 2.4.3",
       "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
@@ -815,7 +1022,7 @@
       "description": "Focus jumps backward from \"Try Searching\" to \"Find My Commission District\" (visual distance: 548px). No explicit tabIndex — likely a DOM order issue.",
       "selector": "#tabpanel-find-my-commission-district",
       "elementHtml": "<div>Find My Commission District</div>",
-      "discoveredAt": "2026-04-09T16:20:19.661Z",
+      "discoveredAt": "2026-04-10T04:33:21.401Z",
       "pageUrl": "https://www.clarkcountynv.gov/",
       "metadata": {
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
@@ -853,10 +1060,45 @@
       "description": "Focus jumps backward from \"Accessibility Menu\" to \"Skip to main content\" (visual distance: 830px). No explicit tabIndex — likely a DOM order issue.",
       "selector": "a",
       "elementHtml": "<a>Skip to main content</a>",
-      "discoveredAt": "2026-04-09T16:21:15.434Z",
+      "discoveredAt": "2026-04-10T04:33:21.401Z",
+      "pageUrl": "https://www.clarkcountynv.gov/",
+      "metadata": {
+        "backendNodeId": 11170,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Accessibility Menu\" to \"Skip to main content\" (visual distance: 830px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "a",
+      "elementHtml": "<a>Skip to main content</a>",
+      "discoveredAt": "2026-04-10T04:34:37.157Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r105",
       "metadata": {
-        "backendNodeId": 27204,
+        "backendNodeId": 26453,
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
         "provenanceSources": [
           {
@@ -888,10 +1130,10 @@
       "description": "Focus jumps backward from \"Accessibility Menu\" to \"Skip to main content\" (visual distance: 830px). No explicit tabIndex — likely a DOM order issue.",
       "selector": "a",
       "elementHtml": "<a>Skip to main content</a>",
-      "discoveredAt": "2026-04-09T16:21:52.045Z",
+      "discoveredAt": "2026-04-10T04:35:19.419Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r106",
       "metadata": {
-        "backendNodeId": 42308,
+        "backendNodeId": 41576,
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
         "provenanceSources": [
           {
@@ -923,10 +1165,10 @@
       "description": "Focus jumps backward from \"Accessibility Menu\" to \"Skip to main content\" (visual distance: 830px). No explicit tabIndex — likely a DOM order issue.",
       "selector": "a",
       "elementHtml": "<a>Skip to main content</a>",
-      "discoveredAt": "2026-04-09T16:22:28.059Z",
+      "discoveredAt": "2026-04-10T04:35:56.348Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r117",
       "metadata": {
-        "backendNodeId": 57425,
+        "backendNodeId": 55901,
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
         "provenanceSources": [
           {
@@ -958,10 +1200,10 @@
       "description": "Focus jumps backward from \"Accessibility Menu\" to \"Skip to main content\" (visual distance: 830px). No explicit tabIndex — likely a DOM order issue.",
       "selector": "a",
       "elementHtml": "<a>Skip to main content</a>",
-      "discoveredAt": "2026-04-09T16:23:11.436Z",
+      "discoveredAt": "2026-04-10T04:36:34.361Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1214",
       "metadata": {
-        "backendNodeId": 72549,
+        "backendNodeId": 71010,
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
         "provenanceSources": [
           {
@@ -993,10 +1235,10 @@
       "description": "Focus jumps backward from \"Accessibility Menu\" to \"Skip to main content\" (visual distance: 830px). No explicit tabIndex — likely a DOM order issue.",
       "selector": "a",
       "elementHtml": "<a>Skip to main content</a>",
-      "discoveredAt": "2026-04-09T16:23:45.703Z",
+      "discoveredAt": "2026-04-10T04:37:09.022Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1216",
       "metadata": {
-        "backendNodeId": 87693,
+        "backendNodeId": 86154,
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
         "provenanceSources": [
           {
@@ -1028,45 +1270,10 @@
       "description": "Focus jumps backward from \"Accessibility Menu\" to \"Skip to main content\" (visual distance: 830px). No explicit tabIndex — likely a DOM order issue.",
       "selector": "a",
       "elementHtml": "<a>Skip to main content</a>",
-      "discoveredAt": "2026-04-09T16:24:22.305Z",
+      "discoveredAt": "2026-04-10T04:37:50.331Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1219",
       "metadata": {
-        "backendNodeId": 102764,
-        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
-        "provenanceSources": [
-          {
-            "lens": "sonde-a11y",
-            "probe": "focus-order"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-a11y"
-        ],
-        "standards": [
-          "WCAG 2.4.3"
-        ]
-      },
-      "detectedBy": [
-        "sonde-a11y"
-      ],
-      "standards": [
-        "WCAG 2.4.3"
-      ]
-    },
-    {
-      "probe": "focus-order",
-      "standard": "WCAG 2.4.3",
-      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
-      "conformanceLevel": "A",
-      "severity": "high",
-      "description": "Focus jumps backward from \"Accessibility Menu\" to \"Skip to main content\" (visual distance: 830px). No explicit tabIndex — likely a DOM order issue.",
-      "selector": "a",
-      "elementHtml": "<a>Skip to main content</a>",
-      "discoveredAt": "2026-04-09T16:24:57.544Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1221",
-      "metadata": {
-        "backendNodeId": 117895,
+        "backendNodeId": 101261,
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
         "provenanceSources": [
           {
@@ -1098,10 +1305,10 @@
       "description": "Page has no detectable navigation mechanisms (no <nav>, search, sitemap link, breadcrumbs, or table of contents). Users need multiple ways to locate content.",
       "selector": "html",
       "elementHtml": "",
-      "discoveredAt": "2026-04-09T16:20:12.634Z",
+      "discoveredAt": "2026-04-10T04:33:11.055Z",
       "pageUrl": "https://www.clarkcountynv.gov/",
       "metadata": {
-        "backendNodeId": 8951,
+        "backendNodeId": 7848,
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
         "provenanceSources": [
           {
@@ -1130,7 +1337,7 @@
       "description": "Missing X-Frame-Options header",
       "selector": "",
       "elementHtml": "",
-      "discoveredAt": "2026-04-09T16:20:12.587Z",
+      "discoveredAt": "2026-04-10T04:33:11.009Z",
       "pageUrl": "https://www.clarkcountynv.gov/",
       "metadata": {
         "provenanceSources": [
@@ -1162,7 +1369,7 @@
       "description": "Missing X-Frame-Options header",
       "selector": "",
       "elementHtml": "",
-      "discoveredAt": "2026-04-09T16:20:54.712Z",
+      "discoveredAt": "2026-04-10T04:33:57.462Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r105",
       "metadata": {
         "provenanceSources": [
@@ -1194,7 +1401,7 @@
       "description": "Missing X-Frame-Options header",
       "selector": "",
       "elementHtml": "",
-      "discoveredAt": "2026-04-09T16:21:31.068Z",
+      "discoveredAt": "2026-04-10T04:34:52.854Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r106",
       "metadata": {
         "provenanceSources": [
@@ -1226,7 +1433,7 @@
       "description": "Missing X-Frame-Options header",
       "selector": "",
       "elementHtml": "",
-      "discoveredAt": "2026-04-09T16:22:07.636Z",
+      "discoveredAt": "2026-04-10T04:35:35.062Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r117",
       "metadata": {
         "provenanceSources": [
@@ -1258,7 +1465,7 @@
       "description": "Missing X-Frame-Options header",
       "selector": "",
       "elementHtml": "",
-      "discoveredAt": "2026-04-09T16:22:43.609Z",
+      "discoveredAt": "2026-04-10T04:36:11.953Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1214",
       "metadata": {
         "provenanceSources": [
@@ -1290,7 +1497,7 @@
       "description": "Missing X-Frame-Options header",
       "selector": "",
       "elementHtml": "",
-      "discoveredAt": "2026-04-09T16:23:27.005Z",
+      "discoveredAt": "2026-04-10T04:36:50.000Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1216",
       "metadata": {
         "provenanceSources": [
@@ -1322,7 +1529,7 @@
       "description": "Missing X-Frame-Options header",
       "selector": "",
       "elementHtml": "",
-      "discoveredAt": "2026-04-09T16:24:01.292Z",
+      "discoveredAt": "2026-04-10T04:37:24.656Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1219",
       "metadata": {
         "provenanceSources": [
@@ -1349,26 +1556,19 @@
       ]
     },
     {
-      "probe": "security-headers",
-      "severity": "high",
-      "description": "Missing X-Frame-Options header",
-      "selector": "",
-      "elementHtml": "",
-      "discoveredAt": "2026-04-09T16:24:37.894Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1221",
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Link timeout: http://www.clarkcountycourts.us/departments/judicial/family-division/ did not respond within 5000ms",
+      "selector": "#nav > div:nth-of-type(2) > div > ul > li:nth-of-type(3) > div > div > div:nth-of-type(2) > ul > li:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"http://www.clarkcountycourts.us/departments/judicial/family-division/\">Family Court</a>",
+      "discoveredAt": "2026-04-10T04:34:34.450Z",
+      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r105",
       "metadata": {
+        "backendNodeId": 26215,
         "provenanceSources": [
           {
             "lens": "sonde-general",
-            "probe": "security-headers"
-          },
-          {
-            "lens": "sonde-general",
-            "probe": "security-headers"
-          },
-          {
-            "lens": "sonde-general",
-            "probe": "security-headers"
+            "probe": "link-integrity"
           }
         ],
         "provenanceConfidence": "medium",
@@ -1386,10 +1586,35 @@
       "description": "Unreachable link: https://files.clarkcountynv.gov/clarkcounty/Election%20Department/2024/2024-Dates.pdf — fetch failed",
       "selector": "#nav > div:nth-of-type(2) > div > ul > li:nth-of-type(3) > div > div > div:nth-of-type(2) > ul > li:nth-of-type(4) > div:nth-of-type(2) > ul > li:nth-of-type(4) > a",
       "elementHtml": "<a href=\"https://files.clarkcountynv.gov/clarkcounty/Election%20Department/2024/2024-Dates.pdf\">Important Dates</a>",
-      "discoveredAt": "2026-04-09T16:21:12.691Z",
+      "discoveredAt": "2026-04-10T04:34:34.450Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r105",
       "metadata": {
-        "backendNodeId": 26992,
+        "backendNodeId": 26241,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://twitter.com/ClarkCountyNV returns 403 Forbidden",
+      "selector": "footer > div > div:nth-of-type(2) > div > div:nth-of-type(3) > div > ul:nth-of-type(1) > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://twitter.com/ClarkCountyNV\"></a>",
+      "discoveredAt": "2026-04-10T04:34:34.450Z",
+      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r105",
+      "metadata": {
+        "backendNodeId": 27781,
         "provenanceSources": [
           {
             "lens": "sonde-general",
@@ -1411,10 +1636,10 @@
       "description": "Link timeout: http://www.clarkcountycourts.us/departments/judicial/family-division/ did not respond within 5000ms",
       "selector": "#nav > div:nth-of-type(2) > div > ul > li:nth-of-type(3) > div > div > div:nth-of-type(2) > ul > li:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
       "elementHtml": "<a href=\"http://www.clarkcountycourts.us/departments/judicial/family-division/\">Family Court</a>",
-      "discoveredAt": "2026-04-09T16:21:12.691Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r105",
+      "discoveredAt": "2026-04-10T04:35:16.615Z",
+      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r106",
       "metadata": {
-        "backendNodeId": 26966,
+        "backendNodeId": 41338,
         "provenanceSources": [
           {
             "lens": "sonde-general",
@@ -1436,60 +1661,10 @@
       "description": "Broken link: https://twitter.com/ClarkCountyNV returns 403 Forbidden",
       "selector": "footer > div > div:nth-of-type(2) > div > div:nth-of-type(3) > div > ul:nth-of-type(1) > li:nth-of-type(1) > a",
       "elementHtml": "<a href=\"https://twitter.com/ClarkCountyNV\"></a>",
-      "discoveredAt": "2026-04-09T16:21:12.691Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r105",
-      "metadata": {
-        "backendNodeId": 28511,
-        "provenanceSources": [
-          {
-            "lens": "sonde-general",
-            "probe": "link-integrity"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-general"
-        ]
-      },
-      "detectedBy": [
-        "sonde-general"
-      ]
-    },
-    {
-      "probe": "link-integrity",
-      "severity": "low",
-      "description": "Link timeout: http://www.clarkcountycourts.us/departments/judicial/family-division/ did not respond within 5000ms",
-      "selector": "#nav > div:nth-of-type(2) > div > ul > li:nth-of-type(3) > div > div > div:nth-of-type(2) > ul > li:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
-      "elementHtml": "<a href=\"http://www.clarkcountycourts.us/departments/judicial/family-division/\">Family Court</a>",
-      "discoveredAt": "2026-04-09T16:21:49.246Z",
+      "discoveredAt": "2026-04-10T04:35:16.615Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r106",
       "metadata": {
-        "backendNodeId": 42070,
-        "provenanceSources": [
-          {
-            "lens": "sonde-general",
-            "probe": "link-integrity"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-general"
-        ]
-      },
-      "detectedBy": [
-        "sonde-general"
-      ]
-    },
-    {
-      "probe": "link-integrity",
-      "severity": "low",
-      "description": "Broken link: https://twitter.com/ClarkCountyNV returns 403 Forbidden",
-      "selector": "footer > div > div:nth-of-type(2) > div > div:nth-of-type(3) > div > ul:nth-of-type(1) > li:nth-of-type(1) > a",
-      "elementHtml": "<a href=\"https://twitter.com/ClarkCountyNV\"></a>",
-      "discoveredAt": "2026-04-09T16:21:49.246Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r106",
-      "metadata": {
-        "backendNodeId": 43636,
+        "backendNodeId": 42904,
         "provenanceSources": [
           {
             "lens": "sonde-general",
@@ -1511,60 +1686,10 @@
       "description": "Unreachable link: https://files.clarkcountynv.gov/clarkcounty/Election%20Department/2024/2024-Dates.pdf — fetch failed",
       "selector": "#nav > div:nth-of-type(2) > div > ul > li:nth-of-type(3) > div > div > div:nth-of-type(2) > ul > li:nth-of-type(4) > div:nth-of-type(2) > ul > li:nth-of-type(4) > a",
       "elementHtml": "<a href=\"https://files.clarkcountynv.gov/clarkcounty/Election%20Department/2024/2024-Dates.pdf\">Important Dates</a>",
-      "discoveredAt": "2026-04-09T16:21:49.246Z",
+      "discoveredAt": "2026-04-10T04:35:16.615Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r106",
       "metadata": {
-        "backendNodeId": 42096,
-        "provenanceSources": [
-          {
-            "lens": "sonde-general",
-            "probe": "link-integrity"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-general"
-        ]
-      },
-      "detectedBy": [
-        "sonde-general"
-      ]
-    },
-    {
-      "probe": "link-integrity",
-      "severity": "low",
-      "description": "Unreachable link: https://files.clarkcountynv.gov/clarkcounty/Election%20Department/2024/2024-Dates.pdf — fetch failed",
-      "selector": "#nav > div:nth-of-type(2) > div > ul > li:nth-of-type(3) > div > div > div:nth-of-type(2) > ul > li:nth-of-type(4) > div:nth-of-type(2) > ul > li:nth-of-type(4) > a",
-      "elementHtml": "<a href=\"https://files.clarkcountynv.gov/clarkcounty/Election%20Department/2024/2024-Dates.pdf\">Important Dates</a>",
-      "discoveredAt": "2026-04-09T16:22:25.324Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r117",
-      "metadata": {
-        "backendNodeId": 57213,
-        "provenanceSources": [
-          {
-            "lens": "sonde-general",
-            "probe": "link-integrity"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-general"
-        ]
-      },
-      "detectedBy": [
-        "sonde-general"
-      ]
-    },
-    {
-      "probe": "link-integrity",
-      "severity": "low",
-      "description": "Broken link: https://twitter.com/ClarkCountyNV returns 403 Forbidden",
-      "selector": "footer > div > div:nth-of-type(2) > div > div:nth-of-type(3) > div > ul:nth-of-type(1) > li:nth-of-type(1) > a",
-      "elementHtml": "<a href=\"https://twitter.com/ClarkCountyNV\"></a>",
-      "discoveredAt": "2026-04-09T16:22:25.324Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r117",
-      "metadata": {
-        "backendNodeId": 58753,
+        "backendNodeId": 41364,
         "provenanceSources": [
           {
             "lens": "sonde-general",
@@ -1586,613 +1711,338 @@
       "description": "Link timeout: https://www.clarkcountycourts.us/ did not respond within 5000ms",
       "selector": "#nav > div:nth-of-type(2) > div > ul > li:nth-of-type(3) > div > div > div:nth-of-type(2) > ul > li:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
       "elementHtml": "<a href=\"https://www.clarkcountycourts.us/\">District Court</a>",
-      "discoveredAt": "2026-04-09T16:22:25.324Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r117",
-      "metadata": {
-        "backendNodeId": 57185,
-        "provenanceSources": [
-          {
-            "lens": "sonde-general",
-            "probe": "link-integrity"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-general"
-        ]
-      },
-      "detectedBy": [
-        "sonde-general"
-      ]
-    },
-    {
-      "probe": "link-integrity",
-      "severity": "low",
-      "description": "Link timeout: http://www.clarkcountycourts.us/departments/judicial/family-division/ did not respond within 5000ms",
-      "selector": "#nav > div:nth-of-type(2) > div > ul > li:nth-of-type(3) > div > div > div:nth-of-type(2) > ul > li:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
-      "elementHtml": "<a href=\"http://www.clarkcountycourts.us/departments/judicial/family-division/\">Family Court</a>",
-      "discoveredAt": "2026-04-09T16:22:25.324Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r117",
-      "metadata": {
-        "backendNodeId": 57187,
-        "provenanceSources": [
-          {
-            "lens": "sonde-general",
-            "probe": "link-integrity"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-general"
-        ]
-      },
-      "detectedBy": [
-        "sonde-general"
-      ]
-    },
-    {
-      "probe": "link-integrity",
-      "severity": "low",
-      "description": "Broken link: https://twitter.com/ClarkCountyNV returns 403 Forbidden",
-      "selector": "footer > div > div:nth-of-type(2) > div > div:nth-of-type(3) > div > ul:nth-of-type(1) > li:nth-of-type(1) > a",
-      "elementHtml": "<a href=\"https://twitter.com/ClarkCountyNV\"></a>",
-      "discoveredAt": "2026-04-09T16:23:08.698Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1214",
-      "metadata": {
-        "backendNodeId": 73877,
-        "provenanceSources": [
-          {
-            "lens": "sonde-general",
-            "probe": "link-integrity"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-general"
-        ]
-      },
-      "detectedBy": [
-        "sonde-general"
-      ]
-    },
-    {
-      "probe": "link-integrity",
-      "severity": "low",
-      "description": "Link timeout: http://www.clarkcountycourts.us/departments/judicial/family-division/ did not respond within 5000ms",
-      "selector": "#nav > div:nth-of-type(2) > div > ul > li:nth-of-type(3) > div > div > div:nth-of-type(2) > ul > li:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
-      "elementHtml": "<a href=\"http://www.clarkcountycourts.us/departments/judicial/family-division/\">Family Court</a>",
-      "discoveredAt": "2026-04-09T16:23:08.698Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1214",
-      "metadata": {
-        "backendNodeId": 72311,
-        "provenanceSources": [
-          {
-            "lens": "sonde-general",
-            "probe": "link-integrity"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-general"
-        ]
-      },
-      "detectedBy": [
-        "sonde-general"
-      ]
-    },
-    {
-      "probe": "link-integrity",
-      "severity": "low",
-      "description": "Link timeout: https://www.clarkcountycourts.us/ did not respond within 5000ms",
-      "selector": "#nav > div:nth-of-type(2) > div > ul > li:nth-of-type(3) > div > div > div:nth-of-type(2) > ul > li:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
-      "elementHtml": "<a href=\"https://www.clarkcountycourts.us/\">District Court</a>",
-      "discoveredAt": "2026-04-09T16:23:08.698Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1214",
-      "metadata": {
-        "backendNodeId": 72309,
-        "provenanceSources": [
-          {
-            "lens": "sonde-general",
-            "probe": "link-integrity"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-general"
-        ]
-      },
-      "detectedBy": [
-        "sonde-general"
-      ]
-    },
-    {
-      "probe": "link-integrity",
-      "severity": "low",
-      "description": "Unreachable link: https://files.clarkcountynv.gov/clarkcounty/Election%20Department/2024/2024-Dates.pdf — fetch failed",
-      "selector": "#nav > div:nth-of-type(2) > div > ul > li:nth-of-type(3) > div > div > div:nth-of-type(2) > ul > li:nth-of-type(4) > div:nth-of-type(2) > ul > li:nth-of-type(4) > a",
-      "elementHtml": "<a href=\"https://files.clarkcountynv.gov/clarkcounty/Election%20Department/2024/2024-Dates.pdf\">Important Dates</a>",
-      "discoveredAt": "2026-04-09T16:23:08.698Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1214",
-      "metadata": {
-        "backendNodeId": 72337,
-        "provenanceSources": [
-          {
-            "lens": "sonde-general",
-            "probe": "link-integrity"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-general"
-        ]
-      },
-      "detectedBy": [
-        "sonde-general"
-      ]
-    },
-    {
-      "probe": "link-integrity",
-      "severity": "low",
-      "description": "Broken link: https://twitter.com/ClarkCountyNV returns 403 Forbidden",
-      "selector": "footer > div > div:nth-of-type(2) > div > div:nth-of-type(3) > div > ul:nth-of-type(1) > li:nth-of-type(1) > a",
-      "elementHtml": "<a href=\"https://twitter.com/ClarkCountyNV\"></a>",
-      "discoveredAt": "2026-04-09T16:23:43.071Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1216",
-      "metadata": {
-        "backendNodeId": 89000,
-        "provenanceSources": [
-          {
-            "lens": "sonde-general",
-            "probe": "link-integrity"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-general"
-        ]
-      },
-      "detectedBy": [
-        "sonde-general"
-      ]
-    },
-    {
-      "probe": "link-integrity",
-      "severity": "low",
-      "description": "Link timeout: https://www.clarkcountycourts.us/ did not respond within 5000ms",
-      "selector": "#nav > div:nth-of-type(2) > div > ul > li:nth-of-type(3) > div > div > div:nth-of-type(2) > ul > li:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
-      "elementHtml": "<a href=\"https://www.clarkcountycourts.us/\">District Court</a>",
-      "discoveredAt": "2026-04-09T16:23:43.071Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1216",
-      "metadata": {
-        "backendNodeId": 87453,
-        "provenanceSources": [
-          {
-            "lens": "sonde-general",
-            "probe": "link-integrity"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-general"
-        ]
-      },
-      "detectedBy": [
-        "sonde-general"
-      ]
-    },
-    {
-      "probe": "link-integrity",
-      "severity": "low",
-      "description": "Unreachable link: https://files.clarkcountynv.gov/clarkcounty/Election%20Department/2024/2024-Dates.pdf — fetch failed",
-      "selector": "#nav > div:nth-of-type(2) > div > ul > li:nth-of-type(3) > div > div > div:nth-of-type(2) > ul > li:nth-of-type(4) > div:nth-of-type(2) > ul > li:nth-of-type(4) > a",
-      "elementHtml": "<a href=\"https://files.clarkcountynv.gov/clarkcounty/Election%20Department/2024/2024-Dates.pdf\">Important Dates</a>",
-      "discoveredAt": "2026-04-09T16:23:43.071Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1216",
-      "metadata": {
-        "backendNodeId": 87481,
-        "provenanceSources": [
-          {
-            "lens": "sonde-general",
-            "probe": "link-integrity"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-general"
-        ]
-      },
-      "detectedBy": [
-        "sonde-general"
-      ]
-    },
-    {
-      "probe": "link-integrity",
-      "severity": "low",
-      "description": "Link timeout: http://www.clarkcountycourts.us/departments/judicial/family-division/ did not respond within 5000ms",
-      "selector": "#nav > div:nth-of-type(2) > div > ul > li:nth-of-type(3) > div > div > div:nth-of-type(2) > ul > li:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
-      "elementHtml": "<a href=\"http://www.clarkcountycourts.us/departments/judicial/family-division/\">Family Court</a>",
-      "discoveredAt": "2026-04-09T16:23:43.071Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1216",
-      "metadata": {
-        "backendNodeId": 87455,
-        "provenanceSources": [
-          {
-            "lens": "sonde-general",
-            "probe": "link-integrity"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-general"
-        ]
-      },
-      "detectedBy": [
-        "sonde-general"
-      ]
-    },
-    {
-      "probe": "link-integrity",
-      "severity": "low",
-      "description": "Broken link: https://twitter.com/ClarkCountyNV returns 403 Forbidden",
-      "selector": "footer > div > div:nth-of-type(2) > div > div:nth-of-type(3) > div > ul:nth-of-type(1) > li:nth-of-type(1) > a",
-      "elementHtml": "<a href=\"https://twitter.com/ClarkCountyNV\"></a>",
-      "discoveredAt": "2026-04-09T16:24:19.502Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1219",
-      "metadata": {
-        "backendNodeId": 104092,
-        "provenanceSources": [
-          {
-            "lens": "sonde-general",
-            "probe": "link-integrity"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-general"
-        ]
-      },
-      "detectedBy": [
-        "sonde-general"
-      ]
-    },
-    {
-      "probe": "link-integrity",
-      "severity": "low",
-      "description": "Unreachable link: https://files.clarkcountynv.gov/clarkcounty/Election%20Department/2024/2024-Dates.pdf — fetch failed",
-      "selector": "#nav > div:nth-of-type(2) > div > ul > li:nth-of-type(3) > div > div > div:nth-of-type(2) > ul > li:nth-of-type(4) > div:nth-of-type(2) > ul > li:nth-of-type(4) > a",
-      "elementHtml": "<a href=\"https://files.clarkcountynv.gov/clarkcounty/Election%20Department/2024/2024-Dates.pdf\">Important Dates</a>",
-      "discoveredAt": "2026-04-09T16:24:19.502Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1219",
-      "metadata": {
-        "backendNodeId": 102552,
-        "provenanceSources": [
-          {
-            "lens": "sonde-general",
-            "probe": "link-integrity"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-general"
-        ]
-      },
-      "detectedBy": [
-        "sonde-general"
-      ]
-    },
-    {
-      "probe": "link-integrity",
-      "severity": "low",
-      "description": "Link timeout: https://www.clarkcountycourts.us/ did not respond within 5000ms",
-      "selector": "#nav > div:nth-of-type(2) > div > ul > li:nth-of-type(3) > div > div > div:nth-of-type(2) > ul > li:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
-      "elementHtml": "<a href=\"https://www.clarkcountycourts.us/\">District Court</a>",
-      "discoveredAt": "2026-04-09T16:24:19.502Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1219",
-      "metadata": {
-        "backendNodeId": 102524,
-        "provenanceSources": [
-          {
-            "lens": "sonde-general",
-            "probe": "link-integrity"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-general"
-        ]
-      },
-      "detectedBy": [
-        "sonde-general"
-      ]
-    },
-    {
-      "probe": "link-integrity",
-      "severity": "low",
-      "description": "Link timeout: http://www.clarkcountycourts.us/departments/judicial/family-division/ did not respond within 5000ms",
-      "selector": "#nav > div:nth-of-type(2) > div > ul > li:nth-of-type(3) > div > div > div:nth-of-type(2) > ul > li:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
-      "elementHtml": "<a href=\"http://www.clarkcountycourts.us/departments/judicial/family-division/\">Family Court</a>",
-      "discoveredAt": "2026-04-09T16:24:19.502Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1219",
-      "metadata": {
-        "backendNodeId": 102526,
-        "provenanceSources": [
-          {
-            "lens": "sonde-general",
-            "probe": "link-integrity"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-general"
-        ]
-      },
-      "detectedBy": [
-        "sonde-general"
-      ]
-    },
-    {
-      "probe": "link-integrity",
-      "severity": "low",
-      "description": "Broken link: https://twitter.com/ClarkCountyNV returns 403 Forbidden",
-      "selector": "footer > div > div:nth-of-type(2) > div > div:nth-of-type(3) > div > ul:nth-of-type(1) > li:nth-of-type(1) > a",
-      "elementHtml": "<a href=\"https://twitter.com/ClarkCountyNV\"></a>",
-      "discoveredAt": "2026-04-09T16:24:54.873Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1221",
-      "metadata": {
-        "backendNodeId": 119223,
-        "provenanceSources": [
-          {
-            "lens": "sonde-general",
-            "probe": "link-integrity"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-general"
-        ]
-      },
-      "detectedBy": [
-        "sonde-general"
-      ]
-    },
-    {
-      "probe": "link-integrity",
-      "severity": "low",
-      "description": "Unreachable link: https://files.clarkcountynv.gov/clarkcounty/Election%20Department/2024/2024-Dates.pdf — fetch failed",
-      "selector": "#nav > div:nth-of-type(2) > div > ul > li:nth-of-type(3) > div > div > div:nth-of-type(2) > ul > li:nth-of-type(4) > div:nth-of-type(2) > ul > li:nth-of-type(4) > a",
-      "elementHtml": "<a href=\"https://files.clarkcountynv.gov/clarkcounty/Election%20Department/2024/2024-Dates.pdf\">Important Dates</a>",
-      "discoveredAt": "2026-04-09T16:24:54.873Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1221",
-      "metadata": {
-        "backendNodeId": 117683,
-        "provenanceSources": [
-          {
-            "lens": "sonde-general",
-            "probe": "link-integrity"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-general"
-        ]
-      },
-      "detectedBy": [
-        "sonde-general"
-      ]
-    },
-    {
-      "probe": "link-integrity",
-      "severity": "low",
-      "description": "Link timeout: http://www.clarkcountycourts.us/departments/judicial/family-division/ did not respond within 5000ms",
-      "selector": "#nav > div:nth-of-type(2) > div > ul > li:nth-of-type(3) > div > div > div:nth-of-type(2) > ul > li:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
-      "elementHtml": "<a href=\"http://www.clarkcountycourts.us/departments/judicial/family-division/\">Family Court</a>",
-      "discoveredAt": "2026-04-09T16:24:54.873Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1221",
-      "metadata": {
-        "backendNodeId": 117657,
-        "provenanceSources": [
-          {
-            "lens": "sonde-general",
-            "probe": "link-integrity"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-general"
-        ]
-      },
-      "detectedBy": [
-        "sonde-general"
-      ]
-    },
-    {
-      "probe": "a11y-tree",
-      "standard": "WCAG 1.3.1",
-      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
-      "conformanceLevel": "A",
-      "severity": "medium",
-      "description": "Page has 3 \"navigation\" landmarks but only 0 have distinct labels. Screen reader users cannot distinguish between them.",
-      "selector": "[role=\"navigation\"]",
-      "elementHtml": "<!-- 3 navigation landmarks, 0 labeled -->",
-      "discoveredAt": "2026-04-09T16:20:54.857Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r105",
-      "metadata": {
-        "backendNodeId": 26738,
-        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
-        "provenanceSources": [
-          {
-            "lens": "browser-a11y",
-            "probe": "a11y-tree"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "browser-a11y"
-        ],
-        "standards": [
-          "WCAG 1.3.1"
-        ]
-      },
-      "detectedBy": [
-        "browser-a11y"
-      ],
-      "standards": [
-        "WCAG 1.3.1"
-      ]
-    },
-    {
-      "probe": "a11y-tree",
-      "standard": "WCAG 1.3.1",
-      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
-      "conformanceLevel": "A",
-      "severity": "medium",
-      "description": "Page has 3 \"navigation\" landmarks but only 0 have distinct labels. Screen reader users cannot distinguish between them.",
-      "selector": "[role=\"navigation\"]",
-      "elementHtml": "<!-- 3 navigation landmarks, 0 labeled -->",
-      "discoveredAt": "2026-04-09T16:21:31.203Z",
+      "discoveredAt": "2026-04-10T04:35:16.615Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r106",
       "metadata": {
-        "backendNodeId": 41842,
-        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+        "backendNodeId": 41336,
         "provenanceSources": [
           {
-            "lens": "browser-a11y",
-            "probe": "a11y-tree"
+            "lens": "sonde-general",
+            "probe": "link-integrity"
           }
         ],
         "provenanceConfidence": "medium",
         "detectedBy": [
-          "browser-a11y"
-        ],
-        "standards": [
-          "WCAG 1.3.1"
+          "sonde-general"
         ]
       },
       "detectedBy": [
-        "browser-a11y"
-      ],
-      "standards": [
-        "WCAG 1.3.1"
+        "sonde-general"
       ]
     },
     {
-      "probe": "a11y-tree",
-      "standard": "WCAG 1.3.1",
-      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
-      "conformanceLevel": "A",
-      "severity": "medium",
-      "description": "Page has 3 \"navigation\" landmarks but only 0 have distinct labels. Screen reader users cannot distinguish between them.",
-      "selector": "[role=\"navigation\"]",
-      "elementHtml": "<!-- 3 navigation landmarks, 0 labeled -->",
-      "discoveredAt": "2026-04-09T16:22:07.765Z",
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Unreachable link: https://files.clarkcountynv.gov/clarkcounty/Election%20Department/2024/2024-Dates.pdf — fetch failed",
+      "selector": "#nav > div:nth-of-type(2) > div > ul > li:nth-of-type(3) > div > div > div:nth-of-type(2) > ul > li:nth-of-type(4) > div:nth-of-type(2) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://files.clarkcountynv.gov/clarkcounty/Election%20Department/2024/2024-Dates.pdf\">Important Dates</a>",
+      "discoveredAt": "2026-04-10T04:35:53.594Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r117",
       "metadata": {
-        "backendNodeId": 56959,
-        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+        "backendNodeId": 55689,
         "provenanceSources": [
           {
-            "lens": "browser-a11y",
-            "probe": "a11y-tree"
+            "lens": "sonde-general",
+            "probe": "link-integrity"
           }
         ],
         "provenanceConfidence": "medium",
         "detectedBy": [
-          "browser-a11y"
-        ],
-        "standards": [
-          "WCAG 1.3.1"
+          "sonde-general"
         ]
       },
       "detectedBy": [
-        "browser-a11y"
-      ],
-      "standards": [
-        "WCAG 1.3.1"
+        "sonde-general"
       ]
     },
     {
-      "probe": "a11y-tree",
-      "standard": "WCAG 1.3.1",
-      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
-      "conformanceLevel": "A",
-      "severity": "medium",
-      "description": "Page has 3 \"navigation\" landmarks but only 0 have distinct labels. Screen reader users cannot distinguish between them.",
-      "selector": "[role=\"navigation\"]",
-      "elementHtml": "<!-- 3 navigation landmarks, 0 labeled -->",
-      "discoveredAt": "2026-04-09T16:22:43.735Z",
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Link timeout: http://www.clarkcountycourts.us/departments/judicial/family-division/ did not respond within 5000ms",
+      "selector": "#nav > div:nth-of-type(2) > div > ul > li:nth-of-type(3) > div > div > div:nth-of-type(2) > ul > li:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"http://www.clarkcountycourts.us/departments/judicial/family-division/\">Family Court</a>",
+      "discoveredAt": "2026-04-10T04:35:53.594Z",
+      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r117",
+      "metadata": {
+        "backendNodeId": 55663,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://twitter.com/ClarkCountyNV returns 403 Forbidden",
+      "selector": "footer > div > div:nth-of-type(2) > div > div:nth-of-type(3) > div > ul:nth-of-type(1) > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://twitter.com/ClarkCountyNV\"></a>",
+      "discoveredAt": "2026-04-10T04:35:53.594Z",
+      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r117",
+      "metadata": {
+        "backendNodeId": 57208,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Unreachable link: https://files.clarkcountynv.gov/clarkcounty/Election%20Department/2024/2024-Dates.pdf — fetch failed",
+      "selector": "#nav > div:nth-of-type(2) > div > ul > li:nth-of-type(3) > div > div > div:nth-of-type(2) > ul > li:nth-of-type(4) > div:nth-of-type(2) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://files.clarkcountynv.gov/clarkcounty/Election%20Department/2024/2024-Dates.pdf\">Important Dates</a>",
+      "discoveredAt": "2026-04-10T04:36:31.618Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1214",
       "metadata": {
-        "backendNodeId": 72083,
-        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+        "backendNodeId": 70798,
         "provenanceSources": [
           {
-            "lens": "browser-a11y",
-            "probe": "a11y-tree"
+            "lens": "sonde-general",
+            "probe": "link-integrity"
           }
         ],
         "provenanceConfidence": "medium",
         "detectedBy": [
-          "browser-a11y"
-        ],
-        "standards": [
-          "WCAG 1.3.1"
+          "sonde-general"
         ]
       },
       "detectedBy": [
-        "browser-a11y"
-      ],
-      "standards": [
-        "WCAG 1.3.1"
+        "sonde-general"
       ]
     },
     {
-      "probe": "a11y-tree",
-      "standard": "WCAG 1.3.1",
-      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
-      "conformanceLevel": "A",
-      "severity": "medium",
-      "description": "Page has 3 \"navigation\" landmarks but only 0 have distinct labels. Screen reader users cannot distinguish between them.",
-      "selector": "[role=\"navigation\"]",
-      "elementHtml": "<!-- 3 navigation landmarks, 0 labeled -->",
-      "discoveredAt": "2026-04-09T16:23:27.134Z",
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://twitter.com/ClarkCountyNV returns 403 Forbidden",
+      "selector": "footer > div > div:nth-of-type(2) > div > div:nth-of-type(3) > div > ul:nth-of-type(1) > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://twitter.com/ClarkCountyNV\"></a>",
+      "discoveredAt": "2026-04-10T04:36:31.618Z",
+      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1214",
+      "metadata": {
+        "backendNodeId": 72338,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Link timeout: http://www.clarkcountycourts.us/departments/judicial/family-division/ did not respond within 5000ms",
+      "selector": "#nav > div:nth-of-type(2) > div > ul > li:nth-of-type(3) > div > div > div:nth-of-type(2) > ul > li:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"http://www.clarkcountycourts.us/departments/judicial/family-division/\">Family Court</a>",
+      "discoveredAt": "2026-04-10T04:36:31.618Z",
+      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1214",
+      "metadata": {
+        "backendNodeId": 70772,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Link timeout: http://www.clarkcountycourts.us/departments/judicial/family-division/ did not respond within 5000ms",
+      "selector": "#nav > div:nth-of-type(2) > div > ul > li:nth-of-type(3) > div > div > div:nth-of-type(2) > ul > li:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"http://www.clarkcountycourts.us/departments/judicial/family-division/\">Family Court</a>",
+      "discoveredAt": "2026-04-10T04:37:06.435Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1216",
       "metadata": {
-        "backendNodeId": 87227,
-        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+        "backendNodeId": 85916,
         "provenanceSources": [
           {
-            "lens": "browser-a11y",
-            "probe": "a11y-tree"
+            "lens": "sonde-general",
+            "probe": "link-integrity"
           }
         ],
         "provenanceConfidence": "medium",
         "detectedBy": [
-          "browser-a11y"
-        ],
-        "standards": [
-          "WCAG 1.3.1"
+          "sonde-general"
         ]
       },
       "detectedBy": [
-        "browser-a11y"
-      ],
-      "standards": [
-        "WCAG 1.3.1"
+        "sonde-general"
       ]
     },
     {
-      "probe": "a11y-tree",
-      "standard": "WCAG 1.3.1",
-      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
-      "conformanceLevel": "A",
-      "severity": "medium",
-      "description": "Page has 3 \"navigation\" landmarks but only 0 have distinct labels. Screen reader users cannot distinguish between them.",
-      "selector": "[role=\"navigation\"]",
-      "elementHtml": "<!-- 3 navigation landmarks, 0 labeled -->",
-      "discoveredAt": "2026-04-09T16:24:01.422Z",
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://twitter.com/ClarkCountyNV returns 403 Forbidden",
+      "selector": "footer > div > div:nth-of-type(2) > div > div:nth-of-type(3) > div > ul:nth-of-type(1) > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://twitter.com/ClarkCountyNV\"></a>",
+      "discoveredAt": "2026-04-10T04:37:06.435Z",
+      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1216",
+      "metadata": {
+        "backendNodeId": 87461,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Unreachable link: https://files.clarkcountynv.gov/clarkcounty/Election%20Department/2024/2024-Dates.pdf — fetch failed",
+      "selector": "#nav > div:nth-of-type(2) > div > ul > li:nth-of-type(3) > div > div > div:nth-of-type(2) > ul > li:nth-of-type(4) > div:nth-of-type(2) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://files.clarkcountynv.gov/clarkcounty/Election%20Department/2024/2024-Dates.pdf\">Important Dates</a>",
+      "discoveredAt": "2026-04-10T04:37:06.435Z",
+      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1216",
+      "metadata": {
+        "backendNodeId": 85942,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Link timeout: http://www.clarkcountycourts.us/departments/judicial/family-division/ did not respond within 5000ms",
+      "selector": "#nav > div:nth-of-type(2) > div > ul > li:nth-of-type(3) > div > div > div:nth-of-type(2) > ul > li:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"http://www.clarkcountycourts.us/departments/judicial/family-division/\">Family Court</a>",
+      "discoveredAt": "2026-04-10T04:37:47.656Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1219",
       "metadata": {
-        "backendNodeId": 102298,
+        "backendNodeId": 101023,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://twitter.com/ClarkCountyNV returns 403 Forbidden",
+      "selector": "footer > div > div:nth-of-type(2) > div > div:nth-of-type(3) > div > ul:nth-of-type(1) > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://twitter.com/ClarkCountyNV\"></a>",
+      "discoveredAt": "2026-04-10T04:37:47.656Z",
+      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1219",
+      "metadata": {
+        "backendNodeId": 102589,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Unreachable link: https://files.clarkcountynv.gov/clarkcounty/Election%20Department/2024/2024-Dates.pdf — fetch failed",
+      "selector": "#nav > div:nth-of-type(2) > div > ul > li:nth-of-type(3) > div > div > div:nth-of-type(2) > ul > li:nth-of-type(4) > div:nth-of-type(2) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://files.clarkcountynv.gov/clarkcounty/Election%20Department/2024/2024-Dates.pdf\">Important Dates</a>",
+      "discoveredAt": "2026-04-10T04:37:47.656Z",
+      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1219",
+      "metadata": {
+        "backendNodeId": 101049,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.3.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Page has 3 \"navigation\" landmarks but only 0 have distinct labels. Screen reader users cannot distinguish between them.",
+      "selector": "[role=\"navigation\"]",
+      "elementHtml": "<!-- 3 navigation landmarks, 0 labeled -->",
+      "discoveredAt": "2026-04-10T04:33:57.607Z",
+      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r105",
+      "metadata": {
+        "backendNodeId": 25987,
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
         "provenanceSources": [
           {
@@ -2224,10 +2074,150 @@
       "description": "Page has 3 \"navigation\" landmarks but only 0 have distinct labels. Screen reader users cannot distinguish between them.",
       "selector": "[role=\"navigation\"]",
       "elementHtml": "<!-- 3 navigation landmarks, 0 labeled -->",
-      "discoveredAt": "2026-04-09T16:24:38.021Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1221",
+      "discoveredAt": "2026-04-10T04:34:52.985Z",
+      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r106",
       "metadata": {
-        "backendNodeId": 117429,
+        "backendNodeId": 41110,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.3.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.3.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.3.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Page has 3 \"navigation\" landmarks but only 0 have distinct labels. Screen reader users cannot distinguish between them.",
+      "selector": "[role=\"navigation\"]",
+      "elementHtml": "<!-- 3 navigation landmarks, 0 labeled -->",
+      "discoveredAt": "2026-04-10T04:35:35.194Z",
+      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r117",
+      "metadata": {
+        "backendNodeId": 55435,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.3.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.3.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.3.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Page has 3 \"navigation\" landmarks but only 0 have distinct labels. Screen reader users cannot distinguish between them.",
+      "selector": "[role=\"navigation\"]",
+      "elementHtml": "<!-- 3 navigation landmarks, 0 labeled -->",
+      "discoveredAt": "2026-04-10T04:36:12.061Z",
+      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1214",
+      "metadata": {
+        "backendNodeId": 70544,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.3.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.3.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.3.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Page has 3 \"navigation\" landmarks but only 0 have distinct labels. Screen reader users cannot distinguish between them.",
+      "selector": "[role=\"navigation\"]",
+      "elementHtml": "<!-- 3 navigation landmarks, 0 labeled -->",
+      "discoveredAt": "2026-04-10T04:36:50.135Z",
+      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1216",
+      "metadata": {
+        "backendNodeId": 85688,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.3.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.3.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.3.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Page has 3 \"navigation\" landmarks but only 0 have distinct labels. Screen reader users cannot distinguish between them.",
+      "selector": "[role=\"navigation\"]",
+      "elementHtml": "<!-- 3 navigation landmarks, 0 labeled -->",
+      "discoveredAt": "2026-04-10T04:37:24.796Z",
+      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1219",
+      "metadata": {
+        "backendNodeId": 100795,
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
         "provenanceSources": [
           {
@@ -2253,13 +2243,13 @@
     {
       "probe": "axe-core",
       "severity": "medium",
-      "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
-      "selector": "#clark-county-contact-info",
-      "elementHtml": "<h5 id=\"clark-county-contact-info\">Clark County Contact Info</h5>",
-      "discoveredAt": "2026-04-09T16:20:54.860Z",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": "#nav",
+      "elementHtml": "<nav id=\"nav\" aria-expanded=\"true\">",
+      "discoveredAt": "2026-04-10T04:33:57.614Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r105",
       "metadata": {
-        "backendNodeId": 28577,
+        "backendNodeId": 26851,
         "provenanceSources": [
           {
             "lens": "axe-core",
@@ -2278,13 +2268,13 @@
     {
       "probe": "axe-core",
       "severity": "medium",
-      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
-      "selector": "#nav",
-      "elementHtml": "<nav id=\"nav\" aria-expanded=\"true\">",
-      "discoveredAt": "2026-04-09T16:20:54.860Z",
+      "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
+      "selector": "#clark-county-contact-info",
+      "elementHtml": "<h5 id=\"clark-county-contact-info\">Clark County Contact Info</h5>",
+      "discoveredAt": "2026-04-10T04:33:57.614Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r105",
       "metadata": {
-        "backendNodeId": 27602,
+        "backendNodeId": 27847,
         "provenanceSources": [
           {
             "lens": "axe-core",
@@ -2306,10 +2296,10 @@
       "description": "Page should contain a level-one heading: Fix all of the following:\n  Page must have a level-one heading",
       "selector": "html",
       "elementHtml": "<html lang=\"en\">",
-      "discoveredAt": "2026-04-09T16:20:54.860Z",
+      "discoveredAt": "2026-04-10T04:33:57.614Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r105",
       "metadata": {
-        "backendNodeId": 24093,
+        "backendNodeId": 24798,
         "provenanceSources": [
           {
             "lens": "axe-core",
@@ -2331,35 +2321,10 @@
       "description": "Page should contain a level-one heading: Fix all of the following:\n  Page must have a level-one heading",
       "selector": "html",
       "elementHtml": "<html lang=\"en\">",
-      "discoveredAt": "2026-04-09T16:21:31.212Z",
+      "discoveredAt": "2026-04-10T04:34:52.996Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r106",
       "metadata": {
-        "backendNodeId": 38867,
-        "provenanceSources": [
-          {
-            "lens": "axe-core",
-            "probe": "axe-core"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "axe-core"
-        ]
-      },
-      "detectedBy": [
-        "axe-core"
-      ]
-    },
-    {
-      "probe": "axe-core",
-      "severity": "medium",
-      "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
-      "selector": "#clark-county-contact-info",
-      "elementHtml": "<h5 id=\"clark-county-contact-info\">Clark County Contact Info</h5>",
-      "discoveredAt": "2026-04-09T16:21:31.212Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r106",
-      "metadata": {
-        "backendNodeId": 43702,
+        "backendNodeId": 38831,
         "provenanceSources": [
           {
             "lens": "axe-core",
@@ -2381,10 +2346,10 @@
       "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
       "selector": "#nav",
       "elementHtml": "<nav id=\"nav\" aria-expanded=\"true\">",
-      "discoveredAt": "2026-04-09T16:21:31.212Z",
+      "discoveredAt": "2026-04-10T04:34:52.996Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r106",
       "metadata": {
-        "backendNodeId": 42706,
+        "backendNodeId": 41974,
         "provenanceSources": [
           {
             "lens": "axe-core",
@@ -2406,10 +2371,10 @@
       "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
       "selector": "#clark-county-contact-info",
       "elementHtml": "<h5 id=\"clark-county-contact-info\">Clark County Contact Info</h5>",
-      "discoveredAt": "2026-04-09T16:22:07.777Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r117",
+      "discoveredAt": "2026-04-10T04:34:52.996Z",
+      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r106",
       "metadata": {
-        "backendNodeId": 58819,
+        "backendNodeId": 42970,
         "provenanceSources": [
           {
             "lens": "axe-core",
@@ -2431,10 +2396,10 @@
       "description": "Page should contain a level-one heading: Fix all of the following:\n  Page must have a level-one heading",
       "selector": "html",
       "elementHtml": "<html lang=\"en\">",
-      "discoveredAt": "2026-04-09T16:22:07.777Z",
+      "discoveredAt": "2026-04-10T04:35:35.205Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r117",
       "metadata": {
-        "backendNodeId": 54335,
+        "backendNodeId": 52791,
         "provenanceSources": [
           {
             "lens": "axe-core",
@@ -2456,35 +2421,10 @@
       "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
       "selector": "#nav",
       "elementHtml": "<nav id=\"nav\" aria-expanded=\"true\">",
-      "discoveredAt": "2026-04-09T16:22:07.777Z",
+      "discoveredAt": "2026-04-10T04:35:35.205Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r117",
       "metadata": {
-        "backendNodeId": 57823,
-        "provenanceSources": [
-          {
-            "lens": "axe-core",
-            "probe": "axe-core"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "axe-core"
-        ]
-      },
-      "detectedBy": [
-        "axe-core"
-      ]
-    },
-    {
-      "probe": "axe-core",
-      "severity": "medium",
-      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
-      "selector": "#nav",
-      "elementHtml": "<nav id=\"nav\" aria-expanded=\"true\">",
-      "discoveredAt": "2026-04-09T16:22:43.744Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1214",
-      "metadata": {
-        "backendNodeId": 72947,
+        "backendNodeId": 56299,
         "provenanceSources": [
           {
             "lens": "axe-core",
@@ -2506,10 +2446,10 @@
       "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
       "selector": "#clark-county-contact-info",
       "elementHtml": "<h5 id=\"clark-county-contact-info\">Clark County Contact Info</h5>",
-      "discoveredAt": "2026-04-09T16:22:43.744Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1214",
+      "discoveredAt": "2026-04-10T04:35:35.205Z",
+      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r117",
       "metadata": {
-        "backendNodeId": 73943,
+        "backendNodeId": 57274,
         "provenanceSources": [
           {
             "lens": "axe-core",
@@ -2531,7 +2471,7 @@
       "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
       "selector": "#documents--links",
       "elementHtml": "<h3 id=\"documents--links\">Documents &amp; Links:</h3>",
-      "discoveredAt": "2026-04-09T16:22:43.744Z",
+      "discoveredAt": "2026-04-10T04:36:12.068Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1214",
       "metadata": {
         "provenanceSources": [
@@ -2553,9 +2493,59 @@
       "probe": "axe-core",
       "severity": "medium",
       "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
+      "selector": "#clark-county-contact-info",
+      "elementHtml": "<h5 id=\"clark-county-contact-info\">Clark County Contact Info</h5>",
+      "discoveredAt": "2026-04-10T04:36:12.068Z",
+      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1214",
+      "metadata": {
+        "backendNodeId": 72404,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": "#nav",
+      "elementHtml": "<nav id=\"nav\" aria-expanded=\"true\">",
+      "discoveredAt": "2026-04-10T04:36:12.068Z",
+      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1214",
+      "metadata": {
+        "backendNodeId": 71408,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
       "selector": "#documents--links",
       "elementHtml": "<h3 id=\"documents--links\">Documents &amp; Links:</h3>",
-      "discoveredAt": "2026-04-09T16:23:27.143Z",
+      "discoveredAt": "2026-04-10T04:36:50.142Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1216",
       "metadata": {
         "provenanceSources": [
@@ -2579,10 +2569,10 @@
       "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
       "selector": "#clark-county-contact-info",
       "elementHtml": "<h5 id=\"clark-county-contact-info\">Clark County Contact Info</h5>",
-      "discoveredAt": "2026-04-09T16:23:27.143Z",
+      "discoveredAt": "2026-04-10T04:36:50.142Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1216",
       "metadata": {
-        "backendNodeId": 89066,
+        "backendNodeId": 87527,
         "provenanceSources": [
           {
             "lens": "axe-core",
@@ -2604,10 +2594,35 @@
       "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
       "selector": "#nav",
       "elementHtml": "<nav id=\"nav\" aria-expanded=\"true\">",
-      "discoveredAt": "2026-04-09T16:23:27.143Z",
+      "discoveredAt": "2026-04-10T04:36:50.142Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1216",
       "metadata": {
-        "backendNodeId": 88091,
+        "backendNodeId": 86552,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": "#nav",
+      "elementHtml": "<nav id=\"nav\" aria-expanded=\"true\">",
+      "discoveredAt": "2026-04-10T04:37:24.806Z",
+      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1219",
+      "metadata": {
+        "backendNodeId": 101659,
         "provenanceSources": [
           {
             "lens": "axe-core",
@@ -2629,10 +2644,10 @@
       "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
       "selector": "#clark-county-contact-info",
       "elementHtml": "<h5 id=\"clark-county-contact-info\">Clark County Contact Info</h5>",
-      "discoveredAt": "2026-04-09T16:24:01.430Z",
+      "discoveredAt": "2026-04-10T04:37:24.806Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1219",
       "metadata": {
-        "backendNodeId": 104158,
+        "backendNodeId": 102655,
         "provenanceSources": [
           {
             "lens": "axe-core",
@@ -2654,107 +2669,8 @@
       "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
       "selector": "#documents--links",
       "elementHtml": "<h3 id=\"documents--links\">Documents &amp; Links:</h3>",
-      "discoveredAt": "2026-04-09T16:24:01.430Z",
+      "discoveredAt": "2026-04-10T04:37:24.806Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1219",
-      "metadata": {
-        "provenanceSources": [
-          {
-            "lens": "axe-core",
-            "probe": "axe-core"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "axe-core"
-        ]
-      },
-      "detectedBy": [
-        "axe-core"
-      ]
-    },
-    {
-      "probe": "axe-core",
-      "severity": "medium",
-      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
-      "selector": "#nav",
-      "elementHtml": "<nav id=\"nav\" aria-expanded=\"true\">",
-      "discoveredAt": "2026-04-09T16:24:01.430Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1219",
-      "metadata": {
-        "backendNodeId": 103162,
-        "provenanceSources": [
-          {
-            "lens": "axe-core",
-            "probe": "axe-core"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "axe-core"
-        ]
-      },
-      "detectedBy": [
-        "axe-core"
-      ]
-    },
-    {
-      "probe": "axe-core",
-      "severity": "medium",
-      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
-      "selector": "#nav",
-      "elementHtml": "<nav id=\"nav\" aria-expanded=\"true\">",
-      "discoveredAt": "2026-04-09T16:24:38.032Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1221",
-      "metadata": {
-        "backendNodeId": 118293,
-        "provenanceSources": [
-          {
-            "lens": "axe-core",
-            "probe": "axe-core"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "axe-core"
-        ]
-      },
-      "detectedBy": [
-        "axe-core"
-      ]
-    },
-    {
-      "probe": "axe-core",
-      "severity": "medium",
-      "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
-      "selector": "#clark-county-contact-info",
-      "elementHtml": "<h5 id=\"clark-county-contact-info\">Clark County Contact Info</h5>",
-      "discoveredAt": "2026-04-09T16:24:38.032Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1221",
-      "metadata": {
-        "backendNodeId": 119289,
-        "provenanceSources": [
-          {
-            "lens": "axe-core",
-            "probe": "axe-core"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "axe-core"
-        ]
-      },
-      "detectedBy": [
-        "axe-core"
-      ]
-    },
-    {
-      "probe": "axe-core",
-      "severity": "medium",
-      "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
-      "selector": "#documents--links",
-      "elementHtml": "<h3 id=\"documents--links\">Documents &amp; Links:</h3>",
-      "discoveredAt": "2026-04-09T16:24:38.032Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1221",
       "metadata": {
         "provenanceSources": [
           {
@@ -2778,12 +2694,12 @@
       "conformanceLevel": "A",
       "severity": "medium",
       "description": "Link is distinguished from surrounding text only by color (link: rgb(254, 202, 122), text: rgb(255, 255, 255)). Users who cannot perceive color differences may not identify this as a link.",
-      "selector": "#main-content > div:nth-of-type(1) > nav > ul > li:nth-of-type(1) > a",
+      "selector": "#main-content > div:nth-of-type(2) > nav > ul > li:nth-of-type(1) > a",
       "elementHtml": "<a href=\"https://www.clarkcountynv.gov/\">Home</a>",
-      "discoveredAt": "2026-04-09T16:20:54.765Z",
+      "discoveredAt": "2026-04-10T04:33:57.511Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r105",
       "metadata": {
-        "backendNodeId": 25073,
+        "backendNodeId": 24843,
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
         "provenanceSources": [
           {
@@ -2813,12 +2729,12 @@
       "conformanceLevel": "A",
       "severity": "medium",
       "description": "Link is distinguished from surrounding text only by color (link: rgb(254, 202, 122), text: rgb(255, 255, 255)). Users who cannot perceive color differences may not identify this as a link.",
-      "selector": "#main-content > div:nth-of-type(2) > nav > ul > li:nth-of-type(1) > a",
+      "selector": "#main-content > div:nth-of-type(1) > nav > ul > li:nth-of-type(1) > a",
       "elementHtml": "<a href=\"https://www.clarkcountynv.gov/\">Home</a>",
-      "discoveredAt": "2026-04-09T16:20:54.765Z",
+      "discoveredAt": "2026-04-10T04:33:57.511Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r105",
       "metadata": {
-        "backendNodeId": 25628,
+        "backendNodeId": 24827,
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
         "provenanceSources": [
           {
@@ -2848,12 +2764,12 @@
       "conformanceLevel": "A",
       "severity": "medium",
       "description": "Link is distinguished from surrounding text only by color (link: rgb(254, 202, 122), text: rgb(255, 255, 255)). Users who cannot perceive color differences may not identify this as a link.",
-      "selector": "#main-content > div:nth-of-type(1) > nav > ul > li:nth-of-type(1) > a",
+      "selector": "#main-content > div:nth-of-type(2) > nav > ul > li:nth-of-type(1) > a",
       "elementHtml": "<a href=\"https://www.clarkcountynv.gov/\">Home</a>",
-      "discoveredAt": "2026-04-09T16:21:31.120Z",
+      "discoveredAt": "2026-04-10T04:34:52.903Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r106",
       "metadata": {
-        "backendNodeId": 40198,
+        "backendNodeId": 40021,
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
         "provenanceSources": [
           {
@@ -2883,12 +2799,12 @@
       "conformanceLevel": "A",
       "severity": "medium",
       "description": "Link is distinguished from surrounding text only by color (link: rgb(254, 202, 122), text: rgb(255, 255, 255)). Users who cannot perceive color differences may not identify this as a link.",
-      "selector": "#main-content > div:nth-of-type(2) > nav > ul > li:nth-of-type(1) > a",
+      "selector": "#main-content > div:nth-of-type(1) > nav > ul > li:nth-of-type(1) > a",
       "elementHtml": "<a href=\"https://www.clarkcountynv.gov/\">Home</a>",
-      "discoveredAt": "2026-04-09T16:21:31.120Z",
+      "discoveredAt": "2026-04-10T04:34:52.903Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r106",
       "metadata": {
-        "backendNodeId": 40753,
+        "backendNodeId": 39466,
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
         "provenanceSources": [
           {
@@ -2918,12 +2834,12 @@
       "conformanceLevel": "A",
       "severity": "medium",
       "description": "Link is distinguished from surrounding text only by color (link: rgb(254, 202, 122), text: rgb(255, 255, 255)). Users who cannot perceive color differences may not identify this as a link.",
-      "selector": "#main-content > div:nth-of-type(1) > nav > ul > li:nth-of-type(1) > a",
+      "selector": "#main-content > div:nth-of-type(2) > nav > ul > li:nth-of-type(1) > a",
       "elementHtml": "<a href=\"https://www.clarkcountynv.gov/\">Home</a>",
-      "discoveredAt": "2026-04-09T16:22:07.687Z",
+      "discoveredAt": "2026-04-10T04:35:35.112Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r117",
       "metadata": {
-        "backendNodeId": 55315,
+        "backendNodeId": 54325,
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
         "provenanceSources": [
           {
@@ -2953,12 +2869,12 @@
       "conformanceLevel": "A",
       "severity": "medium",
       "description": "Link is distinguished from surrounding text only by color (link: rgb(254, 202, 122), text: rgb(255, 255, 255)). Users who cannot perceive color differences may not identify this as a link.",
-      "selector": "#main-content > div:nth-of-type(2) > nav > ul > li:nth-of-type(1) > a",
+      "selector": "#main-content > div:nth-of-type(1) > nav > ul > li:nth-of-type(1) > a",
       "elementHtml": "<a href=\"https://www.clarkcountynv.gov/\">Home</a>",
-      "discoveredAt": "2026-04-09T16:22:07.687Z",
+      "discoveredAt": "2026-04-10T04:35:35.112Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r117",
       "metadata": {
-        "backendNodeId": 55870,
+        "backendNodeId": 53770,
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
         "provenanceSources": [
           {
@@ -2990,10 +2906,10 @@
       "description": "Link is distinguished from surrounding text only by color (link: rgb(254, 202, 122), text: rgb(255, 255, 255)). Users who cannot perceive color differences may not identify this as a link.",
       "selector": "#main-content > div:nth-of-type(2) > nav > ul > li:nth-of-type(1) > a",
       "elementHtml": "<a href=\"https://www.clarkcountynv.gov/\">Home</a>",
-      "discoveredAt": "2026-04-09T16:22:43.660Z",
+      "discoveredAt": "2026-04-10T04:36:11.983Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1214",
       "metadata": {
-        "backendNodeId": 70939,
+        "backendNodeId": 69568,
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
         "provenanceSources": [
           {
@@ -3025,10 +2941,10 @@
       "description": "Link is distinguished from surrounding text only by color (link: rgb(254, 202, 122), text: rgb(255, 255, 255)). Users who cannot perceive color differences may not identify this as a link.",
       "selector": "#main-content > div:nth-of-type(1) > nav > ul > li:nth-of-type(1) > a",
       "elementHtml": "<a href=\"https://www.clarkcountynv.gov/\">Home</a>",
-      "discoveredAt": "2026-04-09T16:22:43.660Z",
+      "discoveredAt": "2026-04-10T04:36:11.983Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1214",
       "metadata": {
-        "backendNodeId": 70923,
+        "backendNodeId": 69552,
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
         "provenanceSources": [
           {
@@ -3060,10 +2976,10 @@
       "description": "Link is distinguished from surrounding text only by color (link: rgb(254, 202, 122), text: rgb(255, 255, 255)). Users who cannot perceive color differences may not identify this as a link.",
       "selector": "#main-content > div:nth-of-type(1) > nav > ul > li:nth-of-type(1) > a",
       "elementHtml": "<a href=\"https://www.clarkcountynv.gov/\">Home</a>",
-      "discoveredAt": "2026-04-09T16:23:27.055Z",
+      "discoveredAt": "2026-04-10T04:36:50.054Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1216",
       "metadata": {
-        "backendNodeId": 85501,
+        "backendNodeId": 84023,
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
         "provenanceSources": [
           {
@@ -3095,10 +3011,10 @@
       "description": "Link is distinguished from surrounding text only by color (link: rgb(254, 202, 122), text: rgb(255, 255, 255)). Users who cannot perceive color differences may not identify this as a link.",
       "selector": "#main-content > div:nth-of-type(2) > nav > ul > li:nth-of-type(1) > a",
       "elementHtml": "<a href=\"https://www.clarkcountynv.gov/\">Home</a>",
-      "discoveredAt": "2026-04-09T16:23:27.055Z",
+      "discoveredAt": "2026-04-10T04:36:50.054Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1216",
       "metadata": {
-        "backendNodeId": 86122,
+        "backendNodeId": 84578,
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
         "provenanceSources": [
           {
@@ -3130,10 +3046,10 @@
       "description": "Link is distinguished from surrounding text only by color (link: rgb(254, 202, 122), text: rgb(255, 255, 255)). Users who cannot perceive color differences may not identify this as a link.",
       "selector": "#main-content > div:nth-of-type(1) > nav > ul > li:nth-of-type(1) > a",
       "elementHtml": "<a href=\"https://www.clarkcountynv.gov/\">Home</a>",
-      "discoveredAt": "2026-04-09T16:24:01.343Z",
+      "discoveredAt": "2026-04-10T04:37:24.708Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1219",
       "metadata": {
-        "backendNodeId": 102015,
+        "backendNodeId": 99151,
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
         "provenanceSources": [
           {
@@ -3165,10 +3081,10 @@
       "description": "Link is distinguished from surrounding text only by color (link: rgb(254, 202, 122), text: rgb(255, 255, 255)). Users who cannot perceive color differences may not identify this as a link.",
       "selector": "#main-content > div:nth-of-type(2) > nav > ul > li:nth-of-type(1) > a",
       "elementHtml": "<a href=\"https://www.clarkcountynv.gov/\">Home</a>",
-      "discoveredAt": "2026-04-09T16:24:01.343Z",
+      "discoveredAt": "2026-04-10T04:37:24.708Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1219",
       "metadata": {
-        "backendNodeId": 102030,
+        "backendNodeId": 99706,
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
         "provenanceSources": [
           {
@@ -3192,439 +3108,15 @@
       ]
     },
     {
-      "probe": "color-as-indicator",
-      "standard": "WCAG 1.4.1",
-      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
-      "conformanceLevel": "A",
-      "severity": "medium",
-      "description": "Link is distinguished from surrounding text only by color (link: rgb(254, 202, 122), text: rgb(255, 255, 255)). Users who cannot perceive color differences may not identify this as a link.",
-      "selector": "#main-content > div:nth-of-type(2) > nav > ul > li:nth-of-type(1) > a",
-      "elementHtml": "<a href=\"https://www.clarkcountynv.gov/\">Home</a>",
-      "discoveredAt": "2026-04-09T16:24:37.944Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1221",
-      "metadata": {
-        "backendNodeId": 116345,
-        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
-        "provenanceSources": [
-          {
-            "lens": "sonde-general",
-            "probe": "color-as-indicator"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-general"
-        ],
-        "standards": [
-          "WCAG 1.4.1"
-        ]
-      },
-      "detectedBy": [
-        "sonde-general"
-      ],
-      "standards": [
-        "WCAG 1.4.1"
-      ]
-    },
-    {
-      "probe": "color-as-indicator",
-      "standard": "WCAG 1.4.1",
-      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
-      "conformanceLevel": "A",
-      "severity": "medium",
-      "description": "Link is distinguished from surrounding text only by color (link: rgb(254, 202, 122), text: rgb(255, 255, 255)). Users who cannot perceive color differences may not identify this as a link.",
-      "selector": "#main-content > div:nth-of-type(1) > nav > ul > li:nth-of-type(1) > a",
-      "elementHtml": "<a href=\"https://www.clarkcountynv.gov/\">Home</a>",
-      "discoveredAt": "2026-04-09T16:24:37.944Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1221",
-      "metadata": {
-        "backendNodeId": 115724,
-        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
-        "provenanceSources": [
-          {
-            "lens": "sonde-general",
-            "probe": "color-as-indicator"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-general"
-        ],
-        "standards": [
-          "WCAG 1.4.1"
-        ]
-      },
-      "detectedBy": [
-        "sonde-general"
-      ],
-      "standards": [
-        "WCAG 1.4.1"
-      ]
-    },
-    {
-      "probe": "dynamic-content-audit",
-      "standard": "WCAG 4.1.3",
-      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
-      "conformanceLevel": "AA",
-      "severity": "medium",
-      "description": "Clicking \"#userwayAccessibilityIcon\" inserts 2 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
-      "selector": "#userwayAccessibilityIcon",
-      "elementHtml": "<div class=\"uai userway_dark\" id=\"userwayAccessibilityIcon\" aria-label=\"Accessibility Menu\" role=\"button\" tabindex=\"0\" aria-haspopup=\"dialog\" title=\"Accessibility Menu\" style=\"background: rgb(0, 148, ",
-      "discoveredAt": "2026-04-09T16:20:54.108Z",
-      "pageUrl": "https://www.clarkcountynv.gov/",
-      "metadata": {
-        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
-        "provenanceSources": [
-          {
-            "lens": "sonde-a11y",
-            "probe": "dynamic-content-audit"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-a11y"
-        ],
-        "standards": [
-          "WCAG 4.1.3"
-        ]
-      },
-      "detectedBy": [
-        "sonde-a11y"
-      ],
-      "standards": [
-        "WCAG 4.1.3"
-      ]
-    },
-    {
       "probe": "focus-order",
       "standard": "WCAG 2.4.3",
       "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
       "conformanceLevel": "A",
       "severity": "medium",
-      "description": "\"Air Quality Fees & Payments\" is visually at position 44 but receives focus at position 21 (drift: 23).",
-      "selector": "#tabpanel-pay-taxes-fines-fees > div > ul > li:nth-of-type(3) > a",
-      "elementHtml": "<a>Air Quality Fees & Payments</a>",
-      "discoveredAt": "2026-04-09T16:20:19.661Z",
-      "pageUrl": "https://www.clarkcountynv.gov/",
-      "metadata": {
-        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
-        "provenanceSources": [
-          {
-            "lens": "sonde-a11y",
-            "probe": "focus-order"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "focus-order"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "focus-order"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "focus-order"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "focus-order"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "focus-order"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-a11y"
-        ],
-        "standards": [
-          "WCAG 2.4.3"
-        ]
-      },
-      "detectedBy": [
-        "sonde-a11y"
-      ],
-      "standards": [
-        "WCAG 2.4.3"
-      ]
-    },
-    {
-      "probe": "focus-order",
-      "standard": "WCAG 2.4.3",
-      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
-      "conformanceLevel": "A",
-      "severity": "medium",
-      "description": "\"Find My Commission District\" is visually at position 21 but receives focus at position 66 (drift: 45).",
-      "selector": "#tabpanel-find-my-commission-district > div > ul > li:nth-of-type(1) > a",
-      "elementHtml": "<a>Find My Commission District</a>",
-      "discoveredAt": "2026-04-09T16:20:19.661Z",
-      "pageUrl": "https://www.clarkcountynv.gov/",
-      "metadata": {
-        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
-        "provenanceSources": [
-          {
-            "lens": "sonde-a11y",
-            "probe": "focus-order"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "focus-order"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-a11y"
-        ],
-        "standards": [
-          "WCAG 2.4.3"
-        ]
-      },
-      "detectedBy": [
-        "sonde-a11y"
-      ],
-      "standards": [
-        "WCAG 2.4.3"
-      ]
-    },
-    {
-      "probe": "focus-order",
-      "standard": "WCAG 2.4.3",
-      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
-      "conformanceLevel": "A",
-      "severity": "medium",
-      "description": "\"Calendar\" is visually at position 32 but receives focus at position 11 (drift: 21).",
-      "selector": "#tabpanel-view-meetings-agendas > div > ul > li:nth-of-type(2) > a",
-      "elementHtml": "<a>Calendar</a>",
-      "discoveredAt": "2026-04-09T16:20:19.661Z",
-      "pageUrl": "https://www.clarkcountynv.gov/",
-      "metadata": {
-        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
-        "provenanceSources": [
-          {
-            "lens": "sonde-a11y",
-            "probe": "focus-order"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-a11y"
-        ],
-        "standards": [
-          "WCAG 2.4.3"
-        ]
-      },
-      "detectedBy": [
-        "sonde-a11y"
-      ],
-      "standards": [
-        "WCAG 2.4.3"
-      ]
-    },
-    {
-      "probe": "focus-order",
-      "standard": "WCAG 2.4.3",
-      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
-      "conformanceLevel": "A",
-      "severity": "medium",
-      "description": "\"Apply to Become a Foster Parent\" is visually at position 17 but receives focus at position 43 (drift: 26).",
-      "selector": "#tabpanel-apply-to-foster-or-adopt > div > ul > li:nth-of-type(1) > a",
-      "elementHtml": "<a>Apply to Become a Foster Parent</a>",
-      "discoveredAt": "2026-04-09T16:20:19.661Z",
-      "pageUrl": "https://www.clarkcountynv.gov/",
-      "metadata": {
-        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
-        "provenanceSources": [
-          {
-            "lens": "sonde-a11y",
-            "probe": "focus-order"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-a11y"
-        ],
-        "standards": [
-          "WCAG 2.4.3"
-        ]
-      },
-      "detectedBy": [
-        "sonde-a11y"
-      ],
-      "standards": [
-        "WCAG 2.4.3"
-      ]
-    },
-    {
-      "probe": "focus-order",
-      "standard": "WCAG 2.4.3",
-      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
-      "conformanceLevel": "A",
-      "severity": "medium",
-      "description": "\"Financial/Transportation\" is visually at position 54 but receives focus at position 33 (drift: 21).",
-      "selector": "#tabpanel-apply-for-assistance > div > ul > li:nth-of-type(4) > a",
-      "elementHtml": "<a>Financial/Transportation</a>",
-      "discoveredAt": "2026-04-09T16:20:19.661Z",
-      "pageUrl": "https://www.clarkcountynv.gov/",
-      "metadata": {
-        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
-        "provenanceSources": [
-          {
-            "lens": "sonde-a11y",
-            "probe": "focus-order"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "focus-order"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "focus-order"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "focus-order"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "focus-order"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-a11y"
-        ],
-        "standards": [
-          "WCAG 2.4.3"
-        ]
-      },
-      "detectedBy": [
-        "sonde-a11y"
-      ],
-      "standards": [
-        "WCAG 2.4.3"
-      ]
-    },
-    {
-      "probe": "focus-order",
-      "standard": "WCAG 2.4.3",
-      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
-      "conformanceLevel": "A",
-      "severity": "medium",
-      "description": "\"Ombudsman (Family Services/Social Service Complaints\" is visually at position 38 but receives focus at position 17 (drift: 21).",
-      "selector": "#tabpanel-report-an-issue > div > ul > li:nth-of-type(4) > a",
-      "elementHtml": "<a>Ombudsman (Family Services/Social Service Complaints</a>",
-      "discoveredAt": "2026-04-09T16:20:19.661Z",
-      "pageUrl": "https://www.clarkcountynv.gov/",
-      "metadata": {
-        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
-        "provenanceSources": [
-          {
-            "lens": "sonde-a11y",
-            "probe": "focus-order"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-a11y"
-        ],
-        "standards": [
-          "WCAG 2.4.3"
-        ]
-      },
-      "detectedBy": [
-        "sonde-a11y"
-      ],
-      "standards": [
-        "WCAG 2.4.3"
-      ]
-    },
-    {
-      "probe": "focus-order",
-      "standard": "WCAG 2.4.3",
-      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
-      "conformanceLevel": "A",
-      "severity": "medium",
-      "description": "\"Apply for Business License\" is visually at position 18 but receives focus at position 46 (drift: 28).",
-      "selector": "#tabpanel-apply-for-license-permit > div > ul > li:nth-of-type(1) > a",
-      "elementHtml": "<a>Apply for Business License</a>",
-      "discoveredAt": "2026-04-09T16:20:19.661Z",
-      "pageUrl": "https://www.clarkcountynv.gov/",
-      "metadata": {
-        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
-        "provenanceSources": [
-          {
-            "lens": "sonde-a11y",
-            "probe": "focus-order"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "focus-order"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-a11y"
-        ],
-        "standards": [
-          "WCAG 2.4.3"
-        ]
-      },
-      "detectedBy": [
-        "sonde-a11y"
-      ],
-      "standards": [
-        "WCAG 2.4.3"
-      ]
-    },
-    {
-      "probe": "focus-order",
-      "standard": "WCAG 2.4.3",
-      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
-      "conformanceLevel": "A",
-      "severity": "medium",
-      "description": "\"Assessor Real Property Records\" is visually at position 19 but receives focus at position 56 (drift: 37).",
-      "selector": "#tabpanel-find-records-documents > div > ul > li:nth-of-type(1) > a",
-      "elementHtml": "<a>Assessor Real Property Records</a>",
-      "discoveredAt": "2026-04-09T16:20:19.661Z",
-      "pageUrl": "https://www.clarkcountynv.gov/",
-      "metadata": {
-        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
-        "provenanceSources": [
-          {
-            "lens": "sonde-a11y",
-            "probe": "focus-order"
-          },
-          {
-            "lens": "sonde-a11y",
-            "probe": "focus-order"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-a11y"
-        ],
-        "standards": [
-          "WCAG 2.4.3"
-        ]
-      },
-      "detectedBy": [
-        "sonde-a11y"
-      ],
-      "standards": [
-        "WCAG 2.4.3"
-      ]
-    },
-    {
-      "probe": "focus-order",
-      "standard": "WCAG 2.4.3",
-      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
-      "conformanceLevel": "A",
-      "severity": "medium",
-      "description": "\"Recruitment Hub (NEW)\" is visually at position 20 but receives focus at position 63 (drift: 43).",
+      "description": "\"Recruitment Hub (NEW)\" is visually at position 21 but receives focus at position 64 (drift: 43).",
       "selector": "#tabpanel-find-work-opportunities > div > ul > li:nth-of-type(1) > a",
       "elementHtml": "<a>Recruitment Hub (NEW)</a>",
-      "discoveredAt": "2026-04-09T16:20:19.661Z",
+      "discoveredAt": "2026-04-10T04:33:21.401Z",
       "pageUrl": "https://www.clarkcountynv.gov/",
       "metadata": {
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
@@ -3659,10 +3151,293 @@
       "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
       "conformanceLevel": "A",
       "severity": "medium",
+      "description": "\"Apply for Business License\" is visually at position 19 but receives focus at position 47 (drift: 28).",
+      "selector": "#tabpanel-apply-for-license-permit > div > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a>Apply for Business License</a>",
+      "discoveredAt": "2026-04-10T04:33:21.401Z",
+      "pageUrl": "https://www.clarkcountynv.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "\"Air Quality Fees & Payments\" is visually at position 45 but receives focus at position 22 (drift: 23).",
+      "selector": "#tabpanel-pay-taxes-fines-fees > div > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a>Air Quality Fees & Payments</a>",
+      "discoveredAt": "2026-04-10T04:33:21.401Z",
+      "pageUrl": "https://www.clarkcountynv.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "\"Apply to Become a Foster Parent\" is visually at position 18 but receives focus at position 44 (drift: 26).",
+      "selector": "#tabpanel-apply-to-foster-or-adopt > div > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a>Apply to Become a Foster Parent</a>",
+      "discoveredAt": "2026-04-10T04:33:21.401Z",
+      "pageUrl": "https://www.clarkcountynv.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "\"Find My Commission District\" is visually at position 22 but receives focus at position 67 (drift: 45).",
+      "selector": "#tabpanel-find-my-commission-district > div > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a>Find My Commission District</a>",
+      "discoveredAt": "2026-04-10T04:33:21.401Z",
+      "pageUrl": "https://www.clarkcountynv.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "\"Homeless Help\" is visually at position 62 but receives focus at position 35 (drift: 27).",
+      "selector": "#tabpanel-apply-for-assistance > div > ul > li:nth-of-type(5) > a",
+      "elementHtml": "<a>Homeless Help</a>",
+      "discoveredAt": "2026-04-10T04:33:21.401Z",
+      "pageUrl": "https://www.clarkcountynv.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "\"Assessor Real Property Records\" is visually at position 20 but receives focus at position 57 (drift: 37).",
+      "selector": "#tabpanel-find-records-documents > div > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a>Assessor Real Property Records</a>",
+      "discoveredAt": "2026-04-10T04:33:21.401Z",
+      "pageUrl": "https://www.clarkcountynv.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "\"Contact Clark County\" is visually at position 37 but receives focus at position 23 (drift: 14).",
+      "selector": "footer > div > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div:nth-of-type(1) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Contact Clark County</a>",
+      "discoveredAt": "2026-04-10T04:34:37.157Z",
+      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r105",
+      "metadata": {
+        "backendNodeId": 27853,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "medium",
       "description": "\"Accessibility Menu\" is visually at position 18 but receives focus at position 1 (drift: 17).",
       "selector": "#userwayAccessibilityIcon",
       "elementHtml": "<div>Accessibility Menu</div>",
-      "discoveredAt": "2026-04-09T16:21:15.434Z",
+      "discoveredAt": "2026-04-10T04:34:37.157Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r105",
       "metadata": {
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
@@ -3693,80 +3468,10 @@
       "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
       "conformanceLevel": "A",
       "severity": "medium",
-      "description": "\"Contact Clark County\" is visually at position 37 but receives focus at position 23 (drift: 14).",
-      "selector": "footer > div > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div:nth-of-type(1) > p:nth-of-type(3) > a",
-      "elementHtml": "<a>Contact Clark County</a>",
-      "discoveredAt": "2026-04-09T16:21:15.434Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r105",
-      "metadata": {
-        "backendNodeId": 28583,
-        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
-        "provenanceSources": [
-          {
-            "lens": "sonde-a11y",
-            "probe": "focus-order"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-a11y"
-        ],
-        "standards": [
-          "WCAG 2.4.3"
-        ]
-      },
-      "detectedBy": [
-        "sonde-a11y"
-      ],
-      "standards": [
-        "WCAG 2.4.3"
-      ]
-    },
-    {
-      "probe": "focus-order",
-      "standard": "WCAG 2.4.3",
-      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
-      "conformanceLevel": "A",
-      "severity": "medium",
-      "description": "\"Contact Clark County\" is visually at position 37 but receives focus at position 23 (drift: 14).",
-      "selector": "footer > div > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div:nth-of-type(1) > p:nth-of-type(3) > a",
-      "elementHtml": "<a>Contact Clark County</a>",
-      "discoveredAt": "2026-04-09T16:21:52.045Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r106",
-      "metadata": {
-        "backendNodeId": 43708,
-        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
-        "provenanceSources": [
-          {
-            "lens": "sonde-a11y",
-            "probe": "focus-order"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-a11y"
-        ],
-        "standards": [
-          "WCAG 2.4.3"
-        ]
-      },
-      "detectedBy": [
-        "sonde-a11y"
-      ],
-      "standards": [
-        "WCAG 2.4.3"
-      ]
-    },
-    {
-      "probe": "focus-order",
-      "standard": "WCAG 2.4.3",
-      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
-      "conformanceLevel": "A",
-      "severity": "medium",
       "description": "\"Accessibility Menu\" is visually at position 18 but receives focus at position 1 (drift: 17).",
       "selector": "#userwayAccessibilityIcon",
       "elementHtml": "<div>Accessibility Menu</div>",
-      "discoveredAt": "2026-04-09T16:21:52.045Z",
+      "discoveredAt": "2026-04-10T04:35:19.419Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r106",
       "metadata": {
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
@@ -3800,10 +3505,10 @@
       "description": "\"Contact Clark County\" is visually at position 37 but receives focus at position 23 (drift: 14).",
       "selector": "footer > div > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div:nth-of-type(1) > p:nth-of-type(3) > a",
       "elementHtml": "<a>Contact Clark County</a>",
-      "discoveredAt": "2026-04-09T16:22:28.059Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r117",
+      "discoveredAt": "2026-04-10T04:35:19.419Z",
+      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r106",
       "metadata": {
-        "backendNodeId": 58825,
+        "backendNodeId": 42976,
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
         "provenanceSources": [
           {
@@ -3835,9 +3540,44 @@
       "description": "\"Accessibility Menu\" is visually at position 18 but receives focus at position 1 (drift: 17).",
       "selector": "#userwayAccessibilityIcon",
       "elementHtml": "<div>Accessibility Menu</div>",
-      "discoveredAt": "2026-04-09T16:22:28.059Z",
+      "discoveredAt": "2026-04-10T04:35:56.348Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r117",
       "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "\"Contact Clark County\" is visually at position 37 but receives focus at position 23 (drift: 14).",
+      "selector": "footer > div > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div:nth-of-type(1) > p:nth-of-type(3) > a",
+      "elementHtml": "<a>Contact Clark County</a>",
+      "discoveredAt": "2026-04-10T04:35:56.348Z",
+      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r117",
+      "metadata": {
+        "backendNodeId": 57280,
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
         "provenanceSources": [
           {
@@ -3869,7 +3609,7 @@
       "description": "\"Accessibility Menu\" is visually at position 18 but receives focus at position 1 (drift: 17).",
       "selector": "#userwayAccessibilityIcon",
       "elementHtml": "<div>Accessibility Menu</div>",
-      "discoveredAt": "2026-04-09T16:23:11.436Z",
+      "discoveredAt": "2026-04-10T04:36:34.361Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1214",
       "metadata": {
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
@@ -3903,10 +3643,10 @@
       "description": "\"Contact Clark County\" is visually at position 36 but receives focus at position 22 (drift: 14).",
       "selector": "footer > div > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div:nth-of-type(1) > p:nth-of-type(3) > a",
       "elementHtml": "<a>Contact Clark County</a>",
-      "discoveredAt": "2026-04-09T16:23:11.436Z",
+      "discoveredAt": "2026-04-10T04:36:34.361Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1214",
       "metadata": {
-        "backendNodeId": 73949,
+        "backendNodeId": 72410,
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
         "provenanceSources": [
           {
@@ -3938,10 +3678,10 @@
       "description": "\"Contact Clark County\" is visually at position 35 but receives focus at position 21 (drift: 14).",
       "selector": "footer > div > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div:nth-of-type(1) > p:nth-of-type(3) > a",
       "elementHtml": "<a>Contact Clark County</a>",
-      "discoveredAt": "2026-04-09T16:23:45.703Z",
+      "discoveredAt": "2026-04-10T04:37:09.022Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1216",
       "metadata": {
-        "backendNodeId": 89072,
+        "backendNodeId": 87533,
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
         "provenanceSources": [
           {
@@ -3973,7 +3713,7 @@
       "description": "\"Accessibility Menu\" is visually at position 17 but receives focus at position 1 (drift: 16).",
       "selector": "#userwayAccessibilityIcon",
       "elementHtml": "<div>Accessibility Menu</div>",
-      "discoveredAt": "2026-04-09T16:23:45.703Z",
+      "discoveredAt": "2026-04-10T04:37:09.022Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1216",
       "metadata": {
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
@@ -4004,80 +3744,11 @@
       "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
       "conformanceLevel": "A",
       "severity": "medium",
-      "description": "\"Contact Clark County\" is visually at position 36 but receives focus at position 22 (drift: 14).",
-      "selector": "footer > div > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div:nth-of-type(1) > p:nth-of-type(3) > a",
-      "elementHtml": "<a>Contact Clark County</a>",
-      "discoveredAt": "2026-04-09T16:24:22.305Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1219",
-      "metadata": {
-        "backendNodeId": 104164,
-        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
-        "provenanceSources": [
-          {
-            "lens": "sonde-a11y",
-            "probe": "focus-order"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-a11y"
-        ],
-        "standards": [
-          "WCAG 2.4.3"
-        ]
-      },
-      "detectedBy": [
-        "sonde-a11y"
-      ],
-      "standards": [
-        "WCAG 2.4.3"
-      ]
-    },
-    {
-      "probe": "focus-order",
-      "standard": "WCAG 2.4.3",
-      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
-      "conformanceLevel": "A",
-      "severity": "medium",
       "description": "\"Accessibility Menu\" is visually at position 18 but receives focus at position 1 (drift: 17).",
       "selector": "#userwayAccessibilityIcon",
       "elementHtml": "<div>Accessibility Menu</div>",
-      "discoveredAt": "2026-04-09T16:24:22.305Z",
+      "discoveredAt": "2026-04-10T04:37:50.331Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1219",
-      "metadata": {
-        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
-        "provenanceSources": [
-          {
-            "lens": "sonde-a11y",
-            "probe": "focus-order"
-          }
-        ],
-        "provenanceConfidence": "medium",
-        "detectedBy": [
-          "sonde-a11y"
-        ],
-        "standards": [
-          "WCAG 2.4.3"
-        ]
-      },
-      "detectedBy": [
-        "sonde-a11y"
-      ],
-      "standards": [
-        "WCAG 2.4.3"
-      ]
-    },
-    {
-      "probe": "focus-order",
-      "standard": "WCAG 2.4.3",
-      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
-      "conformanceLevel": "A",
-      "severity": "medium",
-      "description": "\"Accessibility Menu\" is visually at position 18 but receives focus at position 1 (drift: 17).",
-      "selector": "#userwayAccessibilityIcon",
-      "elementHtml": "<div>Accessibility Menu</div>",
-      "discoveredAt": "2026-04-09T16:24:57.544Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1221",
       "metadata": {
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
         "provenanceSources": [
@@ -4110,10 +3781,10 @@
       "description": "\"Contact Clark County\" is visually at position 36 but receives focus at position 22 (drift: 14).",
       "selector": "footer > div > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div:nth-of-type(1) > p:nth-of-type(3) > a",
       "elementHtml": "<a>Contact Clark County</a>",
-      "discoveredAt": "2026-04-09T16:24:57.544Z",
-      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1221",
+      "discoveredAt": "2026-04-10T04:37:50.331Z",
+      "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1219",
       "metadata": {
-        "backendNodeId": 119295,
+        "backendNodeId": 102661,
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
         "provenanceSources": [
           {
@@ -4142,7 +3813,7 @@
       "description": "Broken link: https://www.clarkcountynv.gov/government/departments/administrative_services/town___liaison_services/tab_cac_information/ returns 404 Not Found",
       "selector": "#main-content > div:nth-of-type(1) > nav > ul > li:nth-of-type(6) > a",
       "elementHtml": "<a href=\"https://www.clarkcountynv.gov/government/departments/administrative_services/town___liaison_services/tab_cac_information/\">Town Advisory Boards and Citizens Advisory Councils</a>",
-      "discoveredAt": "2026-04-09T16:21:12.691Z",
+      "discoveredAt": "2026-04-10T04:34:34.450Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r105",
       "metadata": {
         "provenanceSources": [
@@ -4170,7 +3841,7 @@
       "description": "Broken link: https://www.clarkcountynv.gov/government/departments/administrative_services/town___liaison_services/tab_cac_information/ returns 404 Not Found",
       "selector": "#main-content > div:nth-of-type(1) > nav > ul > li:nth-of-type(6) > a",
       "elementHtml": "<a href=\"https://www.clarkcountynv.gov/government/departments/administrative_services/town___liaison_services/tab_cac_information/\">Town Advisory Boards and Citizens Advisory Councils</a>",
-      "discoveredAt": "2026-04-09T16:21:49.246Z",
+      "discoveredAt": "2026-04-10T04:35:16.615Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r106",
       "metadata": {
         "provenanceSources": [
@@ -4198,7 +3869,7 @@
       "description": "Broken link: https://www.clarkcountynv.gov/government/departments/administrative_services/town___liaison_services/tab_cac_information/ returns 404 Not Found",
       "selector": "#main-content > div:nth-of-type(1) > nav > ul > li:nth-of-type(6) > a",
       "elementHtml": "<a href=\"https://www.clarkcountynv.gov/government/departments/administrative_services/town___liaison_services/tab_cac_information/\">Town Advisory Boards and Citizens Advisory Councils</a>",
-      "discoveredAt": "2026-04-09T16:22:25.324Z",
+      "discoveredAt": "2026-04-10T04:35:53.594Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r117",
       "metadata": {
         "provenanceSources": [
@@ -4229,7 +3900,7 @@
       "description": "Content clipped by 96px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
       "selector": "p.description",
       "elementHtml": "<p class=\"description\">Celebrate culture, flavor, and community at the Tacos &amp; Tamales Festival, a two-day event featuring delicious tacos, tamales, and other specialties from local food trucks an",
-      "discoveredAt": "2026-04-09T16:20:21.491Z",
+      "discoveredAt": "2026-04-10T04:33:23.240Z",
       "pageUrl": "https://www.clarkcountynv.gov/",
       "metadata": {
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
@@ -4275,7 +3946,7 @@
       "description": "Element overflows viewport by 43px at 320px width.",
       "selector": "div.uwaw-dictionary-tooltip",
       "elementHtml": "<div class=\"uwaw-dictionary-tooltip\"></div>",
-      "discoveredAt": "2026-04-09T16:23:47.847Z",
+      "discoveredAt": "2026-04-10T04:37:11.171Z",
       "pageUrl": "https://www.clarkcountynv.gov/agenda/agenda-detail-t43-r1216",
       "metadata": {
         "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",

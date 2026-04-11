@@ -1,0 +1,767 @@
+{
+  "url": "https://fidelity.com",
+  "slug": "fidelity-com",
+  "status": "complete",
+  "scanDate": "2026-04-11T11:48:52.530Z",
+  "scanConfig": {
+    "scope": "site",
+    "maxPages": 50,
+    "racks": [
+      "rack-live-a11y",
+      "rack-live-free"
+    ],
+    "individualProbes": [],
+    "excludedProbes": [],
+    "timeBudgetMs": 300000,
+    "maxFindings": null
+  },
+  "sondeScore": {
+    "score": 980,
+    "rawPenalty": 333,
+    "normalizedPenalty": 15.136363636363637,
+    "pagesScanned": 22,
+    "weightsVersion": "v0.1"
+  },
+  "avgFindingsPerPage": 7,
+  "elementComplianceRate": 96.4,
+  "totalElements": 748,
+  "elementsWithFindings": 27,
+  "complianceSummary": {
+    "total": 155,
+    "byLevel": {
+      "A": 1,
+      "AA": 4
+    },
+    "bySeverity": {
+      "critical": 0,
+      "high": 89,
+      "medium": 66,
+      "low": 0
+    },
+    "byCriterion": {
+      "WCAG 1.1.1": 1,
+      "WCAG 1.4.3": 2,
+      "WCAG 2.4.5": 1,
+      "WCAG 1.4.4": 1
+    }
+  },
+  "summary": {
+    "pagesAnalyzed": 22,
+    "pagesFailed": 0,
+    "totalFindings": 155,
+    "bySeverity": {
+      "critical": 0,
+      "high": 89,
+      "medium": 66,
+      "low": 0
+    },
+    "byProbe": {},
+    "byType": {},
+    "durationMs": 315184
+  },
+  "jurisdiction": "US",
+  "entityName": "Fidelity Investments",
+  "findings": [
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"864\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-11T04:46:57.781Z",
+      "pageUrl": "chrome-error://chromewebdata/",
+      "metadata": {
+        "backendNodeId": 864,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Insufficient color contrast: 2.38:1 (required: 4.5:1 for normal text). Foreground: rgb(143, 143, 143), background: rgb(221, 221, 221). Text: \"https://www.fidelity.com/529-plans/espanol/faqs-about-accoun\"",
+      "selector": "strong",
+      "elementHtml": "<strong>https://www.fidelity.com/529-plans/espanol/faqs-about-accounts</strong>",
+      "discoveredAt": "2026-04-11T04:46:57.772Z",
+      "pageUrl": "chrome-error://chromewebdata/",
+      "metadata": {
+        "contrastForeground": "#8f8f8f",
+        "contrastBackground": "#dddddd",
+        "contrastSuggestedForeground": "#616161",
+        "contrastRatio": 2.380995222660319,
+        "contrastSuggestedRatio": 4.55976345949787,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "https://www.fidelity.com/529-plans/espanol/faqs-about-accoun",
+        "backendNodeId": 856,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Insufficient color contrast: 2.38:1 (required: 4.5:1 for normal text). Foreground: rgb(143, 143, 143), background: rgb(221, 221, 221). Text: \"The webpage at https://www.fidelity.com/529-plans/espanol/fa\"",
+      "selector": "#sub-frame-error-details",
+      "elementHtml": "<div id=\"sub-frame-error-details\">The webpage at <strong>https://www.fidelity.com/529-plans/espanol/faqs-about-accounts</strong> might be temporarily down or it may have moved permanently to a new web",
+      "discoveredAt": "2026-04-11T04:46:57.772Z",
+      "pageUrl": "chrome-error://chromewebdata/",
+      "metadata": {
+        "contrastForeground": "#8f8f8f",
+        "contrastBackground": "#dddddd",
+        "contrastSuggestedForeground": "#616161",
+        "contrastRatio": 2.380995222660319,
+        "contrastSuggestedRatio": 4.55976345949787,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "The webpage at https://www.fidelity.com/529-plans/espanol/fa",
+        "backendNodeId": 860,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "navigation-ways",
+      "standard": "WCAG 2.4.5",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Page has no detectable navigation mechanisms (no <nav>, search, sitemap link, breadcrumbs, or table of contents). Users need multiple ways to locate content.",
+      "selector": "html",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-11T04:46:57.772Z",
+      "pageUrl": "chrome-error://chromewebdata/",
+      "metadata": {
+        "backendNodeId": 880,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "navigation-ways"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 2.4.5"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 2.4.5"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-11T04:43:44.533Z",
+      "pageUrl": "chrome-error://chromewebdata/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#main-content",
+      "elementHtml": "<div id=\"main-content\">",
+      "discoveredAt": "2026-04-11T04:46:57.784Z",
+      "pageUrl": "chrome-error://chromewebdata/",
+      "metadata": {
+        "backendNodeId": 863,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 1.4.4",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/resize-text",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Zooming and scaling must not be disabled: Fix any of the following:\n  user-scalable=no on <meta> tag disables zooming on mobile devices",
+      "selector": "meta[name=\"viewport\"]",
+      "elementHtml": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0,\n                                 maximum-scale=1.0, user-scalable=no\">",
+      "discoveredAt": "2026-04-11T04:46:57.784Z",
+      "pageUrl": "chrome-error://chromewebdata/",
+      "metadata": {
+        "backendNodeId": 885,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/resize-text",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 1.4.4"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 1.4.4"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Document should have one main landmark: Fix all of the following:\n  Document does not have a main landmark",
+      "selector": "html",
+      "elementHtml": "<html dir=\"ltr\" lang=\"en\">",
+      "discoveredAt": "2026-04-11T04:47:11.279Z",
+      "pageUrl": "chrome-error://chromewebdata/",
+      "metadata": {
+        "backendNodeId": 941,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    }
+  ]
+}

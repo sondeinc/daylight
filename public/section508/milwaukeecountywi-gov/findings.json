@@ -1,0 +1,208 @@
+{
+  "url": "https://milwaukeecountywi.gov",
+  "slug": "milwaukeecountywi-gov",
+  "status": "incomplete",
+  "scanDate": "2026-04-11T17:19:25.984Z",
+  "scanConfig": {
+    "scope": "site",
+    "maxPages": 50,
+    "racks": [
+      "rack-live-a11y",
+      "rack-live-free"
+    ],
+    "individualProbes": [],
+    "excludedProbes": [],
+    "timeBudgetMs": 300000,
+    "maxFindings": null
+  },
+  "sondeScore": {
+    "score": 978,
+    "rawPenalty": 17,
+    "normalizedPenalty": 17,
+    "pagesScanned": 1,
+    "weightsVersion": "v0.1"
+  },
+  "avgFindingsPerPage": 4,
+  "elementComplianceRate": 95.6,
+  "totalElements": 45,
+  "elementsWithFindings": 2,
+  "complianceSummary": {
+    "total": 4,
+    "byLevel": {
+      "A": 1,
+      "AA": 2
+    },
+    "bySeverity": {
+      "critical": 1,
+      "high": 2,
+      "medium": 1,
+      "low": 0
+    },
+    "byCriterion": {
+      "WCAG 2.2.1": 1,
+      "WCAG 2.4.5": 1,
+      "WCAG 1.4.10": 1
+    }
+  },
+  "summary": {
+    "pagesAnalyzed": 1,
+    "pagesFailed": 0,
+    "totalFindings": 4,
+    "bySeverity": {
+      "critical": 1,
+      "high": 2,
+      "medium": 1,
+      "low": 0
+    },
+    "byProbe": {},
+    "byType": {},
+    "durationMs": 10782
+  },
+  "jurisdiction": "WI",
+  "entityName": "Milwaukee County (WI)",
+  "findings": [
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 2.2.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable",
+      "conformanceLevel": "A",
+      "severity": "critical",
+      "description": "Delayed refresh under 20 hours must not be used: Fix any of the following:\n  <meta> tag forces timed refresh of page (less than 20 hours)",
+      "selector": "meta[http-equiv=\"refresh\"]",
+      "elementHtml": "<meta http-equiv=\"refresh\" content=\"360\">",
+      "discoveredAt": "2026-04-11T10:19:22.995Z",
+      "pageUrl": "https://county.milwaukee.gov/EN?utm_source=milwaukeecountywi.gov",
+      "metadata": {
+        "backendNodeId": 32,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "timing-control"
+          }
+        ],
+        "provenanceConfidence": "high",
+        "detectedBy": [
+          "axe-core",
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 2.2.1"
+        ]
+      },
+      "detectedBy": [
+        "axe-core",
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 2.2.1"
+      ]
+    },
+    {
+      "probe": "navigation-ways",
+      "standard": "WCAG 2.4.5",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Page has no detectable navigation mechanisms (no <nav>, search, sitemap link, breadcrumbs, or table of contents). Users need multiple ways to locate content.",
+      "selector": "html",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-11T10:19:22.960Z",
+      "pageUrl": "https://county.milwaukee.gov/EN?utm_source=milwaukeecountywi.gov",
+      "metadata": {
+        "backendNodeId": 25,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "navigation-ways"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 2.4.5"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 2.4.5"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-11T10:19:22.919Z",
+      "pageUrl": "https://county.milwaukee.gov/EN?utm_source=milwaukeecountywi.gov",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Page requires horizontal scrolling at 320px width (95px overflow). Content should reflow without horizontal scrolling at this width.",
+      "selector": "html",
+      "elementHtml": "<html>",
+      "discoveredAt": "2026-04-11T10:19:25.962Z",
+      "pageUrl": "https://county.milwaukee.gov/EN?utm_source=milwaukeecountywi.gov",
+      "metadata": {
+        "backendNodeId": 25,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    }
+  ]
+}

@@ -1,11 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="refresh" content="0;url=section508/">
-  <title>Daylight by Sonde</title>
-</head>
-<body>
-  <p>Redirecting to <a href="section508/">Section 508 Reports</a>...</p>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Daylight by Sonde</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:title" content="Daylight by Sonde" />
+    <meta property="og:description" content="Free accessibility audits for public websites. Because transparency drives improvement." />
+    <meta property="og:type" content="website" />
+    <meta name="description" content="Daylight is a public accessibility research project by Sonde. We scan real websites, measure WCAG 2.1 AA conformance, and publish the results." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&amp;family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
+    <style>
+:root {
+  color-scheme: light;
+  --color-primary: #1a3554;
+  --color-secondary: #0a8a7e;
+  --color-bg: #f7f5f0;
+  --color-surface: #ffffff;
+  --color-text: #1c1917;
+  --color-text-muted: #6b6560;
+  --color-text-heading: #1a3554;
+  --color-border: #d8d4cc;
+  --color-border-subtle: #eae7e1;
+  --color-pass: #0a8a7e;
+  --color-fail: #c2410c;
+  --color-partial: #9c6a03;
+  --color-na: #8a857e;
+  --color-info: #2563eb;
+  --color-warning: #9c6a03;
+  --color-error: #c2410c;
+  --color-critical: #9f1239;
+  --color-accent: #1a3554;
+  --color-accent-dim: #1a355418;
+  --font-body: 'DM Sans', 'Avenir Next', system-ui, sans-serif;
+  --font-heading: 'Bricolage Grotesque', 'Avenir Next', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'Fira Code', ui-monospace, monospace;
+}
+
+@media print {
+  :root {
+    --color-bg: #ffffff;
+    --color-surface: #ffffff;
+    --color-text: #000000;
+    --color-text-heading: #000000;
+    --color-border: #cccccc;
+    --color-border-subtle: #eeeeee;
+  }
+  .sonde-nav, .sonde-controls, [data-print="hide"] { display: none !important; }
+  section, .vpat-section { break-inside: avoid; }
+  h2, h3 { break-after: avoid; }
+}
+
+/* ── Daylight extended custom properties ──────────────────────────────── */
+:root {
+  /* Table headers — dark navy bg with white text for both light and dark modes */
+  --color-table-header-bg:   #1a3554;
+  --color-table-header-text: #ffffff;
+
+  /* CTA card gradient — navy to teal, default light-mode treatment */
+  --daylight-cta-from:   #1a3554;
+  --daylight-cta-to:     #0a8a7e;
+  --daylight-cta-text:   #ffffff;
+  --daylight-cta-shadow: rgba(26, 53, 84, 0.22);
+
+  /* Spacing tokens */
+  --daylight-radius-card: 14px;
+  --daylight-radius-pill: 999px;
+  --daylight-radius-sm:    6px;
+
+  /* Shadow tokens */
+  --daylight-shadow-card:  0 4px 18px rgba(26, 53, 84, 0.10);
+  --daylight-shadow-lift:  0 8px 28px rgba(26, 53, 84, 0.14);
+
+  /* Subtle hero radial for atmosphere */
+  --daylight-hero-radial: radial-gradient(ellipse 70% 45% at 50% 0%, rgba(26, 53, 84, 0.06) 0%, transparent 100%);
+}
+
+/* ── Dark mode — explicit override via data-theme="dark" ──────────────── */
+[data-theme="dark"] {
+  color-scheme: dark;
+  --color-primary:       #5eb8ff;   /* Sky blue — readable on deep slate */
+  --color-primary-dark:  #1a3554;   /* Prussian navy — dark button bg */
+  --color-secondary:     #2dd4bf;   /* Phosphor teal */
+  --color-bg:            #0d1117;   /* GitHub-dark depth */
+  --color-surface:       #161b22;
+  --color-text:          #e6edf3;
+  --color-text-muted:    #8b949e;
+  --color-text-heading:  #cdd9e5;
+  --color-border:        #30363d;
+  --color-border-subtle: #21262d;
+  --color-pass:          #2dd4bf;
+  --color-fail:          #f87171;
+  --color-partial:       #fbbf24;
+  --color-na:            #6b7280;
+  --color-info:          #60a5fa;
+  --color-warning:       #fbbf24;
+  --color-error:         #f87171;
+  --color-critical:      #fb7185;
+  --color-accent:        #5eb8ff;
+  --color-accent-dim:    rgba(94, 184, 255, 0.14);
+
+  /* Table headers — dark bg with white text for contrast */
+  --color-table-header-bg:   #1a3554;
+  --color-table-header-text: #e6edf3;
+
+  /* Confidence badges — mode-aware text for contrast compliance */
+  --color-confidence-medium-text: #0d1117;  /* dark text on bright #fbbf24 (11.34:1) */
+  --color-confidence-low-text: #ffffff;     /* white text on dark #6b7280 (4.83:1) */
+
+  /* Fix plan cards — ensure text readable on accent-dim bg */
+  --color-fix-label:     #2dd4bf;
+  --color-fix-text:      #e6edf3;
+
+  /* Mission-control buttons: dark bg with light text in dark mode */
+  --color-btn-bg:        #1a3554;
+  --color-btn-text:      #e6edf3;
+  --color-primary-dark:  #1a3554;
+
+  /* CTA card — deep navy to electric teal in dark mode */
+  --daylight-cta-from:   #112240;
+  --daylight-cta-to:     #0e7490;
+  --daylight-cta-text:   #e0f2fe;
+  --daylight-cta-shadow: rgba(0, 0, 0, 0.40);
+
+  --daylight-shadow-card: 0 4px 18px rgba(0, 0, 0, 0.30);
+  --daylight-shadow-lift: 0 8px 28px rgba(0, 0, 0, 0.40);
+  --daylight-hero-radial: radial-gradient(ellipse 70% 45% at 50% 0%, rgba(45, 212, 191, 0.07) 0%, transparent 100%);
+}
+
+/* ── Dark mode — automatic via OS preference (no data-theme needed) ───── */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --color-primary:       #5eb8ff;
+    --color-primary-dark:  #1a3554;
+    --color-secondary:     #2dd4bf;
+    --color-bg:            #0d1117;
+    --color-surface:       #161b22;
+    --color-text:          #e6edf3;
+    --color-text-muted:    #8b949e;
+    --color-text-heading:  #cdd9e5;
+    --color-border:        #30363d;
+    --color-border-subtle: #21262d;
+    --color-pass:          #2dd4bf;
+    --color-fail:          #f87171;
+    --color-partial:       #fbbf24;
+    --color-na:            #6b7280;
+    --color-info:          #60a5fa;
+    --color-warning:       #fbbf24;
+    --color-error:         #f87171;
+    --color-critical:      #fb7185;
+    --color-accent:        #5eb8ff;
+    --color-accent-dim:    rgba(94, 184, 255, 0.14);
+
+    --color-table-header-bg:   #1a3554;
+    --color-table-header-text: #e6edf3;
+    --color-confidence-medium-text: #0d1117;
+    --color-confidence-low-text: #ffffff;
+    --color-fix-label:     #2dd4bf;
+    --color-fix-text:      #e6edf3;
+
+    /* Mission-control buttons: dark bg with light text in dark mode */
+    --color-btn-bg:        #1a3554;
+    --color-btn-text:      #e6edf3;
+
+    --daylight-cta-from:   #112240;
+    --daylight-cta-to:     #0e7490;
+    --daylight-cta-text:   #e0f2fe;
+    --daylight-cta-shadow: rgba(0, 0, 0, 0.40);
+
+    --daylight-shadow-card: 0 4px 18px rgba(0, 0, 0, 0.30);
+    --daylight-shadow-lift: 0 8px 28px rgba(0, 0, 0, 0.40);
+    --daylight-hero-radial: radial-gradient(ellipse 70% 45% at 50% 0%, rgba(45, 212, 191, 0.07) 0%, transparent 100%);
+  }
+}
+
+
+/* ── Daylight Homepage Overrides ─────────────────────────────── */
+
+.sonde-exhibit {
+  width: 90%;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 2rem 0 3rem;
+}
+
+.exhibit-title {
+  display: none; /* Title is in the branded header, not repeated */
+}
+
+.exhibit-subtitle {
+  font-size: 1.4rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.exhibit-heading {
+  font-size: 1.4rem;
+  color: var(--color-primary);
+  border-bottom: 2px solid var(--color-primary);
+  padding-bottom: 0.25rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.exhibit-body {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.exhibit-bullets li,
+.exhibit-numbered-list li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.exhibit-callout {
+  border-left: 3px solid var(--color-secondary);
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  background: var(--color-border-subtle);
+  border-radius: 0 6px 6px 0;
+}
+
+.exhibit-table {
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+
+.exhibit-table th {
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.85rem;
+}
+
+.exhibit-table td, .exhibit-table th {
+  padding: 0.6rem 0.8rem;
+}
+
+.exhibit-table tr:nth-child(even) {
+  background: var(--color-border-subtle);
+}
+
+.exhibit-header {
+  text-align: center;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  border-bottom: 3px solid var(--color-primary);
+}
+
+.exhibit-header h1 {
+  display: none; /* Title rendered by exhibit-title element instead */
+}
+
+.homepage-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.homepage-brand-name {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--color-text-heading);
+}
+
+.exhibit-footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+.exhibit-line {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 2rem 0;
+}
+
+.exhibit-slide {
+  margin-bottom: 1rem;
+}
+
+.sonde-exhibit a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.sonde-exhibit a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+/* ── Print ─────────────────────────────────────────────────── */
+@media print {
+  .sonde-exhibit { max-width: none; padding: 1cm; }
+}
+
+
+/* Body inherits theme — ensures background, font, and color apply full-bleed */
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-bg, #ffffff);
+  color: var(--color-text, #1c1917);
+  font-family: var(--font-body, system-ui, sans-serif);
+  font-size: var(--font-size-base, 16px);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Visually hidden utility for screen readers */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+    </style>
+  </head>
+  <body>
+    <a href="#main-content" class="visually-hidden">Skip to main content</a>
+    <main id="main-content" class="sonde-exhibit">
+      <header class="exhibit-header">
+        <h1>Daylight by Sonde</h1>
+        <div class="homepage-brand"><svg class="sonde-daylight-mark" viewBox="0 0 512 512" width="36" height="36" aria-hidden="true">
+  <defs>
+    <radialGradient id="hp-sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffe082" />
+      <stop offset="60%" stop-color="#ffb300" />
+      <stop offset="100%" stop-color="#e65100" />
+    </radialGradient>
+    <clipPath id="hp-disc"><circle cx="256" cy="256" r="240" /></clipPath>
+  </defs>
+  <circle cx="256" cy="256" r="240" fill="url(#hp-sun)" />
+  <g clip-path="url(#hp-disc)">
+    <g transform="translate(250,240) rotate(-40)" fill="#1a1a2e" stroke="#1a1a2e">
+      <line x1="-32" y1="-8" x2="-160" y2="-40" stroke-width="6" stroke-linecap="round" />
+      <circle cx="-160" cy="-40" r="10" />
+      <line x1="-32" y1="16" x2="-125" y2="62" stroke-width="8" stroke-linecap="round" />
+      <rect x="-141" y="38" width="32" height="60" rx="4" transform="rotate(20,-125,62)" />
+      <line x1="-16" y1="-40" x2="-46" y2="-92" stroke-width="7" stroke-linecap="round" />
+      <rect x="-70" y="-108" width="48" height="28" rx="4" />
+      <circle cx="-56" cy="-98" r="8" />
+      <circle cx="-36" cy="-98" r="6" />
+      <path d="M48,-108 Q128,-78 128,0 Q128,78 48,108" stroke-width="5" stroke-linejoin="round" />
+      <line x1="58" y1="-50" x2="108" y2="0" stroke-width="5" />
+      <line x1="58" y1="50" x2="108" y2="0" stroke-width="5" />
+      <line x1="48" y1="0" x2="108" y2="0" stroke-width="5" />
+      <circle cx="110" cy="0" r="14" />
+      <polygon points="-16,-40 48,-40 62,-24 62,24 48,40 -16,40 -30,24 -30,-24" />
+    </g>
+  </g>
+</svg><span class="homepage-brand-name">Sonde Daylight Project</span></div>
+      </header>
+
+<section class="exhibit-slide" data-slide-index="0">
+<p class="exhibit-subtitle">Illuminating accessibility for software</p>
+<p class="exhibit-body">Software should support infinite diversity in infinite combinations. Daylight scans real websites, measures accessibility conformance, and publishes the results openly because accessibility matters.</p>
+<p class="exhibit-body"><a href="./section508/"><strong>→ View the Government (Section 508) Leaderboard</strong></a> — 54 sites</p>
+<p class="exhibit-body"><a href="./financial/"><strong>→ View the Financial (ADA Title III) Leaderboard</strong></a> — 10 sites</p>
+</section>
+
+<section class="exhibit-slide" data-slide-index="1">
+<h2 class="exhibit-heading">Every Finding Has a Source</h2>
+<p class="exhibit-body">Sonde findings are traceable. Every finding records:</p>
+<ol class="exhibit-numbered-list">
+  <li>The specific WCAG success criterion violated</li>
+  <li>The probe that detected it (and its version)</li>
+  <li>The DOM element or page context where the issue occurs</li>
+  <li>A remediation suggestion</li>
+</ol>
+<p class="exhibit-body">No black boxes. No unexplained scores. Every number in a Daylight report can be traced to its source.</p>
+</section>
+
+<section class="exhibit-slide" data-slide-index="2">
+<h2 class="exhibit-heading">From Findings to Fixes</h2>
+<p class="exhibit-body">Daylight reports don&#39;t just identify problems — they suggest solutions. Each finding includes remediation guidance: what to change, why it matters, and how to verify the fix.</p>
+</section>
+
+<section class="exhibit-slide" data-slide-index="3">
+<h2 class="exhibit-heading">Nominate a Site</h2>
+<p class="exhibit-body">Know a public website that should be on a leaderboard? Nominate it via our GitHub Discussions. We review nominations and add qualifying sites.</p>
+<aside class="exhibit-callout" role="note">
+  <p>Inclusion on the leaderboard is based on public interest and sector relevance, not sponsorship.</p>
+</aside>
+</section>
+
+<section class="exhibit-slide" data-slide-index="4">
+<h2 class="exhibit-heading">About Sonde</h2>
+<p class="exhibit-body">Sonde is a holistic software system analyzer. It understands coding languages, build configurations, dependency graphs, compliance posture, and runtime resources, then runs probes that annotate findings.</p>
+<ul class="exhibit-bullets">
+  <li><a href="https://sonde.life">Learn more about Sonde</a></li>
+  <li><a href="./methodology/">How the Sonde Score works</a></li>
+</ul>
+</section>
+
+<section class="exhibit-slide" data-slide-index="5">
+<h2 class="exhibit-heading">The Sonde Score</h2>
+<p class="exhibit-body">Every site receives a Sonde Score from 0 to 1000, computed from automated accessibility analysis across multiple dimensions:</p>
+<ul class="exhibit-bullets">
+  <li>WCAG 2.1 Level A and Level AA criterion coverage</li>
+  <li>Finding severity and density (critical findings weigh more)</li>
+  <li>Cross-page consistency (one clean page doesn&#39;t offset five broken ones)</li>
+  <li>Probe detection confidence (each finding traces to a specific rule)</li>
+</ul>
+<p class="exhibit-body">Sonde currently evaluates 46 WCAG success criteria using Sonde live probes (keyboard navigation, color contrast, reflow, media accessibility), accessibility tree analysis, and axe-core DOM rules.</p>
+<aside class="exhibit-callout" role="note">
+  <p>The methodology is published and open to review. Scores are reproducible: re-run any scan, get the same results.</p>
+</aside>
+</section>
+
+<section class="exhibit-slide" data-slide-index="6">
+<hr class="exhibit-line" />
+<p class="exhibit-body">This report presents the results of automated accessibility analysis and is provided free of charge, as-is, without warranty of any kind. Findings are generated by software, not by human accessibility experts, and may contain errors or omissions. Automated testing can detect approximately 30–40% of accessibility issues; manual expert evaluation is recommended for complete conformance assessment. Scores reflect algorithmic analysis under a published methodology open to public review — they are not legal determinations of compliance. Results reflect the state of the website at the time of scanning and may change as the site is updated. Nothing in this report constitutes legal advice. Sonde assumes no liability for decisions made based on these results.</p>
+</section>
+
+      <footer class="exhibit-footer">
+        <p>Generated by Sonde</p>
+      </footer>
+    </main>
+
+
+  </body>
 </html>

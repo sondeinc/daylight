@@ -1,0 +1,276 @@
+{
+  "url": "https://polkcountyiowa.gov",
+  "slug": "polkcountyiowa-gov",
+  "status": "incomplete",
+  "scanDate": "2026-04-11T16:56:24.319Z",
+  "scanConfig": {
+    "scope": "site",
+    "maxPages": 50,
+    "racks": [
+      "rack-live-a11y",
+      "rack-live-free"
+    ],
+    "individualProbes": [],
+    "excludedProbes": [],
+    "timeBudgetMs": 300000,
+    "maxFindings": null
+  },
+  "sondeScore": {
+    "score": 983,
+    "rawPenalty": 13,
+    "normalizedPenalty": 13,
+    "pagesScanned": 1,
+    "weightsVersion": "v0.1"
+  },
+  "avgFindingsPerPage": 7,
+  "elementComplianceRate": 42.9,
+  "totalElements": 7,
+  "elementsWithFindings": 4,
+  "complianceSummary": {
+    "total": 7,
+    "byLevel": {
+      "A": 1,
+      "AA": 1
+    },
+    "bySeverity": {
+      "critical": 0,
+      "high": 3,
+      "medium": 4,
+      "low": 0
+    },
+    "byCriterion": {
+      "WCAG 3.1.1": 1,
+      "WCAG 2.4.5": 1
+    }
+  },
+  "summary": {
+    "pagesAnalyzed": 1,
+    "pagesFailed": 0,
+    "totalFindings": 7,
+    "bySeverity": {
+      "critical": 0,
+      "high": 3,
+      "medium": 4,
+      "low": 0
+    },
+    "byProbe": {},
+    "byType": {},
+    "durationMs": 21663
+  },
+  "jurisdiction": "IA",
+  "entityName": "Polk County (IA)",
+  "findings": [
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 3.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/language-of-page",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "<html> element must have a lang attribute: Fix any of the following:\n  The <html> element does not have a lang attribute",
+      "selector": "html",
+      "elementHtml": "<html><head>\n<title>Access Denied</title>\n</head><body>\n<h1>Access Denied</h1>\n \nYou don't have permission to access \"http://polkcountyiowa.gov/\" on this server.<p>\nReference #18.8c1c1602.1775901367.3...",
+      "discoveredAt": "2026-04-11T09:56:07.963Z",
+      "pageUrl": "https://polkcountyiowa.gov/",
+      "metadata": {
+        "backendNodeId": 7,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/language-of-page",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "language-page"
+          }
+        ],
+        "provenanceConfidence": "high",
+        "detectedBy": [
+          "axe-core",
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 3.1.1"
+        ]
+      },
+      "detectedBy": [
+        "axe-core",
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 3.1.1"
+      ]
+    },
+    {
+      "probe": "navigation-ways",
+      "standard": "WCAG 2.4.5",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Page has no detectable navigation mechanisms (no <nav>, search, sitemap link, breadcrumbs, or table of contents). Users need multiple ways to locate content.",
+      "selector": "html",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-11T09:56:07.946Z",
+      "pageUrl": "https://polkcountyiowa.gov/",
+      "metadata": {
+        "backendNodeId": 7,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "navigation-ways"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 2.4.5"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 2.4.5"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing X-Content-Type-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-11T09:56:07.907Z",
+      "pageUrl": "https://polkcountyiowa.gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "h1",
+      "elementHtml": "<h1>Access Denied</h1>",
+      "discoveredAt": "2026-04-11T09:56:07.963Z",
+      "pageUrl": "https://polkcountyiowa.gov/",
+      "metadata": {
+        "backendNodeId": 11,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "p:nth-child(3)",
+      "elementHtml": "<p>https://errors.edgesuite.net/18.8c1c1602.1775901367.3ec1f92c</p>",
+      "discoveredAt": "2026-04-11T09:56:07.963Z",
+      "pageUrl": "https://polkcountyiowa.gov/",
+      "metadata": {
+        "backendNodeId": 13,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "p:nth-child(2)",
+      "elementHtml": "<p>\nReference #18.8c1c1602.1775901367.3ec1f92c\n</p>",
+      "discoveredAt": "2026-04-11T09:56:07.963Z",
+      "pageUrl": "https://polkcountyiowa.gov/",
+      "metadata": {
+        "backendNodeId": 12,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Document should have one main landmark: Fix all of the following:\n  Document does not have a main landmark",
+      "selector": "html",
+      "elementHtml": "<html><head>\n<title>Access Denied</title>\n</head><body>\n<h1>Access Denied</h1>\n \nYou don't have permission to access \"http://polkcountyiowa.gov/\" on this server.<p>\nReference #18.8c1c1602.1775901367.3...",
+      "discoveredAt": "2026-04-11T09:56:07.963Z",
+      "pageUrl": "https://polkcountyiowa.gov/",
+      "metadata": {
+        "backendNodeId": 7,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    }
+  ]
+}
