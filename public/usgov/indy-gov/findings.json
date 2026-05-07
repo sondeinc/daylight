@@ -1,0 +1,395 @@
+{
+  "url": "https://indy.gov",
+  "slug": "indy-gov",
+  "status": "incomplete",
+  "scanDate": "2026-04-29T02:49:54.825Z",
+  "scanConfig": {
+    "scope": "site",
+    "maxPages": 50,
+    "racks": [
+      "rack-live-a11y",
+      "rack-live-free"
+    ],
+    "individualProbes": [],
+    "excludedProbes": [],
+    "timeBudgetMs": 180000,
+    "maxFindings": null
+  },
+  "sondeScore": {
+    "score": 976,
+    "rawPenalty": 18.5,
+    "normalizedPenalty": 18.5,
+    "pagesScanned": 1,
+    "weightsVersion": "v0.1"
+  },
+  "avgFindingsPerPage": 10,
+  "elementComplianceRate": 0,
+  "totalElements": 4,
+  "elementsWithFindings": 8,
+  "complianceSummary": {
+    "total": 10,
+    "byLevel": {
+      "A": 4,
+      "AA": 2
+    },
+    "bySeverity": {
+      "critical": 0,
+      "high": 5,
+      "medium": 3,
+      "low": 2
+    },
+    "byCriterion": {
+      "WCAG 1.1.1": 1,
+      "WCAG 2.5.8": 1,
+      "WCAG 4.1.2": 1,
+      "WCAG 2.4.3": 2,
+      "WCAG 1.4.12": 1
+    }
+  },
+  "summary": {
+    "pagesAnalyzed": 1,
+    "pagesFailed": 0,
+    "totalFindings": 10,
+    "bySeverity": {
+      "critical": 0,
+      "high": 5,
+      "medium": 3,
+      "low": 2
+    },
+    "byProbe": {},
+    "byType": {},
+    "durationMs": 31579
+  },
+  "jurisdiction": "IN",
+  "entityName": "City of Indianapolis",
+  "scanSource": "live",
+  "findings": [
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"377\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T19:49:37.151Z",
+      "pageUrl": "https://www.indy.gov/",
+      "metadata": {
+        "backendNodeId": 377,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 2.5.8",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "All touch targets must be 24px large, or leave sufficient space: Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 139.8px by 12px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 0px instead of at least 24px.",
+      "selector": ".banner-content > button",
+      "elementHtml": "<button><a href=\"https://us-east-1-indy.graphassets.com/ActDBC5rvRWeCZlNNnLrDz/cmnqg8gjp0om407k9kby32l28\">Click Here</a></button>",
+      "discoveredAt": "2026-04-28T19:49:37.254Z",
+      "pageUrl": "https://www.indy.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 2.5.8"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 2.5.8"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 4.1.2",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Interactive controls must not be nested: Fix any of the following:\n  Element has focusable descendants",
+      "selector": ".banner-content > button",
+      "elementHtml": "<button><a href=\"https://us-east-1-indy.graphassets.com/ActDBC5rvRWeCZlNNnLrDz/cmnqg8gjp0om407k9kby32l28\">Click Here</a></button>",
+      "discoveredAt": "2026-04-28T19:49:37.254Z",
+      "pageUrl": "https://www.indy.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 4.1.2"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 4.1.2"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Focus jumps backward from \"PRIVACY POLICY\" to \"Click Here\" (visual distance: 4574px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#footer > div > div:nth-of-type(2) > div > button",
+      "elementHtml": "<button>Click Here</button>",
+      "discoveredAt": "2026-04-28T19:49:53.177Z",
+      "pageUrl": "https://www.indy.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T19:49:37.107Z",
+      "pageUrl": "https://www.indy.gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-28T19:49:37.242Z",
+      "pageUrl": "https://www.indy.gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-28T19:49:37.242Z",
+      "pageUrl": "https://www.indy.gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#google_translate_container",
+      "elementHtml": "<div id=\"google_translate_container\">",
+      "discoveredAt": "2026-04-28T19:49:37.254Z",
+      "pageUrl": "https://www.indy.gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "\"Click Here\" is visually at position 3 but receives focus at position 42 (drift: 39).",
+      "selector": "#footer > div > div:nth-of-type(2) > div > button > a",
+      "elementHtml": "<a>Click Here</a>",
+      "discoveredAt": "2026-04-28T19:49:53.177Z",
+      "pageUrl": "https://www.indy.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 95px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "a.skip-button",
+      "elementHtml": "<a href=\"#main\" class=\"skip-button\">Skip to main content</a>",
+      "discoveredAt": "2026-04-28T19:49:50.357Z",
+      "pageUrl": "",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    }
+  ],
+  "requestedJurisdictions": [
+    "us"
+  ],
+  "appliedJurisdictions": [
+    "us"
+  ]
+}

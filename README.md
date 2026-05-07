@@ -2,7 +2,7 @@
 
 **Illuminating accessibility for software.**
 
-On April 24, 2026, large government entities face a legal deadline to make
+On April 24, 2027, large government entities face a legal deadline to make
 their websites accessible. We built a scanner. We scanned them. We published
 everything — every finding, every score, the complete methodology. Because
 accountability requires transparency, and transparency requires putting your
@@ -12,8 +12,8 @@ work where anyone can see it.
 
 ## Live Leaderboards
 
-- **[Government (Section 508)](https://daylight.sonde.life/section508)** — US government websites
-- **[Financial (ADA Title III)](https://daylight.sonde.life/financial)** — Major financial institutions
+- **[US Governments](https://daylight.sonde.life/usgov)** — US government websites (Section 508)
+- **[US Financial](https://daylight.sonde.life/usfin)** — Major financial institutions (ADA Title III)
 - **[Methodology](https://daylight.sonde.life/methodology)** — How the Sonde Score works
 
 | Rank | Website | Sonde Score | Findings | Pages |

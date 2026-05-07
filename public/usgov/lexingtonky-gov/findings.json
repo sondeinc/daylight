@@ -1,0 +1,2267 @@
+{
+  "url": "https://www.lexingtonky.gov",
+  "slug": "lexingtonky-gov",
+  "status": "complete",
+  "scanDate": "2026-04-29T00:34:46.022Z",
+  "scanConfig": {
+    "scope": "site",
+    "maxPages": 50,
+    "racks": [
+      "rack-live-a11y",
+      "rack-live-free"
+    ],
+    "individualProbes": [],
+    "excludedProbes": [],
+    "timeBudgetMs": 180000,
+    "maxFindings": null
+  },
+  "sondeScore": {
+    "score": 987,
+    "rawPenalty": 100.25,
+    "normalizedPenalty": 10.025,
+    "pagesScanned": 10,
+    "weightsVersion": "v0.1"
+  },
+  "avgFindingsPerPage": 8.7,
+  "elementComplianceRate": 99,
+  "totalElements": 3134,
+  "elementsWithFindings": 30,
+  "complianceSummary": {
+    "total": 87,
+    "byLevel": {
+      "A": 8,
+      "AA": 21
+    },
+    "bySeverity": {
+      "critical": 0,
+      "high": 13,
+      "medium": 57,
+      "low": 17
+    },
+    "byCriterion": {
+      "WCAG 1.3.1": 2,
+      "WCAG 2.4.3": 5,
+      "WCAG 2.4.1": 1,
+      "WCAG 4.1.3": 10,
+      "WCAG 2.4.5": 8,
+      "WCAG 1.4.12": 2,
+      "WCAG 1.4.10": 1
+    }
+  },
+  "summary": {
+    "pagesAnalyzed": 10,
+    "pagesFailed": 0,
+    "totalFindings": 87,
+    "bySeverity": {
+      "critical": 0,
+      "high": 13,
+      "medium": 57,
+      "low": 17
+    },
+    "byProbe": {},
+    "byType": {},
+    "durationMs": 242846
+  },
+  "jurisdiction": "KY",
+  "entityName": "Lexington-Fayette Urban County",
+  "scanSource": "live",
+  "findings": [
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.3.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Empty heading (role=\"heading\"). Headings must contain text for screen reader navigation to work.",
+      "selector": "[role=\"heading\"][data-a11y-node=\"2338\"]",
+      "elementHtml": "<!-- a11y: role=\"heading\" name=\" \" -->",
+      "discoveredAt": "2026-04-28T17:33:43.174Z",
+      "pageUrl": "https://www.lexingtonky.gov/government/departments-programs/environmental-quality-public-works/environmental-services/live-green-lexington/winter-waste-tips",
+      "metadata": {
+        "backendNodeId": 2338,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.3.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.3.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.3.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Empty heading (role=\"heading\"). Headings must contain text for screen reader navigation to work.",
+      "selector": "[role=\"heading\"][data-a11y-node=\"2315\"]",
+      "elementHtml": "<!-- a11y: role=\"heading\" name=\" \" -->",
+      "discoveredAt": "2026-04-28T17:33:43.174Z",
+      "pageUrl": "https://www.lexingtonky.gov/government/departments-programs/environmental-quality-public-works/environmental-services/live-green-lexington/winter-waste-tips",
+      "metadata": {
+        "backendNodeId": 2315,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.3.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.3.1"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Water Quality\" to \"Special holiday collections\" (visual distance: 1819px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#main-content > div:nth-of-type(2) > div:nth-of-type(2) > article > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > a:nth-of-type(1)",
+      "elementHtml": "<a>Special holiday collections</a>",
+      "discoveredAt": "2026-04-28T17:33:50.933Z",
+      "pageUrl": "https://www.lexingtonky.gov/government/departments-programs/environmental-quality-public-works/environmental-services/live-green-lexington/winter-waste-tips",
+      "metadata": {
+        "backendNodeId": 2251,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Focus jumps backward from \"What's being done?\" to \"Investment in Homeless Response\" (visual distance: 449px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#investment-in-homeless-response",
+      "elementHtml": "<h2>Investment in Homeless Response</h2>",
+      "discoveredAt": "2026-04-28T17:33:29.073Z",
+      "pageUrl": "https://www.lexingtonky.gov/government/departments-programs/housing-advocacy-community-development/office-homelessness-prevention-intervention/whats-being-done",
+      "metadata": {
+        "backendNodeId": 1550,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing X-Content-Type-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:30:50.996Z",
+      "pageUrl": "https://www.lexingtonky.gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing X-Content-Type-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:32:34.112Z",
+      "pageUrl": "https://www.lexingtonky.gov/economic-development",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing X-Content-Type-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:32:14.302Z",
+      "pageUrl": "https://www.lexingtonky.gov/government",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing X-Content-Type-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:33:43.151Z",
+      "pageUrl": "https://www.lexingtonky.gov/government/departments-programs/environmental-quality-public-works/environmental-services/live-green-lexington/winter-waste-tips",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing X-Content-Type-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:33:22.825Z",
+      "pageUrl": "https://www.lexingtonky.gov/government/departments-programs/housing-advocacy-community-development/office-homelessness-prevention-intervention/whats-being-done",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing X-Content-Type-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:31:22.854Z",
+      "pageUrl": "https://www.lexingtonky.gov/living",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing X-Content-Type-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:31:52.019Z",
+      "pageUrl": "https://www.lexingtonky.gov/playing",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing X-Content-Type-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:33:15.971Z",
+      "pageUrl": "https://www.lexingtonky.gov/ready",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing X-Content-Type-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:31:40.214Z",
+      "pageUrl": "https://www.lexingtonky.gov/working",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "low",
+      "description": "Headings should not be empty: Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+      "selector": "h3:nth-child(11)",
+      "elementHtml": "<h3>&nbsp;</h3>",
+      "discoveredAt": "2026-04-28T17:33:43.319Z",
+      "pageUrl": "https://www.lexingtonky.gov/government/departments-programs/environmental-quality-public-works/environmental-services/live-green-lexington/winter-waste-tips",
+      "metadata": {
+        "backendNodeId": 2338,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "low",
+      "description": "Headings should not be empty: Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+      "selector": "h3:nth-child(4)",
+      "elementHtml": "<h3>&nbsp;</h3>",
+      "discoveredAt": "2026-04-28T17:33:43.319Z",
+      "pageUrl": "https://www.lexingtonky.gov/government/departments-programs/environmental-quality-public-works/environmental-services/live-green-lexington/winter-waste-tips",
+      "metadata": {
+        "backendNodeId": 2315,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "keyboard-trap",
+      "standard": "WCAG 2.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks",
+      "conformanceLevel": "A",
+      "severity": "low",
+      "description": "Deep focus region: nav \"Sidebar navigation\" has 40 tab stops before focus escapes. Consider adding skip navigation or grouping with arrow keys.",
+      "selector": "nav[aria-label=\"Sidebar\\ navigation\"]",
+      "elementHtml": "<nav role=\"nav\">Sidebar navigation</nav>",
+      "discoveredAt": "2026-04-28T17:33:47.278Z",
+      "pageUrl": "https://www.lexingtonky.gov/government/departments-programs/environmental-quality-public-works/environmental-services/live-green-lexington/winter-waste-tips",
+      "metadata": {
+        "backendNodeId": 2122,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "keyboard-trap"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.1"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://twitter.com/LexingtonKyGov returned status 403 Forbidden after 1 attempts",
+      "selector": "#__next > footer > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > a:nth-of-type(5)",
+      "elementHtml": "<a href=\"https://twitter.com/LexingtonKyGov\"></a>",
+      "discoveredAt": "2026-04-28T17:30:52.607Z",
+      "pageUrl": "https://www.lexingtonky.gov/",
+      "metadata": {
+        "href": "https://twitter.com/LexingtonKyGov",
+        "text": "",
+        "protocol": "https:",
+        "attempts": 1,
+        "status": 403,
+        "statusText": "Forbidden",
+        "backendNodeId": 342,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Link timeout: fax:+18592583194 did not respond within 5000ms after 8 attempts",
+      "selector": "#main-content > div > article > div:nth-of-type(8) > div > div:nth-of-type(2) > div:nth-of-type(4) > span > a",
+      "elementHtml": "<a href=\"fax:+18592583194\">(859) 258-3194</a>",
+      "discoveredAt": "2026-04-28T17:32:49.090Z",
+      "pageUrl": "https://www.lexingtonky.gov/economic-development",
+      "metadata": {
+        "href": "fax:+18592583194",
+        "text": "(859) 258-3194",
+        "protocol": "fax:",
+        "attempts": 8,
+        "backendNodeId": 365,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://twitter.com/LexingtonKyGov returned status 403 Forbidden after 1 attempts",
+      "selector": "#__next > footer > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > a:nth-of-type(5)",
+      "elementHtml": "<a href=\"https://twitter.com/LexingtonKyGov\"></a>",
+      "discoveredAt": "2026-04-28T17:32:49.090Z",
+      "pageUrl": "https://www.lexingtonky.gov/economic-development",
+      "metadata": {
+        "href": "https://twitter.com/LexingtonKyGov",
+        "text": "",
+        "protocol": "https:",
+        "attempts": 1,
+        "status": 403,
+        "statusText": "Forbidden",
+        "backendNodeId": 433,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://twitter.com/LexingtonKyGov returned status 403 Forbidden after 1 attempts",
+      "selector": "#__next > footer > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > a:nth-of-type(5)",
+      "elementHtml": "<a href=\"https://twitter.com/LexingtonKyGov\"></a>",
+      "discoveredAt": "2026-04-28T17:32:14.755Z",
+      "pageUrl": "https://www.lexingtonky.gov/government",
+      "metadata": {
+        "href": "https://twitter.com/LexingtonKyGov",
+        "text": "",
+        "protocol": "https:",
+        "attempts": 1,
+        "status": 403,
+        "statusText": "Forbidden",
+        "backendNodeId": 2651,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://twitter.com/LiveGreenLex returned status 403 Forbidden after 1 attempts",
+      "selector": "#main-content > div:nth-of-type(2) > div:nth-of-type(2) > article > div:nth-of-type(2) > div:nth-of-type(6) > div > div:nth-of-type(2) > div:nth-of-type(5) > div > a:nth-of-type(3)",
+      "elementHtml": "<a href=\"https://twitter.com/LiveGreenLex\"></a>",
+      "discoveredAt": "2026-04-28T17:33:44.756Z",
+      "pageUrl": "https://www.lexingtonky.gov/government/departments-programs/environmental-quality-public-works/environmental-services/live-green-lexington/winter-waste-tips",
+      "metadata": {
+        "href": "https://twitter.com/LiveGreenLex",
+        "text": "",
+        "protocol": "https:",
+        "attempts": 1,
+        "status": 403,
+        "statusText": "Forbidden",
+        "backendNodeId": 2384,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://twitter.com/LexingtonKyGov returned status 403 Forbidden after 1 attempts",
+      "selector": "#__next > footer > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > a:nth-of-type(5)",
+      "elementHtml": "<a href=\"https://twitter.com/LexingtonKyGov\"></a>",
+      "discoveredAt": "2026-04-28T17:33:44.756Z",
+      "pageUrl": "https://www.lexingtonky.gov/government/departments-programs/environmental-quality-public-works/environmental-services/live-green-lexington/winter-waste-tips",
+      "metadata": {
+        "href": "https://twitter.com/LexingtonKyGov",
+        "text": "",
+        "protocol": "https:",
+        "attempts": 1,
+        "status": 403,
+        "statusText": "Forbidden",
+        "backendNodeId": 2442,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://drive.google.com/file/d/1BNNwhrAAp9X0XEzixYEJAHDA9IZBTaY1/view?usp=sharing returned status 404 Not Found after 1 attempts",
+      "selector": "#main-content > div:nth-of-type(2) > div:nth-of-type(2) > article > div:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(2) > p:nth-of-type(3) > a",
+      "elementHtml": "<a href=\"https://drive.google.com/file/d/1BNNwhrAAp9X0XEzixYEJAHDA9IZBTaY1/view?usp=sharing\">Schedule of Program Performance and Evaluation Committee presentations</a>",
+      "discoveredAt": "2026-04-28T17:33:24.380Z",
+      "pageUrl": "https://www.lexingtonky.gov/government/departments-programs/housing-advocacy-community-development/office-homelessness-prevention-intervention/whats-being-done",
+      "metadata": {
+        "href": "https://drive.google.com/file/d/1BNNwhrAAp9X0XEzixYEJAHDA9IZBTaY1/view?usp=sharing",
+        "text": "Schedule of Program Performance and Evaluation Committee presentations",
+        "protocol": "https:",
+        "attempts": 1,
+        "status": 404,
+        "statusText": "Not Found",
+        "backendNodeId": 1557,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://twitter.com/LexingtonKyGov returned status 403 Forbidden after 1 attempts",
+      "selector": "#__next > footer > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > a:nth-of-type(5)",
+      "elementHtml": "<a href=\"https://twitter.com/LexingtonKyGov\"></a>",
+      "discoveredAt": "2026-04-28T17:33:24.380Z",
+      "pageUrl": "https://www.lexingtonky.gov/government/departments-programs/housing-advocacy-community-development/office-homelessness-prevention-intervention/whats-being-done",
+      "metadata": {
+        "href": "https://twitter.com/LexingtonKyGov",
+        "text": "",
+        "protocol": "https:",
+        "attempts": 1,
+        "status": 403,
+        "statusText": "Forbidden",
+        "backendNodeId": 1723,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://drive.google.com/file/d/1c8fj-PxpBp3e73tvDEexQA1Ki1UvJMDZ/view?usp=sharing returned status 404 Not Found after 1 attempts",
+      "selector": "#main-content > div:nth-of-type(2) > div:nth-of-type(2) > article > div:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(2) > p:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"https://drive.google.com/file/d/1c8fj-PxpBp3e73tvDEexQA1Ki1UvJMDZ/view?usp=sharing\">Program Performance and Evaluation Committee meeting details</a>",
+      "discoveredAt": "2026-04-28T17:33:24.380Z",
+      "pageUrl": "https://www.lexingtonky.gov/government/departments-programs/housing-advocacy-community-development/office-homelessness-prevention-intervention/whats-being-done",
+      "metadata": {
+        "href": "https://drive.google.com/file/d/1c8fj-PxpBp3e73tvDEexQA1Ki1UvJMDZ/view?usp=sharing",
+        "text": "Program Performance and Evaluation Committee meeting details",
+        "protocol": "https:",
+        "attempts": 1,
+        "status": 404,
+        "statusText": "Not Found",
+        "backendNodeId": 1554,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://twitter.com/LexingtonKyGov returned status 403 Forbidden after 1 attempts",
+      "selector": "#__next > footer > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > a:nth-of-type(5)",
+      "elementHtml": "<a href=\"https://twitter.com/LexingtonKyGov\"></a>",
+      "discoveredAt": "2026-04-28T17:31:25.134Z",
+      "pageUrl": "https://www.lexingtonky.gov/living",
+      "metadata": {
+        "href": "https://twitter.com/LexingtonKyGov",
+        "text": "",
+        "protocol": "https:",
+        "attempts": 1,
+        "status": 403,
+        "statusText": "Forbidden",
+        "backendNodeId": 1336,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://twitter.com/LexingtonKyGov returned status 403 Forbidden after 1 attempts",
+      "selector": "#__next > footer > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > a:nth-of-type(5)",
+      "elementHtml": "<a href=\"https://twitter.com/LexingtonKyGov\"></a>",
+      "discoveredAt": "2026-04-28T17:31:52.460Z",
+      "pageUrl": "https://www.lexingtonky.gov/playing",
+      "metadata": {
+        "href": "https://twitter.com/LexingtonKyGov",
+        "text": "",
+        "protocol": "https:",
+        "attempts": 1,
+        "status": 403,
+        "statusText": "Forbidden",
+        "backendNodeId": 2194,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://twitter.com/LexingtonKyGov returned status 403 Forbidden after 1 attempts",
+      "selector": "#__next > footer > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > a:nth-of-type(5)",
+      "elementHtml": "<a href=\"https://twitter.com/LexingtonKyGov\"></a>",
+      "discoveredAt": "2026-04-28T17:33:16.048Z",
+      "pageUrl": "https://www.lexingtonky.gov/ready",
+      "metadata": {
+        "href": "https://twitter.com/LexingtonKyGov",
+        "text": "",
+        "protocol": "https:",
+        "attempts": 1,
+        "status": 403,
+        "statusText": "Forbidden",
+        "backendNodeId": 1202,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://twitter.com/LexingtonKyGov returned status 403 Forbidden after 1 attempts",
+      "selector": "#__next > footer > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > a:nth-of-type(5)",
+      "elementHtml": "<a href=\"https://twitter.com/LexingtonKyGov\"></a>",
+      "discoveredAt": "2026-04-28T17:31:40.608Z",
+      "pageUrl": "https://www.lexingtonky.gov/working",
+      "metadata": {
+        "href": "https://twitter.com/LexingtonKyGov",
+        "text": "",
+        "protocol": "https:",
+        "attempts": 1,
+        "status": 403,
+        "statusText": "Forbidden",
+        "backendNodeId": 1760,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".md\\:justify-between",
+      "elementHtml": "<div class=\"flex flex-col md:flex-row md:justify-between md:items-center gap-4\">",
+      "discoveredAt": "2026-04-28T17:30:51.130Z",
+      "pageUrl": "https://www.lexingtonky.gov/",
+      "metadata": {
+        "backendNodeId": 288,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".md\\:justify-between",
+      "elementHtml": "<div class=\"flex flex-col md:flex-row md:justify-between md:items-center gap-4\">",
+      "discoveredAt": "2026-04-28T17:32:35.306Z",
+      "pageUrl": "https://www.lexingtonky.gov/economic-development",
+      "metadata": {
+        "backendNodeId": 379,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
+      "selector": "a[aria-label=\"Dispute resolution\"] > div:nth-child(2) > .mb-0.text-inherit.group-hover\\:underline",
+      "elementHtml": "<h3 class=\"text-inherit group-hover:underline mb-0\">Dispute resolution</h3>",
+      "discoveredAt": "2026-04-28T17:32:14.410Z",
+      "pageUrl": "https://www.lexingtonky.gov/government",
+      "metadata": {
+        "backendNodeId": 2472,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".md\\:justify-between",
+      "elementHtml": "<div class=\"flex flex-col md:flex-row md:justify-between md:items-center gap-4\">",
+      "discoveredAt": "2026-04-28T17:32:14.410Z",
+      "pageUrl": "https://www.lexingtonky.gov/government",
+      "metadata": {
+        "backendNodeId": 2600,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".py-s > .md\\:items-center.md\\:justify-between.md\\:flex-row",
+      "elementHtml": "<div class=\"flex flex-col md:flex-row md:justify-between md:items-center gap-4\">",
+      "discoveredAt": "2026-04-28T17:33:43.319Z",
+      "pageUrl": "https://www.lexingtonky.gov/government/departments-programs/environmental-quality-public-works/environmental-services/live-green-lexington/winter-waste-tips",
+      "metadata": {
+        "backendNodeId": 2388,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".py-s > .md\\:items-center.md\\:flex-row.md\\:justify-between",
+      "elementHtml": "<div class=\"flex flex-col md:flex-row md:justify-between md:items-center gap-4\">",
+      "discoveredAt": "2026-04-28T17:33:22.950Z",
+      "pageUrl": "https://www.lexingtonky.gov/government/departments-programs/housing-advocacy-community-development/office-homelessness-prevention-intervention/whats-being-done",
+      "metadata": {
+        "backendNodeId": 1669,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".md\\:justify-between",
+      "elementHtml": "<div class=\"flex flex-col md:flex-row md:justify-between md:items-center gap-4\">",
+      "discoveredAt": "2026-04-28T17:31:22.960Z",
+      "pageUrl": "https://www.lexingtonky.gov/living",
+      "metadata": {
+        "backendNodeId": 1284,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
+      "selector": "a[aria-label=\"Public Safety\"] > .overflow-hidden.h-full.rounded > .bottom-5.p-4.group-hover\\:bg-primary-2 > .m-0.xl\\:text-2xl",
+      "elementHtml": "<h3 class=\"m-0 text-lg lg:text-xl xl:text-2xl\">Public Safety</h3>",
+      "discoveredAt": "2026-04-28T17:31:22.960Z",
+      "pageUrl": "https://www.lexingtonky.gov/living",
+      "metadata": {
+        "backendNodeId": 1151,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
+      "selector": "a[aria-label=\"After school programs \"] > .overflow-hidden.rounded.h-full > .bottom-5.p-4.group-hover\\:bg-primary-2 > .m-0.xl\\:text-2xl.lg\\:text-xl",
+      "elementHtml": "<h3 class=\"m-0 text-lg lg:text-xl xl:text-2xl\">After school programs </h3>",
+      "discoveredAt": "2026-04-28T17:31:52.123Z",
+      "pageUrl": "https://www.lexingtonky.gov/playing",
+      "metadata": {
+        "backendNodeId": 2035,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".md\\:justify-between",
+      "elementHtml": "<div class=\"flex flex-col md:flex-row md:justify-between md:items-center gap-4\">",
+      "discoveredAt": "2026-04-28T17:31:52.123Z",
+      "pageUrl": "https://www.lexingtonky.gov/playing",
+      "metadata": {
+        "backendNodeId": 2143,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".md\\:justify-between",
+      "elementHtml": "<div class=\"flex flex-col md:flex-row md:justify-between md:items-center gap-4\">",
+      "discoveredAt": "2026-04-28T17:33:16.052Z",
+      "pageUrl": "https://www.lexingtonky.gov/ready",
+      "metadata": {
+        "backendNodeId": 1148,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Page should contain a level-one heading: Fix all of the following:\n  Page must have a level-one heading",
+      "selector": "html",
+      "elementHtml": "<html lang=\"en\" translate=\"no\">",
+      "discoveredAt": "2026-04-28T17:33:16.052Z",
+      "pageUrl": "https://www.lexingtonky.gov/ready",
+      "metadata": {
+        "backendNodeId": 1051,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".md\\:justify-between",
+      "elementHtml": "<div class=\"flex flex-col md:flex-row md:justify-between md:items-center gap-4\">",
+      "discoveredAt": "2026-04-28T17:31:40.310Z",
+      "pageUrl": "https://www.lexingtonky.gov/working",
+      "metadata": {
+        "backendNodeId": 1708,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
+      "selector": "a[aria-label=\"Current building codes\"] > .rounded.overflow-hidden.h-full > .bottom-5.p-4.group-hover\\:bg-primary-2 > .m-0.xl\\:text-2xl.lg\\:text-xl",
+      "elementHtml": "<h3 class=\"m-0 text-lg lg:text-xl xl:text-2xl\">Current building codes</h3>",
+      "discoveredAt": "2026-04-28T17:31:40.310Z",
+      "pageUrl": "https://www.lexingtonky.gov/working",
+      "metadata": {
+        "backendNodeId": 1603,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Clicking \"Pay...\" inserts 7 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#main-content > div > article > div:nth-of-type(1) > div:nth-of-type(2) > div > div > div:nth-of-type(2) > div > div:nth-of-type(2) > button:nth-of-type(2)",
+      "elementHtml": "<button class=\"bg-transparent border-2 py-2 px-2 md:px-4 inline-block rounded-sm font-body text-base font-medium text-center border-primary-1 hover:bg-primary-1 hover:text-white mr-2 mb-2\" aria-label=",
+      "discoveredAt": "2026-04-28T17:31:05.230Z",
+      "pageUrl": "https://www.lexingtonky.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "dynamic-content-audit"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "dynamic-content-audit"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.3"
+      ]
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Clicking \"Search\" inserts 1 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#__next > header > div:nth-of-type(1) > div > button",
+      "elementHtml": "<button class=\" text-white hover:underline underline-offset-2 ml-3 px-3 false\"><i class=\"fa-sharp fa-regular fa-magnifying-glass pr-2\"></i>Search</button>",
+      "discoveredAt": "2026-04-28T17:31:05.230Z",
+      "pageUrl": "https://www.lexingtonky.gov/",
+      "metadata": {
+        "backendNodeId": 138,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "dynamic-content-audit"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.3"
+      ]
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Clicking \"Language\" inserts 106 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#__next > header > div:nth-of-type(1) > div > div > button",
+      "elementHtml": "<button class=\"flex items-center h-full\" aria-haspopup=\"true\" aria-expanded=\"false\"><span class=\"px-3 py-1 flex items-center h-full group\"><i class=\"fa-sharp fa-regular fa-globe pr-1\"></i> <span class",
+      "discoveredAt": "2026-04-28T17:33:13.593Z",
+      "pageUrl": "https://www.lexingtonky.gov/economic-development",
+      "metadata": {
+        "backendNodeId": 183,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "dynamic-content-audit"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.3"
+      ]
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Clicking \"Search\" inserts 1 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#__next > header > div:nth-of-type(1) > div > button",
+      "elementHtml": "<button class=\" text-white hover:underline underline-offset-2 ml-3 px-3 false\"><i class=\"fa-sharp fa-regular fa-magnifying-glass pr-2\"></i>Search</button>",
+      "discoveredAt": "2026-04-28T17:32:24.641Z",
+      "pageUrl": "https://www.lexingtonky.gov/government",
+      "metadata": {
+        "backendNodeId": 2430,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "dynamic-content-audit"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.3"
+      ]
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Clicking \"Search\" inserts 1 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#__next > header > div:nth-of-type(1) > div > button",
+      "elementHtml": "<button class=\" text-white hover:underline underline-offset-2 ml-3 px-3 false\"><i class=\"fa-sharp fa-regular fa-magnifying-glass pr-2\"></i>Search</button>",
+      "discoveredAt": "2026-04-28T17:34:15.289Z",
+      "pageUrl": "https://www.lexingtonky.gov/government/departments-programs/environmental-quality-public-works/environmental-services/live-green-lexington/winter-waste-tips",
+      "metadata": {
+        "backendNodeId": 2066,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "dynamic-content-audit"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.3"
+      ]
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Clicking \"Search\" inserts 1 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#__next > header > div:nth-of-type(1) > div > button",
+      "elementHtml": "<button class=\" text-white hover:underline underline-offset-2 ml-3 px-3 false\"><i class=\"fa-sharp fa-regular fa-magnifying-glass pr-2\"></i>Search</button>",
+      "discoveredAt": "2026-04-28T17:33:41.349Z",
+      "pageUrl": "https://www.lexingtonky.gov/government/departments-programs/housing-advocacy-community-development/office-homelessness-prevention-intervention/whats-being-done",
+      "metadata": {
+        "backendNodeId": 1455,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "dynamic-content-audit"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.3"
+      ]
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Clicking \"Search\" inserts 1 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#__next > header > div:nth-of-type(1) > div > button",
+      "elementHtml": "<button class=\" text-white hover:underline underline-offset-2 ml-3 px-3 false\"><i class=\"fa-sharp fa-regular fa-magnifying-glass pr-2\"></i>Search</button>",
+      "discoveredAt": "2026-04-28T17:31:37.982Z",
+      "pageUrl": "https://www.lexingtonky.gov/living",
+      "metadata": {
+        "backendNodeId": 1109,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "dynamic-content-audit"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.3"
+      ]
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Clicking \"Search\" inserts 1 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#__next > header > div:nth-of-type(1) > div > button",
+      "elementHtml": "<button class=\" text-white hover:underline underline-offset-2 ml-3 px-3 false\"><i class=\"fa-sharp fa-regular fa-magnifying-glass pr-2\"></i>Search</button>",
+      "discoveredAt": "2026-04-28T17:32:09.460Z",
+      "pageUrl": "https://www.lexingtonky.gov/playing",
+      "metadata": {
+        "backendNodeId": 1994,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "dynamic-content-audit"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.3"
+      ]
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Clicking \"Search\" inserts 1 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#__next > header > div:nth-of-type(1) > div > button",
+      "elementHtml": "<button class=\" text-white hover:underline underline-offset-2 ml-3 px-3 false\"><i class=\"fa-sharp fa-regular fa-magnifying-glass pr-2\"></i>Search</button>",
+      "discoveredAt": "2026-04-28T17:33:21.415Z",
+      "pageUrl": "https://www.lexingtonky.gov/ready",
+      "metadata": {
+        "backendNodeId": 1109,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "dynamic-content-audit"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.3"
+      ]
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Clicking \"Search\" inserts 1 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#__next > header > div:nth-of-type(1) > div > button",
+      "elementHtml": "<button class=\" text-white hover:underline underline-offset-2 ml-3 px-3 false\"><i class=\"fa-sharp fa-regular fa-magnifying-glass pr-2\"></i>Search</button>",
+      "discoveredAt": "2026-04-28T17:31:49.424Z",
+      "pageUrl": "https://www.lexingtonky.gov/working",
+      "metadata": {
+        "backendNodeId": 1561,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "dynamic-content-audit"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.3"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "\"Which cart does it go in?\" is visually at position 30 but receives focus at position 66 (drift: 36).",
+      "selector": "#main-content > div:nth-of-type(2) > div:nth-of-type(2) > article > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > a:nth-of-type(3)",
+      "elementHtml": "<a>Which cart does it go in?</a>",
+      "discoveredAt": "2026-04-28T17:33:50.933Z",
+      "pageUrl": "https://www.lexingtonky.gov/government/departments-programs/environmental-quality-public-works/environmental-services/live-green-lexington/winter-waste-tips",
+      "metadata": {
+        "backendNodeId": 2253,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "\"Live Green's Low-Waste Holiday Gift Guide\" is visually at position 28 but receives focus at position 65 (drift: 37).",
+      "selector": "#main-content > div:nth-of-type(2) > div:nth-of-type(2) > article > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > a:nth-of-type(2)",
+      "elementHtml": "<a>Live Green's Low-Waste Holiday Gift Guide</a>",
+      "discoveredAt": "2026-04-28T17:33:50.933Z",
+      "pageUrl": "https://www.lexingtonky.gov/government/departments-programs/environmental-quality-public-works/environmental-services/live-green-lexington/winter-waste-tips",
+      "metadata": {
+        "backendNodeId": 2252,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "\"Contact\" is visually at position 31 but receives focus at position 67 (drift: 36).",
+      "selector": "#main-content > div:nth-of-type(2) > div:nth-of-type(2) > article > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > a:nth-of-type(4)",
+      "elementHtml": "<a>Contact</a>",
+      "discoveredAt": "2026-04-28T17:33:50.933Z",
+      "pageUrl": "https://www.lexingtonky.gov/government/departments-programs/environmental-quality-public-works/environmental-services/live-green-lexington/winter-waste-tips",
+      "metadata": {
+        "backendNodeId": 2254,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "navigation-ways",
+      "standard": "WCAG 2.4.5",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Page has only one navigation mechanism (navigation). WCAG requires at least two ways to locate a page within a set of pages.",
+      "selector": "html",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:32:34.308Z",
+      "pageUrl": "https://www.lexingtonky.gov/economic-development",
+      "metadata": {
+        "backendNodeId": 138,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "navigation-ways"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 2.4.5"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 2.4.5"
+      ]
+    },
+    {
+      "probe": "navigation-ways",
+      "standard": "WCAG 2.4.5",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Page has only one navigation mechanism (navigation). WCAG requires at least two ways to locate a page within a set of pages.",
+      "selector": "html",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:32:14.316Z",
+      "pageUrl": "https://www.lexingtonky.gov/government",
+      "metadata": {
+        "backendNodeId": 2375,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "navigation-ways"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 2.4.5"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 2.4.5"
+      ]
+    },
+    {
+      "probe": "navigation-ways",
+      "standard": "WCAG 2.4.5",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Page has only one navigation mechanism (navigation). WCAG requires at least two ways to locate a page within a set of pages.",
+      "selector": "html",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:33:43.172Z",
+      "pageUrl": "https://www.lexingtonky.gov/government/departments-programs/environmental-quality-public-works/environmental-services/live-green-lexington/winter-waste-tips",
+      "metadata": {
+        "backendNodeId": 2010,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "navigation-ways"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 2.4.5"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 2.4.5"
+      ]
+    },
+    {
+      "probe": "navigation-ways",
+      "standard": "WCAG 2.4.5",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Page has only one navigation mechanism (navigation). WCAG requires at least two ways to locate a page within a set of pages.",
+      "selector": "html",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:33:22.838Z",
+      "pageUrl": "https://www.lexingtonky.gov/government/departments-programs/housing-advocacy-community-development/office-homelessness-prevention-intervention/whats-being-done",
+      "metadata": {
+        "backendNodeId": 1399,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "navigation-ways"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 2.4.5"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 2.4.5"
+      ]
+    },
+    {
+      "probe": "navigation-ways",
+      "standard": "WCAG 2.4.5",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Page has only one navigation mechanism (navigation). WCAG requires at least two ways to locate a page within a set of pages.",
+      "selector": "html",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:31:22.866Z",
+      "pageUrl": "https://www.lexingtonky.gov/living",
+      "metadata": {
+        "backendNodeId": 1055,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "navigation-ways"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 2.4.5"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 2.4.5"
+      ]
+    },
+    {
+      "probe": "navigation-ways",
+      "standard": "WCAG 2.4.5",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Page has only one navigation mechanism (navigation). WCAG requires at least two ways to locate a page within a set of pages.",
+      "selector": "html",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:31:52.022Z",
+      "pageUrl": "https://www.lexingtonky.gov/playing",
+      "metadata": {
+        "backendNodeId": 1940,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "navigation-ways"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 2.4.5"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 2.4.5"
+      ]
+    },
+    {
+      "probe": "navigation-ways",
+      "standard": "WCAG 2.4.5",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Page has only one navigation mechanism (navigation). WCAG requires at least two ways to locate a page within a set of pages.",
+      "selector": "html",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:33:15.974Z",
+      "pageUrl": "https://www.lexingtonky.gov/ready",
+      "metadata": {
+        "backendNodeId": 1051,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "navigation-ways"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 2.4.5"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 2.4.5"
+      ]
+    },
+    {
+      "probe": "navigation-ways",
+      "standard": "WCAG 2.4.5",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Page has only one navigation mechanism (navigation). WCAG requires at least two ways to locate a page within a set of pages.",
+      "selector": "html",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:31:40.219Z",
+      "pageUrl": "https://www.lexingtonky.gov/working",
+      "metadata": {
+        "backendNodeId": 1506,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "navigation-ways"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 2.4.5"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 2.4.5"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 56px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "div.absolute.inset-0",
+      "elementHtml": "<div class=\"absolute inset-0 flex justify-center items-start overflow-hidden\"><img alt=\"\" role=\"presentation\" loading=\"lazy\" width=\"800\" height=\"800\" decoding=\"async\" data-nimg=\"1\" class=\"w-full h-aut",
+      "discoveredAt": "2026-04-28T17:32:51.058Z",
+      "pageUrl": "",
+      "metadata": {
+        "backendNodeId": 394,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 95px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "a.absolute.overflow-hidden",
+      "elementHtml": "<a class=\"absolute overflow-hidden h-[1px] w-[1px] focus:static focus:w-auto focus:h-auto focus:border-2 focus:border-black\" tabindex=\"0\" href=\"/#main-content\">Skip to main content</a>",
+      "discoveredAt": "2026-04-28T17:31:08.136Z",
+      "pageUrl": "https://www.lexingtonky.gov/",
+      "metadata": {
+        "backendNodeId": 587,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 160px at 320px width.",
+      "selector": "img.w-full.h-auto",
+      "elementHtml": "<img alt=\"\" role=\"presentation\" loading=\"lazy\" width=\"800\" height=\"800\" decoding=\"async\" data-nimg=\"1\" class=\"w-full h-auto max-w-[28rem] top-5 right-[-50%] md:top-0 md:right-auto absolute\" style=\"col",
+      "discoveredAt": "2026-04-28T17:31:08.136Z",
+      "pageUrl": "https://www.lexingtonky.gov/",
+      "metadata": {
+        "backendNodeId": 547,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <input> persists after page readiness",
+      "selector": "#main-content > div > article > div:nth-of-type(1) > div:nth-of-type(2) > div > div > div:nth-of-type(2) > div > div:nth-of-type(1) > div > input",
+      "elementHtml": "<input type=\"text\" class=\"w-full mt-0 text-black placeholder:italic\" tabindex=\"0\" aria-label=\"Search\" placeholder=\"Type to Search\">",
+      "discoveredAt": "2026-04-28T17:30:51.119Z",
+      "pageUrl": "https://www.lexingtonky.gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    }
+  ],
+  "requestedJurisdictions": [
+    "us"
+  ],
+  "appliedJurisdictions": [
+    "us"
+  ]
+}

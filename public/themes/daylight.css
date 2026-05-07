@@ -1,0 +1,452 @@
+/**
+ * Daylight Theme — "Maritime Observatory"
+ *
+ * Deep ocean charts meeting clear afternoon light. The Daylight Project
+ * illuminates what was hidden: contrast, structure, navigability.
+ *
+ * Light mode: warm ecru ground, deep prussian navy primary, tidal teal accent.
+ * Dark mode: deep slate ocean floor, luminous teal signal, phosphor amber accent.
+ *
+ * Fonts: Bricolage Grotesque (headings) + DM Sans (body) + IBM Plex Mono (code)
+ */
+
+/* ─── Light Mode (default) ──────────────────────────────────────── */
+:root {
+  color-scheme: light;
+  --sonde-supports-high-contrast: 1;
+
+  --sonde-color-primary: #1a3554;
+  --sonde-color-secondary: #086962;
+  --sonde-color-bg: #f7f5f0;
+  --sonde-color-surface: #ffffff;
+  --sonde-color-text: #1c1917;
+  --sonde-color-text-muted: #4f4a44;
+  --sonde-color-text-heading: #1a3554;
+  --sonde-color-border: #918e86;
+  --sonde-color-border-subtle: #97948f;
+  --sonde-color-accent: #1a3554;
+  --sonde-color-accent-dim: #1a355418;
+
+  --sonde-color-pass: #0a7a72;
+  --sonde-color-fail: #ad3a0b;
+  --sonde-color-partial: #8c5f03;
+  --sonde-color-na: #736e68;
+  --sonde-color-info: #2563eb;
+  --sonde-color-warning: #8c5f03;
+  --sonde-color-error: #ad3a0b;
+  --sonde-color-critical: #9f1239;
+
+  --sonde-color-table-header-bg: #1a3554;
+  --sonde-color-table-header-text: #ffffff;
+
+  --sonde-font-body: 'Outfit', 'DM Sans', 'Avenir Next', system-ui, sans-serif;
+  --sonde-font-heading: 'Outfit', 'DM Sans', 'Avenir Next', system-ui, sans-serif;
+  --sonde-font-mono: 'IBM Plex Mono', 'Fira Code', ui-monospace, monospace;
+  --sonde-font-size-base: 16px;
+  --sonde-line-height: 1.65;
+
+  /* Daylight-specific extended tokens */
+  --sonde-daylight-cta-from: #1a3554;
+  --sonde-daylight-cta-to: #0a8a7e;
+  --sonde-daylight-cta-text: #ffffff;
+  --sonde-daylight-cta-shadow: rgba(26, 53, 84, 0.22);
+  --sonde-daylight-radius-card: 14px;
+  --sonde-daylight-radius-pill: 999px;
+  --sonde-daylight-radius-sm: 6px;
+  --sonde-daylight-shadow-card: 0 4px 18px rgba(26, 53, 84, 0.10);
+  --sonde-daylight-shadow-lift: 0 8px 28px rgba(26, 53, 84, 0.14);
+  --sonde-daylight-hero-radial: radial-gradient(ellipse 70% 45% at 50% 0%, rgba(26, 53, 84, 0.06) 0%, transparent 100%);
+
+  /* Confidence badges — light mode. White foreground on the dark amber
+     partial background (passes WCAG 1.4.3 AA at 5.5:1). */
+  --sonde-color-confidence-medium-text: #ffffff;
+  --sonde-color-confidence-low-text: #ffffff;
+
+  /* Fix plan cards */
+  --sonde-color-fix-label: #0a7a72;
+  --sonde-color-fix-text: #1c1917;
+
+  /* Mission-control buttons */
+  --sonde-color-btn-bg: #1a3554;
+  --sonde-color-btn-text: #ffffff;
+
+  /* Code block surfaces */
+  --sonde-code-bg: #f0ebe0;
+  --sonde-code-text: #1c1917;
+  --sonde-code-line-num: #a8a094;
+  --sonde-code-gutter-bg: #e9e3d5;
+  --sonde-code-highlight-bg: rgba(26, 53, 84, 0.06);
+
+  /* Syntax highlighting — daylight brand family */
+  --sonde-syntax-keyword: #1a3554;
+  --sonde-syntax-type: #08645e;
+  --sonde-syntax-string: #14532d;
+  --sonde-syntax-number: #9f4f05;
+  --sonde-syntax-comment: #635e58;
+  --sonde-syntax-function: #0369a1;
+  --sonde-syntax-variable: #1c1917;
+  --sonde-syntax-constant: #ad3a0b;
+  --sonde-syntax-property: #1a3554;
+  --sonde-syntax-punctuation: #57534e;
+  --sonde-syntax-tag: #991b1b;
+  --sonde-syntax-default: #1c1917;
+  --sonde-color-sidebar: #bab7d2;
+
+  /* Diff viewer */
+  --sonde-color-diff-bg: #f0ebe0;
+  --sonde-color-diff-add-bg: #dcf5eb;
+  --sonde-color-diff-add-text: #086962;
+  --sonde-color-diff-add-gutter: #c5e7dc;
+  --sonde-color-diff-remove-bg: #fde6dc;
+  --sonde-color-diff-remove-text: #9b2f08;
+  --sonde-color-diff-remove-gutter: #f3cbbf;
+  --sonde-color-diff-unchanged-gutter: #e9e3d5;
+}
+
+/* ─���─ Dark Mode — explicit via data-theme="dark" ────────────────── */
+[data-theme="dark"] {
+  color-scheme: dark;
+  --sonde-color-primary: #5eb8ff;
+  --sonde-color-primary-dark: #1a3554;
+  --sonde-color-secondary: #2dd4bf;
+  --sonde-color-bg: #0d1117;
+  --sonde-color-surface: #161b22;
+  --sonde-color-sidebar: #0d1117;
+  --sonde-color-text: #e6edf3;
+  --sonde-color-text-muted: #a5aeb8;
+  --sonde-color-text-heading: #cdd9e5;
+  --sonde-color-border: #5a6168;
+  --sonde-color-border-subtle: #61676f;
+  --sonde-color-pass: #2dd4bf;
+  --sonde-color-fail: #ff8d8b;
+  --sonde-color-partial: #fbbf24;
+  --sonde-color-na: #7e8795;
+  --sonde-color-info: #6caeff;
+  --sonde-color-warning: #fbbf24;
+  --sonde-color-error: #ff8d8b;
+  --sonde-color-critical: #ff939f;
+  --sonde-color-accent: #5eb8ff;
+  --sonde-color-accent-dim: rgba(94, 184, 255, 0.14);
+
+  --sonde-color-table-header-bg: #1a3554;
+  --sonde-color-table-header-text: #e6edf3;
+
+  --sonde-color-confidence-medium-text: #0d1117;
+  --sonde-color-confidence-low-text: #0d1117;
+
+  --sonde-color-fix-label: #2dd4bf;
+  --sonde-color-fix-text: #e6edf3;
+
+  --sonde-color-btn-bg: #1a3554;
+  --sonde-color-btn-text: #e6edf3;
+
+  --sonde-daylight-cta-from: #112240;
+  --sonde-daylight-cta-to: #0e7490;
+  --sonde-daylight-cta-text: #e0f2fe;
+  --sonde-daylight-cta-shadow: rgba(0, 0, 0, 0.40);
+  --sonde-daylight-shadow-card: 0 4px 18px rgba(0, 0, 0, 0.30);
+  --sonde-daylight-shadow-lift: 0 8px 28px rgba(0, 0, 0, 0.40);
+  --sonde-daylight-hero-radial: radial-gradient(ellipse 70% 45% at 50% 0%, rgba(45, 212, 191, 0.07) 0%, transparent 100%);
+
+  /* Code block surfaces */
+  --sonde-code-bg: #0a0e14;
+  --sonde-code-text: #e6edf3;
+  --sonde-code-line-num: #5a6168;
+  --sonde-code-gutter-bg: #161b22;
+  --sonde-code-highlight-bg: rgba(94, 184, 255, 0.10);
+
+  /* Syntax highlighting — daylight dark */
+  --sonde-syntax-keyword: #5eb8ff;
+  --sonde-syntax-type: #2dd4bf;
+  --sonde-syntax-string: #86efac;
+  --sonde-syntax-number: #fdba74;
+  --sonde-syntax-comment: #8b949e;
+  --sonde-syntax-function: #93c5fd;
+  --sonde-syntax-variable: #e6edf3;
+  --sonde-syntax-constant: #fbbf24;
+  --sonde-syntax-property: #a5b4fc;
+  --sonde-syntax-punctuation: #8b949e;
+  --sonde-syntax-tag: #ff8d8b;
+  --sonde-syntax-default: #e6edf3;
+
+  /* Diff viewer */
+  --sonde-color-diff-bg: #0a0e14;
+  --sonde-color-diff-add-bg: #08251f;
+  --sonde-color-diff-add-text: #2dd4bf;
+  --sonde-color-diff-add-gutter: #0d342c;
+  --sonde-color-diff-remove-bg: #351313;
+  --sonde-color-diff-remove-text: #ffb3b1;
+  --sonde-color-diff-remove-gutter: #452020;
+  --sonde-color-diff-unchanged-gutter: #161b22;
+}
+
+/* ─── Dark Mode — automatic via OS preference ────────────────���──── */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]):not([data-theme="high-contrast"]) {
+    color-scheme: dark;
+    --sonde-color-primary: #5eb8ff;
+    --sonde-color-primary-dark: #1a3554;
+    --sonde-color-secondary: #2dd4bf;
+    --sonde-color-bg: #0d1117;
+    --sonde-color-surface: #161b22;
+    --sonde-color-text: #e6edf3;
+    --sonde-color-text-muted: #a5aeb8;
+    --sonde-color-text-heading: #cdd9e5;
+    --sonde-color-border: #5a6168;
+    --sonde-color-border-subtle: #61676f;
+    --sonde-color-pass: #2dd4bf;
+    --sonde-color-fail: #ff8d8b;
+    --sonde-color-partial: #fbbf24;
+    --sonde-color-na: #7e8795;
+    --sonde-color-info: #6caeff;
+    --sonde-color-warning: #fbbf24;
+    --sonde-color-error: #ff8d8b;
+    --sonde-color-critical: #ff939f;
+    --sonde-color-accent: #5eb8ff;
+    --sonde-color-accent-dim: rgba(94, 184, 255, 0.14);
+
+    --sonde-color-table-header-bg: #1a3554;
+    --sonde-color-table-header-text: #e6edf3;
+
+    --sonde-color-confidence-medium-text: #0d1117;
+    --sonde-color-confidence-low-text: #0d1117;
+
+    --sonde-color-fix-label: #2dd4bf;
+    --sonde-color-fix-text: #e6edf3;
+
+    --sonde-color-btn-bg: #1a3554;
+    --sonde-color-btn-text: #e6edf3;
+
+    --sonde-daylight-cta-from: #112240;
+    --sonde-daylight-cta-to: #0e7490;
+    --sonde-daylight-cta-text: #e0f2fe;
+    --sonde-daylight-cta-shadow: rgba(0, 0, 0, 0.40);
+    --sonde-daylight-shadow-card: 0 4px 18px rgba(0, 0, 0, 0.30);
+    --sonde-daylight-shadow-lift: 0 8px 28px rgba(0, 0, 0, 0.40);
+    --sonde-daylight-hero-radial: radial-gradient(ellipse 70% 45% at 50% 0%, rgba(45, 212, 191, 0.07) 0%, transparent 100%);
+
+    /* Code block surfaces */
+    --sonde-code-bg: #0a0e14;
+    --sonde-code-text: #e6edf3;
+    --sonde-code-line-num: #5a6168;
+    --sonde-code-gutter-bg: #161b22;
+    --sonde-code-highlight-bg: rgba(94, 184, 255, 0.10);
+
+    /* Syntax highlighting — daylight dark */
+    --sonde-syntax-keyword: #5eb8ff;
+    --sonde-syntax-type: #2dd4bf;
+    --sonde-syntax-string: #86efac;
+    --sonde-syntax-number: #ffd2a8;
+    --sonde-syntax-comment: #8b949e;
+    --sonde-syntax-function: #93c5fd;
+    --sonde-syntax-variable: #e6edf3;
+    --sonde-syntax-constant: #fbbf24;
+    --sonde-syntax-property: #a5b4fc;
+    --sonde-syntax-punctuation: #8b949e;
+    --sonde-syntax-tag: #ff8d8b;
+    --sonde-syntax-default: #e6edf3;
+
+    /* Diff viewer */
+    --sonde-color-diff-bg: #0a0e14;
+    --sonde-color-diff-add-bg: #08251f;
+    --sonde-color-diff-add-text: #2dd4bf;
+    --sonde-color-diff-add-gutter: #0d342c;
+    --sonde-color-diff-remove-bg: #351313;
+    --sonde-color-diff-remove-text: #ffb3b1;
+    --sonde-color-diff-remove-gutter: #452020;
+    --sonde-color-diff-unchanged-gutter: #161b22;
+  }
+}
+
+/* ─── High Contrast ─────────────────────��───────────────────────── */
+@media (prefers-contrast: more) {
+  :root {
+    --sonde-color-text: #000000;
+    --sonde-color-text-muted: #333333;
+    --sonde-color-text-heading: #000000;
+    --sonde-color-border: #000000;
+    --sonde-color-border-subtle: #666666;
+    --sonde-color-bg: #ffffff;
+    --sonde-color-surface: #ffffff;
+  }
+}
+
+/* ─── Reduced Motion ─────────────────────────���──────────────────── */
+/* Reduced-motion block inherited from tokens.css. */
+
+/* ─── Print ─────────────────────────────────────────────────────── */
+@media print {
+  :root {
+    --sonde-color-bg: #ffffff;
+    --sonde-color-surface: #ffffff;
+    --sonde-color-surface-elevated: #ffffff;
+    --sonde-color-text: #000000;
+    --sonde-color-text-muted: #333333;
+    --sonde-color-text-heading: #000000;
+    --sonde-color-border: #959494;
+    --sonde-color-border-subtle: #959494;
+    --sonde-shadow-sm: none;
+    --sonde-shadow-md: none;
+    --sonde-shadow-lg: none;
+  }
+  body, .sonde-exhibit, .scribe-shell__main {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .site-nav,
+  .settings-dropdown,
+  footer,
+  .sonde-nav,
+  .sonde-controls,
+  .scribe-leaderboard-pagination,
+  .leaderboard-pagination,
+  [data-print="hide"] {
+    display: none !important;
+  }
+  details,
+  details:not([open]) {
+    display: block;
+  }
+  details > summary {
+    display: none;
+  }
+  details > * {
+    display: revert;
+  }
+  pre,
+  code,
+  .exhibit-code-block {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    orphans: 4;
+    widows: 4;
+  }
+  section,
+  .vpat-section,
+  tr {
+    break-inside: avoid;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  a[href]:not([href^="#"]):not([href^="mailto:"]):not([href^="tel:"]):not(.finding-link-btn):not(.finding-feedback-btn)::after {
+    content: " (" attr(href) ")";
+  }
+  th.sortable::after,
+  th[data-sort-key]::after {
+    content: "";
+    display: none;
+  }
+  tr[data-filtered="true"] {
+    display: none;
+  }
+  body[data-scribe-print-rows="all"] tr[data-filtered="true"] {
+    display: table-row;
+  }
+}
+
+/* ─── Forced Colors (Windows High Contrast) ─────────��───────────── */
+@media (forced-colors: active) {
+  :root {
+    --sonde-color-primary: LinkText;
+    --sonde-color-text: CanvasText;
+    --sonde-color-bg: Canvas;
+    --sonde-color-surface: Canvas;
+    --sonde-color-border: #918e86;
+    --sonde-color-accent: Highlight;
+  }
+}
+
+/* ─── High Contrast Toggle ──────────────────────────────────────── */
+[data-theme="high-contrast"] {
+  color-scheme: light;
+
+  --sonde-color-primary: #000000;
+  --sonde-color-secondary: #00524a;
+  --sonde-color-bg: #ffffff;
+  --sonde-color-surface: #ffffff;
+  --sonde-color-text: #000000;
+  --sonde-color-text-muted: #333333;
+  --sonde-color-text-heading: #000000;
+  --sonde-color-border: #000000;
+  --sonde-color-border-subtle: #666666;
+  --sonde-color-accent: #00524a;
+  --sonde-color-accent-dim: #00524a22;
+
+  /* Status colors: all ≥ 7:1 on white */
+  --sonde-color-pass: #006838;
+  --sonde-color-fail: #b30000;
+  --sonde-color-partial: #7a4f00;
+  --sonde-color-na: #444444;
+  --sonde-color-info: #003d99;
+  --sonde-color-warning: #7a4f00;
+  --sonde-color-error: #b30000;
+  --sonde-color-critical: #8b0028;
+
+  --sonde-color-table-header-bg: #000000;
+  --sonde-color-table-header-text: #ffffff;
+
+  /* High contrast daylight mark (Black sun on white background) */
+  --sonde-daylight-mark-sun-stop-0: #000000;
+  --sonde-daylight-mark-sun-stop-1: #000000;
+  --sonde-daylight-mark-sun-stop-2: #000000;
+  --sonde-daylight-mark-probe: #ffffff;
+  --sonde-daylight-mark-solid-display: none;
+  --sonde-daylight-mark-line-display: block;
+
+  --sonde-font-body: 'Atkinson Hyperlegible', 'Verdana', system-ui, sans-serif;
+  --sonde-font-heading: 'Atkinson Hyperlegible', 'Verdana', system-ui, sans-serif;
+  --sonde-font-mono: 'Cascadia Code', 'Consolas', ui-monospace, monospace;
+  --sonde-font-display: 'Atkinson Hyperlegible', 'Verdana', system-ui, sans-serif;
+  --sonde-font-size-base: 18px;
+  --sonde-line-height: 1.7;
+
+  /* Wider spacing for readability */
+  --sonde-radius-sm: 2px;
+  --sonde-radius-md: 4px;
+  --sonde-radius-lg: 8px;
+
+  /* Elevated surface + stronger border tiers — HC collapses tiers into
+   * the base palette; elevation comes from borders, not fills. */
+  --sonde-color-surface-elevated: #ffffff;
+  --sonde-color-border-strong: #000000;
+
+  /* Visualization primitives — HC avoids low-alpha overlays; solid
+   * blacks where possible, 25%+ alpha where an overlay is unavoidable. */
+  --sonde-viz-grid-overlay: rgba(0, 0, 0, 0.05);
+  --sonde-viz-glow: rgba(0, 0, 0, 0.25);
+  --sonde-viz-label-bg: rgba(255, 255, 255, 0.95);
+  --sonde-viz-node-faded: rgba(0, 0, 0, 0.3);
+  --sonde-viz-edge: #000000;
+  --sonde-viz-code-bg: #f0f0f0;
+
+  /* Code block surfaces */
+  --sonde-code-bg: #ffffff;
+  --sonde-code-text: #000000;
+  --sonde-code-line-num: #595959;
+  --sonde-code-gutter-bg: #f0f0f0;
+  --sonde-code-highlight-bg: #ffff99;
+
+  /* Syntax highlighting — maximally-distinct AAA palette on white */
+  --sonde-syntax-keyword: #0000cc;
+  --sonde-syntax-type: #006600;
+  --sonde-syntax-string: #a31515;
+  --sonde-syntax-number: #098658;
+  --sonde-syntax-comment: #595959;
+  --sonde-syntax-function: #795e26;
+  --sonde-syntax-variable: #001080;
+  --sonde-syntax-constant: #0000cc;
+  --sonde-syntax-property: #001080;
+  --sonde-syntax-punctuation: #000000;
+  --sonde-syntax-tag: #800000;
+  --sonde-syntax-default: #000000;
+}

@@ -1,0 +1,2317 @@
+{
+  "url": "https://honolulu.gov",
+  "slug": "honolulu-gov",
+  "status": "complete",
+  "scanDate": "2026-04-29T00:19:13.496Z",
+  "scanConfig": {
+    "scope": "site",
+    "maxPages": 50,
+    "racks": [
+      "rack-live-a11y",
+      "rack-live-free"
+    ],
+    "individualProbes": [],
+    "excludedProbes": [],
+    "timeBudgetMs": 180000,
+    "maxFindings": null
+  },
+  "sondeScore": {
+    "score": 937,
+    "rawPenalty": 101.5,
+    "normalizedPenalty": 50.75,
+    "pagesScanned": 2,
+    "weightsVersion": "v0.1"
+  },
+  "avgFindingsPerPage": 36.5,
+  "elementComplianceRate": 98.4,
+  "totalElements": 4124,
+  "elementsWithFindings": 66,
+  "complianceSummary": {
+    "total": 73,
+    "byLevel": {
+      "AA": 23,
+      "A": 15
+    },
+    "bySeverity": {
+      "critical": 2,
+      "high": 9,
+      "medium": 52,
+      "low": 10
+    },
+    "byCriterion": {
+      "WCAG 1.4.3": 4,
+      "WCAG 2.5.8": 4,
+      "WCAG 2.4.3": 1,
+      "WCAG 2.4.1": 1,
+      "WCAG 1.4.1": 13,
+      "WCAG 4.1.3": 1,
+      "WCAG 2.4.5": 2,
+      "WCAG 1.4.12": 3,
+      "WCAG 1.4.10": 9
+    }
+  },
+  "summary": {
+    "pagesAnalyzed": 2,
+    "pagesFailed": 0,
+    "totalFindings": 73,
+    "bySeverity": {
+      "critical": 2,
+      "high": 9,
+      "medium": 52,
+      "low": 10
+    },
+    "byProbe": {},
+    "byType": {},
+    "durationMs": 197937
+  },
+  "jurisdiction": "HI",
+  "entityName": "City & County of Honolulu",
+  "scanSource": "live",
+  "findings": [
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"Class Specification Search\"",
+      "selector": "span.elementor-button-text",
+      "elementHtml": "<span class=\"elementor-button-text\">Class Specification Search</span>",
+      "discoveredAt": "2026-04-28T17:17:32.039Z",
+      "pageUrl": "https://www.honolulu.gov/dhr/",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#777676",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.528436450868204,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Class Specification Search",
+        "backendNodeId": 6028,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"Prospective Employees\"",
+      "selector": "div.e-n-accordion-item-title-text",
+      "elementHtml": "<div class=\"e-n-accordion-item-title-text\"> Prospective Employees </div>",
+      "discoveredAt": "2026-04-28T17:17:32.039Z",
+      "pageUrl": "https://www.honolulu.gov/dhr/",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#777676",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.528436450868204,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Prospective Employees",
+        "backendNodeId": 5660,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 2.5.8",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "All touch targets must be 24px large, or leave sufficient space: Fix any of the following:\n  Target has insufficient size (10px by 10px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px.",
+      "selector": "span[aria-label=\"Go to slide 3\"]",
+      "elementHtml": "<span class=\"swiper-pagination-bullet\" tabindex=\"0\" role=\"button\" aria-label=\"Go to slide 3\"></span>",
+      "discoveredAt": "2026-04-28T17:16:45.848Z",
+      "pageUrl": "https://www.honolulu.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 2.5.8"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 2.5.8"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 2.5.8",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "All touch targets must be 24px large, or leave sufficient space: Fix any of the following:\n  Target has insufficient size (10px by 10px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px.",
+      "selector": "span[aria-label=\"Go to slide 2\"]",
+      "elementHtml": "<span class=\"swiper-pagination-bullet\" tabindex=\"0\" role=\"button\" aria-label=\"Go to slide 2\"></span>",
+      "discoveredAt": "2026-04-28T17:16:45.848Z",
+      "pageUrl": "https://www.honolulu.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 2.5.8"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 2.5.8"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 2.5.8",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "All touch targets must be 24px large, or leave sufficient space: Fix any of the following:\n  Target has insufficient size (10px by 10px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px.",
+      "selector": ".swiper-pagination-bullet-active",
+      "elementHtml": "<span class=\"swiper-pagination-bullet swiper-pagination-bullet-active\" tabindex=\"0\" role=\"button\" aria-label=\"Go to slide 1\" aria-current=\"true\"></span>",
+      "discoveredAt": "2026-04-28T17:16:45.848Z",
+      "pageUrl": "https://www.honolulu.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 2.5.8"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 2.5.8"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 2.5.8",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "All touch targets must be 24px large, or leave sufficient space: Fix any of the following:\n  Target has insufficient size (10px by 10px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px.",
+      "selector": "span[aria-label=\"Go to slide 4\"]",
+      "elementHtml": "<span class=\"swiper-pagination-bullet\" tabindex=\"0\" role=\"button\" aria-label=\"Go to slide 4\"></span>",
+      "discoveredAt": "2026-04-28T17:16:45.848Z",
+      "pageUrl": "https://www.honolulu.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 2.5.8"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 2.5.8"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Elements must meet minimum color contrast ratio thresholds: Fix any of the following:\n  Element has insufficient color contrast of 1.14 (foreground color: #ffffff, background color: #efefef, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1",
+      "selector": "summary[aria-controls=\"e-n-accordion-item-5371\"] > .e-n-accordion-item-title-header > .e-n-accordion-item-title-text",
+      "elementHtml": "<div class=\"e-n-accordion-item-title-text\"> Current Employees </div>",
+      "discoveredAt": "2026-04-28T17:17:32.383Z",
+      "pageUrl": "https://www.honolulu.gov/dhr/",
+      "metadata": {
+        "backendNodeId": 5696,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Elements must meet minimum color contrast ratio thresholds: Fix any of the following:\n  Element has insufficient color contrast of 1.14 (foreground color: #ffffff, background color: #efefef, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1",
+      "selector": "summary[aria-controls=\"e-n-accordion-item-5372\"] > .e-n-accordion-item-title-header > .e-n-accordion-item-title-text",
+      "elementHtml": "<div class=\"e-n-accordion-item-title-text\"> Retired Employees </div>",
+      "discoveredAt": "2026-04-28T17:17:32.383Z",
+      "pageUrl": "https://www.honolulu.gov/dhr/",
+      "metadata": {
+        "backendNodeId": 5728,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Focus jumps backward from \"College Program\" to \"Trades Program\" (visual distance: 392px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#swiper-wrapper-da2897819743f9b4 > div:nth-of-type(9) > div:nth-of-type(2) > div > a",
+      "elementHtml": "<a>Trades Program</a>",
+      "discoveredAt": "2026-04-28T17:18:13.806Z",
+      "pageUrl": "https://www.honolulu.gov/dhr/",
+      "metadata": {
+        "backendNodeId": 5635,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing X-Content-Type-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:16:45.184Z",
+      "pageUrl": "https://www.honolulu.gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing X-Content-Type-Options header",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:17:32.028Z",
+      "pageUrl": "https://www.honolulu.gov/dhr/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "keyboard-trap",
+      "standard": "WCAG 2.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks",
+      "conformanceLevel": "A",
+      "severity": "low",
+      "description": "Deep focus region: nav \"Menu\" has 14 tab stops before focus escapes. Consider adding skip navigation or grouping with arrow keys.",
+      "selector": "nav[aria-label=\"Menu\"]",
+      "elementHtml": "<nav role=\"nav\">Menu</nav>",
+      "discoveredAt": "2026-04-28T17:17:22.714Z",
+      "pageUrl": "https://www.honolulu.gov/",
+      "metadata": {
+        "backendNodeId": 1989,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "keyboard-trap"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.1"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Link timeout: https://www.honolulu.gov/events/event/oahu-historic-preservation-commission-meeting-10-29436/ did not respond within 5000ms after 2 attempts",
+      "selector": "#em-events-list-1473719205 > a:nth-of-type(3)",
+      "elementHtml": "<a href=\"https://www.honolulu.gov/events/event/oahu-historic-preservation-commission-meeting-10-29436/\">Oahu Historic Preservation Commission Meeting</a>",
+      "discoveredAt": "2026-04-28T17:17:12.619Z",
+      "pageUrl": "https://www.honolulu.gov/",
+      "metadata": {
+        "href": "https://www.honolulu.gov/events/event/oahu-historic-preservation-commission-meeting-10-29436/",
+        "text": "Oahu Historic Preservation Commission Meeting",
+        "protocol": "https:",
+        "attempts": 2,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Link timeout: https://honolulu.gov/council did not respond within 5000ms after 2 attempts",
+      "selector": "#content > div > div > div:nth-of-type(8) > div > div:nth-of-type(1) > div:nth-of-type(3) > div > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a href=\"https://honolulu.gov/council\">Find my council member</a>",
+      "discoveredAt": "2026-04-28T17:17:12.619Z",
+      "pageUrl": "https://www.honolulu.gov/",
+      "metadata": {
+        "href": "https://honolulu.gov/council",
+        "text": "Find my council member",
+        "protocol": "https:",
+        "attempts": 2,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://x.com/hnlcityjobs/ returned status 403 Forbidden after 1 attempts",
+      "selector": "#colophon > div:nth-of-type(1) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div > div > a:nth-of-type(2)",
+      "elementHtml": "<a href=\"https://x.com/hnlcityjobs/\"></a>",
+      "discoveredAt": "2026-04-28T17:18:08.573Z",
+      "pageUrl": "https://www.honolulu.gov/dhr/",
+      "metadata": {
+        "href": "https://x.com/hnlcityjobs/",
+        "text": "",
+        "protocol": "https:",
+        "attempts": 1,
+        "status": 403,
+        "statusText": "Forbidden",
+        "backendNodeId": 4907,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Link timeout: https://www8.honolulu.gov/dhr/references/ did not respond within 5000ms after 2 attempts",
+      "selector": "#sm-1777396650532303-9",
+      "elementHtml": "<a href=\"https://www8.honolulu.gov/dhr/references/\">Resources</a>",
+      "discoveredAt": "2026-04-28T17:18:08.573Z",
+      "pageUrl": "https://www.honolulu.gov/dhr/",
+      "metadata": {
+        "href": "https://www8.honolulu.gov/dhr/references/",
+        "text": "Resources",
+        "protocol": "https:",
+        "attempts": 2,
+        "backendNodeId": 4769,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Link timeout: https://www8.honolulu.gov/apps/tempjobs did not respond within 5000ms after 2 attempts",
+      "selector": "#menu-1-e4e27e7 > li:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"https://www8.honolulu.gov/apps/tempjobs\">Apply for Temporary Jobs</a>",
+      "discoveredAt": "2026-04-28T17:18:08.573Z",
+      "pageUrl": "https://www.honolulu.gov/dhr/",
+      "metadata": {
+        "href": "https://www8.honolulu.gov/apps/tempjobs",
+        "text": "Apply for Temporary Jobs",
+        "protocol": "https:",
+        "attempts": 2,
+        "backendNodeId": 5041,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".elementor-element-501919f",
+      "elementHtml": "<div class=\"elementor-element elementor-element-501919f e-con-full e-flex e-con e-child\" data-id=\"501919f\" data-element_type=\"container\" data-e-type=\"container\">",
+      "discoveredAt": "2026-04-28T17:16:45.848Z",
+      "pageUrl": "https://www.honolulu.gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".elementor-element-400abe0",
+      "elementHtml": "<div class=\"elementor-element elementor-element-400abe0 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list\" data-id=\"400abe0\" data-...",
+      "discoveredAt": "2026-04-28T17:16:45.848Z",
+      "pageUrl": "https://www.honolulu.gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".elementor-element-3dc0ce6",
+      "elementHtml": "<div class=\"elementor-element elementor-element-3dc0ce6 e-con-full e-flex e-con e-child\" data-id=\"3dc0ce6\" data-element_type=\"container\" data-e-type=\"container\" data-settings=\"{\"background_background\"...",
+      "discoveredAt": "2026-04-28T17:16:45.848Z",
+      "pageUrl": "https://www.honolulu.gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".elementor-element-0312fe3 > .elementor-widget-container > .elementor-button-wrapper > .elementor-button-link.elementor-size-sm.elementor-button > .elementor-button-content-wrapper > .elementor-button-text",
+      "elementHtml": "<span class=\"elementor-button-text\">Sign up for email alerts</span>",
+      "discoveredAt": "2026-04-28T17:16:45.848Z",
+      "pageUrl": "https://www.honolulu.gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".elementor-element-a5a6ae3",
+      "elementHtml": "<div class=\"elementor-element elementor-element-a5a6ae3 elementor-widget elementor-widget-heading\" data-id=\"a5a6ae3\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">",
+      "discoveredAt": "2026-04-28T17:16:45.848Z",
+      "pageUrl": "https://www.honolulu.gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "a[href$=\"events/\"] > .elementor-button-content-wrapper > .elementor-button-text",
+      "elementHtml": "<span class=\"elementor-button-text\">All Events </span>",
+      "discoveredAt": "2026-04-28T17:16:45.848Z",
+      "pageUrl": "https://www.honolulu.gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".elementor-element-d58b8a8",
+      "elementHtml": "<div class=\"elementor-element elementor-element-d58b8a8 elementor-widget elementor-widget-heading\" data-id=\"d58b8a8\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">",
+      "discoveredAt": "2026-04-28T17:16:45.848Z",
+      "pageUrl": "https://www.honolulu.gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "a[href$=\"services/\"] > .elementor-button-content-wrapper > .elementor-button-text",
+      "elementHtml": "<span class=\"elementor-button-text\">More Services</span>",
+      "discoveredAt": "2026-04-28T17:16:45.848Z",
+      "pageUrl": "https://www.honolulu.gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".elementor-element-c11b115 > .elementor-widget-container > .elementor-button-wrapper > .elementor-button-link.elementor-size-sm.elementor-button > .elementor-button-content-wrapper > .elementor-button-text",
+      "elementHtml": "<span class=\"elementor-button-text\">Meet the Mayor!</span>",
+      "discoveredAt": "2026-04-28T17:16:45.848Z",
+      "pageUrl": "https://www.honolulu.gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "a[href$=\"news\"] > .elementor-button-content-wrapper > .elementor-button-text",
+      "elementHtml": "<span class=\"elementor-button-text\">View More</span>",
+      "discoveredAt": "2026-04-28T17:16:45.848Z",
+      "pageUrl": "https://www.honolulu.gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".elementor-element-d1e3699",
+      "elementHtml": "<div class=\"elementor-element elementor-element-d1e3699 elementor-widget elementor-widget-heading\" data-id=\"d1e3699\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">",
+      "discoveredAt": "2026-04-28T17:16:45.848Z",
+      "pageUrl": "https://www.honolulu.gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".elementor-element-5e586f0",
+      "elementHtml": "<div class=\"elementor-element elementor-element-5e586f0 elementor-widget elementor-widget-shortcode\" data-id=\"5e586f0\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"shortcode.defau...",
+      "discoveredAt": "2026-04-28T17:16:45.848Z",
+      "pageUrl": "https://www.honolulu.gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".elementor-element-e78c464",
+      "elementHtml": "<div class=\"elementor-element elementor-element-e78c464 elementor-widget elementor-widget-heading\" data-id=\"e78c464\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">",
+      "discoveredAt": "2026-04-28T17:16:45.848Z",
+      "pageUrl": "https://www.honolulu.gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Document should have one main landmark: Fix all of the following:\n  Document does not have a main landmark",
+      "selector": "html",
+      "elementHtml": "<html lang=\"en-US\" class=\"js\">",
+      "discoveredAt": "2026-04-28T17:16:45.848Z",
+      "pageUrl": "https://www.honolulu.gov/",
+      "metadata": {
+        "backendNodeId": 1903,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          },
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".elementor-element-0f41f8e",
+      "elementHtml": "<div class=\"elementor-element elementor-element-0f41f8e elementor-widget elementor-widget-image\" data-id=\"0f41f8e\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"image.default\">",
+      "discoveredAt": "2026-04-28T17:16:45.848Z",
+      "pageUrl": "https://www.honolulu.gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".elementor-element-eb702e1 > .elementor-widget-container > .elementor-button-wrapper > .elementor-button-link.elementor-size-sm.elementor-button > .elementor-button-content-wrapper > .elementor-button-text",
+      "elementHtml": "<span class=\"elementor-button-text\">Find Your Councilmember</span>",
+      "discoveredAt": "2026-04-28T17:16:45.848Z",
+      "pageUrl": "https://www.honolulu.gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".elementor-element-718cd00",
+      "elementHtml": "<div class=\"elementor-element elementor-element-718cd00 e-con-full e-flex e-con e-parent\" data-id=\"718cd00\" data-element_type=\"container\" data-e-type=\"container\" data-settings=\"{\"background_background...",
+      "discoveredAt": "2026-04-28T17:16:45.848Z",
+      "pageUrl": "https://www.honolulu.gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".elementor-element-a52c7b0",
+      "elementHtml": "<div class=\"elementor-element elementor-element-a52c7b0 e-con-full e-flex e-con e-child\" data-id=\"a52c7b0\" data-element_type=\"container\" data-e-type=\"container\" data-settings=\"{\"background_background\"...",
+      "discoveredAt": "2026-04-28T17:16:45.848Z",
+      "pageUrl": "https://www.honolulu.gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".elementor-element-96e8e6d",
+      "elementHtml": "<div class=\"elementor-element elementor-element-96e8e6d e-flex e-con-boxed e-con e-parent e-lazyloaded\" data-id=\"96e8e6d\" data-element_type=\"container\" data-e-type=\"container\" data-settings=\"{\"backgro...",
+      "discoveredAt": "2026-04-28T17:16:45.848Z",
+      "pageUrl": "https://www.honolulu.gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Document should have one main landmark: Fix all of the following:\n  Document does not have a main landmark",
+      "selector": "html",
+      "elementHtml": "<html lang=\"en-US\" class=\"js\">",
+      "discoveredAt": "2026-04-28T17:17:32.383Z",
+      "pageUrl": "https://www.honolulu.gov/dhr/",
+      "metadata": {
+        "backendNodeId": 4930,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".elementor-element-54d7035",
+      "elementHtml": "<div class=\"elementor-element elementor-element-54d7035 e-flex e-con-boxed e-con e-parent\" data-id=\"54d7035\" data-element_type=\"container\" data-e-type=\"container\">",
+      "discoveredAt": "2026-04-28T17:17:32.383Z",
+      "pageUrl": "https://www.honolulu.gov/dhr/",
+      "metadata": {
+        "backendNodeId": 5646,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".elementor-element-9c0b31b",
+      "elementHtml": "<div class=\"elementor-element elementor-element-9c0b31b e-con-full e-flex e-con e-child\" data-id=\"9c0b31b\" data-element_type=\"container\" data-e-type=\"container\">",
+      "discoveredAt": "2026-04-28T17:17:32.383Z",
+      "pageUrl": "https://www.honolulu.gov/dhr/",
+      "metadata": {
+        "backendNodeId": 5540,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Aside should not be contained in another landmark: Fix any of the following:\n  The complementary landmark is contained in another landmark.",
+      "selector": "aside",
+      "elementHtml": "<aside class=\"footer-widget-area widget-area site-footer-focus-item footer-widget-area-inner\" data-section=\"sidebar-widgets-footer-widget-1\" aria-label=\"Footer Widget 1\">",
+      "discoveredAt": "2026-04-28T17:17:32.383Z",
+      "pageUrl": "https://www.honolulu.gov/dhr/",
+      "metadata": {
+        "backendNodeId": 6266,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".elementor-element-5c4f698",
+      "elementHtml": "<div class=\"elementor-element elementor-element-5c4f698 elementor-widget elementor-widget-heading\" data-id=\"5c4f698\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">",
+      "discoveredAt": "2026-04-28T17:17:32.383Z",
+      "pageUrl": "https://www.honolulu.gov/dhr/",
+      "metadata": {
+        "backendNodeId": 5574,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(19, 71, 148), text: rgb(0, 0, 0)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#masthead > p > a",
+      "elementHtml": "<a href=\"https://www.honolulu.gov\" title=\"City and County of Honolulu\" rel=\"home\">City and County of Honolulu</a>",
+      "discoveredAt": "2026-04-28T17:16:45.349Z",
+      "pageUrl": "https://www.honolulu.gov/",
+      "metadata": {
+        "backendNodeId": 1977,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(51, 55, 61), text: rgb(0, 0, 0)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#menu-2-11b5fdc > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.honolulu.gov/news/\" class=\"elementor-item menu-link\" tabindex=\"-1\">News</a>",
+      "discoveredAt": "2026-04-28T17:16:45.349Z",
+      "pageUrl": "https://www.honolulu.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(19, 71, 148), text: rgb(0, 0, 0)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#content > div > div > div:nth-of-type(8) > div > div:nth-of-type(1) > div:nth-of-type(3) > div > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.honolulu.gov/dpp/permitting/building-permits-home/\">\n\n\t\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">Apply for a building permit</span>\n\t\t\t\t\t\t\t\t\t\t\t</a>",
+      "discoveredAt": "2026-04-28T17:16:45.349Z",
+      "pageUrl": "https://www.honolulu.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(56, 96, 162), text: rgb(0, 0, 0)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#e-n-accordion-item-2152 > div > div:nth-of-type(2) > div > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.governmentjobs.com/careers/honolulu?category%5b0%5d=Accounting%20and%20Finance&amp;category%5b1%5d=Audit&amp;category%5b2%5d=Grants%20Administration&amp;category%5b3%5d=Purchasing",
+      "discoveredAt": "2026-04-28T17:17:32.046Z",
+      "pageUrl": "https://www.honolulu.gov/dhr/",
+      "metadata": {
+        "backendNodeId": 5956,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(56, 96, 162), text: rgb(0, 0, 0)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#e-n-accordion-item-2152 > div > div:nth-of-type(2) > div > ul > li:nth-of-type(6) > a",
+      "elementHtml": "<a href=\"https://www.governmentjobs.com/careers/honolulu?category%5b0%5d=911%20Telecommunications&amp;category%5b1%5d=Criminology&amp;category%5b2%5d=Dispatch&amp;category%5b3%5d=Emergency%20Managemen",
+      "discoveredAt": "2026-04-28T17:17:32.046Z",
+      "pageUrl": "https://www.honolulu.gov/dhr/",
+      "metadata": {
+        "backendNodeId": 5981,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(56, 96, 162), text: rgb(0, 0, 0)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#e-n-accordion-item-2152 > div > div:nth-of-type(2) > div > ul > li:nth-of-type(5) > a",
+      "elementHtml": "<a href=\"https://www.governmentjobs.com/careers/honolulu?category%5b0%5d=Audit&amp;category%5b1%5d=Clerical%20%26%20Data%20Entry&amp;category%5b2%5d=Database%20Administration&amp;category%5b3%5d=Elect",
+      "discoveredAt": "2026-04-28T17:17:32.046Z",
+      "pageUrl": "https://www.honolulu.gov/dhr/",
+      "metadata": {
+        "backendNodeId": 5976,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(56, 96, 162), text: rgb(0, 0, 0)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#masthead > p > a",
+      "elementHtml": "<a href=\"https://www.honolulu.gov/dhr\" title=\"Department of Human Resources\" rel=\"home\">Department of Human Resources</a>",
+      "discoveredAt": "2026-04-28T17:17:32.046Z",
+      "pageUrl": "https://www.honolulu.gov/dhr/",
+      "metadata": {
+        "backendNodeId": 5004,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(56, 96, 162), text: rgb(0, 0, 0)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#e-n-accordion-item-2152 > div > div:nth-of-type(2) > div > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://www.governmentjobs.com/careers/honolulu?category%5b0%5d=Administrative%20Assistant&amp;category%5b1%5d=Clerical%20%26%20Data%20Entry&amp;category%5b2%5d=Customer%20Service&amp;categor",
+      "discoveredAt": "2026-04-28T17:17:32.046Z",
+      "pageUrl": "https://www.honolulu.gov/dhr/",
+      "metadata": {
+        "backendNodeId": 5971,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(56, 96, 162), text: rgb(0, 0, 0)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#e-n-accordion-item-2151 > div > div:nth-of-type(2) > div > div:nth-of-type(3) > div > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.honolulu.gov/apps/tempjobs/\" aria-label=\"check mark icon\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-icon\">\n\t\t\t\t\t\t\t<i aria-hidden=\"true\" class=\"fas fa-check\"></i>\t\t\t\t\t\t</span>",
+      "discoveredAt": "2026-04-28T17:17:32.046Z",
+      "pageUrl": "https://www.honolulu.gov/dhr/",
+      "metadata": {
+        "backendNodeId": 5916,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(56, 96, 162), text: rgb(0, 0, 0)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#e-n-accordion-item-2152 > div > div:nth-of-type(2) > div > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a href=\"https://www.governmentjobs.com/careers/honolulu?category%5b0%5d=Architecture&amp;category%5b1%5d=Building%20%26%20Safety&amp;category%5b2%5d=Building%20Maintenance&amp;category%5b3%5d=Code%20",
+      "discoveredAt": "2026-04-28T17:17:32.046Z",
+      "pageUrl": "https://www.honolulu.gov/dhr/",
+      "metadata": {
+        "backendNodeId": 5966,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(56, 96, 162), text: rgb(0, 0, 0)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#e-n-accordion-item-2152 > div > div:nth-of-type(2) > div > ul > li:nth-of-type(7) > a",
+      "elementHtml": "<a href=\"https://www.governmentjobs.com/careers/honolulu?category%5b0%5d=Architecture&amp;category%5b1%5d=Building%20%26%20Safety&amp;category%5b2%5d=Engineering&amp;category%5b3%5d=Project%20Manageme",
+      "discoveredAt": "2026-04-28T17:17:32.046Z",
+      "pageUrl": "https://www.honolulu.gov/dhr/",
+      "metadata": {
+        "backendNodeId": 5986,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(56, 96, 162), text: rgb(0, 0, 0)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#e-n-accordion-item-2151 > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://www.governmentjobs.com/careers/honolulu\" aria-label=\"check mark icon\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-icon\">\n\t\t\t\t\t\t\t<i aria-hidden=\"true\" class=\"fas fa-check\"></i>\t\t\t\t\t",
+      "discoveredAt": "2026-04-28T17:17:32.046Z",
+      "pageUrl": "https://www.honolulu.gov/dhr/",
+      "metadata": {
+        "backendNodeId": 5878,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(56, 96, 162), text: rgb(0, 0, 0)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#e-n-accordion-item-2152 > div > div:nth-of-type(2) > div > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"https://www.governmentjobs.com/careers/honolulu?category%5b0%5d=Arts&amp;category%5b1%5d=Community%20and%20Social%20Services&amp;category%5b2%5d=Community%20Development&amp;category%5b3%5d=Co",
+      "discoveredAt": "2026-04-28T17:17:32.046Z",
+      "pageUrl": "https://www.honolulu.gov/dhr/",
+      "metadata": {
+        "backendNodeId": 5961,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Clicking \"#masthead > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div > a\" inserts 1 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#masthead > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div > a",
+      "elementHtml": "<a class=\"elementor-icon\" href=\"#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE5MDUyIiwidG9nZ2xlIjpmYWxzZX0%3D\" aria-label=\"Open site search\" role=\"button\" data-nav=\"utility\">\n\t\t\t<i",
+      "discoveredAt": "2026-04-28T17:18:35.247Z",
+      "pageUrl": "https://www.honolulu.gov/dhr/",
+      "metadata": {
+        "backendNodeId": 4785,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "dynamic-content-audit"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.3"
+      ]
+    },
+    {
+      "probe": "navigation-ways",
+      "standard": "WCAG 2.4.5",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Page has only one navigation mechanism (navigation). WCAG requires at least two ways to locate a page within a set of pages.",
+      "selector": "html",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:16:45.341Z",
+      "pageUrl": "https://www.honolulu.gov/",
+      "metadata": {
+        "backendNodeId": 1903,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "navigation-ways"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 2.4.5"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 2.4.5"
+      ]
+    },
+    {
+      "probe": "navigation-ways",
+      "standard": "WCAG 2.4.5",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Page has only one navigation mechanism (navigation). WCAG requires at least two ways to locate a page within a set of pages.",
+      "selector": "html",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:17:32.045Z",
+      "pageUrl": "https://www.honolulu.gov/dhr/",
+      "metadata": {
+        "backendNodeId": 4930,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "navigation-ways"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 2.4.5"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 2.4.5"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 23px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "a.skip-link.screen-reader-text",
+      "elementHtml": "<a class=\"skip-link screen-reader-text\" href=\"#content\" title=\"Skip to content\">\n\t\tSkip to content</a>",
+      "discoveredAt": "2026-04-28T17:17:21.819Z",
+      "pageUrl": "",
+      "metadata": {
+        "backendNodeId": 1973,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 281px at 320px width.",
+      "selector": "a.swiper-slide-inner",
+      "elementHtml": "<a class=\"swiper-slide-inner\" href=\"https://www.honolulu.gov/dhr/career/\" aria-label=\"Open career webpage\"><div class=\"swiper-slide-contents\"></div></a>",
+      "discoveredAt": "2026-04-28T17:17:21.819Z",
+      "pageUrl": "",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 601px at 320px width.",
+      "selector": "div.elementor-slide-heading",
+      "elementHtml": "<div class=\"elementor-slide-heading\">Stay Informed, Stay Safe!</div>",
+      "discoveredAt": "2026-04-28T17:17:21.819Z",
+      "pageUrl": "",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 30px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "h3.multisite-post-title",
+      "elementHtml": "<h3 class=\"multisite-post-title\"><a href=\"https://www.honolulu.gov/dpr/dpr-news/hawaiian-traditions-inspire-cultural-education-at-the-98th-lei-day-celebration/\">Hawaiian traditions inspire cultural ed",
+      "discoveredAt": "2026-04-28T17:17:21.819Z",
+      "pageUrl": "",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 281px at 320px width.",
+      "selector": "div.elementor-repeater-item-542c857.swiper-slide",
+      "elementHtml": "<div class=\"elementor-repeater-item-542c857 swiper-slide\" role=\"group\" aria-roledescription=\"slide\"><div class=\"swiper-slide-bg\" role=\"img\" aria-label=\"Your City Your Career\"></div><a class=\"swiper-sl",
+      "discoveredAt": "2026-04-28T17:17:21.819Z",
+      "pageUrl": "",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 601px at 320px width.",
+      "selector": "div.swiper-slide-contents",
+      "elementHtml": "<div class=\"swiper-slide-contents\"><div class=\"elementor-slide-heading\">Stay Informed, Stay Safe!</div><div class=\"elementor-button elementor-slide-button elementor-size-md\">Prepare Yourself</div></di",
+      "discoveredAt": "2026-04-28T17:17:21.819Z",
+      "pageUrl": "",
+      "metadata": {
+        "backendNodeId": 2573,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 580px at 320px width.",
+      "selector": "div.elementor-button.elementor-slide-button",
+      "elementHtml": "<div class=\"elementor-button elementor-slide-button elementor-size-md\">Prepare Yourself</div>",
+      "discoveredAt": "2026-04-28T17:17:21.819Z",
+      "pageUrl": "",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 281px at 320px width.",
+      "selector": "div.swiper-slide-bg",
+      "elementHtml": "<div class=\"swiper-slide-bg\" role=\"img\" aria-label=\"Your City Your Career\"></div>",
+      "discoveredAt": "2026-04-28T17:17:21.819Z",
+      "pageUrl": "",
+      "metadata": {
+        "backendNodeId": 2571,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 82px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "div.multisite-post-image",
+      "elementHtml": "<div class=\"multisite-post-image\"><img decoding=\"async\" width=\"150\" height=\"150\" src=\"https://www.honolulu.gov/wp-content/uploads/sites/34/2023/11/leiday_imgs/Lei_Day_Program_Leis_1-150x150.jpg\" class",
+      "discoveredAt": "2026-04-28T17:17:21.819Z",
+      "pageUrl": "",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Page requires horizontal scrolling at 320px width (39px overflow). Content should reflow without horizontal scrolling at this width.",
+      "selector": "html",
+      "elementHtml": "<html>",
+      "discoveredAt": "2026-04-28T17:17:21.819Z",
+      "pageUrl": "",
+      "metadata": {
+        "backendNodeId": 1903,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 601px at 320px width.",
+      "selector": "div.elementor-repeater-item-deb45c4.swiper-slide",
+      "elementHtml": "<div class=\"elementor-repeater-item-deb45c4 swiper-slide\" role=\"group\" aria-roledescription=\"slide\"><div class=\"swiper-slide-bg\" role=\"img\" aria-label=\"stay informed, stay safe! Prepare yourself\"></di",
+      "discoveredAt": "2026-04-28T17:17:21.819Z",
+      "pageUrl": "",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 921px at 320px width.",
+      "selector": "div.elementor-repeater-item-804dda7.swiper-slide",
+      "elementHtml": "<div class=\"elementor-repeater-item-804dda7 swiper-slide\" role=\"group\" aria-roledescription=\"slide\"><div class=\"swiper-slide-bg\" role=\"img\" aria-label=\"beach-foam-waves-2179183\"></div><a class=\"swiper",
+      "discoveredAt": "2026-04-28T17:17:21.819Z",
+      "pageUrl": "",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    }
+  ],
+  "requestedJurisdictions": [
+    "us"
+  ],
+  "appliedJurisdictions": [
+    "us"
+  ]
+}

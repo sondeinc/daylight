@@ -1,0 +1,5568 @@
+{
+  "url": "https://vanguard.com",
+  "slug": "vanguard-com",
+  "status": "complete",
+  "scanDate": "2026-04-29T00:31:53.487Z",
+  "scanConfig": {
+    "scope": "site",
+    "maxPages": 50,
+    "racks": [
+      "rack-live-a11y",
+      "rack-live-free"
+    ],
+    "individualProbes": [],
+    "excludedProbes": [],
+    "timeBudgetMs": 180000,
+    "maxFindings": null
+  },
+  "sondeScore": {
+    "score": 904,
+    "rawPenalty": 719.25,
+    "normalizedPenalty": 79.91666666666667,
+    "pagesScanned": 9,
+    "weightsVersion": "v0.1"
+  },
+  "avgFindingsPerPage": 20.7,
+  "elementComplianceRate": 99,
+  "totalElements": 11259,
+  "elementsWithFindings": 115,
+  "complianceSummary": {
+    "total": 186,
+    "byLevel": {
+      "AA": 42,
+      "A": 57
+    },
+    "bySeverity": {
+      "critical": 47,
+      "high": 57,
+      "medium": 77,
+      "low": 5
+    },
+    "byCriterion": {
+      "WCAG 1.4.3": 28,
+      "WCAG 1.1.1": 42,
+      "WCAG 2.4.3": 2,
+      "WCAG 1.4.10": 1,
+      "WCAG 4.1.2": 6,
+      "WCAG 1.4.1": 7,
+      "WCAG 3.2.3": 6,
+      "WCAG 2.4.5": 4,
+      "WCAG 1.4.12": 3
+    }
+  },
+  "summary": {
+    "pagesAnalyzed": 9,
+    "pagesFailed": 0,
+    "totalFindings": 186,
+    "bySeverity": {
+      "critical": 47,
+      "high": 57,
+      "medium": 77,
+      "low": 5
+    },
+    "byProbe": {},
+    "byType": {},
+    "durationMs": 186898
+  },
+  "jurisdiction": "US",
+  "entityName": "Vanguard",
+  "scanSource": "live",
+  "findings": [
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.27:1 (required: 4.5:1 for normal text). Foreground: rgb(85, 85, 85), background: rgb(56, 96, 190). Text: \"Filter Button\"",
+      "selector": "title",
+      "elementHtml": "<title>Filter Button</title>",
+      "discoveredAt": "2026-04-28T17:29:44.864Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "contrastForeground": "#555555",
+        "contrastBackground": "#3860be",
+        "contrastSuggestedForeground": "#e2e2e1",
+        "contrastRatio": 1.2726486005803468,
+        "contrastSuggestedRatio": 4.518902006669025,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Filter Button",
+        "backendNodeId": 4397,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(20, 91, 255), background: rgb(20, 91, 255). Text: \"FINRA's BrokerCheck\"",
+      "selector": "span.cmp-richtext--primary-span",
+      "elementHtml": "<span class=\"cmp-richtext--primary-span\">FINRA's BrokerCheck</span>",
+      "discoveredAt": "2026-04-28T17:29:44.864Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "contrastForeground": "#145bff",
+        "contrastBackground": "#145bff",
+        "contrastSuggestedForeground": "#e4eeff",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.526902142498955,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "FINRA's BrokerCheck",
+        "backendNodeId": 5050,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"here\"",
+      "selector": "span.cmp-videoplayer--warning-button-text",
+      "elementHtml": "<span class=\"cmp-videoplayer--warning-button-text\"> here</span>",
+      "discoveredAt": "2026-04-28T17:29:44.864Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#777676",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.528436450868204,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "here",
+        "backendNodeId": 4842,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(20, 91, 255), background: rgb(20, 91, 255). Text: \"Read now\"",
+      "selector": "span.cmp-alert__action-text",
+      "elementHtml": "<span class=\"cmp-alert__action-text\">Read now</span>",
+      "discoveredAt": "2026-04-28T17:29:44.864Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "contrastForeground": "#145bff",
+        "contrastBackground": "#145bff",
+        "contrastSuggestedForeground": "#e4eeff",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.526902142498955,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Read now",
+        "backendNodeId": 4459,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"You have certain cookies disabled on the Vanguard site.\n    \"",
+      "selector": "div.cmp-videoplayer--warning-textoverlay",
+      "elementHtml": "<div class=\"cmp-videoplayer--warning-textoverlay\">\n            You have certain cookies disabled on the Vanguard site.<br>\n            In order to watch this video, you must agree to the use of cookie",
+      "discoveredAt": "2026-04-28T17:29:44.864Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#777676",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.528436450868204,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "You have certain cookies disabled on the Vanguard site.\n    ",
+        "backendNodeId": 4838,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(20, 91, 255), background: rgb(20, 91, 255). Text: \"Access tax FAQs\"",
+      "selector": "#action-teaser-0f2b2b68e8-cta-bf1d853027",
+      "elementHtml": "<span id=\"action-teaser-0f2b2b68e8-cta-bf1d853027\" class=\"c11n-link__content\">Access tax FAQs</span>",
+      "discoveredAt": "2026-04-28T17:29:44.864Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "contrastForeground": "#145bff",
+        "contrastBackground": "#145bff",
+        "contrastSuggestedForeground": "#e4eeff",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.526902142498955,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Access tax FAQs",
+        "backendNodeId": 4984,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"Earn more on your savings: Cash Plus will earn an additional\"",
+      "selector": "p",
+      "elementHtml": "<p>Earn more on your savings: Cash Plus will earn an additional 0.25% boost on the base APY, now extended through 9/30/26. Base APY will vary.</p>",
+      "discoveredAt": "2026-04-28T17:29:44.864Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#777676",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.528436450868204,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Earn more on your savings: Cash Plus will earn an additional",
+        "backendNodeId": 4454,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(20, 91, 255), background: rgb(20, 91, 255). Text: \"Set up online account access\"",
+      "selector": "a",
+      "elementHtml": "<a data-cta-tracking=\"true\" href=\"https://web-registration.vanguard.com/\" data-di-id=\"di-id-af10efec-14bb29c3\">Set up online account access</a>",
+      "discoveredAt": "2026-04-28T17:29:44.864Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "contrastForeground": "#145bff",
+        "contrastBackground": "#145bff",
+        "contrastSuggestedForeground": "#e4eeff",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.526902142498955,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Set up online account access",
+        "backendNodeId": 4456,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(20, 91, 255), background: rgb(20, 91, 255). Text: \"Read articles\"",
+      "selector": "#action-teaser-bcedde14d8-cta-498b705dcd",
+      "elementHtml": "<span id=\"action-teaser-bcedde14d8-cta-498b705dcd\" class=\"c11n-link__content\">Read articles</span>",
+      "discoveredAt": "2026-04-28T17:29:44.864Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "contrastForeground": "#145bff",
+        "contrastBackground": "#145bff",
+        "contrastSuggestedForeground": "#e4eeff",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.526902142498955,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Read articles",
+        "backendNodeId": 4967,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(20, 91, 255), background: rgb(20, 91, 255). Text: \"Go to market summary\"",
+      "selector": "#action-teaser-c1152dc7a8-cta-30e6954101",
+      "elementHtml": "<span id=\"action-teaser-c1152dc7a8-cta-30e6954101\" class=\"c11n-link__content\">Go to market summary</span>",
+      "discoveredAt": "2026-04-28T17:29:44.864Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "contrastForeground": "#145bff",
+        "contrastBackground": "#145bff",
+        "contrastSuggestedForeground": "#e4eeff",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.526902142498955,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Go to market summary",
+        "backendNodeId": 5001,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.19:1 (required: 4.5:1 for normal text). Foreground: rgb(26, 26, 26), background: rgb(2, 3, 3). Text: \"(1)\"",
+      "selector": "span.c11n-sr-only",
+      "elementHtml": "<span class=\"c11n-sr-only\"> (1) </span>",
+      "discoveredAt": "2026-04-28T17:29:44.864Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "contrastForeground": "#1a1a1a",
+        "contrastBackground": "#020303",
+        "contrastSuggestedForeground": "#767675",
+        "contrastRatio": 1.186519340399319,
+        "contrastSuggestedRatio": 4.541704309181027,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "(1)",
+        "backendNodeId": 4568,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 3:1 for large text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"You're in good company\"",
+      "selector": "span.cmp-richtext--fz-h3.cmp-richtext--ff-mark",
+      "elementHtml": "<span style=\"display: inline;color: rgb(255,255,255);\" class=\"cmp-richtext--fz-h3 cmp-richtext--ff-mark cmp-richtext--fw-heavy\">You're in good company</span>",
+      "discoveredAt": "2026-04-28T17:29:44.864Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#959494",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 3.025283721231529,
+        "contrastRequiredRatio": 3,
+        "contrastIsLargeText": true,
+        "contrastTextSample": "You're in good company",
+        "backendNodeId": 4754,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"50 million\"",
+      "selector": "span",
+      "elementHtml": "<span data-placeholder-expression=\"${cf.tokens.vanguard-by-the-numbers.globalNumInvestorsSpelledOut}\">50 million</span>",
+      "discoveredAt": "2026-04-28T17:29:44.864Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#777676",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.528436450868204,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "50 million",
+        "backendNodeId": 4457,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 3:1 for large text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"Ready for another spin?\"",
+      "selector": "h2.cmp-hero-spot__title",
+      "elementHtml": "<h2 class=\"cmp-hero-spot__title\">\n        Ready for another spin?\n    </h2>",
+      "discoveredAt": "2026-04-28T17:29:44.864Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#959494",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 3.025283721231529,
+        "contrastRequiredRatio": 3,
+        "contrastIsLargeText": true,
+        "contrastTextSample": "Ready for another spin?",
+        "backendNodeId": 4489,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 3:1 for large text). Foreground: rgb(113, 119, 119), background: rgb(113, 119, 119). Text: \"Is the Vanguard Cash Plus Account rate boost a limited promo\"",
+      "selector": "span.cmp-accordion__title-text",
+      "elementHtml": "<span class=\"cmp-accordion__title-text\">Is the Vanguard Cash Plus Account rate boost a limited promotion?</span>",
+      "discoveredAt": "2026-04-28T17:31:23.804Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "contrastForeground": "#717777",
+        "contrastBackground": "#717777",
+        "contrastSuggestedForeground": "#292e2f",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 3.0189161810932905,
+        "contrastRequiredRatio": 3,
+        "contrastIsLargeText": true,
+        "contrastTextSample": "Is the Vanguard Cash Plus Account rate boost a limited promo",
+        "backendNodeId": 37528,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(20, 91, 255), background: rgb(20, 91, 255). Text: \"Learn about the importance of an emergency fund\"",
+      "selector": "#action-teaser-9035131c30-cta-1f0812d271",
+      "elementHtml": "<span id=\"action-teaser-9035131c30-cta-1f0812d271\" class=\"c11n-link__content\">Learn about the importance of an emergency fund</span>",
+      "discoveredAt": "2026-04-28T17:31:23.804Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "contrastForeground": "#145bff",
+        "contrastBackground": "#145bff",
+        "contrastSuggestedForeground": "#e4eeff",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.526902142498955,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Learn about the importance of an emergency fund",
+        "backendNodeId": 37340,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(20, 91, 255), background: rgb(20, 91, 255). Text: \"Take a deeper dive into money market funds\"",
+      "selector": "#action-teaser-135927b015-cta-c297f85059",
+      "elementHtml": "<span id=\"action-teaser-135927b015-cta-c297f85059\" class=\"c11n-link__content\">Take a deeper dive into money market funds</span>",
+      "discoveredAt": "2026-04-28T17:31:23.804Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "contrastForeground": "#145bff",
+        "contrastBackground": "#145bff",
+        "contrastSuggestedForeground": "#e4eeff",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.526902142498955,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Take a deeper dive into money market funds",
+        "backendNodeId": 37378,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 3:1 for large text). Foreground: rgb(113, 119, 119), background: rgb(113, 119, 119). Text: \"Digital Advisor\"",
+      "selector": "span.cmp-accordion__title-text",
+      "elementHtml": "<span class=\"cmp-accordion__title-text\">Digital Advisor</span>",
+      "discoveredAt": "2026-04-28T17:31:35.587Z",
+      "pageUrl": "https://investor.vanguard.com/advice",
+      "metadata": {
+        "contrastForeground": "#717777",
+        "contrastBackground": "#717777",
+        "contrastSuggestedForeground": "#292e2f",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 3.0189161810932905,
+        "contrastRequiredRatio": 3,
+        "contrastIsLargeText": true,
+        "contrastTextSample": "Digital Advisor",
+        "backendNodeId": 43675,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.27:1 (required: 4.5:1 for normal text). Foreground: rgb(85, 85, 85), background: rgb(56, 96, 190). Text: \"Filter Button\"",
+      "selector": "title",
+      "elementHtml": "<title>Filter Button</title>",
+      "discoveredAt": "2026-04-28T17:31:35.587Z",
+      "pageUrl": "https://investor.vanguard.com/advice",
+      "metadata": {
+        "contrastForeground": "#555555",
+        "contrastBackground": "#3860be",
+        "contrastSuggestedForeground": "#e2e2e1",
+        "contrastRatio": 1.2726486005803468,
+        "contrastSuggestedRatio": 4.518902006669025,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Filter Button",
+        "backendNodeId": 40453,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(20, 91, 255), background: rgb(20, 91, 255). Text: \"Show all (6)\"",
+      "selector": "p.cmp-accordion--faq__toggle",
+      "elementHtml": "<p role=\"button\" tabindex=\"0\" class=\"cmp-accordion--faq__toggle\" aria-label=\"Show all 6 questions. Questions will be added above.\">Show all (6)</p>",
+      "discoveredAt": "2026-04-28T17:31:35.587Z",
+      "pageUrl": "https://investor.vanguard.com/advice",
+      "metadata": {
+        "contrastForeground": "#145bff",
+        "contrastBackground": "#145bff",
+        "contrastSuggestedForeground": "#e4eeff",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.526902142498955,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Show all (6)",
+        "backendNodeId": 44248,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 3:1 for large text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"Compare investment advice\"",
+      "selector": "h1.cmp-hero-spot__title",
+      "elementHtml": "<h1 class=\"cmp-hero-spot__title\">\n        Compare investment advice\n    </h1>",
+      "discoveredAt": "2026-04-28T17:31:35.587Z",
+      "pageUrl": "https://investor.vanguard.com/advice",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#959494",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 3.025283721231529,
+        "contrastRequiredRatio": 3,
+        "contrastIsLargeText": true,
+        "contrastTextSample": "Compare investment advice",
+        "backendNodeId": 43481,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"Financial planning services tailored to your needs.\"",
+      "selector": "p",
+      "elementHtml": "<p>Financial planning services tailored to your needs.</p>",
+      "discoveredAt": "2026-04-28T17:31:35.587Z",
+      "pageUrl": "https://investor.vanguard.com/advice",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#777676",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.528436450868204,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Financial planning services tailored to your needs.",
+        "backendNodeId": 43483,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.27:1 (required: 4.5:1 for normal text). Foreground: rgb(85, 85, 85), background: rgb(56, 96, 190). Text: \"Filter Button\"",
+      "selector": "title",
+      "elementHtml": "<title>Filter Button</title>",
+      "discoveredAt": "2026-04-28T17:29:01.593Z",
+      "pageUrl": "https://investor.vanguard.com/corporate-portal",
+      "metadata": {
+        "contrastForeground": "#555555",
+        "contrastBackground": "#3860be",
+        "contrastSuggestedForeground": "#e2e2e1",
+        "contrastRatio": 1.2726486005803468,
+        "contrastSuggestedRatio": 4.518902006669025,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Filter Button",
+        "backendNodeId": 2619,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(20, 91, 255), background: rgb(20, 91, 255). Text: \"Online privacy notice\"",
+      "selector": "a",
+      "elementHtml": "<a data-cta-tracking=\"true\" href=\"/privacy-center/online-privacy-notice\" data-di-id=\"di-id-fc8bf8ef-e89ec30f\">Online privacy notice</a>",
+      "discoveredAt": "2026-04-28T17:31:14.237Z",
+      "pageUrl": "https://investor.vanguard.com/privacy-center",
+      "metadata": {
+        "contrastForeground": "#145bff",
+        "contrastBackground": "#145bff",
+        "contrastSuggestedForeground": "#e4eeff",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.526902142498955,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Online privacy notice",
+        "backendNodeId": 32086,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.27:1 (required: 4.5:1 for normal text). Foreground: rgb(85, 85, 85), background: rgb(56, 96, 190). Text: \"Filter Button\"",
+      "selector": "title",
+      "elementHtml": "<title>Filter Button</title>",
+      "discoveredAt": "2026-04-28T17:31:14.237Z",
+      "pageUrl": "https://investor.vanguard.com/privacy-center",
+      "metadata": {
+        "contrastForeground": "#555555",
+        "contrastBackground": "#3860be",
+        "contrastSuggestedForeground": "#e2e2e1",
+        "contrastRatio": 1.2726486005803468,
+        "contrastSuggestedRatio": 4.518902006669025,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Filter Button",
+        "backendNodeId": 29559,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"You have certain cookies disabled on the Vanguard site.\n    \"",
+      "selector": "div.cmp-videoplayer--warning-textoverlay",
+      "elementHtml": "<div class=\"cmp-videoplayer--warning-textoverlay\">\n            You have certain cookies disabled on the Vanguard site.<br>\n            In order to watch this video, you must agree to the use of cookie",
+      "discoveredAt": "2026-04-28T17:30:54.346Z",
+      "pageUrl": "https://investor.vanguard.com/security-center",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#777676",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.528436450868204,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "You have certain cookies disabled on the Vanguard site.\n    ",
+        "backendNodeId": 26220,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 3:1 for large text). Foreground: rgb(113, 119, 119), background: rgb(113, 119, 119). Text: \"How we  protect you\"",
+      "selector": "span.cmp-accordion__title-text",
+      "elementHtml": "<span class=\"cmp-accordion__title-text\">How we  protect you</span>",
+      "discoveredAt": "2026-04-28T17:30:54.346Z",
+      "pageUrl": "https://investor.vanguard.com/security-center",
+      "metadata": {
+        "contrastForeground": "#717777",
+        "contrastBackground": "#717777",
+        "contrastSuggestedForeground": "#292e2f",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 3.0189161810932905,
+        "contrastRequiredRatio": 3,
+        "contrastIsLargeText": true,
+        "contrastTextSample": "How we  protect you",
+        "backendNodeId": 25648,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"here\"",
+      "selector": "span.cmp-videoplayer--warning-button-text",
+      "elementHtml": "<span class=\"cmp-videoplayer--warning-button-text\"> here</span>",
+      "discoveredAt": "2026-04-28T17:30:54.346Z",
+      "pageUrl": "https://investor.vanguard.com/security-center",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#777676",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.528436450868204,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "here",
+        "backendNodeId": 26224,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"4576\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:29:45.739Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "backendNodeId": 4576,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"5391\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:29:45.739Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "backendNodeId": 5391,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"-1000006544\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:29:45.739Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"4563\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:29:45.739Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "backendNodeId": 4563,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"4551\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:29:45.739Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "backendNodeId": 4551,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"37200\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:31:23.824Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 37200,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"37459\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:31:23.824Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 37459,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"37465\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:31:23.824Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 37465,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"37104\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:31:23.824Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 37104,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"39505\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:31:23.824Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 39505,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"37471\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:31:23.824Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 37471,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"37078\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:31:23.824Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 37078,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"37084\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:31:23.824Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 37084,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"37632\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:31:23.824Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 37632,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"37097\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:31:23.824Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 37097,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"34964\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:31:23.824Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 34964,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"-1000016484\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:31:23.824Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"37188\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:31:23.824Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 37188,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"37453\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:31:23.824Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 37453,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"37072\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:31:23.824Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 37072,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"37583\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:31:23.824Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 37583,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"37550\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:31:23.824Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 37550,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"37530\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:31:23.824Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 37530,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"37567\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:31:23.824Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 37567,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"37091\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:31:23.824Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 37091,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"37182\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:31:23.824Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 37182,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"37194\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:31:23.824Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 37194,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"37176\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:31:23.824Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 37176,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"37598\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:31:23.824Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 37598,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"37613\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:31:23.824Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 37613,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"44224\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:31:35.660Z",
+      "pageUrl": "https://investor.vanguard.com/advice",
+      "metadata": {
+        "backendNodeId": 44224,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"41460\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:31:35.660Z",
+      "pageUrl": "https://investor.vanguard.com/advice",
+      "metadata": {
+        "backendNodeId": 41460,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"44193\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:31:35.660Z",
+      "pageUrl": "https://investor.vanguard.com/advice",
+      "metadata": {
+        "backendNodeId": 44193,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"44158\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:31:35.660Z",
+      "pageUrl": "https://investor.vanguard.com/advice",
+      "metadata": {
+        "backendNodeId": 44158,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"44208\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:31:35.660Z",
+      "pageUrl": "https://investor.vanguard.com/advice",
+      "metadata": {
+        "backendNodeId": 44208,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"44173\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:31:35.660Z",
+      "pageUrl": "https://investor.vanguard.com/advice",
+      "metadata": {
+        "backendNodeId": 44173,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"20581\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:30:42.272Z",
+      "pageUrl": "https://investor.vanguard.com/privacy-center/online-privacy-notice",
+      "metadata": {
+        "backendNodeId": 20581,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"-1000012915\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:30:42.272Z",
+      "pageUrl": "https://investor.vanguard.com/privacy-center/online-privacy-notice",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"-1000013770\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:30:54.352Z",
+      "pageUrl": "https://investor.vanguard.com/security-center",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"-1000013749\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:30:54.352Z",
+      "pageUrl": "https://investor.vanguard.com/security-center",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"24702\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:30:54.352Z",
+      "pageUrl": "https://investor.vanguard.com/security-center",
+      "metadata": {
+        "backendNodeId": 24702,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"-1000013726\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:30:54.352Z",
+      "pageUrl": "https://investor.vanguard.com/security-center",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "console-health",
+      "severity": "high",
+      "description": "Console warning: Unable to evaluate placeholder: page.cid",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:29:44.848Z",
+      "sourceLocation": {
+        "file": "https://investor.vanguard.com/etc.clientlibs/marketing-site/clientlibs/clientlib-site.min.ACSHASHbd674b246f26c07bfe7d3be3136df89a.js",
+        "line": 1,
+        "column": 0,
+        "confidence": "medium",
+        "strategy": "source-map"
+      },
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "console-health"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "console-health"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "console-health"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "console-health"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "console-health"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "console-health"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "console-health"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "console-health",
+      "severity": "high",
+      "description": "Console warning: Lit is in dev mode. Not recommended for production! See https://lit.dev/msg/dev-mode for more information.",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:31:23.793Z",
+      "sourceLocation": {
+        "file": "https://cdn.web.vanguard.com/c11n-web/v1/common--Ash50S_.js",
+        "line": 0,
+        "column": 0,
+        "confidence": "medium",
+        "strategy": "source-map"
+      },
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "console-health"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "console-health"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "console-health"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "console-health"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "console-health"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "console-health",
+      "severity": "high",
+      "description": "Console warning: Lit is in dev mode. Not recommended for production! See https://lit.dev/msg/dev-mode for more information.",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:31:35.574Z",
+      "sourceLocation": {
+        "file": "https://cdn.web.vanguard.com/c11n-web/v1/common--Ash50S_.js",
+        "line": 0,
+        "column": 0,
+        "confidence": "medium",
+        "strategy": "source-map"
+      },
+      "pageUrl": "https://investor.vanguard.com/advice",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "console-health"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "console-health"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "console-health"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "console-health"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "console-health",
+      "severity": "high",
+      "description": "Console warning: Unable to evaluate placeholder: page.cid",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:31:14.236Z",
+      "sourceLocation": {
+        "file": "https://investor.vanguard.com/etc.clientlibs/marketing-site/clientlibs/clientlib-site.min.ACSHASHbd674b246f26c07bfe7d3be3136df89a.js",
+        "line": 1,
+        "column": 0,
+        "confidence": "medium",
+        "strategy": "source-map"
+      },
+      "pageUrl": "https://investor.vanguard.com/privacy-center",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "console-health"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "console-health"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "console-health"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "console-health"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "console-health",
+      "severity": "high",
+      "description": "Console warning: Unable to evaluate placeholder: page.cid",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:30:42.252Z",
+      "sourceLocation": {
+        "file": "https://investor.vanguard.com/etc.clientlibs/marketing-site/clientlibs/clientlib-site.min.ACSHASHbd674b246f26c07bfe7d3be3136df89a.js",
+        "line": 1,
+        "column": 0,
+        "confidence": "medium",
+        "strategy": "source-map"
+      },
+      "pageUrl": "https://investor.vanguard.com/privacy-center/online-privacy-notice",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "console-health"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "console-health"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "console-health"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "console-health"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "console-health",
+      "severity": "high",
+      "description": "Console warning: Unable to evaluate placeholder: page.cid",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:30:54.318Z",
+      "sourceLocation": {
+        "file": "https://investor.vanguard.com/etc.clientlibs/marketing-site/clientlibs/clientlib-site.min.ACSHASHbd674b246f26c07bfe7d3be3136df89a.js",
+        "line": 1,
+        "column": 0,
+        "confidence": "medium",
+        "strategy": "source-map"
+      },
+      "pageUrl": "https://investor.vanguard.com/security-center",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "console-health"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "console-health"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "console-health"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "console-health"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Vanguard Charitable\" to \"Personal investors\" (visual distance: 602px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#get-started > div > div > aside > div > div > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a>Personal investors</a>",
+      "discoveredAt": "2026-04-28T17:29:21.854Z",
+      "pageUrl": "https://investor.vanguard.com/corporate-portal",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Focus jumps backward from \"security profile\" to \"receive text message alerts\" (visual distance: 766px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#richtext-e3f079a3d0 > p:nth-of-type(1) > a",
+      "elementHtml": "<a>receive text message alerts</a>",
+      "discoveredAt": "2026-04-28T17:30:57.335Z",
+      "pageUrl": "https://investor.vanguard.com/security-center",
+      "metadata": {
+        "backendNodeId": 25280,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Page requires horizontal scrolling at 320px width (183px overflow). Content should reflow without horizontal scrolling at this width.",
+      "selector": "html",
+      "elementHtml": "<html>",
+      "discoveredAt": "2026-04-28T17:31:39.877Z",
+      "pageUrl": "https://investor.vanguard.com/advice",
+      "metadata": {
+        "backendNodeId": 40449,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "strict-transport-security header has invalid or weak value: max-age=21600",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:29:01.578Z",
+      "pageUrl": "https://investor.vanguard.com/corporate-portal",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://personal.vanguard.com/pdf/Bank_Sweep_Terms_of_Use.pdf returned status 403 Forbidden after 1 attempts",
+      "selector": "#richtext-0c0b4c3d8a > p:nth-of-type(4) > a:nth-of-type(2)",
+      "elementHtml": "<a href=\"https://personal.vanguard.com/pdf/Bank_Sweep_Terms_of_Use.pdf\">Vanguard Bank Sweep Products Terms of Use (PDF)</a>",
+      "discoveredAt": "2026-04-28T17:31:25.231Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "href": "https://personal.vanguard.com/pdf/Bank_Sweep_Terms_of_Use.pdf",
+        "text": "Vanguard Bank Sweep Products Terms of Use (PDF)",
+        "protocol": "https:",
+        "attempts": 1,
+        "status": 403,
+        "statusText": "Forbidden",
+        "backendNodeId": 37782,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.vanguard.com/performance returned status 403 Forbidden after 1 attempts",
+      "selector": "#global-footer > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div > div:nth-of-type(3) > b > a",
+      "elementHtml": "<a href=\"https://www.vanguard.com/performance\">www.vanguard.com/performance</a>",
+      "discoveredAt": "2026-04-28T17:29:14.544Z",
+      "pageUrl": "https://investor.vanguard.com/corporate-portal",
+      "metadata": {
+        "href": "https://www.vanguard.com/performance",
+        "text": "www.vanguard.com/performance",
+        "protocol": "https:",
+        "attempts": 1,
+        "status": 403,
+        "statusText": "Forbidden",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Link timeout: https://investmentonly.vanguard.com/VGApp/iio/nesc/LoginPage?TYPE=33554433&REALMOID=06-000b618b-114c-1b03-971f-8b160a96f0f1&GUID=&SMAUTHREASON=0&METHOD=GET&SMAGENTNAME=investmentonlyprd02&TARGET=$SM$%2fVGApp%2fiio%2fPortfolios did not respond within 5000ms after 6 attempts",
+      "selector": "#navdropdownlist > div:nth-of-type(2) > li:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"https://investmentonly.vanguard.com/VGApp/iio/nesc/LoginPage?TYPE=33554433&amp;REALMOID=06-000b618b-114c-1b03-971f-8b160a96f0f1&amp;GUID=&amp;SMAUTHREASON=0&amp;METHOD=GET&amp;SMAGENTNAME=investmentonlyprd02&amp;TARGET=$SM$%2fVGApp%2fiio%2fPortfolios\">Institutional Trading</a>",
+      "discoveredAt": "2026-04-28T17:29:14.544Z",
+      "pageUrl": "https://investor.vanguard.com/corporate-portal",
+      "metadata": {
+        "href": "https://investmentonly.vanguard.com/VGApp/iio/nesc/LoginPage?TYPE=33554433&REALMOID=06-000b618b-114c-1b03-971f-8b160a96f0f1&GUID=&SMAUTHREASON=0&METHOD=GET&SMAGENTNAME=investmentonlyprd02&TARGET=$SM$%2fVGApp%2fiio%2fPortfolios",
+        "text": "Institutional Trading",
+        "protocol": "https:",
+        "attempts": 6,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://personal.vanguard.com/us/content/SiteWide/LglDocs/SWLglTermsConditionsContent.jsp?cbdForceDomain=true returned status 403 Forbidden after 1 attempts",
+      "selector": "#global-footer > div:nth-of-type(2) > div > p > span:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"https://personal.vanguard.com/us/content/SiteWide/LglDocs/SWLglTermsConditionsContent.jsp?cbdForceDomain=true\">terms &amp; conditions of use.</a>",
+      "discoveredAt": "2026-04-28T17:29:14.544Z",
+      "pageUrl": "https://investor.vanguard.com/corporate-portal",
+      "metadata": {
+        "href": "https://personal.vanguard.com/us/content/SiteWide/LglDocs/SWLglTermsConditionsContent.jsp?cbdForceDomain=true",
+        "text": "terms & conditions of use.",
+        "protocol": "https:",
+        "attempts": 1,
+        "status": 403,
+        "statusText": "Forbidden",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://personal.vanguard.com/us/XHTML/com/vanguard/retail/web/vbio/selfprovisioned/xhtml/VoiceBioSelfProvisionedStatus.xhtml returned status 403 Forbidden after 1 attempts",
+      "selector": "#modal-verification > div > div > div > div:nth-of-type(2) > div > p:nth-of-type(4) > a",
+      "elementHtml": "<a href=\"https://personal.vanguard.com/us/XHTML/com/vanguard/retail/web/vbio/selfprovisioned/xhtml/VoiceBioSelfProvisionedStatus.xhtml\">Sign up now</a>",
+      "discoveredAt": "2026-04-28T17:30:55.536Z",
+      "pageUrl": "https://investor.vanguard.com/security-center",
+      "metadata": {
+        "href": "https://personal.vanguard.com/us/XHTML/com/vanguard/retail/web/vbio/selfprovisioned/xhtml/VoiceBioSelfProvisionedStatus.xhtml",
+        "text": "Sign up now",
+        "protocol": "https:",
+        "attempts": 1,
+        "status": 403,
+        "statusText": "Forbidden",
+        "backendNodeId": 26191,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 4.1.2",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Focusable element has generic role. Keyboard users can reach it but screen readers provide no context about its purpose.",
+      "selector": "[role=\"generic\"][data-a11y-node=\"5613\"]",
+      "elementHtml": "<!-- a11y: role=\"generic\" -->",
+      "discoveredAt": "2026-04-28T17:29:45.739Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "backendNodeId": 5613,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.2"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.2"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 4.1.2",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Focusable element has generic role. Keyboard users can reach it but screen readers provide no context about its purpose.",
+      "selector": "[role=\"generic\"][data-a11y-node=\"35077\"]",
+      "elementHtml": "<!-- a11y: role=\"generic\" -->",
+      "discoveredAt": "2026-04-28T17:31:23.824Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 35077,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.2"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.2"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 4.1.2",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Focusable element has generic role. Keyboard users can reach it but screen readers provide no context about its purpose.",
+      "selector": "[role=\"generic\"][data-a11y-node=\"41573\"]",
+      "elementHtml": "<!-- a11y: role=\"generic\" -->",
+      "discoveredAt": "2026-04-28T17:31:35.660Z",
+      "pageUrl": "https://investor.vanguard.com/advice",
+      "metadata": {
+        "backendNodeId": 41573,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.2"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.2"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 4.1.2",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Focusable element has generic role. Keyboard users can reach it but screen readers provide no context about its purpose.",
+      "selector": "[role=\"generic\"][data-a11y-node=\"30472\"]",
+      "elementHtml": "<!-- a11y: role=\"generic\" -->",
+      "discoveredAt": "2026-04-28T17:31:14.251Z",
+      "pageUrl": "https://investor.vanguard.com/privacy-center",
+      "metadata": {
+        "backendNodeId": 30472,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.2"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.2"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 4.1.2",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Focusable element has generic role. Keyboard users can reach it but screen readers provide no context about its purpose.",
+      "selector": "[role=\"generic\"][data-a11y-node=\"19696\"]",
+      "elementHtml": "<!-- a11y: role=\"generic\" -->",
+      "discoveredAt": "2026-04-28T17:30:42.272Z",
+      "pageUrl": "https://investor.vanguard.com/privacy-center/online-privacy-notice",
+      "metadata": {
+        "backendNodeId": 19696,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.2"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.2"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 4.1.2",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Focusable element has generic role. Keyboard users can reach it but screen readers provide no context about its purpose.",
+      "selector": "[role=\"generic\"][data-a11y-node=\"23817\"]",
+      "elementHtml": "<!-- a11y: role=\"generic\" -->",
+      "discoveredAt": "2026-04-28T17:30:54.352Z",
+      "pageUrl": "https://investor.vanguard.com/security-center",
+      "metadata": {
+        "backendNodeId": 23817,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.2"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.2"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "vg-vgn-nav,vg-vgn-header,.skip-container-OkFlwcFo",
+      "elementHtml": "<div class=\"skip-container-OkFlwcFo\">",
+      "discoveredAt": "2026-04-28T17:29:46.722Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "backendNodeId": 4436,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          },
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "vg-vgn-nav,vg-vgn-header,.skip-container-OkFlwcFo",
+      "elementHtml": "<div class=\"skip-container-OkFlwcFo\">",
+      "discoveredAt": "2026-04-28T17:31:24.214Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 34004,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          },
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "vg-vgn-nav,vg-vgn-header,.skip-container-OkFlwcFo",
+      "elementHtml": "<div class=\"skip-container-OkFlwcFo\">",
+      "discoveredAt": "2026-04-28T17:31:36.174Z",
+      "pageUrl": "https://investor.vanguard.com/advice",
+      "metadata": {
+        "backendNodeId": 40500,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          },
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Aside should not be contained in another landmark: Fix any of the following:\n  The null landmark is contained in another landmark.",
+      "selector": ".GetStarted_triage--sticky__imxKn",
+      "elementHtml": "<aside class=\"GetStarted_triage__FuPXg col sm-16 md-7 md-offset-right-1 \n                        GetStarted_triage--sticky__imxKn lg-large-margin xlg-large-margin xxlg-auto-margin\">",
+      "discoveredAt": "2026-04-28T17:29:01.753Z",
+      "pageUrl": "https://investor.vanguard.com/corporate-portal",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          },
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Heading levels should only increase by one: Fix any of the following:\n  Heading order invalid",
+      "selector": "#privacy-ctr-links > h3",
+      "elementHtml": "<h3><span class=\"cmp-richtext--fz-h3 cmp-richtext--ff-mark cmp-richtext--fw-heavy\">How your information is used</span></h3>",
+      "discoveredAt": "2026-04-28T17:31:14.417Z",
+      "pageUrl": "https://investor.vanguard.com/privacy-center",
+      "metadata": {
+        "backendNodeId": 32069,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "vg-vgn-nav,vg-vgn-header,.skip-container-OkFlwcFo",
+      "elementHtml": "<div class=\"skip-container-OkFlwcFo\">",
+      "discoveredAt": "2026-04-28T17:31:14.417Z",
+      "pageUrl": "https://investor.vanguard.com/privacy-center",
+      "metadata": {
+        "backendNodeId": 29597,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          },
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Page should contain a level-one heading: Fix all of the following:\n  Page must have a level-one heading",
+      "selector": "html",
+      "elementHtml": "<html lang=\"en\" style=\"--vg-vgn-pre-sticky-nav-bottom: 0px; --vg-vgn-sticky-nav-bottom: 0px; --vg-vgn-footer-height: 383px;\" data-di-loaded=\"1\">",
+      "discoveredAt": "2026-04-28T17:30:42.474Z",
+      "pageUrl": "https://investor.vanguard.com/privacy-center/online-privacy-notice",
+      "metadata": {
+        "backendNodeId": 18759,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "vg-vgn-nav,vg-vgn-header,.skip-container-OkFlwcFo",
+      "elementHtml": "<div class=\"skip-container-OkFlwcFo\">",
+      "discoveredAt": "2026-04-28T17:30:42.474Z",
+      "pageUrl": "https://investor.vanguard.com/privacy-center/online-privacy-notice",
+      "metadata": {
+        "backendNodeId": 18804,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          },
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "vg-vgn-nav,vg-vgn-header,.skip-container-OkFlwcFo",
+      "elementHtml": "<div class=\"skip-container-OkFlwcFo\">",
+      "discoveredAt": "2026-04-28T17:30:54.646Z",
+      "pageUrl": "https://investor.vanguard.com/security-center",
+      "metadata": {
+        "backendNodeId": 22925,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          },
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(56, 96, 190), text: rgb(4, 5, 5)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#ot-pc-desc > a",
+      "elementHtml": "<a href=\"https://investor.vanguard.com/privacy-center\" target=\"_blank\" data-di-id=\"di-id-22cb6c13-657aa113\">Vanguard Privacy Center.</a>",
+      "discoveredAt": "2026-04-28T17:29:45.075Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "backendNodeId": 8568,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(56, 96, 190), text: rgb(4, 5, 5)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#ot-pc-desc > a",
+      "elementHtml": "<a href=\"https://investor.vanguard.com/privacy-center\" target=\"_blank\" data-di-id=\"di-id-22cb6c13-657aa113\">Vanguard Privacy Center.</a>",
+      "discoveredAt": "2026-04-28T17:31:23.814Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 39107,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(56, 96, 190), text: rgb(4, 5, 5)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#ot-pc-desc > a",
+      "elementHtml": "<a href=\"https://investor.vanguard.com/privacy-center\" target=\"_blank\" data-di-id=\"di-id-22cb6c13-657aa113\">Vanguard Privacy Center.</a>",
+      "discoveredAt": "2026-04-28T17:31:35.643Z",
+      "pageUrl": "https://investor.vanguard.com/advice",
+      "metadata": {
+        "backendNodeId": 45392,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(35, 35, 35), text: rgb(51, 51, 51)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#navdropdownlist > div:nth-of-type(1) > li:nth-of-type(1) > a",
+      "elementHtml": "<a class=\"Nav_nav_links__qN0QL\" href=\"https://investor.vanguard.com\" role=\"menuitem\" tabindex=\"-1\">Personal investors</a>",
+      "discoveredAt": "2026-04-28T17:29:01.643Z",
+      "pageUrl": "https://investor.vanguard.com/corporate-portal",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(56, 96, 190), text: rgb(4, 5, 5)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#ot-pc-desc > a",
+      "elementHtml": "<a href=\"https://investor.vanguard.com/privacy-center\" target=\"_blank\" data-di-id=\"di-id-22cb6c13-657aa113\">Vanguard Privacy Center.</a>",
+      "discoveredAt": "2026-04-28T17:31:14.249Z",
+      "pageUrl": "https://investor.vanguard.com/privacy-center",
+      "metadata": {
+        "backendNodeId": 33263,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(56, 96, 190), text: rgb(4, 5, 5)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#ot-pc-desc > a",
+      "elementHtml": "<a href=\"https://investor.vanguard.com/privacy-center\" target=\"_blank\" data-di-id=\"di-id-22cb6c13-657aa113\">Vanguard Privacy Center.</a>",
+      "discoveredAt": "2026-04-28T17:30:42.270Z",
+      "pageUrl": "https://investor.vanguard.com/privacy-center/online-privacy-notice",
+      "metadata": {
+        "backendNodeId": 22584,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(56, 96, 190), text: rgb(4, 5, 5)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#ot-pc-desc > a",
+      "elementHtml": "<a href=\"https://investor.vanguard.com/privacy-center\" target=\"_blank\" data-di-id=\"di-id-22cb6c13-657aa113\">Vanguard Privacy Center.</a>",
+      "discoveredAt": "2026-04-28T17:30:54.349Z",
+      "pageUrl": "https://investor.vanguard.com/security-center",
+      "metadata": {
+        "backendNodeId": 28679,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "consistent-navigation",
+      "standard": "WCAG 3.2.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Navigation region \"div\" (present on investor.vanguard.com) is missing on this page. Navigation should appear consistently across pages.",
+      "selector": "html",
+      "elementHtml": "<!-- missing: div#global-nav -->",
+      "discoveredAt": "2026-04-28T17:29:45.074Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "backendNodeId": 4393,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "consistent-navigation"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 3.2.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 3.2.3"
+      ]
+    },
+    {
+      "probe": "consistent-navigation",
+      "standard": "WCAG 3.2.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Navigation region \"div\" (present on investor.vanguard.com) is missing on this page. Navigation should appear consistently across pages.",
+      "selector": "html",
+      "elementHtml": "<!-- missing: div#global-nav -->",
+      "discoveredAt": "2026-04-28T17:31:23.814Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 33931,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "consistent-navigation"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 3.2.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 3.2.3"
+      ]
+    },
+    {
+      "probe": "consistent-navigation",
+      "standard": "WCAG 3.2.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Navigation region \"div\" (present on investor.vanguard.com) is missing on this page. Navigation should appear consistently across pages.",
+      "selector": "html",
+      "elementHtml": "<!-- missing: div#global-nav -->",
+      "discoveredAt": "2026-04-28T17:31:35.642Z",
+      "pageUrl": "https://investor.vanguard.com/advice",
+      "metadata": {
+        "backendNodeId": 40449,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "consistent-navigation"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 3.2.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 3.2.3"
+      ]
+    },
+    {
+      "probe": "consistent-navigation",
+      "standard": "WCAG 3.2.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Navigation region \"div\" (present on investor.vanguard.com) is missing on this page. Navigation should appear consistently across pages.",
+      "selector": "html",
+      "elementHtml": "<!-- missing: div#global-nav -->",
+      "discoveredAt": "2026-04-28T17:31:14.249Z",
+      "pageUrl": "https://investor.vanguard.com/privacy-center",
+      "metadata": {
+        "backendNodeId": 29555,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "consistent-navigation"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 3.2.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 3.2.3"
+      ]
+    },
+    {
+      "probe": "consistent-navigation",
+      "standard": "WCAG 3.2.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Navigation region \"div\" (present on investor.vanguard.com) is missing on this page. Navigation should appear consistently across pages.",
+      "selector": "html",
+      "elementHtml": "<!-- missing: div#global-nav -->",
+      "discoveredAt": "2026-04-28T17:30:42.270Z",
+      "pageUrl": "https://investor.vanguard.com/privacy-center/online-privacy-notice",
+      "metadata": {
+        "backendNodeId": 18759,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "consistent-navigation"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 3.2.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 3.2.3"
+      ]
+    },
+    {
+      "probe": "consistent-navigation",
+      "standard": "WCAG 3.2.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Navigation region \"div\" (present on investor.vanguard.com) is missing on this page. Navigation should appear consistently across pages.",
+      "selector": "html",
+      "elementHtml": "<!-- missing: div#global-nav -->",
+      "discoveredAt": "2026-04-28T17:30:54.349Z",
+      "pageUrl": "https://investor.vanguard.com/security-center",
+      "metadata": {
+        "backendNodeId": 22882,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "consistent-navigation"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 3.2.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 3.2.3"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://investor.vanguard.com/privacy-center/_https_%2F%2Fpolicies.google.com%2F returned status 404 Not Found after 1 attempts",
+      "selector": "#privacy-ctr-policy-web-analytics-section > p:nth-of-type(3) > a",
+      "elementHtml": "<a href=\"https://investor.vanguard.com/privacy-center/_https_%2F%2Fpolicies.google.com%2F\">Privacy Policy and Terms of Service</a>",
+      "discoveredAt": "2026-04-28T17:30:48.165Z",
+      "pageUrl": "https://investor.vanguard.com/privacy-center/online-privacy-notice",
+      "metadata": {
+        "href": "https://investor.vanguard.com/privacy-center/_https_%2F%2Fpolicies.google.com%2F",
+        "text": "Privacy Policy and Terms of Service",
+        "protocol": "https:",
+        "attempts": 1,
+        "status": 404,
+        "statusText": "Not Found",
+        "backendNodeId": 21209,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "navigation-ways",
+      "standard": "WCAG 2.4.5",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Page has only one navigation mechanism (search). WCAG requires at least two ways to locate a page within a set of pages.",
+      "selector": "html",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:29:45.069Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "backendNodeId": 4393,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "navigation-ways"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 2.4.5"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 2.4.5"
+      ]
+    },
+    {
+      "probe": "navigation-ways",
+      "standard": "WCAG 2.4.5",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Page has only one navigation mechanism (search). WCAG requires at least two ways to locate a page within a set of pages.",
+      "selector": "html",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:31:14.249Z",
+      "pageUrl": "https://investor.vanguard.com/privacy-center",
+      "metadata": {
+        "backendNodeId": 29555,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "navigation-ways"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 2.4.5"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 2.4.5"
+      ]
+    },
+    {
+      "probe": "navigation-ways",
+      "standard": "WCAG 2.4.5",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Page has only one navigation mechanism (search). WCAG requires at least two ways to locate a page within a set of pages.",
+      "selector": "html",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:30:42.270Z",
+      "pageUrl": "https://investor.vanguard.com/privacy-center/online-privacy-notice",
+      "metadata": {
+        "backendNodeId": 18759,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "navigation-ways"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 2.4.5"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 2.4.5"
+      ]
+    },
+    {
+      "probe": "navigation-ways",
+      "standard": "WCAG 2.4.5",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Page has only one navigation mechanism (search). WCAG requires at least two ways to locate a page within a set of pages.",
+      "selector": "html",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:30:54.348Z",
+      "pageUrl": "https://investor.vanguard.com/security-center",
+      "metadata": {
+        "backendNodeId": 22882,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "navigation-ways"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 2.4.5"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 2.4.5"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 165px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "div.cmp-carousel__content",
+      "elementHtml": "<div class=\"cmp-carousel__content\" style=\"height: 689px;\">\n        <div role=\"tabpanel\" data-cmp-data-layer=\"{&quot;home-page-aspot-carousel-item-b4ace01956&quot;:{&quot;@type&quot;:&quot;vanguard-ret",
+      "discoveredAt": "2026-04-28T17:29:56.693Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "backendNodeId": 4472,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 101px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "div.cmp-carousel__live-region.c11n-sr-only",
+      "elementHtml": "<div aria-live=\"polite\" aria-atomic=\"true\" class=\"cmp-carousel__live-region c11n-sr-only\">Slide 2 of 3</div>",
+      "discoveredAt": "2026-04-28T17:29:56.693Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "backendNodeId": 4614,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 25px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "span.c11n-sr-only",
+      "elementHtml": "<span class=\"c11n-sr-only\"> (1) </span>",
+      "discoveredAt": "2026-04-28T17:29:56.693Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "backendNodeId": 4568,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <img> persists after page readiness",
+      "selector": "#image-11906f39d9 > img",
+      "elementHtml": "<img fetchpriority=\"high\" alt=\"A young woman sitting on a bed is resting her arm on her knee and smiling down are her open laptop.\" data-cmp-hook-image=\"image\" itemprop=\"contentUrl\" class=\"cmp-image__",
+      "discoveredAt": "2026-04-28T17:29:46.734Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "backendNodeId": 7876,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <img> persists after page readiness",
+      "selector": "#image-aeafbb734b > img",
+      "elementHtml": "<img fetchpriority=\"high\" alt=\" A middle-aged man holding a smartphone is wearing glasses while sitting on a couch with his arm tucked behind his head while he looks out to his left.\" data-cmp-hook-im",
+      "discoveredAt": "2026-04-28T17:29:46.734Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "backendNodeId": 7880,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <img> persists after page readiness",
+      "selector": "#image-c1152dc7a8 > img",
+      "elementHtml": "<img fetchpriority=\"high\" alt=\"Image showing performance of market \" data-cmp-hook-image=\"image\" itemprop=\"contentUrl\" class=\"cmp-image__image cmp-image__image--is-loading\" src=\"data:image/gif;base64,",
+      "discoveredAt": "2026-04-28T17:29:46.734Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "backendNodeId": 7900,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <img> persists after page readiness",
+      "selector": "#image-da4c8e5325 > img",
+      "elementHtml": "<img fetchpriority=\"high\" alt=\"A man taking a break from his laptop to enjoy a warm beverage and reflect. \" data-cmp-hook-image=\"image\" itemprop=\"contentUrl\" class=\"cmp-image__image cmp-image__image--",
+      "discoveredAt": "2026-04-28T17:29:46.734Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "backendNodeId": 7888,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <img> persists after page readiness",
+      "selector": "#image-e376ca9aeb > img",
+      "elementHtml": "<img fetchpriority=\"high\" alt=\"A young girl wearing a cape on her back and a butterfly mask on her head is smiling while running forward with her arms stretched out.\" data-cmp-hook-image=\"image\" itemp",
+      "discoveredAt": "2026-04-28T17:29:46.734Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "backendNodeId": 7884,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <img> persists after page readiness",
+      "selector": "#image-bcedde14d8 > img",
+      "elementHtml": "<img fetchpriority=\"high\" alt=\"Woman wearing glasses, holding a pen sitting at a table with open books and a laptop\" data-cmp-hook-image=\"image\" itemprop=\"contentUrl\" class=\"cmp-image__image cmp-image",
+      "discoveredAt": "2026-04-28T17:29:46.734Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "backendNodeId": 7892,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <img> persists after page readiness",
+      "selector": "#image-0f2b2b68e8 > img",
+      "elementHtml": "<img fetchpriority=\"high\" alt=\"Smiling woman in a hijab is sitting at a desk with her laptop.\" data-cmp-hook-image=\"image\" itemprop=\"contentUrl\" class=\"cmp-image__image cmp-image__image--is-loading\" s",
+      "discoveredAt": "2026-04-28T17:29:46.734Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "backendNodeId": 7896,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <img> persists after page readiness",
+      "selector": "#image-27e7f4cd94 > img",
+      "elementHtml": "<img fetchpriority=\"high\" alt=\" A young man is talking and gesticulating with open palms to someone off screen\" data-cmp-hook-image=\"image\" itemprop=\"contentUrl\" class=\"cmp-image__image cmp-image__ima",
+      "discoveredAt": "2026-04-28T17:29:46.734Z",
+      "pageUrl": "https://investor.vanguard.com/",
+      "metadata": {
+        "backendNodeId": 7872,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <img> persists after page readiness",
+      "selector": "#image-727655478b > a > img",
+      "elementHtml": "<img fetchpriority=\"high\" alt=\"Get it on Google Play image with Google Play logo.\" data-cmp-hook-image=\"image\" itemprop=\"contentUrl\" class=\"cmp-image__image cmp-image__image--is-loading\" src=\"data:ima",
+      "discoveredAt": "2026-04-28T17:31:24.181Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 38882,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <img> persists after page readiness",
+      "selector": "#image-9a400e455b > img",
+      "elementHtml": "<img fetchpriority=\"high\" alt=\"woman smiling at phone with vanguard logo\" data-cmp-hook-image=\"image\" itemprop=\"contentUrl\" class=\"cmp-image__image cmp-image__image--is-loading\" src=\"data:image/gif;ba",
+      "discoveredAt": "2026-04-28T17:31:24.181Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 38894,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <img> persists after page readiness",
+      "selector": "#image-df4ed3a2b0 > img",
+      "elementHtml": "<img fetchpriority=\"high\" alt=\"Icon of a line graph on top of a bar chart.\" data-cmp-hook-image=\"image\" itemprop=\"contentUrl\" class=\"cmp-image__image cmp-image__image--is-loading\" src=\"data:image/gif;",
+      "discoveredAt": "2026-04-28T17:31:24.181Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 38842,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <img> persists after page readiness",
+      "selector": "#image-a9292e506a > img",
+      "elementHtml": "<img fetchpriority=\"high\" alt=\"Woman wearing a hijab is sitting at a table with a drink in hand while she look off to her left side.\" data-cmp-hook-image=\"image\" itemprop=\"contentUrl\" class=\"cmp-image",
+      "discoveredAt": "2026-04-28T17:31:24.181Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 38854,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <img> persists after page readiness",
+      "selector": "#image-2a2c944581 > img",
+      "elementHtml": "<img fetchpriority=\"high\" alt=\"Vanguard Cash Plus app on mobile phone against a turquoise and white background.\" data-cmp-hook-image=\"image\" itemprop=\"contentUrl\" class=\"cmp-image__image cmp-image__im",
+      "discoveredAt": "2026-04-28T17:31:24.181Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 38890,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <img> persists after page readiness",
+      "selector": "#image-135927b015 > img",
+      "elementHtml": "<img fetchpriority=\"high\" alt=\"A father is laughing while pushing his smiling son on a swing.\" data-cmp-hook-image=\"image\" itemprop=\"contentUrl\" class=\"cmp-image__image cmp-image__image--is-loading\" s",
+      "discoveredAt": "2026-04-28T17:31:24.181Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 38870,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <img> persists after page readiness",
+      "selector": "#image-9dc3efc4bb > a > img",
+      "elementHtml": "<img fetchpriority=\"high\" alt=\"Download on the App Store image with Apple logo.\" data-cmp-hook-image=\"image\" itemprop=\"contentUrl\" class=\"cmp-image__image cmp-image__image--is-loading\" src=\"data:image",
+      "discoveredAt": "2026-04-28T17:31:24.181Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 38878,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <img> persists after page readiness",
+      "selector": "#image-cbffe8e26b > img",
+      "elementHtml": "<img fetchpriority=\"high\" alt=\"Download Vanguard app QR code\" data-cmp-hook-image=\"image\" itemprop=\"contentUrl\" class=\"cmp-image__image cmp-image__image--is-loading\" src=\"data:image/gif;base64,R0lGODl",
+      "discoveredAt": "2026-04-28T17:31:24.181Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 38886,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <img> persists after page readiness",
+      "selector": "#image-8080028a53 > img",
+      "elementHtml": "<img fetchpriority=\"high\" alt=\"An institutional building.\" data-cmp-hook-image=\"image\" itemprop=\"contentUrl\" class=\"cmp-image__image cmp-image__image--is-loading\" src=\"data:image/gif;base64,R0lGODlhAQ",
+      "discoveredAt": "2026-04-28T17:31:24.181Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 38858,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <img> persists after page readiness",
+      "selector": "#image-9035131c30 > img",
+      "elementHtml": "<img fetchpriority=\"high\" alt=\"A woman brings her baby over so her partner can take a break from working and give them a kiss.  \" data-cmp-hook-image=\"image\" itemprop=\"contentUrl\" class=\"cmp-image__im",
+      "discoveredAt": "2026-04-28T17:31:24.181Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 38862,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <img> persists after page readiness",
+      "selector": "#image-7a0de697c7 > img",
+      "elementHtml": "<img fetchpriority=\"high\" alt=\"A lock is featured inside a red-dashed box.\" data-cmp-hook-image=\"image\" itemprop=\"contentUrl\" class=\"cmp-image__image cmp-image__image--is-loading\" src=\"data:image/gif;",
+      "discoveredAt": "2026-04-28T17:31:24.181Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 38850,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <img> persists after page readiness",
+      "selector": "#image-f89333c589 > img",
+      "elementHtml": "<img fetchpriority=\"high\" alt=\"A woman is marking off her checklist.\" data-cmp-hook-image=\"image\" itemprop=\"contentUrl\" class=\"cmp-image__image cmp-image__image--is-loading\" src=\"data:image/gif;base64",
+      "discoveredAt": "2026-04-28T17:31:24.181Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 38874,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <img> persists after page readiness",
+      "selector": "#image-9e6600d5b8 > img",
+      "elementHtml": "<img fetchpriority=\"high\" alt=\"Asset mix icon\" data-cmp-hook-image=\"image\" itemprop=\"contentUrl\" class=\"cmp-image__image cmp-image__image--is-loading\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP",
+      "discoveredAt": "2026-04-28T17:31:24.181Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 38866,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <img> persists after page readiness",
+      "selector": "#image-2116fbc9ef > img",
+      "elementHtml": "<img fetchpriority=\"high\" alt=\"Computer dollar sign.\" data-cmp-hook-image=\"image\" itemprop=\"contentUrl\" class=\"cmp-image__image cmp-image__image--is-loading\" src=\"data:image/gif;base64,R0lGODlhAQABAIA",
+      "discoveredAt": "2026-04-28T17:31:24.181Z",
+      "pageUrl": "https://investor.vanguard.com/accounts-plans/vanguard-cash-plus-account",
+      "metadata": {
+        "backendNodeId": 38846,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <img> persists after page readiness",
+      "selector": "#image-ace3c8cbaa > img",
+      "elementHtml": "<img fetchpriority=\"high\" alt=\"A young woman is using a tablet to learn about investing.\" data-cmp-hook-image=\"image\" itemprop=\"contentUrl\" class=\"cmp-image__image cmp-image__image--is-loading\" src=\"d",
+      "discoveredAt": "2026-04-28T17:31:36.023Z",
+      "pageUrl": "https://investor.vanguard.com/advice",
+      "metadata": {
+        "backendNodeId": 45169,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <img> persists after page readiness",
+      "selector": "#image-40a8d87ce9 > img",
+      "elementHtml": "<img fetchpriority=\"high\" alt=\"A woman holding a mobile phone against a red patterned background.\" data-cmp-hook-image=\"image\" itemprop=\"contentUrl\" class=\"cmp-image__image cmp-image__image--is-loadin",
+      "discoveredAt": "2026-04-28T17:31:36.023Z",
+      "pageUrl": "https://investor.vanguard.com/advice",
+      "metadata": {
+        "backendNodeId": 45174,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <img> persists after page readiness",
+      "selector": "#image-11f1c696f6 > img",
+      "elementHtml": "<img fetchpriority=\"high\" alt=\"A smiling woman in a city looks at her phone.\" data-cmp-hook-image=\"image\" itemprop=\"contentUrl\" class=\"cmp-image__image cmp-image__image--is-loading\" src=\"data:image/gi",
+      "discoveredAt": "2026-04-28T17:31:36.023Z",
+      "pageUrl": "https://investor.vanguard.com/advice",
+      "metadata": {
+        "backendNodeId": 45124,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "medium",
+      "description": "Stuck loading state: loading indicator CSS class on <img> persists after page readiness",
+      "selector": "#image-6767183b6f > img",
+      "elementHtml": "<img fetchpriority=\"high\" alt=\"An older woman is holding a smartphone while smiling at someone out of view.\" data-cmp-hook-image=\"image\" itemprop=\"contentUrl\" class=\"cmp-image__image cmp-image__image-",
+      "discoveredAt": "2026-04-28T17:31:36.023Z",
+      "pageUrl": "https://investor.vanguard.com/advice",
+      "metadata": {
+        "backendNodeId": 45179,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    }
+  ],
+  "requestedJurisdictions": [
+    "us"
+  ],
+  "appliedJurisdictions": [
+    "us"
+  ]
+}
