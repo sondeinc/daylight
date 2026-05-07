@@ -1,0 +1,2464 @@
+{
+  "url": "https://nola.gov",
+  "slug": "nola-gov",
+  "status": "complete",
+  "scanDate": "2026-04-29T00:21:51.191Z",
+  "scanConfig": {
+    "scope": "site",
+    "maxPages": 50,
+    "racks": [
+      "rack-live-a11y",
+      "rack-live-free"
+    ],
+    "individualProbes": [],
+    "excludedProbes": [],
+    "timeBudgetMs": 180000,
+    "maxFindings": null
+  },
+  "sondeScore": {
+    "score": 935,
+    "rawPenalty": 156.75,
+    "normalizedPenalty": 52.25,
+    "pagesScanned": 3,
+    "weightsVersion": "v0.1"
+  },
+  "avgFindingsPerPage": 21.7,
+  "elementComplianceRate": 96.9,
+  "totalElements": 1278,
+  "elementsWithFindings": 40,
+  "complianceSummary": {
+    "total": 65,
+    "byLevel": {
+      "AA": 23,
+      "A": 9
+    },
+    "bySeverity": {
+      "critical": 5,
+      "high": 29,
+      "medium": 16,
+      "low": 15
+    },
+    "byCriterion": {
+      "WCAG 1.4.3": 17,
+      "WCAG 1.1.1": 3,
+      "WCAG 2.4.3": 5,
+      "WCAG 1.4.10": 2,
+      "WCAG 1.3.1": 1,
+      "WCAG 1.4.12": 4
+    }
+  },
+  "summary": {
+    "pagesAnalyzed": 3,
+    "pagesFailed": 0,
+    "totalFindings": 65,
+    "bySeverity": {
+      "critical": 5,
+      "high": 29,
+      "medium": 16,
+      "low": 15
+    },
+    "byProbe": {},
+    "byType": {},
+    "durationMs": 202399
+  },
+  "jurisdiction": "LA",
+  "entityName": "City of New Orleans",
+  "scanSource": "live",
+  "findings": [
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"View all news\"",
+      "selector": "a.text-white",
+      "elementHtml": "<a href=\"/next/news\" class=\"text-white\">View all news</a>",
+      "discoveredAt": "2026-04-28T17:18:44.032Z",
+      "pageUrl": "https://nola.gov/home/",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#777676",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.528436450868204,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "View all news",
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.15:1 (required: 3:1 for large text). Foreground: rgb(33, 37, 41), background: rgb(31, 46, 79). Text: \"Sub Menu Toggle\"",
+      "selector": "span.sr-only",
+      "elementHtml": "<span class=\"sr-only\">Sub Menu Toggle</span>",
+      "discoveredAt": "2026-04-28T17:18:44.032Z",
+      "pageUrl": "https://nola.gov/home/",
+      "metadata": {
+        "contrastForeground": "#212529",
+        "contrastBackground": "#1f2e4f",
+        "contrastSuggestedForeground": "#73787c",
+        "contrastRatio": 1.1473938101374472,
+        "contrastSuggestedRatio": 3.013263660773374,
+        "contrastRequiredRatio": 3,
+        "contrastIsLargeText": true,
+        "contrastTextSample": "Sub Menu Toggle",
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 3:1 for large text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"Today's Events\"",
+      "selector": "h2.text-white.text-uppercase",
+      "elementHtml": "<h2 class=\"text-white text-uppercase\">Today's Events</h2>",
+      "discoveredAt": "2026-04-28T17:18:44.032Z",
+      "pageUrl": "https://nola.gov/home/",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#959494",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 3.025283721231529,
+        "contrastRequiredRatio": 3,
+        "contrastIsLargeText": true,
+        "contrastTextSample": "Today's Events",
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"1872\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:21:13.839Z",
+      "pageUrl": "https://nola.gov/amnesty-late-fee-forgiveness-program/sign-up-for-text-alerts/",
+      "metadata": {
+        "backendNodeId": 1872,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"2321\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:18:44.076Z",
+      "pageUrl": "https://nola.gov/home/",
+      "metadata": {
+        "backendNodeId": 2321,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"2194\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:21:33.987Z",
+      "pageUrl": "https://nola.gov/next/apps/",
+      "metadata": {
+        "backendNodeId": 2194,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "high",
+      "description": "Form elements should have a visible label: Fix all of the following:\n  Only title used to generate label for form element",
+      "selector": ".hint",
+      "elementHtml": "<input class=\"form-control hint\" autocomplete=\"off\" type=\"text\" tabindex=\"-1\" title=\"wy-hint\">",
+      "discoveredAt": "2026-04-28T17:21:13.977Z",
+      "pageUrl": "https://nola.gov/amnesty-late-fee-forgiveness-program/sign-up-for-text-alerts/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Elements must meet minimum color contrast ratio thresholds: Fix any of the following:\n  Element has insufficient color contrast of 2.79 (foreground color: #ffffff, background color: #c89117, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+      "selector": "a[href$=\"faq/\"]",
+      "elementHtml": "<a href=\"https://nola311.org/faq/\">Frequently asked questions</a>",
+      "discoveredAt": "2026-04-28T17:18:44.603Z",
+      "pageUrl": "https://nola.gov/home/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Elements must meet minimum color contrast ratio thresholds: Fix any of the following:\n  Element has insufficient color contrast of 2.79 (foreground color: #ffffff, background color: #c89117, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+      "selector": ".card-home-311 > .card-body > ul > li:nth-child(1) > a",
+      "elementHtml": "<a href=\"https://nola311.org/service-request/\">Submit a request online</a>",
+      "discoveredAt": "2026-04-28T17:18:44.603Z",
+      "pageUrl": "https://nola.gov/home/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Elements must meet minimum color contrast ratio thresholds: Fix any of the following:\n  Element has insufficient color contrast of 2.79 (foreground color: #ffffff, background color: #c89117, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+      "selector": "a[href$=\"explore.nola.gov\"]",
+      "elementHtml": "<a href=\"https://explore.nola.gov\">Explore all requests</a>",
+      "discoveredAt": "2026-04-28T17:18:44.603Z",
+      "pageUrl": "https://nola.gov/home/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Elements must meet minimum color contrast ratio thresholds: Fix any of the following:\n  Element has insufficient color contrast of 2.79 (foreground color: #ffffff, background color: #c89117, font size: 16.5pt (22px), font weight: bold). Expected contrast ratio of 3:1",
+      "selector": ".text-center.card-body > .card-title",
+      "elementHtml": "<h3 class=\"card-title\">City Hall Hours</h3>",
+      "discoveredAt": "2026-04-28T17:18:44.603Z",
+      "pageUrl": "https://nola.gov/home/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Elements must meet minimum color contrast ratio thresholds: Fix any of the following:\n  Element has insufficient color contrast of 2.79 (foreground color: #ffffff, background color: #c89117, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1",
+      "selector": ".btn-gold",
+      "elementHtml": "<a class=\"btn btn-gold btn-lg\" href=\"/next/services\">Find More Services &amp; Information</a>",
+      "discoveredAt": "2026-04-28T17:18:44.603Z",
+      "pageUrl": "https://nola.gov/home/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Elements must meet minimum color contrast ratio thresholds: Fix any of the following:\n  Element has insufficient color contrast of 2.79 (foreground color: #ffffff, background color: #c89117, font size: 16.5pt (22px), font weight: bold). Expected contrast ratio of 3:1",
+      "selector": ".card-home-311 > .card-body > .card-title",
+      "elementHtml": "<h3 class=\"card-title\">311</h3>",
+      "discoveredAt": "2026-04-28T17:18:44.603Z",
+      "pageUrl": "https://nola.gov/home/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Elements must meet minimum color contrast ratio thresholds: Fix any of the following:\n  Element has insufficient color contrast of 2.79 (foreground color: #ffffff, background color: #c89117, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+      "selector": ".text-center.card-body > .mt-3",
+      "elementHtml": "<p class=\"mt-3\">Monday–Friday<br>8:00AM–5:00PM</p>",
+      "discoveredAt": "2026-04-28T17:18:44.603Z",
+      "pageUrl": "https://nola.gov/home/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Elements must meet minimum color contrast ratio thresholds: Fix any of the following:\n  Element has insufficient color contrast of 2.79 (foreground color: #ffffff, background color: #c89117, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+      "selector": ".text-center.card-body > p:nth-child(4)",
+      "elementHtml": "<p>1300 Perdido St<br>New Orleans, LA 70112</p>",
+      "discoveredAt": "2026-04-28T17:18:44.603Z",
+      "pageUrl": "https://nola.gov/home/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "high",
+      "description": "Form elements should have a visible label: Fix all of the following:\n  Only title used to generate label for form element",
+      "selector": ".hint",
+      "elementHtml": "<input class=\"form-control hint\" autocomplete=\"off\" type=\"text\" tabindex=\"-1\" title=\"wy-hint\">",
+      "discoveredAt": "2026-04-28T17:18:44.603Z",
+      "pageUrl": "https://nola.gov/home/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Elements must meet minimum color contrast ratio thresholds: Fix any of the following:\n  Element has insufficient color contrast of 2.79 (foreground color: #ffffff, background color: #c89117, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+      "selector": ".card-home-311 > .card-body > ul > li:nth-child(2) > a",
+      "elementHtml": "<a href=\"https://nola311.org/service-request-status/\">Look up a request</a>",
+      "discoveredAt": "2026-04-28T17:18:44.603Z",
+      "pageUrl": "https://nola.gov/home/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "high",
+      "description": "Form elements should have a visible label: Fix all of the following:\n  Only title used to generate label for form element",
+      "selector": ".hint",
+      "elementHtml": "<input class=\"form-control hint\" autocomplete=\"off\" type=\"text\" tabindex=\"-1\" title=\"wy-hint\">",
+      "discoveredAt": "2026-04-28T17:21:34.250Z",
+      "pageUrl": "https://nola.gov/next/apps/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Insufficient color contrast: 2.79:1 (required: 4.5:1 for normal text). Foreground: rgb(255, 255, 255), background: rgb(200, 145, 23). Text: \"Submit a request online\"",
+      "selector": "a",
+      "elementHtml": "<a href=\"https://nola311.org/service-request/\">Submit a request online</a>",
+      "discoveredAt": "2026-04-28T17:18:44.032Z",
+      "pageUrl": "https://nola.gov/home/",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#c89117",
+        "contrastSuggestedForeground": "#343333",
+        "contrastRatio": 2.7931459961632976,
+        "contrastSuggestedRatio": 4.509202487828818,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Submit a request online",
+        "backendNodeId": 213,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Insufficient color contrast: 2.79:1 (required: 3:1 for large text). Foreground: rgb(255, 255, 255), background: rgb(200, 145, 23). Text: \"City Hall Hours\"",
+      "selector": "h3.card-title",
+      "elementHtml": "<h3 class=\"card-title\">City Hall Hours</h3>",
+      "discoveredAt": "2026-04-28T17:18:44.032Z",
+      "pageUrl": "https://nola.gov/home/",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#c89117",
+        "contrastSuggestedForeground": "#4e4d4d",
+        "contrastRatio": 2.7931459961632976,
+        "contrastSuggestedRatio": 3.0162226341378946,
+        "contrastRequiredRatio": 3,
+        "contrastIsLargeText": true,
+        "contrastTextSample": "City Hall Hours",
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Insufficient color contrast: 2.79:1 (required: 4.5:1 for normal text). Foreground: rgb(255, 255, 255), background: rgb(200, 145, 23). Text: \"1300 Perdido StNew Orleans, LA 70112\"",
+      "selector": "p",
+      "elementHtml": "<p>1300 Perdido St<br>New Orleans, LA 70112</p>",
+      "discoveredAt": "2026-04-28T17:18:44.032Z",
+      "pageUrl": "https://nola.gov/home/",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#c89117",
+        "contrastSuggestedForeground": "#343333",
+        "contrastRatio": 2.7931459961632976,
+        "contrastSuggestedRatio": 4.509202487828818,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "1300 Perdido StNew Orleans, LA 70112",
+        "backendNodeId": 317,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Insufficient color contrast: 2.79:1 (required: 4.5:1 for normal text). Foreground: rgb(255, 255, 255), background: rgb(200, 145, 23). Text: \"Monday–Friday8:00AM–5:00PM\"",
+      "selector": "p.mt-3",
+      "elementHtml": "<p class=\"mt-3\">Monday–Friday<br>8:00AM–5:00PM</p>",
+      "discoveredAt": "2026-04-28T17:18:44.032Z",
+      "pageUrl": "https://nola.gov/home/",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#c89117",
+        "contrastSuggestedForeground": "#343333",
+        "contrastRatio": 2.7931459961632976,
+        "contrastSuggestedRatio": 4.509202487828818,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Monday–Friday8:00AM–5:00PM",
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Insufficient color contrast: 2.79:1 (required: 4.5:1 for normal text). Foreground: rgb(255, 255, 255), background: rgb(200, 145, 23). Text: \"Find More Services & Information\"",
+      "selector": "a.btn.btn-gold",
+      "elementHtml": "<a class=\"btn btn-gold btn-lg\" href=\"/next/services\">Find More Services &amp; Information</a>",
+      "discoveredAt": "2026-04-28T17:18:44.032Z",
+      "pageUrl": "https://nola.gov/home/",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#c89117",
+        "contrastSuggestedForeground": "#343333",
+        "contrastRatio": 2.7931459961632976,
+        "contrastSuggestedRatio": 4.509202487828818,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Find More Services & Information",
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Skip to main content\" to \"#form > header > div:nth-of-type(1) > div:nth-of-type(1) > div > div:nth-of-type(1) > div > a\" (visual distance: 363px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#form > header > div:nth-of-type(1) > div:nth-of-type(1) > div > div:nth-of-type(1) > div > a",
+      "elementHtml": "<a></a>",
+      "discoveredAt": "2026-04-28T17:21:16.314Z",
+      "pageUrl": "https://nola.gov/amnesty-late-fee-forgiveness-program/sign-up-for-text-alerts/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Find open data\" to \"Submit a request online\" (visual distance: 775px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#contentArea > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > div > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a>Submit a request online</a>",
+      "discoveredAt": "2026-04-28T17:20:54.695Z",
+      "pageUrl": "https://nola.gov/home/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Skip to main content\" to \"#form > header > div > div:nth-of-type(1) > div > div:nth-of-type(1) > div > a\" (visual distance: 363px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#form > header > div > div:nth-of-type(1) > div > div:nth-of-type(1) > div > a",
+      "elementHtml": "<a></a>",
+      "discoveredAt": "2026-04-28T17:20:54.695Z",
+      "pageUrl": "https://nola.gov/home/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Focus jumps backward from \"RoadWork\" to \"Data\" (visual distance: 857px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#nav-item0 > a",
+      "elementHtml": "<a>Data</a>",
+      "discoveredAt": "2026-04-28T17:21:39.559Z",
+      "pageUrl": "https://nola.gov/next/apps/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Skip to main content\" to \"#form > header > div:nth-of-type(1) > div:nth-of-type(1) > div > div:nth-of-type(1) > div > a\" (visual distance: 363px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#form > header > div:nth-of-type(1) > div:nth-of-type(1) > div > div:nth-of-type(1) > div > a",
+      "elementHtml": "<a></a>",
+      "discoveredAt": "2026-04-28T17:21:39.559Z",
+      "pageUrl": "https://nola.gov/next/apps/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Page requires horizontal scrolling at 320px width (139px overflow). Content should reflow without horizontal scrolling at this width.",
+      "selector": "html",
+      "elementHtml": "<html>",
+      "discoveredAt": "2026-04-28T17:21:37.835Z",
+      "pageUrl": "https://nola.gov/next/apps/",
+      "metadata": {
+        "backendNodeId": 807,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:21:13.795Z",
+      "pageUrl": "https://nola.gov/amnesty-late-fee-forgiveness-program/sign-up-for-text-alerts/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:18:44.020Z",
+      "pageUrl": "https://nola.gov/home/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:21:33.933Z",
+      "pageUrl": "https://nola.gov/next/apps/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Link timeout: https://nola.gov/next/departments did not respond within 5000ms after 2 attempts",
+      "selector": "#main_nav > div > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a href=\"https://nola.gov/next/departments\">Departments</a>",
+      "discoveredAt": "2026-04-28T17:21:14.298Z",
+      "pageUrl": "https://nola.gov/amnesty-late-fee-forgiveness-program/sign-up-for-text-alerts/",
+      "metadata": {
+        "href": "https://nola.gov/next/departments",
+        "text": "Departments",
+        "protocol": "https:",
+        "attempts": 2,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://council.nola.gov/news/april-2026/criminal-justice-committee-meeting-summary/ returned status 404 Not Found after 1 attempts",
+      "selector": "#main_nav > div > ul > li:nth-of-type(7) > div > div > div:nth-of-type(4) > div > h4 > a",
+      "elementHtml": "<a href=\"https://council.nola.gov/news/april-2026/criminal-justice-committee-meeting-summary/\">Criminal Justice Committee Meeting Summary</a>",
+      "discoveredAt": "2026-04-28T17:21:14.298Z",
+      "pageUrl": "https://nola.gov/amnesty-late-fee-forgiveness-program/sign-up-for-text-alerts/",
+      "metadata": {
+        "href": "https://council.nola.gov/news/april-2026/criminal-justice-committee-meeting-summary/",
+        "text": "Criminal Justice Committee Meeting Summary",
+        "protocol": "https:",
+        "attempts": 1,
+        "status": 404,
+        "statusText": "Not Found",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Link timeout: https://nola.gov/next/services/parks-nature/parks-green-spaces#browse did not respond within 5000ms after 2 attempts",
+      "selector": "#main_nav > div > ul > li:nth-of-type(2) > div > div > div:nth-of-type(7) > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a href=\"https://nola.gov/next/services/parks-nature/parks-green-spaces#browse\">Permits and Rentals</a>",
+      "discoveredAt": "2026-04-28T17:21:14.298Z",
+      "pageUrl": "https://nola.gov/amnesty-late-fee-forgiveness-program/sign-up-for-text-alerts/",
+      "metadata": {
+        "href": "https://nola.gov/next/services/parks-nature/parks-green-spaces#browse",
+        "text": "Permits and Rentals",
+        "protocol": "https:",
+        "attempts": 2,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Link timeout: https://nola.gov/next/departments did not respond within 5000ms after 2 attempts",
+      "selector": "#main_nav > div > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a href=\"https://nola.gov/next/departments\">Departments</a>",
+      "discoveredAt": "2026-04-28T17:20:49.845Z",
+      "pageUrl": "https://nola.gov/home/",
+      "metadata": {
+        "href": "https://nola.gov/next/departments",
+        "text": "Departments",
+        "protocol": "https:",
+        "attempts": 2,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Link timeout: https://nola.gov/next/services/parks-nature/parks-green-spaces#browse did not respond within 5000ms after 2 attempts",
+      "selector": "#main_nav > div > ul > li:nth-of-type(2) > div > div > div:nth-of-type(7) > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a href=\"https://nola.gov/next/services/parks-nature/parks-green-spaces#browse\">Permits and Rentals</a>",
+      "discoveredAt": "2026-04-28T17:20:49.845Z",
+      "pageUrl": "https://nola.gov/home/",
+      "metadata": {
+        "href": "https://nola.gov/next/services/parks-nature/parks-green-spaces#browse",
+        "text": "Permits and Rentals",
+        "protocol": "https:",
+        "attempts": 2,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://council.nola.gov/news/april-2026/criminal-justice-committee-meeting-summary/ returned status 404 Not Found after 1 attempts",
+      "selector": "#main_nav > div > ul > li:nth-of-type(7) > div > div > div:nth-of-type(4) > div > h4 > a",
+      "elementHtml": "<a href=\"https://council.nola.gov/news/april-2026/criminal-justice-committee-meeting-summary/\">Criminal Justice Committee Meeting Summary</a>",
+      "discoveredAt": "2026-04-28T17:20:49.845Z",
+      "pageUrl": "https://nola.gov/home/",
+      "metadata": {
+        "href": "https://council.nola.gov/news/april-2026/criminal-justice-committee-meeting-summary/",
+        "text": "Criminal Justice Committee Meeting Summary",
+        "protocol": "https:",
+        "attempts": 1,
+        "status": 404,
+        "statusText": "Not Found",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://council.nola.gov/news/april-2026/criminal-justice-committee-meeting-summary/ returned status 404 Not Found after 1 attempts",
+      "selector": "#main_nav > div > ul > li:nth-of-type(7) > div > div > div:nth-of-type(4) > div > h4 > a",
+      "elementHtml": "<a href=\"https://council.nola.gov/news/april-2026/criminal-justice-committee-meeting-summary/\">Criminal Justice Committee Meeting Summary</a>",
+      "discoveredAt": "2026-04-28T17:21:34.644Z",
+      "pageUrl": "https://nola.gov/next/apps/",
+      "metadata": {
+        "href": "https://council.nola.gov/news/april-2026/criminal-justice-committee-meeting-summary/",
+        "text": "Criminal Justice Committee Meeting Summary",
+        "protocol": "https:",
+        "attempts": 1,
+        "status": 404,
+        "statusText": "Not Found",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Link timeout: https://nola.gov/next/services/parks-nature/parks-green-spaces#browse did not respond within 5000ms after 2 attempts",
+      "selector": "#main_nav > div > ul > li:nth-of-type(2) > div > div > div:nth-of-type(7) > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a href=\"https://nola.gov/next/services/parks-nature/parks-green-spaces#browse\">Permits and Rentals</a>",
+      "discoveredAt": "2026-04-28T17:21:34.644Z",
+      "pageUrl": "https://nola.gov/next/apps/",
+      "metadata": {
+        "href": "https://nola.gov/next/services/parks-nature/parks-green-spaces#browse",
+        "text": "Permits and Rentals",
+        "protocol": "https:",
+        "attempts": 2,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Link timeout: https://nola.gov/next/departments did not respond within 5000ms after 2 attempts",
+      "selector": "#main_nav > div > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a href=\"https://nola.gov/next/departments\">Departments</a>",
+      "discoveredAt": "2026-04-28T17:21:34.644Z",
+      "pageUrl": "https://nola.gov/next/apps/",
+      "metadata": {
+        "href": "https://nola.gov/next/departments",
+        "text": "Departments",
+        "protocol": "https:",
+        "attempts": 2,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-28T17:21:13.962Z",
+      "pageUrl": "https://nola.gov/amnesty-late-fee-forgiveness-program/sign-up-for-text-alerts/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-28T17:21:13.962Z",
+      "pageUrl": "https://nola.gov/amnesty-late-fee-forgiveness-program/sign-up-for-text-alerts/",
+      "metadata": {
+        "backendNodeId": 1179,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-28T17:18:44.257Z",
+      "pageUrl": "https://nola.gov/home/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-28T17:18:44.257Z",
+      "pageUrl": "https://nola.gov/home/",
+      "metadata": {
+        "backendNodeId": 576,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-28T17:21:34.215Z",
+      "pageUrl": "https://nola.gov/next/apps/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-28T17:21:34.215Z",
+      "pageUrl": "https://nola.gov/next/apps/",
+      "metadata": {
+        "backendNodeId": 1179,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.3.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Page has 2 \"navigation\" landmarks but only 0 have distinct labels. Screen reader users cannot distinguish between them.",
+      "selector": "[role=\"navigation\"]",
+      "elementHtml": "<!-- 2 navigation landmarks, 0 labeled -->",
+      "discoveredAt": "2026-04-28T17:21:33.987Z",
+      "pageUrl": "https://nola.gov/next/apps/",
+      "metadata": {
+        "backendNodeId": 848,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.3.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.3.1"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".cookie-banner",
+      "elementHtml": "<div class=\"cookie-banner show\">",
+      "discoveredAt": "2026-04-28T17:21:13.977Z",
+      "pageUrl": "https://nola.gov/amnesty-late-fee-forgiveness-program/sign-up-for-text-alerts/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Page should contain a level-one heading: Fix all of the following:\n  Page must have a level-one heading",
+      "selector": "html",
+      "elementHtml": "<html lang=\"en\" style=\"height: 100%;\">",
+      "discoveredAt": "2026-04-28T17:18:44.603Z",
+      "pageUrl": "https://nola.gov/home/",
+      "metadata": {
+        "backendNodeId": 182,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".cookie-banner",
+      "elementHtml": "<div class=\"cookie-banner show\">",
+      "discoveredAt": "2026-04-28T17:18:44.603Z",
+      "pageUrl": "https://nola.gov/home/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".cookie-banner",
+      "elementHtml": "<div class=\"cookie-banner show\">",
+      "discoveredAt": "2026-04-28T17:21:34.250Z",
+      "pageUrl": "https://nola.gov/next/apps/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": ".navbar-expand-lg",
+      "elementHtml": "<nav class=\"navbar navbar-expand-lg\">",
+      "discoveredAt": "2026-04-28T17:21:34.250Z",
+      "pageUrl": "https://nola.gov/next/apps/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Link timeout: https://nola.gov/NEXT/Health-Plan did not respond within 5000ms after 2 attempts",
+      "selector": "#main_nav > div > ul > li:nth-of-type(3) > div > ul > li:nth-of-type(1) > ul > li:nth-of-type(1) > span > a",
+      "elementHtml": "<a href=\"https://nola.gov/NEXT/Health-Plan\"></a>",
+      "discoveredAt": "2026-04-28T17:21:14.298Z",
+      "pageUrl": "https://nola.gov/amnesty-late-fee-forgiveness-program/sign-up-for-text-alerts/",
+      "metadata": {
+        "href": "https://nola.gov/NEXT/Health-Plan",
+        "text": "",
+        "protocol": "https:",
+        "attempts": 2,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Link timeout: https://nola.gov/NEXT/Health-Plan did not respond within 5000ms after 2 attempts",
+      "selector": "#main_nav > div > ul > li:nth-of-type(3) > div > ul > li:nth-of-type(1) > ul > li:nth-of-type(1) > span > a",
+      "elementHtml": "<a href=\"https://nola.gov/NEXT/Health-Plan\"></a>",
+      "discoveredAt": "2026-04-28T17:20:49.845Z",
+      "pageUrl": "https://nola.gov/home/",
+      "metadata": {
+        "href": "https://nola.gov/NEXT/Health-Plan",
+        "text": "",
+        "protocol": "https:",
+        "attempts": 2,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Link timeout: https://nola.gov/NEXT/Health-Plan did not respond within 5000ms after 2 attempts",
+      "selector": "#main_nav > div > ul > li:nth-of-type(3) > div > ul > li:nth-of-type(1) > ul > li:nth-of-type(1) > span > a",
+      "elementHtml": "<a href=\"https://nola.gov/NEXT/Health-Plan\"></a>",
+      "discoveredAt": "2026-04-28T17:21:34.644Z",
+      "pageUrl": "https://nola.gov/next/apps/",
+      "metadata": {
+        "href": "https://nola.gov/NEXT/Health-Plan",
+        "text": "",
+        "protocol": "https:",
+        "attempts": 2,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 8px at 320px width.",
+      "selector": "div.btn-container",
+      "elementHtml": "<div class=\"btn-container\"><a class=\"cookie-btn functional\" id=\"only-necessary\">Reject Additional Cookies</a> <a class=\"cookie-btn\" id=\"accept-all\">Accept All</a></div>",
+      "discoveredAt": "2026-04-28T17:21:17.515Z",
+      "pageUrl": "https://nola.gov/amnesty-late-fee-forgiveness-program/sign-up-for-text-alerts/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 23px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "span.sr-only.sr-only-focusable",
+      "elementHtml": "<span class=\"sr-only sr-only-focusable\">Search</span>",
+      "discoveredAt": "2026-04-28T17:21:17.515Z",
+      "pageUrl": "https://nola.gov/amnesty-late-fee-forgiveness-program/sign-up-for-text-alerts/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 95px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "a.skip-main",
+      "elementHtml": "<a href=\"#contentArea\" class=\"skip-main\">Skip to main content</a>",
+      "discoveredAt": "2026-04-28T17:21:17.515Z",
+      "pageUrl": "https://nola.gov/amnesty-late-fee-forgiveness-program/sign-up-for-text-alerts/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 23px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "#p_lt_WebPartZone12_zoneContent_pageplaceholder_p_lt_zoneContentArea_pageContent_ucEditableText_widget1_ctl00_plcUp_viewBiz_PhoneNumber_lbl3rd",
+      "elementHtml": "<label for=\"p_lt_WebPartZone12_zoneContent_pageplaceholder_p_lt_zoneContentArea_pageContent_ucEditableText_widget1_ctl00_plcUp_viewBiz_PhoneNumber_txt3rd\" id=\"p_lt_WebPartZone12_zoneContent_pageplaceh",
+      "discoveredAt": "2026-04-28T17:21:17.515Z",
+      "pageUrl": "https://nola.gov/amnesty-late-fee-forgiveness-program/sign-up-for-text-alerts/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 23px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "#p_lt_WebPartZone12_zoneContent_pageplaceholder_p_lt_zoneContentArea_pageContent_ucEditableText_widget1_ctl00_plcUp_viewBiz_PhoneNumber_lbl2nd",
+      "elementHtml": "<label for=\"p_lt_WebPartZone12_zoneContent_pageplaceholder_p_lt_zoneContentArea_pageContent_ucEditableText_widget1_ctl00_plcUp_viewBiz_PhoneNumber_txt2nd\" id=\"p_lt_WebPartZone12_zoneContent_pageplaceh",
+      "discoveredAt": "2026-04-28T17:21:17.515Z",
+      "pageUrl": "https://nola.gov/amnesty-late-fee-forgiveness-program/sign-up-for-text-alerts/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    }
+  ],
+  "requestedJurisdictions": [
+    "us"
+  ],
+  "appliedJurisdictions": [
+    "us"
+  ]
+}

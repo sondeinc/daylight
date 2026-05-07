@@ -1,0 +1,2253 @@
+{
+  "url": "https://ally.com",
+  "slug": "ally-com",
+  "status": "complete",
+  "scanDate": "2026-04-29T00:31:59.130Z",
+  "scanConfig": {
+    "scope": "site",
+    "maxPages": 50,
+    "racks": [
+      "rack-live-a11y",
+      "rack-live-free"
+    ],
+    "individualProbes": [],
+    "excludedProbes": [],
+    "timeBudgetMs": 180000,
+    "maxFindings": null
+  },
+  "sondeScore": {
+    "score": 927,
+    "rawPenalty": 176.75,
+    "normalizedPenalty": 58.916666666666664,
+    "pagesScanned": 3,
+    "weightsVersion": "v0.1"
+  },
+  "avgFindingsPerPage": 27.7,
+  "elementComplianceRate": 97,
+  "totalElements": 1830,
+  "elementsWithFindings": 54,
+  "complianceSummary": {
+    "total": 83,
+    "byLevel": {
+      "AA": 17,
+      "A": 38
+    },
+    "bySeverity": {
+      "critical": 8,
+      "high": 12,
+      "medium": 60,
+      "low": 3
+    },
+    "byCriterion": {
+      "WCAG 1.4.3": 4,
+      "WCAG 1.1.1": 4,
+      "WCAG 2.4.3": 3,
+      "WCAG 4.1.2": 10,
+      "WCAG 1.3.1": 1,
+      "WCAG 1.4.1": 20,
+      "WCAG 3.2.3": 1,
+      "WCAG 4.1.3": 12
+    }
+  },
+  "summary": {
+    "pagesAnalyzed": 3,
+    "pagesFailed": 0,
+    "totalFindings": 83,
+    "bySeverity": {
+      "critical": 8,
+      "high": 12,
+      "medium": 60,
+      "low": 3
+    },
+    "byProbe": {},
+    "byType": {},
+    "durationMs": 212725
+  },
+  "jurisdiction": "US",
+  "entityName": "Ally Financial",
+  "scanSource": "live",
+  "findings": [
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"Ally Bank\"",
+      "selector": "p.Text_body-md__aYHxV.-mt-0",
+      "elementHtml": "<p data-testid=\"RichTextTestId_block_p\" class=\"Text_body-md__aYHxV -mt-0 -mb-xxs -color-gray-white\">Ally Bank </p>",
+      "discoveredAt": "2026-04-28T17:28:38.571Z",
+      "pageUrl": "https://www.ally.com/",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#777676",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.528436450868204,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Ally Bank",
+        "backendNodeId": 1014,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"Spending\"",
+      "selector": "a.Link_link__JHJ4m.Link_-dark__6RmSy",
+      "elementHtml": "<a class=\"Link_link__JHJ4m Link_-dark__6RmSy Link_-no-inline__7AGiC Link_-embedded-block___x1B8\" data-allytmln=\"explore-Checking\" href=\"https://www.ally.com/bank/interest-checking-account/\" target=\"_s",
+      "discoveredAt": "2026-04-28T17:28:38.571Z",
+      "pageUrl": "https://www.ally.com/",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#777676",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.528436450868204,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Spending",
+        "backendNodeId": 253,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 3:1 for large text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"You’ve got an ally in every corner.\"",
+      "selector": "strong",
+      "elementHtml": "<strong data-testid=\"RichTextTestId_mark_bold\">You’ve got an ally in every corner.</strong>",
+      "discoveredAt": "2026-04-28T17:28:38.571Z",
+      "pageUrl": "https://www.ally.com/",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#959494",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 3.025283721231529,
+        "contrastRequiredRatio": 3,
+        "contrastIsLargeText": true,
+        "contrastTextSample": "You’ve got an ally in every corner.",
+        "backendNodeId": 1012,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"Bank product Icon\"",
+      "selector": "title",
+      "elementHtml": "<title>Bank product Icon</title>",
+      "discoveredAt": "2026-04-28T17:28:38.571Z",
+      "pageUrl": "https://www.ally.com/",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#777676",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.528436450868204,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Bank product Icon",
+        "backendNodeId": 189,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"406\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:28:38.609Z",
+      "pageUrl": "https://www.ally.com/",
+      "metadata": {
+        "backendNodeId": 406,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"529\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:28:38.609Z",
+      "pageUrl": "https://www.ally.com/",
+      "metadata": {
+        "backendNodeId": 529,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"2413\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:30:39.701Z",
+      "pageUrl": "https://www.ally.com/ventures",
+      "metadata": {
+        "backendNodeId": 2413,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"2033\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:30:39.701Z",
+      "pageUrl": "https://www.ally.com/ventures",
+      "metadata": {
+        "backendNodeId": 2033,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "high",
+      "description": "\"role=text\" should have no focusable descendants: Fix any of the following:\n  Element has focusable descendants",
+      "selector": ".userConsent__disclaimerText",
+      "elementHtml": "<p class=\"userConsent__disclaimerText\" role=\"text\">",
+      "discoveredAt": "2026-04-28T17:28:38.757Z",
+      "pageUrl": "https://www.ally.com/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "console-health",
+      "severity": "high",
+      "description": "Console warning: 🚀 _satellite.notify is deprecated. Please use the `_satellite.logger` API.",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:28:38.570Z",
+      "sourceLocation": {
+        "file": "https://www.ally.com/_next/static/chunks/5230-99413ba528bff774.js",
+        "line": 0,
+        "column": 0,
+        "confidence": "medium",
+        "strategy": "source-map"
+      },
+      "pageUrl": "https://www.ally.com/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "console-health"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Decline Cookies\" to \"Skip to login\" (visual distance: 845px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "header > section:nth-of-type(1) > nav > button:nth-of-type(1)",
+      "elementHtml": "<button>Skip to login</button>",
+      "discoveredAt": "2026-04-28T17:29:55.334Z",
+      "pageUrl": "https://www.ally.com/",
+      "metadata": {
+        "backendNodeId": 540,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Skip to main content\" to \"Ally Logo, go to ally.com\" (visual distance: 451px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "header > section:nth-of-type(1) > nav > a",
+      "elementHtml": "<a>Ally Logo, go to ally.com</a>",
+      "discoveredAt": "2026-04-28T17:29:55.334Z",
+      "pageUrl": "https://www.ally.com/",
+      "metadata": {
+        "backendNodeId": 542,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Skip to main content\" to \"Ally ventures logo\" (visual distance: 445px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "header > nav > span > a",
+      "elementHtml": "<a>Ally ventures logo</a>",
+      "discoveredAt": "2026-04-28T17:30:51.755Z",
+      "pageUrl": "https://www.ally.com/ventures",
+      "metadata": {
+        "backendNodeId": 2025,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.tiktok.com/@allydoitright returned status 403 Forbidden after 1 attempts",
+      "selector": "footer > div:nth-of-type(1) > a:nth-of-type(5)",
+      "elementHtml": "<a href=\"https://www.tiktok.com/@allydoitright\">TikTok Logo</a>",
+      "discoveredAt": "2026-04-28T17:29:33.932Z",
+      "pageUrl": "https://www.ally.com/",
+      "metadata": {
+        "href": "https://www.tiktok.com/@allydoitright",
+        "text": "TikTok Logo",
+        "protocol": "https:",
+        "attempts": 1,
+        "status": 403,
+        "statusText": "Forbidden",
+        "backendNodeId": 333,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://www.tiktok.com/@allydoitright returned status 403 Forbidden after 1 attempts",
+      "selector": "footer > div:nth-of-type(1) > a:nth-of-type(5)",
+      "elementHtml": "<a href=\"https://www.tiktok.com/@allydoitright\">TikTok Logo</a>",
+      "discoveredAt": "2026-04-28T17:30:46.657Z",
+      "pageUrl": "https://www.ally.com/ventures",
+      "metadata": {
+        "href": "https://www.tiktok.com/@allydoitright",
+        "text": "TikTok Logo",
+        "protocol": "https:",
+        "attempts": 1,
+        "status": 403,
+        "statusText": "Forbidden",
+        "backendNodeId": 2339,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 4.1.2",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Focusable element has generic role. Keyboard users can reach it but screen readers provide no context about its purpose.",
+      "selector": "[role=\"generic\"][data-a11y-node=\"385\"]",
+      "elementHtml": "<!-- a11y: role=\"generic\" -->",
+      "discoveredAt": "2026-04-28T17:28:38.609Z",
+      "pageUrl": "https://www.ally.com/",
+      "metadata": {
+        "backendNodeId": 385,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.2"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.2"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 4.1.2",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Focusable element has generic role. Keyboard users can reach it but screen readers provide no context about its purpose.",
+      "selector": "[role=\"generic\"][data-a11y-node=\"370\"]",
+      "elementHtml": "<!-- a11y: role=\"generic\" -->",
+      "discoveredAt": "2026-04-28T17:28:38.609Z",
+      "pageUrl": "https://www.ally.com/",
+      "metadata": {
+        "backendNodeId": 370,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.2"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.2"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 4.1.2",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Focusable element has generic role. Keyboard users can reach it but screen readers provide no context about its purpose.",
+      "selector": "[role=\"generic\"][data-a11y-node=\"363\"]",
+      "elementHtml": "<!-- a11y: role=\"generic\" -->",
+      "discoveredAt": "2026-04-28T17:28:38.609Z",
+      "pageUrl": "https://www.ally.com/",
+      "metadata": {
+        "backendNodeId": 363,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.2"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.2"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 4.1.2",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Focusable element has generic role. Keyboard users can reach it but screen readers provide no context about its purpose.",
+      "selector": "[role=\"generic\"][data-a11y-node=\"354\"]",
+      "elementHtml": "<!-- a11y: role=\"generic\" -->",
+      "discoveredAt": "2026-04-28T17:28:38.609Z",
+      "pageUrl": "https://www.ally.com/",
+      "metadata": {
+        "backendNodeId": 354,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.2"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.2"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 4.1.2",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Focusable element has generic role. Keyboard users can reach it but screen readers provide no context about its purpose.",
+      "selector": "[role=\"generic\"][data-a11y-node=\"339\"]",
+      "elementHtml": "<!-- a11y: role=\"generic\" -->",
+      "discoveredAt": "2026-04-28T17:28:38.609Z",
+      "pageUrl": "https://www.ally.com/",
+      "metadata": {
+        "backendNodeId": 339,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.2"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.2"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 4.1.2",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Focusable element has generic role. Keyboard users can reach it but screen readers provide no context about its purpose.",
+      "selector": "[role=\"generic\"][data-a11y-node=\"2345\"]",
+      "elementHtml": "<!-- a11y: role=\"generic\" -->",
+      "discoveredAt": "2026-04-28T17:30:39.701Z",
+      "pageUrl": "https://www.ally.com/ventures",
+      "metadata": {
+        "backendNodeId": 2345,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.2"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.2"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 4.1.2",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Focusable element has generic role. Keyboard users can reach it but screen readers provide no context about its purpose.",
+      "selector": "[role=\"generic\"][data-a11y-node=\"2391\"]",
+      "elementHtml": "<!-- a11y: role=\"generic\" -->",
+      "discoveredAt": "2026-04-28T17:30:39.701Z",
+      "pageUrl": "https://www.ally.com/ventures",
+      "metadata": {
+        "backendNodeId": 2391,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.2"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.2"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 4.1.2",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Focusable element has generic role. Keyboard users can reach it but screen readers provide no context about its purpose.",
+      "selector": "[role=\"generic\"][data-a11y-node=\"2376\"]",
+      "elementHtml": "<!-- a11y: role=\"generic\" -->",
+      "discoveredAt": "2026-04-28T17:30:39.701Z",
+      "pageUrl": "https://www.ally.com/ventures",
+      "metadata": {
+        "backendNodeId": 2376,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.2"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.2"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 4.1.2",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Focusable element has generic role. Keyboard users can reach it but screen readers provide no context about its purpose.",
+      "selector": "[role=\"generic\"][data-a11y-node=\"2369\"]",
+      "elementHtml": "<!-- a11y: role=\"generic\" -->",
+      "discoveredAt": "2026-04-28T17:30:39.701Z",
+      "pageUrl": "https://www.ally.com/ventures",
+      "metadata": {
+        "backendNodeId": 2369,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.2"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.2"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 4.1.2",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Focusable element has generic role. Keyboard users can reach it but screen readers provide no context about its purpose.",
+      "selector": "[role=\"generic\"][data-a11y-node=\"2360\"]",
+      "elementHtml": "<!-- a11y: role=\"generic\" -->",
+      "discoveredAt": "2026-04-28T17:30:39.701Z",
+      "pageUrl": "https://www.ally.com/ventures",
+      "metadata": {
+        "backendNodeId": 2360,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.2"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.2"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.3.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Page has 3 \"navigation\" landmarks but only 2 have distinct labels. Screen reader users cannot distinguish between them.",
+      "selector": "[role=\"navigation\"]",
+      "elementHtml": "<!-- 3 navigation landmarks, 2 labeled -->",
+      "discoveredAt": "2026-04-28T17:30:39.701Z",
+      "pageUrl": "https://www.ally.com/ventures",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.3.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.3.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(26, 26, 26), text: rgb(255, 255, 255)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "header > section:nth-of-type(1) > nav > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a class=\"Link_link__JHJ4m Link_navLinkTop__7USdO Link_-no-inline__7AGiC\" data-allytmln=\"helpTopNav\" href=\"https://www.ally.com/help/\" target=\"_self\" allytm-click-tagged=\"true\">Help</a>",
+      "discoveredAt": "2026-04-28T17:28:38.585Z",
+      "pageUrl": "https://www.ally.com/",
+      "metadata": {
+        "backendNodeId": 532,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(26, 26, 26), text: rgb(255, 255, 255)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "header > section:nth-of-type(1) > nav > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a class=\"Link_link__JHJ4m Link_navLinkTop__7USdO Link_-no-inline__7AGiC\" href=\"http://www.ally.com/search\" target=\"_self\" allytm-click-tagged=\"true\">Search</a>",
+      "discoveredAt": "2026-04-28T17:28:38.585Z",
+      "pageUrl": "https://www.ally.com/",
+      "metadata": {
+        "backendNodeId": 533,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(26, 26, 26), text: rgb(255, 255, 255)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "footer > div:nth-of-type(2) > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a class=\"Link_navLink__ZbrPx Link_-no-inline__7AGiC\" data-allytmln=\"footer-investorRelations\" href=\"https://www.ally.com/about/investor/\" target=\"_self\" allytm-click-tagged=\"true\">Investor Relations<",
+      "discoveredAt": "2026-04-28T17:28:38.585Z",
+      "pageUrl": "https://www.ally.com/",
+      "metadata": {
+        "backendNodeId": 348,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(26, 26, 26), text: rgb(255, 255, 255)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "footer > div:nth-of-type(2) > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a class=\"Link_navLink__ZbrPx Link_-no-inline__7AGiC\" data-allytmln=\"footer-ourCompany\" href=\"https://www.ally.com/about/company-structure/\" target=\"_self\" allytm-click-tagged=\"true\">Our Company</a>",
+      "discoveredAt": "2026-04-28T17:28:38.585Z",
+      "pageUrl": "https://www.ally.com/",
+      "metadata": {
+        "backendNodeId": 342,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(26, 26, 26), text: rgb(255, 255, 255)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "footer > div:nth-of-type(2) > div:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a class=\"Link_navLink__ZbrPx Link_-no-inline__7AGiC\" data-allytmln=\"footer-careers\" href=\"https://www.ally.com/about/careers/\" target=\"_self\" allytm-click-tagged=\"true\">Careers</a>",
+      "discoveredAt": "2026-04-28T17:28:38.585Z",
+      "pageUrl": "https://www.ally.com/",
+      "metadata": {
+        "backendNodeId": 346,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(26, 26, 26), text: rgb(255, 255, 255)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "header > section:nth-of-type(1) > nav > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a class=\"Link_link__JHJ4m Link_navLinkTop__7USdO Link_-no-inline__7AGiC\" data-allytmln=\"aboutUsTopNav\" href=\"https://www.ally.com/about/\" target=\"_self\" allytm-click-tagged=\"true\">About Us</a>",
+      "discoveredAt": "2026-04-28T17:28:38.585Z",
+      "pageUrl": "https://www.ally.com/",
+      "metadata": {
+        "backendNodeId": 530,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(26, 26, 26), text: rgb(255, 255, 255)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "footer > div:nth-of-type(2) > div:nth-of-type(1) > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a class=\"Link_navLink__ZbrPx Link_-no-inline__7AGiC\" data-allytmln=\"footer-socialImpact\" href=\"https://www.ally.com/about/social-impact/\" target=\"_self\" allytm-click-tagged=\"true\">Social Impact</a>",
+      "discoveredAt": "2026-04-28T17:28:38.585Z",
+      "pageUrl": "https://www.ally.com/",
+      "metadata": {
+        "backendNodeId": 344,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(26, 26, 26), text: rgb(255, 255, 255)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "footer > div:nth-of-type(2) > div:nth-of-type(1) > ul > li:nth-of-type(5) > a",
+      "elementHtml": "<a class=\"Link_navLink__ZbrPx Link_-no-inline__7AGiC\" data-allytmln=\"footer-suppliers\" href=\"https://www.ally.com/about/suppliers/\" target=\"_self\" allytm-click-tagged=\"true\">Suppliers</a>",
+      "discoveredAt": "2026-04-28T17:28:38.585Z",
+      "pageUrl": "https://www.ally.com/",
+      "metadata": {
+        "backendNodeId": 350,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(26, 26, 26), text: rgb(255, 255, 255)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "footer > div:nth-of-type(2) > div:nth-of-type(1) > ul > li:nth-of-type(6) > a",
+      "elementHtml": "<a class=\"Link_navLink__ZbrPx Link_-no-inline__7AGiC\" data-allytmln=\"footer-mediaCenter\" href=\"https://media.ally.com/\" target=\"_self\" allytm-click-tagged=\"true\">Media Center</a>",
+      "discoveredAt": "2026-04-28T17:28:38.585Z",
+      "pageUrl": "https://www.ally.com/",
+      "metadata": {
+        "backendNodeId": 352,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(26, 26, 26), text: rgb(255, 255, 255)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "header > section:nth-of-type(1) > nav > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a class=\"Link_link__JHJ4m Link_navLinkTop__7USdO Link_-no-inline__7AGiC\" data-allytmln=\"contactUsTopNav\" href=\"https://www.ally.com/contact-us/\" target=\"_self\" allytm-click-tagged=\"true\">Contact Us</",
+      "discoveredAt": "2026-04-28T17:28:38.585Z",
+      "pageUrl": "https://www.ally.com/",
+      "metadata": {
+        "backendNodeId": 531,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(26, 26, 26), text: rgb(255, 255, 255)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "footer > div:nth-of-type(2) > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+      "elementHtml": "<a class=\"Link_navLink__ZbrPx Link_-no-inline__7AGiC\" data-allytmln=\"footer-investorRelations\" href=\"https://www.ally.com/about/investor/\" target=\"_self\" allytm-click-tagged=\"true\">Investor Relations<",
+      "discoveredAt": "2026-04-28T17:30:39.679Z",
+      "pageUrl": "https://www.ally.com/ventures",
+      "metadata": {
+        "backendNodeId": 2354,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(26, 26, 26), text: rgb(255, 255, 255)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "footer > div:nth-of-type(2) > div:nth-of-type(1) > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a class=\"Link_navLink__ZbrPx Link_-no-inline__7AGiC\" data-allytmln=\"footer-socialImpact\" href=\"https://www.ally.com/about/social-impact/\" target=\"_self\" allytm-click-tagged=\"true\">Social Impact</a>",
+      "discoveredAt": "2026-04-28T17:30:39.679Z",
+      "pageUrl": "https://www.ally.com/ventures",
+      "metadata": {
+        "backendNodeId": 2350,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(26, 26, 26), text: rgb(255, 255, 255)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "footer > div:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+      "elementHtml": "<a class=\"Link_navLink__ZbrPx Link_-no-inline__7AGiC\" data-allytmln=\"footer-dealerServices\" href=\"https://www.ally.com/dealer/\" target=\"_self\" allytm-click-tagged=\"true\">Dealer Services</a>",
+      "discoveredAt": "2026-04-28T17:30:39.679Z",
+      "pageUrl": "https://www.ally.com/ventures",
+      "metadata": {
+        "backendNodeId": 2365,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(26, 26, 26), text: rgb(255, 255, 255)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "footer > div:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a class=\"Link_navLink__ZbrPx Link_-no-inline__7AGiC\" data-allytmln=\"footer-allyVentures\" href=\"https://www.ally.com/ventures/\" target=\"_self\" allytm-click-tagged=\"true\">Ally Ventures</a>",
+      "discoveredAt": "2026-04-28T17:30:39.679Z",
+      "pageUrl": "https://www.ally.com/ventures",
+      "metadata": {
+        "backendNodeId": 2367,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(26, 26, 26), text: rgb(255, 255, 255)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "footer > div:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a class=\"Link_navLink__ZbrPx Link_-no-inline__7AGiC\" data-allytmln=\"footer-corporateFinance\" href=\"https://www.ally.com/corporate-finance/\" target=\"_self\" allytm-click-tagged=\"true\">Corporate Finance",
+      "discoveredAt": "2026-04-28T17:30:39.679Z",
+      "pageUrl": "https://www.ally.com/ventures",
+      "metadata": {
+        "backendNodeId": 2363,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(26, 26, 26), text: rgb(255, 255, 255)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "footer > div:nth-of-type(2) > div:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+      "elementHtml": "<a class=\"Link_navLink__ZbrPx Link_-no-inline__7AGiC\" data-allytmln=\"footer-careers\" href=\"https://www.ally.com/about/careers/\" target=\"_self\" allytm-click-tagged=\"true\">Careers</a>",
+      "discoveredAt": "2026-04-28T17:30:39.679Z",
+      "pageUrl": "https://www.ally.com/ventures",
+      "metadata": {
+        "backendNodeId": 2352,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(26, 26, 26), text: rgb(255, 255, 255)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "footer > div:nth-of-type(2) > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a class=\"Link_navLink__ZbrPx Link_-no-inline__7AGiC\" data-allytmln=\"footer-ourCompany\" href=\"https://www.ally.com/about/company-structure/\" target=\"_self\" allytm-click-tagged=\"true\">Our Company</a>",
+      "discoveredAt": "2026-04-28T17:30:39.679Z",
+      "pageUrl": "https://www.ally.com/ventures",
+      "metadata": {
+        "backendNodeId": 2348,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(26, 26, 26), text: rgb(255, 255, 255)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "footer > div:nth-of-type(2) > div:nth-of-type(1) > ul > li:nth-of-type(6) > a",
+      "elementHtml": "<a class=\"Link_navLink__ZbrPx Link_-no-inline__7AGiC\" data-allytmln=\"footer-mediaCenter\" href=\"https://media.ally.com/\" target=\"_self\" allytm-click-tagged=\"true\">Media Center</a>",
+      "discoveredAt": "2026-04-28T17:30:39.679Z",
+      "pageUrl": "https://www.ally.com/ventures",
+      "metadata": {
+        "backendNodeId": 2358,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(26, 26, 26), text: rgb(255, 255, 255)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "footer > div:nth-of-type(2) > div:nth-of-type(1) > ul > li:nth-of-type(5) > a",
+      "elementHtml": "<a class=\"Link_navLink__ZbrPx Link_-no-inline__7AGiC\" data-allytmln=\"footer-suppliers\" href=\"https://www.ally.com/about/suppliers/\" target=\"_self\" allytm-click-tagged=\"true\">Suppliers</a>",
+      "discoveredAt": "2026-04-28T17:30:39.679Z",
+      "pageUrl": "https://www.ally.com/ventures",
+      "metadata": {
+        "backendNodeId": 2356,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(26, 26, 26), text: rgb(255, 255, 255)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "footer > div:nth-of-type(2) > div:nth-of-type(3) > ul > li:nth-of-type(1) > a",
+      "elementHtml": "<a class=\"Link_navLink__ZbrPx Link_-no-inline__7AGiC\" data-allytmln=\"footer-conversationally\" href=\"https://www.ally.com/stories/\" target=\"_self\" allytm-click-tagged=\"true\">Conversationally</a>",
+      "discoveredAt": "2026-04-28T17:30:39.679Z",
+      "pageUrl": "https://www.ally.com/ventures",
+      "metadata": {
+        "backendNodeId": 2372,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "consistent-navigation",
+      "standard": "WCAG 3.2.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Navigation region \"Top Menu\" (present on www.ally.com) is missing on this page. Navigation should appear consistently across pages.",
+      "selector": "html",
+      "elementHtml": "<!-- missing: nav[aria-label=\"Top Menu\"] -->",
+      "discoveredAt": "2026-04-28T17:30:39.678Z",
+      "pageUrl": "https://www.ally.com/ventures",
+      "metadata": {
+        "backendNodeId": 1947,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "consistent-navigation"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 3.2.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 3.2.3"
+      ]
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Clicking \"SIPC\" inserts 7 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "footer > div:nth-of-type(3) > div > div:nth-of-type(6) > p > a:nth-of-type(2)",
+      "elementHtml": "<a class=\"Link_link__JHJ4m Modal_dialogTrigger__6C7WP styles_interstitialTrigger__s2UXm styles_-underline__agAoU styles_-inline__545GH Link_-underline__lnWRl Link_-inline__GtMVe\" data-allytmln=\"defaul",
+      "discoveredAt": "2026-04-28T17:30:35.577Z",
+      "pageUrl": "https://www.ally.com/",
+      "metadata": {
+        "backendNodeId": 424,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "dynamic-content-audit"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.3"
+      ]
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Clicking \"Investing & Retirement\" inserts 6 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "header > section:nth-of-type(2) > nav > ul > li:nth-of-type(3) > button",
+      "elementHtml": "<button class=\"styles_mainNavListItemBtn__EFhR4\" type=\"button\" aria-expanded=\"false\" aria-label=\"Open Investing &amp; Retirement Menu\" data-allytmln=\"investMenu\" allytm-click-tagged=\"true\">Investing &",
+      "discoveredAt": "2026-04-28T17:30:35.577Z",
+      "pageUrl": "https://www.ally.com/",
+      "metadata": {
+        "backendNodeId": 547,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "dynamic-content-audit"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.3"
+      ]
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Clicking \"Auto\" inserts 4 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "header > section:nth-of-type(2) > nav > ul > li:nth-of-type(4) > button",
+      "elementHtml": "<button class=\"styles_mainNavListItemBtn__EFhR4\" type=\"button\" aria-expanded=\"false\" aria-label=\"Open Auto Menu\" data-allytmln=\"autoMenu\" allytm-click-tagged=\"true\">Auto</button>",
+      "discoveredAt": "2026-04-28T17:30:35.577Z",
+      "pageUrl": "https://www.ally.com/",
+      "metadata": {
+        "backendNodeId": 548,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "dynamic-content-audit"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.3"
+      ]
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Clicking \"Accept\" inserts 15 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#cx_banner_container > div:nth-of-type(2) > button:nth-of-type(1)",
+      "elementHtml": "<button class=\"userConsent__btn\" allytmln=\"Banner - Accept\" allytm-click-tagged=\"true\" aria-label=\"Accept Cookies\">Accept</button>",
+      "discoveredAt": "2026-04-28T17:30:35.577Z",
+      "pageUrl": "https://www.ally.com/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "dynamic-content-audit"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.3"
+      ]
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Clicking \"Auto\" inserts 4 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "header > section:nth-of-type(2) > nav > ul > li:nth-of-type(4) > button",
+      "elementHtml": "<button class=\"styles_mainNavListItemBtn__EFhR4\" type=\"button\" aria-expanded=\"false\" aria-label=\"Open Auto Menu\" data-allytmln=\"autoMenu\" allytm-click-tagged=\"true\">Auto</button>",
+      "discoveredAt": "2026-04-28T17:31:59.005Z",
+      "pageUrl": "https://www.ally.com/",
+      "metadata": {
+        "backendNodeId": 4493,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "dynamic-content-audit"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.3"
+      ]
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Clicking \"SIPC\" inserts 7 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "footer > div:nth-of-type(3) > div > div:nth-of-type(6) > p > a:nth-of-type(2)",
+      "elementHtml": "<a class=\"Link_link__JHJ4m Modal_dialogTrigger__6C7WP styles_interstitialTrigger__s2UXm styles_-underline__agAoU styles_-inline__545GH Link_-underline__lnWRl Link_-inline__GtMVe\" data-allytmln=\"defaul",
+      "discoveredAt": "2026-04-28T17:31:59.005Z",
+      "pageUrl": "https://www.ally.com/",
+      "metadata": {
+        "backendNodeId": 4373,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "dynamic-content-audit"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.3"
+      ]
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Clicking \"Investing & Retirement\" inserts 6 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "header > section:nth-of-type(2) > nav > ul > li:nth-of-type(3) > button",
+      "elementHtml": "<button class=\"styles_mainNavListItemBtn__EFhR4\" type=\"button\" aria-expanded=\"false\" aria-label=\"Open Investing &amp; Retirement Menu\" data-allytmln=\"investMenu\" allytm-click-tagged=\"true\">Investing &",
+      "discoveredAt": "2026-04-28T17:31:59.005Z",
+      "pageUrl": "https://www.ally.com/",
+      "metadata": {
+        "backendNodeId": 4492,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "dynamic-content-audit"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.3"
+      ]
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Clicking \"Visit Modelshop\" inserts 8 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#relationships > div > div > div:nth-of-type(14) > div > div:nth-of-type(2) > div > a",
+      "elementHtml": "<a class=\"Link_link__JHJ4m Modal_dialogTrigger__6C7WP styles_interstitialTrigger__s2UXm Link_-no-inline__7AGiC Link_-embedded-block___x1B8\" data-allytmln=\"venturesExternalLinkInterstitial\" href=\"##\" t",
+      "discoveredAt": "2026-04-28T17:31:31.183Z",
+      "pageUrl": "https://www.ally.com/ventures",
+      "metadata": {
+        "backendNodeId": 2226,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "dynamic-content-audit"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.3"
+      ]
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Clicking \"SIPC\" inserts 7 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "footer > div:nth-of-type(3) > div > div:nth-of-type(6) > p > a:nth-of-type(2)",
+      "elementHtml": "<a class=\"Link_link__JHJ4m Modal_dialogTrigger__6C7WP styles_interstitialTrigger__s2UXm styles_-underline__agAoU styles_-inline__545GH Link_-underline__lnWRl Link_-inline__GtMVe\" data-allytmln=\"defaul",
+      "discoveredAt": "2026-04-28T17:31:31.183Z",
+      "pageUrl": "https://www.ally.com/ventures",
+      "metadata": {
+        "backendNodeId": 2431,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "dynamic-content-audit"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.3"
+      ]
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Clicking \"Learn More\" inserts 7 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#ventures-team > div > div > div:nth-of-type(2) > div > a",
+      "elementHtml": "<a class=\"Modal_dialogTrigger__6C7WP Link_ctaTertiary__Ai4Hu Link_-dark__6RmSy Link_buttonAsLink__4_bbF\" data-allytmln=\"learnMoreRobKerr\" aria-label=\"learn more rob kerr\" role=\"button\" href=\"##\" allyt",
+      "discoveredAt": "2026-04-28T17:31:31.183Z",
+      "pageUrl": "https://www.ally.com/ventures",
+      "metadata": {
+        "backendNodeId": 2313,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "dynamic-content-audit"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.3"
+      ]
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Clicking \"Visit Car IQ\" inserts 7 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#relationships > div > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > div > a",
+      "elementHtml": "<a class=\"Link_link__JHJ4m Modal_dialogTrigger__6C7WP styles_interstitialTrigger__s2UXm Link_-no-inline__7AGiC Link_-embedded-block___x1B8\" data-allytmln=\"venturesExternalLinkInterstitial\" href=\"##\" t",
+      "discoveredAt": "2026-04-28T17:31:31.183Z",
+      "pageUrl": "https://www.ally.com/ventures",
+      "metadata": {
+        "backendNodeId": 2122,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "dynamic-content-audit"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.3"
+      ]
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Clicking \"Visit Greenlight\" inserts 8 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#relationships > div > div > div:nth-of-type(6) > div > div:nth-of-type(2) > div > a",
+      "elementHtml": "<a class=\"Link_link__JHJ4m Modal_dialogTrigger__6C7WP styles_interstitialTrigger__s2UXm Link_-no-inline__7AGiC Link_-embedded-block___x1B8\" data-allytmln=\"venturesExternalLinkInterstitial\" href=\"##\" t",
+      "discoveredAt": "2026-04-28T17:31:31.183Z",
+      "pageUrl": "https://www.ally.com/ventures",
+      "metadata": {
+        "backendNodeId": 2157,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "dynamic-content-audit"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.3"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "medium",
+      "description": "x-content-type-options header has invalid or weak value: nosniff\nnosniff",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:30:39.664Z",
+      "pageUrl": "https://www.ally.com/ventures",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    }
+  ],
+  "requestedJurisdictions": [
+    "us"
+  ],
+  "appliedJurisdictions": [
+    "us"
+  ]
+}

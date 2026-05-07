@@ -1,0 +1,61 @@
+{
+  "url": "https://boston.gov",
+  "slug": "boston-gov",
+  "status": "incomplete",
+  "scanDate": "2026-04-29T02:53:13.275Z",
+  "scanConfig": {
+    "scope": "site",
+    "maxPages": 50,
+    "racks": [
+      "rack-live-a11y",
+      "rack-live-free"
+    ],
+    "individualProbes": [],
+    "excludedProbes": [],
+    "timeBudgetMs": 180000,
+    "maxFindings": null
+  },
+  "sondeScore": {
+    "score": 0,
+    "rawPenalty": 0,
+    "normalizedPenalty": 0,
+    "pagesScanned": 0,
+    "weightsVersion": "v0.1"
+  },
+  "avgFindingsPerPage": 0,
+  "complianceSummary": {
+    "total": 0,
+    "byLevel": {},
+    "bySeverity": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    },
+    "byCriterion": {}
+  },
+  "summary": {
+    "pagesAnalyzed": 0,
+    "pagesFailed": 0,
+    "totalFindings": 0,
+    "bySeverity": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    },
+    "byProbe": {},
+    "byType": {},
+    "durationMs": 206553
+  },
+  "jurisdiction": "MA",
+  "entityName": "City of Boston",
+  "scanSource": "live",
+  "findings": [],
+  "requestedJurisdictions": [
+    "us"
+  ],
+  "appliedJurisdictions": [
+    "us"
+  ]
+}

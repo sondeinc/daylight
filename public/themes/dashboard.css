@@ -1,0 +1,250 @@
+/**
+ * Dashboard Theme — Deep indigo data visualization.
+ *
+ * Dark mode by default. Designed for data-dense dashboards with sparklines,
+ * status dots, and stat cards. Monospace body for numeric alignment.
+ *
+ * Typography: Outfit (headings) + IBM Plex Mono (body + code)
+ */
+
+/* ─── Dark Mode (default for dashboards) ────────────────────���───── */
+:root {
+  color-scheme: dark;
+
+  --sonde-color-primary: #00d4aa;
+  --sonde-color-secondary: #818cf8;
+  --sonde-color-bg: #06060c;
+  --sonde-color-surface: #13131f;
+  --sonde-color-sidebar: #0a0a14;
+  --sonde-color-text: #d8d8e8;
+  --sonde-color-text-muted: #b5b5d0;
+  --sonde-color-text-heading: #f0f0ff;
+  --sonde-color-border: #595a70;
+  --sonde-color-border-subtle: #5e607b;
+  --sonde-color-accent: #00d4aa;
+  --sonde-color-accent-dim: #00d4aa33;
+
+  --sonde-color-pass: #34d399;
+  --sonde-color-fail: #ff8d8b;
+  --sonde-color-partial: #fbbf24;
+  --sonde-color-na: #a8a29e;
+  --sonde-color-info: #38bdf8;
+  --sonde-color-warning: #fbbf24;
+  --sonde-color-error: #ff8d8b;
+  --sonde-color-critical: #ff939f;
+
+  --sonde-font-body: 'IBM Plex Mono', 'Menlo', monospace;
+  --sonde-font-heading: 'Outfit', system-ui, sans-serif;
+  --sonde-font-mono: 'IBM Plex Mono', 'Menlo', monospace;
+  --sonde-font-size-base: 13px;
+  --sonde-line-height: 1.5;
+  --sonde-color-badge-partial-bg: #0b0700;
+  --sonde-color-badge-na-bg: #070707;
+}
+
+/* ─── Atmosphere gradients ──────────────────────────────────────── */
+body {
+  background-image:
+    radial-gradient(ellipse 800px 400px at 20% 0%, #00d4aa08 0%, transparent 70%),
+    radial-gradient(ellipse 600px 300px at 80% 100%, #818cf808 0%, transparent 70%);
+}
+
+/* ���── Light Mode — explicit via data-theme="light" ──────────────── */
+/* ─── Dark Mode — explicit via data-theme="dark" ─────────────────── */
+/* Mirrors `:root` so the validator's dark-attr bucket is populated. */
+[data-theme="dark"] {
+  color-scheme: dark;
+  --sonde-color-primary: #00d4aa;
+  --sonde-color-secondary: #818cf8;
+  --sonde-color-bg: #06060c;
+  --sonde-color-surface: #13131f;
+  --sonde-color-sidebar: #0a0a14;
+  --sonde-color-text: #d8d8e8;
+  --sonde-color-text-muted: #b5b5d0;
+  --sonde-color-text-heading: #f0f0ff;
+  --sonde-color-border: #595a70;
+  --sonde-color-border-subtle: #5e607b;
+  --sonde-color-accent: #00d4aa;
+  --sonde-color-accent-dim: #00d4aa33;
+  --sonde-color-pass: #34d399;
+  --sonde-color-fail: #ff8d8b;
+  --sonde-color-partial: #fbbf24;
+  --sonde-color-na: #a8a29e;
+  --sonde-color-info: #38bdf8;
+  --sonde-color-warning: #fbbf24;
+  --sonde-color-error: #ff8d8b;
+  --sonde-color-critical: #ff939f;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]):not([data-theme="high-contrast"]) {
+    color-scheme: dark;
+    --sonde-color-primary: #00d4aa;
+    --sonde-color-secondary: #818cf8;
+    --sonde-color-bg: #06060c;
+    --sonde-color-surface: #13131f;
+    --sonde-color-sidebar: #0a0a14;
+    --sonde-color-text: #d8d8e8;
+    --sonde-color-text-muted: #b5b5d0;
+    --sonde-color-text-heading: #f0f0ff;
+    --sonde-color-border: #595a70;
+    --sonde-color-border-subtle: #5e607b;
+    --sonde-color-accent: #00d4aa;
+    --sonde-color-accent-dim: #00d4aa33;
+    --sonde-color-pass: #34d399;
+    --sonde-color-fail: #ff8d8b;
+    --sonde-color-partial: #fbbf24;
+    --sonde-color-na: #a8a29e;
+    --sonde-color-info: #38bdf8;
+    --sonde-color-warning: #fbbf24;
+    --sonde-color-error: #ff8d8b;
+    --sonde-color-critical: #ff939f;
+  }
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+  --sonde-color-primary: #00845c;
+  --sonde-color-secondary: #4f46e5;
+  --sonde-color-bg: #f8fafc;
+  --sonde-color-surface: #ffffff;
+  --sonde-color-sidebar: #f1f5f9;
+  --sonde-color-text: #1e293b;
+  --sonde-color-text-muted: #545e70;
+  --sonde-color-text-heading: #0f172a;
+  --sonde-color-border: #8c9299;
+  --sonde-color-border-subtle: #929599;
+  --sonde-color-accent: #046d55;
+  --sonde-color-accent-dim: #046d5522;
+
+  --sonde-color-pass: #008237;
+  --sonde-color-fail: #da2425;
+  --sonde-color-partial: #a95b00;
+  --sonde-color-na: #766f6b;
+  --sonde-color-info: #0073ae;
+  --sonde-color-warning: #a95b00;
+  --sonde-color-error: #da2425;
+  --sonde-color-critical: #dc1545;
+  --sonde-color-badge-partial-bg: #f9f3df;
+  --sonde-color-badge-na-bg: #f5f5f4;
+}
+
+/* ─── Light Mode — automatic via OS preference ──────────��───────── */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    color-scheme: light;
+    --sonde-color-primary: #00845c;
+    --sonde-color-secondary: #4f46e5;
+    --sonde-color-bg: #f8fafc;
+    --sonde-color-surface: #ffffff;
+    --sonde-color-sidebar: #f1f5f9;
+    --sonde-color-text: #1e293b;
+    --sonde-color-text-muted: #545e70;
+    --sonde-color-text-heading: #0f172a;
+    --sonde-color-border: #8c9299;
+    --sonde-color-border-subtle: #929599;
+    --sonde-color-accent: #047857;
+    --sonde-color-accent-dim: #04785722;
+
+    --sonde-color-pass: #008237;
+    --sonde-color-fail: #b84f46;
+    --sonde-color-partial: #a95b00;
+    --sonde-color-na: #766f6c;
+    --sonde-color-info: #0073ae;
+    --sonde-color-warning: #a95b00;
+    --sonde-color-error: #b84f46;
+    --sonde-color-critical: #d91e49;
+  --sonde-color-badge-partial-bg: #f9f3df;
+  --sonde-color-badge-na-bg: #f5f5f4;
+  }
+}
+
+/* ─── High Contrast ───────���─────────────────────────────────────── */
+@media (prefers-contrast: more) {
+  :root {
+    --sonde-color-text: #777777;
+    --sonde-color-text-muted: #787776;
+    --sonde-color-text-heading: #5c5c5c;
+    --sonde-color-border: #5c5c5c;
+    --sonde-color-border-subtle: #626261;
+  --sonde-color-surface: #060611;
+  --sonde-color-sidebar: #070610;
+  }
+}
+
+/* ─── Reduced Motion ───────��────────────────────────────────────── */
+/* Reduced-motion block inherited from tokens.css. */
+
+/* ─���─ Print ────────────────────────────��────────────────────────── */
+@media print {
+  :root {
+    --sonde-color-bg: #ffffff;
+    --sonde-color-surface: #ffffff;
+    --sonde-color-surface-elevated: #ffffff;
+    --sonde-color-text: #000000;
+    --sonde-color-text-heading: #000000;
+    --sonde-color-border: #959494;
+    --sonde-color-border-subtle: #5e607b;
+    --sonde-shadow-sm: none;
+    --sonde-shadow-md: none;
+    --sonde-shadow-lg: none;
+  --sonde-color-primary: #00875e;
+  --sonde-color-pass: #008138;
+  --sonde-color-partial: #9c6200;
+  --sonde-color-info: #0075a0;
+  --sonde-color-warning: #9c6200;
+  --sonde-color-text-muted: #68788e;
+  --sonde-color-fail: #d72a30;
+  --sonde-color-na: #756f6c;
+  --sonde-color-error: #d72a30;
+  --sonde-color-secondary: #646cd5;
+  --sonde-color-critical: #e12950;
+  --sonde-color-badge-critical-bg: #fffefe;
+  --sonde-color-badge-partial-bg: #f8f2de;
+  --sonde-color-badge-na-bg: #f5f4f4;
+  }
+  body, .sonde-exhibit, .scribe-shell__main {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .site-nav, .settings-dropdown, footer, .sonde-nav, .sonde-controls,
+  .scribe-leaderboard-pagination, .leaderboard-pagination, [data-print="hide"] {
+    display: none !important;
+  }
+  details, details:not([open]) { display: block; }
+  details > summary { display: none; }
+  details > * { display: revert; }
+  pre, code, .exhibit-code-block {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    orphans: 4;
+    widows: 4;
+  }
+  section, .vpat-section, tr { break-inside: avoid; }
+  h1, h2, h3, h4, h5, h6 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+  thead { display: table-header-group; }
+  a[href]:not([href^="#"]):not([href^="mailto:"]):not([href^="tel:"]):not(.finding-link-btn):not(.finding-feedback-btn)::after {
+    content: " (" attr(href) ")";
+  }
+  th.sortable::after, th[data-sort-key]::after {
+    content: "";
+    display: none;
+  }
+  tr[data-filtered="true"] { display: none; }
+  body[data-scribe-print-rows="all"] tr[data-filtered="true"] { display: table-row; }
+}
+
+/* ─── Forced Colors (Windows High Contrast) ───────────────────���─── */
+@media (forced-colors: active) {
+  :root {
+    --sonde-color-primary: #00845c;
+    --sonde-color-text: CanvasText;
+    --sonde-color-bg: Canvas;
+    --sonde-color-surface: Canvas;
+    --sonde-color-border: #595a70;
+    --sonde-color-accent: Highlight;
+  }
+}

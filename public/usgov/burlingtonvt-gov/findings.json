@@ -1,0 +1,4608 @@
+{
+  "url": "https://burlingtonvt.gov",
+  "slug": "burlingtonvt-gov",
+  "status": "complete",
+  "scanDate": "2026-04-29T00:28:51.359Z",
+  "scanConfig": {
+    "scope": "site",
+    "maxPages": 50,
+    "racks": [
+      "rack-live-a11y",
+      "rack-live-free"
+    ],
+    "individualProbes": [],
+    "excludedProbes": [],
+    "timeBudgetMs": 180000,
+    "maxFindings": null
+  },
+  "sondeScore": {
+    "score": 928,
+    "rawPenalty": 290.75,
+    "normalizedPenalty": 58.15,
+    "pagesScanned": 5,
+    "weightsVersion": "v0.1"
+  },
+  "avgFindingsPerPage": 33.8,
+  "elementComplianceRate": 97.8,
+  "totalElements": 4015,
+  "elementsWithFindings": 89,
+  "complianceSummary": {
+    "total": 169,
+    "byLevel": {
+      "A": 60,
+      "AA": 26
+    },
+    "bySeverity": {
+      "critical": 9,
+      "high": 26,
+      "medium": 119,
+      "low": 15
+    },
+    "byCriterion": {
+      "WCAG 4.1.2": 8,
+      "WCAG 1.4.3": 9,
+      "WCAG 1.1.1": 8,
+      "WCAG 1.3.1": 6,
+      "WCAG 2.4.3": 2,
+      "WCAG 2.4.1": 2,
+      "WCAG 1.4.1": 34,
+      "WCAG 4.1.3": 1,
+      "WCAG 1.4.10": 9,
+      "WCAG 1.4.12": 7
+    }
+  },
+  "summary": {
+    "pagesAnalyzed": 5,
+    "pagesFailed": 0,
+    "totalFindings": 169,
+    "bySeverity": {
+      "critical": 9,
+      "high": 26,
+      "medium": 119,
+      "low": 15
+    },
+    "byProbe": {},
+    "byType": {},
+    "durationMs": 212467
+  },
+  "jurisdiction": "VT",
+  "entityName": "City of Burlington (VT)",
+  "scanSource": "live",
+  "findings": [
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 4.1.2",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+      "conformanceLevel": "A",
+      "severity": "critical",
+      "description": "Interactive element with role=\"textbox\" has no accessible name. Screen readers cannot identify this control.",
+      "selector": "[role=\"textbox\"][data-a11y-node=\"238035\"]",
+      "elementHtml": "<!-- a11y: role=\"textbox\" -->",
+      "discoveredAt": "2026-04-28T17:28:23.627Z",
+      "pageUrl": "https://burlingtonvt.gov/1168/ICE-Updates-and-Press-Releases",
+      "metadata": {
+        "backendNodeId": 238035,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.2"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.2"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 4.1.2",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+      "conformanceLevel": "A",
+      "severity": "critical",
+      "description": "Interactive element with role=\"textbox\" has no accessible name. Screen readers cannot identify this control.",
+      "selector": "[role=\"textbox\"][data-a11y-node=\"176127\"]",
+      "elementHtml": "<!-- a11y: role=\"textbox\" -->",
+      "discoveredAt": "2026-04-28T17:27:40.819Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "backendNodeId": 176127,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.2"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.2"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 4.1.2",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+      "conformanceLevel": "A",
+      "severity": "critical",
+      "description": "Form elements must have labels: Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+      "selector": "input[name=\"EMAIL\"]",
+      "elementHtml": "<input name=\"EMAIL\" type=\"email\" value=\"\" autocomplete=\"email\" style=\"box-sizing: border-b...\">",
+      "discoveredAt": "2026-04-28T17:28:23.872Z",
+      "pageUrl": "https://burlingtonvt.gov/1168/ICE-Updates-and-Press-Releases",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 4.1.2"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 4.1.2"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 4.1.2",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+      "conformanceLevel": "A",
+      "severity": "critical",
+      "description": "Form elements must have labels: Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+      "selector": "input[name=\"EMAIL\"]",
+      "elementHtml": "<input name=\"EMAIL\" type=\"email\" value=\"\" autocomplete=\"email\" style=\"box-sizing: border-b...\">",
+      "discoveredAt": "2026-04-28T17:27:41.069Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 4.1.2"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 4.1.2"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgb(255, 255, 255), background: rgb(255, 255, 255). Text: \"28\"",
+      "selector": "time",
+      "elementHtml": "<time datetime=\"2026-04-28\">28</time>",
+      "discoveredAt": "2026-04-28T17:25:33.311Z",
+      "pageUrl": "https://burlingtonvt.gov/",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#777676",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.528436450868204,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "28",
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgba(0, 0, 0, 0), background: rgb(255, 255, 255). Text: \"Select LanguageAbkhazAcehneseAcholiAfarAfrikaansAlbanianAlur\"",
+      "selector": "div.skiptranslate.goog-te-gadget",
+      "elementHtml": "<div class=\"skiptranslate goog-te-gadget\" dir=\"ltr\" style=\"\" role=\"region\" aria-label=\"Website Translation by Google Translate\"><div id=\":0.targetLanguage\"><select class=\"goog-te-combo\" aria-label=\"Se",
+      "discoveredAt": "2026-04-28T17:26:45.217Z",
+      "pageUrl": "https://burlingtonvt.gov/1/Home",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#777676",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.528436450868204,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Select LanguageAbkhazAcehneseAcholiAfarAfrikaansAlbanianAlur",
+        "backendNodeId": 109506,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "color-contrast",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "critical",
+      "description": "Insufficient color contrast: 1.00:1 (required: 4.5:1 for normal text). Foreground: rgba(0, 0, 0, 0), background: rgb(255, 255, 255). Text: \"Select LanguageAbkhazAcehneseAcholiAfarAfrikaansAlbanianAlur\"",
+      "selector": "div.skiptranslate.goog-te-gadget",
+      "elementHtml": "<div class=\"skiptranslate goog-te-gadget\" dir=\"ltr\" style=\"\" role=\"region\" aria-label=\"Website Translation by Google Translate\"><div id=\":0.targetLanguage\"><select class=\"goog-te-combo\" aria-label=\"Se",
+      "discoveredAt": "2026-04-28T17:28:23.586Z",
+      "pageUrl": "https://burlingtonvt.gov/1168/ICE-Updates-and-Press-Releases",
+      "metadata": {
+        "contrastForeground": "#ffffff",
+        "contrastBackground": "#ffffff",
+        "contrastSuggestedForeground": "#777676",
+        "contrastRatio": 1,
+        "contrastSuggestedRatio": 4.528436450868204,
+        "contrastRequiredRatio": 4.5,
+        "contrastIsLargeText": false,
+        "contrastTextSample": "Select LanguageAbkhazAcehneseAcholiAfarAfrikaansAlbanianAlur",
+        "backendNodeId": 290375,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "color-contrast"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"62234\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:26:45.254Z",
+      "pageUrl": "https://burlingtonvt.gov/1/Home",
+      "metadata": {
+        "backendNodeId": 62234,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"63055\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:26:45.254Z",
+      "pageUrl": "https://burlingtonvt.gov/1/Home",
+      "metadata": {
+        "backendNodeId": 63055,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"240300\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:28:23.627Z",
+      "pageUrl": "https://burlingtonvt.gov/1168/ICE-Updates-and-Press-Releases",
+      "metadata": {
+        "backendNodeId": 240300,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"240782\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:28:23.627Z",
+      "pageUrl": "https://burlingtonvt.gov/1168/ICE-Updates-and-Press-Releases",
+      "metadata": {
+        "backendNodeId": 240782,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"115384\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:27:12.413Z",
+      "pageUrl": "https://burlingtonvt.gov/27/Government",
+      "metadata": {
+        "backendNodeId": 115384,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"176333\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" desc=\"Emma Mulvaney-Stanak Portrait\" -->",
+      "discoveredAt": "2026-04-28T17:27:40.819Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "backendNodeId": 176333,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"179078\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:27:40.819Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "backendNodeId": 179078,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.1.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Image has no accessible name in the accessibility tree. Screen readers will skip or announce it generically.",
+      "selector": "[role=\"image\"][data-a11y-node=\"178450\"]",
+      "elementHtml": "<!-- a11y: role=\"image\" -->",
+      "discoveredAt": "2026-04-28T17:27:40.819Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "backendNodeId": 178450,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.1.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.1.1"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "high",
+      "description": "ARIA dialog and alertdialog nodes should have an accessible name: Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+      "selector": "#ae_toolbar,#ae_toolbar_container",
+      "elementHtml": "<div class=\"right-lower lite-mode desktopConfig \" id=\"ae_toolbar_container\" role=\"dialog\" aria-modal=\"true\" aria-labelledby=\"ae_toolbar_title\" data-audioeye-lr-c_big=\"1\" style=\"display: none;\">",
+      "discoveredAt": "2026-04-28T17:26:45.540Z",
+      "pageUrl": "https://burlingtonvt.gov/1/Home",
+      "metadata": {
+        "backendNodeId": 110470,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          },
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Elements must meet minimum color contrast ratio thresholds: Fix any of the following:\n  Element has insufficient color contrast of 2.32 (foreground color: #ffffff, background color: #aaaaaa, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1",
+      "selector": "input[name=\"subscribe\"]",
+      "elementHtml": "<input name=\"subscribe\" type=\"submit\" value=\"Subscribe\" style=\"box-sizing: border-b...\">",
+      "discoveredAt": "2026-04-28T17:28:23.872Z",
+      "pageUrl": "https://burlingtonvt.gov/1168/ICE-Updates-and-Press-Releases",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Elements must meet minimum color contrast ratio thresholds: Fix any of the following:\n  Element has insufficient color contrast of 2.01 (foreground color: #444444, background color: #0073cf, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1",
+      "selector": ".VIpgJd-ZVi9od-l4eHX-hSRGPd",
+      "elementHtml": "<a class=\"VIpgJd-ZVi9od-l4eHX-hSRGPd\" href=\"https://translate.google.com\" target=\"_blank\" rel=\"noopener\" aria-describedby=\"audioeye_new_window_message\">",
+      "discoveredAt": "2026-04-28T17:28:23.872Z",
+      "pageUrl": "https://burlingtonvt.gov/1168/ICE-Updates-and-Press-Releases",
+      "metadata": {
+        "backendNodeId": 289900,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 1.3.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements: Fix all of the following:\n  List element has direct children that are not allowed: [role=none]",
+      "selector": ".layout1",
+      "elementHtml": "<ol class=\"semanticList layout1\">",
+      "discoveredAt": "2026-04-28T17:28:23.872Z",
+      "pageUrl": "https://burlingtonvt.gov/1168/ICE-Updates-and-Press-Releases",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 1.3.1"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 1.3.1"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Elements must meet minimum color contrast ratio thresholds: Fix any of the following:\n  Element has insufficient color contrast of 3.99 (foreground color: #ff0000, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1",
+      "selector": "input[name=\"EMAIL\"]",
+      "elementHtml": "<input name=\"EMAIL\" type=\"email\" value=\"\" autocomplete=\"email\" style=\"box-sizing: border-b...\">",
+      "discoveredAt": "2026-04-28T17:28:23.872Z",
+      "pageUrl": "https://burlingtonvt.gov/1168/ICE-Updates-and-Press-Releases",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "high",
+      "description": "ARIA dialog and alertdialog nodes should have an accessible name: Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+      "selector": "#ae_toolbar,#ae_toolbar_container",
+      "elementHtml": "<div class=\"right-lower lite-mode desktopConfig \" id=\"ae_toolbar_container\" role=\"dialog\" aria-modal=\"true\" aria-labelledby=\"ae_toolbar_title\" style=\"display: none;\">",
+      "discoveredAt": "2026-04-28T17:28:23.872Z",
+      "pageUrl": "https://burlingtonvt.gov/1168/ICE-Updates-and-Press-Releases",
+      "metadata": {
+        "backendNodeId": 291339,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          },
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "high",
+      "description": "ARIA dialog and alertdialog nodes should have an accessible name: Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+      "selector": "#ae_toolbar,#ae_toolbar_container",
+      "elementHtml": "<div class=\"right-lower lite-mode desktopConfig \" id=\"ae_toolbar_container\" role=\"dialog\" aria-modal=\"true\" aria-labelledby=\"ae_toolbar_title\" style=\"display: none;\">",
+      "discoveredAt": "2026-04-28T17:27:12.614Z",
+      "pageUrl": "https://burlingtonvt.gov/27/Government",
+      "metadata": {
+        "backendNodeId": 174924,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          },
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "high",
+      "description": "ARIA dialog and alertdialog nodes should have an accessible name: Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+      "selector": "#ae_toolbar,#ae_toolbar_container",
+      "elementHtml": "<div class=\"right-lower lite-mode desktopConfig \" id=\"ae_toolbar_container\" role=\"dialog\" aria-modal=\"true\" aria-labelledby=\"ae_toolbar_title\" style=\"display: none;\">",
+      "discoveredAt": "2026-04-28T17:27:41.069Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "backendNodeId": 236841,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          },
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Elements must meet minimum color contrast ratio thresholds: Fix any of the following:\n  Element has insufficient color contrast of 3.99 (foreground color: #ff0000, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1",
+      "selector": "input[name=\"EMAIL\"]",
+      "elementHtml": "<input name=\"EMAIL\" type=\"email\" value=\"\" autocomplete=\"email\" style=\"box-sizing: border-b...\">",
+      "discoveredAt": "2026-04-28T17:27:41.069Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Elements must meet minimum color contrast ratio thresholds: Fix any of the following:\n  Element has insufficient color contrast of 2.01 (foreground color: #444444, background color: #0073cf, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1",
+      "selector": ".VIpgJd-ZVi9od-l4eHX-hSRGPd",
+      "elementHtml": "<a class=\"VIpgJd-ZVi9od-l4eHX-hSRGPd\" href=\"https://translate.google.com\" target=\"_blank\" rel=\"noopener\" aria-describedby=\"audioeye_new_window_message\">",
+      "discoveredAt": "2026-04-28T17:27:41.069Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "standard": "WCAG 1.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "conformanceLevel": "AA",
+      "severity": "high",
+      "description": "Elements must meet minimum color contrast ratio thresholds: Fix any of the following:\n  Element has insufficient color contrast of 2.32 (foreground color: #ffffff, background color: #aaaaaa, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1",
+      "selector": "input[name=\"subscribe\"]",
+      "elementHtml": "<input name=\"subscribe\" type=\"submit\" value=\"Subscribe\" style=\"box-sizing: border-b...\">",
+      "discoveredAt": "2026-04-28T17:27:41.069Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ],
+        "standards": [
+          "WCAG 1.4.3"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ],
+      "standards": [
+        "WCAG 1.4.3"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Focus jumps backward from \"Read on... About Transportation, Energy, and Utilities Commi\" to \"Police Commission Meeting\" (visual distance: 586px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#widgetCalendarae56c441-338b-4c04-94a6-6ede14696394 > div:nth-of-type(1) > div > div:nth-of-type(2) > div:nth-of-type(2) > ol > li:nth-of-type(1) > div > strong > a",
+      "elementHtml": "<a>Police Commission Meeting</a>",
+      "discoveredAt": "2026-04-28T17:26:19.126Z",
+      "pageUrl": "https://burlingtonvt.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "focus-order",
+      "standard": "WCAG 2.4.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+      "conformanceLevel": "A",
+      "severity": "high",
+      "description": "Focus jumps backward from \"View All News\" to \"MEETINGS\" (visual distance: 1131px). No explicit tabIndex — likely a DOM order issue.",
+      "selector": "#tabBtn35c806dd-6af6-422e-9a26-11e96353e8d1_0",
+      "elementHtml": "<a>MEETINGS</a>",
+      "discoveredAt": "2026-04-28T17:26:19.126Z",
+      "pageUrl": "https://burlingtonvt.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "focus-order"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.3"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:25:33.307Z",
+      "pageUrl": "https://burlingtonvt.gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:26:45.206Z",
+      "pageUrl": "https://burlingtonvt.gov/1/Home",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:28:23.582Z",
+      "pageUrl": "https://burlingtonvt.gov/1168/ICE-Updates-and-Press-Releases",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:27:12.371Z",
+      "pageUrl": "https://burlingtonvt.gov/27/Government",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "security-headers",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security header (HSTS)",
+      "selector": "",
+      "elementHtml": "",
+      "discoveredAt": "2026-04-28T17:27:40.773Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "security-headers"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "keyboard-trap",
+      "standard": "WCAG 2.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks",
+      "conformanceLevel": "A",
+      "severity": "low",
+      "description": "Deep focus region: menu \"ICE Updates and Press Releases\n\t\t\t\t\n\t\t\n\t\" has 19 tab stops before focus escapes. Consider adding skip navigation or grouping with arrow keys.",
+      "selector": "#secondaryMenusecondaryNav",
+      "elementHtml": "<ol role=\"menu\">ICE Updates and Press Releases\n\t\t\t\t\n\t\t\n\t</ol>",
+      "discoveredAt": "2026-04-28T17:27:57.791Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "backendNodeId": 236444,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "keyboard-trap"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.1"
+      ]
+    },
+    {
+      "probe": "keyboard-trap",
+      "standard": "WCAG 2.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks",
+      "conformanceLevel": "A",
+      "severity": "low",
+      "description": "Deep focus region: nav \"ICE Updates and Press Releases\n\t\t\t\t\n\t\t\n\t\" has 19 tab stops before focus escapes. Consider adding skip navigation or grouping with arrow keys.",
+      "selector": "#secondaryNav",
+      "elementHtml": "<nav role=\"nav\">ICE Updates and Press Releases\n\t\t\t\t\n\t\t\n\t</nav>",
+      "discoveredAt": "2026-04-28T17:27:57.791Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "backendNodeId": 233968,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "keyboard-trap"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 2.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 2.4.1"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://twitter.com/btvparks returned status 403 Forbidden after 1 attempts",
+      "selector": "#graphicLinkWidgetfd61b46c-0b4a-4807-adcb-dabcc92d3530 > div:nth-of-type(2) > nav > div > div:nth-of-type(2) > ul > li > a",
+      "elementHtml": "<a href=\"https://twitter.com/btvparks\"></a>",
+      "discoveredAt": "2026-04-28T17:26:14.169Z",
+      "pageUrl": "https://burlingtonvt.gov/",
+      "metadata": {
+        "href": "https://twitter.com/btvparks",
+        "text": "",
+        "protocol": "https:",
+        "attempts": 1,
+        "status": 403,
+        "statusText": "Forbidden",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://twitter.com/btvparks returned status 403 Forbidden after 1 attempts",
+      "selector": "#graphicLinkWidgetfd61b46c-0b4a-4807-adcb-dabcc92d3530 > div:nth-of-type(2) > nav > div > div:nth-of-type(2) > ul > li > a",
+      "elementHtml": "<a href=\"https://twitter.com/btvparks\"></a>",
+      "discoveredAt": "2026-04-28T17:26:50.705Z",
+      "pageUrl": "https://burlingtonvt.gov/1/Home",
+      "metadata": {
+        "href": "https://twitter.com/btvparks",
+        "text": "",
+        "protocol": "https:",
+        "attempts": 1,
+        "status": 403,
+        "statusText": "Forbidden",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://twitter.com/btvparks returned status 403 Forbidden after 1 attempts",
+      "selector": "#graphicLinkWidget32b3e12a-a6d1-4e74-b09f-0eda00d78f78 > div:nth-of-type(2) > nav > div > div:nth-of-type(2) > ul > li > a",
+      "elementHtml": "<a href=\"https://twitter.com/btvparks\"></a>",
+      "discoveredAt": "2026-04-28T17:28:25.816Z",
+      "pageUrl": "https://burlingtonvt.gov/1168/ICE-Updates-and-Press-Releases",
+      "metadata": {
+        "href": "https://twitter.com/btvparks",
+        "text": "",
+        "protocol": "https:",
+        "attempts": 1,
+        "status": 403,
+        "statusText": "Forbidden",
+        "backendNodeId": 290233,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://twitter.com/btvparks returned status 403 Forbidden after 1 attempts",
+      "selector": "#graphicLinkWidget32b3e12a-a6d1-4e74-b09f-0eda00d78f78 > div:nth-of-type(2) > nav > div > div:nth-of-type(2) > ul > li > a",
+      "elementHtml": "<a href=\"https://twitter.com/btvparks\"></a>",
+      "discoveredAt": "2026-04-28T17:27:15.076Z",
+      "pageUrl": "https://burlingtonvt.gov/27/Government",
+      "metadata": {
+        "href": "https://twitter.com/btvparks",
+        "text": "",
+        "protocol": "https:",
+        "attempts": 1,
+        "status": 403,
+        "statusText": "Forbidden",
+        "backendNodeId": 174636,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "low",
+      "description": "Broken link: https://twitter.com/btvparks returned status 403 Forbidden after 1 attempts",
+      "selector": "#graphicLinkWidget32b3e12a-a6d1-4e74-b09f-0eda00d78f78 > div:nth-of-type(2) > nav > div > div:nth-of-type(2) > ul > li > a",
+      "elementHtml": "<a href=\"https://twitter.com/btvparks\"></a>",
+      "discoveredAt": "2026-04-28T17:27:49.679Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "href": "https://twitter.com/btvparks",
+        "text": "",
+        "protocol": "https:",
+        "attempts": 1,
+        "status": 403,
+        "statusText": "Forbidden",
+        "backendNodeId": 236553,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-28T17:26:45.522Z",
+      "pageUrl": "https://burlingtonvt.gov/1/Home",
+      "metadata": {
+        "backendNodeId": 109099,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-28T17:26:45.522Z",
+      "pageUrl": "https://burlingtonvt.gov/1/Home",
+      "metadata": {
+        "backendNodeId": 109020,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-28T17:28:23.851Z",
+      "pageUrl": "https://burlingtonvt.gov/1168/ICE-Updates-and-Press-Releases",
+      "metadata": {
+        "backendNodeId": 289976,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-28T17:28:23.851Z",
+      "pageUrl": "https://burlingtonvt.gov/1168/ICE-Updates-and-Press-Releases",
+      "metadata": {
+        "backendNodeId": 289897,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-dash\" still running after page readiness",
+      "selector": "circle",
+      "elementHtml": "<circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>",
+      "discoveredAt": "2026-04-28T17:27:41.052Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "stuck-loading",
+      "severity": "low",
+      "description": "Possible stuck loading animation: \"spinner-rotator\" still running after page readiness",
+      "selector": "svg",
+      "elementHtml": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"VIpgJd-ZVi9od-aZ2wEe\" width=\"96px\" height=\"96px\" viewBox=\"0 0 66 66\"><circle class=\"VIpgJd-ZVi9od-aZ2wEe-Jt5cK\" fill=\"none\" stroke-width=\"6\" stroke-linec",
+      "discoveredAt": "2026-04-28T17:27:41.052Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "backendNodeId": 236303,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "stuck-loading"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.3.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Page has 4 \"navigation\" landmarks but only 1 have distinct labels. Screen reader users cannot distinguish between them.",
+      "selector": "[role=\"navigation\"]",
+      "elementHtml": "<!-- 4 navigation landmarks, 1 labeled -->",
+      "discoveredAt": "2026-04-28T17:25:33.380Z",
+      "pageUrl": "https://burlingtonvt.gov/",
+      "metadata": {
+        "backendNodeId": 56593,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.3.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.3.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.3.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Page has 4 \"navigation\" landmarks but only 1 have distinct labels. Screen reader users cannot distinguish between them.",
+      "selector": "[role=\"navigation\"]",
+      "elementHtml": "<!-- 4 navigation landmarks, 1 labeled -->",
+      "discoveredAt": "2026-04-28T17:26:45.254Z",
+      "pageUrl": "https://burlingtonvt.gov/1/Home",
+      "metadata": {
+        "backendNodeId": 109162,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.3.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.3.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 4.1.2",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Focusable element has generic role. Keyboard users can reach it but screen readers provide no context about its purpose.",
+      "selector": "[role=\"generic\"][data-a11y-node=\"64390\"]",
+      "elementHtml": "<!-- a11y: role=\"generic\" -->",
+      "discoveredAt": "2026-04-28T17:26:45.254Z",
+      "pageUrl": "https://burlingtonvt.gov/1/Home",
+      "metadata": {
+        "backendNodeId": 64390,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.2"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.2"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.3.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Page has 7 \"navigation\" landmarks but only 4 have distinct labels. Screen reader users cannot distinguish between them.",
+      "selector": "[role=\"navigation\"]",
+      "elementHtml": "<!-- 7 navigation landmarks, 4 labeled -->",
+      "discoveredAt": "2026-04-28T17:28:23.627Z",
+      "pageUrl": "https://burlingtonvt.gov/1168/ICE-Updates-and-Press-Releases",
+      "metadata": {
+        "backendNodeId": 290037,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.3.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.3.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 4.1.2",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Focusable element has generic role. Keyboard users can reach it but screen readers provide no context about its purpose.",
+      "selector": "[role=\"generic\"][data-a11y-node=\"242045\"]",
+      "elementHtml": "<!-- a11y: role=\"generic\" -->",
+      "discoveredAt": "2026-04-28T17:28:23.627Z",
+      "pageUrl": "https://burlingtonvt.gov/1168/ICE-Updates-and-Press-Releases",
+      "metadata": {
+        "backendNodeId": 242045,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.2"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.2"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 4.1.2",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Focusable element has generic role. Keyboard users can reach it but screen readers provide no context about its purpose.",
+      "selector": "[role=\"generic\"][data-a11y-node=\"115923\"]",
+      "elementHtml": "<!-- a11y: role=\"generic\" -->",
+      "discoveredAt": "2026-04-28T17:27:12.413Z",
+      "pageUrl": "https://burlingtonvt.gov/27/Government",
+      "metadata": {
+        "backendNodeId": 115923,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.2"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.2"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.3.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Page has 7 \"navigation\" landmarks but only 4 have distinct labels. Screen reader users cannot distinguish between them.",
+      "selector": "[role=\"navigation\"]",
+      "elementHtml": "<!-- 7 navigation landmarks, 4 labeled -->",
+      "discoveredAt": "2026-04-28T17:27:12.413Z",
+      "pageUrl": "https://burlingtonvt.gov/27/Government",
+      "metadata": {
+        "backendNodeId": 174449,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.3.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.3.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 1.3.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Page has 6 \"navigation\" landmarks but only 3 have distinct labels. Screen reader users cannot distinguish between them.",
+      "selector": "[role=\"navigation\"]",
+      "elementHtml": "<!-- 6 navigation landmarks, 3 labeled -->",
+      "discoveredAt": "2026-04-28T17:27:40.819Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "backendNodeId": 236366,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 1.3.1"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 1.3.1"
+      ]
+    },
+    {
+      "probe": "a11y-tree",
+      "standard": "WCAG 4.1.2",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Focusable element has generic role. Keyboard users can reach it but screen readers provide no context about its purpose.",
+      "selector": "[role=\"generic\"][data-a11y-node=\"180365\"]",
+      "elementHtml": "<!-- a11y: role=\"generic\" -->",
+      "discoveredAt": "2026-04-28T17:27:40.819Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "backendNodeId": 180365,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value",
+        "provenanceSources": [
+          {
+            "lens": "browser-a11y",
+            "probe": "a11y-tree"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "browser-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.2"
+        ]
+      },
+      "detectedBy": [
+        "browser-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.2"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "ol[role=\"tablist\"]",
+      "elementHtml": "<ol class=\"tabbedWidget cpTabs  \" role=\"tablist\" aria-hidden=\"false\" style=\"\">",
+      "discoveredAt": "2026-04-28T17:25:36.693Z",
+      "pageUrl": "https://burlingtonvt.gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": "#graphicLinkWidget1eac821e-5bdd-4711-a6c3-ff85990e36b7 > .cpGrid3.widgetBody.cpGrid > .widgetGraphicLinksNav",
+      "elementHtml": "<nav class=\"widgetGraphicLinksNav\">",
+      "discoveredAt": "2026-04-28T17:25:36.693Z",
+      "pageUrl": "https://burlingtonvt.gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".cpBylineTextTS",
+      "elementHtml": "<span class=\"cpBylineTextTS\">Government Websites by <a href=\"https://connect.civicplus.com/referral\">CivicPlus®</a></span>",
+      "discoveredAt": "2026-04-28T17:25:36.693Z",
+      "pageUrl": "https://burlingtonvt.gov/",
+      "metadata": {
+        "backendNodeId": 56916,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#tab35c806dd-6af6-422e-9a26-11e96353e8d1_0",
+      "elementHtml": "<div class=\"tabbedWidget cpTabPanel showing\" style=\"\" id=\"tab35c806dd-6af6-422e-9a26-11e96353e8d1_0\" role=\"tabpanel\" aria-labelledby=\"tabBtn35c806dd-6af6-422e-9a26-11e96353e8d1_0\" tabindex=\"-1\">",
+      "discoveredAt": "2026-04-28T17:25:36.693Z",
+      "pageUrl": "https://burlingtonvt.gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#divInfoAdvc36bd157-3ae7-4b61-a022-95aa3388c8e7",
+      "elementHtml": "<section id=\"divInfoAdvc36bd157-3...\" class=\"widget widgetInfoAdv...\" data-modulewidgettyp...=\"infoAdv\" data-elementquerycla...=\"{\"wide-narrow\":\"min-...\" data-elementquerymat...=\"matchMultiColumn\" dat...",
+      "discoveredAt": "2026-04-28T17:25:36.693Z",
+      "pageUrl": "https://burlingtonvt.gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".user",
+      "elementHtml": "<div class=\"cpToolbar user public\" style=\"z-index: 1;\">",
+      "discoveredAt": "2026-04-28T17:25:36.693Z",
+      "pageUrl": "https://burlingtonvt.gov/",
+      "metadata": {
+        "backendNodeId": 56561,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#widgetNewsFlasha7527ea5-d54f-4b6d-8273-7a702117e9fd > .cpGrid1.widgetBody.cpGrid",
+      "elementHtml": "<div class=\"widgetBody cpGrid cpGrid1 \">",
+      "discoveredAt": "2026-04-28T17:25:36.693Z",
+      "pageUrl": "https://burlingtonvt.gov/",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#\\31 _divAlertBar",
+      "elementHtml": "<div id=\"1_divAlertBar\" class=\"alertToolbar cpToolbar\" style=\"background: rgb(0, 100, 0); z-index: 2;\">",
+      "discoveredAt": "2026-04-28T17:25:36.693Z",
+      "pageUrl": "https://burlingtonvt.gov/",
+      "metadata": {
+        "backendNodeId": 56553,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": "#graphicLinkWidget1eac821e-5bdd-4711-a6c3-ff85990e36b7 > .cpGrid3.widgetBody.cpGrid > .widgetGraphicLinksNav",
+      "elementHtml": "<nav class=\"widgetGraphicLinksNav\">",
+      "discoveredAt": "2026-04-28T17:26:45.540Z",
+      "pageUrl": "https://burlingtonvt.gov/1/Home",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "ol[aria-hidden=\"false\"]",
+      "elementHtml": "<ol class=\"tabbedWidget cpTabs  \" role=\"tablist\" aria-hidden=\"false\" style=\"\">",
+      "discoveredAt": "2026-04-28T17:26:45.540Z",
+      "pageUrl": "https://burlingtonvt.gov/1/Home",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#\\31 _divAlertBar",
+      "elementHtml": "<div id=\"1_divAlertBar\" class=\"alertToolbar cpToolbar\" style=\"background: rgb(0, 100, 0); z-index: 2;\">",
+      "discoveredAt": "2026-04-28T17:26:45.540Z",
+      "pageUrl": "https://burlingtonvt.gov/1/Home",
+      "metadata": {
+        "backendNodeId": 109122,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#tab35c806dd-6af6-422e-9a26-11e96353e8d1_0",
+      "elementHtml": "<div class=\"tabbedWidget cpTabPanel showing\" style=\"\" id=\"tab35c806dd-6af6-422e-9a26-11e96353e8d1_0\" role=\"tabpanel\" aria-labelledby=\"tabBtn35c806dd-6af6-422e-9a26-11e96353e8d1_0\" tabindex=\"-1\">",
+      "discoveredAt": "2026-04-28T17:26:45.540Z",
+      "pageUrl": "https://burlingtonvt.gov/1/Home",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#widgetNewsFlasha7527ea5-d54f-4b6d-8273-7a702117e9fd > .cpGrid1.widgetBody.cpGrid",
+      "elementHtml": "<div class=\"widgetBody cpGrid cpGrid1 \">",
+      "discoveredAt": "2026-04-28T17:26:45.540Z",
+      "pageUrl": "https://burlingtonvt.gov/1/Home",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".cpBylineTextTS",
+      "elementHtml": "<span class=\"cpBylineTextTS\">Government Websites by <a href=\"https://connect.civicplus.com/referral\">CivicPlus®</a></span>",
+      "discoveredAt": "2026-04-28T17:26:45.540Z",
+      "pageUrl": "https://burlingtonvt.gov/1/Home",
+      "metadata": {
+        "backendNodeId": 109484,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#divInfoAdvc36bd157-3ae7-4b61-a022-95aa3388c8e7",
+      "elementHtml": "<section id=\"divInfoAdvc36bd157-3...\" class=\"widget widgetInfoAdv...\" data-modulewidgettyp...=\"infoAdv\" data-elementquerycla...=\"{\"wide-narrow\":\"min-...\" data-elementquerymat...=\"matchMultiColumn\" dat...",
+      "discoveredAt": "2026-04-28T17:26:45.540Z",
+      "pageUrl": "https://burlingtonvt.gov/1/Home",
+      "metadata": {
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".user",
+      "elementHtml": "<div class=\"cpToolbar user public\" style=\"z-index: 1;\">",
+      "discoveredAt": "2026-04-28T17:26:45.540Z",
+      "pageUrl": "https://burlingtonvt.gov/1/Home",
+      "metadata": {
+        "backendNodeId": 109130,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#\\31 _divAlertBar",
+      "elementHtml": "<div id=\"1_divAlertBar\" class=\"alertToolbar cpToolbar\" style=\"background: rgb(0, 100, 0); z-index: 2;\">",
+      "discoveredAt": "2026-04-28T17:28:23.872Z",
+      "pageUrl": "https://burlingtonvt.gov/1168/ICE-Updates-and-Press-Releases",
+      "metadata": {
+        "backendNodeId": 289999,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".cpBylineTextTS",
+      "elementHtml": "<span class=\"cpBylineTextTS\">Government Websites by <a href=\"https://connect.civicplus.com/referral\">CivicPlus®</a></span>",
+      "discoveredAt": "2026-04-28T17:28:23.872Z",
+      "pageUrl": "https://burlingtonvt.gov/1168/ICE-Updates-and-Press-Releases",
+      "metadata": {
+        "backendNodeId": 290353,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".user",
+      "elementHtml": "<div class=\"cpToolbar user public\" style=\"z-index: 1;\">",
+      "discoveredAt": "2026-04-28T17:28:23.872Z",
+      "pageUrl": "https://burlingtonvt.gov/1168/ICE-Updates-and-Press-Releases",
+      "metadata": {
+        "backendNodeId": 290007,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": "#graphicLinkWidget002e5a59-6b39-47fc-9034-b4b66878189b > .cpGrid3.widgetBody.cpGrid > .widgetGraphicLinksNav",
+      "elementHtml": "<nav class=\"widgetGraphicLinksNav\">",
+      "discoveredAt": "2026-04-28T17:28:23.872Z",
+      "pageUrl": "https://burlingtonvt.gov/1168/ICE-Updates-and-Press-Releases",
+      "metadata": {
+        "backendNodeId": 290164,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".user",
+      "elementHtml": "<div class=\"cpToolbar user public\" style=\"z-index: 1;\">",
+      "discoveredAt": "2026-04-28T17:27:12.614Z",
+      "pageUrl": "https://burlingtonvt.gov/27/Government",
+      "metadata": {
+        "backendNodeId": 174417,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".cpBylineTextTS",
+      "elementHtml": "<span class=\"cpBylineTextTS\">Government Websites by <a href=\"https://connect.civicplus.com/referral\">CivicPlus®</a></span>",
+      "discoveredAt": "2026-04-28T17:27:12.614Z",
+      "pageUrl": "https://burlingtonvt.gov/27/Government",
+      "metadata": {
+        "backendNodeId": 174757,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#\\31 _divAlertBar",
+      "elementHtml": "<div id=\"1_divAlertBar\" class=\"alertToolbar cpToolbar\" style=\"background: rgb(0, 100, 0); z-index: 2;\">",
+      "discoveredAt": "2026-04-28T17:27:12.614Z",
+      "pageUrl": "https://burlingtonvt.gov/27/Government",
+      "metadata": {
+        "backendNodeId": 174409,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": "#graphicLinkWidget002e5a59-6b39-47fc-9034-b4b66878189b > .cpGrid3.widgetBody.cpGrid > .widgetGraphicLinksNav",
+      "elementHtml": "<nav class=\"widgetGraphicLinksNav\">",
+      "discoveredAt": "2026-04-28T17:27:12.614Z",
+      "pageUrl": "https://burlingtonvt.gov/27/Government",
+      "metadata": {
+        "backendNodeId": 174567,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".user",
+      "elementHtml": "<div class=\"cpToolbar user public\" style=\"z-index: 1;\">",
+      "discoveredAt": "2026-04-28T17:27:41.069Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "backendNodeId": 236334,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": "#\\31 _divAlertBar",
+      "elementHtml": "<div id=\"1_divAlertBar\" class=\"alertToolbar cpToolbar\" style=\"background: rgb(0, 100, 0); z-index: 2;\">",
+      "discoveredAt": "2026-04-28T17:27:41.069Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "backendNodeId": 236326,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "All page content should be contained by landmarks: Fix any of the following:\n  Some page content is not contained by landmarks",
+      "selector": ".cpBylineTextTS",
+      "elementHtml": "<span class=\"cpBylineTextTS\">Government Websites by <a href=\"https://connect.civicplus.com/referral\">CivicPlus®</a></span>",
+      "discoveredAt": "2026-04-28T17:27:41.069Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "backendNodeId": 236674,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "axe-core",
+      "severity": "medium",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination: Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+      "selector": "#graphicLinkWidget002e5a59-6b39-47fc-9034-b4b66878189b > .cpGrid3.widgetBody.cpGrid > .widgetGraphicLinksNav",
+      "elementHtml": "<nav class=\"widgetGraphicLinksNav\">",
+      "discoveredAt": "2026-04-28T17:27:41.069Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "backendNodeId": 236484,
+        "provenanceSources": [
+          {
+            "lens": "axe-core",
+            "probe": "axe-core"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "axe-core"
+        ]
+      },
+      "detectedBy": [
+        "axe-core"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(0, 86, 155), text: rgb(20, 20, 12)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#graphicLinkWidget1eac821e-5bdd-4711-a6c3-ff85990e36b7 > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > ul > li > div > a",
+      "elementHtml": "<a href=\"https://burlingtonvt.portal.civicclerk.com/\" target=\"_self\" class=\"fancyButton fancyButton46 \">\n\t\t<span>\n\t\t\t<span><span class=\"text\">Agendas</span></span>\n\t\t</span>\n\t</a>",
+      "discoveredAt": "2026-04-28T17:25:33.325Z",
+      "pageUrl": "https://burlingtonvt.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(0, 86, 155), text: rgb(20, 20, 12)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#graphicLinkWidget339896bd-94fb-4677-bb1a-5ced5467bd94 > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > ul > li > div > a",
+      "elementHtml": "<a href=\"/415/Pay\" target=\"_self\" class=\"fancyButton fancyButton47 \">\n\t\t<span>\n\t\t\t<span><span class=\"text\">Payments</span></span>\n\t\t</span>\n\t</a>",
+      "discoveredAt": "2026-04-28T17:25:33.325Z",
+      "pageUrl": "https://burlingtonvt.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(0, 86, 155), text: rgb(20, 20, 12)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#graphicLinkWidget339896bd-94fb-4677-bb1a-5ced5467bd94 > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > ul > li > div > a",
+      "elementHtml": "<a href=\"/415/Pay\" target=\"_self\" class=\"fancyButton fancyButton47 \">\n\t\t<span>\n\t\t\t<span><span class=\"text\">Payments</span></span>\n\t\t</span>\n\t</a>",
+      "discoveredAt": "2026-04-28T17:26:45.230Z",
+      "pageUrl": "https://burlingtonvt.gov/1/Home",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(0, 86, 155), text: rgb(20, 20, 12)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#graphicLinkWidget1eac821e-5bdd-4711-a6c3-ff85990e36b7 > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > ul > li > div > a",
+      "elementHtml": "<a href=\"https://burlingtonvt.portal.civicclerk.com/\" target=\"_self\" class=\"fancyButton fancyButton46 \">\n\t\t<span>\n\t\t\t<span><span class=\"text\">Agendas</span></span>\n\t\t</span>\n\t</a>",
+      "discoveredAt": "2026-04-28T17:26:45.230Z",
+      "pageUrl": "https://burlingtonvt.gov/1/Home",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(255, 255, 255), text: rgb(20, 20, 12)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#SideItem1200 > div > a",
+      "elementHtml": "<a href=\"/1200/March-12th-Statement\" target=\"_self\" class=\"navMainItem secondaryNavItem cpComponent\" data-type=\"SecondaryMainItem\">March 12th Statement</a>",
+      "discoveredAt": "2026-04-28T17:28:23.605Z",
+      "pageUrl": "https://burlingtonvt.gov/1168/ICE-Updates-and-Press-Releases",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(0, 86, 155), text: rgb(20, 20, 12)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#graphicLinkWidget002e5a59-6b39-47fc-9034-b4b66878189b > div:nth-of-type(2) > nav > div > div:nth-of-type(2) > ul > li > div > a",
+      "elementHtml": "<a href=\"https://www.governmentjobs.com/careers/burlingtonvt\" target=\"_self\" class=\"fancyButton fancyButton48 \">\n\t\t<span>\n\t\t\t<span><span class=\"text\">Jobs</span></span>\n\t\t</span>\n\t</a>",
+      "discoveredAt": "2026-04-28T17:28:23.605Z",
+      "pageUrl": "https://burlingtonvt.gov/1168/ICE-Updates-and-Press-Releases",
+      "metadata": {
+        "backendNodeId": 287719,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(255, 255, 255), text: rgb(20, 20, 12)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#SideItem1199 > div > a",
+      "elementHtml": "<a href=\"/1199/Mayor-Emma-Mulvaney-Stanak-Signs-Executi\" target=\"_self\" class=\"navMainItem secondaryNavItem cpComponent\" data-type=\"SecondaryMainItem\">Mayor Emma Mulvaney-Stanak Signs Executive Order<",
+      "discoveredAt": "2026-04-28T17:28:23.605Z",
+      "pageUrl": "https://burlingtonvt.gov/1168/ICE-Updates-and-Press-Releases",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(255, 255, 255), text: rgb(20, 20, 12)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#SideItem1201 > div > a",
+      "elementHtml": "<a href=\"/1201/March-25th-Statement\" target=\"_self\" class=\"navMainItem secondaryNavItem cpComponent\" data-type=\"SecondaryMainItem\">March 25th Statement</a>",
+      "discoveredAt": "2026-04-28T17:28:23.605Z",
+      "pageUrl": "https://burlingtonvt.gov/1168/ICE-Updates-and-Press-Releases",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(0, 86, 155), text: rgb(20, 20, 12)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#graphicLinkWidget002e5a59-6b39-47fc-9034-b4b66878189b > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > ul > li > div > a",
+      "elementHtml": "<a href=\"https://burlingtonvt.portal.civicclerk.com/\" target=\"_self\" class=\"fancyButton fancyButton46 \">\n\t\t<span>\n\t\t\t<span><span class=\"text\">Agendas</span></span>\n\t\t</span>\n\t</a>",
+      "discoveredAt": "2026-04-28T17:28:23.605Z",
+      "pageUrl": "https://burlingtonvt.gov/1168/ICE-Updates-and-Press-Releases",
+      "metadata": {
+        "backendNodeId": 287716,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(0, 86, 155), text: rgb(20, 20, 12)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#graphicLinkWidgetee52296f-0cca-4e56-887b-f9dd16313255 > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > ul > li > div > a",
+      "elementHtml": "<a href=\"/415/Pay\" target=\"_self\" class=\"fancyButton fancyButton47 \">\n\t\t<span>\n\t\t\t<span><span class=\"text\">Payments</span></span>\n\t\t</span>\n\t</a>",
+      "discoveredAt": "2026-04-28T17:28:23.605Z",
+      "pageUrl": "https://burlingtonvt.gov/1168/ICE-Updates-and-Press-Releases",
+      "metadata": {
+        "backendNodeId": 287725,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(0, 86, 155), text: rgb(20, 20, 12)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#graphicLinkWidgetee52296f-0cca-4e56-887b-f9dd16313255 > div:nth-of-type(2) > nav > div > div:nth-of-type(3) > ul > li > div > a",
+      "elementHtml": "<a href=\"/862/Report-a-Concern\" target=\"_self\" class=\"fancyButton fancyButton51 \">\n\t\t<span>\n\t\t\t<span><span class=\"text\">See, Click, Fix</span></span>\n\t\t</span>\n\t</a>",
+      "discoveredAt": "2026-04-28T17:28:23.605Z",
+      "pageUrl": "https://burlingtonvt.gov/1168/ICE-Updates-and-Press-Releases",
+      "metadata": {
+        "backendNodeId": 287730,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(0, 86, 155), text: rgb(20, 20, 12)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#graphicLinkWidgetee52296f-0cca-4e56-887b-f9dd16313255 > div:nth-of-type(2) > nav > div > div:nth-of-type(2) > ul > li > div > a",
+      "elementHtml": "<a href=\"/Elections\" target=\"_self\" class=\"fancyButton fancyButton618 \">\n\t\t<span>\n\t\t\t<span><span class=\"text\">Elections</span></span>\n\t\t</span>\n\t</a>",
+      "discoveredAt": "2026-04-28T17:28:23.605Z",
+      "pageUrl": "https://burlingtonvt.gov/1168/ICE-Updates-and-Press-Releases",
+      "metadata": {
+        "backendNodeId": 287728,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(255, 255, 255), text: rgb(20, 20, 12)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#SideItem1198 > div > a",
+      "elementHtml": "<a href=\"/1198/February-3rd-Statement-and-Resources\" target=\"_self\" class=\"navMainItem secondaryNavItem cpComponent\" data-type=\"SecondaryMainItem\">February 3rd Statement and Resources</a>",
+      "discoveredAt": "2026-04-28T17:28:23.605Z",
+      "pageUrl": "https://burlingtonvt.gov/1168/ICE-Updates-and-Press-Releases",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(0, 86, 155), text: rgb(20, 20, 12)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#graphicLinkWidget002e5a59-6b39-47fc-9034-b4b66878189b > div:nth-of-type(2) > nav > div > div:nth-of-type(3) > ul > li > div > a",
+      "elementHtml": "<a href=\"/314/Parking-in-Burlington\" target=\"_self\" class=\"fancyButton fancyButton49 \">\n\t\t<span>\n\t\t\t<span><span class=\"text\">Parking</span></span>\n\t\t</span>\n\t</a>",
+      "discoveredAt": "2026-04-28T17:28:23.605Z",
+      "pageUrl": "https://burlingtonvt.gov/1168/ICE-Updates-and-Press-Releases",
+      "metadata": {
+        "backendNodeId": 287722,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(255, 255, 255), text: rgb(20, 20, 12)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#SideItem747 > div > a:nth-of-type(1)",
+      "elementHtml": "<a href=\"/747/Public-Boards-Commissions\" target=\"_self\" class=\"navMainItem secondaryNavItem cpComponent\" data-type=\"SecondaryMainItem\">Public Boards &amp; Commissions</a>",
+      "discoveredAt": "2026-04-28T17:27:12.388Z",
+      "pageUrl": "https://burlingtonvt.gov/27/Government",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(255, 255, 255), text: rgb(20, 20, 12)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#SideItem845 > div > a",
+      "elementHtml": "<a href=\"/845/Public-Records-Open-Data\" target=\"_self\" class=\"navMainItem secondaryNavItem cpComponent\" data-type=\"SecondaryMainItem\">Public Records &amp; Open Data</a>",
+      "discoveredAt": "2026-04-28T17:27:12.388Z",
+      "pageUrl": "https://burlingtonvt.gov/27/Government",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(0, 86, 155), text: rgb(20, 20, 12)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#graphicLinkWidget002e5a59-6b39-47fc-9034-b4b66878189b > div:nth-of-type(2) > nav > div > div:nth-of-type(1) > ul > li > div > a",
+      "elementHtml": "<a href=\"https://burlingtonvt.portal.civicclerk.com/\" target=\"_self\" class=\"fancyButton fancyButton46 \">\n\t\t<span>\n\t\t\t<span><span class=\"text\">Agendas</span></span>\n\t\t</span>\n\t</a>",
+      "discoveredAt": "2026-04-28T17:27:12.388Z",
+      "pageUrl": "https://burlingtonvt.gov/27/Government",
+      "metadata": {
+        "backendNodeId": 172102,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(0, 86, 155), text: rgb(20, 20, 12)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#graphicLinkWidget002e5a59-6b39-47fc-9034-b4b66878189b > div:nth-of-type(2) > nav > div > div:nth-of-type(3) > ul > li > div > a",
+      "elementHtml": "<a href=\"/314/Parking-in-Burlington\" target=\"_self\" class=\"fancyButton fancyButton49 \">\n\t\t<span>\n\t\t\t<span><span class=\"text\">Parking</span></span>\n\t\t</span>\n\t</a>",
+      "discoveredAt": "2026-04-28T17:27:12.388Z",
+      "pageUrl": "https://burlingtonvt.gov/27/Government",
+      "metadata": {
+        "backendNodeId": 172108,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(255, 255, 255), text: rgb(20, 20, 12)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#SideItem476 > div > a:nth-of-type(1)",
+      "elementHtml": "<a href=\"/476/Mayor-Emma-Mulvaney-Stanak\" target=\"_self\" class=\"navMainItem secondaryNavItem cpComponent\" data-type=\"SecondaryMainItem\">Mayor Emma Mulvaney-Stanak</a>",
+      "discoveredAt": "2026-04-28T17:27:12.388Z",
+      "pageUrl": "https://burlingtonvt.gov/27/Government",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(255, 255, 255), text: rgb(20, 20, 12)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#SideItem413 > div > a:nth-of-type(1)",
+      "elementHtml": "<a href=\"/413/City-Council\" target=\"_self\" class=\"navMainItem secondaryNavItem cpComponent\" data-type=\"SecondaryMainItem\">City Council</a>",
+      "discoveredAt": "2026-04-28T17:27:12.388Z",
+      "pageUrl": "https://burlingtonvt.gov/27/Government",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(255, 255, 255), text: rgb(20, 20, 12)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#SideItem986 > div > a:nth-of-type(1)",
+      "elementHtml": "<a href=\"/986/Elections\" target=\"_self\" class=\"navMainItem secondaryNavItem cpComponent\" data-type=\"SecondaryMainItem\">Elections</a>",
+      "discoveredAt": "2026-04-28T17:27:12.388Z",
+      "pageUrl": "https://burlingtonvt.gov/27/Government",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(255, 255, 255), text: rgb(20, 20, 12)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#SideItem818 > div > a",
+      "elementHtml": "<a href=\"https://www.codepublishing.com/VT/Burlington\" target=\"_self\" class=\"navMainItem secondaryNavItem cpComponent\" data-type=\"SecondaryMainItem\">Municipal Code of Ordinances</a>",
+      "discoveredAt": "2026-04-28T17:27:12.388Z",
+      "pageUrl": "https://burlingtonvt.gov/27/Government",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(255, 255, 255), text: rgb(20, 20, 12)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#SideItem999 > div > a",
+      "elementHtml": "<a href=\"/999/Municipal-Code-of-Ethics\" target=\"_self\" class=\"navMainItem secondaryNavItem cpComponent\" data-type=\"SecondaryMainItem\">Municipal Code of Ethics</a>",
+      "discoveredAt": "2026-04-28T17:27:12.388Z",
+      "pageUrl": "https://burlingtonvt.gov/27/Government",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(0, 86, 155), text: rgb(20, 20, 12)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#graphicLinkWidget002e5a59-6b39-47fc-9034-b4b66878189b > div:nth-of-type(2) > nav > div > div:nth-of-type(2) > ul > li > div > a",
+      "elementHtml": "<a href=\"https://www.governmentjobs.com/careers/burlingtonvt\" target=\"_self\" class=\"fancyButton fancyButton48 \">\n\t\t<span>\n\t\t\t<span><span class=\"text\">Jobs</span></span>\n\t\t</span>\n\t</a>",
+      "discoveredAt": "2026-04-28T17:27:12.388Z",
+      "pageUrl": "https://burlingtonvt.gov/27/Government",
+      "metadata": {
+        "backendNodeId": 172105,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(255, 255, 255), text: rgb(20, 20, 12)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#SideItem1072 > div > a",
+      "elementHtml": "<a href=\"/1072/Budget-FY-2026\" target=\"_self\" class=\"navMainItem secondaryNavItem cpComponent\" data-type=\"SecondaryMainItem\">Budget FY 2026</a>",
+      "discoveredAt": "2026-04-28T17:27:40.796Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(255, 255, 255), text: rgb(20, 20, 12)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#SideItem871 > div > a",
+      "elementHtml": "<a href=\"/871/Community-Safety\" target=\"_self\" class=\"navMainItem secondaryNavItem cpComponent\" data-type=\"SecondaryMainItem\">Community Safety</a>",
+      "discoveredAt": "2026-04-28T17:27:40.796Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(255, 255, 255), text: rgb(20, 20, 12)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#SideItem740 > div > a",
+      "elementHtml": "<a href=\"/740/Annual-Reports\" target=\"_self\" class=\"navMainItem secondaryNavItem cpComponent\" data-type=\"SecondaryMainItem\">Annual Reports</a>",
+      "discoveredAt": "2026-04-28T17:27:40.796Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(255, 255, 255), text: rgb(20, 20, 12)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#SideItem901 > div > a",
+      "elementHtml": "<a href=\"https://loveburlington.org/client_media/files/Burlington%20Safety%20and%20Security%20Guide.pdf\" target=\"_blank\" class=\"navMainItem secondaryNavItem cpComponent docaccess-activated\" data-type=",
+      "discoveredAt": "2026-04-28T17:27:40.796Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(255, 255, 255), text: rgb(20, 20, 12)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#SideItem902 > div > a",
+      "elementHtml": "<a href=\"/902/ModernGov-Initiative\" target=\"_self\" class=\"navMainItem secondaryNavItem cpComponent\" data-type=\"SecondaryMainItem\">ModernGov Initiative</a>",
+      "discoveredAt": "2026-04-28T17:27:40.796Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(255, 255, 255), text: rgb(20, 20, 12)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#SideItem1168 > div > a:nth-of-type(1)",
+      "elementHtml": "<a href=\"/1168/ICE-Updates-and-Press-Releases\" target=\"_self\" class=\"navMainItem secondaryNavItem cpComponent\" data-type=\"SecondaryMainItem\">ICE Updates and Press Releases</a>",
+      "discoveredAt": "2026-04-28T17:27:40.796Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(255, 255, 255), text: rgb(20, 20, 12)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#SideItem1155 > div > a",
+      "elementHtml": "<a href=\"/1155/Contact-the-Mayors-Office\" target=\"_self\" class=\"navMainItem secondaryNavItem cpComponent\" data-type=\"SecondaryMainItem\">Contact the Mayor's Office</a>",
+      "discoveredAt": "2026-04-28T17:27:40.796Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(255, 255, 255), text: rgb(20, 20, 12)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#SideItem1077 > div > a:nth-of-type(1)",
+      "elementHtml": "<a href=\"/1077/Overdose-Prevention-Center-Implementatio\" target=\"_self\" class=\"navMainItem secondaryNavItem cpComponent\" data-type=\"SecondaryMainItem\">Overdose Prevention Center Implementation</a>",
+      "discoveredAt": "2026-04-28T17:27:40.796Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(255, 255, 255), text: rgb(20, 20, 12)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#SideItem966 > div > a",
+      "elementHtml": "<a href=\"/966/Executive-Orders\" target=\"_self\" class=\"navMainItem secondaryNavItem cpComponent\" data-type=\"SecondaryMainItem\">Executive Orders</a>",
+      "discoveredAt": "2026-04-28T17:27:40.796Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "color-as-indicator",
+      "standard": "WCAG 1.4.1",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "conformanceLevel": "A",
+      "severity": "medium",
+      "description": "Link is distinguished from surrounding text only by color (link: rgb(255, 255, 255), text: rgb(20, 20, 12)). Users who cannot perceive color differences may not identify this as a link.",
+      "selector": "#SideItem850 > div > a:nth-of-type(1)",
+      "elementHtml": "<a href=\"/850/Mayors-Updates-Press-Releases\" target=\"_self\" class=\"navMainItem secondaryNavItem cpComponent\" data-type=\"SecondaryMainItem\">Mayor's Updates &amp; Press Releases</a>",
+      "discoveredAt": "2026-04-28T17:27:40.796Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "color-as-indicator"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ],
+        "standards": [
+          "WCAG 1.4.1"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ],
+      "standards": [
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "probe": "dynamic-content-audit",
+      "standard": "WCAG 4.1.3",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Clicking \"Explore your accessibility options\" inserts 2 element(s) without ARIA live region. Screen readers will not announce this dynamic content.",
+      "selector": "#ae_launcher > button",
+      "elementHtml": "<button aria-label=\"Explore your accessibility options\">\n    <div style=\"display: none\" class=\"ae-left\">\n      <span>Explore your accessibility options</span>\n    </div>\n\n    <div class=\"ae-right\">\n  ",
+      "discoveredAt": "2026-04-28T17:26:41.104Z",
+      "pageUrl": "https://burlingtonvt.gov/",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "dynamic-content-audit"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 4.1.3"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 4.1.3"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://burlingtonvt.gov/sitemap returned status 404 Not Found after 1 attempts",
+      "selector": "#widgetQuicklinke4cfbafb-66c1-431c-8ae4-526497576231 > div:nth-of-type(1) > div > div > ol > li:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"https://burlingtonvt.gov/sitemap\">Site Map</a>",
+      "discoveredAt": "2026-04-28T17:26:14.169Z",
+      "pageUrl": "https://burlingtonvt.gov/",
+      "metadata": {
+        "href": "https://burlingtonvt.gov/sitemap",
+        "text": "Site Map",
+        "protocol": "https:",
+        "attempts": 1,
+        "status": 404,
+        "statusText": "Not Found",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://burlingtonvt.gov/sitemap returned status 404 Not Found after 1 attempts",
+      "selector": "#widgetQuicklinke4cfbafb-66c1-431c-8ae4-526497576231 > div:nth-of-type(1) > div > div > ol > li:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"https://burlingtonvt.gov/sitemap\">Site Map</a>",
+      "discoveredAt": "2026-04-28T17:26:50.705Z",
+      "pageUrl": "https://burlingtonvt.gov/1/Home",
+      "metadata": {
+        "href": "https://burlingtonvt.gov/sitemap",
+        "text": "Site Map",
+        "protocol": "https:",
+        "attempts": 1,
+        "status": 404,
+        "statusText": "Not Found",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://burlingtonvt.gov/DocumentCenter/View/11667 returned status 404 Not Found after 1 attempts",
+      "selector": "#divEditor7415eb81-a38b-41be-8bfa-23a5e93a6f3a > div > h2:nth-of-type(1) > a",
+      "elementHtml": "<a href=\"https://burlingtonvt.gov/DocumentCenter/View/11667\">बर्लिङ्टनमा ICE सञ्चालनको बारेमा मेयर Emma Mulvaney-Stanak को सन्देश</a>",
+      "discoveredAt": "2026-04-28T17:28:25.816Z",
+      "pageUrl": "https://burlingtonvt.gov/1168/ICE-Updates-and-Press-Releases",
+      "metadata": {
+        "href": "https://burlingtonvt.gov/DocumentCenter/View/11667",
+        "text": "बर्लिङ्टनमा ICE सञ्चालनको बारेमा मेयर Emma Mulvaney-Stanak को सन्देश",
+        "protocol": "https:",
+        "attempts": 1,
+        "status": 404,
+        "statusText": "Not Found",
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          },
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://burlingtonvt.gov/sitemap returned status 404 Not Found after 1 attempts",
+      "selector": "#widgetQuicklinkeba4703c-00b2-4bac-81b9-9ba5a4d05c9c > div:nth-of-type(1) > div > div > ol > li:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"https://burlingtonvt.gov/sitemap\">Site Map</a>",
+      "discoveredAt": "2026-04-28T17:28:25.816Z",
+      "pageUrl": "https://burlingtonvt.gov/1168/ICE-Updates-and-Press-Releases",
+      "metadata": {
+        "href": "https://burlingtonvt.gov/sitemap",
+        "text": "Site Map",
+        "protocol": "https:",
+        "attempts": 1,
+        "status": 404,
+        "statusText": "Not Found",
+        "backendNodeId": 290321,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://burlingtonvt.gov/sitemap returned status 404 Not Found after 1 attempts",
+      "selector": "#widgetQuicklinkeba4703c-00b2-4bac-81b9-9ba5a4d05c9c > div:nth-of-type(1) > div > div > ol > li:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"https://burlingtonvt.gov/sitemap\">Site Map</a>",
+      "discoveredAt": "2026-04-28T17:27:15.076Z",
+      "pageUrl": "https://burlingtonvt.gov/27/Government",
+      "metadata": {
+        "href": "https://burlingtonvt.gov/sitemap",
+        "text": "Site Map",
+        "protocol": "https:",
+        "attempts": 1,
+        "status": 404,
+        "statusText": "Not Found",
+        "backendNodeId": 174724,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "link-integrity",
+      "severity": "medium",
+      "description": "Broken link: https://burlingtonvt.gov/sitemap returned status 404 Not Found after 1 attempts",
+      "selector": "#widgetQuicklinkeba4703c-00b2-4bac-81b9-9ba5a4d05c9c > div:nth-of-type(1) > div > div > ol > li:nth-of-type(2) > a",
+      "elementHtml": "<a href=\"https://burlingtonvt.gov/sitemap\">Site Map</a>",
+      "discoveredAt": "2026-04-28T17:27:49.679Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "href": "https://burlingtonvt.gov/sitemap",
+        "text": "Site Map",
+        "protocol": "https:",
+        "attempts": 1,
+        "status": 404,
+        "statusText": "Not Found",
+        "backendNodeId": 236641,
+        "provenanceSources": [
+          {
+            "lens": "sonde-general",
+            "probe": "link-integrity"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-general"
+        ]
+      },
+      "detectedBy": [
+        "sonde-general"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 50px at 320px width.",
+      "selector": "ol.tabbedWidget.cpTabs",
+      "elementHtml": "<ol class=\"tabbedWidget cpTabs  \" role=\"tablist\" aria-hidden=\"false\" style=\"\">\n\t\t\t<!--\n\t\t\t\t\t--><li style=\"width: 48%;\" class=\"active\" role=\"presentation\">\t<a href=\"#tab35c806dd-6af6-422e-9a26-11e96353",
+      "discoveredAt": "2026-04-28T17:26:54.608Z",
+      "pageUrl": "https://burlingtonvt.gov/1/Home",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 22px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "caption.ae-compliance-indent",
+      "elementHtml": "<caption style=\"display:none;\" class=\"ae-compliance-indent\">Calendar</caption>",
+      "discoveredAt": "2026-04-28T17:26:54.608Z",
+      "pageUrl": "https://burlingtonvt.gov/1/Home",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 50px at 320px width.",
+      "selector": "li",
+      "elementHtml": "<li style=\"width: 48%;\" class=\"\" role=\"presentation\">\t<a href=\"#tab35c806dd-6af6-422e-9a26-11e96353e8d1_1\" class=\"tabButton\" id=\"tabBtn35c806dd-6af6-422e-9a26-11e96353e8d1_1\" role=\"tab\" aria-controls=",
+      "discoveredAt": "2026-04-28T17:26:54.608Z",
+      "pageUrl": "https://burlingtonvt.gov/1/Home",
+      "metadata": {
+        "backendNodeId": 109136,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 45px at 320px width.",
+      "selector": "#tabBtn35c806dd-6af6-422e-9a26-11e96353e8d1_1",
+      "elementHtml": "<a href=\"#tab35c806dd-6af6-422e-9a26-11e96353e8d1_1\" class=\"tabButton\" id=\"tabBtn35c806dd-6af6-422e-9a26-11e96353e8d1_1\" role=\"tab\" aria-controls=\"tab35c806dd-6af6-422e-9a26-11e96353e8d1_1\" aria-selec",
+      "discoveredAt": "2026-04-28T17:26:54.608Z",
+      "pageUrl": "https://burlingtonvt.gov/1/Home",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 589px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "span.visuallyHidden",
+      "elementHtml": "<span class=\"visuallyHidden\" role=\"presentation\" aria-hidden=\"true\" tabindex=\"-1\">Design Advisory Board Meeting</span>",
+      "discoveredAt": "2026-04-28T17:26:54.608Z",
+      "pageUrl": "https://burlingtonvt.gov/1/Home",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 90px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "a.audioeye-skip-link",
+      "elementHtml": "<a href=\"#mainWrapTS\" class=\"audioeye-skip-link\">Skip To Main Content</a>",
+      "discoveredAt": "2026-04-28T17:27:52.697Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "backendNodeId": 237329,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 14px at 320px width.",
+      "selector": "a",
+      "elementHtml": "<a style=\"\" href=\"/QuickLinks.aspx?CID=16\">Helpful Links</a>",
+      "discoveredAt": "2026-04-28T17:27:52.697Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "backendNodeId": 237329,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 9px at 320px width.",
+      "selector": "div",
+      "elementHtml": "<div style=\"box-sizing: border-box; clear: both; float: left; top: -1.4em; padding: 0em 0.5em; overflow: hidden; width: 100%; margin: 0px 47.358px;\"><br></div>",
+      "discoveredAt": "2026-04-28T17:27:52.697Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "backendNodeId": 233933,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          },
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 16px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "#bannerDivbanner1",
+      "elementHtml": "<div class=\"bannerObject external fixedBanner\" id=\"bannerDivbanner1\" style=\"min-height: 220px; top: 0px; left: -14.8571px; right: 0px; position: absolute; overflow: hidden; z-index: -999999; padding: ",
+      "discoveredAt": "2026-04-28T17:27:52.697Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "backendNodeId": 236202,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 19px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "#nav-open-btn",
+      "elementHtml": "<a class=\"nav-btn\" id=\"nav-open-btn\" href=\"#nav\" aria-haspopup=\"true\" role=\"menu\">Menu</a>",
+      "discoveredAt": "2026-04-28T17:27:52.697Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 91px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "a.skipToContentLink.ae-exclude",
+      "elementHtml": "<a href=\"#cc5f8c90dc-b4cb-431b-90ee-10648f8df655\" target=\"_self\" class=\"skipToContentLink ae-exclude\" role=\"presentation\" aria-hidden=\"true\" tabindex=\"-1\">Skip to Main Content</a>",
+      "discoveredAt": "2026-04-28T17:27:52.697Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "backendNodeId": 236312,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 451px at 320px width.",
+      "selector": "img.bannerObject",
+      "elementHtml": "<img class=\"bannerObject\" width=\"756px\" style=\"position: absolute; left: 0px; margin: 0px; width: 785.714px;\" src=\"/ImageRepository/Document?documentID=6264\" data-is-delayed=\"false\" alt=\"\">",
+      "discoveredAt": "2026-04-28T17:27:52.697Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "backendNodeId": 234042,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 50px at 320px width.",
+      "selector": "#1_customAlert",
+      "elementHtml": "<span id=\"1_customAlert\" class=\"customAlert\">Public Notification</span>",
+      "discoveredAt": "2026-04-28T17:27:52.697Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 14px at 320px width.",
+      "selector": "h3",
+      "elementHtml": "<h3 role=\"heading\" aria-level=\"2\"><a style=\"\" href=\"/QuickLinks.aspx?CID=16\">Helpful Links</a></h3>",
+      "discoveredAt": "2026-04-28T17:27:52.697Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "backendNodeId": 236301,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.12",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Content clipped by 22px when text spacing is applied per WCAG 1.4.12. Text may be hidden when users adjust spacing for readability.",
+      "selector": "span.ae-compliance-indent",
+      "elementHtml": "<span class=\"ae-compliance-indent\" style=\"display:none;\"> Calendar </span>",
+      "discoveredAt": "2026-04-28T17:27:52.697Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.12"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.12"
+      ]
+    },
+    {
+      "probe": "reflow-test",
+      "standard": "WCAG 1.4.10",
+      "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+      "conformanceLevel": "AA",
+      "severity": "medium",
+      "description": "Element overflows viewport by 14px at 320px width.",
+      "selector": "#quickLinksHeadereba4703c-00b2-4bac-81b9-9ba5a4d05c9c",
+      "elementHtml": "<header class=\"widgetHeader\" id=\"quickLinksHeadereba4703c-00b2-4bac-81b9-9ba5a4d05c9c\" role=\"presentation\">\n\t\t<div class=\"\">\n\t\t\t\t\t<h3 role=\"heading\" aria-level=\"2\"><a style=\"\" href=\"/QuickLinks.aspx?C",
+      "discoveredAt": "2026-04-28T17:27:52.697Z",
+      "pageUrl": "https://burlingtonvt.gov/476/Mayor-Emma-Mulvaney-Stanak",
+      "metadata": {
+        "backendNodeId": 236629,
+        "standardUrl": "https://www.w3.org/WAI/WCAG22/Understanding/reflow",
+        "provenanceSources": [
+          {
+            "lens": "sonde-a11y",
+            "probe": "reflow-test"
+          }
+        ],
+        "provenanceConfidence": "medium",
+        "detectedBy": [
+          "sonde-a11y"
+        ],
+        "standards": [
+          "WCAG 1.4.10"
+        ]
+      },
+      "detectedBy": [
+        "sonde-a11y"
+      ],
+      "standards": [
+        "WCAG 1.4.10"
+      ]
+    }
+  ],
+  "requestedJurisdictions": [
+    "us"
+  ],
+  "appliedJurisdictions": [
+    "us"
+  ]
+}
