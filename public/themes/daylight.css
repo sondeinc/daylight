@@ -338,9 +338,11 @@
   thead {
     display: table-header-group;
   }
-  a[href]:not([href^="#"]):not([href^="mailto:"]):not([href^="tel:"]):not(.finding-link-btn):not(.finding-feedback-btn)::after {
-    content: " (" attr(href) ")";
-  }
+  /* Modern PDF readers preserve clickable hyperlinks, so we no longer
+   * append the raw href as visible text after every <a>. The previous
+   * rule produced duplicate "URL (URL)" output on links whose visible
+   * text already matched their href (cover live-link, breadcrumbs).
+   * Click-through still works in saved PDFs. */
   th.sortable::after,
   th[data-sort-key]::after {
     content: "";

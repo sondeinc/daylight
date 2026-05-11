@@ -169,6 +169,27 @@
 
 .nav-links a:hover { color: var(--sonde-color-primary); }
 
+/* Cross-property link (e.g. Compliance now lives on sonde.life). The arrow
+ * glyph signals the destination is a sibling Sonde property without the
+ * "external link" connotation that target=_blank would imply — same-tab
+ * navigation, not third-party. */
+.nav-link-external {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.nav-link-external-icon {
+  font-size: 0.75em;
+  opacity: 0.7;
+  transition: opacity 0.15s, transform 0.15s;
+}
+
+.nav-link-external:hover .nav-link-external-icon {
+  opacity: 1;
+  transform: translate(0.1em, -0.1em);
+}
+
 .nav-search {
   display: flex;
   align-items: center;
@@ -263,8 +284,8 @@
   position: absolute;
   top: calc(100% + 0.5rem);
   right: 0;
-  width: 14rem;
-  padding: 0.5rem;
+  width: min(22rem, calc(100vw - 2rem));
+  padding: 0.75rem;
   background: var(--sonde-color-surface);
   border: 1px solid var(--sonde-color-border);
   border-radius: 8px;
@@ -288,12 +309,12 @@
   list-style: none;
   cursor: pointer;
   font-family: var(--sonde-font-heading);
-  font-size: 0.75rem;
-  font-weight: 600;
+  font-size: 0.8rem;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: var(--sonde-color-text-muted);
-  padding: 0.25rem 0.25rem;
+  padding: 0.35rem 0.25rem;
   border-radius: 4px;
   user-select: none;
   display: flex;
@@ -323,8 +344,12 @@
 .settings-section-body {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
-  padding: 0.25rem 0 0.25rem 0.5rem;
+  gap: 0.4rem;
+  padding: 0.35rem 0 0.5rem 0.5rem;
+}
+.settings-language-section .settings-section-body {
+  max-block-size: 18rem;
+  overflow: auto;
 }
 .theme-toggle-group {
   display: flex;
@@ -353,7 +378,8 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  padding: 0.5rem 0.75rem;
+  min-block-size: 2.75rem;
+  padding: 0.65rem 0.85rem;
   border-radius: 6px;
   background: var(--sonde-color-bg);
   color: var(--sonde-color-text);
@@ -362,7 +388,7 @@
 }
 .theme-preview span {
   font-family: var(--sonde-font-heading);
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 500;
   color: inherit;
 }
@@ -1501,6 +1527,26 @@ html {
   --sonde-daylight-mark-probe: #1a1a2e;
   --sonde-daylight-mark-solid-display: block;
   --sonde-daylight-mark-line-display: none;
+
+  /* ─── Color — Sonde daylight mock palette (build-time SVG mockups) ── */
+  /* Consumed by build-time generators that bake daylight-themed UI into
+   * fixture/preview PNGs (e.g. cockpit-mobile/scripts/generateMobileSeedScreenshots.ts).
+   * Not used by any runtime component — keeping these in tokens.css is the
+   * single-source-of-truth rule that bans hex literals in `.ts` under packages/. */
+  --sonde-daylight-mock-bg: #f4ecd8;
+  --sonde-daylight-mock-surface: #fffaf0;
+  --sonde-daylight-mock-surface-muted: #ece2c8;
+  --sonde-daylight-mock-border: #c9bda0;
+  --sonde-daylight-mock-primary: #142a4b;
+  --sonde-daylight-mock-accent: #1d3a6b;
+  --sonde-daylight-mock-text: #1a1a2e;
+  --sonde-daylight-mock-text-muted: #6b6552;
+  --sonde-daylight-mock-pass: #1f7a5a;
+  --sonde-daylight-mock-warn: #c9621a;
+  --sonde-daylight-mock-alert: #b3331e;
+  --sonde-daylight-mock-inverse-accent: #a8b8d4;
+  --sonde-daylight-mock-crater: #cf8a20;
+
   --sonde-daylight-hc-mark-earth-blue: #0b3d91;
   --sonde-daylight-hc-mark-bus-gold: #6b5a00;
   --sonde-daylight-hc-mark-rtg-brown: #4a3825;
@@ -1785,8 +1831,18 @@ html {
   /* ─── Motion ────────────────────────────────────────────────── */
   --sonde-motion-duration-fast: 150ms;
   --sonde-motion-duration-slow: 300ms;
+  --sonde-motion-duration-spinner: 1600ms;     /* Full orbit for the Sonde spinner */
   --sonde-motion-easing: cubic-bezier(0.4, 0, 0.2, 1);
   --sonde-motion-reduce: 0;             /* Set to 1 in prefers-reduced-motion */
+
+  /* ─── Spinner / Loading Overlay ─────────────────────────────────
+   * Used by the shared `.sonde-spinner` / `.sonde-spinner-overlay`
+   * component. Themes override these to recolor the loading state
+   * without touching the structural CSS. */
+  --sonde-spinner-size: 96px;
+  --sonde-spinner-orbit-radius: 28;            /* unitless — paired with viewBox 64 */
+  --sonde-spinner-overlay-bg: rgba(255, 255, 255, 0.94);
+  --sonde-spinner-glow: 0 0 12px rgba(64, 108, 242, 0.35);
 
   /* ─── Elevation / Shadows ───────────────────────────────────── */
   --sonde-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
@@ -2485,6 +2541,71 @@ html {
   inherits: true;
   initial-value: #ff00ff;
 }
+@property --sonde-daylight-mock-accent {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mock-alert {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mock-bg {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mock-border {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mock-crater {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mock-inverse-accent {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mock-pass {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mock-primary {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mock-surface {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mock-surface-muted {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mock-text {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mock-text-muted {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mock-warn {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
 @property --sonde-exhibit-bg {
   syntax: "<color>";
   inherits: true;
@@ -2836,6 +2957,11 @@ html {
   initial-value: #ff00ff;
 }
 @property --sonde-slide-syntax-string {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-spinner-overlay-bg {
   syntax: "<color>";
   inherits: true;
   initial-value: #ff00ff;
@@ -3273,9 +3399,11 @@ html {
   thead {
     display: table-header-group;
   }
-  a[href]:not([href^="#"]):not([href^="mailto:"]):not([href^="tel:"]):not(.finding-link-btn):not(.finding-feedback-btn)::after {
-    content: " (" attr(href) ")";
-  }
+  /* Modern PDF readers preserve clickable hyperlinks, so we no longer
+   * append the raw href as visible text after every <a>. The previous
+   * rule produced duplicate "URL (URL)" output on links whose visible
+   * text already matched their href (cover live-link, breadcrumbs).
+   * Click-through still works in saved PDFs. */
   th.sortable::after,
   th[data-sort-key]::after {
     content: "";
@@ -3597,6 +3725,62 @@ tr:hover {
 .score-fail { color: var(--sonde-color-fail); font-weight: 600; }
 
 /* End of baseStructural.css */
+
+
+:root { --sonde-page-footer-text: "Generated by Sonde"; }
+/* base paged CSS — @page rules + structural print hints for any
+ * Sonde renderer that should produce a polished PDF when printed.
+ *
+ * Two scopes:
+ *
+ *  1. `@page` rules outside `@media print` — these are inert except in
+ *     a print rendering context, so it is safe (and now required) to
+ *     ship them with every interactive HTML document. Without them,
+ *     `window.print()` falls back to the browser's default A4 / Letter
+ *     margins and produces no page numbers, no header, no footer.
+ *  2. Structural hints scoped under `@media print` — break-* and
+ *     `.sonde-container` rules only matter during print and would
+ *     otherwise alter the screen layout for non-audit renderers.
+ *
+ * Footer text is injected by the renderer via a CSS custom property
+ * (`--sonde-page-footer-text`).
+ */
+
+@page {
+  size: A4;
+  margin: 20mm 18mm 25mm 18mm;
+  @top-center {
+    content: "Report";
+    font-family: var(--sonde-font-heading);
+    font-size: 9pt;
+    color: var(--sonde-color-text-muted);
+  }
+  @bottom-left {
+    content: var(--sonde-page-footer-text);
+    font-family: var(--sonde-font-heading);
+    font-size: 8pt;
+    color: var(--sonde-color-text-muted);
+  }
+  @bottom-right {
+    content: "Page " counter(page) " of " counter(pages);
+    font-family: var(--sonde-font-heading);
+    font-size: 8pt;
+    color: var(--sonde-color-text-muted);
+  }
+}
+
+@page :first {
+  @top-center { content: none; }
+}
+
+@media print {
+  .sonde-container { max-width: none; padding: 0; min-height: auto; }
+  h2 { break-after: avoid; }
+  table { break-inside: auto; }
+  tr { break-inside: avoid; }
+  .finding-group { break-inside: avoid; }
+  pre { break-inside: avoid; }
+}
 </style></head><body><div class="themes-container"><header class="sonde-header"><div><h1>Sonde Theming Brand Previews</h1></div></header><main id="main-content"><nav class="site-nav" aria-label="Site navigation" data-msg-aria-label-id="nav.site.aria"><a class="nav-brand" href="../" title="Daylight home" data-msg-title-id="nav.brand.title"><svg class="sonde-daylight-mark" viewBox="0 0 512 512" width="28" height="28" aria-hidden="true"><defs><radialGradient id="sdl28-sun" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="var(--sonde-daylight-mark-sun-stop-0)"></stop><stop offset="60%" stop-color="var(--sonde-daylight-mark-sun-stop-1)"></stop><stop offset="100%" stop-color="var(--sonde-daylight-mark-sun-stop-2)"></stop></radialGradient><clipPath id="sdl28-disc"><circle cx="256" cy="256" r="240"></circle></clipPath></defs><g style="display:var(--sonde-daylight-mark-solid-display, block)"><circle cx="256" cy="256" r="240" fill="url(#sdl28-sun)"></circle><g clip-path="url(#sdl28-disc)"><g fill="var(--sonde-daylight-mark-crater)" stroke="var(--sonde-daylight-mark-crater)">
   <!-- Lunar Maria (Visible only when themed via CSS variables) -->
   <g opacity="0.7">
@@ -3632,117 +3816,17 @@ tr:hover {
 
   <!-- Spacecraft bus -->
   <polygon points="-16,-40 48,-40 62,-24 62,24 48,40 -16,40 -30,24 -30,-24" />
-</g></g></g><g style="display:var(--sonde-daylight-mark-line-display, none)"><circle cx="256" cy="256" r="232" fill="none" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="28"></circle><defs><clipPath id="hc-clip-_R_qj6_"><circle cx="256" cy="256" r="214"></circle></clipPath></defs><g clip-path="url(#hc-clip-_R_qj6_)"><g transform="translate(276,228) scale(1.3) rotate(-40)" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="-32" y1="-8" x2="-165" y2="-42" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="8"></line><circle cx="-80" cy="-20" r="3" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="3"></circle><circle cx="-125" cy="-32" r="2.5" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="3"></circle><circle cx="-165" cy="-42" r="8" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="4"></circle><circle cx="-165" cy="-42" r="4" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></circle><line x1="-165" y1="-48" x2="-165" y2="-36" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></line><line x1="-171" y1="-42" x2="-159" y2="-42" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></line><line x1="-32" y1="16" x2="-130" y2="64" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="12"></line><circle cx="-80" cy="40" r="4" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="4"></circle><g transform="translate(-130,64) rotate(20)"><rect x="-16" y="-32" width="32" height="64" rx="4" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="6"></rect><line x1="-16" y1="-22" x2="16" y2="-22" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="4"></line><line x1="-16" y1="-12" x2="16" y2="-12" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="4"></line><line x1="-16" y1="-2" x2="16" y2="-2" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="4"></line><line x1="-16" y1="8" x2="16" y2="8" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="4"></line><line x1="-16" y1="18" x2="16" y2="18" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="4"></line><line x1="-16" y1="28" x2="16" y2="28" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="4"></line><rect x="-18" y="-34" width="36" height="4" rx="2" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="3"></rect><rect x="-18" y="30" width="36" height="4" rx="2" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="3"></rect></g><line x1="-16" y1="-40" x2="-48" y2="-96" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="10"></line><circle cx="-30" cy="-64" r="4" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="4"></circle><g transform="translate(-48,-96)"><rect x="-24" y="-16" width="48" height="28" rx="4" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="6"></rect><line x1="-20" y1="-8" x2="20" y2="-8" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></line><line x1="-20" y1="0" x2="20" y2="0" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></line><circle cx="-10" cy="-4" r="8" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="5"></circle><circle cx="-10" cy="-4" r="4" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></circle><circle cx="10" cy="-4" r="6" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="4"></circle><circle cx="10" cy="-4" r="3" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></circle><rect x="-4" y="4" width="8" height="6" rx="1.5" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="3"></rect></g><path d="M48,-112 Q130,-80 130,0 Q130,80 48,112" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="8"></path><path d="M56,-96 Q118,-68 118,0 Q118,68 56,96" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="2"></path><path d="M64,-80 Q106,-56 106,0 Q106,56 64,80" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="2"></path><path d="M72,-60 Q94,-40 94,0 Q94,40 72,60" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="2"></path><line x1="60" y1="-52" x2="110" y2="0" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="8"></line><line x1="60" y1="52" x2="110" y2="0" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="8"></line><line x1="48" y1="0" x2="110" y2="0" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="8"></line><circle cx="112" cy="0" r="14" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="6"></circle><circle cx="112" cy="0" r="8" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="3"></circle><polygon points="-16,-40 48,-40 64,-24 64,24 48,40 -16,40 -32,24 -32,-24" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="8"></polygon><line x1="0" y1="-40" x2="0" y2="40" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="4"></line><line x1="24" y1="-40" x2="24" y2="40" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="4"></line><line x1="-16" y1="-20" x2="48" y2="-20" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></line><line x1="-16" y1="0" x2="48" y2="0" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></line><line x1="-16" y1="20" x2="48" y2="20" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></line><rect x="4" y="-16" width="16" height="12" rx="1.5" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></rect><rect x="28" y="-16" width="16" height="12" rx="1.5" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></rect><rect x="4" y="4" width="16" height="12" rx="1.5" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></rect><rect x="28" y="4" width="16" height="12" rx="1.5" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></rect><rect x="-36" y="-12" width="8" height="24" rx="2" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="4"></rect><path d="M-44,-8 L-52,-14 L-52,14 L-44,8 Z" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="4"></path><g transform="translate(-8,0)" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M-52,-14 Q-86,-20 -112,-8 Q-120,0 -112,8 Q-86,20 -52,14" stroke="var(--sonde-daylight-hc-mark-flame-deep)" stroke-width="6"></path><path d="M-52,-10 Q-78,-14 -96,-5 Q-102,0 -96,5 Q-78,14 -52,10" stroke="var(--sonde-daylight-hc-mark-flame-mid)" stroke-width="5"></path><path d="M-52,-6 Q-68,-8 -78,-2 Q-82,0 -78,2 Q-68,8 -52,6" stroke="var(--sonde-daylight-hc-mark-flame-hot)" stroke-width="4"></path></g><line x1="16" y1="-40" x2="24" y2="-56" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="5"></line><circle cx="24" cy="-56" r="3" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="3"></circle></g></g></g></svg><span class="nav-brand-name" data-msg-id="brand.name">Sonde Daylight Project</span></a><div class="nav-links"><a href="../usgov/">US Governments</a><a href="../usfin/">US Financial</a><a href="../methodology/">Methodology</a><a href="./" data-msg-id="themes.nav.themes">Themes</a><details class="settings-dropdown"><summary class="settings-dropdown-trigger" aria-haspopup="true" aria-label="Settings" data-msg-aria-label-id="settings.trigger.aria" title="Theme and language" data-msg-title-id="settings.trigger.title"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg></summary><div class="settings-dropdown-menu"><details class="settings-section settings-theme-section" open=""><summary class="settings-section-trigger" data-msg-id="settings.theme.legend">Theme</summary><div class="settings-section-body"><label class="theme-toggle-option theme-option-light"><input type="radio" name="sonde-theme-toggle" value="light"/><div class="theme-preview" data-theme="light"><svg class="theme-preview-mark" viewBox="0 0 512 512" width="16" height="16" aria-hidden="true"><defs><radialGradient id="preview-light-sun" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="var(--sonde-daylight-mark-sun-stop-0)"></stop><stop offset="60%" stop-color="var(--sonde-daylight-mark-sun-stop-1)"></stop><stop offset="100%" stop-color="var(--sonde-daylight-mark-sun-stop-2)"></stop></radialGradient><clipPath id="preview-light-disc"><circle cx="256" cy="256" r="240"></circle></clipPath></defs><g style="display:var(--sonde-daylight-mark-solid-display, block)"><circle cx="256" cy="256" r="240" fill="url(#preview-light-sun)"></circle><g clip-path="url(#preview-light-disc)"><g fill="var(--sonde-daylight-mark-crater)" stroke="var(--sonde-daylight-mark-crater)">
-  <!-- Lunar Maria (Visible only when themed via CSS variables) -->
-  <g opacity="0.7">
-    <path d="M40,240 C60,110 170,40 250,90 C320,130 330,210 260,280 C200,340 50,340 40,240 Z" opacity="0.6"/>
-    <path d="M290,130 C360,60 460,110 470,190 C480,270 410,350 330,320 C260,290 230,190 290,130 Z" opacity="0.7"/>
-    <path d="M390,280 C470,250 510,300 480,380 C450,440 380,410 390,280 Z" opacity="0.5"/>
-    <path d="M130,350 C180,290 260,350 230,430 C200,510 60,450 130,350 Z" opacity="0.5"/>
-    <circle cx="230" cy="430" r="18" fill="transparent" stroke-width="4" opacity="0.8"/>
-    <circle cx="170" cy="190" r="12" fill="transparent" stroke-width="3" opacity="0.7"/>
-    <circle cx="90" cy="230" r="8" opacity="0.8"/>
-  </g>
-</g></g><g clip-path="url(#preview-light-disc)"><g transform="translate(250,240) rotate(-40)" fill="var(--sonde-daylight-mark-probe)" stroke="var(--sonde-daylight-mark-probe)">
-  <!-- Magnetometer boom -->
-  <line x1="-32" y1="-8" x2="-160" y2="-40" stroke-width="6" stroke-linecap="round" />
-  <circle cx="-160" cy="-40" r="10" />
-
-  <!-- RTG boom -->
-  <line x1="-32" y1="16" x2="-125" y2="62" stroke-width="8" stroke-linecap="round" />
-  <rect x="-141" y="38" width="32" height="60" rx="4" transform="rotate(20,-125,62)" />
-
-  <!-- Science platform -->
-  <line x1="-16" y1="-40" x2="-46" y2="-92" stroke-width="7" stroke-linecap="round" />
-  <rect x="-70" y="-108" width="48" height="28" rx="4" />
-  <circle cx="-56" cy="-98" r="8" />
-  <circle cx="-36" cy="-98" r="6" />
-
-  <!-- High-gain antenna dish -->
-  <path d="M48,-108 Q128,-78 128,0 Q128,78 48,108" stroke-width="5" stroke-linejoin="round" />
-  <line x1="58" y1="-50" x2="108" y2="0" stroke-width="5" />
-  <line x1="58" y1="50" x2="108" y2="0" stroke-width="5" />
-  <line x1="48" y1="0" x2="108" y2="0" stroke-width="5" />
-  <circle cx="110" cy="0" r="14" />
-
-  <!-- Spacecraft bus -->
-  <polygon points="-16,-40 48,-40 62,-24 62,24 48,40 -16,40 -30,24 -30,-24" />
-</g></g></g><g style="display:var(--sonde-daylight-mark-line-display, none)"><circle cx="256" cy="256" r="232" fill="none" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="28"></circle><defs><clipPath id="hc-clip-_R_3cpnj6_"><circle cx="256" cy="256" r="214"></circle></clipPath></defs><g clip-path="url(#hc-clip-_R_3cpnj6_)"><g transform="translate(276,228) scale(1.3) rotate(-40)" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="-32" y1="-8" x2="-165" y2="-42" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="8"></line><circle cx="-80" cy="-20" r="3" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="3"></circle><circle cx="-125" cy="-32" r="2.5" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="3"></circle><circle cx="-165" cy="-42" r="8" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="4"></circle><circle cx="-165" cy="-42" r="4" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></circle><line x1="-165" y1="-48" x2="-165" y2="-36" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></line><line x1="-171" y1="-42" x2="-159" y2="-42" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></line><line x1="-32" y1="16" x2="-130" y2="64" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="12"></line><circle cx="-80" cy="40" r="4" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="4"></circle><g transform="translate(-130,64) rotate(20)"><rect x="-16" y="-32" width="32" height="64" rx="4" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="6"></rect><line x1="-16" y1="-22" x2="16" y2="-22" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="4"></line><line x1="-16" y1="-12" x2="16" y2="-12" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="4"></line><line x1="-16" y1="-2" x2="16" y2="-2" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="4"></line><line x1="-16" y1="8" x2="16" y2="8" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="4"></line><line x1="-16" y1="18" x2="16" y2="18" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="4"></line><line x1="-16" y1="28" x2="16" y2="28" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="4"></line><rect x="-18" y="-34" width="36" height="4" rx="2" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="3"></rect><rect x="-18" y="30" width="36" height="4" rx="2" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="3"></rect></g><line x1="-16" y1="-40" x2="-48" y2="-96" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="10"></line><circle cx="-30" cy="-64" r="4" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="4"></circle><g transform="translate(-48,-96)"><rect x="-24" y="-16" width="48" height="28" rx="4" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="6"></rect><line x1="-20" y1="-8" x2="20" y2="-8" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></line><line x1="-20" y1="0" x2="20" y2="0" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></line><circle cx="-10" cy="-4" r="8" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="5"></circle><circle cx="-10" cy="-4" r="4" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></circle><circle cx="10" cy="-4" r="6" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="4"></circle><circle cx="10" cy="-4" r="3" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></circle><rect x="-4" y="4" width="8" height="6" rx="1.5" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="3"></rect></g><path d="M48,-112 Q130,-80 130,0 Q130,80 48,112" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="8"></path><path d="M56,-96 Q118,-68 118,0 Q118,68 56,96" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="2"></path><path d="M64,-80 Q106,-56 106,0 Q106,56 64,80" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="2"></path><path d="M72,-60 Q94,-40 94,0 Q94,40 72,60" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="2"></path><line x1="60" y1="-52" x2="110" y2="0" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="8"></line><line x1="60" y1="52" x2="110" y2="0" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="8"></line><line x1="48" y1="0" x2="110" y2="0" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="8"></line><circle cx="112" cy="0" r="14" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="6"></circle><circle cx="112" cy="0" r="8" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="3"></circle><polygon points="-16,-40 48,-40 64,-24 64,24 48,40 -16,40 -32,24 -32,-24" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="8"></polygon><line x1="0" y1="-40" x2="0" y2="40" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="4"></line><line x1="24" y1="-40" x2="24" y2="40" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="4"></line><line x1="-16" y1="-20" x2="48" y2="-20" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></line><line x1="-16" y1="0" x2="48" y2="0" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></line><line x1="-16" y1="20" x2="48" y2="20" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></line><rect x="4" y="-16" width="16" height="12" rx="1.5" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></rect><rect x="28" y="-16" width="16" height="12" rx="1.5" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></rect><rect x="4" y="4" width="16" height="12" rx="1.5" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></rect><rect x="28" y="4" width="16" height="12" rx="1.5" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></rect><rect x="-36" y="-12" width="8" height="24" rx="2" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="4"></rect><path d="M-44,-8 L-52,-14 L-52,14 L-44,8 Z" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="4"></path><g transform="translate(-8,0)" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M-52,-14 Q-86,-20 -112,-8 Q-120,0 -112,8 Q-86,20 -52,14" stroke="var(--sonde-daylight-hc-mark-flame-deep)" stroke-width="6"></path><path d="M-52,-10 Q-78,-14 -96,-5 Q-102,0 -96,5 Q-78,14 -52,10" stroke="var(--sonde-daylight-hc-mark-flame-mid)" stroke-width="5"></path><path d="M-52,-6 Q-68,-8 -78,-2 Q-82,0 -78,2 Q-68,8 -52,6" stroke="var(--sonde-daylight-hc-mark-flame-hot)" stroke-width="4"></path></g><line x1="16" y1="-40" x2="24" y2="-56" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="5"></line><circle cx="24" cy="-56" r="3" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="3"></circle></g></g></g></svg><span data-msg-id="settings.theme.light">Light</span></div></label><label class="theme-toggle-option theme-option-dark"><input type="radio" name="sonde-theme-toggle" value="dark"/><div class="theme-preview" data-theme="dark"><svg class="theme-preview-mark" viewBox="0 0 512 512" width="16" height="16" aria-hidden="true"><defs><radialGradient id="preview-dark-sun" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="var(--sonde-daylight-mark-sun-stop-0)"></stop><stop offset="60%" stop-color="var(--sonde-daylight-mark-sun-stop-1)"></stop><stop offset="100%" stop-color="var(--sonde-daylight-mark-sun-stop-2)"></stop></radialGradient><clipPath id="preview-dark-disc"><circle cx="256" cy="256" r="240"></circle></clipPath></defs><g style="display:var(--sonde-daylight-mark-solid-display, block)"><circle cx="256" cy="256" r="240" fill="url(#preview-dark-sun)"></circle><g clip-path="url(#preview-dark-disc)"><g fill="var(--sonde-daylight-mark-crater)" stroke="var(--sonde-daylight-mark-crater)">
-  <!-- Lunar Maria (Visible only when themed via CSS variables) -->
-  <g opacity="0.7">
-    <path d="M40,240 C60,110 170,40 250,90 C320,130 330,210 260,280 C200,340 50,340 40,240 Z" opacity="0.6"/>
-    <path d="M290,130 C360,60 460,110 470,190 C480,270 410,350 330,320 C260,290 230,190 290,130 Z" opacity="0.7"/>
-    <path d="M390,280 C470,250 510,300 480,380 C450,440 380,410 390,280 Z" opacity="0.5"/>
-    <path d="M130,350 C180,290 260,350 230,430 C200,510 60,450 130,350 Z" opacity="0.5"/>
-    <circle cx="230" cy="430" r="18" fill="transparent" stroke-width="4" opacity="0.8"/>
-    <circle cx="170" cy="190" r="12" fill="transparent" stroke-width="3" opacity="0.7"/>
-    <circle cx="90" cy="230" r="8" opacity="0.8"/>
-  </g>
-</g></g><g clip-path="url(#preview-dark-disc)"><g transform="translate(250,240) rotate(-40)" fill="var(--sonde-daylight-mark-probe)" stroke="var(--sonde-daylight-mark-probe)">
-  <!-- Magnetometer boom -->
-  <line x1="-32" y1="-8" x2="-160" y2="-40" stroke-width="6" stroke-linecap="round" />
-  <circle cx="-160" cy="-40" r="10" />
-
-  <!-- RTG boom -->
-  <line x1="-32" y1="16" x2="-125" y2="62" stroke-width="8" stroke-linecap="round" />
-  <rect x="-141" y="38" width="32" height="60" rx="4" transform="rotate(20,-125,62)" />
-
-  <!-- Science platform -->
-  <line x1="-16" y1="-40" x2="-46" y2="-92" stroke-width="7" stroke-linecap="round" />
-  <rect x="-70" y="-108" width="48" height="28" rx="4" />
-  <circle cx="-56" cy="-98" r="8" />
-  <circle cx="-36" cy="-98" r="6" />
-
-  <!-- High-gain antenna dish -->
-  <path d="M48,-108 Q128,-78 128,0 Q128,78 48,108" stroke-width="5" stroke-linejoin="round" />
-  <line x1="58" y1="-50" x2="108" y2="0" stroke-width="5" />
-  <line x1="58" y1="50" x2="108" y2="0" stroke-width="5" />
-  <line x1="48" y1="0" x2="108" y2="0" stroke-width="5" />
-  <circle cx="110" cy="0" r="14" />
-
-  <!-- Spacecraft bus -->
-  <polygon points="-16,-40 48,-40 62,-24 62,24 48,40 -16,40 -30,24 -30,-24" />
-</g></g></g><g style="display:var(--sonde-daylight-mark-line-display, none)"><circle cx="256" cy="256" r="232" fill="none" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="28"></circle><defs><clipPath id="hc-clip-_R_3d9nj6_"><circle cx="256" cy="256" r="214"></circle></clipPath></defs><g clip-path="url(#hc-clip-_R_3d9nj6_)"><g transform="translate(276,228) scale(1.3) rotate(-40)" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="-32" y1="-8" x2="-165" y2="-42" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="8"></line><circle cx="-80" cy="-20" r="3" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="3"></circle><circle cx="-125" cy="-32" r="2.5" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="3"></circle><circle cx="-165" cy="-42" r="8" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="4"></circle><circle cx="-165" cy="-42" r="4" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></circle><line x1="-165" y1="-48" x2="-165" y2="-36" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></line><line x1="-171" y1="-42" x2="-159" y2="-42" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></line><line x1="-32" y1="16" x2="-130" y2="64" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="12"></line><circle cx="-80" cy="40" r="4" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="4"></circle><g transform="translate(-130,64) rotate(20)"><rect x="-16" y="-32" width="32" height="64" rx="4" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="6"></rect><line x1="-16" y1="-22" x2="16" y2="-22" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="4"></line><line x1="-16" y1="-12" x2="16" y2="-12" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="4"></line><line x1="-16" y1="-2" x2="16" y2="-2" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="4"></line><line x1="-16" y1="8" x2="16" y2="8" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="4"></line><line x1="-16" y1="18" x2="16" y2="18" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="4"></line><line x1="-16" y1="28" x2="16" y2="28" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="4"></line><rect x="-18" y="-34" width="36" height="4" rx="2" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="3"></rect><rect x="-18" y="30" width="36" height="4" rx="2" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="3"></rect></g><line x1="-16" y1="-40" x2="-48" y2="-96" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="10"></line><circle cx="-30" cy="-64" r="4" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="4"></circle><g transform="translate(-48,-96)"><rect x="-24" y="-16" width="48" height="28" rx="4" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="6"></rect><line x1="-20" y1="-8" x2="20" y2="-8" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></line><line x1="-20" y1="0" x2="20" y2="0" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></line><circle cx="-10" cy="-4" r="8" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="5"></circle><circle cx="-10" cy="-4" r="4" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></circle><circle cx="10" cy="-4" r="6" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="4"></circle><circle cx="10" cy="-4" r="3" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></circle><rect x="-4" y="4" width="8" height="6" rx="1.5" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="3"></rect></g><path d="M48,-112 Q130,-80 130,0 Q130,80 48,112" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="8"></path><path d="M56,-96 Q118,-68 118,0 Q118,68 56,96" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="2"></path><path d="M64,-80 Q106,-56 106,0 Q106,56 64,80" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="2"></path><path d="M72,-60 Q94,-40 94,0 Q94,40 72,60" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="2"></path><line x1="60" y1="-52" x2="110" y2="0" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="8"></line><line x1="60" y1="52" x2="110" y2="0" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="8"></line><line x1="48" y1="0" x2="110" y2="0" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="8"></line><circle cx="112" cy="0" r="14" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="6"></circle><circle cx="112" cy="0" r="8" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="3"></circle><polygon points="-16,-40 48,-40 64,-24 64,24 48,40 -16,40 -32,24 -32,-24" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="8"></polygon><line x1="0" y1="-40" x2="0" y2="40" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="4"></line><line x1="24" y1="-40" x2="24" y2="40" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="4"></line><line x1="-16" y1="-20" x2="48" y2="-20" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></line><line x1="-16" y1="0" x2="48" y2="0" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></line><line x1="-16" y1="20" x2="48" y2="20" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></line><rect x="4" y="-16" width="16" height="12" rx="1.5" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></rect><rect x="28" y="-16" width="16" height="12" rx="1.5" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></rect><rect x="4" y="4" width="16" height="12" rx="1.5" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></rect><rect x="28" y="4" width="16" height="12" rx="1.5" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></rect><rect x="-36" y="-12" width="8" height="24" rx="2" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="4"></rect><path d="M-44,-8 L-52,-14 L-52,14 L-44,8 Z" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="4"></path><g transform="translate(-8,0)" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M-52,-14 Q-86,-20 -112,-8 Q-120,0 -112,8 Q-86,20 -52,14" stroke="var(--sonde-daylight-hc-mark-flame-deep)" stroke-width="6"></path><path d="M-52,-10 Q-78,-14 -96,-5 Q-102,0 -96,5 Q-78,14 -52,10" stroke="var(--sonde-daylight-hc-mark-flame-mid)" stroke-width="5"></path><path d="M-52,-6 Q-68,-8 -78,-2 Q-82,0 -78,2 Q-68,8 -52,6" stroke="var(--sonde-daylight-hc-mark-flame-hot)" stroke-width="4"></path></g><line x1="16" y1="-40" x2="24" y2="-56" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="5"></line><circle cx="24" cy="-56" r="3" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="3"></circle></g></g></g></svg><span data-msg-id="settings.theme.dark">Dark</span></div></label><label class="theme-toggle-option theme-option-hc"><input type="radio" name="sonde-theme-toggle" value="high-contrast"/><div class="theme-preview" data-theme="high-contrast"><svg class="theme-preview-mark" viewBox="0 0 512 512" width="16" height="16" aria-hidden="true"><defs><radialGradient id="preview-hc-sun" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="var(--sonde-daylight-mark-sun-stop-0)"></stop><stop offset="60%" stop-color="var(--sonde-daylight-mark-sun-stop-1)"></stop><stop offset="100%" stop-color="var(--sonde-daylight-mark-sun-stop-2)"></stop></radialGradient><clipPath id="preview-hc-disc"><circle cx="256" cy="256" r="240"></circle></clipPath></defs><g style="display:var(--sonde-daylight-mark-solid-display, block)"><circle cx="256" cy="256" r="240" fill="url(#preview-hc-sun)"></circle><g clip-path="url(#preview-hc-disc)"><g fill="var(--sonde-daylight-mark-crater)" stroke="var(--sonde-daylight-mark-crater)">
-  <!-- Lunar Maria (Visible only when themed via CSS variables) -->
-  <g opacity="0.7">
-    <path d="M40,240 C60,110 170,40 250,90 C320,130 330,210 260,280 C200,340 50,340 40,240 Z" opacity="0.6"/>
-    <path d="M290,130 C360,60 460,110 470,190 C480,270 410,350 330,320 C260,290 230,190 290,130 Z" opacity="0.7"/>
-    <path d="M390,280 C470,250 510,300 480,380 C450,440 380,410 390,280 Z" opacity="0.5"/>
-    <path d="M130,350 C180,290 260,350 230,430 C200,510 60,450 130,350 Z" opacity="0.5"/>
-    <circle cx="230" cy="430" r="18" fill="transparent" stroke-width="4" opacity="0.8"/>
-    <circle cx="170" cy="190" r="12" fill="transparent" stroke-width="3" opacity="0.7"/>
-    <circle cx="90" cy="230" r="8" opacity="0.8"/>
-  </g>
-</g></g><g clip-path="url(#preview-hc-disc)"><g transform="translate(250,240) rotate(-40)" fill="var(--sonde-daylight-mark-probe)" stroke="var(--sonde-daylight-mark-probe)">
-  <!-- Magnetometer boom -->
-  <line x1="-32" y1="-8" x2="-160" y2="-40" stroke-width="6" stroke-linecap="round" />
-  <circle cx="-160" cy="-40" r="10" />
-
-  <!-- RTG boom -->
-  <line x1="-32" y1="16" x2="-125" y2="62" stroke-width="8" stroke-linecap="round" />
-  <rect x="-141" y="38" width="32" height="60" rx="4" transform="rotate(20,-125,62)" />
-
-  <!-- Science platform -->
-  <line x1="-16" y1="-40" x2="-46" y2="-92" stroke-width="7" stroke-linecap="round" />
-  <rect x="-70" y="-108" width="48" height="28" rx="4" />
-  <circle cx="-56" cy="-98" r="8" />
-  <circle cx="-36" cy="-98" r="6" />
-
-  <!-- High-gain antenna dish -->
-  <path d="M48,-108 Q128,-78 128,0 Q128,78 48,108" stroke-width="5" stroke-linejoin="round" />
-  <line x1="58" y1="-50" x2="108" y2="0" stroke-width="5" />
-  <line x1="58" y1="50" x2="108" y2="0" stroke-width="5" />
-  <line x1="48" y1="0" x2="108" y2="0" stroke-width="5" />
-  <circle cx="110" cy="0" r="14" />
-
-  <!-- Spacecraft bus -->
-  <polygon points="-16,-40 48,-40 62,-24 62,24 48,40 -16,40 -30,24 -30,-24" />
-</g></g></g><g style="display:var(--sonde-daylight-mark-line-display, none)"><circle cx="256" cy="256" r="232" fill="none" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="28"></circle><defs><clipPath id="hc-clip-_R_3dpnj6_"><circle cx="256" cy="256" r="214"></circle></clipPath></defs><g clip-path="url(#hc-clip-_R_3dpnj6_)"><g transform="translate(276,228) scale(1.3) rotate(-40)" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="-32" y1="-8" x2="-165" y2="-42" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="8"></line><circle cx="-80" cy="-20" r="3" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="3"></circle><circle cx="-125" cy="-32" r="2.5" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="3"></circle><circle cx="-165" cy="-42" r="8" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="4"></circle><circle cx="-165" cy="-42" r="4" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></circle><line x1="-165" y1="-48" x2="-165" y2="-36" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></line><line x1="-171" y1="-42" x2="-159" y2="-42" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></line><line x1="-32" y1="16" x2="-130" y2="64" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="12"></line><circle cx="-80" cy="40" r="4" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="4"></circle><g transform="translate(-130,64) rotate(20)"><rect x="-16" y="-32" width="32" height="64" rx="4" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="6"></rect><line x1="-16" y1="-22" x2="16" y2="-22" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="4"></line><line x1="-16" y1="-12" x2="16" y2="-12" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="4"></line><line x1="-16" y1="-2" x2="16" y2="-2" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="4"></line><line x1="-16" y1="8" x2="16" y2="8" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="4"></line><line x1="-16" y1="18" x2="16" y2="18" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="4"></line><line x1="-16" y1="28" x2="16" y2="28" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="4"></line><rect x="-18" y="-34" width="36" height="4" rx="2" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="3"></rect><rect x="-18" y="30" width="36" height="4" rx="2" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="3"></rect></g><line x1="-16" y1="-40" x2="-48" y2="-96" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="10"></line><circle cx="-30" cy="-64" r="4" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="4"></circle><g transform="translate(-48,-96)"><rect x="-24" y="-16" width="48" height="28" rx="4" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="6"></rect><line x1="-20" y1="-8" x2="20" y2="-8" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></line><line x1="-20" y1="0" x2="20" y2="0" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></line><circle cx="-10" cy="-4" r="8" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="5"></circle><circle cx="-10" cy="-4" r="4" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></circle><circle cx="10" cy="-4" r="6" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="4"></circle><circle cx="10" cy="-4" r="3" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></circle><rect x="-4" y="4" width="8" height="6" rx="1.5" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="3"></rect></g><path d="M48,-112 Q130,-80 130,0 Q130,80 48,112" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="8"></path><path d="M56,-96 Q118,-68 118,0 Q118,68 56,96" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="2"></path><path d="M64,-80 Q106,-56 106,0 Q106,56 64,80" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="2"></path><path d="M72,-60 Q94,-40 94,0 Q94,40 72,60" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="2"></path><line x1="60" y1="-52" x2="110" y2="0" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="8"></line><line x1="60" y1="52" x2="110" y2="0" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="8"></line><line x1="48" y1="0" x2="110" y2="0" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="8"></line><circle cx="112" cy="0" r="14" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="6"></circle><circle cx="112" cy="0" r="8" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="3"></circle><polygon points="-16,-40 48,-40 64,-24 64,24 48,40 -16,40 -32,24 -32,-24" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="8"></polygon><line x1="0" y1="-40" x2="0" y2="40" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="4"></line><line x1="24" y1="-40" x2="24" y2="40" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="4"></line><line x1="-16" y1="-20" x2="48" y2="-20" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></line><line x1="-16" y1="0" x2="48" y2="0" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></line><line x1="-16" y1="20" x2="48" y2="20" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></line><rect x="4" y="-16" width="16" height="12" rx="1.5" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></rect><rect x="28" y="-16" width="16" height="12" rx="1.5" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></rect><rect x="4" y="4" width="16" height="12" rx="1.5" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></rect><rect x="28" y="4" width="16" height="12" rx="1.5" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></rect><rect x="-36" y="-12" width="8" height="24" rx="2" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="4"></rect><path d="M-44,-8 L-52,-14 L-52,14 L-44,8 Z" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="4"></path><g transform="translate(-8,0)" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M-52,-14 Q-86,-20 -112,-8 Q-120,0 -112,8 Q-86,20 -52,14" stroke="var(--sonde-daylight-hc-mark-flame-deep)" stroke-width="6"></path><path d="M-52,-10 Q-78,-14 -96,-5 Q-102,0 -96,5 Q-78,14 -52,10" stroke="var(--sonde-daylight-hc-mark-flame-mid)" stroke-width="5"></path><path d="M-52,-6 Q-68,-8 -78,-2 Q-82,0 -78,2 Q-68,8 -52,6" stroke="var(--sonde-daylight-hc-mark-flame-hot)" stroke-width="4"></path></g><line x1="16" y1="-40" x2="24" y2="-56" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="5"></line><circle cx="24" cy="-56" r="3" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="3"></circle></g></g></g></svg><span data-msg-id="settings.theme.hc">High Contrast</span></div></label></div></details><script>
+</g></g></g><g style="display:var(--sonde-daylight-mark-line-display, none)"><circle cx="256" cy="256" r="232" fill="none" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="28"></circle><defs><clipPath id="hc-clip-_R_qj6_"><circle cx="256" cy="256" r="214"></circle></clipPath></defs><g clip-path="url(#hc-clip-_R_qj6_)"><g transform="translate(276,228) scale(1.3) rotate(-40)" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="-32" y1="-8" x2="-165" y2="-42" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="8"></line><circle cx="-80" cy="-20" r="3" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="3"></circle><circle cx="-125" cy="-32" r="2.5" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="3"></circle><circle cx="-165" cy="-42" r="8" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="4"></circle><circle cx="-165" cy="-42" r="4" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></circle><line x1="-165" y1="-48" x2="-165" y2="-36" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></line><line x1="-171" y1="-42" x2="-159" y2="-42" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></line><line x1="-32" y1="16" x2="-130" y2="64" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="12"></line><circle cx="-80" cy="40" r="4" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="4"></circle><g transform="translate(-130,64) rotate(20)"><rect x="-16" y="-32" width="32" height="64" rx="4" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="6"></rect><line x1="-16" y1="-22" x2="16" y2="-22" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="4"></line><line x1="-16" y1="-12" x2="16" y2="-12" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="4"></line><line x1="-16" y1="-2" x2="16" y2="-2" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="4"></line><line x1="-16" y1="8" x2="16" y2="8" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="4"></line><line x1="-16" y1="18" x2="16" y2="18" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="4"></line><line x1="-16" y1="28" x2="16" y2="28" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="4"></line><rect x="-18" y="-34" width="36" height="4" rx="2" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="3"></rect><rect x="-18" y="30" width="36" height="4" rx="2" stroke="var(--sonde-daylight-hc-mark-rtg-brown)" stroke-width="3"></rect></g><line x1="-16" y1="-40" x2="-48" y2="-96" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="10"></line><circle cx="-30" cy="-64" r="4" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="4"></circle><g transform="translate(-48,-96)"><rect x="-24" y="-16" width="48" height="28" rx="4" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="6"></rect><line x1="-20" y1="-8" x2="20" y2="-8" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></line><line x1="-20" y1="0" x2="20" y2="0" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></line><circle cx="-10" cy="-4" r="8" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="5"></circle><circle cx="-10" cy="-4" r="4" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></circle><circle cx="10" cy="-4" r="6" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="4"></circle><circle cx="10" cy="-4" r="3" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="2"></circle><rect x="-4" y="4" width="8" height="6" rx="1.5" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="3"></rect></g><path d="M48,-112 Q130,-80 130,0 Q130,80 48,112" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="8"></path><path d="M56,-96 Q118,-68 118,0 Q118,68 56,96" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="2"></path><path d="M64,-80 Q106,-56 106,0 Q106,56 64,80" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="2"></path><path d="M72,-60 Q94,-40 94,0 Q94,40 72,60" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="2"></path><line x1="60" y1="-52" x2="110" y2="0" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="8"></line><line x1="60" y1="52" x2="110" y2="0" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="8"></line><line x1="48" y1="0" x2="110" y2="0" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="8"></line><circle cx="112" cy="0" r="14" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="6"></circle><circle cx="112" cy="0" r="8" stroke="var(--sonde-daylight-hc-mark-earth-blue)" stroke-width="3"></circle><polygon points="-16,-40 48,-40 64,-24 64,24 48,40 -16,40 -32,24 -32,-24" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="8"></polygon><line x1="0" y1="-40" x2="0" y2="40" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="4"></line><line x1="24" y1="-40" x2="24" y2="40" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="4"></line><line x1="-16" y1="-20" x2="48" y2="-20" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></line><line x1="-16" y1="0" x2="48" y2="0" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></line><line x1="-16" y1="20" x2="48" y2="20" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></line><rect x="4" y="-16" width="16" height="12" rx="1.5" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></rect><rect x="28" y="-16" width="16" height="12" rx="1.5" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></rect><rect x="4" y="4" width="16" height="12" rx="1.5" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></rect><rect x="28" y="4" width="16" height="12" rx="1.5" stroke="var(--sonde-daylight-hc-mark-bus-gold)" stroke-width="3"></rect><rect x="-36" y="-12" width="8" height="24" rx="2" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="4"></rect><path d="M-44,-8 L-52,-14 L-52,14 L-44,8 Z" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="4"></path><g transform="translate(-8,0)" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M-52,-14 Q-86,-20 -112,-8 Q-120,0 -112,8 Q-86,20 -52,14" stroke="var(--sonde-daylight-hc-mark-flame-deep)" stroke-width="6"></path><path d="M-52,-10 Q-78,-14 -96,-5 Q-102,0 -96,5 Q-78,14 -52,10" stroke="var(--sonde-daylight-hc-mark-flame-mid)" stroke-width="5"></path><path d="M-52,-6 Q-68,-8 -78,-2 Q-82,0 -78,2 Q-68,8 -52,6" stroke="var(--sonde-daylight-hc-mark-flame-hot)" stroke-width="4"></path></g><line x1="16" y1="-40" x2="24" y2="-56" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="5"></line><circle cx="24" cy="-56" r="3" stroke="var(--sonde-daylight-hc-mark-metal)" stroke-width="3"></circle></g></g></g></svg><span class="nav-brand-name" data-msg-id="brand.name">Sonde Daylight Project</span></a><div class="nav-links"><a href="../usgov/">US Governments</a><a href="../usfin/">US Financial</a><a href="../methodology/">Methodology</a><a href="./" data-msg-id="themes.nav.themes">Themes</a><details class="settings-dropdown"><summary class="settings-dropdown-trigger" aria-haspopup="true" aria-label="Settings" data-msg-aria-label-id="settings.trigger.aria" title="Theme and language" data-msg-title-id="settings.trigger.title"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg></summary><div class="settings-dropdown-menu"><details class="settings-section settings-platform-theme-section" open=""><summary class="settings-section-trigger" data-msg-id="settings.theme.legend">Mode</summary><div class="settings-section-body"><label class="theme-toggle-option settings-platform-theme-option"><input type="radio" name="sonde-platform-theme-toggle" checked="" value="daylight"/><div class="theme-preview" data-platform-theme="daylight"><span data-msg-id="settings.theme.daylight">Daylight</span></div></label><label class="theme-toggle-option settings-platform-theme-option"><input type="radio" name="sonde-platform-theme-toggle" value="high-contrast"/><div class="theme-preview" data-platform-theme="high-contrast"><span data-msg-id="settings.theme.hc">High Contrast</span></div></label></div></details><details class="settings-section settings-theme-section" open=""><summary class="settings-section-trigger" data-msg-id="settings.mode.legend">Mode</summary><div class="settings-section-body"><label class="theme-toggle-option theme-option-auto"><input type="radio" name="sonde-theme-toggle" checked="" value="auto"/><div class="theme-preview" data-theme="auto"><span data-msg-id="settings.theme.auto">Auto</span></div></label><label class="theme-toggle-option theme-option-light"><input type="radio" name="sonde-theme-toggle" value="light"/><div class="theme-preview" data-theme="light"><span data-msg-id="settings.theme.light">Light</span></div></label><label class="theme-toggle-option theme-option-dark"><input type="radio" name="sonde-theme-toggle" value="dark"/><div class="theme-preview" data-theme="dark"><span data-msg-id="settings.theme.dark">Dark</span></div></label></div></details><details class="settings-section settings-language-section"><summary class="settings-section-trigger" data-msg-id="settings.language.legend">Language</summary><div class="settings-section-body"><label class="theme-toggle-option settings-language-option"><input type="radio" data-sonde-locale-picker="true" name="sonde-locale-picker-radio" checked="" value="en-US"/><div class="theme-preview"><span>English (US)</span></div></label><label class="theme-toggle-option settings-language-option"><input type="radio" data-sonde-locale-picker="true" name="sonde-locale-picker-radio" value="es-US"/><div class="theme-preview"><span>Español (US)</span></div></label><label class="theme-toggle-option settings-language-option"><input type="radio" data-sonde-locale-picker="true" name="sonde-locale-picker-radio" value="de-DE"/><div class="theme-preview"><span>Deutsch</span></div></label><label class="theme-toggle-option settings-language-option"><input type="radio" data-sonde-locale-picker="true" name="sonde-locale-picker-radio" value="fr-FR"/><div class="theme-preview"><span>Français</span></div></label><label class="theme-toggle-option settings-language-option"><input type="radio" data-sonde-locale-picker="true" name="sonde-locale-picker-radio" value="es-ES"/><div class="theme-preview"><span>Español (España)</span></div></label><label class="theme-toggle-option settings-language-option"><input type="radio" data-sonde-locale-picker="true" name="sonde-locale-picker-radio" value="it-IT"/><div class="theme-preview"><span>Italiano</span></div></label><label class="theme-toggle-option settings-language-option"><input type="radio" data-sonde-locale-picker="true" name="sonde-locale-picker-radio" value="ko-KR"/><div class="theme-preview"><span>한국어</span></div></label></div></details><script>
 (function () {
   var details = document.querySelector('.settings-dropdown');
   if (!details) return;
   var summary = details.querySelector('summary');
+  var platformThemeLinkId = "sonde-active-platform-theme";
+  var platformThemeStorageKey = "sonde-platform-theme";
+  var highContrastHref = "./themes/high-contrast.css";
+  var platformRadios = details.querySelectorAll('input[name="sonde-platform-theme-toggle"]');
   var themeRadios = details.querySelectorAll('input[name="sonde-theme-toggle"]');
+  var darkMq = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)');
 
   function closeDropdown(returnFocus) {
     if (!details.hasAttribute('open')) return;
@@ -3750,39 +3834,110 @@ tr:hover {
     if (returnFocus && summary) summary.focus();
   }
 
-  function syncTheme() {
+  function readStorage(key) {
     var stored = null;
-    try { stored = window.localStorage.getItem('sonde-theme'); } catch (e) {}
-    var next = stored;
-    if (next !== 'light' && next !== 'dark' && next !== 'high-contrast') {
-      var mm = window.matchMedia;
-      var darkMq = mm && mm('(prefers-color-scheme: dark)');
-      next = darkMq && darkMq.matches ? 'dark' : 'light';
-    }
-    themeRadios.forEach(function (radio) { radio.checked = radio.value === next; });
+    try { stored = window.localStorage.getItem(key); } catch (e) {}
+    return stored;
   }
+
+  function writeStorage(key, value) {
+    try { window.localStorage.setItem(key, value); } catch (e) {}
+  }
+
+  function readPlatformTheme() {
+    var stored = readStorage(platformThemeStorageKey);
+    if (stored === 'daylight' || stored === 'high-contrast') return stored;
+    if (readStorage('sonde-theme') === 'high-contrast') return 'high-contrast';
+    return 'daylight';
+  }
+
+  function readMode() {
+    var stored = readStorage('sonde-theme');
+    if (stored === 'auto' || stored === 'light' || stored === 'dark') return stored;
+    return 'auto';
+  }
+
+  function resolvedMode(mode) {
+    if (mode === 'light' || mode === 'dark') return mode;
+    return darkMq && darkMq.matches ? 'dark' : 'light';
+  }
+
+  function applyPlatformTheme(platform) {
+    var existing = document.getElementById(platformThemeLinkId);
+    if (platform === 'high-contrast') {
+      var link = existing;
+      if (!link) {
+        link = document.createElement('link');
+        link.id = platformThemeLinkId;
+        link.setAttribute('rel', 'stylesheet');
+        document.head.appendChild(link);
+      }
+      link.setAttribute('href', highContrastHref);
+    } else if (existing) {
+      existing.remove();
+    }
+    document.documentElement.setAttribute('data-platform-theme', platform);
+  }
+
+  function applyMode(mode) {
+    document.documentElement.setAttribute('data-theme', resolvedMode(mode));
+  }
+
+  function syncTheme() {
+    var platform = readPlatformTheme();
+    var mode = readMode();
+    applyPlatformTheme(platform);
+    applyMode(mode);
+    platformRadios.forEach(function (radio) { radio.checked = radio.value === platform; });
+    themeRadios.forEach(function (radio) { radio.checked = radio.value === mode; });
+  }
+
   syncTheme();
+  platformRadios.forEach(function (radio) {
+    radio.addEventListener('change', function () {
+      if (!radio.checked) return;
+      writeStorage(platformThemeStorageKey, radio.value);
+      syncTheme();
+    });
+  });
   themeRadios.forEach(function (radio) {
     radio.addEventListener('change', function () {
+      if (!radio.checked) return;
       if (window.sondePrefs && typeof window.sondePrefs.setTheme === 'function') {
         window.sondePrefs.setTheme(radio.value);
+      } else {
+        writeStorage('sonde-theme', radio.value);
       }
       syncTheme();
-      // Close the gear after a theme selection (matches the locale-picker
-      // behavior in localeFallback.ts buildLocalePickerScript). Returning
-      // focus to the gear summary keeps WCAG 2.4.3 focus order intact.
-      closeDropdown(true);
     });
   });
   window.addEventListener('storage', function (event) {
-    if (event.key === 'sonde-theme') syncTheme();
+    if (event.key === 'sonde-theme' || event.key === platformThemeStorageKey) syncTheme();
   });
+  if (darkMq && darkMq.addEventListener) {
+    darkMq.addEventListener('change', function () {
+      if (readMode() === 'auto') syncTheme();
+    });
+  }
 
   function syncAriaExpanded() {
     if (summary) summary.setAttribute('aria-expanded', String(details.open));
   }
   syncAriaExpanded();
   details.addEventListener('toggle', syncAriaExpanded);
+
+  var sections = details.querySelectorAll('.settings-section');
+  sections.forEach(function (section) {
+    section.addEventListener('toggle', function () {
+      if (!section.open) return;
+      var isLanguage = section.classList.contains('settings-language-section');
+      sections.forEach(function (other) {
+        if (other === section) return;
+        var otherIsLanguage = other.classList.contains('settings-language-section');
+        if (isLanguage || otherIsLanguage) other.removeAttribute('open');
+      });
+    });
+  });
 
   document.addEventListener('click', function (e) {
     if (details.hasAttribute('open') && !details.contains(e.target)) {
@@ -3809,7 +3964,126 @@ tr:hover {
     }
   });
 })();
-</script></div></details></div></nav><nav aria-label="Breadcrumb" class="daylight-breadcrumb"><ol><li><a href="../" data-msg-id="themes.breadcrumb.daylight">Daylight</a></li><li aria-current="page" data-msg-id="themes.breadcrumb.themes">Themes</li></ol></nav><section class="themes-hero"><h1><span class="mark" aria-hidden="true"><svg class="sonde-daylight-mark" viewBox="0 0 512 512" width="48" height="48" aria-hidden="true"><defs><radialGradient id="themes-hero-sun" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="var(--sonde-daylight-mark-sun-stop-0)"></stop><stop offset="60%" stop-color="var(--sonde-daylight-mark-sun-stop-1)"></stop><stop offset="100%" stop-color="var(--sonde-daylight-mark-sun-stop-2)"></stop></radialGradient><clipPath id="themes-hero-disc"><circle cx="256" cy="256" r="240"></circle></clipPath></defs><g style="display:var(--sonde-daylight-mark-solid-display, block)"><circle cx="256" cy="256" r="240" fill="url(#themes-hero-sun)"></circle><g clip-path="url(#themes-hero-disc)"><g fill="var(--sonde-daylight-mark-crater)" stroke="var(--sonde-daylight-mark-crater)">
+
+(function() {
+  var locales = ["en-US","es-US","de-DE","fr-FR","es-ES","it-IT","ko-KR"];
+  var lower = ["en-us","es-us","de-de","fr-fr","es-es","it-it","ko-kr"];
+  var forbidden = ["pt"];
+  var rtlLangs = ["ar","he","fa","ur","ps","sd","yi","dv","ks","ckb"];
+  var storageKey = "sonde-locale";
+  var defaultLocale = "en-US";
+  var bundleBaseHref = "/assets/locales/daylight-";
+  function pickLocale() {
+    try {
+      var saved = localStorage.getItem(storageKey);
+      if (saved) {
+        var savedIdx = lower.indexOf(saved.toLowerCase());
+        if (savedIdx !== -1) return locales[savedIdx];
+      }
+    } catch (e) { /* storage disabled */ }
+    var langs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language];
+    for (var i = 0; i < langs.length; i++) {
+      var raw = langs[i];
+      if (!raw) continue;
+      var tag = raw.toLowerCase();
+      var exactIdx = lower.indexOf(tag);
+      if (exactIdx !== -1) return locales[exactIdx];
+      var base = tag.split('-')[0];
+      if (!base) continue;
+      if (forbidden.indexOf(base) !== -1) continue;
+      var prefix = base + '-';
+      for (var j = 0; j < lower.length; j++) {
+        if (lower[j].indexOf(prefix) === 0) return locales[j];
+      }
+    }
+    return defaultLocale;
+  }
+  function applyLocale(locale) {
+    var base = locale.split('-')[0].toLowerCase();
+    var dir = rtlLangs.indexOf(base) !== -1 ? 'rtl' : 'ltr';
+    document.documentElement.lang = locale;
+    document.documentElement.dir = dir;
+
+    var scriptId = 'sonde-locale-bundle';
+    var existing = document.getElementById(scriptId);
+    if (existing) existing.remove();
+    var script = document.createElement('script');
+    script.id = scriptId;
+    script.src = bundleBaseHref + locale + '.js';
+    script.onload = function() {
+      var dict = window.SondeDaylightI18n;
+      if (!dict) return;
+      // Values come from same-origin compiled .po bundles we emit; Lingui msgids
+      // may contain inline markup (<strong>, <a>), so we apply as HTML, not text.
+      var attrSelectors = [
+        ['data-msg-id', function(el, txt) { el.innerHTML = txt; }],
+        ['data-msg-title-id', function(el, txt) { el.setAttribute('title', txt); }],
+        ['data-msg-aria-label-id', function(el, txt) { el.setAttribute('aria-label', txt); }],
+        ['data-msg-placeholder-id', function(el, txt) { el.setAttribute('placeholder', txt); }]
+      ];
+      for (var a = 0; a < attrSelectors.length; a++) {
+        var attrName = attrSelectors[a][0];
+        var apply = attrSelectors[a][1];
+        var els = document.querySelectorAll('[' + attrName + ']');
+        for (var j = 0; j < els.length; j++) {
+          var el = els[j];
+          var id = el.getAttribute(attrName);
+          if (!id || !dict[id]) continue;
+          var text = dict[id];
+          var args = el.getAttribute('data-msg-args');
+          if (args) {
+            try {
+              var parsed = JSON.parse(args);
+              for (var key in parsed) {
+                text = text.replace('{'+key+'}', parsed[key]);
+              }
+            } catch(e) {}
+          }
+          apply(el, text);
+        }
+      }
+      var localeLinks = document.querySelectorAll('[data-locale-link]');
+      for (var l = 0; l < localeLinks.length; l++) {
+        var base = localeLinks[l].getAttribute('data-locale-link');
+        var ext = localeLinks[l].getAttribute('data-locale-ext') || '';
+        if (locale === 'en-US') {
+          localeLinks[l].setAttribute('href', './' + base + ext);
+        } else {
+          localeLinks[l].setAttribute('href', './' + base + '-' + locale + ext);
+        }
+      }
+    };
+    document.head.appendChild(script);
+  }
+  function init() {
+    var active = pickLocale();
+    applyLocale(active);
+    var radios = document.querySelectorAll('input[type="radio"][data-sonde-locale-picker]');
+    for (var k = 0; k < radios.length; k++) {
+      var radio = radios[k];
+      if (radio.value === active) radio.checked = true;
+      radio.addEventListener('change', function(ev) {
+        var next = ev.target.value;
+        if (lower.indexOf(next.toLowerCase()) === -1) return;
+        try { localStorage.setItem(storageKey, next); } catch (e) {}
+        applyLocale(next);
+        var ds = document.querySelectorAll('.settings-dropdown');
+        for (var d = 0; d < ds.length; d++) {
+          ds[d].removeAttribute('open');
+          // WCAG 2.4.3: after a language change re-renders the header,
+          // explicit focus return to the gear summary preserves focus order.
+          var s = ds[d].querySelector('summary');
+          if (s) s.focus();
+        }
+      });
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();</script></div></details></div></nav><nav aria-label="Breadcrumb" class="daylight-breadcrumb"><ol><li><a href="../" data-msg-id="themes.breadcrumb.daylight">Daylight</a></li><li aria-current="page" data-msg-id="themes.breadcrumb.themes">Themes</li></ol></nav><section class="themes-hero"><h1><span class="mark" aria-hidden="true"><svg class="sonde-daylight-mark" viewBox="0 0 512 512" width="48" height="48" aria-hidden="true"><defs><radialGradient id="themes-hero-sun" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="var(--sonde-daylight-mark-sun-stop-0)"></stop><stop offset="60%" stop-color="var(--sonde-daylight-mark-sun-stop-1)"></stop><stop offset="100%" stop-color="var(--sonde-daylight-mark-sun-stop-2)"></stop></radialGradient><clipPath id="themes-hero-disc"><circle cx="256" cy="256" r="240"></circle></clipPath></defs><g style="display:var(--sonde-daylight-mark-solid-display, block)"><circle cx="256" cy="256" r="240" fill="url(#themes-hero-sun)"></circle><g clip-path="url(#themes-hero-disc)"><g fill="var(--sonde-daylight-mark-crater)" stroke="var(--sonde-daylight-mark-crater)">
   <!-- Lunar Maria (Visible only when themed via CSS variables) -->
   <g opacity="0.7">
     <path d="M40,240 C60,110 170,40 250,90 C320,130 330,210 260,280 C200,340 50,340 40,240 Z" opacity="0.6"/>
@@ -4166,7 +4440,7 @@ tr:hover {
 <span class="kw">const</span> <span class="v">result</span> <span class="pun">=</span> <span class="fn">computeScore</span><span class="pun">(</span><span class="v">auditResult</span><span class="pun">);</span>
 <span class="kw">if</span> <span class="pun">(</span><span class="v">result</span> <span class="pun">&gt;=</span> <span class="cnst">MINIMUM_TIER</span><span class="pun">)</span> <span class="pun">{</span>
   <span class="v">console</span><span class="prop">.log</span><span class="pun">(</span><span class="str">&quot;pass&quot;</span><span class="pun">);</span>
-<span class="pun">}</span></pre><div class="download-row"><a href="./high-contrast.css" download="" data-msg-id="themes.download.themeCss">theme CSS</a><a href="./tokens.css" download="" data-msg-id="themes.download.tokens">tokens.css</a></div></section></section><div class="themes-bundle-cta"><a href="./sonde-themes.zip" download="" data-msg-id="themes.bundle.cta">Download all themes (.zip)</a></div><footer class="site-footer"><div class="disclaimer"><strong>Disclaimer:</strong> This report presents the results of automated accessibility analysis and is provided free of charge, as-is, without warranty of any kind. Findings are generated by software, not by human accessibility experts, and may contain errors or omissions. Automated testing can detect approximately 30–40% of accessibility issues; manual expert evaluation is recommended for complete conformance assessment. Scores reflect algorithmic analysis under a published methodology open to public review — they are not legal determinations of compliance. Results reflect the state of the website at the time of scanning and may change as the site is updated. Nothing in this report constitutes legal advice. Sonde assumes no liability for decisions made based on these results.</div><nav class="footer-nav" aria-label="Footer navigation" data-msg-aria-label-id="footer.nav.aria"><a href="../" data-msg-id="themes.nav.home">Home</a><a href="../usgov/">US Governments</a><a href="../usfin/">US Financial</a><a href="../methodology/">Methodology</a></nav><div class="footer-brand"><a href="https://sonde.life/?utm_source=daylight&amp;utm_medium=footer&amp;utm_campaign=daylight" target="_blank" rel="noopener noreferrer" class="footer-brand-link" title="Visit the Sonde home page"><svg class="sonde-daylight-mark" viewBox="0 0 512 512" width="20" height="20" aria-hidden="true"><defs><radialGradient id="sdl20-sun" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="var(--sonde-daylight-mark-sun-stop-0)"></stop><stop offset="60%" stop-color="var(--sonde-daylight-mark-sun-stop-1)"></stop><stop offset="100%" stop-color="var(--sonde-daylight-mark-sun-stop-2)"></stop></radialGradient><clipPath id="sdl20-disc"><circle cx="256" cy="256" r="240"></circle></clipPath></defs><g style="display:var(--sonde-daylight-mark-solid-display, block)"><circle cx="256" cy="256" r="240" fill="url(#sdl20-sun)"></circle><g clip-path="url(#sdl20-disc)"><g fill="var(--sonde-daylight-mark-crater)" stroke="var(--sonde-daylight-mark-crater)">
+<span class="pun">}</span></pre><div class="download-row"><a href="./high-contrast.css" download="" data-msg-id="themes.download.themeCss">theme CSS</a><a href="./tokens.css" download="" data-msg-id="themes.download.tokens">tokens.css</a></div></section></section><div class="themes-bundle-cta"><a href="./sonde-themes.zip" download="" data-msg-id="themes.bundle.cta">Download all themes (.zip)</a></div><footer class="site-footer"><div class="disclaimer"><strong>Disclaimer:</strong> This report presents the results of automated accessibility analysis and is provided free of charge, as-is, without warranty of any kind. Findings are generated by software, not by human accessibility experts, and may contain errors or omissions. Automated testing can detect approximately 30–40% of accessibility issues; manual expert evaluation is recommended for complete conformance assessment. Scores reflect algorithmic analysis under a published methodology open to public review — they are not legal determinations of compliance. Results reflect the state of the website at the time of scanning and may change as the site is updated. Nothing in this report constitutes legal advice. Sonde assumes no liability for decisions made based on these results.</div><nav class="footer-nav" aria-label="Footer navigation" data-msg-aria-label-id="footer.nav.aria"><a href="../" data-msg-id="themes.nav.home">Home</a><a href="../usgov/">US Governments</a><a href="../usfin/">US Financial</a><a href="../methodology/">Methodology</a></nav><div class="footer-brand"><a href="https://sonde.life/?utm_source=daylight&amp;utm_medium=footer&amp;utm_campaign=daylight" target="_blank" rel="noopener noreferrer" class="footer-brand-link" title="Visit the Sonde home page" data-msg-title-id="audit.visitSonde"><svg class="sonde-daylight-mark" viewBox="0 0 512 512" width="20" height="20" aria-hidden="true"><defs><radialGradient id="sdl20-sun" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="var(--sonde-daylight-mark-sun-stop-0)"></stop><stop offset="60%" stop-color="var(--sonde-daylight-mark-sun-stop-1)"></stop><stop offset="100%" stop-color="var(--sonde-daylight-mark-sun-stop-2)"></stop></radialGradient><clipPath id="sdl20-disc"><circle cx="256" cy="256" r="240"></circle></clipPath></defs><g style="display:var(--sonde-daylight-mark-solid-display, block)"><circle cx="256" cy="256" r="240" fill="url(#sdl20-sun)"></circle><g clip-path="url(#sdl20-disc)"><g fill="var(--sonde-daylight-mark-crater)" stroke="var(--sonde-daylight-mark-crater)">
   <!-- Lunar Maria (Visible only when themed via CSS variables) -->
   <g opacity="0.7">
     <path d="M40,240 C60,110 170,40 250,90 C320,130 330,210 260,280 C200,340 50,340 40,240 Z" opacity="0.6"/>
