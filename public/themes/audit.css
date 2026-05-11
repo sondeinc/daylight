@@ -147,9 +147,12 @@
     page-break-after: avoid;
   }
   thead { display: table-header-group; }
-  a[href]:not([href^="#"]):not([href^="mailto:"]):not([href^="tel:"]):not(.finding-link-btn):not(.finding-feedback-btn)::after {
-    content: " (" attr(href) ")";
-  }
+  /* Modern PDF readers preserve clickable hyperlinks, so we no longer
+   * append the raw href as visible text after every <a>. The previous
+   * rule produced visual duplicates ("URL (URL)") on links whose visible
+   * text already matched their href, and bloated paged output. Click-
+   * through still works in the saved PDF — paged.js, Playwright bake,
+   * and Chrome's stock print all preserve the underlying href. */
   th.sortable::after, th[data-sort-key]::after {
     content: "";
     display: none;

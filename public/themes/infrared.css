@@ -331,9 +331,8 @@
     page-break-after: avoid;
   }
   thead { display: table-header-group; }
-  a[href]:not([href^="#"]):not([href^="mailto:"]):not([href^="tel:"]):not(.finding-link-btn):not(.finding-feedback-btn)::after {
-    content: " (" attr(href) ")";
-  }
+  /* Modern PDF readers preserve clickable hyperlinks; legacy
+   * "URL (URL)" expansion removed to avoid duplicate output. */
   th.sortable::after, th[data-sort-key]::after {
     content: "";
     display: none;
