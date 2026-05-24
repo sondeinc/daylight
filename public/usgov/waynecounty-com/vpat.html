@@ -1,123 +1,19 @@
 <!DOCTYPE html>
-<html lang="en-US"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>VPAT — Wayne County (MI)</title><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><script>(function () {
-  var THEME_KEY = "sonde-theme";
-  var LOCALE_KEY = "sonde-locale";
-  var MOTION_KEY = "sonde-motion";
-  var VALID_THEMES = ["light","dark","high-contrast","auto"];
-  var VALID_MOTION = ["normal","reduce","auto"];
-  var THEME_ATTRIBUTE = "data-theme";
-  var REMOVE_THEME_ATTRIBUTE_ON_AUTO = false;
-  var el = document.documentElement;
-  var mm = window.matchMedia;
-  var darkMq = mm && mm('(prefers-color-scheme: dark)');
-  var motionMq = mm && mm('(prefers-reduced-motion: reduce)');
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VPAT — Wayne County (MI)</title>
 
-  function safeRead(key) {
-    try { return window.localStorage.getItem(key); } catch (e) { return null; }
-  }
-  function safeWrite(key, value) {
-    try { window.localStorage.setItem(key, value); } catch (e) { /* quota / private mode */ }
-  }
-  function readAll() {
-    try {
-      var ls = window.localStorage;
-      return { t: ls.getItem(THEME_KEY), l: ls.getItem(LOCALE_KEY), m: ls.getItem(MOTION_KEY) };
-    } catch (e) { return { t: null, l: null, m: null }; }
-  }
+    <meta name="sonde-oscal-catalog" content="usnistgov/oscal-content v1.4.0 · 5.2.0" />
+    <meta name="sonde-baseline" content="fedramp moderate" />
+    <meta name="sonde-overlays" content="privacy" />
 
-  function resolveTheme(stored) {
-    if (VALID_THEMES.indexOf(stored || '') !== -1 && stored !== 'auto') return stored;
-    return darkMq && darkMq.matches ? 'dark' : 'light';
-  }
-  function resolveMotion(stored) {
-    if (stored === 'normal' || stored === 'reduce') return stored;
-    return motionMq && motionMq.matches ? 'reduce' : 'normal';
-  }
-
-  function applyTheme(stored) {
-    if (REMOVE_THEME_ATTRIBUTE_ON_AUTO && (stored === 'auto' || VALID_THEMES.indexOf(stored || '') === -1)) {
-      el.removeAttribute(THEME_ATTRIBUTE);
-      return;
-    }
-    el.setAttribute(THEME_ATTRIBUTE, resolveTheme(stored));
-  }
-  function applyMotion(stored) { el.setAttribute('data-motion', resolveMotion(stored)); }
-  function applyLocale(stored) {
-    if (typeof stored === 'string' && stored.length > 0) el.setAttribute('lang', stored);
-  }
-
-
-  var prefs = readAll();
-  applyTheme(prefs.t);
-  applyMotion(prefs.m);
-  applyLocale(prefs.l);
-
-  if (darkMq && darkMq.addEventListener) {
-    darkMq.addEventListener('change', function () {
-      if (VALID_THEMES.indexOf(safeRead(THEME_KEY) || '') === -1) applyTheme(null);
-    });
-  }
-  if (motionMq && motionMq.addEventListener) {
-    motionMq.addEventListener('change', function () {
-      if (VALID_MOTION.indexOf(safeRead(MOTION_KEY) || '') === -1) applyMotion(null);
-    });
-  }
-
-  window.sondePrefs = {
-    getTheme: function () { return el.getAttribute(THEME_ATTRIBUTE) || 'light'; },
-    getMotion: function () { return el.getAttribute('data-motion') || 'normal'; },
-    setTheme: function (value) {
-      if (value === 'auto') { safeWrite(THEME_KEY, 'auto'); applyTheme(null); return; }
-      if (VALID_THEMES.indexOf(value) !== -1) { safeWrite(THEME_KEY, value); applyTheme(value); }
-    },
-    setMotion: function (value) {
-      if (value === 'auto') { safeWrite(MOTION_KEY, 'auto'); applyMotion(null); return; }
-      if (VALID_MOTION.indexOf(value) !== -1) { safeWrite(MOTION_KEY, value); applyMotion(value); }
-    },
-    setLocale: function (value) {
-      if (typeof value === 'string' && value.length > 0) safeWrite(LOCALE_KEY, value);
-    },
-  };
-
-  function initThemeControls() {
-    var activeTheme = safeRead(THEME_KEY) || 'auto';
-    if (VALID_THEMES.indexOf(activeTheme) === -1) activeTheme = 'auto';
-    var themeInputs = document.querySelectorAll('input[name="sonde-theme-toggle"]');
-    for (var i = 0; i < themeInputs.length; i++) {
-      var input = themeInputs[i];
-      if (input.value === activeTheme) input.checked = true;
-      input.addEventListener('change', function (event) {
-        if (!event.target.checked) return;
-        window.sondePrefs.setTheme(event.target.value);
-        closeSettingsDropdown(event.target);
-      });
-    }
-  }
-
-  function initControls() {
-    initThemeControls();
-
-    initLocaleControls();
-  }
-  function initLocaleControls() {
-    var localeInputs = document.querySelectorAll('input[name="sonde-locale-picker-radio"]');
-    for (var l = 0; l < localeInputs.length; l++) {
-      localeInputs[l].addEventListener('change', function (event) {
-        if (!event.target.checked) return;
-        closeSettingsDropdown(event.target);
-      });
-    }
-  }
-  function closeSettingsDropdown(target) {
-    var dropdown = target && target.closest ? target.closest('.settings-dropdown') : null;
-    if (dropdown) dropdown.removeAttribute('open');
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initControls);
-  } else {
-    initControls();
-  }
-})();</script><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&amp;family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/><style>/**
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700&amp;family=Newsreader:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet" />
+    <style>
+/**
  * Sonde Design Tokens — Layer 1 (the semantic contract)
  *
  * Every --sonde-* custom property is defined here. This file is the
@@ -241,6 +137,33 @@
   --sonde-daylight-mark-probe: #1a1a2e;
   --sonde-daylight-mark-solid-display: block;
   --sonde-daylight-mark-line-display: none;
+
+  /* Theme-preview mark palettes freeze each swatch's target appearance so
+   * the selector menu does not inherit the active page mode. Component CSS
+   * references these tokens; it must not mirror the literal color values. */
+  --sonde-daylight-mark-preview-light-sun-stop-0: #ffe082;
+  --sonde-daylight-mark-preview-light-sun-stop-1: #ffb300;
+  --sonde-daylight-mark-preview-light-sun-stop-2: #e65100;
+  --sonde-daylight-mark-preview-light-crater: transparent;
+  --sonde-daylight-mark-preview-light-probe: #1a1a2e;
+  --sonde-daylight-mark-preview-light-solid-display: block;
+  --sonde-daylight-mark-preview-light-line-display: none;
+
+  --sonde-daylight-mark-preview-dark-sun-stop-0: #e0e8f0;
+  --sonde-daylight-mark-preview-dark-sun-stop-1: #a8b4c0;
+  --sonde-daylight-mark-preview-dark-sun-stop-2: #505860;
+  --sonde-daylight-mark-preview-dark-crater: transparent;
+  --sonde-daylight-mark-preview-dark-probe: #0a1120;
+  --sonde-daylight-mark-preview-dark-solid-display: block;
+  --sonde-daylight-mark-preview-dark-line-display: none;
+
+  --sonde-daylight-mark-preview-high-contrast-sun-stop-0: #000000;
+  --sonde-daylight-mark-preview-high-contrast-sun-stop-1: #000000;
+  --sonde-daylight-mark-preview-high-contrast-sun-stop-2: #000000;
+  --sonde-daylight-mark-preview-high-contrast-crater: transparent;
+  --sonde-daylight-mark-preview-high-contrast-probe: #ffffff;
+  --sonde-daylight-mark-preview-high-contrast-solid-display: none;
+  --sonde-daylight-mark-preview-high-contrast-line-display: block;
 
   /* ─── Color — Sonde daylight mock palette (build-time SVG mockups) ── */
   /* Consumed by build-time generators that bake daylight-themed UI into
@@ -535,6 +458,20 @@
   --sonde-content-data-max: 95vw;        /* Data tables: near full width */
   --sonde-content-min-width: 320px;      /* Mobile minimum */
   --sonde-content-padding: clamp(1rem, 3vw, 3rem);
+  --sonde-form-factor-phone-max: 480px;       /* Phone contract upper bound */
+  --sonde-form-factor-tablet-max: 1024px;     /* Tablet contract upper bound */
+  --sonde-form-factor-large-min: 1920px;      /* Large-monitor contract lower bound */
+  --sonde-layout-shell-max: min(96vw, 118rem);          /* Rich page shell */
+  --sonde-layout-readable-max: var(--sonde-content-readable-max); /* Readable/prose rail */
+  --sonde-layout-data-max: var(--sonde-content-data-max);          /* Tables and dense data */
+  --sonde-layout-gutter-inline: var(--sonde-content-padding);
+  --sonde-layout-gutter-block: var(--sonde-spacing-xl);
+  --sonde-layout-panel-min: min(100%, 18rem);
+  --sonde-layout-panel-max: 28rem;
+  --sonde-layout-grid-min: 16rem;
+  --sonde-layout-toolbar-gap: var(--sonde-spacing-sm);
+  --sonde-target-size-min: 44px;      /* WCAG 2.5.8 minimum */
+  --sonde-target-size-comfort: 48px;  /* Mobile/touch comfort target */
 
   /* ─── Border Radius ─────────────────────────────────────────── */
   --sonde-radius-sm: 4px;
@@ -808,6 +745,35 @@
 :root:lang(ja), :root:lang(zh), :root:lang(ko),
 [lang^="ja"], [lang^="zh"], [lang^="ko"] {
   --sonde-content-readable-max: 40ch;
+  --sonde-layout-readable-max: 40ch;
+}
+
+/* ─── Form-Factor Layout Overrides ─────────────────────────────── */
+@media (max-width: 480px) {
+  :root {
+    --sonde-content-data-max: 100vw;
+    --sonde-content-padding: clamp(0.75rem, 4vw, 1rem);
+    --sonde-layout-shell-max: 100%;
+    --sonde-layout-data-max: 100vw;
+    --sonde-layout-gutter-inline: var(--sonde-content-padding);
+    --sonde-layout-gutter-block: var(--sonde-spacing-lg);
+    --sonde-layout-panel-min: 100%;
+    --sonde-layout-panel-max: 100%;
+    --sonde-layout-grid-min: min(100%, 14rem);
+    --sonde-layout-toolbar-gap: var(--sonde-spacing-xs);
+  }
+}
+
+@media (min-width: 1920px) {
+  :root {
+    --sonde-content-data-max: min(94vw, 118rem);
+    --sonde-content-padding: clamp(2rem, 2vw, 5rem);
+    --sonde-layout-shell-max: min(96vw, 128rem);
+    --sonde-layout-data-max: min(94vw, 118rem);
+    --sonde-layout-gutter-inline: var(--sonde-content-padding);
+    --sonde-layout-gutter-block: var(--sonde-spacing-2xl);
+    --sonde-layout-grid-min: 18rem;
+  }
 }
 
 /* ─── AUTO-GENERATED @property REGISTRATIONS — do not edit by hand ────── */
@@ -1231,6 +1197,81 @@
   initial-value: #ff00ff;
 }
 @property --sonde-daylight-mark-crater {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-dark-crater {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-dark-probe {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-dark-sun-stop-0 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-dark-sun-stop-1 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-dark-sun-stop-2 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-high-contrast-crater {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-high-contrast-probe {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-high-contrast-sun-stop-0 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-high-contrast-sun-stop-1 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-high-contrast-sun-stop-2 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-light-crater {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-light-probe {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-light-sun-stop-0 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-light-sun-stop-1 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-light-sun-stop-2 {
   syntax: "<color>";
   inherits: true;
   initial-value: #ff00ff;
@@ -1774,266 +1815,102 @@
 
 
 /**
- * Daylight Theme — "Maritime Observatory"
+ * Audit Theme — Diagnostic, never punitive.
  *
- * Deep ocean charts meeting clear afternoon light. The Daylight Project
- * illuminates what was hidden: contrast, structure, navigability.
+ * Blue-to-amber spectrum. NO red/green pass/fail.
+ * "Health check, not a verdict."
  *
- * Light mode: warm ecru ground, deep prussian navy primary, tidal teal accent.
- * Dark mode: deep slate ocean floor, luminous teal signal, phosphor amber accent.
- *
- * Fonts: Bricolage Grotesque (headings) + DM Sans (body) + IBM Plex Mono (code)
+ * Typography: Bricolage Grotesque (headings) + DM Sans (body) + IBM Plex Mono (code)
+ * Palette: Deep navy primary, warm parchment background, teal accent.
  */
 
-/* ─── Light Mode (default) ──────────────────────────────────────── */
+/* ─── Light Mode (default) ─────────────���────────────────────────── */
 :root {
   color-scheme: light;
-  --sonde-supports-high-contrast: 1;
 
-  --sonde-color-primary: #1a3554;
-  --sonde-color-secondary: #086962;
-  --sonde-color-bg: #f7f5f0;
+  --sonde-color-primary: #1e3a5f;
+  --sonde-color-secondary: #0a736b;
+  --sonde-color-bg: #f8f7f4;
   --sonde-color-surface: #ffffff;
   --sonde-color-text: #1c1917;
-  --sonde-color-text-muted: #4f4a44;
-  --sonde-color-text-heading: #1a3554;
-  --sonde-color-border: #918e86;
-  --sonde-color-border-subtle: #97948f;
-  --sonde-color-accent: #1a3554;
-  --sonde-color-accent-dim: #1a355418;
+  --sonde-color-text-muted: #57534e;
+  --sonde-color-text-heading: #1e3a5f;
+  --sonde-color-border: #918f8d;
+  --sonde-color-border-subtle: #969494;
+  --sonde-color-accent: #1e3a5f;
+  --sonde-color-accent-dim: #1e3a5f18;
 
-  --sonde-color-pass: #0a7a72;
-  --sonde-color-fail: #ad3a0b;
-  --sonde-color-partial: #8c5f03;
-  --sonde-color-na: #736e68;
+  /* Diagnostic palette — no bright red/green */
+  --sonde-color-pass: #0a736b;
+  --sonde-color-fail: #c2410c;
+  --sonde-color-partial: #966500;
+  --sonde-color-na: #766f6c;
   --sonde-color-info: #2563eb;
-  --sonde-color-warning: #8c5f03;
-  --sonde-color-error: #ad3a0b;
+  --sonde-color-warning: #966500;
+  --sonde-color-error: #c2410c;
   --sonde-color-critical: #9f1239;
 
-  --sonde-color-table-header-bg: #1a3554;
-  --sonde-color-table-header-text: #ffffff;
-
-  --sonde-font-body: 'Outfit', 'DM Sans', 'Avenir Next', system-ui, sans-serif;
-  --sonde-font-heading: 'Outfit', 'DM Sans', 'Avenir Next', system-ui, sans-serif;
+  --sonde-font-body: 'DM Sans', 'Avenir Next', system-ui, sans-serif;
+  --sonde-font-heading: 'Bricolage Grotesque', 'Avenir Next', system-ui, sans-serif;
   --sonde-font-mono: 'IBM Plex Mono', 'Fira Code', ui-monospace, monospace;
   --sonde-font-size-base: 16px;
   --sonde-line-height: 1.65;
-
-  /* Daylight-specific extended tokens */
-  --sonde-daylight-cta-from: #1a3554;
-  --sonde-daylight-cta-to: #0a8a7e;
-  --sonde-daylight-cta-text: #ffffff;
-  --sonde-daylight-cta-shadow: rgba(26, 53, 84, 0.22);
-  --sonde-daylight-radius-card: 14px;
-  --sonde-daylight-radius-pill: 999px;
-  --sonde-daylight-radius-sm: 6px;
-  --sonde-daylight-shadow-card: 0 4px 18px rgba(26, 53, 84, 0.10);
-  --sonde-daylight-shadow-lift: 0 8px 28px rgba(26, 53, 84, 0.14);
-  --sonde-daylight-hero-radial: radial-gradient(ellipse 70% 45% at 50% 0%, rgba(26, 53, 84, 0.06) 0%, transparent 100%);
-
-  /* Confidence badges — light mode. White foreground on the dark amber
-     partial background (passes WCAG 1.4.3 AA at 5.5:1). */
-  --sonde-color-confidence-medium-text: #ffffff;
-  --sonde-color-confidence-low-text: #ffffff;
-
-  /* Fix plan cards */
-  --sonde-color-fix-label: #0a7a72;
-  --sonde-color-fix-text: #1c1917;
-
-  /* Mission-control buttons */
-  --sonde-color-btn-bg: #1a3554;
-  --sonde-color-btn-text: #ffffff;
-
-  /* Code block surfaces */
-  --sonde-code-bg: #f0ebe0;
-  --sonde-code-text: #1c1917;
-  --sonde-code-line-num: #a8a094;
-  --sonde-code-gutter-bg: #e9e3d5;
-  --sonde-code-highlight-bg: rgba(26, 53, 84, 0.06);
-
-  /* Syntax highlighting — daylight brand family */
-  --sonde-syntax-keyword: #1a3554;
-  --sonde-syntax-type: #08645e;
-  --sonde-syntax-string: #14532d;
-  --sonde-syntax-number: #9f4f05;
-  --sonde-syntax-comment: #635e58;
-  --sonde-syntax-function: #0369a1;
-  --sonde-syntax-variable: #1c1917;
-  --sonde-syntax-constant: #ad3a0b;
-  --sonde-syntax-property: #1a3554;
-  --sonde-syntax-punctuation: #57534e;
-  --sonde-syntax-tag: #991b1b;
-  --sonde-syntax-default: #1c1917;
-  --sonde-color-sidebar: #bab7d2;
-
-  /* Diff viewer */
-  --sonde-color-diff-bg: #f0ebe0;
-  --sonde-color-diff-add-bg: #dcf5eb;
-  --sonde-color-diff-add-text: #086962;
-  --sonde-color-diff-add-gutter: #c5e7dc;
-  --sonde-color-diff-remove-bg: #fde6dc;
-  --sonde-color-diff-remove-text: #9b2f08;
-  --sonde-color-diff-remove-gutter: #f3cbbf;
-  --sonde-color-diff-unchanged-gutter: #e9e3d5;
+  --sonde-color-sidebar: #c7c4e0;
 }
 
-/* ─���─ Dark Mode — explicit via data-theme="dark" ────────────────── */
+/* ─── Dark Mode — explicit via data-theme="dark" ─────────���──────── */
 [data-theme="dark"] {
   color-scheme: dark;
-  --sonde-color-primary: #5eb8ff;
-  --sonde-color-primary-dark: #1a3554;
+  --sonde-color-primary: #7db8e0;
   --sonde-color-secondary: #2dd4bf;
   --sonde-color-bg: #0d1117;
   --sonde-color-surface: #161b22;
-  --sonde-color-sidebar: #0d1117;
   --sonde-color-text: #e6edf3;
-  --sonde-color-text-muted: #a5aeb8;
-  --sonde-color-text-heading: #cdd9e5;
+  --sonde-color-text-muted: #8b949e;
+  --sonde-color-text-heading: #c5d5e8;
   --sonde-color-border: #5a6168;
   --sonde-color-border-subtle: #61676f;
+  --sonde-color-accent: #7db8e0;
+  --sonde-color-accent-dim: rgba(125, 184, 224, 0.14);
+
   --sonde-color-pass: #2dd4bf;
-  --sonde-color-fail: #ff8d8b;
+  --sonde-color-fail: #fd943e;
   --sonde-color-partial: #fbbf24;
   --sonde-color-na: #7e8795;
   --sonde-color-info: #6caeff;
   --sonde-color-warning: #fbbf24;
-  --sonde-color-error: #ff8d8b;
+  --sonde-color-error: #fd943e;
   --sonde-color-critical: #ff939f;
-  --sonde-color-accent: #5eb8ff;
-  --sonde-color-accent-dim: rgba(94, 184, 255, 0.14);
-
-  --sonde-color-table-header-bg: #1a3554;
-  --sonde-color-table-header-text: #e6edf3;
-
-  --sonde-color-confidence-medium-text: #0d1117;
-  --sonde-color-confidence-low-text: #0d1117;
-
-  --sonde-color-fix-label: #2dd4bf;
-  --sonde-color-fix-text: #e6edf3;
-
-  --sonde-color-btn-bg: #1a3554;
-  --sonde-color-btn-text: #e6edf3;
-
-  --sonde-daylight-cta-from: #112240;
-  --sonde-daylight-cta-to: #0e7490;
-  --sonde-daylight-cta-text: #e0f2fe;
-  --sonde-daylight-cta-shadow: rgba(0, 0, 0, 0.40);
-  --sonde-daylight-shadow-card: 0 4px 18px rgba(0, 0, 0, 0.30);
-  --sonde-daylight-shadow-lift: 0 8px 28px rgba(0, 0, 0, 0.40);
-  --sonde-daylight-hero-radial: radial-gradient(ellipse 70% 45% at 50% 0%, rgba(45, 212, 191, 0.07) 0%, transparent 100%);
-
-  /* Code block surfaces */
-  --sonde-code-bg: #0a0e14;
-  --sonde-code-text: #e6edf3;
-  --sonde-code-line-num: #5a6168;
-  --sonde-code-gutter-bg: #161b22;
-  --sonde-code-highlight-bg: rgba(94, 184, 255, 0.10);
-
-  /* Syntax highlighting — daylight dark */
-  --sonde-syntax-keyword: #5eb8ff;
-  --sonde-syntax-type: #2dd4bf;
-  --sonde-syntax-string: #86efac;
-  --sonde-syntax-number: #fdba74;
-  --sonde-syntax-comment: #8b949e;
-  --sonde-syntax-function: #93c5fd;
-  --sonde-syntax-variable: #e6edf3;
-  --sonde-syntax-constant: #fbbf24;
-  --sonde-syntax-property: #a5b4fc;
-  --sonde-syntax-punctuation: #8b949e;
-  --sonde-syntax-tag: #ff8d8b;
-  --sonde-syntax-default: #e6edf3;
-
-  /* Diff viewer */
-  --sonde-color-diff-bg: #0a0e14;
-  --sonde-color-diff-add-bg: #08251f;
-  --sonde-color-diff-add-text: #2dd4bf;
-  --sonde-color-diff-add-gutter: #0d342c;
-  --sonde-color-diff-remove-bg: #351313;
-  --sonde-color-diff-remove-text: #ffb3b1;
-  --sonde-color-diff-remove-gutter: #452020;
-  --sonde-color-diff-unchanged-gutter: #161b22;
 }
 
-/* ─── Dark Mode — automatic via OS preference ────────────────���──── */
+/* ─── Dark Mode ��� automatic via OS preference ───────────────────── */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]):not([data-theme="high-contrast"]) {
     color-scheme: dark;
-    --sonde-color-primary: #5eb8ff;
-    --sonde-color-primary-dark: #1a3554;
+    --sonde-color-primary: #7db8e0;
     --sonde-color-secondary: #2dd4bf;
     --sonde-color-bg: #0d1117;
     --sonde-color-surface: #161b22;
     --sonde-color-text: #e6edf3;
-    --sonde-color-text-muted: #a5aeb8;
-    --sonde-color-text-heading: #cdd9e5;
+    --sonde-color-text-muted: #8b949e;
+    --sonde-color-text-heading: #c5d5e8;
     --sonde-color-border: #5a6168;
     --sonde-color-border-subtle: #61676f;
+    --sonde-color-accent: #7db8e0;
+    --sonde-color-accent-dim: rgba(125, 184, 224, 0.14);
+
     --sonde-color-pass: #2dd4bf;
-    --sonde-color-fail: #ff8d8b;
-    --sonde-color-partial: #fbbf24;
-    --sonde-color-na: #7e8795;
+    --sonde-color-fail: #fd943e;
+    --sonde-color-partial: #e2ae5e;
+    --sonde-color-na: #8d8480;
     --sonde-color-info: #6caeff;
-    --sonde-color-warning: #fbbf24;
-    --sonde-color-error: #ff8d8b;
+    --sonde-color-warning: #e3ae5f;
+    --sonde-color-error: #fd943e;
     --sonde-color-critical: #ff939f;
-    --sonde-color-accent: #5eb8ff;
-    --sonde-color-accent-dim: rgba(94, 184, 255, 0.14);
-
-    --sonde-color-table-header-bg: #1a3554;
-    --sonde-color-table-header-text: #e6edf3;
-
-    --sonde-color-confidence-medium-text: #0d1117;
-    --sonde-color-confidence-low-text: #0d1117;
-
-    --sonde-color-fix-label: #2dd4bf;
-    --sonde-color-fix-text: #e6edf3;
-
-    --sonde-color-btn-bg: #1a3554;
-    --sonde-color-btn-text: #e6edf3;
-
-    --sonde-daylight-cta-from: #112240;
-    --sonde-daylight-cta-to: #0e7490;
-    --sonde-daylight-cta-text: #e0f2fe;
-    --sonde-daylight-cta-shadow: rgba(0, 0, 0, 0.40);
-    --sonde-daylight-shadow-card: 0 4px 18px rgba(0, 0, 0, 0.30);
-    --sonde-daylight-shadow-lift: 0 8px 28px rgba(0, 0, 0, 0.40);
-    --sonde-daylight-hero-radial: radial-gradient(ellipse 70% 45% at 50% 0%, rgba(45, 212, 191, 0.07) 0%, transparent 100%);
-
-    /* Code block surfaces */
-    --sonde-code-bg: #0a0e14;
-    --sonde-code-text: #e6edf3;
-    --sonde-code-line-num: #5a6168;
-    --sonde-code-gutter-bg: #161b22;
-    --sonde-code-highlight-bg: rgba(94, 184, 255, 0.10);
-
-    /* Syntax highlighting — daylight dark */
-    --sonde-syntax-keyword: #5eb8ff;
-    --sonde-syntax-type: #2dd4bf;
-    --sonde-syntax-string: #86efac;
-    --sonde-syntax-number: #ffd2a8;
-    --sonde-syntax-comment: #8b949e;
-    --sonde-syntax-function: #93c5fd;
-    --sonde-syntax-variable: #e6edf3;
-    --sonde-syntax-constant: #fbbf24;
-    --sonde-syntax-property: #a5b4fc;
-    --sonde-syntax-punctuation: #8b949e;
-    --sonde-syntax-tag: #ff8d8b;
-    --sonde-syntax-default: #e6edf3;
-
-    /* Diff viewer */
-    --sonde-color-diff-bg: #0a0e14;
-    --sonde-color-diff-add-bg: #08251f;
-    --sonde-color-diff-add-text: #2dd4bf;
-    --sonde-color-diff-add-gutter: #0d342c;
-    --sonde-color-diff-remove-bg: #351313;
-    --sonde-color-diff-remove-text: #ffb3b1;
-    --sonde-color-diff-remove-gutter: #452020;
-    --sonde-color-diff-unchanged-gutter: #161b22;
   }
 }
 
-/* ─── High Contrast ─────────────────────��───────────────────────── */
+/* ─── High Contrast ��───────────────���────────────────────────────── */
 @media (prefers-contrast: more) {
   :root {
     --sonde-color-text: #000000;
@@ -2046,7 +1923,6 @@
   }
 }
 
-/* ─── Reduced Motion ─────────────────────────���──────────────────── */
 /* Reduced-motion block inherited from tokens.css. */
 
 /* ─── Print ─────────────────────────────────────────────────────── */
@@ -2068,674 +1944,533 @@
     background: #ffffff !important;
     color: #000000 !important;
   }
-  .site-nav,
-  .settings-dropdown,
-  footer,
-  .sonde-nav,
-  .sonde-controls,
-  .scribe-leaderboard-pagination,
-  .leaderboard-pagination,
-  [data-print="hide"] {
+  .site-nav, .settings-dropdown, footer, .sonde-nav, .sonde-controls,
+  .scribe-leaderboard-pagination, .leaderboard-pagination, [data-print="hide"] {
     display: none !important;
   }
-  details,
-  details:not([open]) {
-    display: block;
-  }
-  details > summary {
-    display: none;
-  }
-  details > * {
-    display: revert;
-  }
-  pre,
-  code,
-  .exhibit-code-block {
+  details, details:not([open]) { display: block; }
+  details > summary { display: none; }
+  details > * { display: revert; }
+  pre, code, .exhibit-code-block {
     break-inside: avoid;
     page-break-inside: avoid;
     orphans: 4;
     widows: 4;
   }
-  section,
-  .vpat-section,
-  tr {
-    break-inside: avoid;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  section, .vpat-section, tr { break-inside: avoid; }
+  h1, h2, h3, h4, h5, h6 {
     break-after: avoid;
     page-break-after: avoid;
   }
-  thead {
-    display: table-header-group;
-  }
+  thead { display: table-header-group; }
   /* Modern PDF readers preserve clickable hyperlinks, so we no longer
    * append the raw href as visible text after every <a>. The previous
-   * rule produced duplicate "URL (URL)" output on links whose visible
-   * text already matched their href (cover live-link, breadcrumbs).
-   * Click-through still works in saved PDFs. */
-  th.sortable::after,
-  th[data-sort-key]::after {
+   * rule produced visual duplicates ("URL (URL)") on links whose visible
+   * text already matched their href, and bloated paged output. Click-
+   * through still works in the saved PDF — paged.js, Playwright bake,
+   * and Chrome's stock print all preserve the underlying href. */
+  th.sortable::after, th[data-sort-key]::after {
     content: "";
     display: none;
   }
-  tr[data-filtered="true"] {
-    display: none;
-  }
-  body[data-scribe-print-rows="all"] tr[data-filtered="true"] {
-    display: table-row;
-  }
+  tr[data-filtered="true"] { display: none; }
+  body[data-scribe-print-rows="all"] tr[data-filtered="true"] { display: table-row; }
 }
 
-/* ─── Forced Colors (Windows High Contrast) ─────────��───────────── */
+/* ─── Forced Colors (Windows High Contrast) ──────────���──────────── */
 @media (forced-colors: active) {
   :root {
     --sonde-color-primary: LinkText;
     --sonde-color-text: CanvasText;
     --sonde-color-bg: Canvas;
     --sonde-color-surface: Canvas;
-    --sonde-color-border: #918e86;
+    --sonde-color-border: #918f8d;
     --sonde-color-accent: Highlight;
   }
 }
 
-/* ─── High Contrast Toggle ──────────────────────────────────────── */
-[data-theme="high-contrast"] {
-  color-scheme: light;
 
-  --sonde-color-primary: #000000;
-  --sonde-color-secondary: #00524a;
-  --sonde-color-bg: #ffffff;
-  --sonde-color-surface: #ffffff;
-  --sonde-color-text: #000000;
-  --sonde-color-text-muted: #333333;
-  --sonde-color-text-heading: #000000;
-  --sonde-color-border: #000000;
-  --sonde-color-border-subtle: #666666;
-  --sonde-color-accent: #00524a;
-  --sonde-color-accent-dim: #00524a22;
+/* Global reset: border-box sizing so paddings + borders are included
+   in declared widths. Without this, elements with padding can exceed
+   their max-inline-size / 100% container at narrow viewports, which
+   caused the /themes/ 320px WCAG 1.4.10 reflow finding — .theme-toggle
+   declared max-inline-size:100% but rendered 325px (288px content +
+   35px padding + 2px border) because default box-sizing is content-box. */
+*, *::before, *::after { box-sizing: border-box; }
 
-  /* Status colors: all ≥ 7:1 on white */
-  --sonde-color-pass: #006838;
-  --sonde-color-fail: #b30000;
-  --sonde-color-partial: #7a4f00;
-  --sonde-color-na: #444444;
-  --sonde-color-info: #003d99;
-  --sonde-color-warning: #7a4f00;
-  --sonde-color-error: #b30000;
-  --sonde-color-critical: #8b0028;
-
-  --sonde-color-table-header-bg: #000000;
-  --sonde-color-table-header-text: #ffffff;
-
-  /* High contrast daylight mark (Black sun on white background) */
-  --sonde-daylight-mark-sun-stop-0: #000000;
-  --sonde-daylight-mark-sun-stop-1: #000000;
-  --sonde-daylight-mark-sun-stop-2: #000000;
-  --sonde-daylight-mark-probe: #ffffff;
-  --sonde-daylight-mark-solid-display: none;
-  --sonde-daylight-mark-line-display: block;
-
-  --sonde-font-body: 'Atkinson Hyperlegible', 'Verdana', system-ui, sans-serif;
-  --sonde-font-heading: 'Atkinson Hyperlegible', 'Verdana', system-ui, sans-serif;
-  --sonde-font-mono: 'Cascadia Code', 'Consolas', ui-monospace, monospace;
-  --sonde-font-display: 'Atkinson Hyperlegible', 'Verdana', system-ui, sans-serif;
-  --sonde-font-size-base: 18px;
-  --sonde-line-height: 1.7;
-
-  /* Wider spacing for readability */
-  --sonde-radius-sm: 2px;
-  --sonde-radius-md: 4px;
-  --sonde-radius-lg: 8px;
-
-  /* Elevated surface + stronger border tiers — HC collapses tiers into
-   * the base palette; elevation comes from borders, not fills. */
-  --sonde-color-surface-elevated: #ffffff;
-  --sonde-color-border-strong: #000000;
-
-  /* Visualization primitives — HC avoids low-alpha overlays; solid
-   * blacks where possible, 25%+ alpha where an overlay is unavoidable. */
-  --sonde-viz-grid-overlay: rgba(0, 0, 0, 0.05);
-  --sonde-viz-glow: rgba(0, 0, 0, 0.25);
-  --sonde-viz-label-bg: rgba(255, 255, 255, 0.95);
-  --sonde-viz-node-faded: rgba(0, 0, 0, 0.3);
-  --sonde-viz-edge: #000000;
-  --sonde-viz-code-bg: #f0f0f0;
-
-  /* Code block surfaces */
-  --sonde-code-bg: #ffffff;
-  --sonde-code-text: #000000;
-  --sonde-code-line-num: #595959;
-  --sonde-code-gutter-bg: #f0f0f0;
-  --sonde-code-highlight-bg: #ffff99;
-
-  /* Syntax highlighting — maximally-distinct AAA palette on white */
-  --sonde-syntax-keyword: #0000cc;
-  --sonde-syntax-type: #006600;
-  --sonde-syntax-string: #a31515;
-  --sonde-syntax-number: #098658;
-  --sonde-syntax-comment: #595959;
-  --sonde-syntax-function: #795e26;
-  --sonde-syntax-variable: #001080;
-  --sonde-syntax-constant: #0000cc;
-  --sonde-syntax-property: #001080;
-  --sonde-syntax-punctuation: #000000;
-  --sonde-syntax-tag: #800000;
-  --sonde-syntax-default: #000000;
-}
-
-
-/* base structural CSS — tokens only, no fallbacks.
- * Extracted from packages/renderer/src/templates/baseCSS.ts buildBaseCSS().
- * Layout, typography, table, badge, and finding styles shared across
- * every Sonde HTML output.
- */
-
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-html { font-size: var(--sonde-font-size-base); }
-
+/* Body inherits theme — ensures background, font, and color apply full-bleed */
 body {
-  font-family: var(--sonde-font-body);
-  color: var(--sonde-color-text);
+  margin: 0;
+  padding: 0;
   background: var(--sonde-color-bg);
-  line-height: var(--sonde-line-height);
+  color: var(--sonde-color-text);
+  font-family: var(--sonde-font-body, system-ui, sans-serif);
+  font-size: var(--sonde-font-size-base, 16px);
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
-  /* `clip` instead of `hidden`: both prevent horizontal scroll, but
-   * `hidden` turns body into the containing block for every sticky
-   * descendant, which silently disables position:sticky on deeper
-   * elements (body doesn't scroll, viewport does, so sticky has no
-   * usable scroll container). `clip` clips visually without creating
-   * that containing block, so sticky keeps working. Chrome 90+,
-   * Firefox 81+, Safari 16+ all support it. */
-  overflow-x: clip;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4 {
-  font-family: var(--sonde-font-heading);
-  font-weight: 600;
-  line-height: 1.25;
-  color: var(--sonde-color-text-heading);
+/* Visually hidden utility for screen readers (used by figcaptions,
+   heatmap values, etc.). Note: this pattern uses clip:rect which
+   WCAG 1.4.12 reflow probes may flag; it is safe here because the
+   text is descriptive metadata, not load-bearing page content. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
+    </style>
+  </head>
+  <body>
+    <main id="main-content" class="sonde-exhibit">
+      <header class="exhibit-header">
+        <h1>VPAT — Wayne County (MI)</h1>
+        <p class="exhibit-author">Sonde | Sonde</p>
+      </header>
 
-h1 { font-size: 2rem; margin-bottom: 0.5rem; }
-h2 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 0.75rem; border-bottom: 2px solid var(--sonde-color-primary); padding-bottom: 0.25rem; }
-h3 { font-size: 1.15rem; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+<section class="exhibit-slide" data-slide-index="0">
+<p class="exhibit-body" data-msg-id="vpat.brand">Sonde Daylight</p>
+<h1 class="exhibit-title" data-msg-id="vpat.title">Voluntary Product Accessibility Template (VPAT)</h1>
+<p class="exhibit-subtitle" data-msg-id="vpat.subtitle">WCAG 2.1 Conformance Report</p>
+<h2 class="exhibit-heading" data-msg-id="vpat.productInfo">Product Information</h2>
+<table class="exhibit-table">
+  <thead>
+    <tr>
+      <th scope="col" data-msg-id="vpat.field">Field</th>
+      <th scope="col" data-msg-id="vpat.value">Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" data-msg-id="vpat.productName">Name of Product/Version</th>
+      <td>Wayne County (MI)</td>
+    </tr>
+    <tr>
+      <th scope="row" data-msg-id="vpat.productUrl">Product URL</th>
+      <td>https://waynecounty.com</td>
+    </tr>
+    <tr>
+      <th scope="row" data-msg-id="vpat.reportDate">Report Date</th>
+      <td>May 22, 2026</td>
+    </tr>
+    <tr>
+      <th scope="row" data-msg-id="vpat.sondeScore">Sonde Score</th>
+      <td data-msg-id="vpat.scoreOutOf" data-msg-args="{&quot;score&quot;:969}">969/1000</td>
+    </tr>
+    <tr>
+      <th scope="row" data-msg-id="vpat.contactInfo">Contact Information</th>
+      <td data-msg-id="vpat.generatedBy">Generated by Sonde (sonde.life)</td>
+    </tr>
+    <tr>
+      <th scope="row" data-msg-id="vpat.notes">Notes</th>
+      <td data-msg-id="vpat.notesBody">This VPAT was auto-generated from automated accessibility scanning. It covers WCAG 2.1 Level A and Level AA success criteria. Manual testing may reveal additional conformance issues not detectable by automated tools.</td>
+    </tr>
+  </tbody>
+</table>
+</section>
 
-code, pre {
-  font-family: var(--sonde-font-mono);
-  font-size: 0.88rem;
-}
+<section class="exhibit-slide" data-slide-index="1">
+<h2 class="exhibit-heading" data-msg-id="vpat.evaluationMethods">Evaluation Methods Used</h2>
+<p class="exhibit-body" data-msg-id="vpat.evaluationBody">Conformance was evaluated using automated scanning with the Sonde accessibility analysis platform. The evaluation included:</p>
+<ul class="exhibit-bullets">
+  <li><span data-msg-id="vpat.eval.axe">axe-core engine — industry-standard WCAG 2.1 DOM rule evaluation</span></li>
+  <li><span data-msg-id="vpat.eval.sondeLive">Sonde live probes — interactive browser testing (keyboard traps, focus order, color contrast, reflow, dynamic content, media accessibility, navigation consistency)</span></li>
+  <li><span data-msg-id="vpat.eval.a11yTree">Accessibility tree analysis — Chrome CDP accessibility tree inspection for ARIA compliance</span></li>
+  <li><span data-msg-id="vpat.eval.crawl" data-msg-args="{&quot;count&quot;:1}">Multi-page crawl — 1 pages analyzed for cross-page consistency</span></li>
+</ul>
+<p class="exhibit-body" data-msg-id="vpat.limitations">Limitations: Automated testing cannot fully evaluate criteria that require human judgment (e.g., sensory characteristics, three flashes threshold). Criteria marked &quot;Supports&quot; indicate no automated violations were detected, not that the criterion is fully met.</p>
+</section>
 
-pre {
-  background: var(--sonde-code-bg);
-  color: var(--sonde-code-text);
-  padding: 1rem;
-  border-radius: var(--sonde-radius-md);
-  overflow-x: auto;
-  margin: 0.75rem 0;
-}
+<section class="exhibit-slide" data-slide-index="2">
+<h2 class="exhibit-heading" data-msg-id="vpat.applicableStandards">Applicable Standards/Guidelines</h2>
+<table class="exhibit-table">
+  <thead>
+    <tr>
+      <th scope="col" data-msg-id="vpat.standardGuideline">Standard/Guideline</th>
+      <th scope="col" data-msg-id="vpat.includedInReport">Included in Report</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" data-msg-id="vpat.wcag21">Web Content Accessibility Guidelines 2.1</th>
+      <td data-msg-id="vpat.levelAaa">Level A &amp; Level AA</td>
+    </tr>
+    <tr>
+      <th scope="row">Revised Section 508 Standards</th>
+      <td>via WCAG 2.1</td>
+    </tr>
+    <tr>
+      <th scope="row" data-msg-id="vpat.en301549">EN 301 549 Accessibility Requirements</th>
+      <td data-msg-id="vpat.applicableViaWcag">Applicable criteria (via WCAG alignment)</td>
+    </tr>
+    <tr>
+      <th scope="row">NIST SP 800-53 Rev 5</th>
+      <td data-msg-id="vpat.nistControlsBaseline" data-msg-args="{&quot;count&quot;:11,&quot;baseline&quot;:&quot;FedRAMP Rev 5 Moderate baseline + NIST PRIVACY overlay&quot;}">11 controls — FedRAMP Rev 5 Moderate baseline + NIST PRIVACY overlay (via WCAG crosswalk)</td>
+    </tr>
+  </tbody>
+</table>
+</section>
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 1rem 0;
-  font-size: 0.92rem;
-}
+<section class="exhibit-slide" data-slide-index="3">
+<h2 class="exhibit-heading" data-msg-id="vpat.conformanceSummary">Conformance Summary</h2>
+<table class="exhibit-table">
+  <thead>
+    <tr>
+      <th scope="col" data-msg-id="vpat.status">Status</th>
+      <th scope="col" data-msg-id="vpat.count">Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" data-msg-id="vpat.conformance.supports">Supports</th>
+      <td>44</td>
+    </tr>
+    <tr>
+      <th scope="row" data-msg-id="vpat.conformance.partial">Partially Supports</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th scope="row" data-msg-id="vpat.conformance.doesNotSupport">Does Not Support</th>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th scope="row" data-msg-id="vpat.conformance.notEvaluated">Not Evaluated</th>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+</section>
 
-th, td {
-  padding: 0.5rem 0.75rem;
-  text-align: start;
-  border-bottom: 1px solid var(--sonde-color-border);
-}
+<section class="exhibit-slide" data-slide-index="4">
+<h2 class="exhibit-heading" data-msg-id="vpat.tableLevelA">Table 1: Success Criteria, Level A</h2>
+<table class="exhibit-table">
+  <thead>
+    <tr>
+      <th scope="col" data-msg-id="vpat.criteria">Criteria</th>
+      <th scope="col" data-msg-id="vpat.conformanceLevel">Conformance Level</th>
+      <th scope="col" data-msg-id="vpat.remarks">Remarks and Explanations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1.1.1 Non-text Content (§1194.22(a)) [NIST: PT-5]</th>
+      <td>✗ <span data-msg-id="vpat.conformance.doesNotSupport">Does Not Support</span></td>
+      <td data-msg-id="vpat.remarks.doesNotMany" data-msg-args="{&quot;count&quot;:2,&quot;pagesAnalyzed&quot;:1,&quot;probes&quot;:&quot;axe-core, a11y-tree&quot;}">2 findings across all 1 pages. Detected by: axe-core, a11y-tree.</td>
+    </tr>
+    <tr>
+      <th scope="row">1.2.1 Audio-only and Video-only (Prerecorded) (§1194.22(b))</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">1.2.2 Captions (Prerecorded) (§1194.22(b))</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">1.2.3 Audio Description or Media Alternative (Prerecorded) (§1194.22(b))</th>
+      <td>— <span data-msg-id="vpat.conformance.notEvaluated">Not Evaluated</span></td>
+      <td data-msg-id="vpat.remarks.humanJudgment">This criterion requires human judgment beyond automated testing.</td>
+    </tr>
+    <tr>
+      <th scope="row">1.3.1 Info and Relationships (§1194.22(c)) [NIST: AU-6, PT-5, SC-28, SI-4]</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">1.3.2 Meaningful Sequence (§1194.22(c)) [NIST: AU-6]</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">1.3.3 Sensory Characteristics (§1194.22(c))</th>
+      <td>— <span data-msg-id="vpat.conformance.notEvaluated">Not Evaluated</span></td>
+      <td data-msg-id="vpat.remarks.humanJudgment">This criterion requires human judgment beyond automated testing.</td>
+    </tr>
+    <tr>
+      <th scope="row">1.4.1 Use of Color (§1194.22(c))</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">1.4.2 Audio Control</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">2.1.1 Keyboard (§1194.22(d)) [NIST: IA-2]</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">2.1.2 No Keyboard Trap (§1194.22(d))</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">2.1.4 Character Key Shortcuts</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">2.2.1 Timing Adjustable (§1194.22(e))</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">2.2.2 Pause, Stop, Hide (§1194.22(e))</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">2.3.1 Three Flashes or Below Threshold (§1194.22(j))</th>
+      <td>— <span data-msg-id="vpat.conformance.notEvaluated">Not Evaluated</span></td>
+      <td data-msg-id="vpat.remarks.humanJudgment">This criterion requires human judgment beyond automated testing.</td>
+    </tr>
+    <tr>
+      <th scope="row">2.4.1 Bypass Blocks (§1194.22(o))</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">2.4.2 Page Titled (§1194.22(i))</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">2.4.3 Focus Order (§1194.22(o))</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">2.4.4 Link Purpose (In Context) (§1194.22(o)) [NIST: PT-5]</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">2.5.1 Pointer Gestures</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">2.5.2 Pointer Cancellation</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">2.5.3 Label in Name</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">2.5.4 Motion Actuation</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">3.1.1 Language of Page (§1194.22(m))</th>
+      <td>✗ <span data-msg-id="vpat.conformance.doesNotSupport">Does Not Support</span></td>
+      <td data-msg-id="vpat.remarks.doesNotOne" data-msg-args="{&quot;count&quot;:1,&quot;pagesAnalyzed&quot;:1,&quot;probes&quot;:&quot;axe-core&quot;}">1 finding across all 1 pages. Detected by: axe-core.</td>
+    </tr>
+    <tr>
+      <th scope="row">3.2.1 On Focus (§1194.22(n))</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">3.2.2 On Input (§1194.22(n))</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">3.3.1 Error Identification (§1194.22(g)) [NIST: AC-2, AC-7, IA-2, IA-6, SI-10]</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">3.3.2 Labels or Instructions (§1194.22(h)) [NIST: AC-2, IA-2, SI-10]</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">4.1.1 Parsing (§1194.22(k))</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.deprecated">Deprecated in WCAG 2.2. This criterion is always considered satisfied.</td>
+    </tr>
+    <tr>
+      <th scope="row">4.1.2 Name, Role, Value (§1194.22(l)) [NIST: AC-3]</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+  </tbody>
+</table>
+</section>
 
-th {
-  background: var(--sonde-color-table-header-bg);
-  color: var(--sonde-color-table-header-text);
-  font-family: var(--sonde-font-heading);
-  font-weight: 500;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-}
+<section class="exhibit-slide" data-slide-index="5">
+<h2 class="exhibit-heading" data-msg-id="vpat.tableLevelAA">Table 2: Success Criteria, Level AA</h2>
+<table class="exhibit-table">
+  <thead>
+    <tr>
+      <th scope="col" data-msg-id="vpat.criteria">Criteria</th>
+      <th scope="col" data-msg-id="vpat.conformanceLevel">Conformance Level</th>
+      <th scope="col" data-msg-id="vpat.remarks">Remarks and Explanations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1.2.4 Captions (Live)</th>
+      <td>— <span data-msg-id="vpat.conformance.notEvaluated">Not Evaluated</span></td>
+      <td data-msg-id="vpat.remarks.humanJudgment">This criterion requires human judgment beyond automated testing.</td>
+    </tr>
+    <tr>
+      <th scope="row">1.2.5 Audio Description (Prerecorded) (§1194.22(b))</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">1.3.4 Orientation</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">1.3.5 Identify Input Purpose [NIST: IA-2]</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">1.4.3 Contrast (Minimum) (§1194.22(c))</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">1.4.4 Resize Text (§1194.22(c))</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">1.4.5 Images of Text (§1194.22(c))</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">1.4.10 Reflow</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">1.4.11 Non-text Contrast</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">1.4.12 Text Spacing</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">1.4.13 Content on Hover or Focus</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">2.4.5 Multiple Ways (§1194.22(o))</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">2.4.6 Headings and Labels (§1194.22(f)) [NIST: PT-5]</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">2.4.7 Focus Visible (§1194.22(f))</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">3.1.2 Language of Parts (§1194.22(m))</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">3.2.3 Consistent Navigation (§1194.22(n))</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">3.2.4 Consistent Identification (§1194.22(n))</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">3.3.3 Error Suggestion (§1194.22(g)) [NIST: AC-2, AC-7, SI-10]</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">3.3.4 Error Prevention (Legal, Financial, Data) (§1194.22(g)) [NIST: AC-2, IA-2]</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+    <tr>
+      <th scope="row">4.1.3 Status Messages [NIST: AC-3, IA-6, SI-3, SI-4]</th>
+      <td>✓ <span data-msg-id="vpat.conformance.supports">Supports</span></td>
+      <td data-msg-id="vpat.remarks.noViolations">No violations detected.</td>
+    </tr>
+  </tbody>
+</table>
+</section>
 
-tr:nth-child(even) {
-  background: color-mix(in srgb, var(--sonde-color-surface) 94%, var(--sonde-color-text) 6%);
-}
-tr:hover {
-  background: var(--sonde-color-accent-dim);
-}
+<section class="exhibit-slide" data-slide-index="6">
+<h2 class="exhibit-heading" data-msg-id="vpat.nistCoverageBaseline" data-msg-args="{&quot;baseline&quot;:&quot;FedRAMP Rev 5 Moderate baseline + NIST PRIVACY overlay&quot;}">NIST SP 800-53 Rev 5 Coverage — FedRAMP Rev 5 Moderate baseline + NIST PRIVACY overlay</h2>
+<p class="exhibit-body" data-msg-id="vpat.nistCoverageBodyBaseline" data-msg-args="{&quot;count&quot;:11,&quot;baseline&quot;:&quot;FedRAMP Rev 5 Moderate baseline + NIST PRIVACY overlay&quot;}">This evaluation provides evidence relevant to 11 NIST 800-53 controls within the FedRAMP Rev 5 Moderate baseline + NIST PRIVACY overlay via the WCAG crosswalk. NIST control references appear in brackets next to the applicable WCAG criteria above.</p>
+<p class="exhibit-body" data-msg-id="vpat.controlsCovered" data-msg-args="{&quot;controls&quot;:&quot;AC-2, AC-3, AC-7, AU-6, IA-2, IA-6, PT-5, SC-28, SI-10, SI-3, SI-4&quot;}">Controls covered: AC-2, AC-3, AC-7, AU-6, IA-2, IA-6, PT-5, SC-28, SI-10, SI-3, SI-4</p>
+<aside class="exhibit-callout" role="note">
+  <p data-msg-id="vpat.nistCallout">NIST 800-53 mappings indicate accessibility-relevant aspects of each control. Sonde findings provide supporting evidence, not full control coverage. A complete NIST assessment requires additional organizational and procedural evaluation.</p>
+</aside>
+</section>
 
-.sonde-container {
-  max-width: var(--sonde-content-data-max);
-  margin: 0 auto;
-  padding: var(--sonde-content-padding);
-  background: var(--sonde-color-surface);
-  min-height: 100vh;
-}
+<section class="exhibit-slide" data-slide-index="7">
+<h2 class="exhibit-heading" data-msg-id="vpat.conformanceDefinitions">Conformance Level Definitions</h2>
+<ul class="exhibit-bullets">
+  <li><span data-msg-id="vpat.definition.supports">Supports — The functionality of the product has at least one method that meets the criterion without known defects or meets with equivalent facilitation.</span></li>
+  <li><span data-msg-id="vpat.definition.partial">Partially Supports — Some functionality of the product does not meet the criterion.</span></li>
+  <li><span data-msg-id="vpat.definition.doesNotSupport">Does Not Support — The majority of product functionality does not meet the criterion.</span></li>
+  <li><span data-msg-id="vpat.definition.notApplicable">Not Applicable — The criterion is not relevant to the product.</span></li>
+  <li><span data-msg-id="vpat.definition.notEvaluated">Not Evaluated — The product has not been evaluated against the criterion. This can be due to limitations of automated testing.</span></li>
+</ul>
+</section>
 
-.sonde-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 2rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 3px solid var(--sonde-color-primary);
-}
+<section class="exhibit-slide" data-slide-index="8">
+<h2 class="exhibit-heading" data-msg-id="vpat.methodologyProvenance">Methodology Provenance</h2>
+<p class="exhibit-body" data-msg-id="vpat.methodologyProvenanceBody" data-msg-args="{&quot;selectorSummary&quot;:&quot;Active baseline selector: FedRAMP Rev 5 Moderate baseline + NIST PRIVACY overlay.&quot;}">Baselines and overlays in this report are derived from upstream OSCAL profiles. Active baseline selector: FedRAMP Rev 5 Moderate baseline + NIST PRIVACY overlay.</p>
+<ul class="exhibit-bullets">
+  <li>NIST 800-53B baselines (usnistgov/oscal-content v1.4.0, catalog 5.2.0) — catalog UUID 5ba2a3ba-1aa2-47d8-ad69-5beef7372b98</li>
+  <li>NIST PRIVACY overlay (usnistgov/oscal-content v1.4.0, catalog 5.2.0) — profile UUID 623e85c3-e8ec-40ab-b0e7-37c2b15eeca7</li>
+  <li>FedRAMP Rev 5 baselines (OSCAL-Foundation/fedramp-resources a6b85ed451, catalog fedramp-3.0.0rc1-oscal-1.1.2) — Moderate profile UUID 2b52ae35-a912-4549-94db-5a43b6607f86</li>
+</ul>
+<aside class="exhibit-callout" role="note">
+  <p data-msg-id="vpat.methodologyProvenanceCallout">Crosswalked NIST controls that fall outside the active selector are marked &quot;(not in baseline)&quot; in the criteria tables above and never silently dropped. Refresh policy and source repos are documented in catalogs/controls/.</p>
+</aside>
+</section>
 
-.sonde-header .sonde-logo { max-height: 48px; }
-.sonde-header .meta { font-size: 0.85rem; color: var(--sonde-color-text-muted); }
+<section class="exhibit-slide" data-slide-index="9">
+<p class="exhibit-body" data-msg-id="vpat.generatedFooter" data-msg-args="{&quot;scanDate&quot;:&quot;May 22, 2026&quot;}">This VPAT was generated by Sonde on May 22, 2026. The complete methodology is published at daylight.sonde.life.</p>
+<p class="exhibit-body" data-msg-id="legal.disclaimer">This report presents the results of automated accessibility analysis and is provided free of charge, as-is, without warranty of any kind. Findings are generated by software, not by human accessibility experts, and may contain errors or omissions. Automated testing can detect approximately 30–40% of accessibility issues; manual expert evaluation is recommended for complete conformance assessment. Scores reflect algorithmic analysis under a published methodology open to public review — they are not legal determinations of compliance. Results reflect the state of the website at the time of scanning and may change as the site is updated. Nothing in this report constitutes legal advice. Sonde assumes no liability for decisions made based on these results.</p>
+</section>
 
-.sonde-footer {
-  margin-top: 3rem;
-  padding-top: 1rem;
-  border-top: 1px solid var(--sonde-color-border);
-  font-size: 0.8rem;
-  color: var(--sonde-color-text-muted);
-  text-align: center;
-}
-
-/* ─── Badges ─────────────────────────────────────────────── */
-
-.badge {
-  display: inline-block;
-  padding: 0.2rem 0.6rem;
-  border-radius: 4px;
-  font-family: var(--sonde-font-heading);
-  font-size: 0.78rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-}
-
-.badge-pass { background: var(--sonde-color-badge-pass-bg); color: var(--sonde-color-pass); }
-.badge-fail { background: var(--sonde-color-badge-fail-bg); color: var(--sonde-color-fail); }
-.badge-partial { background: var(--sonde-color-badge-partial-bg); color: var(--sonde-color-partial); }
-.badge-na { background: var(--sonde-color-badge-na-bg); color: var(--sonde-color-na); }
-.badge-info { background: var(--sonde-color-badge-info-bg); color: var(--sonde-color-info); }
-.badge-warning { background: var(--sonde-color-badge-warning-bg); color: var(--sonde-color-warning); }
-.badge-error { background: var(--sonde-color-badge-error-bg); color: var(--sonde-color-error); }
-.badge-critical { background: var(--sonde-color-badge-critical-bg); color: var(--sonde-color-critical); }
-
-/* ─── Summary Grid ───────────────────────────────────────── */
-
-.summary-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 1rem;
-  margin: 1rem 0;
-}
-
-.summary-card {
-  padding: 1rem;
-  border-radius: 8px;
-  border: 1px solid var(--sonde-color-border);
-  text-align: center;
-  background: var(--sonde-color-surface);
-}
-
-.summary-card .value {
-  font-family: var(--sonde-font-heading);
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--sonde-color-text-heading);
-}
-
-.summary-card .label {
-  font-size: 0.82rem;
-  color: var(--sonde-color-text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-/* ─── Findings ───────────────────────────────────────────── */
-
-.finding-group { margin-bottom: 1.5rem; }
-
-.finding-item {
-  padding: 0.75rem 1rem;
-  border-inline-start: 3px solid var(--sonde-color-border);
-  margin: 0.5rem 0;
-}
-.finding-item.severity-critical { border-inline-start-color: var(--sonde-color-critical); }
-.finding-item.severity-error { border-inline-start-color: var(--sonde-color-error); }
-.finding-item.severity-warning { border-inline-start-color: var(--sonde-color-warning); }
-.finding-item.severity-info { border-inline-start-color: var(--sonde-color-info); }
-
-.finding-location {
-  font-family: var(--sonde-font-mono);
-  font-size: 0.82rem;
-  color: var(--sonde-color-text-muted);
-}
-
-.finding-fix {
-  margin-top: 0.5rem;
-  padding: 0.5rem 0.75rem;
-  background: var(--sonde-color-border-subtle);
-  border-radius: 4px;
-  font-size: 0.9rem;
-}
-
-/* ─── Status Dots ────────────────────────────────────────── */
-
-.dot {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  margin-inline-start: 3px;
-}
-.dot-pass { background: var(--sonde-color-pass); }
-.dot-fail { background: var(--sonde-color-fail); }
-
-/* ─── Score Classes ──────────────────────────────────────── */
-
-.score-pass { color: var(--sonde-color-pass); font-weight: 600; }
-.score-warn { color: var(--sonde-color-warning); font-weight: 600; }
-.score-fail { color: var(--sonde-color-fail); font-weight: 600; }
-
-/* End of baseStructural.css */
-
-
-:root { --sonde-page-footer-text: "Generated by Sonde"; }
-/* base paged CSS — @page rules + structural print hints for any
- * Sonde renderer that should produce a polished PDF when printed.
- *
- * Two scopes:
- *
- *  1. `@page` rules outside `@media print` — these are inert except in
- *     a print rendering context, so it is safe (and now required) to
- *     ship them with every interactive HTML document. Without them,
- *     `window.print()` falls back to the browser's default A4 / Letter
- *     margins and produces no page numbers, no header, no footer.
- *  2. Structural hints scoped under `@media print` — break-* and
- *     `.sonde-container` rules only matter during print and would
- *     otherwise alter the screen layout for non-audit renderers.
- *
- * Footer text is injected by the renderer via a CSS custom property
- * (`--sonde-page-footer-text`).
- */
-
-@page {
-  size: A4;
-  margin: 20mm 18mm 25mm 18mm;
-  @top-center {
-    content: "Report";
-    font-family: var(--sonde-font-heading);
-    font-size: 9pt;
-    color: var(--sonde-color-text-muted);
-  }
-  @bottom-left {
-    content: var(--sonde-page-footer-text);
-    font-family: var(--sonde-font-heading);
-    font-size: 8pt;
-    color: var(--sonde-color-text-muted);
-  }
-  @bottom-right {
-    content: "Page " counter(page) " of " counter(pages);
-    font-family: var(--sonde-font-heading);
-    font-size: 8pt;
-    color: var(--sonde-color-text-muted);
-  }
-}
-
-@page :first {
-  @top-center { content: none; }
-}
-
-@media print {
-  .sonde-container { max-width: none; padding: 0; min-height: auto; }
-  h2 { break-after: avoid; }
-  table { break-inside: auto; }
-  tr { break-inside: avoid; }
-  .finding-group { break-inside: avoid; }
-  pre { break-inside: avoid; }
-}
+      <footer class="exhibit-footer">
+        <p>Generated by Sonde</p>
+      </footer>
+    </main>
 
 
-
-/* ─── VPAT Layout ─── */
-/* Body max-width 110rem (1760px) — unified Daylight page container. */
-body { max-width: 110rem; margin: 0 auto; padding: 2rem; background: var(--sonde-color-bg); color: var(--sonde-color-text); }
-
-.vpat-header { text-align: center; padding: 2rem 0; border-bottom: 2px solid var(--sonde-color-primary); margin-bottom: 2rem; }
-.vpat-header h1 { font-family: var(--sonde-font-heading); font-size: 1.6rem; margin: 0.5rem 0; color: var(--sonde-color-primary); }
-.vpat-subtitle { color: var(--sonde-color-text-muted); font-size: 1.05rem; }
-.vpat-brand { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-bottom: 0.5rem; }
-.vpat-brand-name { font-family: var(--sonde-font-heading); font-weight: 600; font-size: 1.1rem; }
-
-.vpat-section { margin: 2rem 0; }
-.vpat-section h2 { font-family: var(--sonde-font-heading); font-size: 1.2rem; color: var(--sonde-color-primary); border-bottom: 1px solid var(--sonde-color-border-subtle); padding-bottom: 0.3rem; }
-
-/* Self-linking heading anchor styling lives in `daylightAnchors.css`
- * (shared with auditSite + auditMethodology). The shared file owns
- * scroll-margin-top via `:has()` and the "#" hover affordance. */
-
-/* ─── Info Tables ─── */
-.vpat-info-table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
-.vpat-info-table th, .vpat-info-table td { padding: 0.6rem 0.8rem; border: 1px solid var(--sonde-color-border); text-align: start; font-size: 0.9rem; color: var(--sonde-color-text); }
-.vpat-info-table th { background: var(--sonde-color-primary); color: var(--sonde-color-table-header-text); font-weight: 600; width: 35%; font-family: var(--sonde-font-heading); letter-spacing: 0.03em; text-transform: uppercase; font-size: 0.82rem; }
-.vpat-info-table a { color: var(--sonde-color-primary); }
-
-/* ─── Summary Grid ─── */
-.vpat-summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
-.vpat-summary-card { text-align: center; padding: 1.2rem; border-radius: 8px; border: 1px solid var(--sonde-color-border); }
-.vpat-summary-count { display: block; font-family: var(--sonde-font-heading); font-size: 2rem; font-weight: 700; }
-.vpat-summary-label { display: block; font-size: 0.8rem; color: var(--sonde-color-text-muted); margin-top: 0.3rem; }
-.vpat-supports { border-color: var(--sonde-color-vpat-supports-fg); }
-.vpat-supports .vpat-summary-count { color: var(--sonde-color-vpat-supports-fg); }
-.vpat-partial { border-color: var(--sonde-color-vpat-partial-border); }
-.vpat-partial .vpat-summary-count { color: var(--sonde-color-vpat-partial-fg); }
-.vpat-does-not { border-color: var(--sonde-color-vpat-doesnot-fg); }
-.vpat-does-not .vpat-summary-count { color: var(--sonde-color-vpat-doesnot-fg); }
-.vpat-not-eval { border-color: var(--sonde-color-vpat-noteval-border); }
-.vpat-not-eval .vpat-summary-count { color: var(--sonde-color-vpat-noteval-border); }
-
-/* ─── Criteria Tables ─── */
-.vpat-criteria-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.88rem; }
-.vpat-criteria-table th { background: var(--sonde-color-primary); color: var(--sonde-color-table-header-text); padding: 0.6rem 0.8rem; text-align: start; font-family: var(--sonde-font-heading); font-weight: 600; }
-.vpat-criteria-table td { padding: 0.5rem 0.8rem; border: 1px solid var(--sonde-color-border); vertical-align: top; }
-.vpat-criteria-table tr:nth-child(even) { background: var(--sonde-color-surface); }
-.col-criterion { width: 38%; }
-.col-conformance { width: 18%; text-align: center; }
-.col-remarks { width: 44%; }
-.vpat-criteria-table a { color: var(--sonde-color-primary); text-decoration: none; }
-.vpat-criteria-table a:hover { text-decoration: underline; }
-.vpat-provision { display: block; font-size: 0.78rem; color: var(--sonde-color-text-muted); margin-top: 0.2rem; }
-
-/* ─── Badges ─── */
-.vpat-badge { display: inline-block; padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.78rem; font-weight: 600; font-family: var(--sonde-font-heading); white-space: nowrap; }
-.vpat-badge-supports { background: var(--sonde-color-vpat-supports-bg); color: var(--sonde-color-vpat-supports-fg); }
-.vpat-badge-partial { background: var(--sonde-color-table-header-text)3e0; color: var(--sonde-color-vpat-partial-fg); }
-.vpat-badge-does-not { background: var(--sonde-color-vpat-doesnot-bg); color: var(--sonde-color-vpat-doesnot-fg); }
-.vpat-badge-not-eval { background: var(--sonde-color-vpat-noteval-bg); color: var(--sonde-color-vpat-noteval-fg); }
-
-/* Row highlights */
-.vpat-row-does-not td:first-child { border-inline-start: 3px solid var(--sonde-color-vpat-doesnot-fg); }
-.vpat-row-partial td:first-child { border-inline-start: 3px solid var(--sonde-color-vpat-partial-border); }
-
-/* ─── Terms ─── */
-.vpat-terms dl { margin: 1rem 0; }
-.vpat-terms dt { font-weight: 600; font-family: var(--sonde-font-heading); margin-top: 0.8rem; }
-.vpat-terms dd { margin-inline-start: 0; padding-inline-start: 1rem; color: var(--sonde-color-text-muted); font-size: 0.9rem; }
-
-/* ─── Footer ─── */
-.vpat-footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--sonde-color-border-subtle); font-size: 0.85rem; color: var(--sonde-color-text-muted); }
-.vpat-footer a { color: var(--sonde-color-primary); }
-.vpat-disclaimer { font-style: italic; margin-top: 1rem; }
-
-/* ─── Print ─── */
-@media print {
-  body { max-width: none; padding: 1cm; }
-  .vpat-badge { border: 1px solid currentColor; }
-  .vpat-summary-card { break-inside: avoid; }
-  .vpat-criteria-table { font-size: 0.8rem; }
-}
-
-/* Daylight self-link heading anchors — single source of truth for the
- * `.meth-anchor` (audit-site landing + audit methodology) and
- * `.vpat-anchor` (VPAT report) classes.
- *
- * Loaded by every daylight surface that emits anchored headings via
- * `DAYLIGHT_ANCHORS_CSS` in `packages/renderer/src/reports/daylightSharedCss.ts`.
- *
- * `:where()` keeps specificity zero so a page-specific theme can still
- * override individual properties without an arms race. `:has()` lets one
- * rule add `scroll-margin-top` to whichever heading wraps the anchor —
- * authors don't need to remember to put `scroll-margin-top` on every
- * new heading they add an anchor to.
- *
- * scroll-margin clears the sticky `.site-nav` (1rem padding + ~24px
- * content + 2px border ≈ 3.5rem; 5rem leaves room for box-shadow).
- *
- * The `::after` pseudo-element renders a faint `#` hint in the active
- * theme's primary color — same affordance as sonde.life — revealed on
- * hover, focus-visible, and `:target` so deep linking is discoverable
- * without the heading itself shifting on hover.
- */
-
-:where(.meth-anchor, .vpat-anchor) {
-  color: inherit;
-  text-decoration: none;
-}
-
-:where(.meth-anchor, .vpat-anchor)::after {
-  content: ' #';
-  color: var(--sonde-color-primary);
-  opacity: 0;
-  transition: opacity 0.15s ease;
-  margin-left: 0.15em;
-}
-
-:where(.meth-anchor, .vpat-anchor):hover::after,
-:where(.meth-anchor, .vpat-anchor):focus-visible::after,
-:is(h2, h3):target :where(.meth-anchor, .vpat-anchor)::after {
-  opacity: 0.7;
-}
-
-:is(h2, h3):has(> :where(.meth-anchor, .vpat-anchor)) {
-  scroll-margin-top: 5rem;
-}
-</style></head><body><div class="vpat-container"><header class="sonde-header"><div><h1>VPAT — Wayne County (MI)</h1></div></header><main id="main-content"><header class="vpat-header"><div class="vpat-brand"><svg class="sonde-mark" viewBox="0 0 512 512" width="32" height="32" aria-hidden="true"><defs><linearGradient id="sp32-dish" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="var(--sonde-probe-light-dish-1)"></stop><stop offset="40%" stop-color="var(--sonde-probe-light-dish-2)"></stop><stop offset="100%" stop-color="var(--sonde-probe-light-dish-3)"></stop></linearGradient><linearGradient id="sp32-bus" x1="0" y1="0" x2="0.3" y2="1"><stop offset="0%" stop-color="var(--sonde-probe-light-bus-1)"></stop><stop offset="50%" stop-color="var(--sonde-probe-light-bus-2)"></stop><stop offset="100%" stop-color="var(--sonde-probe-light-bus-3)"></stop></linearGradient><linearGradient id="sp32-rtg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="var(--sonde-probe-light-rtg-1)"></stop><stop offset="100%" stop-color="var(--sonde-probe-light-rtg-2)"></stop></linearGradient></defs><g transform="translate(248, 230) rotate(-40)"><line x1="-32" y1="-8" x2="-165" y2="-42" stroke="var(--sonde-probe-light-boom)" stroke-width="4" stroke-linecap="round"></line><circle cx="-80" cy="-20" r="3" fill="var(--sonde-probe-light-boom-dot)" stroke="var(--sonde-probe-light-boom-dot-stroke)" stroke-width="1.5"></circle><circle cx="-165" cy="-42" r="8" fill="var(--sonde-probe-light-antenna-dot)" stroke="var(--sonde-probe-light-strut-stroke)" stroke-width="2"></circle><line x1="-165" y1="-48" x2="-165" y2="-36" stroke="var(--sonde-probe-light-strut-stroke)" stroke-width="1"></line><line x1="-171" y1="-42" x2="-159" y2="-42" stroke="var(--sonde-probe-light-strut-stroke)" stroke-width="1"></line><line x1="-32" y1="16" x2="-130" y2="64" stroke="var(--sonde-probe-light-boom-dot)" stroke-width="6" stroke-linecap="round"></line><g transform="translate(-130, 64) rotate(20)"><rect x="-16" y="-32" width="32" height="64" rx="4" fill="url(#sp32-rtg)" stroke="var(--sonde-probe-light-bus-stroke)" stroke-width="3"></rect><line x1="-16" y1="-22" x2="16" y2="-22" stroke="var(--sonde-probe-light-rtg-line)" stroke-width="2"></line><line x1="-16" y1="-12" x2="16" y2="-12" stroke="var(--sonde-probe-light-rtg-line)" stroke-width="2"></line><line x1="-16" y1="-2" x2="16" y2="-2" stroke="var(--sonde-probe-light-rtg-line)" stroke-width="2"></line><line x1="-16" y1="8" x2="16" y2="8" stroke="var(--sonde-probe-light-rtg-line)" stroke-width="2"></line><line x1="-16" y1="18" x2="16" y2="18" stroke="var(--sonde-probe-light-rtg-line)" stroke-width="2"></line><rect x="-18" y="-34" width="36" height="4" rx="2" fill="var(--sonde-probe-light-rtg-cap)" stroke="var(--sonde-probe-light-bus-stroke)" stroke-width="1.5"></rect><rect x="-18" y="30" width="36" height="4" rx="2" fill="var(--sonde-probe-light-rtg-cap)" stroke="var(--sonde-probe-light-bus-stroke)" stroke-width="1.5"></rect></g><line x1="-16" y1="-40" x2="-48" y2="-96" stroke="var(--sonde-probe-light-boom-dot)" stroke-width="5" stroke-linecap="round"></line><g transform="translate(-48, -96)"><rect x="-24" y="-16" width="48" height="28" rx="4" fill="var(--sonde-probe-light-sci-platform)" stroke="var(--sonde-probe-light-bus-stroke)" stroke-width="3"></rect><circle cx="-10" cy="-4" r="8" fill="var(--sonde-probe-light-sci-lens-1)" stroke="var(--sonde-probe-light-sci-lens-1-stroke)" stroke-width="2.5"></circle><circle cx="-10" cy="-4" r="4" fill="var(--sonde-probe-light-sci-lens-1-inner)" stroke="var(--sonde-probe-light-sci-lens-1-inner-stroke)" stroke-width="1"></circle><circle cx="10" cy="-4" r="6" fill="var(--sonde-probe-light-sci-lens-2)" stroke="var(--sonde-probe-light-bus-stroke)" stroke-width="2"></circle></g><path d="M48,-112 Q130,-80 130,0 Q130,80 48,112" fill="url(#sp32-dish)" stroke="var(--sonde-probe-light-dish-stroke)" stroke-width="4" stroke-linejoin="round"></path><path d="M56,-96 Q118,-68 118,0 Q118,68 56,96" fill="none" stroke="var(--sonde-probe-light-dish-ring)" stroke-width="1" opacity="0.4"></path><path d="M64,-80 Q106,-56 106,0 Q106,56 64,80" fill="none" stroke="var(--sonde-probe-light-dish-ring)" stroke-width="1" opacity="0.3"></path><line x1="60" y1="-52" x2="110" y2="0" stroke="var(--sonde-probe-light-strut)" stroke-width="4"></line><line x1="60" y1="52" x2="110" y2="0" stroke="var(--sonde-probe-light-strut)" stroke-width="4"></line><line x1="48" y1="0" x2="110" y2="0" stroke="var(--sonde-probe-light-strut)" stroke-width="4"></line><circle cx="112" cy="0" r="14" fill="var(--sonde-probe-light-feed-fill)" stroke="var(--sonde-probe-light-feed-stroke)" stroke-width="3"></circle><circle cx="112" cy="0" r="8" fill="var(--sonde-probe-light-feed-inner)" stroke="var(--sonde-probe-light-feed-inner-stroke)" stroke-width="1.5"></circle><polygon points="-16,-40 48,-40 64,-24 64,24 48,40 -16,40 -32,24 -32,-24" fill="url(#sp32-bus)" stroke="var(--sonde-probe-light-bus-stroke)" stroke-width="4"></polygon><line x1="0" y1="-40" x2="0" y2="40" stroke="var(--sonde-probe-light-bus-line)" stroke-width="2" opacity="0.5"></line><line x1="24" y1="-40" x2="24" y2="40" stroke="var(--sonde-probe-light-bus-line)" stroke-width="2" opacity="0.5"></line><rect x="4" y="-16" width="16" height="12" rx="1.5" fill="var(--sonde-probe-light-panel)" stroke="var(--sonde-probe-light-panel-stroke)" stroke-width="1.5"></rect><rect x="28" y="-16" width="16" height="12" rx="1.5" fill="var(--sonde-probe-light-panel)" stroke="var(--sonde-probe-light-panel-stroke)" stroke-width="1.5"></rect><rect x="4" y="4" width="16" height="12" rx="1.5" fill="var(--sonde-probe-light-panel)" stroke="var(--sonde-probe-light-panel-stroke)" stroke-width="1.5"></rect><rect x="28" y="4" width="16" height="12" rx="1.5" fill="var(--sonde-probe-light-panel)" stroke="var(--sonde-probe-light-panel-stroke)" stroke-width="1.5"></rect><path d="M-44,-8 L-52,-14 L-52,14 L-44,8 Z" fill="var(--sonde-probe-light-thruster)" stroke="var(--sonde-probe-light-bus-stroke)" stroke-width="2"></path><line x1="16" y1="-40" x2="24" y2="-56" stroke="var(--sonde-probe-light-antenna)" stroke-width="2.5" stroke-linecap="round"></line><circle cx="24" cy="-56" r="3" fill="var(--sonde-probe-light-antenna-dot)" stroke="var(--sonde-probe-light-antenna-dot-stroke)" stroke-width="1.5"></circle></g><g opacity="0.85"><ellipse cx="108" cy="328" rx="18" ry="10" fill="var(--sonde-probe-glow-core)" transform="rotate(-40, 108, 328)"><animate attributeName="opacity" values="1;0.7;1" dur="0.8s" repeatCount="indefinite"></animate></ellipse><ellipse cx="96" cy="340" rx="32" ry="14" fill="var(--sonde-probe-glow-mid)" opacity="0.6" transform="rotate(-40, 96, 340)"><animate attributeName="opacity" values="0.6;0.3;0.6" dur="1.0s" repeatCount="indefinite"></animate></ellipse><ellipse cx="80" cy="356" rx="48" ry="20" fill="var(--sonde-probe-glow-outer)" opacity="0.3" transform="rotate(-40, 80, 356)"><animate attributeName="opacity" values="0.3;0.1;0.3" dur="1.3s" repeatCount="indefinite"></animate></ellipse><ellipse cx="60" cy="376" rx="64" ry="24" fill="var(--sonde-probe-glow-far)" opacity="0.1" transform="rotate(-40, 60, 376)"><animate attributeName="opacity" values="0.1;0.03;0.1" dur="1.6s" repeatCount="indefinite"></animate></ellipse></g></svg><span class="vpat-brand-name" data-msg-id="vpat.brand">Sonde Daylight</span></div><h1 data-msg-id="vpat.title">Voluntary Product Accessibility Template (VPAT)</h1><p class="vpat-subtitle" data-msg-id="vpat.subtitle">WCAG 2.1 Conformance Report</p></header><section id="product-info" class="vpat-section"><h2><a href="#product-info" class="vpat-anchor" data-msg-id="vpat.productInfo">Product Information</a></h2><table class="vpat-info-table"><tbody><tr><th data-msg-id="vpat.productName">Name of Product/Version</th><td>Wayne County (MI)</td></tr><tr><th data-msg-id="vpat.productUrl">Product URL</th><td><a href="https://waynecounty.com" target="_blank" rel="noopener noreferrer">https://waynecounty.com</a></td></tr><tr><th data-msg-id="vpat.reportDate">Report Date</th><td>April 28, 2026</td></tr><tr><th data-msg-id="vpat.sondeScore">Sonde Score</th><td><span data-msg-id="vpat.scoreOutOf" data-msg-args="{&quot;score&quot;:965}">965/1000</span></td></tr><tr><th data-msg-id="vpat.contactInfo">Contact Information</th><td><span data-msg-id="vpat.generatedByShort">Generated by</span> <a href="https://sonde.life" target="_blank" rel="noopener noreferrer">Sonde</a></td></tr><tr><th data-msg-id="vpat.notes">Notes</th><td data-msg-id="vpat.notesBody">This VPAT was auto-generated from automated accessibility scanning. It covers WCAG 2.1 Level A and Level AA success criteria. Manual testing may reveal additional conformance issues not detectable by automated tools.</td></tr></tbody></table></section><section id="evaluation-methods" class="vpat-section"><h2><a href="#evaluation-methods" class="vpat-anchor" data-msg-id="vpat.evaluationMethods">Evaluation Methods Used</a></h2><p><span data-msg-id="vpat.evaluationBodyPrefix">Conformance was evaluated using automated scanning with the</span> <a href="https://sonde.life" target="_blank" rel="noopener noreferrer">Sonde</a> <span data-msg-id="vpat.evaluationBodySuffix">accessibility analysis platform. The evaluation included:</span></p><ul><li><strong data-msg-id="vpat.eval.axeLabel">axe-core engine</strong> <span data-msg-id="vpat.eval.axeSuffix">— industry-standard WCAG 2.1 DOM rule evaluation</span></li><li><strong data-msg-id="vpat.eval.sondeLiveLabel">Sonde live probes</strong> <span data-msg-id="vpat.eval.sondeLiveSuffix">— interactive browser testing (keyboard traps, focus order, color contrast, reflow, dynamic content, media accessibility, navigation consistency)</span></li><li><strong data-msg-id="vpat.eval.a11yTreeLabel">Accessibility tree analysis</strong> <span data-msg-id="vpat.eval.a11yTreeSuffix">— Chrome CDP accessibility tree inspection for ARIA compliance</span></li><li><strong data-msg-id="vpat.eval.crawlLabel">Multi-page crawl</strong> <span data-msg-id="vpat.eval.crawlSuffix" data-msg-args="{&quot;count&quot;:1}">— 1 pages analyzed for cross-page consistency</span></li></ul><p><strong data-msg-id="vpat.limitationsLabel">Limitations:</strong> <span data-msg-id="vpat.limitationsBody">Automated testing cannot fully evaluate criteria that require human judgment (e.g., sensory characteristics, three flashes threshold). Criteria marked &quot;Supports&quot; indicate no automated violations were detected, not that the criterion is fully met.</span></p></section><section id="applicable-standards" class="vpat-section"><h2><a href="#applicable-standards" class="vpat-anchor" data-msg-id="vpat.applicableStandards">Applicable Standards/Guidelines</a></h2><table class="vpat-info-table"><tbody><tr><th data-msg-id="vpat.standardGuideline">Standard/Guideline</th><th data-msg-id="vpat.includedInReport">Included in Report</th></tr><tr><td><a href="https://www.w3.org/TR/WCAG21/" target="_blank" rel="noopener noreferrer" data-msg-id="vpat.wcag21">Web Content Accessibility Guidelines 2.1</a></td><td data-msg-id="vpat.levelAaa">Level A &amp; Level AA</td></tr><tr><td><a href="https://www.access-board.gov/ict/" target="_blank" rel="noopener noreferrer" data-msg-id="vpat.section508">Revised Section 508 Standards</a></td><td data-msg-id="vpat.viaWcag21">via WCAG 2.1</td></tr><tr><td data-msg-id="vpat.en301549">EN 301 549 Accessibility Requirements</td><td data-msg-id="vpat.applicableViaWcag">Applicable criteria (via WCAG alignment)</td></tr></tbody></table></section><section id="conformance-summary" class="vpat-section"><h2><a href="#conformance-summary" class="vpat-anchor" data-msg-id="vpat.conformanceSummary">Conformance Summary</a></h2><div class="vpat-summary-grid"><div class="vpat-summary-card vpat-supports"><span class="vpat-summary-count">43</span><span class="vpat-summary-label" data-msg-id="vpat.conformance.supports">Supports</span></div><div class="vpat-summary-card vpat-partial"><span class="vpat-summary-count">0</span><span class="vpat-summary-label" data-msg-id="vpat.conformance.partial">Partially Supports</span></div><div class="vpat-summary-card vpat-does-not"><span class="vpat-summary-count">3</span><span class="vpat-summary-label" data-msg-id="vpat.conformance.doesNotSupport">Does Not Support</span></div><div class="vpat-summary-card vpat-not-eval"><span class="vpat-summary-count">10</span><span class="vpat-summary-label" data-msg-id="vpat.conformance.notEvaluated">Not Evaluated</span></div></div></section><section id="level-a-criteria" class="vpat-section"><h2><a href="#level-a-criteria" class="vpat-anchor" data-msg-id="vpat.tableLevelA">Table 1: Success Criteria, Level A</a></h2><table class="vpat-criteria-table"><thead><tr><th class="col-criterion" data-msg-id="vpat.criteria">Criteria</th><th class="col-conformance" data-msg-id="vpat.conformanceLevel">Conformance Level</th><th class="col-remarks" data-msg-id="vpat.remarks">Remarks and Explanations</th></tr></thead><tbody><tr class="vpat-row vpat-row-does-not"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-content" target="_blank" rel="noopener noreferrer" title="WCAG 1.1.1: Non-text Content">1.1.1 Non-text Content</a><span class="vpat-provision">§1194.22(a)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-does-not" data-msg-id="vpat.conformance.doesNotSupport">Does Not Support</span></td><td class="col-remarks" data-msg-id="vpat.remarks.doesNotMany" data-msg-args="{&quot;count&quot;:2,&quot;pagesAnalyzed&quot;:1,&quot;probes&quot;:&quot;axe-core, a11y-tree&quot;}">2 findings across all 1 pages. Detected by: axe-core, a11y-tree.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-only-and-video-only-prerecorded" target="_blank" rel="noopener noreferrer" title="WCAG 1.2.1: Audio-only and Video-only (Prerecorded)">1.2.1 Audio-only and Video-only (Prerecorded)</a><span class="vpat-provision">§1194.22(b)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded" target="_blank" rel="noopener noreferrer" title="WCAG 1.2.2: Captions (Prerecorded)">1.2.2 Captions (Prerecorded)</a><span class="vpat-provision">§1194.22(b)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-not-eval"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-description-or-media-alternative-prerecorded" target="_blank" rel="noopener noreferrer" title="WCAG 1.2.3: Audio Description or Media Alternative (Prerecorded)">1.2.3 Audio Description or Media Alternative (Prerecorded)</a><span class="vpat-provision">§1194.22(b)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-not-eval" data-msg-id="vpat.conformance.notEvaluated">Not Evaluated</span></td><td class="col-remarks" data-msg-id="vpat.remarks.humanJudgment">This criterion requires human judgment beyond automated testing.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships" target="_blank" rel="noopener noreferrer" title="WCAG 1.3.1: Info and Relationships">1.3.1 Info and Relationships</a><span class="vpat-provision">§1194.22(c)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence" target="_blank" rel="noopener noreferrer" title="WCAG 1.3.2: Meaningful Sequence">1.3.2 Meaningful Sequence</a><span class="vpat-provision">§1194.22(c)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-not-eval"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/sensory-characteristics" target="_blank" rel="noopener noreferrer" title="WCAG 1.3.3: Sensory Characteristics">1.3.3 Sensory Characteristics</a><span class="vpat-provision">§1194.22(c)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-not-eval" data-msg-id="vpat.conformance.notEvaluated">Not Evaluated</span></td><td class="col-remarks" data-msg-id="vpat.remarks.humanJudgment">This criterion requires human judgment beyond automated testing.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/use-of-color" target="_blank" rel="noopener noreferrer" title="WCAG 1.4.1: Use of Color">1.4.1 Use of Color</a><span class="vpat-provision">§1194.22(c)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-control" target="_blank" rel="noopener noreferrer" title="WCAG 1.4.2: Audio Control">1.4.2 Audio Control</a></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard" target="_blank" rel="noopener noreferrer" title="WCAG 2.1.1: Keyboard">2.1.1 Keyboard</a><span class="vpat-provision">§1194.22(d)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/no-keyboard-trap" target="_blank" rel="noopener noreferrer" title="WCAG 2.1.2: No Keyboard Trap">2.1.2 No Keyboard Trap</a><span class="vpat-provision">§1194.22(d)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/character-key-shortcuts" target="_blank" rel="noopener noreferrer" title="WCAG 2.1.4: Character Key Shortcuts">2.1.4 Character Key Shortcuts</a></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable" target="_blank" rel="noopener noreferrer" title="WCAG 2.2.1: Timing Adjustable">2.2.1 Timing Adjustable</a><span class="vpat-provision">§1194.22(e)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide" target="_blank" rel="noopener noreferrer" title="WCAG 2.2.2: Pause, Stop, Hide">2.2.2 Pause, Stop, Hide</a><span class="vpat-provision">§1194.22(e)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-not-eval"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold" target="_blank" rel="noopener noreferrer" title="WCAG 2.3.1: Three Flashes or Below Threshold">2.3.1 Three Flashes or Below Threshold</a><span class="vpat-provision">§1194.22(j)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-not-eval" data-msg-id="vpat.conformance.notEvaluated">Not Evaluated</span></td><td class="col-remarks" data-msg-id="vpat.remarks.humanJudgment">This criterion requires human judgment beyond automated testing.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks" target="_blank" rel="noopener noreferrer" title="WCAG 2.4.1: Bypass Blocks">2.4.1 Bypass Blocks</a><span class="vpat-provision">§1194.22(o)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/page-titled" target="_blank" rel="noopener noreferrer" title="WCAG 2.4.2: Page Titled">2.4.2 Page Titled</a><span class="vpat-provision">§1194.22(i)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-order" target="_blank" rel="noopener noreferrer" title="WCAG 2.4.3: Focus Order">2.4.3 Focus Order</a><span class="vpat-provision">§1194.22(o)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context" target="_blank" rel="noopener noreferrer" title="WCAG 2.4.4: Link Purpose (In Context)">2.4.4 Link Purpose (In Context)</a><span class="vpat-provision">§1194.22(o)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/pointer-gestures" target="_blank" rel="noopener noreferrer" title="WCAG 2.5.1: Pointer Gestures">2.5.1 Pointer Gestures</a></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/pointer-cancellation" target="_blank" rel="noopener noreferrer" title="WCAG 2.5.2: Pointer Cancellation">2.5.2 Pointer Cancellation</a></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/label-in-name" target="_blank" rel="noopener noreferrer" title="WCAG 2.5.3: Label in Name">2.5.3 Label in Name</a></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/motion-actuation" target="_blank" rel="noopener noreferrer" title="WCAG 2.5.4: Motion Actuation">2.5.4 Motion Actuation</a></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-does-not"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/language-of-page" target="_blank" rel="noopener noreferrer" title="WCAG 3.1.1: Language of Page">3.1.1 Language of Page</a><span class="vpat-provision">§1194.22(m)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-does-not" data-msg-id="vpat.conformance.doesNotSupport">Does Not Support</span></td><td class="col-remarks" data-msg-id="vpat.remarks.doesNotOne" data-msg-args="{&quot;count&quot;:1,&quot;pagesAnalyzed&quot;:1,&quot;probes&quot;:&quot;axe-core&quot;}">1 finding across all 1 pages. Detected by: axe-core.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/on-focus" target="_blank" rel="noopener noreferrer" title="WCAG 3.2.1: On Focus">3.2.1 On Focus</a><span class="vpat-provision">§1194.22(n)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/on-input" target="_blank" rel="noopener noreferrer" title="WCAG 3.2.2: On Input">3.2.2 On Input</a><span class="vpat-provision">§1194.22(n)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-not-eval"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/consistent-help" target="_blank" rel="noopener noreferrer" title="WCAG 3.2.6: Consistent Help">3.2.6 Consistent Help</a></td><td class="col-conformance"><span class="vpat-badge vpat-badge-not-eval" data-msg-id="vpat.conformance.notEvaluated">Not Evaluated</span></td><td class="col-remarks" data-msg-id="vpat.remarks.humanJudgment">This criterion requires human judgment beyond automated testing.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/error-identification" target="_blank" rel="noopener noreferrer" title="WCAG 3.3.1: Error Identification">3.3.1 Error Identification</a><span class="vpat-provision">§1194.22(g)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions" target="_blank" rel="noopener noreferrer" title="WCAG 3.3.2: Labels or Instructions">3.3.2 Labels or Instructions</a><span class="vpat-provision">§1194.22(h)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-not-eval"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry" target="_blank" rel="noopener noreferrer" title="WCAG 3.3.7: Redundant Entry">3.3.7 Redundant Entry</a></td><td class="col-conformance"><span class="vpat-badge vpat-badge-not-eval" data-msg-id="vpat.conformance.notEvaluated">Not Evaluated</span></td><td class="col-remarks" data-msg-id="vpat.remarks.humanJudgment">This criterion requires human judgment beyond automated testing.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/parsing" target="_blank" rel="noopener noreferrer" title="WCAG 4.1.1: Parsing">4.1.1 Parsing</a><span class="vpat-provision">§1194.22(k)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.deprecated">Deprecated in WCAG 2.2. This criterion is always considered satisfied.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/name-role-value" target="_blank" rel="noopener noreferrer" title="WCAG 4.1.2: Name, Role, Value">4.1.2 Name, Role, Value</a><span class="vpat-provision">§1194.22(l)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr></tbody></table></section><section id="level-aa-criteria" class="vpat-section"><h2><a href="#level-aa-criteria" class="vpat-anchor" data-msg-id="vpat.tableLevelAA">Table 2: Success Criteria, Level AA</a></h2><table class="vpat-criteria-table"><thead><tr><th class="col-criterion" data-msg-id="vpat.criteria">Criteria</th><th class="col-conformance" data-msg-id="vpat.conformanceLevel">Conformance Level</th><th class="col-remarks" data-msg-id="vpat.remarks">Remarks and Explanations</th></tr></thead><tbody><tr class="vpat-row vpat-row-not-eval"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/captions-live" target="_blank" rel="noopener noreferrer" title="WCAG 1.2.4: Captions (Live)">1.2.4 Captions (Live)</a></td><td class="col-conformance"><span class="vpat-badge vpat-badge-not-eval" data-msg-id="vpat.conformance.notEvaluated">Not Evaluated</span></td><td class="col-remarks" data-msg-id="vpat.remarks.humanJudgment">This criterion requires human judgment beyond automated testing.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded" target="_blank" rel="noopener noreferrer" title="WCAG 1.2.5: Audio Description (Prerecorded)">1.2.5 Audio Description (Prerecorded)</a><span class="vpat-provision">§1194.22(b)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/orientation" target="_blank" rel="noopener noreferrer" title="WCAG 1.3.4: Orientation">1.3.4 Orientation</a></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose" target="_blank" rel="noopener noreferrer" title="WCAG 1.3.5: Identify Input Purpose">1.3.5 Identify Input Purpose</a></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum" target="_blank" rel="noopener noreferrer" title="WCAG 1.4.3: Contrast (Minimum)">1.4.3 Contrast (Minimum)</a><span class="vpat-provision">§1194.22(c)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/resize-text" target="_blank" rel="noopener noreferrer" title="WCAG 1.4.4: Resize Text">1.4.4 Resize Text</a><span class="vpat-provision">§1194.22(c)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/images-of-text" target="_blank" rel="noopener noreferrer" title="WCAG 1.4.5: Images of Text">1.4.5 Images of Text</a><span class="vpat-provision">§1194.22(c)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/reflow" target="_blank" rel="noopener noreferrer" title="WCAG 1.4.10: Reflow">1.4.10 Reflow</a></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast" target="_blank" rel="noopener noreferrer" title="WCAG 1.4.11: Non-text Contrast">1.4.11 Non-text Contrast</a></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/text-spacing" target="_blank" rel="noopener noreferrer" title="WCAG 1.4.12: Text Spacing">1.4.12 Text Spacing</a></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus" target="_blank" rel="noopener noreferrer" title="WCAG 1.4.13: Content on Hover or Focus">1.4.13 Content on Hover or Focus</a></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-does-not"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways" target="_blank" rel="noopener noreferrer" title="WCAG 2.4.5: Multiple Ways">2.4.5 Multiple Ways</a><span class="vpat-provision">§1194.22(o)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-does-not" data-msg-id="vpat.conformance.doesNotSupport">Does Not Support</span></td><td class="col-remarks" data-msg-id="vpat.remarks.doesNotOne" data-msg-args="{&quot;count&quot;:1,&quot;pagesAnalyzed&quot;:1,&quot;probes&quot;:&quot;navigation-ways&quot;}">1 finding across all 1 pages. Detected by: navigation-ways.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels" target="_blank" rel="noopener noreferrer" title="WCAG 2.4.6: Headings and Labels">2.4.6 Headings and Labels</a><span class="vpat-provision">§1194.22(f)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-visible" target="_blank" rel="noopener noreferrer" title="WCAG 2.4.7: Focus Visible">2.4.7 Focus Visible</a><span class="vpat-provision">§1194.22(f)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-not-eval"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum" target="_blank" rel="noopener noreferrer" title="WCAG 2.4.11: Focus Not Obscured (Minimum)">2.4.11 Focus Not Obscured (Minimum)</a></td><td class="col-conformance"><span class="vpat-badge vpat-badge-not-eval" data-msg-id="vpat.conformance.notEvaluated">Not Evaluated</span></td><td class="col-remarks" data-msg-id="vpat.remarks.humanJudgment">This criterion requires human judgment beyond automated testing.</td></tr><tr class="vpat-row vpat-row-not-eval"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements" target="_blank" rel="noopener noreferrer" title="WCAG 2.5.7: Dragging Movements">2.5.7 Dragging Movements</a></td><td class="col-conformance"><span class="vpat-badge vpat-badge-not-eval" data-msg-id="vpat.conformance.notEvaluated">Not Evaluated</span></td><td class="col-remarks" data-msg-id="vpat.remarks.humanJudgment">This criterion requires human judgment beyond automated testing.</td></tr><tr class="vpat-row vpat-row-not-eval"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum" target="_blank" rel="noopener noreferrer" title="WCAG 2.5.8: Target Size (Minimum)">2.5.8 Target Size (Minimum)</a></td><td class="col-conformance"><span class="vpat-badge vpat-badge-not-eval" data-msg-id="vpat.conformance.notEvaluated">Not Evaluated</span></td><td class="col-remarks" data-msg-id="vpat.remarks.humanJudgment">This criterion requires human judgment beyond automated testing.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts" target="_blank" rel="noopener noreferrer" title="WCAG 3.1.2: Language of Parts">3.1.2 Language of Parts</a><span class="vpat-provision">§1194.22(m)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation" target="_blank" rel="noopener noreferrer" title="WCAG 3.2.3: Consistent Navigation">3.2.3 Consistent Navigation</a><span class="vpat-provision">§1194.22(n)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/consistent-identification" target="_blank" rel="noopener noreferrer" title="WCAG 3.2.4: Consistent Identification">3.2.4 Consistent Identification</a><span class="vpat-provision">§1194.22(n)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/error-suggestion" target="_blank" rel="noopener noreferrer" title="WCAG 3.3.3: Error Suggestion">3.3.3 Error Suggestion</a><span class="vpat-provision">§1194.22(g)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/error-prevention-legal-financial-data" target="_blank" rel="noopener noreferrer" title="WCAG 3.3.4: Error Prevention (Legal, Financial, Data)">3.3.4 Error Prevention (Legal, Financial, Data)</a><span class="vpat-provision">§1194.22(g)</span></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr><tr class="vpat-row vpat-row-not-eval"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum" target="_blank" rel="noopener noreferrer" title="WCAG 3.3.8: Accessible Authentication (Minimum)">3.3.8 Accessible Authentication (Minimum)</a></td><td class="col-conformance"><span class="vpat-badge vpat-badge-not-eval" data-msg-id="vpat.conformance.notEvaluated">Not Evaluated</span></td><td class="col-remarks" data-msg-id="vpat.remarks.humanJudgment">This criterion requires human judgment beyond automated testing.</td></tr><tr class="vpat-row vpat-row-supports"><td class="col-criterion"><a href="https://www.w3.org/WAI/WCAG22/Understanding/status-messages" target="_blank" rel="noopener noreferrer" title="WCAG 4.1.3: Status Messages">4.1.3 Status Messages</a></td><td class="col-conformance"><span class="vpat-badge vpat-badge-supports" data-msg-id="vpat.conformance.supports">Supports</span></td><td class="col-remarks" data-msg-id="vpat.remarks.noViolations">No violations detected.</td></tr></tbody></table></section><section id="conformance-definitions" class="vpat-section vpat-terms"><h2><a href="#conformance-definitions" class="vpat-anchor" data-msg-id="vpat.conformanceDefinitions">Conformance Level Definitions</a></h2><dl><dt data-msg-id="vpat.conformance.supports">Supports</dt><dd data-msg-id="vpat.definition.supportsBody">The functionality of the product has at least one method that meets the criterion without known defects or meets with equivalent facilitation.</dd><dt data-msg-id="vpat.conformance.partial">Partially Supports</dt><dd data-msg-id="vpat.definition.partialBody">Some functionality of the product does not meet the criterion.</dd><dt data-msg-id="vpat.conformance.doesNotSupport">Does Not Support</dt><dd data-msg-id="vpat.definition.doesNotSupportBody">The majority of product functionality does not meet the criterion.</dd><dt data-msg-id="vpat.conformance.notApplicable">Not Applicable</dt><dd data-msg-id="vpat.definition.notApplicableBody">The criterion is not relevant to the product.</dd><dt data-msg-id="vpat.conformance.notEvaluated">Not Evaluated</dt><dd data-msg-id="vpat.definition.notEvaluatedBody">The product has not been evaluated against the criterion. This can be due to limitations of automated testing.</dd></dl></section><footer class="vpat-footer"><p><span data-msg-id="vpat.generatedFooterPrefix">This VPAT was generated by</span> <a href="https://sonde.life" target="_blank" rel="noopener noreferrer">Sonde</a> <span data-msg-id="vpat.generatedFooterMiddle" data-msg-args="{&quot;scanDate&quot;:&quot;April 28, 2026&quot;}">on April 28, 2026. The complete methodology is published at</span> <a href="https://daylight.sonde.life/methodology/" target="_blank" rel="noopener noreferrer"><span data-msg-id="vpat.methodologyHost">daylight.sonde.life</span></a>.</p><p class="vpat-disclaimer" data-msg-id="legal.disclaimer">This report presents the results of automated accessibility analysis and is provided free of charge, as-is, without warranty of any kind. Findings are generated by software, not by human accessibility experts, and may contain errors or omissions. Automated testing can detect approximately 30–40% of accessibility issues; manual expert evaluation is recommended for complete conformance assessment. Scores reflect algorithmic analysis under a published methodology open to public review — they are not legal determinations of compliance. Results reflect the state of the website at the time of scanning and may change as the site is updated. Nothing in this report constitutes legal advice. Sonde assumes no liability for decisions made based on these results.</p></footer></main><footer class="sonde-footer">Generated by Sonde</footer></div><script>(function() {
-  var locales = ["en-US","es-US","de-DE","fr-FR","es-ES","it-IT","ko-KR"];
-  var lower = ["en-us","es-us","de-de","fr-fr","es-es","it-it","ko-kr"];
-  var forbidden = ["pt"];
-  var rtlLangs = ["ar","he","fa","ur","ps","sd","yi","dv","ks","ckb"];
-  var storageKey = "sonde-locale";
-  var defaultLocale = "en-US";
-  var bundleBaseHref = "/assets/locales/daylight-";
-  function pickLocale() {
-    try {
-      var saved = localStorage.getItem(storageKey);
-      if (saved) {
-        var savedIdx = lower.indexOf(saved.toLowerCase());
-        if (savedIdx !== -1) return locales[savedIdx];
-      }
-    } catch (e) { /* storage disabled */ }
-    var langs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language];
-    for (var i = 0; i < langs.length; i++) {
-      var raw = langs[i];
-      if (!raw) continue;
-      var tag = raw.toLowerCase();
-      var exactIdx = lower.indexOf(tag);
-      if (exactIdx !== -1) return locales[exactIdx];
-      var base = tag.split('-')[0];
-      if (!base) continue;
-      if (forbidden.indexOf(base) !== -1) continue;
-      var prefix = base + '-';
-      for (var j = 0; j < lower.length; j++) {
-        if (lower[j].indexOf(prefix) === 0) return locales[j];
-      }
-    }
-    return defaultLocale;
-  }
-  function applyLocale(locale) {
-    var base = locale.split('-')[0].toLowerCase();
-    var dir = rtlLangs.indexOf(base) !== -1 ? 'rtl' : 'ltr';
-    document.documentElement.lang = locale;
-    document.documentElement.dir = dir;
-
-    var scriptId = 'sonde-locale-bundle';
-    var existing = document.getElementById(scriptId);
-    if (existing) existing.remove();
-    var script = document.createElement('script');
-    script.id = scriptId;
-    script.src = bundleBaseHref + locale + '.js';
-    script.onload = function() {
-      var dict = window.SondeDaylightI18n;
-      if (!dict) return;
-      // Values come from same-origin compiled .po bundles we emit; Lingui msgids
-      // may contain inline markup (<strong>, <a>), so we apply as HTML, not text.
-      var attrSelectors = [
-        ['data-msg-id', function(el, txt) { el.innerHTML = txt; }],
-        ['data-msg-title-id', function(el, txt) { el.setAttribute('title', txt); }],
-        ['data-msg-aria-label-id', function(el, txt) { el.setAttribute('aria-label', txt); }],
-        ['data-msg-placeholder-id', function(el, txt) { el.setAttribute('placeholder', txt); }]
-      ];
-      for (var a = 0; a < attrSelectors.length; a++) {
-        var attrName = attrSelectors[a][0];
-        var apply = attrSelectors[a][1];
-        var els = document.querySelectorAll('[' + attrName + ']');
-        for (var j = 0; j < els.length; j++) {
-          var el = els[j];
-          var id = el.getAttribute(attrName);
-          if (!id || !dict[id]) continue;
-          var text = dict[id];
-          var args = el.getAttribute('data-msg-args');
-          if (args) {
-            try {
-              var parsed = JSON.parse(args);
-              for (var key in parsed) {
-                text = text.replace('{'+key+'}', parsed[key]);
-              }
-            } catch(e) {}
-          }
-          apply(el, text);
-        }
-      }
-      var localeLinks = document.querySelectorAll('[data-locale-link]');
-      for (var l = 0; l < localeLinks.length; l++) {
-        var base = localeLinks[l].getAttribute('data-locale-link');
-        var ext = localeLinks[l].getAttribute('data-locale-ext') || '';
-        if (locale === 'en-US') {
-          localeLinks[l].setAttribute('href', './' + base + ext);
-        } else {
-          localeLinks[l].setAttribute('href', './' + base + '-' + locale + ext);
-        }
-      }
-    };
-    document.head.appendChild(script);
-  }
-  function init() {
-    var active = pickLocale();
-    applyLocale(active);
-    var radios = document.querySelectorAll('input[type="radio"][data-sonde-locale-picker]');
-    for (var k = 0; k < radios.length; k++) {
-      var radio = radios[k];
-      if (radio.value === active) radio.checked = true;
-      radio.addEventListener('change', function(ev) {
-        var next = ev.target.value;
-        if (lower.indexOf(next.toLowerCase()) === -1) return;
-        try { localStorage.setItem(storageKey, next); } catch (e) {}
-        applyLocale(next);
-        var ds = document.querySelectorAll('.settings-dropdown');
-        for (var d = 0; d < ds.length; d++) {
-          ds[d].removeAttribute('open');
-          // WCAG 2.4.3: after a language change re-renders the header,
-          // explicit focus return to the gear summary preserves focus order.
-          var s = ds[d].querySelector('summary');
-          if (s) s.focus();
-        }
-      });
-    }
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
-  }
-})();</script></body></html>
+  </body>
+</html>
