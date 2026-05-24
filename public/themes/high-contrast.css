@@ -46,6 +46,13 @@
   --sonde-daylight-mark-probe: #ffffff;
   --sonde-daylight-mark-solid-display: none;
   --sonde-daylight-mark-line-display: block;
+  --sonde-daylight-hc-mark-earth-blue: #0b3d91;
+  --sonde-daylight-hc-mark-bus-gold: #5a4b00;
+  --sonde-daylight-hc-mark-rtg-brown: #4a3825;
+  --sonde-daylight-hc-mark-metal: #111111;
+  --sonde-daylight-hc-mark-flame-deep: #7a1900;
+  --sonde-daylight-hc-mark-flame-mid: #8f1d00;
+  --sonde-daylight-hc-mark-flame-hot: #8f3b00;
 
 
   --sonde-font-body: 'Atkinson Hyperlegible', 'Verdana', system-ui, sans-serif;
@@ -136,7 +143,7 @@
   --sonde-color-table-header-bg: #ffffff;
   --sonde-color-table-header-text: #000000;
 
-  /* Keep the HC brand mark active under explicit dark mode. */
+  /* Keep the HC brand mark active and readable under explicit dark mode. */
   --sonde-daylight-mark-sun-stop-0: #000000;
   --sonde-daylight-mark-sun-stop-1: #000000;
   --sonde-daylight-mark-sun-stop-2: #000000;
@@ -144,7 +151,13 @@
   --sonde-daylight-mark-probe: #ffffff;
   --sonde-daylight-mark-solid-display: none;
   --sonde-daylight-mark-line-display: block;
-
+  --sonde-daylight-hc-mark-earth-blue: #9ecbff;
+  --sonde-daylight-hc-mark-bus-gold: #ffe45c;
+  --sonde-daylight-hc-mark-rtg-brown: #f3d0a7;
+  --sonde-daylight-hc-mark-metal: #ffffff;
+  --sonde-daylight-hc-mark-flame-deep: #ff9f1c;
+  --sonde-daylight-hc-mark-flame-mid: #ffd166;
+  --sonde-daylight-hc-mark-flame-hot: #fff6bf;
 
   /* Code block surfaces — dark */
   --sonde-code-bg: #000000;
@@ -219,7 +232,7 @@
     --sonde-color-table-header-bg: #ffffff;
     --sonde-color-table-header-text: #000000;
 
-    /* Keep the HC brand mark active under OS dark mode. */
+    /* Keep the HC brand mark active and readable under OS dark mode. */
     --sonde-daylight-mark-sun-stop-0: #000000;
     --sonde-daylight-mark-sun-stop-1: #000000;
     --sonde-daylight-mark-sun-stop-2: #000000;
@@ -227,7 +240,13 @@
     --sonde-daylight-mark-probe: #ffffff;
     --sonde-daylight-mark-solid-display: none;
     --sonde-daylight-mark-line-display: block;
-
+    --sonde-daylight-hc-mark-earth-blue: #9ecbff;
+    --sonde-daylight-hc-mark-bus-gold: #ffe45c;
+    --sonde-daylight-hc-mark-rtg-brown: #f3d0a7;
+    --sonde-daylight-hc-mark-metal: #ffffff;
+    --sonde-daylight-hc-mark-flame-deep: #ff9f1c;
+    --sonde-daylight-hc-mark-flame-mid: #ffd166;
+    --sonde-daylight-hc-mark-flame-hot: #fff6bf;
 
     /* Code block surfaces — dark */
     --sonde-code-bg: #000000;

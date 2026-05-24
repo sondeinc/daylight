@@ -123,6 +123,33 @@
   --sonde-daylight-mark-solid-display: block;
   --sonde-daylight-mark-line-display: none;
 
+  /* Theme-preview mark palettes freeze each swatch's target appearance so
+   * the selector menu does not inherit the active page mode. Component CSS
+   * references these tokens; it must not mirror the literal color values. */
+  --sonde-daylight-mark-preview-light-sun-stop-0: #ffe082;
+  --sonde-daylight-mark-preview-light-sun-stop-1: #ffb300;
+  --sonde-daylight-mark-preview-light-sun-stop-2: #e65100;
+  --sonde-daylight-mark-preview-light-crater: transparent;
+  --sonde-daylight-mark-preview-light-probe: #1a1a2e;
+  --sonde-daylight-mark-preview-light-solid-display: block;
+  --sonde-daylight-mark-preview-light-line-display: none;
+
+  --sonde-daylight-mark-preview-dark-sun-stop-0: #e0e8f0;
+  --sonde-daylight-mark-preview-dark-sun-stop-1: #a8b4c0;
+  --sonde-daylight-mark-preview-dark-sun-stop-2: #505860;
+  --sonde-daylight-mark-preview-dark-crater: transparent;
+  --sonde-daylight-mark-preview-dark-probe: #0a1120;
+  --sonde-daylight-mark-preview-dark-solid-display: block;
+  --sonde-daylight-mark-preview-dark-line-display: none;
+
+  --sonde-daylight-mark-preview-high-contrast-sun-stop-0: #000000;
+  --sonde-daylight-mark-preview-high-contrast-sun-stop-1: #000000;
+  --sonde-daylight-mark-preview-high-contrast-sun-stop-2: #000000;
+  --sonde-daylight-mark-preview-high-contrast-crater: transparent;
+  --sonde-daylight-mark-preview-high-contrast-probe: #ffffff;
+  --sonde-daylight-mark-preview-high-contrast-solid-display: none;
+  --sonde-daylight-mark-preview-high-contrast-line-display: block;
+
   /* ─── Color — Sonde daylight mock palette (build-time SVG mockups) ── */
   /* Consumed by build-time generators that bake daylight-themed UI into
    * fixture/preview PNGs (e.g. cockpit-mobile/scripts/generateMobileSeedScreenshots.ts).
@@ -416,6 +443,20 @@
   --sonde-content-data-max: 95vw;        /* Data tables: near full width */
   --sonde-content-min-width: 320px;      /* Mobile minimum */
   --sonde-content-padding: clamp(1rem, 3vw, 3rem);
+  --sonde-form-factor-phone-max: 480px;       /* Phone contract upper bound */
+  --sonde-form-factor-tablet-max: 1024px;     /* Tablet contract upper bound */
+  --sonde-form-factor-large-min: 1920px;      /* Large-monitor contract lower bound */
+  --sonde-layout-shell-max: min(96vw, 118rem);          /* Rich page shell */
+  --sonde-layout-readable-max: var(--sonde-content-readable-max); /* Readable/prose rail */
+  --sonde-layout-data-max: var(--sonde-content-data-max);          /* Tables and dense data */
+  --sonde-layout-gutter-inline: var(--sonde-content-padding);
+  --sonde-layout-gutter-block: var(--sonde-spacing-xl);
+  --sonde-layout-panel-min: min(100%, 18rem);
+  --sonde-layout-panel-max: 28rem;
+  --sonde-layout-grid-min: 16rem;
+  --sonde-layout-toolbar-gap: var(--sonde-spacing-sm);
+  --sonde-target-size-min: 44px;      /* WCAG 2.5.8 minimum */
+  --sonde-target-size-comfort: 48px;  /* Mobile/touch comfort target */
 
   /* ─── Border Radius ─────────────────────────────────────────── */
   --sonde-radius-sm: 4px;
@@ -689,6 +730,35 @@
 :root:lang(ja), :root:lang(zh), :root:lang(ko),
 [lang^="ja"], [lang^="zh"], [lang^="ko"] {
   --sonde-content-readable-max: 40ch;
+  --sonde-layout-readable-max: 40ch;
+}
+
+/* ─── Form-Factor Layout Overrides ─────────────────────────────── */
+@media (max-width: 480px) {
+  :root {
+    --sonde-content-data-max: 100vw;
+    --sonde-content-padding: clamp(0.75rem, 4vw, 1rem);
+    --sonde-layout-shell-max: 100%;
+    --sonde-layout-data-max: 100vw;
+    --sonde-layout-gutter-inline: var(--sonde-content-padding);
+    --sonde-layout-gutter-block: var(--sonde-spacing-lg);
+    --sonde-layout-panel-min: 100%;
+    --sonde-layout-panel-max: 100%;
+    --sonde-layout-grid-min: min(100%, 14rem);
+    --sonde-layout-toolbar-gap: var(--sonde-spacing-xs);
+  }
+}
+
+@media (min-width: 1920px) {
+  :root {
+    --sonde-content-data-max: min(94vw, 118rem);
+    --sonde-content-padding: clamp(2rem, 2vw, 5rem);
+    --sonde-layout-shell-max: min(96vw, 128rem);
+    --sonde-layout-data-max: min(94vw, 118rem);
+    --sonde-layout-gutter-inline: var(--sonde-content-padding);
+    --sonde-layout-gutter-block: var(--sonde-spacing-2xl);
+    --sonde-layout-grid-min: 18rem;
+  }
 }
 
 /* ─── AUTO-GENERATED @property REGISTRATIONS — do not edit by hand ────── */
@@ -1112,6 +1182,81 @@
   initial-value: #ff00ff;
 }
 @property --sonde-daylight-mark-crater {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-dark-crater {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-dark-probe {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-dark-sun-stop-0 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-dark-sun-stop-1 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-dark-sun-stop-2 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-high-contrast-crater {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-high-contrast-probe {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-high-contrast-sun-stop-0 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-high-contrast-sun-stop-1 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-high-contrast-sun-stop-2 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-light-crater {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-light-probe {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-light-sun-stop-0 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-light-sun-stop-1 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-light-sun-stop-2 {
   syntax: "<color>";
   inherits: true;
   initial-value: #ff00ff;
