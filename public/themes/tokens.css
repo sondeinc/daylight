@@ -30,6 +30,11 @@
  */
 
 :root {
+  --sonde-rail-width-collapsed: 56px;
+  --sonde-rail-width-expanded: 240px;
+  --sonde-nav-rail-entry-delay: 300ms;
+  --sonde-nav-rail-exit-delay: 350ms;
+  --sonde-nav-rail-transition-duration: 0ms;
   /* ─── Color Scheme ──────────────────────────────────────────── */
   /* Default = ultraviolet-dark (Sonde cockpit's product default theme).
    * Every surface (audit, report, dashboard, presentation, daylight,
@@ -42,6 +47,7 @@
 
   /* ─── Color — Semantic (ultraviolet-dark defaults) ──────────── */
   --sonde-color-primary: #b185ff;        /* Electric violet — UV-dark primary */
+  --sonde-color-on-primary: var(--sonde-color-bg); /* Contrasting text follows the active theme ground */
   --sonde-color-secondary: #7dd3fc;      /* Ionized cyan — UV-C shimmer */
   --sonde-color-bg: #0a0618;             /* Deep indigo ground */
   --sonde-color-surface: #15102a;        /* Raised surface */
@@ -122,6 +128,33 @@
   --sonde-daylight-mark-probe: #1a1a2e;
   --sonde-daylight-mark-solid-display: block;
   --sonde-daylight-mark-line-display: none;
+
+  /* Theme-preview mark palettes freeze each swatch's target appearance so
+   * the selector menu does not inherit the active page mode. Component CSS
+   * references these tokens; it must not mirror the literal color values. */
+  --sonde-daylight-mark-preview-light-sun-stop-0: #ffe082;
+  --sonde-daylight-mark-preview-light-sun-stop-1: #ffb300;
+  --sonde-daylight-mark-preview-light-sun-stop-2: #e65100;
+  --sonde-daylight-mark-preview-light-crater: transparent;
+  --sonde-daylight-mark-preview-light-probe: #1a1a2e;
+  --sonde-daylight-mark-preview-light-solid-display: block;
+  --sonde-daylight-mark-preview-light-line-display: none;
+
+  --sonde-daylight-mark-preview-dark-sun-stop-0: #e0e8f0;
+  --sonde-daylight-mark-preview-dark-sun-stop-1: #a8b4c0;
+  --sonde-daylight-mark-preview-dark-sun-stop-2: #505860;
+  --sonde-daylight-mark-preview-dark-crater: transparent;
+  --sonde-daylight-mark-preview-dark-probe: #0a1120;
+  --sonde-daylight-mark-preview-dark-solid-display: block;
+  --sonde-daylight-mark-preview-dark-line-display: none;
+
+  --sonde-daylight-mark-preview-high-contrast-sun-stop-0: #000000;
+  --sonde-daylight-mark-preview-high-contrast-sun-stop-1: #000000;
+  --sonde-daylight-mark-preview-high-contrast-sun-stop-2: #000000;
+  --sonde-daylight-mark-preview-high-contrast-crater: transparent;
+  --sonde-daylight-mark-preview-high-contrast-probe: #ffffff;
+  --sonde-daylight-mark-preview-high-contrast-solid-display: none;
+  --sonde-daylight-mark-preview-high-contrast-line-display: block;
 
   /* ─── Color — Sonde daylight mock palette (build-time SVG mockups) ── */
   /* Consumed by build-time generators that bake daylight-themed UI into
@@ -368,10 +401,10 @@
   --sonde-exhibit-overlay: rgba(0, 0, 0, 0.65);
 
   /* ─── Color — Elevated surface + stronger border tiers ──────── */
-  /* Extra depth tiers consumed by dense UIs (cockpit panels, nested
-   * trees, diagrams). Every surface that needs a third bg tier or a
-   * bolder border tier reads these — not surface-namespaced. */
-  --sonde-color-surface-elevated: #1f1840;                /* Tier 3 background — above surface */
+  /* Shared contrast-safe alternate surface and stronger border tiers for
+   * panels, nested trees, diagrams, and zebra rows. "Elevated" names the
+   * semantic role, not a fixed depth ordering relative to `surface`. */
+  --sonde-color-surface-elevated: #1f1840;                /* Alternate elevated surface */
   --sonde-color-border-strong: #3a2d6b;                   /* Bolder border tier for nested structures */
 
   /* ─── Color — Visualization primitives ──────────────────────── */
@@ -400,22 +433,50 @@
   --sonde-font-size-caption: 0.875rem;
   --sonde-font-size-control: 0.875rem;
   --sonde-font-size-chip: 0.875rem;
+  --sonde-font-size-overline: 0.75rem;
+  --sonde-letter-spacing-overline: 0.04em;
   --sonde-line-height: 1.65;
 
   /* ─── Spacing Scale ─────────────────────────────────────────── */
+  --sonde-spacing-2xs: 0.125rem; /* 2px */
   --sonde-spacing-xs: 0.25rem;   /* 4px */
   --sonde-spacing-sm: 0.5rem;    /* 8px */
+  --sonde-spacing-xs-plus: 0.75rem; /* 12px */
   --sonde-spacing-md: 1rem;      /* 16px */
   --sonde-spacing-lg: 1.5rem;    /* 24px */
   --sonde-spacing-xl: 2rem;      /* 32px */
   --sonde-spacing-2xl: 3rem;     /* 48px */
+
+  /* Semantic icon sizes shared by every adapter. These replace component-local
+   * pixel overrides while retaining the established rendered dimensions. */
+  --sonde-icon-size-caption: 0.875rem; /* 14px */
+  --sonde-icon-size-compact: 1rem;     /* 16px */
+  --sonde-icon-size-control: 1.125rem; /* 18px */
+  --sonde-icon-size-display: 2rem;     /* 32px */
   --sonde-spacing-3xl: 4rem;     /* 64px */
 
   /* ─── Layout ────────────────────────────────────────────────── */
   --sonde-content-readable-max: 72ch;    /* Prose: optimal line length */
-  --sonde-content-data-max: 95vw;        /* Data tables: near full width */
+  --sonde-content-data-max: 95%;         /* Data tables: proportional rail */
   --sonde-content-min-width: 320px;      /* Mobile minimum */
   --sonde-content-padding: clamp(1rem, 3vw, 3rem);
+  --sonde-form-factor-phone-max: 480px;       /* Phone contract upper bound */
+  --sonde-form-factor-tablet-max: 1024px;     /* Tablet contract upper bound */
+  --sonde-form-factor-large-min: 1920px;      /* Large-monitor contract lower bound */
+  --sonde-layout-shell-max: 96%;                   /* Rich page shell */
+  --sonde-layout-readable-max: var(--sonde-content-readable-max); /* Readable/prose rail */
+  --sonde-layout-data-max: var(--sonde-content-data-max);          /* Tables and dense data */
+  --sonde-layout-gutter-inline: var(--sonde-content-padding);
+  --sonde-layout-gutter-block: var(--sonde-spacing-xl);
+  --sonde-layout-panel-min: min(100%, 18rem);
+  --sonde-layout-panel-max: 28rem;
+  --sonde-layout-grid-min: 16rem;
+  --sonde-layout-toolbar-gap: var(--sonde-spacing-sm);
+  --sonde-target-size-min: 44px;      /* WCAG 2.5.8 minimum */
+  --sonde-target-size-comfort: 48px;  /* Mobile/touch comfort target */
+  --sonde-border-width-thin: 1px;     /* Hairline borders and dividers */
+  --sonde-border-width-focus: 2px;    /* Focus outlines and their offset */
+  --sonde-border-width-accent: 3px;   /* Accent bars on callouts */
 
   /* ─── Border Radius ─────────────────────────────────────────── */
   --sonde-radius-sm: 4px;
@@ -490,7 +551,7 @@
   :root:not([data-theme="light"]):not([data-mode="light"]):not([data-theme="high-contrast"]):not([data-theme="ultraviolet"]):not([data-theme="infrared"]) {
     --sonde-color-sidebar: #0d1117;
     --sonde-color-table-header-bg: #0a0a14;
-    --sonde-color-table-header-text: #e6edf3;
+    --sonde-color-table-header-text: #e8e0ff;
 
     --sonde-color-badge-pass-bg: #06342a;
     --sonde-color-badge-fail-bg: #3a0612;
@@ -629,7 +690,7 @@
 
   --sonde-color-sidebar: #0d1117;
   --sonde-color-table-header-bg: #0a0a14;
-  --sonde-color-table-header-text: #e6edf3;
+  --sonde-color-table-header-text: #e8e0ff;
 
   --sonde-color-badge-pass-bg: #06342a;
   --sonde-color-badge-fail-bg: #3a0612;
@@ -666,10 +727,104 @@
     --sonde-shadow-sm: none;
     --sonde-shadow-md: none;
     --sonde-shadow-lg: none;
+    --sonde-code-bg: color-mix(in srgb, var(--sonde-color-text) 6%, var(--sonde-color-surface));
+    --sonde-code-text: var(--sonde-color-text);
+    --sonde-code-line-num: var(--sonde-color-text-muted);
+    --sonde-code-gutter-bg: color-mix(in srgb, var(--sonde-color-text) 4%, var(--sonde-color-surface));
+    --sonde-code-highlight-bg: color-mix(in srgb, var(--sonde-color-primary) 10%, var(--sonde-color-surface));
+    /* Print uses a light code surface, so every syntax role must switch away
+     * from the dark-surface defaults owned by several theme families. */
+    --sonde-syntax-keyword: #1a3554;
+    --sonde-syntax-type: #08645e;
+    --sonde-syntax-string: #14532d;
+    --sonde-syntax-number: #9f4f05;
+    --sonde-syntax-comment: #635e58;
+    --sonde-syntax-function: #0369a1;
+    --sonde-syntax-variable: #1c1917;
+    --sonde-syntax-constant: #ad3a0b;
+    --sonde-syntax-property: #1a3554;
+    --sonde-syntax-punctuation: #57534e;
+    --sonde-syntax-tag: #991b1b;
+    --sonde-syntax-default: #1c1917;
+    --sonde-color-diff-bg: #f0ebe0;
+    --sonde-color-diff-add-bg: #dcf5eb;
+    --sonde-color-diff-add-text: #086962;
+    --sonde-color-diff-add-gutter: #c5e7dc;
+    --sonde-color-diff-remove-bg: #fde6dc;
+    --sonde-color-diff-remove-text: #9b2f08;
+    --sonde-color-diff-remove-gutter: #f3cbbf;
+    --sonde-color-diff-unchanged-gutter: #e9e3d5;
+    --sonde-color-fix-label: var(--sonde-color-secondary);
+    --sonde-color-fix-text: var(--sonde-color-text);
+    --sonde-viz-code-bg: var(--sonde-code-bg);
   }
-  .sonde-nav, .sonde-controls, [data-print="hide"] { display: none !important; }
-  section, .vpat-section { break-inside: avoid; }
-  h2, h3 { break-after: avoid; }
+  /* Structural print rules are single-sourced here (the universal base every
+   * palette/surface prepends). Each theme's own @media print block carries only
+   * its :root print token overrides — never a copy of this structure. */
+  body, .sonde-exhibit, .scribe-shell__main {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .site-nav,
+  .settings-dropdown,
+  footer,
+  .sonde-nav,
+  .sonde-controls,
+  .scribe-leaderboard-pagination,
+  .leaderboard-pagination,
+  [data-print="hide"] {
+    display: none !important;
+  }
+  details,
+  details:not([open]) {
+    display: block;
+  }
+  details > summary {
+    display: none;
+  }
+  details > * {
+    display: revert;
+  }
+  pre,
+  code,
+  .exhibit-code-block {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    orphans: 4;
+    widows: 4;
+  }
+  section,
+  .vpat-section,
+  tr {
+    break-inside: avoid;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  /* Modern PDF readers preserve clickable hyperlinks, so the raw href is no
+   * longer appended as visible text after every <a> (that produced duplicate
+   * "URL (URL)" output and bloated paged output). Click-through still works in
+   * saved PDFs across paged.js, Playwright bake, and Chrome's stock print. */
+  th.sortable::after,
+  th[data-sort-key]::after {
+    content: "";
+    display: none;
+  }
+  tr[data-filtered="true"] {
+    display: none;
+  }
+  body[data-scribe-print-rows="all"] tr[data-filtered="true"] {
+    display: table-row;
+  }
 }
 
 /* ─── Forced Colors (Windows High Contrast) ─────────────────────── */
@@ -681,6 +836,8 @@
     --sonde-color-surface: Canvas;
     --sonde-color-border: CanvasText;
     --sonde-color-accent: Highlight;
+    --sonde-color-table-header-bg: Canvas;
+    --sonde-color-table-header-text: CanvasText;
   }
 }
 
@@ -689,6 +846,198 @@
 :root:lang(ja), :root:lang(zh), :root:lang(ko),
 [lang^="ja"], [lang^="zh"], [lang^="ko"] {
   --sonde-content-readable-max: 40ch;
+  --sonde-layout-readable-max: 40ch;
+}
+
+/* ─── Form-Factor Layout Overrides ─────────────────────────────── */
+@media (max-width: 480px) {
+  :root {
+    --sonde-content-data-max: 100%;
+    --sonde-content-padding: clamp(0.75rem, 4vw, 1rem);
+    --sonde-layout-shell-max: 100%;
+    --sonde-layout-data-max: 100%;
+    --sonde-layout-gutter-inline: var(--sonde-content-padding);
+    --sonde-layout-gutter-block: var(--sonde-spacing-lg);
+    --sonde-layout-panel-min: 100%;
+    --sonde-layout-panel-max: 100%;
+    --sonde-layout-grid-min: min(100%, 14rem);
+    --sonde-layout-toolbar-gap: var(--sonde-spacing-xs);
+  }
+}
+
+@media (min-width: 1920px) {
+  :root {
+    --sonde-content-data-max: 94%;
+    --sonde-content-padding: clamp(2rem, 2vw, 5rem);
+    --sonde-layout-shell-max: 96%;
+    --sonde-layout-data-max: 94%;
+    --sonde-layout-gutter-inline: var(--sonde-content-padding);
+    --sonde-layout-gutter-block: var(--sonde-spacing-2xl);
+    --sonde-layout-grid-min: 18rem;
+  }
+}
+
+/* ─── sonde.life contact form — shared structure ────────────────────────
+ * Theme-agnostic layout lives in the base layer; color comes from tokens.
+ * The public classes intentionally describe the contact form surface. */
+.sl-contact-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(18rem, 0.8fr);
+  gap: clamp(1rem, 3vw, 2rem);
+  align-items: start;
+}
+
+.sl-contact-form {
+  min-width: 0;
+  display: grid;
+  gap: 1rem;
+  padding: clamp(1rem, 2vw, 1.35rem);
+  border: 1px solid var(--sonde-color-border);
+  border-radius: 0.5rem;
+  background: color-mix(in srgb, var(--sonde-color-surface) 68%, transparent);
+}
+
+.sl-contact-aside {
+  display: grid;
+  gap: 1.5rem;
+  align-content: start;
+}
+
+.sl-contact-form-heading h2 {
+  margin: 0;
+  color: var(--sonde-color-text-heading);
+  font-family: var(--sonde-font-heading);
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.sl-contact-form-heading p,
+.sl-contact-note,
+.sl-contact-privacy {
+  margin: 0;
+  color: var(--sonde-color-text-muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.sl-contact-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.sl-contact-field {
+  display: grid;
+  gap: 0.35rem;
+  min-width: 0;
+  color: var(--sonde-color-text-heading);
+  font-family: var(--sonde-font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.sl-contact-field-wide {
+  grid-column: 1 / -1;
+}
+
+.sl-contact-field input,
+.sl-contact-field select,
+.sl-contact-field textarea {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  border: 1px solid var(--sonde-color-border);
+  border-radius: 0.4rem;
+  background: var(--sonde-color-bg);
+  color: var(--sonde-color-text);
+  font: 400 0.98rem / 1.45 var(--sonde-font-body);
+}
+
+.sl-contact-field input,
+.sl-contact-field select {
+  min-height: 2.55rem;
+  padding: 0 0.75rem;
+}
+
+.sl-contact-field textarea {
+  resize: vertical;
+  min-height: 8rem;
+  padding: 0.65rem 0.75rem;
+}
+
+.sl-contact-field input:focus-visible,
+.sl-contact-field select:focus-visible,
+.sl-contact-field textarea:focus-visible,
+.sl-contact-consent input:focus-visible {
+  outline: 3px solid var(--sonde-color-primary);
+  outline-offset: 2px;
+}
+
+.sl-contact-honeypot {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.sl-contact-consent {
+  display: flex;
+  gap: 0.65rem;
+  align-items: flex-start;
+  color: var(--sonde-color-text);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.sl-contact-consent input {
+  flex: 0 0 auto;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-top: 0.1rem;
+}
+
+.sl-contact-turnstile {
+  min-height: 4.1rem;
+  display: flex;
+  align-items: center;
+}
+
+.sl-page .sl-contact-submit {
+  justify-self: start;
+  cursor: pointer;
+  background: transparent;
+}
+
+/* Disabled until the form is valid and consent is checked. Grey it out
+ * clearly (muted border + text), not-allowed cursor, dimmed. The :disabled
+ * selector out-specifies .sl-action-primary so it overrides the active look. */
+.sl-page .sl-contact-submit:disabled,
+.sl-page .sl-contact-submit:disabled:hover {
+  border-color: var(--sonde-color-border);
+  color: var(--sonde-color-text-muted);
+  background: transparent;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 56rem) {
+  .sl-contact-layout,
+  .sl-contact-form-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 30rem) {
+  .sl-contact-form {
+    /* Turnstile's responsive widget has a documented 300px minimum. Let the
+     * bordered form reach the phone viewport edge, leaving a 302px content box
+     * at the 320px certification baseline after padding and borders. */
+    margin-inline: calc(-1 * var(--sonde-content-padding));
+    padding-inline: 0.5rem;
+  }
 }
 
 /* ─── AUTO-GENERATED @property REGISTRATIONS — do not edit by hand ────── */
@@ -1112,6 +1461,81 @@
   initial-value: #ff00ff;
 }
 @property --sonde-daylight-mark-crater {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-dark-crater {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-dark-probe {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-dark-sun-stop-0 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-dark-sun-stop-1 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-dark-sun-stop-2 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-high-contrast-crater {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-high-contrast-probe {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-high-contrast-sun-stop-0 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-high-contrast-sun-stop-1 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-high-contrast-sun-stop-2 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-light-crater {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-light-probe {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-light-sun-stop-0 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-light-sun-stop-1 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff00ff;
+}
+@property --sonde-daylight-mark-preview-light-sun-stop-2 {
   syntax: "<color>";
   inherits: true;
   initial-value: #ff00ff;

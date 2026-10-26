@@ -1,16 +1,17 @@
 /**
- * High Contrast Theme — WCAG AAA target.
+ * High Contrast Theme — maximum-contrast palette with AA-guarded text pairings.
  *
  * Maximum readability for users with low vision. Every foreground/background
- * pair meets 7:1 contrast ratio (AAA Normal Text). Black/white primary palette
- * with saturated status colors that maintain AAA on both backgrounds.
+ * audited text pair meets at least 4.5:1 (AA Normal Text). Black/white primary
+ * palette with saturated status colors selected for strong legibility.
  *
  * Typography: Atkinson Hyperlegible (body + headings) + Cascadia Code (mono)
  * Both fonts designed specifically for low-vision readability.
  */
 
 /* ─── Light Mode (default) ────────────���─────────────────────────── */
-:root {
+:root,
+:root[data-mode="light"] {
   color-scheme: light;
 
   --sonde-color-primary: #000000;
@@ -46,6 +47,13 @@
   --sonde-daylight-mark-probe: #ffffff;
   --sonde-daylight-mark-solid-display: none;
   --sonde-daylight-mark-line-display: block;
+  --sonde-daylight-hc-mark-earth-blue: #0b3d91;
+  --sonde-daylight-hc-mark-bus-gold: #5a4b00;
+  --sonde-daylight-hc-mark-rtg-brown: #4a3825;
+  --sonde-daylight-hc-mark-metal: #111111;
+  --sonde-daylight-hc-mark-flame-deep: #7a1900;
+  --sonde-daylight-hc-mark-flame-mid: #8f1d00;
+  --sonde-daylight-hc-mark-flame-hot: #8f3b00;
 
 
   --sonde-font-body: 'Atkinson Hyperlegible', 'Verdana', system-ui, sans-serif;
@@ -85,7 +93,7 @@
   --sonde-syntax-keyword: #0000cc;
   --sonde-syntax-type: #006600;
   --sonde-syntax-string: #a31515;
-  --sonde-syntax-number: #098658;
+  --sonde-syntax-number: #007d51;
   --sonde-syntax-comment: #595959;
   --sonde-syntax-function: #795e26;
   --sonde-syntax-variable: #001080;
@@ -136,7 +144,7 @@
   --sonde-color-table-header-bg: #ffffff;
   --sonde-color-table-header-text: #000000;
 
-  /* Keep the HC brand mark active under explicit dark mode. */
+  /* Keep the HC brand mark active and readable under explicit dark mode. */
   --sonde-daylight-mark-sun-stop-0: #000000;
   --sonde-daylight-mark-sun-stop-1: #000000;
   --sonde-daylight-mark-sun-stop-2: #000000;
@@ -144,7 +152,13 @@
   --sonde-daylight-mark-probe: #ffffff;
   --sonde-daylight-mark-solid-display: none;
   --sonde-daylight-mark-line-display: block;
-
+  --sonde-daylight-hc-mark-earth-blue: #9ecbff;
+  --sonde-daylight-hc-mark-bus-gold: #ffe45c;
+  --sonde-daylight-hc-mark-rtg-brown: #f3d0a7;
+  --sonde-daylight-hc-mark-metal: #ffffff;
+  --sonde-daylight-hc-mark-flame-deep: #ff9f1c;
+  --sonde-daylight-hc-mark-flame-mid: #ffd166;
+  --sonde-daylight-hc-mark-flame-hot: #fff6bf;
 
   /* Code block surfaces — dark */
   --sonde-code-bg: #000000;
@@ -219,7 +233,7 @@
     --sonde-color-table-header-bg: #ffffff;
     --sonde-color-table-header-text: #000000;
 
-    /* Keep the HC brand mark active under OS dark mode. */
+    /* Keep the HC brand mark active and readable under OS dark mode. */
     --sonde-daylight-mark-sun-stop-0: #000000;
     --sonde-daylight-mark-sun-stop-1: #000000;
     --sonde-daylight-mark-sun-stop-2: #000000;
@@ -227,7 +241,13 @@
     --sonde-daylight-mark-probe: #ffffff;
     --sonde-daylight-mark-solid-display: none;
     --sonde-daylight-mark-line-display: block;
-
+    --sonde-daylight-hc-mark-earth-blue: #9ecbff;
+    --sonde-daylight-hc-mark-bus-gold: #ffe45c;
+    --sonde-daylight-hc-mark-rtg-brown: #f3d0a7;
+    --sonde-daylight-hc-mark-metal: #ffffff;
+    --sonde-daylight-hc-mark-flame-deep: #ff9f1c;
+    --sonde-daylight-hc-mark-flame-mid: #ffd166;
+    --sonde-daylight-hc-mark-flame-hot: #fff6bf;
 
     /* Code block surfaces — dark */
     --sonde-code-bg: #000000;
@@ -310,38 +330,15 @@
     --sonde-shadow-sm: none;
     --sonde-shadow-md: none;
     --sonde-shadow-lg: none;
+    --sonde-code-bg: color-mix(in srgb, var(--sonde-color-text) 6%, var(--sonde-color-surface));
+    --sonde-code-text: var(--sonde-color-text);
+    --sonde-code-line-num: var(--sonde-color-text-muted);
+    --sonde-code-gutter-bg: color-mix(in srgb, var(--sonde-color-text) 4%, var(--sonde-color-surface));
+    --sonde-code-highlight-bg: color-mix(in srgb, var(--sonde-color-primary) 10%, var(--sonde-color-surface));
+    --sonde-color-fix-label: var(--sonde-color-secondary);
+    --sonde-color-fix-text: var(--sonde-color-text);
+    --sonde-viz-code-bg: var(--sonde-code-bg);
   }
-  body, .sonde-exhibit, .scribe-shell__main {
-    background: #ffffff !important;
-    color: #000000 !important;
-  }
-  .site-nav, .settings-dropdown, footer, .sonde-nav, .sonde-controls,
-  .scribe-leaderboard-pagination, .leaderboard-pagination, [data-print="hide"] {
-    display: none !important;
-  }
-  details, details:not([open]) { display: block; }
-  details > summary { display: none; }
-  details > * { display: revert; }
-  pre, code, .exhibit-code-block {
-    break-inside: avoid;
-    page-break-inside: avoid;
-    orphans: 4;
-    widows: 4;
-  }
-  section, .vpat-section, tr { break-inside: avoid; }
-  h1, h2, h3, h4, h5, h6 {
-    break-after: avoid;
-    page-break-after: avoid;
-  }
-  thead { display: table-header-group; }
-  /* Modern PDF readers preserve clickable hyperlinks; legacy
-   * "URL (URL)" expansion removed to avoid duplicate output. */
-  th.sortable::after, th[data-sort-key]::after {
-    content: "";
-    display: none;
-  }
-  tr[data-filtered="true"] { display: none; }
-  body[data-scribe-print-rows="all"] tr[data-filtered="true"] { display: table-row; }
 }
 
 /* ─── Forced Colors (Windows High Contrast) ─────────────────────── */

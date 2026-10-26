@@ -87,7 +87,8 @@
   --sonde-syntax-type: #5eead4;
   --sonde-syntax-string: #d8b4fe;
   --sonde-syntax-number: #f472b6;
-  --sonde-syntax-comment: #8d82aa;
+  /* 4.5:1 against the ultraviolet dark source surface. */
+  --sonde-syntax-comment: #9186ae;
   --sonde-syntax-function: #7dd3fc;
   --sonde-syntax-variable: #e8e0ff;
   --sonde-syntax-constant: #fbbf24;
@@ -169,7 +170,7 @@
 
     /* Syntax highlighting */
     --sonde-syntax-keyword: #6d28d9;
-    --sonde-syntax-type: #0f766e;
+    --sonde-syntax-type: #0b665f;
     --sonde-syntax-string: #86198f;
     --sonde-syntax-number: #be185d;
     --sonde-syntax-comment: #5f6673;
@@ -247,7 +248,7 @@
   --sonde-code-highlight-bg: rgba(109, 40, 217, 0.08);
 
   --sonde-syntax-keyword: #6d28d9;
-  --sonde-syntax-type: #0f766e;
+  --sonde-syntax-type: #0b665f;
   --sonde-syntax-string: #86198f;
   --sonde-syntax-number: #be185d;
   --sonde-syntax-comment: #5f6673;
@@ -280,6 +281,7 @@
   :root {
     --sonde-color-primary: #6d28d9;
     --sonde-color-secondary: #4f46e5;
+    --sonde-color-accent: #6d28d9;
     --sonde-color-bg: #ffffff;
     --sonde-color-surface: #ffffff;
     --sonde-color-surface-elevated: #ffffff;
@@ -308,38 +310,15 @@
     --sonde-shadow-sm: none;
     --sonde-shadow-md: none;
     --sonde-shadow-lg: none;
+    --sonde-code-bg: color-mix(in srgb, var(--sonde-color-text) 6%, var(--sonde-color-surface));
+    --sonde-code-text: var(--sonde-color-text);
+    --sonde-code-line-num: var(--sonde-color-text-muted);
+    --sonde-code-gutter-bg: color-mix(in srgb, var(--sonde-color-text) 4%, var(--sonde-color-surface));
+    --sonde-code-highlight-bg: color-mix(in srgb, var(--sonde-color-primary) 10%, var(--sonde-color-surface));
+    --sonde-color-fix-label: var(--sonde-color-secondary);
+    --sonde-color-fix-text: var(--sonde-color-text);
+    --sonde-viz-code-bg: var(--sonde-code-bg);
   }
-  body, .sonde-exhibit, .scribe-shell__main {
-    background: #ffffff !important;
-    color: #000000 !important;
-  }
-  .site-nav, .settings-dropdown, footer, .sonde-nav, .sonde-controls,
-  .scribe-leaderboard-pagination, .leaderboard-pagination, [data-print="hide"] {
-    display: none !important;
-  }
-  details, details:not([open]) { display: block; }
-  details > summary { display: none; }
-  details > * { display: revert; }
-  pre, code, .exhibit-code-block {
-    break-inside: avoid;
-    page-break-inside: avoid;
-    orphans: 4;
-    widows: 4;
-  }
-  section, .vpat-section, tr { break-inside: avoid; }
-  h1, h2, h3, h4, h5, h6 {
-    break-after: avoid;
-    page-break-after: avoid;
-  }
-  thead { display: table-header-group; }
-  /* Modern PDF readers preserve clickable hyperlinks; legacy
-   * "URL (URL)" expansion removed to avoid duplicate output. */
-  th.sortable::after, th[data-sort-key]::after {
-    content: "";
-    display: none;
-  }
-  tr[data-filtered="true"] { display: none; }
-  body[data-scribe-print-rows="all"] tr[data-filtered="true"] { display: table-row; }
 }
 
 /* ─── High Contrast Preference ─────────────────────────────────── */

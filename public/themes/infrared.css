@@ -87,7 +87,8 @@
   --sonde-syntax-type: #ffab70;
   --sonde-syntax-string: #a3c586;
   --sonde-syntax-number: #ff8a65;
-  --sonde-syntax-comment: #9d8163;
+  /* 5.01:1 against the added-diff surface (#142414). */
+  --sonde-syntax-comment: #a68a6c;
   --sonde-syntax-function: #ffd54f;
   --sonde-syntax-variable: #fde8d8;
   --sonde-syntax-constant: #ff6b35;
@@ -279,6 +280,7 @@
   :root {
     --sonde-color-primary: #ad3a0b;
     --sonde-color-secondary: #92400e;
+    --sonde-color-accent: #ad3a0b;
     --sonde-color-bg: #ffffff;
     --sonde-color-surface: #ffffff;
     --sonde-color-surface-elevated: #ffffff;
@@ -307,38 +309,15 @@
     --sonde-shadow-sm: none;
     --sonde-shadow-md: none;
     --sonde-shadow-lg: none;
+    --sonde-code-bg: color-mix(in srgb, var(--sonde-color-text) 6%, var(--sonde-color-surface));
+    --sonde-code-text: var(--sonde-color-text);
+    --sonde-code-line-num: var(--sonde-color-text-muted);
+    --sonde-code-gutter-bg: color-mix(in srgb, var(--sonde-color-text) 4%, var(--sonde-color-surface));
+    --sonde-code-highlight-bg: color-mix(in srgb, var(--sonde-color-primary) 10%, var(--sonde-color-surface));
+    --sonde-color-fix-label: var(--sonde-color-secondary);
+    --sonde-color-fix-text: var(--sonde-color-text);
+    --sonde-viz-code-bg: var(--sonde-code-bg);
   }
-  body, .sonde-exhibit, .scribe-shell__main {
-    background: #ffffff !important;
-    color: #000000 !important;
-  }
-  .site-nav, .settings-dropdown, footer, .sonde-nav, .sonde-controls,
-  .scribe-leaderboard-pagination, .leaderboard-pagination, [data-print="hide"] {
-    display: none !important;
-  }
-  details, details:not([open]) { display: block; }
-  details > summary { display: none; }
-  details > * { display: revert; }
-  pre, code, .exhibit-code-block {
-    break-inside: avoid;
-    page-break-inside: avoid;
-    orphans: 4;
-    widows: 4;
-  }
-  section, .vpat-section, tr { break-inside: avoid; }
-  h1, h2, h3, h4, h5, h6 {
-    break-after: avoid;
-    page-break-after: avoid;
-  }
-  thead { display: table-header-group; }
-  /* Modern PDF readers preserve clickable hyperlinks; legacy
-   * "URL (URL)" expansion removed to avoid duplicate output. */
-  th.sortable::after, th[data-sort-key]::after {
-    content: "";
-    display: none;
-  }
-  tr[data-filtered="true"] { display: none; }
-  body[data-scribe-print-rows="all"] tr[data-filtered="true"] { display: table-row; }
 }
 
 /* ─── High Contrast Preference ─────────────────────────────────── */
