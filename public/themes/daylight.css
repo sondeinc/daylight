@@ -19,11 +19,13 @@
   --sonde-color-secondary: #086962;
   --sonde-color-bg: #f7f5f0;
   --sonde-color-surface: #ffffff;
+  --sonde-color-surface-elevated: #f0ebe0;
   --sonde-color-text: #1c1917;
   --sonde-color-text-muted: #4f4a44;
   --sonde-color-text-heading: #1a3554;
   --sonde-color-border: #918e86;
   --sonde-color-border-subtle: #97948f;
+  --sonde-color-border-strong: #6f6659;
   --sonde-color-accent: #1a3554;
   --sonde-color-accent-dim: #1a355418;
 
@@ -47,7 +49,7 @@
 
   /* Daylight-specific extended tokens */
   --sonde-daylight-cta-from: #1a3554;
-  --sonde-daylight-cta-to: #0a8a7e;
+  --sonde-daylight-cta-to: #08796f;
   --sonde-daylight-cta-text: #ffffff;
   --sonde-daylight-cta-shadow: rgba(26, 53, 84, 0.22);
   --sonde-daylight-radius-card: 14px;
@@ -111,12 +113,14 @@
   --sonde-color-secondary: #2dd4bf;
   --sonde-color-bg: #0d1117;
   --sonde-color-surface: #161b22;
+  --sonde-color-surface-elevated: #1f2630;
   --sonde-color-sidebar: #0d1117;
   --sonde-color-text: #e6edf3;
   --sonde-color-text-muted: #a5aeb8;
   --sonde-color-text-heading: #cdd9e5;
   --sonde-color-border: #5a6168;
   --sonde-color-border-subtle: #61676f;
+  --sonde-color-border-strong: #79838f;
   --sonde-color-pass: #2dd4bf;
   --sonde-color-fail: #ff8d8b;
   --sonde-color-partial: #fbbf24;
@@ -189,11 +193,13 @@
     --sonde-color-secondary: #2dd4bf;
     --sonde-color-bg: #0d1117;
     --sonde-color-surface: #161b22;
+    --sonde-color-surface-elevated: #1f2630;
     --sonde-color-text: #e6edf3;
     --sonde-color-text-muted: #a5aeb8;
     --sonde-color-text-heading: #cdd9e5;
     --sonde-color-border: #5a6168;
     --sonde-color-border-subtle: #61676f;
+    --sonde-color-border-strong: #79838f;
     --sonde-color-pass: #2dd4bf;
     --sonde-color-fail: #ff8d8b;
     --sonde-color-partial: #fbbf24;
@@ -266,8 +272,10 @@
     --sonde-color-text-heading: #000000;
     --sonde-color-border: #000000;
     --sonde-color-border-subtle: #666666;
+    --sonde-color-border-strong: #000000;
     --sonde-color-bg: #ffffff;
     --sonde-color-surface: #ffffff;
+    --sonde-color-surface-elevated: #ffffff;
   }
 }
 
@@ -288,71 +296,14 @@
     --sonde-shadow-sm: none;
     --sonde-shadow-md: none;
     --sonde-shadow-lg: none;
-  }
-  body, .sonde-exhibit, .scribe-shell__main {
-    background: #ffffff !important;
-    color: #000000 !important;
-  }
-  .site-nav,
-  .settings-dropdown,
-  footer,
-  .sonde-nav,
-  .sonde-controls,
-  .scribe-leaderboard-pagination,
-  .leaderboard-pagination,
-  [data-print="hide"] {
-    display: none !important;
-  }
-  details,
-  details:not([open]) {
-    display: block;
-  }
-  details > summary {
-    display: none;
-  }
-  details > * {
-    display: revert;
-  }
-  pre,
-  code,
-  .exhibit-code-block {
-    break-inside: avoid;
-    page-break-inside: avoid;
-    orphans: 4;
-    widows: 4;
-  }
-  section,
-  .vpat-section,
-  tr {
-    break-inside: avoid;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    break-after: avoid;
-    page-break-after: avoid;
-  }
-  thead {
-    display: table-header-group;
-  }
-  /* Modern PDF readers preserve clickable hyperlinks, so we no longer
-   * append the raw href as visible text after every <a>. The previous
-   * rule produced duplicate "URL (URL)" output on links whose visible
-   * text already matched their href (cover live-link, breadcrumbs).
-   * Click-through still works in saved PDFs. */
-  th.sortable::after,
-  th[data-sort-key]::after {
-    content: "";
-    display: none;
-  }
-  tr[data-filtered="true"] {
-    display: none;
-  }
-  body[data-scribe-print-rows="all"] tr[data-filtered="true"] {
-    display: table-row;
+    --sonde-code-bg: color-mix(in srgb, var(--sonde-color-text) 6%, var(--sonde-color-surface));
+    --sonde-code-text: var(--sonde-color-text);
+    --sonde-code-line-num: var(--sonde-color-text-muted);
+    --sonde-code-gutter-bg: color-mix(in srgb, var(--sonde-color-text) 4%, var(--sonde-color-surface));
+    --sonde-code-highlight-bg: color-mix(in srgb, var(--sonde-color-primary) 10%, var(--sonde-color-surface));
+    --sonde-color-fix-label: var(--sonde-color-secondary);
+    --sonde-color-fix-text: var(--sonde-color-text);
+    --sonde-viz-code-bg: var(--sonde-code-bg);
   }
 }
 
@@ -442,7 +393,7 @@
   --sonde-syntax-keyword: #0000cc;
   --sonde-syntax-type: #006600;
   --sonde-syntax-string: #a31515;
-  --sonde-syntax-number: #098658;
+  --sonde-syntax-number: #7a4f00;
   --sonde-syntax-comment: #595959;
   --sonde-syntax-function: #795e26;
   --sonde-syntax-variable: #001080;
@@ -451,4 +402,204 @@
   --sonde-syntax-punctuation: #000000;
   --sonde-syntax-tag: #800000;
   --sonde-syntax-default: #000000;
+}
+
+/* ─── Daylight homepage layout ──────────────────────────────────────────
+ * Homepage-only structure (leaderboard cards + the page-header search). The
+ * Daylight homepage is always rendered in the daylight theme, so these live
+ * here rather than the universal tokens base; they read only `var(--sonde-*)`
+ * and never appear on other surfaces (the VPAT/audit exhibit has no such
+ * elements, so they are inert there). Replaces daylightHomepage.css. */
+.daylight-hero-logo-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.sonde-static-footer {
+  padding: 2rem;
+  text-align: center;
+}
+
+.sonde-static-footer-nav {
+  margin-bottom: 0.5rem;
+}
+
+.sonde-static-footer-link {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.sonde-static-footer-generated {
+  margin: 0;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.leaderboard-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--sonde-layout-grid-min)), 1fr));
+  gap: var(--sonde-layout-toolbar-gap);
+  margin: 2.5rem 0 2rem;
+}
+
+.leaderboard-card {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  background: var(--sonde-color-surface);
+  border: 1px solid var(--sonde-color-border);
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--sonde-color-text);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.leaderboard-card:hover,
+.leaderboard-card:focus-visible {
+  transform: translateY(-4px);
+  border-color: var(--sonde-color-primary);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.leaderboard-card:focus-visible {
+  outline: 2px solid var(--sonde-color-primary);
+  outline-offset: 2px;
+}
+
+.leaderboard-card-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 8px;
+  background: var(--sonde-color-accent-dim);
+  color: var(--sonde-color-primary);
+}
+
+.leaderboard-card-content {
+  flex-grow: 1;
+}
+
+/* home.liquid uses <h2> for the card heading (to preserve document
+   heading order after the <h1 class="visually-hidden">), but the card
+   visual rhythm matches h3 sizing. Override the default h2 token so
+   the card looks consistent whether the heading tag is h2 or h3. */
+.leaderboard-card-content h2,
+.leaderboard-card-content h3 {
+  font-family: var(--sonde-font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem 0;
+  padding-bottom: 0;
+  border-bottom: none;
+  color: var(--sonde-color-text-heading);
+}
+
+.leaderboard-card-content p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--sonde-color-text-muted);
+}
+
+.leaderboard-card-arrow {
+  font-size: 1.25rem;
+  color: var(--sonde-color-primary);
+  font-weight: bold;
+  opacity: 0;
+  transform: translateX(-8px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.leaderboard-card:hover .leaderboard-card-arrow,
+.leaderboard-card:focus-visible .leaderboard-card-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.homepage-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.homepage-brand-name {
+  font-family: var(--sonde-font-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--sonde-color-text-heading);
+}
+
+/* ── Page header shell — WCAG 2.4.5 / page-has-heading-one ── */
+.homepage-page-header {
+  width: 100%;
+}
+
+/* Search landmark: second navigation mechanism for WCAG 2.4.5
+   (Multiple Ways). A form with role="search" counts as a nav
+   landmark; submitting it redirects to ./section508/?q=<query>
+   and the leaderboard's SITE_SEARCH_JS hydrates from the URL. */
+.homepage-search {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.25rem;
+  background: var(--sonde-color-surface);
+  border-bottom: 1px solid var(--sonde-color-border-subtle);
+  flex-wrap: wrap;
+}
+.homepage-search-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--sonde-color-text-muted);
+}
+.homepage-search input[type="search"] {
+  flex: 1 1 12rem;
+  min-width: 0;
+  padding: 0.35rem 0.6rem;
+  font: inherit;
+  font-size: 0.85rem;
+  color: var(--sonde-color-text);
+  background: var(--sonde-color-bg);
+  border: 1px solid var(--sonde-color-border);
+  border-radius: 3px;
+}
+.homepage-search input[type="search"]:focus-visible {
+  outline: 2px solid var(--sonde-color-primary);
+  outline-offset: 1px;
+  border-color: var(--sonde-color-primary);
+}
+/* High-specificity selector (.homepage-page-header .homepage-search …)
+   so the cascade can't fall back to any inherited button color.
+   Uses the contrast-safe button tokens from tokens.css which are
+   intentionally NOT overridden per-theme — see tokens.css for the
+   contrast rationale (9.4:1 rest, 11.4:1 hover). */
+.homepage-page-header .homepage-search button[type="submit"] {
+  padding: 0.35rem 0.9rem;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--sonde-color-contrast-safe-button-text);
+  background: var(--sonde-color-contrast-safe-button-bg);
+  border: 1px solid var(--sonde-color-contrast-safe-button-bg);
+  border-radius: 3px;
+  cursor: pointer;
+}
+.homepage-page-header .homepage-search button[type="submit"]:hover,
+.homepage-page-header .homepage-search button[type="submit"]:focus-visible {
+  background: var(--sonde-color-contrast-safe-button-hover);
+  border-color: var(--sonde-color-contrast-safe-button-hover);
+  outline: 2px solid var(--sonde-color-contrast-safe-button-text);
+  outline-offset: 2px;
 }
