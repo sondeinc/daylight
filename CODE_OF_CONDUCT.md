@@ -33,7 +33,7 @@ safely and productively.
 ## Reporting
 
 If you experience or witness unacceptable behavior, email
-**community@sonde.life** with details. Reports are reviewed within 48 hours.
+**community@sonde.tech** with details. Reports are reviewed within 48 hours.
 All reports are treated confidentially.
 
 ## Enforcement

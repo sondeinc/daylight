@@ -12,9 +12,9 @@ work where anyone can see it.
 
 ## Live Leaderboards
 
-- **[US Governments](https://daylight.sonde.life/usgov)** — US government websites (Section 508)
-- **[US Financial](https://daylight.sonde.life/usfin)** — Major financial institutions (ADA Title III)
-- **[Methodology](https://daylight.sonde.life/methodology)** — How the Sonde Score works
+- **[US Governments](https://daylight.sonde.tech/usgov/)** — US government websites (Section 508)
+- **[US Financial](https://daylight.sonde.tech/usfin/)** — Major financial institutions (ADA Title III)
+- **[Methodology](https://daylight.sonde.tech/methodology/)** — How the Sonde Score works
 
 | Rank | Website | Sonde Score | Findings | Pages |
 |------|---------|:-----------:|:--------:|:-----:|
@@ -83,7 +83,7 @@ We're not here to shame. We're here to help. File an issue if we got something
 wrong. Nominate a site if you think it matters. We publish everything because
 we believe public institutions deserve public accountability — and public help.
 
-**Website:** [sonde.life](https://sonde.life)
+**Website:** [sonde.tech](https://sonde.tech)
 
 ---
 
