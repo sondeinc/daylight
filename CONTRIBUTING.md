@@ -94,4 +94,4 @@ See [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for the full community guidelines.
 ## Questions?
 
 Start a thread in [General discussion](../../discussions/categories/general)
-or email **daylight@sonde.life**.
+or email **daylight@sonde.tech**.
