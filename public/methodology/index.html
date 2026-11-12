@@ -33,6 +33,569 @@
 @font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:400;font-display:swap;src:url(data:font/woff2;base64,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) format('woff2');unicode-range:U+102-103,U+110-111,U+128-129,U+168-169,U+300-301,U+303-304,U+308-309,U+323,U+1ee4-1ee5,U+1ef2-1ef3;}
 @font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:500;font-display:swap;src:url(data:font/woff2;base64,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) format('woff2');unicode-range:U+102-103,U+110-111,U+128-129,U+168-169,U+300-301,U+303-304,U+308-309,U+323,U+1ee4-1ee5,U+1ef2-1ef3;}</style>
   <style>
+    /* ─── Exhibit — the structural styles exhibit markup is drawn with ─────────
+ * Moved out of baseStructural.css so a page that renders exhibit markup without the document shell (the Daylight
+ * homepage and methodology page) can load exactly these rules. baseStructural's global reset and element defaults
+ * (`* { margin: 0; padding: 0 }`, heading borders, table defaults) are not part of an exhibit, and pulling them onto
+ * those pages stripped their list indents. Every surface that loads the structural base loads this too
+ * (`BASE_COMPONENT_CSS`). */
+
+/* ─── Exhibit framework — shared structural styles ──────────────────────
+ * Single source of truth for every exhibit surface (Daylight homepage, audit
+ * report, on-demand VPAT). These rules are theme-agnostic — they read only
+ * `var(--sonde-*)`, so the 4 standard palettes (daylight / ultraviolet /
+ * infrared / high-contrast) recolor them with zero duplication. They live in
+ * the standard structural base precisely so a surface like the
+ * on-demand VPAT — which bakes only `tokens + palette` — is styled identically
+ * to the homepage instead of depending on a per-surface stylesheet that may
+ * not be loaded. (Replaces the deleted daylightHomepage.css / vpatReport.css.)
+ *
+ * The exhibit title/header are shown by default (the VPAT relies on its title
+ * being visible). Surfaces with their own branded header — the Daylight
+ * homepage — simply do not render the exhibit title element, so no global
+ * hide rule is needed or wanted here. */
+.sonde-exhibit {
+  /* Width, centring and inline gutter: contentShell.css, which reads the
+   * `--sonde-exhibit-*` tokens an embedding surface overrides to go full-bleed. */
+  padding-block: var(--sonde-exhibit-pad-block-start, var(--sonde-layout-gutter-block))
+    var(--sonde-exhibit-pad-block-end, var(--sonde-spacing-2xl));
+}
+
+.exhibit-subtitle {
+  font-size: 1.4rem;
+  color: var(--sonde-color-text-muted);
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.exhibit-heading {
+  font-size: 1.4rem;
+  color: var(--sonde-color-primary);
+  border-bottom: 2px solid var(--sonde-color-primary);
+  padding-bottom: 0.25rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.exhibit-body {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.exhibit-bullets li,
+.exhibit-numbered-list li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.exhibit-callout {
+  border-inline-start: 3px solid var(--sonde-color-secondary);
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  background: var(--sonde-color-border-subtle);
+  border-radius: 0 6px 6px 0;
+}
+
+/* High-contrast: --sonde-color-border-subtle (#666) under --sonde-color-text (#000)
+ * resolves to 3.65:1, failing WCAG AA 1.4.3 (4.5:1). Use the surface token in HC so
+ * black callout text reads on white. The 3px left border still anchors the callout
+ * visually. Surfaced by daylightBaselineA11y.test.ts (SSG plan P0). */
+[data-theme='high-contrast'] .exhibit-callout {
+  background: var(--sonde-color-surface);
+}
+
+.exhibit-table {
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  /* WCAG 1.4.12 fix (#863): `overflow: hidden` clipped table cells by
+     ~23px when users applied the WCAG-mandated text-spacing rules
+     (line-height 1.5, paragraph 2×, letter 0.12em, word 0.16em).
+     Allow horizontal scrolling instead so wide tables remain
+     accessible without losing content. */
+  overflow-x: auto;
+  border: 1px solid var(--sonde-color-border);
+}
+
+.exhibit-table-scroll {
+  border: 1px solid var(--sonde-color-border);
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  max-inline-size: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.exhibit-table-scroll:focus-visible {
+  outline: 2px solid var(--sonde-color-accent);
+  outline-offset: 3px;
+}
+
+.exhibit-table-scroll > table {
+  border: 0;
+  border-radius: 0;
+  inline-size: max-content;
+  margin: 0;
+  min-inline-size: 100%;
+  overflow: visible;
+}
+
+.scribe-report-context .exhibit-table tbody th {
+  background: var(--sonde-color-surface);
+  color: var(--sonde-color-text);
+  font-size: inherit;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.scribe-report-context .exhibit-table tbody th a {
+  color: var(--sonde-color-primary);
+}
+
+.scribe-report-context-card__body > .exhibit-heading:first-child {
+  display: none;
+}
+
+.scribe-report-context-disclosure__body > .exhibit-table-scroll {
+  border: 0;
+  margin: 0;
+}
+
+.exhibit-table th {
+  background: var(--sonde-color-table-header-bg);
+  color: var(--sonde-color-table-header-text);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.85rem;
+}
+
+/* This selector intentionally matches the Exhibit rule's specificity and
+ * follows it in the cascade. The earlier generic forced-colors `th` rule is
+ * otherwise defeated here, allowing explicit light-mode theme tokens to put
+ * pale text on Canvas in Windows High Contrast. */
+@media (forced-colors: active) {
+  .exhibit-table th {
+    background: Canvas;
+    color: CanvasText;
+  }
+}
+
+.exhibit-table td, .exhibit-table th {
+  padding: 0.6rem 0.8rem;
+}
+
+.exhibit-table tr:nth-child(even) {
+  /* `border-subtle` is a divider token, not a readable text surface. In
+   * Ultraviolet light mode it produced #1a1240 text on #7d708f (3.81:1).
+   * Keep alternating rows on the theme's elevated surface so every platform
+   * theme owns a contrast-safe text/background pair. */
+  background: var(--sonde-color-surface-elevated);
+}
+
+/* Table rows can use the muted border surface as their background. Keep
+ * evidence and other table links at the body-text contrast level; their
+ * always-on underline below remains the non-color link affordance. */
+.sonde-exhibit .exhibit-table a {
+  color: var(--sonde-color-text);
+}
+
+.exhibit-header {
+  text-align: center;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  border-bottom: 3px solid var(--sonde-color-primary);
+}
+
+.exhibit-footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--sonde-color-border);
+  font-size: 0.8rem;
+  color: var(--sonde-color-text-muted);
+  text-align: center;
+}
+
+.exhibit-line {
+  border: none;
+  border-top: 1px solid var(--sonde-color-border);
+  margin: 2rem 0;
+}
+
+.exhibit-slide {
+  margin-bottom: 1rem;
+}
+
+/* WCAG 1.4.1 (#863): inline links must be distinguishable without color
+   alone. Always-on underline with a thicker hover state preserves the
+   teal/primary palette while satisfying the success criterion. */
+.sonde-exhibit a {
+  color: var(--sonde-color-secondary);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.sonde-exhibit a:hover,
+.sonde-exhibit a:focus-visible {
+  color: var(--sonde-color-primary);
+  text-decoration-thickness: 2px;
+}
+
+@media print {
+  .sonde-exhibit { padding-block: 1cm; }
+}
+
+/* ─── Exhibit visualizations — structural layout for the string-serialized
+ * exhibit charts, diagrams, and rich blocks (packages/exhibit HTML serializer).
+ * Mirrors the <sonde-exhibit-*> Lit element designs for the static-render path,
+ * which previously shipped these classes unstyled. Tokens only, no literals.
+ * `--exhibit-role-color` carries a slide role's accent to fills/borders; roles
+ * without a distinct token fall back to the primary default. ───────────────── */
+
+.exhibit-bar-chart,
+.exhibit-pipeline,
+.exhibit-value-ladder,
+.exhibit-hub-spoke {
+  --exhibit-role-color: var(--sonde-color-primary);
+}
+.exhibit-role-secondary { --exhibit-role-color: var(--sonde-color-secondary); }
+.exhibit-role-accent,
+.exhibit-role-gold,
+.exhibit-role-glow,
+.exhibit-role-glowDeep,
+.exhibit-role-cta { --exhibit-role-color: var(--sonde-color-accent); }
+.exhibit-role-muted,
+.exhibit-role-strut { --exhibit-role-color: var(--sonde-color-text-muted); }
+
+/* Document/text blocks */
+.exhibit-title {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  color: var(--sonde-color-text-heading);
+}
+.exhibit-author {
+  color: var(--sonde-color-text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.exhibit-section {
+  margin-block: 2.5rem;
+}
+.exhibit-quote {
+  border-inline-start: 3px solid var(--sonde-color-secondary);
+  padding: 0.5rem 1.25rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: var(--sonde-color-text-muted);
+}
+.exhibit-disclaimer,
+.exhibit-adaptation-summary {
+  font-size: 0.8rem;
+  color: var(--sonde-color-text-muted);
+  margin-block: 0.5rem;
+}
+.exhibit-image {
+  margin: 1.5rem 0;
+}
+.exhibit-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+.exhibit-image figcaption {
+  font-size: 0.85rem;
+  color: var(--sonde-color-text-muted);
+  margin-top: 0.5rem;
+  text-align: center;
+}
+.exhibit-error,
+.exhibit-unknown {
+  border: 1px solid var(--sonde-color-border);
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  color: var(--sonde-color-text-muted);
+  background: var(--sonde-color-border-subtle);
+}
+
+/* Bar chart */
+.exhibit-bar-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin: 1.5rem 0;
+}
+.exhibit-bar {
+  display: grid;
+  grid-template-columns: minmax(6em, 8em) 1fr minmax(3em, 4em);
+  align-items: center;
+  gap: 0.6rem;
+}
+.exhibit-bar-label {
+  font-size: 0.9rem;
+  text-align: end;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.exhibit-bar-track {
+  height: 1.4em;
+  border-radius: 3px;
+  background: var(--sonde-color-border-subtle);
+  overflow: hidden;
+}
+.exhibit-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  background: var(--exhibit-role-color, var(--sonde-color-primary));
+}
+.exhibit-bar-value {
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+
+/* Campaign steps */
+.exhibit-campaign-steps {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 0;
+}
+.exhibit-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  padding: 0.6rem 0;
+}
+.exhibit-step + .exhibit-step {
+  border-top: 1px solid var(--sonde-color-border-subtle);
+}
+.exhibit-step-num {
+  flex-shrink: 0;
+  inline-size: 2.2em;
+  block-size: 2.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--sonde-color-primary);
+  color: var(--sonde-color-table-header-text);
+  font-weight: 600;
+}
+.exhibit-step-name {
+  font-weight: 600;
+}
+.exhibit-step-detail {
+  color: var(--sonde-color-text-muted);
+  font-size: 0.9rem;
+}
+
+/* Value ladder */
+.exhibit-value-ladder-label,
+.sonde-cockpit-806bf7892f.sonde-cockpit-806bf7892f {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.exhibit-value-ladder {
+  list-style: none;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 0.3rem;
+  margin: 1rem 0;
+}
+.exhibit-value-step {
+  padding: 0.5rem 1.25rem;
+  border-radius: 6px;
+  border: 1.5px solid var(--exhibit-role-color, var(--sonde-color-primary));
+  background: var(--sonde-color-surface);
+}
+
+/* Pipeline */
+.exhibit-pipeline {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+}
+.exhibit-pipeline-vertical {
+  flex-direction: column;
+}
+.exhibit-pipeline-step {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  max-inline-size: 100%;
+  min-inline-size: 0;
+  overflow-wrap: anywhere;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  border: 1.5px solid var(--exhibit-role-color, var(--sonde-color-primary));
+  background: var(--sonde-color-surface);
+  position: relative;
+}
+.exhibit-pipeline-step.exhibit-step-active {
+  background: var(--sonde-color-border-subtle);
+}
+.exhibit-pipeline-detail {
+  font-size: 0.85rem;
+  color: var(--sonde-color-text-muted);
+  min-inline-size: 0;
+  overflow-wrap: anywhere;
+}
+.exhibit-pipeline-label {
+  font-weight: 600;
+  min-inline-size: 0;
+  overflow-wrap: anywhere;
+}
+.exhibit-pipeline-connector {
+  color: var(--sonde-color-text-muted);
+  font-size: 1.2em;
+  line-height: 1;
+}
+.exhibit-pipeline-vertical .exhibit-pipeline-connector {
+  inset-block-end: calc(100% + 0.05rem);
+  inset-inline-start: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+.exhibit-pipeline:not(.exhibit-pipeline-vertical) .exhibit-pipeline-step {
+  align-items: center;
+  flex-direction: row;
+}
+.exhibit-pipeline:not(.exhibit-pipeline-vertical) .exhibit-pipeline-connector {
+  margin-inline-start: calc(-1rem - 0.5rem);
+}
+
+/* Hub & spoke */
+.exhibit-hub-spoke {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.exhibit-hub {
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  background: var(--sonde-color-primary);
+  color: var(--sonde-color-table-header-text);
+  font-weight: 600;
+}
+.exhibit-spokes {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.exhibit-spoke {
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  border: 1.5px solid var(--exhibit-role-color, var(--sonde-color-primary));
+  background: var(--sonde-color-surface);
+}
+
+/* Interactive demo + editable source */
+.exhibit-interactive-demo,
+.exhibit-editable-source {
+  margin: 1.5rem 0;
+  border: 1px solid var(--sonde-color-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.exhibit-demo-targets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0.5rem;
+  border-top: 1px solid var(--sonde-color-border);
+}
+.exhibit-demo-target {
+  padding: 0.3rem 0.7rem;
+  border-radius: 20px;
+  border: 1px solid var(--sonde-color-border);
+  background: var(--sonde-color-surface);
+  color: var(--sonde-color-text);
+  font-family: var(--sonde-font-mono);
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+.exhibit-editable-textarea {
+  display: block;
+  inline-size: 100%;
+  min-block-size: 8em;
+  padding: 0.75rem;
+  border: none;
+  font-family: var(--sonde-font-mono);
+  font-size: 0.85rem;
+  color: var(--sonde-color-text);
+  background: var(--sonde-color-surface);
+  resize: vertical;
+}
+
+/* Gauge */
+.exhibit-gauge {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  margin: 1rem;
+}
+.exhibit-gauge-svg {
+  inline-size: 7rem;
+  block-size: 7rem;
+}
+.exhibit-gauge-value {
+  fill: var(--sonde-color-text-heading);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.exhibit-gauge-label {
+  font-size: 0.9rem;
+  color: var(--sonde-color-text-muted);
+  text-align: center;
+}
+
+/* Radar (fallback table) */
+.exhibit-radar {
+  margin: 1.5rem 0;
+}
+
+/* Heatmap */
+.exhibit-heatmap {
+  border-collapse: separate;
+  border-spacing: 2px;
+  margin: 1.5rem 0;
+}
+.exhibit-heatmap-cell {
+  padding: 0.3rem 0.5rem;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--sonde-color-text);
+  background: color-mix(in srgb, var(--sonde-color-primary) calc(var(--exhibit-heatmap-intensity, 0) * 1%), var(--sonde-color-surface));
+}
+
+/* Probe visualization */
+.exhibit-probe-visualization {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+.exhibit-probe-visualization figcaption {
+  font-size: 0.85rem;
+  color: var(--sonde-color-text-muted);
+  margin-bottom: 0.5rem;
+}
+.exhibit-probe-visualization-empty {
+  border: 1px dashed var(--sonde-color-border);
+  border-radius: 6px;
+  padding: 1rem;
+  color: var(--sonde-color-text-muted);
+}
+
     *, *::before, *::after { box-sizing: border-box; }
 
     body {
@@ -2877,12 +3440,14 @@ body:has(.sonde-nav-static-slot[data-rail-placement="fixed"][data-pinned="true"]
 .sonde-nav-static details[data-nav-linked-group] > summary { inline-size: 32px; box-sizing: border-box; padding-inline: 8px; }
 .sonde-nav-linked-label { display: flex; align-items: center; gap: var(--sonde-spacing-sm); flex: 0 0 calc(100cqw - 32px - 2 * var(--sonde-spacing-sm)); min-inline-size: 0; visibility: hidden; }
 /*
- * Collapsed, a linked group is a destination like any other: the rail is too narrow for its 32px disclosure, which
- * otherwise pushed the link 32px in and left a bare chevron where the group's icon belongs. The disclosure and its
- * children return once the rail expands.
+ * Collapsed and at rest, a linked group is a destination like any other: the rail is too narrow for its 32px
+ * disclosure, which otherwise pushed the link 32px in and left a bare chevron where the group's icon belongs. The
+ * disclosure returns as soon as the pointer is over the rail or focus is inside it: keyboard focus never switches the
+ * rail to `expanded`, and pointer hover does so only on a page with a current destination, so hiding it any longer
+ * left the group's children unreachable.
  */
-.sonde-nav-static[data-nav-rail-state="collapsed"] li[data-nav-linked-row] > a { position: static; inline-size: auto; }
-.sonde-nav-static[data-nav-rail-state="collapsed"] li[data-nav-linked-row] > details { display: none; }
+.sonde-nav-static[data-nav-rail-state="collapsed"]:not(:hover, :focus-within) li[data-nav-linked-row] > a { position: static; inline-size: auto; }
+.sonde-nav-static[data-nav-rail-state="collapsed"]:not(:hover, :focus-within) li[data-nav-linked-row] > details { display: none; }
 
 @media (min-width: 1281px) {
   .sonde-nav-static-slot:not([data-nav-enhanced]) { inline-size: var(--sonde-rail-width-expanded); }
@@ -3050,6 +3615,59 @@ body:has(.sonde-nav-static-slot[data-rail-placement="fixed"][data-pinned="true"]
   }
 }
 .sonde-nav-static[data-nav-rail-state="collapsed"] .sonde-nav-primary-list > li > details > summary { gap: 4px; padding-inline: 6px; }
+
+
+/* ─── Content Shell ─────────────────────────────────────────
+ * The one body-content column every SSG page and Scribe report sits in: the Daylight homepage and methodology
+ * exhibit, Themes, leaderboards, site reports, sonde.tech, and Scribe's index and report pages. Each surface keeps
+ * its own shell class, but none of them sizes or insets itself: the width, centring and inline gutter come from here,
+ * from the shared layout tokens (`--sonde-layout-shell-max`, `--sonde-layout-gutter-inline`), so the text on every
+ * page starts the same distance from the navigation rail. Surface stylesheets own only block spacing, background
+ * and min-height. When each shell chose its own, the homepage text touched the rail and Themes sat 49-71px from it.
+ *
+ * `.sonde-exhibit` reads its values through `--sonde-exhibit-*` custom properties, so an embedding surface (sonde.life)
+ * goes full-bleed by overriding the tokens, not these declarations.
+ */
+
+:is(
+  .sonde-container,
+  .sonde-exhibit,
+  .site-container,
+  .audit-container,
+  .themes-container,
+  .scribe-shell__main
+) {
+  box-sizing: border-box;
+  inline-size: min(100%, var(--sonde-layout-shell-max));
+  max-inline-size: var(--sonde-layout-shell-max);
+  margin-inline: auto;
+  padding-inline: var(--sonde-layout-gutter-inline);
+}
+
+.sonde-exhibit {
+  inline-size: var(--sonde-exhibit-inline-size, min(100%, var(--sonde-layout-shell-max)));
+  max-inline-size: var(--sonde-exhibit-max-inline-size, var(--sonde-layout-shell-max));
+  padding-inline: var(--sonde-exhibit-pad-inline, var(--sonde-layout-gutter-inline));
+}
+
+@media print {
+  :is(
+    .sonde-container,
+    .sonde-exhibit,
+    .site-container,
+    .audit-container,
+    .themes-container,
+    .scribe-shell__main
+  ) {
+    inline-size: auto;
+    max-inline-size: none;
+    padding-inline: 0;
+  }
+
+  .sonde-exhibit {
+    padding-inline: 1cm;
+  }
+}
 
 
 /* Daylight branding, search and settings slots inside the shared navigation rail.
@@ -3971,7 +4589,7 @@ body:has(.sonde-nav-static-slot[data-rail-placement="fixed"][data-pinned="true"]
     function readNavigationPreference(win,key){try{return win.localStorage.getItem(key)}catch{return null}}
     function writeNavigationPreference(win,key,value){try{win.localStorage.setItem(key,value);return true}catch{return false}}
     function navigationPreferenceKey(slot,win){const identity=slot.dataset["navIdentity"]??win.location.pathname;const rootHref=slot.dataset["navRootHref"];if(!rootHref)return`sonde:nav-rail:v1:${identity}`;try{return`sonde:nav-rail:v1:${identity}:${new URL(rootHref,win.location.href).href}`}catch{return`sonde:nav-rail:v1:${identity}`}}
-    function createNavigationContext(slot){const nav=slot.querySelector(".sonde-nav-rail");const doc=slot.ownerDocument;const win=doc.defaultView;if(!nav||!win||typeof win.matchMedia!=="function")return null;const styles=win.getComputedStyle(nav);const configuredEntry=Number.parseFloat(styles.getPropertyValue("--sonde-nav-rail-entry-delay"));const configuredExit=Number.parseFloat(styles.getPropertyValue("--sonde-nav-rail-exit-delay"));const key=navigationPreferenceKey(slot,win);return{slot,nav,doc,win,styles,key,pin:nav.querySelector("[data-nav-pin]"),canPin:win.matchMedia("(min-width: 561px)"),wide:win.matchMedia("(min-width: 1281px)"),mobile:win.matchMedia("(max-width: 560px)"),enterMs:Number.isFinite(configuredEntry)?Math.max(0,configuredEntry):300,exitMs:Number.isFinite(configuredExit)?Math.max(0,configuredExit):350,state:{preference:readNavigationPreference(win,key),entry:void 0,exit:void 0,keyboard:false,previous:null,mnemonicUntil:0}}}
+    function createNavigationContext(slot){const nav=slot.querySelector(".sonde-nav-rail");const doc=slot.ownerDocument;const win=doc.defaultView;if(!nav||!win||typeof win.matchMedia!=="function")return null;const styles=win.getComputedStyle(nav);const configuredEntry=Number.parseFloat(styles.getPropertyValue("--sonde-nav-rail-entry-delay"));const configuredExit=Number.parseFloat(styles.getPropertyValue("--sonde-nav-rail-exit-delay"));const key=navigationPreferenceKey(slot,win);return{slot,nav,doc,win,styles,key,pin:nav.querySelector("[data-nav-pin]"),canPin:win.matchMedia("(min-width: 561px)"),wide:win.matchMedia("(min-width: 1281px)"),mobile:win.matchMedia("(max-width: 560px)"),enterMs:Number.isFinite(configuredEntry)?Math.max(0,configuredEntry):300,exitMs:Number.isFinite(configuredExit)?Math.max(0,configuredExit):350,state:{preference:readNavigationPreference(win,key),entry:void 0,exit:void 0,keyboard:false,pointerInside:false,previous:null,mnemonicUntil:0}}}
     function reflectNavigationGroupExpanded(group){const summary=group.querySelector(":scope > summary");summary?.setAttribute("role","button");summary?.setAttribute("aria-expanded",String(group.open));const list=group.querySelector(":scope > .sonde-nav-subtabs");if(list&&!list.id){const slot=group.closest(".sonde-nav-rail-slot");const identity=slot?.dataset["navIdentity"]??"rail";let index=Number(slot?.dataset["navControlIndex"]??0);while(group.ownerDocument.getElementById(`sonde-nav-${encodeURIComponent(identity)}-${index}`))index++;list.id=`sonde-nav-${encodeURIComponent(identity)}-${index}`;if(slot)slot.dataset["navControlIndex"]=String(index+1)}if(list?.id)summary?.setAttribute("aria-controls",list.id)}
     function setNavigationGroupOpen(group,open){group.open=open;reflectNavigationGroupExpanded(group)}
     function linkedNavigationGroup(element){const row=element.closest("a")?.parentElement;return row?.matches("[data-nav-linked-row]")?row.querySelector(":scope > details[data-nav-linked-group]"):null}
@@ -3983,8 +4601,8 @@ body:has(.sonde-nav-static-slot[data-rail-placement="fixed"][data-pinned="true"]
     function bindNavigationPin(ctx,actions,signal){ctx.pin?.addEventListener("click",actions.togglePin,{signal})}
     function bindNavigationOutsideDismissal(ctx,actions,signal){const{doc,nav}=ctx;doc.addEventListener("pointerdown",event=>{if(!event.composedPath().includes(nav))actions.dismiss()},{capture:true,signal})}
     function closeNavigationDescendants(group){for(const child of group.querySelectorAll("details[data-nav-group][open]"))setNavigationGroupOpen(child,false)}
-    function bindNavigationGroupToggle(ctx,actions,signal){const{nav,slot}=ctx;for(const group of nav.querySelectorAll("details[data-nav-group]")){reflectNavigationGroupExpanded(group)}const observer=new ctx.win.MutationObserver(records=>{for(const record of records){for(const node of record.addedNodes){if(!(node instanceof ctx.win.Element))continue;if(node.matches("details[data-nav-group]"))reflectNavigationGroupExpanded(node);for(const group of node.querySelectorAll("details[data-nav-group]"))reflectNavigationGroupExpanded(group)}}});observer.observe(nav,{childList:true,subtree:true});signal.addEventListener("abort",()=>observer.disconnect(),{once:true});nav.addEventListener("toggle",event=>{const group=event.target;if(!group.matches("details[data-nav-group]"))return;reflectNavigationGroupExpanded(group);if(group.open&&!group.hasAttribute("data-nav-forced-open"))actions.openGroup(group);else{closeNavigationDescendants(group);if(!ctx.mobile.matches&&!nav.querySelector("details[data-nav-group][open]"))nav.dataset["navRailState"]=slot.dataset["pinned"]==="true"?"pinned":"collapsed"}},{capture:true,signal})}
-    function bindNavigationPointer(ctx,actions,signal,pointerIntent){const{nav,doc,slot,mobile,styles,enterMs,exitMs}=ctx;nav.addEventListener("pointerover",event=>{if(event.pointerType!=="mouse"||mobile.matches)return;ctx.state.keyboard=false;if(event.target.closest(".sonde-nav-subtabs")&&!event.target.closest("summary")&&!linkedNavigationGroup(event.target)){clearTimeout(ctx.state.entry);clearTimeout(ctx.state.exit);return}const summary=event.target.closest("summary");const target=linkedNavigationGroup(event.target)??summary?.closest("details[data-nav-group]")??event.target.closest("[data-nav-id], [data-scribe-toc-group-container]");if(!target||target.contains(event.relatedTarget))return;const group=target.matches("details[data-nav-group]")?target:target.querySelector("details[data-nav-group]");const drawer=nav?.querySelector(".sonde-nav-subtabs");const buffered=ctx.state.previous&&drawer&&pointerIntent(ctx.state.previous,{x:event.clientX,y:event.clientY},drawer.getBoundingClientRect(),styles.direction==="rtl");actions.clearTimers();ctx.state.entry=setTimeout(()=>{if(group){actions.openGroup(group);const selected=group.querySelector('[aria-current="location"], [aria-current="page"]');for(let parent=selected?.parentElement;parent&&parent!==group;parent=parent.parentElement){if(parent.matches("details[data-nav-group]"))setNavigationGroupOpen(parent,true)}}else{actions.dismiss();if(slot.dataset["pinned"]!=="true")nav.dataset["navRailState"]="expanded"}},buffered?exitMs:enterMs)},{signal});nav.addEventListener("pointermove",event=>{if(event.pointerType==="mouse")ctx.state.previous={x:event.clientX,y:event.clientY}},{signal});nav.addEventListener("pointerenter",event=>{clearTimeout(ctx.state.exit);if(event.pointerType!=="mouse"||ctx.state.keyboard||mobile.matches||slot.dataset["pinned"]==="true")return;const selected=nav.querySelector('[aria-current="location"], [aria-current="page"]');if(!selected)return;clearTimeout(ctx.state.entry);ctx.state.entry=setTimeout(()=>{const ancestry=[];for(let parent=selected.parentElement;parent&&parent!==nav;parent=parent.parentElement){if(parent.matches("details[data-nav-group]"))ancestry.unshift(parent)}const own=linkedNavigationGroup(selected);if(own)ancestry.push(own);for(const group of ancestry)actions.openGroup(group);nav.dataset["navRailState"]="expanded"},enterMs)},{signal});nav.addEventListener("pointerleave",()=>{clearTimeout(ctx.state.entry);ctx.state.exit=setTimeout(()=>{if(!ctx.state.keyboard||!nav?.contains(doc.activeElement))actions.dismiss()},exitMs)},{signal})}
+    function bindNavigationGroupToggle(ctx,actions,signal){const{nav,slot}=ctx;for(const group of nav.querySelectorAll("details[data-nav-group]")){reflectNavigationGroupExpanded(group)}const observer=new ctx.win.MutationObserver(records=>{for(const record of records){for(const node of record.addedNodes){if(!(node instanceof ctx.win.Element))continue;if(node.matches("details[data-nav-group]"))reflectNavigationGroupExpanded(node);for(const group of node.querySelectorAll("details[data-nav-group]"))reflectNavigationGroupExpanded(group)}}});observer.observe(nav,{childList:true,subtree:true});signal.addEventListener("abort",()=>observer.disconnect(),{once:true});nav.addEventListener("toggle",event=>{const group=event.target;if(!group.matches("details[data-nav-group]"))return;reflectNavigationGroupExpanded(group);if(group.open&&!group.hasAttribute("data-nav-forced-open"))actions.openGroup(group);else{closeNavigationDescendants(group);const inUse=ctx.state.pointerInside||nav.contains(ctx.doc.activeElement);if(!inUse&&!ctx.mobile.matches&&!nav.querySelector("details[data-nav-group][open]"))nav.dataset["navRailState"]=slot.dataset["pinned"]==="true"?"pinned":"collapsed"}},{capture:true,signal})}
+    function bindNavigationPointer(ctx,actions,signal,pointerIntent){const{nav,doc,slot,mobile,styles,enterMs,exitMs}=ctx;nav.addEventListener("pointerover",event=>{if(event.pointerType!=="mouse"||mobile.matches)return;ctx.state.keyboard=false;if(event.target.closest(".sonde-nav-subtabs")&&!event.target.closest("summary")&&!linkedNavigationGroup(event.target)){clearTimeout(ctx.state.entry);clearTimeout(ctx.state.exit);return}const summary=event.target.closest("summary");const target=linkedNavigationGroup(event.target)??summary?.closest("details[data-nav-group]")??event.target.closest("[data-nav-id], [data-scribe-toc-group-container]");if(!target||target.contains(event.relatedTarget))return;const group=target.matches("details[data-nav-group]")?target:target.querySelector("details[data-nav-group]");const drawer=nav?.querySelector(".sonde-nav-subtabs");const buffered=ctx.state.previous&&drawer&&pointerIntent(ctx.state.previous,{x:event.clientX,y:event.clientY},drawer.getBoundingClientRect(),styles.direction==="rtl");actions.clearTimers();ctx.state.entry=setTimeout(()=>{if(group){actions.openGroup(group);const selected=group.querySelector('[aria-current="location"], [aria-current="page"]');for(let parent=selected?.parentElement;parent&&parent!==group;parent=parent.parentElement){if(parent.matches("details[data-nav-group]"))setNavigationGroupOpen(parent,true)}}else{actions.dismiss();if(slot.dataset["pinned"]!=="true")nav.dataset["navRailState"]="expanded"}},buffered?exitMs:enterMs)},{signal});nav.addEventListener("pointermove",event=>{if(event.pointerType==="mouse")ctx.state.previous={x:event.clientX,y:event.clientY}},{signal});nav.addEventListener("pointerenter",event=>{clearTimeout(ctx.state.exit);if(event.pointerType==="mouse")ctx.state.pointerInside=true;if(event.pointerType!=="mouse"||ctx.state.keyboard||mobile.matches||slot.dataset["pinned"]==="true")return;const selected=nav.querySelector('[aria-current="location"], [aria-current="page"]');clearTimeout(ctx.state.entry);ctx.state.entry=setTimeout(()=>{const ancestry=[];for(let parent=selected?.parentElement;parent&&parent!==nav;parent=parent.parentElement){if(parent.matches("details[data-nav-group]"))ancestry.unshift(parent)}const own=selected?linkedNavigationGroup(selected):null;if(own)ancestry.push(own);for(const group of ancestry)actions.openGroup(group);nav.dataset["navRailState"]="expanded"},enterMs)},{signal});nav.addEventListener("pointerleave",()=>{ctx.state.pointerInside=false;clearTimeout(ctx.state.entry);ctx.state.exit=setTimeout(()=>{if(!ctx.state.keyboard||!nav?.contains(doc.activeElement))actions.dismiss()},exitMs)},{signal})}
     function bindNavigationFocus(ctx,actions,signal){const{nav}=ctx;nav.addEventListener("pointerdown",event=>{const link=event.target.closest("a[href]");if(!link||event.button!==0)return;event.preventDefault();ctx.state.keyboard=false;const group=linkedNavigationGroup(link);if(group)actions.openGroup(group);link.focus({preventScroll:true});ctx.state.keyboard=false},{signal});nav.addEventListener("focusin",event=>{if(event.target.matches(":focus-visible")){ctx.state.keyboard=true;clearTimeout(ctx.state.entry)}},{signal});nav.addEventListener("focusout",event=>{if(!nav?.contains(event.relatedTarget)){ctx.state.keyboard=false;actions.dismiss()}},{signal})}
     function bindNavigationKeys(ctx,actions,signal){const{nav,win}=ctx;nav.addEventListener("keydown",event=>{const target=event.target;if(target.closest("details:not([data-nav-group])"))return;if(event.composedPath().some(node=>node instanceof win.Element&&node.matches('input, textarea, select, [contenteditable="true"]')))return;if(event.key==="Escape"||event.key==="ArrowLeft"){event.preventDefault();event.stopPropagation();const group=linkedNavigationGroup(target)??target.closest("details[data-nav-group]");if(event.key==="Escape"&&ctx.mobile.matches)actions.dismiss(true);else if(group)actions.closeGroup(group);else actions.dismiss(true);return}const disclosure=linkedNavigationGroup(target)??target.closest("summary")?.closest("details[data-nav-group]");if(event.key==="ArrowRight"&&disclosure){const group=disclosure;event.preventDefault();event.stopPropagation();actions.openGroup(group);const list2=group.querySelector(":scope > .sonde-nav-subtabs");if(list2)navigationListControls(list2).find(item=>{if(item.closest("[hidden]"))return false;const closed=item.closest("details:not([open])");return!closed||closed.querySelector(":scope > summary")?.contains(item)===true})?.focus();return}if(!["ArrowDown","ArrowUp","Home","End"].includes(event.key))return;if(target.closest("input, textarea, select"))return;const list=target.closest(".sonde-nav-primary-list, .sonde-nav-subtabs");if(!list)return;const items=navigationListControls(list).filter(item=>{if(item.closest("[hidden]"))return false;const closed=item.closest("details:not([open])");return!closed||closed.querySelector(":scope > summary")?.contains(item)===true});const index=items.indexOf(target);if(index<0)return;event.preventDefault();event.stopPropagation();const next=event.key==="Home"?0:event.key==="End"?items.length-1:(index+(event.key==="ArrowDown"?1:-1)+items.length)%items.length;items[next]?.focus()},{signal})}
     function bindNavigationShortcuts(ctx,actions,signal){const{nav,doc,win}=ctx;doc.addEventListener("keydown",event=>{if(event.defaultPrevented)return;const deck=nav.closest("sonde-deck");if(deck&&!event.composedPath().includes(deck))return;if(!deck&&event.composedPath().some(node=>node instanceof win.Element&&node.matches("sonde-deck")))return;if(event.composedPath().some(node=>node instanceof win.Element&&node.matches('input, textarea, select, [contenteditable="true"]')))return;if(!event.metaKey&&!event.ctrlKey&&!event.altKey){if(event.key.toLowerCase()==="g"){ctx.state.mnemonicUntil=Date.now()+1e3;return}if(Date.now()<ctx.state.mnemonicUntil){ctx.state.mnemonicUntil=0;const matches=[...nav.querySelectorAll(".sonde-nav-primary-list > li")].filter(item=>item.querySelector(".sonde-nav-label")?.textContent?.trim().toLowerCase().startsWith(event.key.toLowerCase()));if(matches.length===1){event.preventDefault();event.stopPropagation();matches[0]?.querySelector("a")?.click();return}}}if((event.metaKey||event.ctrlKey)&&event.key.toLowerCase()==="b"&&(doc.activeElement===doc.body||nav?.contains(doc.activeElement))){event.preventDefault();event.stopPropagation();actions.togglePin()}},{signal})}

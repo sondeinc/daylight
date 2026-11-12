@@ -329,12 +329,14 @@ body:has(.sonde-nav-static-slot[data-rail-placement="fixed"][data-pinned="true"]
 .sonde-nav-static details[data-nav-linked-group] > summary { inline-size: 32px; box-sizing: border-box; padding-inline: 8px; }
 .sonde-nav-linked-label { display: flex; align-items: center; gap: var(--sonde-spacing-sm); flex: 0 0 calc(100cqw - 32px - 2 * var(--sonde-spacing-sm)); min-inline-size: 0; visibility: hidden; }
 /*
- * Collapsed, a linked group is a destination like any other: the rail is too narrow for its 32px disclosure, which
- * otherwise pushed the link 32px in and left a bare chevron where the group's icon belongs. The disclosure and its
- * children return once the rail expands.
+ * Collapsed and at rest, a linked group is a destination like any other: the rail is too narrow for its 32px
+ * disclosure, which otherwise pushed the link 32px in and left a bare chevron where the group's icon belongs. The
+ * disclosure returns as soon as the pointer is over the rail or focus is inside it: keyboard focus never switches the
+ * rail to `expanded`, and pointer hover does so only on a page with a current destination, so hiding it any longer
+ * left the group's children unreachable.
  */
-.sonde-nav-static[data-nav-rail-state="collapsed"] li[data-nav-linked-row] > a { position: static; inline-size: auto; }
-.sonde-nav-static[data-nav-rail-state="collapsed"] li[data-nav-linked-row] > details { display: none; }
+.sonde-nav-static[data-nav-rail-state="collapsed"]:not(:hover, :focus-within) li[data-nav-linked-row] > a { position: static; inline-size: auto; }
+.sonde-nav-static[data-nav-rail-state="collapsed"]:not(:hover, :focus-within) li[data-nav-linked-row] > details { display: none; }
 
 @media (min-width: 1281px) {
   .sonde-nav-static-slot:not([data-nav-enhanced]) { inline-size: var(--sonde-rail-width-expanded); }
@@ -502,6 +504,59 @@ body:has(.sonde-nav-static-slot[data-rail-placement="fixed"][data-pinned="true"]
   }
 }
 .sonde-nav-static[data-nav-rail-state="collapsed"] .sonde-nav-primary-list > li > details > summary { gap: 4px; padding-inline: 6px; }
+
+
+/* ─── Content Shell ─────────────────────────────────────────
+ * The one body-content column every SSG page and Scribe report sits in: the Daylight homepage and methodology
+ * exhibit, Themes, leaderboards, site reports, sonde.tech, and Scribe's index and report pages. Each surface keeps
+ * its own shell class, but none of them sizes or insets itself: the width, centring and inline gutter come from here,
+ * from the shared layout tokens (`--sonde-layout-shell-max`, `--sonde-layout-gutter-inline`), so the text on every
+ * page starts the same distance from the navigation rail. Surface stylesheets own only block spacing, background
+ * and min-height. When each shell chose its own, the homepage text touched the rail and Themes sat 49-71px from it.
+ *
+ * `.sonde-exhibit` reads its values through `--sonde-exhibit-*` custom properties, so an embedding surface (sonde.life)
+ * goes full-bleed by overriding the tokens, not these declarations.
+ */
+
+:is(
+  .sonde-container,
+  .sonde-exhibit,
+  .site-container,
+  .audit-container,
+  .themes-container,
+  .scribe-shell__main
+) {
+  box-sizing: border-box;
+  inline-size: min(100%, var(--sonde-layout-shell-max));
+  max-inline-size: var(--sonde-layout-shell-max);
+  margin-inline: auto;
+  padding-inline: var(--sonde-layout-gutter-inline);
+}
+
+.sonde-exhibit {
+  inline-size: var(--sonde-exhibit-inline-size, min(100%, var(--sonde-layout-shell-max)));
+  max-inline-size: var(--sonde-exhibit-max-inline-size, var(--sonde-layout-shell-max));
+  padding-inline: var(--sonde-exhibit-pad-inline, var(--sonde-layout-gutter-inline));
+}
+
+@media print {
+  :is(
+    .sonde-container,
+    .sonde-exhibit,
+    .site-container,
+    .audit-container,
+    .themes-container,
+    .scribe-shell__main
+  ) {
+    inline-size: auto;
+    max-inline-size: none;
+    padding-inline: 0;
+  }
+
+  .sonde-exhibit {
+    padding-inline: 1cm;
+  }
+}
 
 
 /* Daylight branding, search and settings slots inside the shared navigation rail.
@@ -1136,10 +1191,8 @@ html {
 }
 
 .themes-container {
-  max-width: var(--sonde-layout-shell-max);
-  margin: 0 auto;
+  /* Width, centring and inline gutter: contentShell.css, shared by every page shell. */
   padding-block: var(--sonde-layout-gutter-block) var(--sonde-spacing-3xl);
-  padding-inline: var(--sonde-layout-gutter-inline);
 }
 
 .themes-hero h1 {
@@ -5144,11 +5197,8 @@ tr:hover {
 }
 
 .sonde-container {
-  inline-size: min(100%, var(--sonde-layout-shell-max));
-  max-width: var(--sonde-layout-shell-max);
-  margin: 0 auto;
+  /* Width, centring and inline gutter: contentShell.css, shared by every page shell. */
   padding-block: var(--sonde-layout-gutter-block);
-  padding-inline: var(--sonde-layout-gutter-inline);
   background: var(--sonde-color-surface);
   min-height: 100vh;
 }
@@ -6669,16 +6719,78 @@ tr:hover {
 }
 
 @media (min-width: 1920px) {
-  .sonde-container {
-    inline-size: min(100%, var(--sonde-layout-shell-max));
-  }
-
   .sonde-responsive-flow {
     gap: var(--sonde-layout-gutter-inline);
   }
 }
 
 /* End of baseStructural.css */
+
+/* Dense data queues retain control hit areas while removing excess cell whitespace. */
+.sonde-table-dense > tbody > tr > td {
+  padding-block: 2px;
+}
+
+
+/* ─── Content Shell ─────────────────────────────────────────
+ * The one body-content column every SSG page and Scribe report sits in: the Daylight homepage and methodology
+ * exhibit, Themes, leaderboards, site reports, sonde.tech, and Scribe's index and report pages. Each surface keeps
+ * its own shell class, but none of them sizes or insets itself: the width, centring and inline gutter come from here,
+ * from the shared layout tokens (`--sonde-layout-shell-max`, `--sonde-layout-gutter-inline`), so the text on every
+ * page starts the same distance from the navigation rail. Surface stylesheets own only block spacing, background
+ * and min-height. When each shell chose its own, the homepage text touched the rail and Themes sat 49-71px from it.
+ *
+ * `.sonde-exhibit` reads its values through `--sonde-exhibit-*` custom properties, so an embedding surface (sonde.life)
+ * goes full-bleed by overriding the tokens, not these declarations.
+ */
+
+:is(
+  .sonde-container,
+  .sonde-exhibit,
+  .site-container,
+  .audit-container,
+  .themes-container,
+  .scribe-shell__main
+) {
+  box-sizing: border-box;
+  inline-size: min(100%, var(--sonde-layout-shell-max));
+  max-inline-size: var(--sonde-layout-shell-max);
+  margin-inline: auto;
+  padding-inline: var(--sonde-layout-gutter-inline);
+}
+
+.sonde-exhibit {
+  inline-size: var(--sonde-exhibit-inline-size, min(100%, var(--sonde-layout-shell-max)));
+  max-inline-size: var(--sonde-exhibit-max-inline-size, var(--sonde-layout-shell-max));
+  padding-inline: var(--sonde-exhibit-pad-inline, var(--sonde-layout-gutter-inline));
+}
+
+@media print {
+  :is(
+    .sonde-container,
+    .sonde-exhibit,
+    .site-container,
+    .audit-container,
+    .themes-container,
+    .scribe-shell__main
+  ) {
+    inline-size: auto;
+    max-inline-size: none;
+    padding-inline: 0;
+  }
+
+  .sonde-exhibit {
+    padding-inline: 1cm;
+  }
+}
+
+
+/* ─── Exhibit — the structural styles exhibit markup is drawn with ─────────
+ * Moved out of baseStructural.css so a page that renders exhibit markup without the document shell (the Daylight
+ * homepage and methodology page) can load exactly these rules. baseStructural's global reset and element defaults
+ * (`* { margin: 0; padding: 0 }`, heading borders, table defaults) are not part of an exhibit, and pulling them onto
+ * those pages stripped their list indents. Every surface that loads the structural base loads this too
+ * (`BASE_COMPONENT_CSS`). */
 
 /* ─── Exhibit framework — shared structural styles ──────────────────────
  * Single source of truth for every exhibit surface (Daylight homepage, audit
@@ -6695,13 +6807,8 @@ tr:hover {
  * homepage — simply do not render the exhibit title element, so no global
  * hide rule is needed or wanted here. */
 .sonde-exhibit {
-  /* Dimensions are read from custom props so an embedding surface can go
-   * full-bleed by overriding the tokens (not the structural properties) — the
-   * sanctioned way to adjust exhibit layout from a surface. Defaults preserve
-   * the standard proportional container. */
-  width: var(--sonde-exhibit-inline-size, 92%);
-  max-width: var(--sonde-exhibit-max-inline-size, var(--sonde-layout-shell-max));
-  margin: 0 auto;
+  /* Width, centring and inline gutter: contentShell.css, which reads the
+   * `--sonde-exhibit-*` tokens an embedding surface overrides to go full-bleed. */
   padding-block: var(--sonde-exhibit-pad-block-start, var(--sonde-layout-gutter-block))
     var(--sonde-exhibit-pad-block-end, var(--sonde-spacing-2xl));
 }
@@ -6887,7 +6994,7 @@ tr:hover {
 }
 
 @media print {
-  .sonde-exhibit { max-width: none; padding: 1cm; }
+  .sonde-exhibit { padding-block: 1cm; }
 }
 
 /* ─── Exhibit visualizations — structural layout for the string-serialized
@@ -7240,10 +7347,6 @@ tr:hover {
   padding: 1rem;
   color: var(--sonde-color-text-muted);
 }
-/* Dense data queues retain control hit areas while removing excess cell whitespace. */
-.sonde-table-dense > tbody > tr > td {
-  padding-block: 2px;
-}
 
 
 :root { --sonde-page-footer-text: "Generated by Sonde"; }
@@ -7550,7 +7653,7 @@ tr:hover {
     function readNavigationPreference(win,key){try{return win.localStorage.getItem(key)}catch{return null}}
     function writeNavigationPreference(win,key,value){try{win.localStorage.setItem(key,value);return true}catch{return false}}
     function navigationPreferenceKey(slot,win){const identity=slot.dataset["navIdentity"]??win.location.pathname;const rootHref=slot.dataset["navRootHref"];if(!rootHref)return`sonde:nav-rail:v1:${identity}`;try{return`sonde:nav-rail:v1:${identity}:${new URL(rootHref,win.location.href).href}`}catch{return`sonde:nav-rail:v1:${identity}`}}
-    function createNavigationContext(slot){const nav=slot.querySelector(".sonde-nav-rail");const doc=slot.ownerDocument;const win=doc.defaultView;if(!nav||!win||typeof win.matchMedia!=="function")return null;const styles=win.getComputedStyle(nav);const configuredEntry=Number.parseFloat(styles.getPropertyValue("--sonde-nav-rail-entry-delay"));const configuredExit=Number.parseFloat(styles.getPropertyValue("--sonde-nav-rail-exit-delay"));const key=navigationPreferenceKey(slot,win);return{slot,nav,doc,win,styles,key,pin:nav.querySelector("[data-nav-pin]"),canPin:win.matchMedia("(min-width: 561px)"),wide:win.matchMedia("(min-width: 1281px)"),mobile:win.matchMedia("(max-width: 560px)"),enterMs:Number.isFinite(configuredEntry)?Math.max(0,configuredEntry):300,exitMs:Number.isFinite(configuredExit)?Math.max(0,configuredExit):350,state:{preference:readNavigationPreference(win,key),entry:void 0,exit:void 0,keyboard:false,previous:null,mnemonicUntil:0}}}
+    function createNavigationContext(slot){const nav=slot.querySelector(".sonde-nav-rail");const doc=slot.ownerDocument;const win=doc.defaultView;if(!nav||!win||typeof win.matchMedia!=="function")return null;const styles=win.getComputedStyle(nav);const configuredEntry=Number.parseFloat(styles.getPropertyValue("--sonde-nav-rail-entry-delay"));const configuredExit=Number.parseFloat(styles.getPropertyValue("--sonde-nav-rail-exit-delay"));const key=navigationPreferenceKey(slot,win);return{slot,nav,doc,win,styles,key,pin:nav.querySelector("[data-nav-pin]"),canPin:win.matchMedia("(min-width: 561px)"),wide:win.matchMedia("(min-width: 1281px)"),mobile:win.matchMedia("(max-width: 560px)"),enterMs:Number.isFinite(configuredEntry)?Math.max(0,configuredEntry):300,exitMs:Number.isFinite(configuredExit)?Math.max(0,configuredExit):350,state:{preference:readNavigationPreference(win,key),entry:void 0,exit:void 0,keyboard:false,pointerInside:false,previous:null,mnemonicUntil:0}}}
     function reflectNavigationGroupExpanded(group){const summary=group.querySelector(":scope > summary");summary?.setAttribute("role","button");summary?.setAttribute("aria-expanded",String(group.open));const list=group.querySelector(":scope > .sonde-nav-subtabs");if(list&&!list.id){const slot=group.closest(".sonde-nav-rail-slot");const identity=slot?.dataset["navIdentity"]??"rail";let index=Number(slot?.dataset["navControlIndex"]??0);while(group.ownerDocument.getElementById(`sonde-nav-${encodeURIComponent(identity)}-${index}`))index++;list.id=`sonde-nav-${encodeURIComponent(identity)}-${index}`;if(slot)slot.dataset["navControlIndex"]=String(index+1)}if(list?.id)summary?.setAttribute("aria-controls",list.id)}
     function setNavigationGroupOpen(group,open){group.open=open;reflectNavigationGroupExpanded(group)}
     function linkedNavigationGroup(element){const row=element.closest("a")?.parentElement;return row?.matches("[data-nav-linked-row]")?row.querySelector(":scope > details[data-nav-linked-group]"):null}
@@ -7562,8 +7665,8 @@ tr:hover {
     function bindNavigationPin(ctx,actions,signal){ctx.pin?.addEventListener("click",actions.togglePin,{signal})}
     function bindNavigationOutsideDismissal(ctx,actions,signal){const{doc,nav}=ctx;doc.addEventListener("pointerdown",event=>{if(!event.composedPath().includes(nav))actions.dismiss()},{capture:true,signal})}
     function closeNavigationDescendants(group){for(const child of group.querySelectorAll("details[data-nav-group][open]"))setNavigationGroupOpen(child,false)}
-    function bindNavigationGroupToggle(ctx,actions,signal){const{nav,slot}=ctx;for(const group of nav.querySelectorAll("details[data-nav-group]")){reflectNavigationGroupExpanded(group)}const observer=new ctx.win.MutationObserver(records=>{for(const record of records){for(const node of record.addedNodes){if(!(node instanceof ctx.win.Element))continue;if(node.matches("details[data-nav-group]"))reflectNavigationGroupExpanded(node);for(const group of node.querySelectorAll("details[data-nav-group]"))reflectNavigationGroupExpanded(group)}}});observer.observe(nav,{childList:true,subtree:true});signal.addEventListener("abort",()=>observer.disconnect(),{once:true});nav.addEventListener("toggle",event=>{const group=event.target;if(!group.matches("details[data-nav-group]"))return;reflectNavigationGroupExpanded(group);if(group.open&&!group.hasAttribute("data-nav-forced-open"))actions.openGroup(group);else{closeNavigationDescendants(group);if(!ctx.mobile.matches&&!nav.querySelector("details[data-nav-group][open]"))nav.dataset["navRailState"]=slot.dataset["pinned"]==="true"?"pinned":"collapsed"}},{capture:true,signal})}
-    function bindNavigationPointer(ctx,actions,signal,pointerIntent){const{nav,doc,slot,mobile,styles,enterMs,exitMs}=ctx;nav.addEventListener("pointerover",event=>{if(event.pointerType!=="mouse"||mobile.matches)return;ctx.state.keyboard=false;if(event.target.closest(".sonde-nav-subtabs")&&!event.target.closest("summary")&&!linkedNavigationGroup(event.target)){clearTimeout(ctx.state.entry);clearTimeout(ctx.state.exit);return}const summary=event.target.closest("summary");const target=linkedNavigationGroup(event.target)??summary?.closest("details[data-nav-group]")??event.target.closest("[data-nav-id], [data-scribe-toc-group-container]");if(!target||target.contains(event.relatedTarget))return;const group=target.matches("details[data-nav-group]")?target:target.querySelector("details[data-nav-group]");const drawer=nav?.querySelector(".sonde-nav-subtabs");const buffered=ctx.state.previous&&drawer&&pointerIntent(ctx.state.previous,{x:event.clientX,y:event.clientY},drawer.getBoundingClientRect(),styles.direction==="rtl");actions.clearTimers();ctx.state.entry=setTimeout(()=>{if(group){actions.openGroup(group);const selected=group.querySelector('[aria-current="location"], [aria-current="page"]');for(let parent=selected?.parentElement;parent&&parent!==group;parent=parent.parentElement){if(parent.matches("details[data-nav-group]"))setNavigationGroupOpen(parent,true)}}else{actions.dismiss();if(slot.dataset["pinned"]!=="true")nav.dataset["navRailState"]="expanded"}},buffered?exitMs:enterMs)},{signal});nav.addEventListener("pointermove",event=>{if(event.pointerType==="mouse")ctx.state.previous={x:event.clientX,y:event.clientY}},{signal});nav.addEventListener("pointerenter",event=>{clearTimeout(ctx.state.exit);if(event.pointerType!=="mouse"||ctx.state.keyboard||mobile.matches||slot.dataset["pinned"]==="true")return;const selected=nav.querySelector('[aria-current="location"], [aria-current="page"]');if(!selected)return;clearTimeout(ctx.state.entry);ctx.state.entry=setTimeout(()=>{const ancestry=[];for(let parent=selected.parentElement;parent&&parent!==nav;parent=parent.parentElement){if(parent.matches("details[data-nav-group]"))ancestry.unshift(parent)}const own=linkedNavigationGroup(selected);if(own)ancestry.push(own);for(const group of ancestry)actions.openGroup(group);nav.dataset["navRailState"]="expanded"},enterMs)},{signal});nav.addEventListener("pointerleave",()=>{clearTimeout(ctx.state.entry);ctx.state.exit=setTimeout(()=>{if(!ctx.state.keyboard||!nav?.contains(doc.activeElement))actions.dismiss()},exitMs)},{signal})}
+    function bindNavigationGroupToggle(ctx,actions,signal){const{nav,slot}=ctx;for(const group of nav.querySelectorAll("details[data-nav-group]")){reflectNavigationGroupExpanded(group)}const observer=new ctx.win.MutationObserver(records=>{for(const record of records){for(const node of record.addedNodes){if(!(node instanceof ctx.win.Element))continue;if(node.matches("details[data-nav-group]"))reflectNavigationGroupExpanded(node);for(const group of node.querySelectorAll("details[data-nav-group]"))reflectNavigationGroupExpanded(group)}}});observer.observe(nav,{childList:true,subtree:true});signal.addEventListener("abort",()=>observer.disconnect(),{once:true});nav.addEventListener("toggle",event=>{const group=event.target;if(!group.matches("details[data-nav-group]"))return;reflectNavigationGroupExpanded(group);if(group.open&&!group.hasAttribute("data-nav-forced-open"))actions.openGroup(group);else{closeNavigationDescendants(group);const inUse=ctx.state.pointerInside||nav.contains(ctx.doc.activeElement);if(!inUse&&!ctx.mobile.matches&&!nav.querySelector("details[data-nav-group][open]"))nav.dataset["navRailState"]=slot.dataset["pinned"]==="true"?"pinned":"collapsed"}},{capture:true,signal})}
+    function bindNavigationPointer(ctx,actions,signal,pointerIntent){const{nav,doc,slot,mobile,styles,enterMs,exitMs}=ctx;nav.addEventListener("pointerover",event=>{if(event.pointerType!=="mouse"||mobile.matches)return;ctx.state.keyboard=false;if(event.target.closest(".sonde-nav-subtabs")&&!event.target.closest("summary")&&!linkedNavigationGroup(event.target)){clearTimeout(ctx.state.entry);clearTimeout(ctx.state.exit);return}const summary=event.target.closest("summary");const target=linkedNavigationGroup(event.target)??summary?.closest("details[data-nav-group]")??event.target.closest("[data-nav-id], [data-scribe-toc-group-container]");if(!target||target.contains(event.relatedTarget))return;const group=target.matches("details[data-nav-group]")?target:target.querySelector("details[data-nav-group]");const drawer=nav?.querySelector(".sonde-nav-subtabs");const buffered=ctx.state.previous&&drawer&&pointerIntent(ctx.state.previous,{x:event.clientX,y:event.clientY},drawer.getBoundingClientRect(),styles.direction==="rtl");actions.clearTimers();ctx.state.entry=setTimeout(()=>{if(group){actions.openGroup(group);const selected=group.querySelector('[aria-current="location"], [aria-current="page"]');for(let parent=selected?.parentElement;parent&&parent!==group;parent=parent.parentElement){if(parent.matches("details[data-nav-group]"))setNavigationGroupOpen(parent,true)}}else{actions.dismiss();if(slot.dataset["pinned"]!=="true")nav.dataset["navRailState"]="expanded"}},buffered?exitMs:enterMs)},{signal});nav.addEventListener("pointermove",event=>{if(event.pointerType==="mouse")ctx.state.previous={x:event.clientX,y:event.clientY}},{signal});nav.addEventListener("pointerenter",event=>{clearTimeout(ctx.state.exit);if(event.pointerType==="mouse")ctx.state.pointerInside=true;if(event.pointerType!=="mouse"||ctx.state.keyboard||mobile.matches||slot.dataset["pinned"]==="true")return;const selected=nav.querySelector('[aria-current="location"], [aria-current="page"]');clearTimeout(ctx.state.entry);ctx.state.entry=setTimeout(()=>{const ancestry=[];for(let parent=selected?.parentElement;parent&&parent!==nav;parent=parent.parentElement){if(parent.matches("details[data-nav-group]"))ancestry.unshift(parent)}const own=selected?linkedNavigationGroup(selected):null;if(own)ancestry.push(own);for(const group of ancestry)actions.openGroup(group);nav.dataset["navRailState"]="expanded"},enterMs)},{signal});nav.addEventListener("pointerleave",()=>{ctx.state.pointerInside=false;clearTimeout(ctx.state.entry);ctx.state.exit=setTimeout(()=>{if(!ctx.state.keyboard||!nav?.contains(doc.activeElement))actions.dismiss()},exitMs)},{signal})}
     function bindNavigationFocus(ctx,actions,signal){const{nav}=ctx;nav.addEventListener("pointerdown",event=>{const link=event.target.closest("a[href]");if(!link||event.button!==0)return;event.preventDefault();ctx.state.keyboard=false;const group=linkedNavigationGroup(link);if(group)actions.openGroup(group);link.focus({preventScroll:true});ctx.state.keyboard=false},{signal});nav.addEventListener("focusin",event=>{if(event.target.matches(":focus-visible")){ctx.state.keyboard=true;clearTimeout(ctx.state.entry)}},{signal});nav.addEventListener("focusout",event=>{if(!nav?.contains(event.relatedTarget)){ctx.state.keyboard=false;actions.dismiss()}},{signal})}
     function bindNavigationKeys(ctx,actions,signal){const{nav,win}=ctx;nav.addEventListener("keydown",event=>{const target=event.target;if(target.closest("details:not([data-nav-group])"))return;if(event.composedPath().some(node=>node instanceof win.Element&&node.matches('input, textarea, select, [contenteditable="true"]')))return;if(event.key==="Escape"||event.key==="ArrowLeft"){event.preventDefault();event.stopPropagation();const group=linkedNavigationGroup(target)??target.closest("details[data-nav-group]");if(event.key==="Escape"&&ctx.mobile.matches)actions.dismiss(true);else if(group)actions.closeGroup(group);else actions.dismiss(true);return}const disclosure=linkedNavigationGroup(target)??target.closest("summary")?.closest("details[data-nav-group]");if(event.key==="ArrowRight"&&disclosure){const group=disclosure;event.preventDefault();event.stopPropagation();actions.openGroup(group);const list2=group.querySelector(":scope > .sonde-nav-subtabs");if(list2)navigationListControls(list2).find(item=>{if(item.closest("[hidden]"))return false;const closed=item.closest("details:not([open])");return!closed||closed.querySelector(":scope > summary")?.contains(item)===true})?.focus();return}if(!["ArrowDown","ArrowUp","Home","End"].includes(event.key))return;if(target.closest("input, textarea, select"))return;const list=target.closest(".sonde-nav-primary-list, .sonde-nav-subtabs");if(!list)return;const items=navigationListControls(list).filter(item=>{if(item.closest("[hidden]"))return false;const closed=item.closest("details:not([open])");return!closed||closed.querySelector(":scope > summary")?.contains(item)===true});const index=items.indexOf(target);if(index<0)return;event.preventDefault();event.stopPropagation();const next=event.key==="Home"?0:event.key==="End"?items.length-1:(index+(event.key==="ArrowDown"?1:-1)+items.length)%items.length;items[next]?.focus()},{signal})}
     function bindNavigationShortcuts(ctx,actions,signal){const{nav,doc,win}=ctx;doc.addEventListener("keydown",event=>{if(event.defaultPrevented)return;const deck=nav.closest("sonde-deck");if(deck&&!event.composedPath().includes(deck))return;if(!deck&&event.composedPath().some(node=>node instanceof win.Element&&node.matches("sonde-deck")))return;if(event.composedPath().some(node=>node instanceof win.Element&&node.matches('input, textarea, select, [contenteditable="true"]')))return;if(!event.metaKey&&!event.ctrlKey&&!event.altKey){if(event.key.toLowerCase()==="g"){ctx.state.mnemonicUntil=Date.now()+1e3;return}if(Date.now()<ctx.state.mnemonicUntil){ctx.state.mnemonicUntil=0;const matches=[...nav.querySelectorAll(".sonde-nav-primary-list > li")].filter(item=>item.querySelector(".sonde-nav-label")?.textContent?.trim().toLowerCase().startsWith(event.key.toLowerCase()));if(matches.length===1){event.preventDefault();event.stopPropagation();matches[0]?.querySelector("a")?.click();return}}}if((event.metaKey||event.ctrlKey)&&event.key.toLowerCase()==="b"&&(doc.activeElement===doc.body||nav?.contains(doc.activeElement))){event.preventDefault();event.stopPropagation();actions.togglePin()}},{signal})}
