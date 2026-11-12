@@ -5415,6 +5415,13 @@ body:has(.sonde-nav-static-slot[data-rail-placement="fixed"][data-pinned="true"]
 .sonde-nav-static .sonde-nav-subtabs > li[data-nav-linked-row] > a { inset-inline-start: calc(32px + var(--sonde-spacing-lg)); inline-size: calc(100% - 32px - var(--sonde-spacing-lg)); }
 .sonde-nav-static details[data-nav-linked-group] > summary { inline-size: 32px; box-sizing: border-box; padding-inline: 8px; }
 .sonde-nav-linked-label { display: flex; align-items: center; gap: var(--sonde-spacing-sm); flex: 0 0 calc(100cqw - 32px - 2 * var(--sonde-spacing-sm)); min-inline-size: 0; visibility: hidden; }
+/*
+ * Collapsed, a linked group is a destination like any other: the rail is too narrow for its 32px disclosure, which
+ * otherwise pushed the link 32px in and left a bare chevron where the group's icon belongs. The disclosure and its
+ * children return once the rail expands.
+ */
+.sonde-nav-static[data-nav-rail-state="collapsed"] li[data-nav-linked-row] > a { position: static; inline-size: auto; }
+.sonde-nav-static[data-nav-rail-state="collapsed"] li[data-nav-linked-row] > details { display: none; }
 
 @media (min-width: 1281px) {
   .sonde-nav-static-slot:not([data-nav-enhanced]) { inline-size: var(--sonde-rail-width-expanded); }
@@ -5566,17 +5573,10 @@ body:has(.sonde-nav-static-slot[data-rail-placement="fixed"][data-pinned="true"]
 .sonde-nav-static[data-nav-rail-state="collapsed"] [data-nav-resize] { display: none; }
 /*
  * The collapsed rail is too narrow for the brand and the pin on one row, and a wrapped pin pushes every destination
- * icon down until the rail expands. Collapsed, the pin takes no room: it stays focusable and named, and a keyboard
- * user who reaches it sees it over the brand slot, so no state moves the icons.
+ * icon down until the rail expands. Collapsed, the pin is not rendered at all: it shows once the rail expands, and
+ * Cmd/Ctrl+B pins from the keyboard. A focusable pin parked under the brand would be an occluded target (WCAG 2.4.11).
  */
-.sonde-nav-static .sonde-nav-rail-header { position: relative; }
-.sonde-nav-static[data-nav-rail-state="collapsed"] .sonde-nav-rail-header > [data-nav-pin]:not(:focus-visible) {
-  position: absolute; inline-size: 1px; block-size: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap;
-}
-.sonde-nav-static[data-nav-rail-state="collapsed"] .sonde-nav-rail-header > [data-nav-pin]:focus-visible {
-  position: absolute; inset-block-start: var(--sonde-spacing-xs); inset-inline-start: var(--sonde-spacing-xs);
-  inline-size: 44px; block-size: 44px; margin: 0; z-index: 1; background: var(--sonde-color-surface-elevated);
-}
+.sonde-nav-static[data-nav-rail-state="collapsed"] .sonde-nav-rail-header > [data-nav-pin] { display: none; }
 .sonde-nav-static[data-nav-rail-state="collapsed"] .sonde-nav-body { overflow-x: hidden; }
 
 @media screen and (max-width: 560px) and (max-height: 480px) {
@@ -7187,7 +7187,7 @@ th.sortable[data-dir="desc"]::after { content: ' \2193'; opacity: 1; }
     function readNavigationPreference(win,key){try{return win.localStorage.getItem(key)}catch{return null}}
     function writeNavigationPreference(win,key,value){try{win.localStorage.setItem(key,value);return true}catch{return false}}
     function navigationPreferenceKey(slot,win){const identity=slot.dataset["navIdentity"]??win.location.pathname;const rootHref=slot.dataset["navRootHref"];if(!rootHref)return`sonde:nav-rail:v1:${identity}`;try{return`sonde:nav-rail:v1:${identity}:${new URL(rootHref,win.location.href).href}`}catch{return`sonde:nav-rail:v1:${identity}`}}
-    function createNavigationContext(slot){const nav=slot.querySelector(".sonde-nav-rail");const doc=slot.ownerDocument;const win=doc.defaultView;if(!nav||!win||typeof win.matchMedia!=="function")return null;const styles=win.getComputedStyle(nav);const configuredEntry=Number.parseFloat(styles.getPropertyValue("--sonde-nav-rail-entry-delay"));const configuredExit=Number.parseFloat(styles.getPropertyValue("--sonde-nav-rail-exit-delay"));const key=navigationPreferenceKey(slot,win);return{slot,nav,doc,win,styles,key,pin:nav.querySelector("[data-nav-pin]"),canPin:win.matchMedia("(min-width: 1024px)"),wide:win.matchMedia("(min-width: 1281px)"),mobile:win.matchMedia("(max-width: 560px)"),enterMs:Number.isFinite(configuredEntry)?Math.max(0,configuredEntry):300,exitMs:Number.isFinite(configuredExit)?Math.max(0,configuredExit):350,state:{preference:readNavigationPreference(win,key),entry:void 0,exit:void 0,keyboard:false,previous:null,mnemonicUntil:0}}}
+    function createNavigationContext(slot){const nav=slot.querySelector(".sonde-nav-rail");const doc=slot.ownerDocument;const win=doc.defaultView;if(!nav||!win||typeof win.matchMedia!=="function")return null;const styles=win.getComputedStyle(nav);const configuredEntry=Number.parseFloat(styles.getPropertyValue("--sonde-nav-rail-entry-delay"));const configuredExit=Number.parseFloat(styles.getPropertyValue("--sonde-nav-rail-exit-delay"));const key=navigationPreferenceKey(slot,win);return{slot,nav,doc,win,styles,key,pin:nav.querySelector("[data-nav-pin]"),canPin:win.matchMedia("(min-width: 561px)"),wide:win.matchMedia("(min-width: 1281px)"),mobile:win.matchMedia("(max-width: 560px)"),enterMs:Number.isFinite(configuredEntry)?Math.max(0,configuredEntry):300,exitMs:Number.isFinite(configuredExit)?Math.max(0,configuredExit):350,state:{preference:readNavigationPreference(win,key),entry:void 0,exit:void 0,keyboard:false,previous:null,mnemonicUntil:0}}}
     function reflectNavigationGroupExpanded(group){const summary=group.querySelector(":scope > summary");summary?.setAttribute("role","button");summary?.setAttribute("aria-expanded",String(group.open));const list=group.querySelector(":scope > .sonde-nav-subtabs");if(list&&!list.id){const slot=group.closest(".sonde-nav-rail-slot");const identity=slot?.dataset["navIdentity"]??"rail";let index=Number(slot?.dataset["navControlIndex"]??0);while(group.ownerDocument.getElementById(`sonde-nav-${encodeURIComponent(identity)}-${index}`))index++;list.id=`sonde-nav-${encodeURIComponent(identity)}-${index}`;if(slot)slot.dataset["navControlIndex"]=String(index+1)}if(list?.id)summary?.setAttribute("aria-controls",list.id)}
     function setNavigationGroupOpen(group,open){group.open=open;reflectNavigationGroupExpanded(group)}
     function linkedNavigationGroup(element){const row=element.closest("a")?.parentElement;return row?.matches("[data-nav-linked-row]")?row.querySelector(":scope > details[data-nav-linked-group]"):null}
